@@ -6,3 +6,5 @@ Patient Monotoring
 * Pulse Rate
 * Breathing Rate
 * Temperature
+* Weight
+* Age + Height (const)
