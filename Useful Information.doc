@@ -1,10 +1,36 @@
-Patient Monotoring 
+Patient Monitoring
 
 
 
-* Blood Pressure
+* Blood Pressure (Systolic and Diastolic)
 * Pulse Rate
-* Breathing Rate
-* Temperature
-* Weight
+* Breathing Rate (measure bpm)
+* Temperature (measure at Celsius)
+* Weight (measure at kg)
 * Age + Height (const)
+
+
+
+Each module needs to have a minimum and a maximum value that suit the patient
+
+
+
+
+
+
+
+Windows from ideas:
+
+
+* Crete a phone window to replicate the SMS
+* Crete a pager interface with patient details
+* Danger sing for over pass measures on patient modules
+
+
+
+
+
+Program functionalists:
+
+* Danger sing for over pass measures on patient modules V
+*
