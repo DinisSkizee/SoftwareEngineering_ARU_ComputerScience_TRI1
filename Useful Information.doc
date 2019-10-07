@@ -8,7 +8,7 @@ Patient Monitoring
 	* Weight (measure at kg) 
 	* Age + Height (const) 
 	 
-	Each module needs to have a minimum and a maximum value that suit the patient 
+	Each module needs to have a minimum and a maximum value that suits the patient 
 	 
 	Windows forms ideas 
 	 
