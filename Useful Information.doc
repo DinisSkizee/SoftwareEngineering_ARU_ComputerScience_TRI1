@@ -1,51 +1,52 @@
-Patient Monitoring
 
-* Blood Pressure (Systolic and Diastolic)
-* Pulse Rate
-* Breathing Rate (measure bpm)
-* Temperature (measure at Celsius)
-* Weight (measure at kg)
-* Age + Height (const)
-
-Each module needs to have a minimum and a maximum value that suit the patient
-
-Windows forms ideas
-
-* Create a phone window to replicate the SMS
-* Create a pager interface with patient details
-* Danger sing for over pass measures on patient modules
-
-Program functionalities
-
-* Danger sing for over pass measures on patient modules
-
-Central Station 
-
-* Show bedsides on central station
-* DANGER must be visible
-* Room details
-
-Medical Staff
-
-* Register (On Call / Hospital) 
-* Senior Doctors can (De)Register with e-mail
-
-Management
-
-* Response time 
-* Dates (Times for the (de)register for each call)
-
-Login
-
-* The user can login and gets redirected to the page he wants to access or by default the home screen
-* The staff can access patient monitor
-* Check patient info/details
-* Monitor patient behaviour
-* Register/deregister
-* Update patient conditions
-* Set limits
-* Emergency updates
-
-The following options lead to a different UI
-
+Patient Monitoring 
+	 
+	* Blood Pressure (Systolic and Diastolic) 
+	* Pulse Rate 
+	* Breathing Rate (measure bpm) 
+	* Temperature (measure at Celsius) 
+	* Weight (measure at kg) 
+	* Age + Height (const) 
+	 
+	Each module needs to have a minimum and a maximum value that suit the patient 
+	 
+	Windows forms ideas 
+	 
+	* Create a phone window to replicate the SMS 
+	* Create a pager interface with patient details 
+	* Danger sign if it exceeds the limit measures on the patient modules 
+	 
+	Program functionalities 
+	 
+	* Danger sign if it exceeds the limit measures on the patient modules 
+	 
+	Central Station 
+	 
+	* Show bedsides + beds on central station 
+	* DANGER must be visible 
+	* Room details 
+	 
+	Medical Staff 
+	 
+	* Register (On Call / Hospital) 
+	* Senior Doctors can (De)Register with e-mail 
+	 
+	Management 
+	 
+	* Response time 
+	* Dates (Times for the (de)register for each call) 
+	 
+	Login 
+	 
+	* The user can login and gets redirected to the page he wants to access or by default the home screen 
+	* The staff can access patient monitor 
+	* Check patient info/details 
+	* Monitor patient behaviour 
+	* Register/deregister 
+	* Update patient conditions 
+	* Set limits 
+	* Emergency updates 
+	 
+	The following options lead to a different UI 
+	 
 
