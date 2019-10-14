@@ -93,8 +93,8 @@ namespace FinalProject
             // passwordBox
             // 
             this.passwordBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordBox.BackColor = System.Drawing.SystemColors.Menu;
-            this.passwordBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.passwordBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.passwordBox.Location = new System.Drawing.Point(69, 114);
@@ -129,7 +129,7 @@ namespace FinalProject
             this.UsernameTextBox.Enabled = false;
             this.UsernameTextBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.UsernameTextBox.Location = new System.Drawing.Point(69, 12);
+            this.UsernameTextBox.Location = new System.Drawing.Point(69, 8);
             this.UsernameTextBox.Multiline = true;
             this.UsernameTextBox.Name = "UsernameTextBox";
             this.UsernameTextBox.ReadOnly = true;
@@ -156,8 +156,8 @@ namespace FinalProject
             // 
             // usernameBox
             // 
-            this.usernameBox.BackColor = System.Drawing.SystemColors.Menu;
-            this.usernameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usernameBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.usernameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.usernameBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.usernameBox.Location = new System.Drawing.Point(69, 36);
