@@ -41,5 +41,22 @@ namespace FinalProject
         {
             Application.Exit();
         }
+
+        private void MinimizeButtonAfterLogin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void MaximizeButtonAfterLogin_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
     }
 }

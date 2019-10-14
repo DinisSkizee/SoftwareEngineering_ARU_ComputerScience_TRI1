@@ -6,7 +6,7 @@ namespace FinalProject
 {
     public partial class LoginForm : Form
     {
-        // Draggable Panel1 //
+        // Draggable Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -52,7 +52,7 @@ namespace FinalProject
             }
         }
         // KeyDown feature for a better user experience on the login form
-        // Enter to click the Login Button automatically
+        // Enter to click the Login Button automatically - Dinis & Jorge
         private void usernameBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -69,6 +69,7 @@ namespace FinalProject
             }
         }
 
+        // Just a regular close button - Dinis & Jorge
         private void CloseButtonLoginForm_Click(object sender, EventArgs e)
         {
             Application.Exit();
