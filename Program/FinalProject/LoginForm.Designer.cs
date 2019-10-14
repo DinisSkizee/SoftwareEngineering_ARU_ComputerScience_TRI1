@@ -32,7 +32,6 @@ namespace FinalProject
         private void InitializeComponent()
         {
             this.GreyBackgroundLogin = new System.Windows.Forms.Panel();
-            this.CloseButtonLoginForm = new System.Windows.Forms.PictureBox();
             this.WelcomeTextBox = new System.Windows.Forms.TextBox();
             this.WhitePanelLogin = new System.Windows.Forms.Panel();
             this.passwordBox = new System.Windows.Forms.TextBox();
@@ -40,15 +39,19 @@ namespace FinalProject
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
             this.usernameBox = new System.Windows.Forms.TextBox();
+            this.MinimizeButtonLoginForm = new System.Windows.Forms.PictureBox();
+            this.CloseButtonLoginForm = new System.Windows.Forms.PictureBox();
             this.GreyBackgroundLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).BeginInit();
             this.WhitePanelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLoginForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).BeginInit();
             this.SuspendLayout();
             // 
             // GreyBackgroundLogin
             // 
             this.GreyBackgroundLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.GreyBackgroundLogin.Controls.Add(this.CloseButtonLoginForm);
+            this.GreyBackgroundLogin.Controls.Add(this.MinimizeButtonLoginForm);
             this.GreyBackgroundLogin.Controls.Add(this.WelcomeTextBox);
             this.GreyBackgroundLogin.Controls.Add(this.WhitePanelLogin);
             this.GreyBackgroundLogin.Location = new System.Drawing.Point(0, 0);
@@ -56,17 +59,6 @@ namespace FinalProject
             this.GreyBackgroundLogin.Size = new System.Drawing.Size(1000, 550);
             this.GreyBackgroundLogin.TabIndex = 0;
             this.GreyBackgroundLogin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GreyBackgroundLogin_MouseMove);
-            // 
-            // CloseButtonLoginForm
-            // 
-            this.CloseButtonLoginForm.Image = global::FinalProject.Properties.Resources.icons8_close_window_24;
-            this.CloseButtonLoginForm.Location = new System.Drawing.Point(953, 8);
-            this.CloseButtonLoginForm.Name = "CloseButtonLoginForm";
-            this.CloseButtonLoginForm.Size = new System.Drawing.Size(35, 35);
-            this.CloseButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CloseButtonLoginForm.TabIndex = 11;
-            this.CloseButtonLoginForm.TabStop = false;
-            this.CloseButtonLoginForm.Click += new System.EventHandler(this.CloseButtonLoginForm_Click);
             // 
             // WelcomeTextBox
             // 
@@ -175,6 +167,28 @@ namespace FinalProject
             this.usernameBox.TabIndex = 0;
             this.usernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameBox_KeyDown);
             // 
+            // MinimizeButtonLoginForm
+            // 
+            this.MinimizeButtonLoginForm.Image = global::FinalProject.Properties.Resources.minimize__1_;
+            this.MinimizeButtonLoginForm.Location = new System.Drawing.Point(908, 12);
+            this.MinimizeButtonLoginForm.Name = "MinimizeButtonLoginForm";
+            this.MinimizeButtonLoginForm.Size = new System.Drawing.Size(31, 31);
+            this.MinimizeButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MinimizeButtonLoginForm.TabIndex = 11;
+            this.MinimizeButtonLoginForm.TabStop = false;
+            this.MinimizeButtonLoginForm.Click += new System.EventHandler(this.MinimizeButtonLoginForm_Click);
+            // 
+            // CloseButtonLoginForm
+            // 
+            this.CloseButtonLoginForm.Image = global::FinalProject.Properties.Resources.close;
+            this.CloseButtonLoginForm.Location = new System.Drawing.Point(957, 12);
+            this.CloseButtonLoginForm.Name = "CloseButtonLoginForm";
+            this.CloseButtonLoginForm.Size = new System.Drawing.Size(31, 31);
+            this.CloseButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CloseButtonLoginForm.TabIndex = 12;
+            this.CloseButtonLoginForm.TabStop = false;
+            this.CloseButtonLoginForm.Click += new System.EventHandler(this.CloseButtonLoginForm_Click_1);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,9 +200,10 @@ namespace FinalProject
             this.Name = "LoginForm";
             this.GreyBackgroundLogin.ResumeLayout(false);
             this.GreyBackgroundLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).EndInit();
             this.WhitePanelLogin.ResumeLayout(false);
             this.WhitePanelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLoginForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,7 +218,8 @@ namespace FinalProject
         private System.Windows.Forms.TextBox UsernameTextBox;
         private System.Windows.Forms.TextBox WelcomeTextBox;
         private System.Windows.Forms.TextBox passwordBox;
-        private System.Windows.Forms.PictureBox CloseButtonLoginForm;
+        private PictureBox CloseButtonLoginForm;
+        private PictureBox MinimizeButtonLoginForm;
     }
 }
 

@@ -53,6 +53,7 @@
             // 
             // MaximizeButtonAfterLogin
             // 
+            this.MaximizeButtonAfterLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MaximizeButtonAfterLogin.Image = global::FinalProject.Properties.Resources.maximize_size_option;
             this.MaximizeButtonAfterLogin.Location = new System.Drawing.Point(917, 10);
             this.MaximizeButtonAfterLogin.Name = "MaximizeButtonAfterLogin";

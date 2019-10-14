@@ -19,6 +19,7 @@ namespace FinalProject
 
         public LoginForm()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 
@@ -31,8 +32,10 @@ namespace FinalProject
             if (usernameBox.Text == "admin" && passwordBox.Text == "admin")
             {
                 AfterLogin afterLogin = new AfterLogin();
-                this.Hide();
                 afterLogin.Show();
+                afterLogin.Location = this.Location;
+                this.Hide();
+                
             }
             else
             {
@@ -75,6 +78,14 @@ namespace FinalProject
             Application.Exit();
         }
 
+        private void CloseButtonLoginForm_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void MinimizeButtonLoginForm_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
