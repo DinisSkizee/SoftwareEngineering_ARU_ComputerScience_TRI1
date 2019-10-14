@@ -187,7 +187,6 @@ namespace FinalProject
             this.CloseButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CloseButtonLoginForm.TabIndex = 12;
             this.CloseButtonLoginForm.TabStop = false;
-            this.CloseButtonLoginForm.Click += new System.EventHandler(this.CloseButtonLoginForm_Click_1);
             // 
             // LoginForm
             // 

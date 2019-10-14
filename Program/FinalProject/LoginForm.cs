@@ -35,14 +35,12 @@ namespace FinalProject
                 afterLogin.Show();
                 afterLogin.Location = this.Location;
                 this.Hide();
-                
             }
             else
             {
                 usernameBox.Clear();
                 passwordBox.Clear();
                 MessageBox.Show("The Username or Password is incorrect, Please try again.");
-
             }
         }
         private void GreyBackgroundLogin_MouseMove(object sender, MouseEventArgs e)
@@ -74,11 +72,6 @@ namespace FinalProject
 
         // Just a regular close button - Dinis & Jorge
         private void CloseButtonLoginForm_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void CloseButtonLoginForm_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
