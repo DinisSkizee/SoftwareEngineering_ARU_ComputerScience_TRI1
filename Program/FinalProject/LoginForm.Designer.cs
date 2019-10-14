@@ -105,7 +105,7 @@ namespace FinalProject
             this.passwordBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.passwordBox.Location = new System.Drawing.Point(77, 114);
+            this.passwordBox.Location = new System.Drawing.Point(69, 114);
             this.passwordBox.Multiline = true;
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
@@ -120,7 +120,7 @@ namespace FinalProject
             this.PasswordTextBox.Enabled = false;
             this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(77, 86);
+            this.PasswordTextBox.Location = new System.Drawing.Point(69, 86);
             this.PasswordTextBox.Multiline = true;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.ReadOnly = true;
@@ -137,7 +137,7 @@ namespace FinalProject
             this.UsernameTextBox.Enabled = false;
             this.UsernameTextBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.UsernameTextBox.Location = new System.Drawing.Point(77, 12);
+            this.UsernameTextBox.Location = new System.Drawing.Point(69, 12);
             this.UsernameTextBox.Multiline = true;
             this.UsernameTextBox.Name = "UsernameTextBox";
             this.UsernameTextBox.ReadOnly = true;
@@ -154,7 +154,7 @@ namespace FinalProject
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Location = new System.Drawing.Point(77, 178);
+            this.LoginButton.Location = new System.Drawing.Point(69, 179);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(300, 44);
             this.LoginButton.TabIndex = 2;
@@ -168,7 +168,7 @@ namespace FinalProject
             this.usernameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.usernameBox.Location = new System.Drawing.Point(77, 36);
+            this.usernameBox.Location = new System.Drawing.Point(69, 36);
             this.usernameBox.Multiline = true;
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(300, 44);
