@@ -59,5 +59,20 @@ namespace FinalProject
         }
         #endregion
 
+        private void BedsButton_Click(object sender, EventArgs e)
+        {
+            BedSideView bedsideview = new BedSideView();
+            bedsideview.Show();
+            bedsideview.Location = this.Location;
+            this.Hide();
+        }
+
+        private void CentralStationButton_Click(object sender, EventArgs e)
+        {
+            CentralStation centralstation = new CentralStation();
+            centralstation.Show();
+            centralstation.Location = this.Location;
+            this.Hide();
+        }
     }
 }
