@@ -35,7 +35,6 @@ namespace FinalProject
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        #endregion 
-
+        #endregion
     }
 }
