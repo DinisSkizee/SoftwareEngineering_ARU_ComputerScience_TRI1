@@ -6,16 +6,6 @@ namespace FinalProject
 {
     public partial class LoginForm : Form
     {
-        // Draggable Panel
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-
-        [DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [DllImportAttribute("user32.dll")]
-        public static extern bool ReleaseCapture();
-        // End  (continues in the **) - Dinis & Jorge
-
 
         public LoginForm()
         {
@@ -24,6 +14,7 @@ namespace FinalProject
         }
 
 
+        #region Login Button
         /* Username & Password check; Clear to remove bugs and MessageBox to
         let the user know something wrong happened. - Dinis & Jorge */
 
@@ -43,17 +34,31 @@ namespace FinalProject
                 MessageBox.Show("The Username or Password is incorrect, Please try again.");
             }
         }
+        #endregion
+
+        #region Draggable Grey Background Panel
+        // Draggable Panel
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
         private void GreyBackgroundLogin_MouseMove(object sender, MouseEventArgs e)
         {
-            // ** Draggable Panel1  - Dinis & Jorge
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+        #endregion
+
+        #region Enter to Click on the Login Button shortcut
         // KeyDown feature for a better user experience on the login form
-        // Enter to click the Login Button automatically - Dinis & Jorge
+        // Enter to click the Login Button automatically
         private void usernameBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -69,16 +74,21 @@ namespace FinalProject
                 LoginButton.PerformClick();
             }
         }
+        #endregion
 
-        // Just a regular close button - Dinis & Jorge
+        #region Close/Minimize Buttons
+        // Close Button
         private void CloseButtonLoginForm_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // Minimize Button
         private void MinimizeButtonLoginForm_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        #endregion
+
     }
 }

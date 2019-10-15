@@ -1,19 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace FinalProject
 {
     public partial class AfterLogin : Form
     {
-        // Draggable Panel2 //
+
+        public AfterLogin()
+        {
+            InitializeComponent();
+        }
+
+        #region Draggable Top Panel
+        // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -21,32 +21,25 @@ namespace FinalProject
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        // End  (continues in the **) - Dinis //
-        public AfterLogin()
+
+        private void PanelTop_MouseMove(object sender, MouseEventArgs e)
         {
-            InitializeComponent();
-        }
-
-            // ** Draggable PanelTop  - Dinis//
-            private void PanelTop_MouseMove(object sender, MouseEventArgs e)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
-                {
-                    ReleaseCapture();
-                    SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-                }
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+        #endregion
 
+        #region Close/Maximize/Minimize Buttons
+        // Close Button
         private void CloseButtonAfterLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void MinimizeButtonAfterLogin_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
+        // Maximize Button
         private void MaximizeButtonAfterLogin_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -58,5 +51,13 @@ namespace FinalProject
                 this.WindowState = FormWindowState.Normal;
             }
         }
+
+        // Minimize Button
+        private void MinimizeButtonAfterLogin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        #endregion
+
     }
 }

@@ -32,6 +32,8 @@ namespace FinalProject
         private void InitializeComponent()
         {
             this.GreyBackgroundLogin = new System.Windows.Forms.Panel();
+            this.CloseButtonLoginForm = new System.Windows.Forms.PictureBox();
+            this.MinimizeButtonLoginForm = new System.Windows.Forms.PictureBox();
             this.WelcomeTextBox = new System.Windows.Forms.TextBox();
             this.WhitePanelLogin = new System.Windows.Forms.Panel();
             this.passwordBox = new System.Windows.Forms.TextBox();
@@ -39,12 +41,10 @@ namespace FinalProject
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
             this.usernameBox = new System.Windows.Forms.TextBox();
-            this.MinimizeButtonLoginForm = new System.Windows.Forms.PictureBox();
-            this.CloseButtonLoginForm = new System.Windows.Forms.PictureBox();
             this.GreyBackgroundLogin.SuspendLayout();
-            this.WhitePanelLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLoginForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLoginForm)).BeginInit();
+            this.WhitePanelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // GreyBackgroundLogin
@@ -55,10 +55,35 @@ namespace FinalProject
             this.GreyBackgroundLogin.Controls.Add(this.WelcomeTextBox);
             this.GreyBackgroundLogin.Controls.Add(this.WhitePanelLogin);
             this.GreyBackgroundLogin.Location = new System.Drawing.Point(0, 0);
+            this.GreyBackgroundLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GreyBackgroundLogin.Name = "GreyBackgroundLogin";
-            this.GreyBackgroundLogin.Size = new System.Drawing.Size(1000, 550);
+            this.GreyBackgroundLogin.Size = new System.Drawing.Size(750, 447);
             this.GreyBackgroundLogin.TabIndex = 0;
             this.GreyBackgroundLogin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GreyBackgroundLogin_MouseMove);
+            // 
+            // CloseButtonLoginForm
+            // 
+            this.CloseButtonLoginForm.Image = global::FinalProject.Properties.Resources.close;
+            this.CloseButtonLoginForm.Location = new System.Drawing.Point(718, 10);
+            this.CloseButtonLoginForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CloseButtonLoginForm.Name = "CloseButtonLoginForm";
+            this.CloseButtonLoginForm.Size = new System.Drawing.Size(23, 25);
+            this.CloseButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CloseButtonLoginForm.TabIndex = 12;
+            this.CloseButtonLoginForm.TabStop = false;
+            this.CloseButtonLoginForm.Click += new System.EventHandler(this.CloseButtonLoginForm_Click);
+            // 
+            // MinimizeButtonLoginForm
+            // 
+            this.MinimizeButtonLoginForm.Image = global::FinalProject.Properties.Resources.minimize__1_;
+            this.MinimizeButtonLoginForm.Location = new System.Drawing.Point(681, 10);
+            this.MinimizeButtonLoginForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimizeButtonLoginForm.Name = "MinimizeButtonLoginForm";
+            this.MinimizeButtonLoginForm.Size = new System.Drawing.Size(23, 25);
+            this.MinimizeButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MinimizeButtonLoginForm.TabIndex = 11;
+            this.MinimizeButtonLoginForm.TabStop = false;
+            this.MinimizeButtonLoginForm.Click += new System.EventHandler(this.MinimizeButtonLoginForm_Click);
             // 
             // WelcomeTextBox
             // 
@@ -67,10 +92,11 @@ namespace FinalProject
             this.WelcomeTextBox.Enabled = false;
             this.WelcomeTextBox.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WelcomeTextBox.ForeColor = System.Drawing.Color.White;
-            this.WelcomeTextBox.Location = new System.Drawing.Point(185, 42);
+            this.WelcomeTextBox.Location = new System.Drawing.Point(139, 34);
+            this.WelcomeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WelcomeTextBox.Name = "WelcomeTextBox";
             this.WelcomeTextBox.ReadOnly = true;
-            this.WelcomeTextBox.Size = new System.Drawing.Size(631, 44);
+            this.WelcomeTextBox.Size = new System.Drawing.Size(473, 36);
             this.WelcomeTextBox.TabIndex = 10;
             this.WelcomeTextBox.TabStop = false;
             this.WelcomeTextBox.Text = "Welcome to Eastern Anglia Hospital Trust";
@@ -85,9 +111,10 @@ namespace FinalProject
             this.WhitePanelLogin.Controls.Add(this.UsernameTextBox);
             this.WhitePanelLogin.Controls.Add(this.LoginButton);
             this.WhitePanelLogin.Controls.Add(this.usernameBox);
-            this.WhitePanelLogin.Location = new System.Drawing.Point(281, 142);
+            this.WhitePanelLogin.Location = new System.Drawing.Point(211, 116);
+            this.WhitePanelLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WhitePanelLogin.Name = "WhitePanelLogin";
-            this.WhitePanelLogin.Size = new System.Drawing.Size(438, 264);
+            this.WhitePanelLogin.Size = new System.Drawing.Size(328, 214);
             this.WhitePanelLogin.TabIndex = 0;
             // 
             // passwordBox
@@ -97,11 +124,12 @@ namespace FinalProject
             this.passwordBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.passwordBox.Location = new System.Drawing.Point(69, 114);
+            this.passwordBox.Location = new System.Drawing.Point(52, 93);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordBox.Multiline = true;
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
-            this.passwordBox.Size = new System.Drawing.Size(300, 44);
+            this.passwordBox.Size = new System.Drawing.Size(226, 36);
             this.passwordBox.TabIndex = 1;
             this.passwordBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordBox_KeyDown);
             // 
@@ -112,11 +140,12 @@ namespace FinalProject
             this.PasswordTextBox.Enabled = false;
             this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(69, 86);
+            this.PasswordTextBox.Location = new System.Drawing.Point(52, 70);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PasswordTextBox.Multiline = true;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.ReadOnly = true;
-            this.PasswordTextBox.Size = new System.Drawing.Size(300, 22);
+            this.PasswordTextBox.Size = new System.Drawing.Size(225, 18);
             this.PasswordTextBox.TabIndex = 10;
             this.PasswordTextBox.TabStop = false;
             this.PasswordTextBox.Text = "Password";
@@ -129,11 +158,12 @@ namespace FinalProject
             this.UsernameTextBox.Enabled = false;
             this.UsernameTextBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.UsernameTextBox.Location = new System.Drawing.Point(69, 8);
+            this.UsernameTextBox.Location = new System.Drawing.Point(52, 7);
+            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UsernameTextBox.Multiline = true;
             this.UsernameTextBox.Name = "UsernameTextBox";
             this.UsernameTextBox.ReadOnly = true;
-            this.UsernameTextBox.Size = new System.Drawing.Size(300, 22);
+            this.UsernameTextBox.Size = new System.Drawing.Size(225, 18);
             this.UsernameTextBox.TabIndex = 10;
             this.UsernameTextBox.TabStop = false;
             this.UsernameTextBox.Text = "Username";
@@ -146,9 +176,10 @@ namespace FinalProject
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Location = new System.Drawing.Point(69, 179);
+            this.LoginButton.Location = new System.Drawing.Point(52, 145);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(300, 44);
+            this.LoginButton.Size = new System.Drawing.Size(225, 36);
             this.LoginButton.TabIndex = 2;
             this.LoginButton.Text = "LOGIN";
             this.LoginButton.UseVisualStyleBackColor = false;
@@ -160,49 +191,30 @@ namespace FinalProject
             this.usernameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.usernameBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.usernameBox.Location = new System.Drawing.Point(69, 36);
+            this.usernameBox.Location = new System.Drawing.Point(52, 29);
+            this.usernameBox.Margin = new System.Windows.Forms.Padding(2);
             this.usernameBox.Multiline = true;
             this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(300, 44);
+            this.usernameBox.Size = new System.Drawing.Size(226, 36);
             this.usernameBox.TabIndex = 0;
             this.usernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameBox_KeyDown);
             // 
-            // MinimizeButtonLoginForm
-            // 
-            this.MinimizeButtonLoginForm.Image = global::FinalProject.Properties.Resources.minimize__1_;
-            this.MinimizeButtonLoginForm.Location = new System.Drawing.Point(908, 12);
-            this.MinimizeButtonLoginForm.Name = "MinimizeButtonLoginForm";
-            this.MinimizeButtonLoginForm.Size = new System.Drawing.Size(31, 31);
-            this.MinimizeButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MinimizeButtonLoginForm.TabIndex = 11;
-            this.MinimizeButtonLoginForm.TabStop = false;
-            this.MinimizeButtonLoginForm.Click += new System.EventHandler(this.MinimizeButtonLoginForm_Click);
-            // 
-            // CloseButtonLoginForm
-            // 
-            this.CloseButtonLoginForm.Image = global::FinalProject.Properties.Resources.close;
-            this.CloseButtonLoginForm.Location = new System.Drawing.Point(957, 12);
-            this.CloseButtonLoginForm.Name = "CloseButtonLoginForm";
-            this.CloseButtonLoginForm.Size = new System.Drawing.Size(31, 31);
-            this.CloseButtonLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CloseButtonLoginForm.TabIndex = 12;
-            this.CloseButtonLoginForm.TabStop = false;
-            // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1000, 550);
+            this.ClientSize = new System.Drawing.Size(750, 447);
             this.Controls.Add(this.GreyBackgroundLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginForm";
             this.GreyBackgroundLogin.ResumeLayout(false);
             this.GreyBackgroundLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLoginForm)).EndInit();
             this.WhitePanelLogin.ResumeLayout(false);
             this.WhitePanelLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLoginForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).EndInit();
             this.ResumeLayout(false);
 
         }
