@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FinalProject
@@ -17,7 +10,6 @@ namespace FinalProject
         {
             InitializeComponent();
         }
-
 
         #region Draggable Top Panel
         // Draggable Top Panel
@@ -39,22 +31,10 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Maximize/Minimize Button
+        #region Close/Minimize Buttons
         private void CloseButtonSocketSelection_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void MaximizeButtonSocketSelection_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
         }
 
         private void MinimizeButtonSocketSelection_Click(object sender, EventArgs e)

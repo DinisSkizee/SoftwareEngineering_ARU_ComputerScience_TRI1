@@ -40,18 +40,17 @@
             this.Display1 = new System.Windows.Forms.Panel();
             this.EjectButton1 = new System.Windows.Forms.Button();
             this.BedPicture = new System.Windows.Forms.PictureBox();
-            this.MaximizeButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.CloseButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.Display2 = new System.Windows.Forms.Panel();
             this.EjectButton2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Display4 = new System.Windows.Forms.Panel();
+            this.EjectButton4 = new System.Windows.Forms.Button();
+            this.Display3 = new System.Windows.Forms.Panel();
+            this.EjectButton3 = new System.Windows.Forms.Button();
+            this.BigInfoPanelBedSideView = new System.Windows.Forms.Panel();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MaximizeButtonBedSideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +58,6 @@
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PanelTop.Controls.Add(this.MaximizeButtonBedSideView);
             this.PanelTop.Controls.Add(this.MinimizeButtonBedSideView);
             this.PanelTop.Controls.Add(this.CloseButtonBedSideView);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -76,7 +74,7 @@
             this.Bed1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed1.ForeColor = System.Drawing.Color.White;
-            this.Bed1.Location = new System.Drawing.Point(23, 49);
+            this.Bed1.Location = new System.Drawing.Point(12, 49);
             this.Bed1.Name = "Bed1";
             this.Bed1.Size = new System.Drawing.Size(40, 25);
             this.Bed1.TabIndex = 1;
@@ -89,7 +87,7 @@
             this.Bed5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed5.ForeColor = System.Drawing.Color.White;
-            this.Bed5.Location = new System.Drawing.Point(23, 79);
+            this.Bed5.Location = new System.Drawing.Point(12, 79);
             this.Bed5.Name = "Bed5";
             this.Bed5.Size = new System.Drawing.Size(40, 25);
             this.Bed5.TabIndex = 5;
@@ -102,7 +100,7 @@
             this.Bed6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed6.ForeColor = System.Drawing.Color.White;
-            this.Bed6.Location = new System.Drawing.Point(83, 79);
+            this.Bed6.Location = new System.Drawing.Point(75, 79);
             this.Bed6.Name = "Bed6";
             this.Bed6.Size = new System.Drawing.Size(40, 25);
             this.Bed6.TabIndex = 6;
@@ -115,7 +113,7 @@
             this.Bed7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed7.ForeColor = System.Drawing.Color.White;
-            this.Bed7.Location = new System.Drawing.Point(143, 79);
+            this.Bed7.Location = new System.Drawing.Point(135, 79);
             this.Bed7.Name = "Bed7";
             this.Bed7.Size = new System.Drawing.Size(40, 25);
             this.Bed7.TabIndex = 7;
@@ -128,7 +126,7 @@
             this.Bed8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed8.ForeColor = System.Drawing.Color.White;
-            this.Bed8.Location = new System.Drawing.Point(203, 79);
+            this.Bed8.Location = new System.Drawing.Point(198, 79);
             this.Bed8.Name = "Bed8";
             this.Bed8.Size = new System.Drawing.Size(40, 25);
             this.Bed8.TabIndex = 8;
@@ -141,7 +139,7 @@
             this.Bed4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed4.ForeColor = System.Drawing.Color.White;
-            this.Bed4.Location = new System.Drawing.Point(203, 49);
+            this.Bed4.Location = new System.Drawing.Point(198, 49);
             this.Bed4.Name = "Bed4";
             this.Bed4.Size = new System.Drawing.Size(40, 25);
             this.Bed4.TabIndex = 4;
@@ -154,7 +152,7 @@
             this.Bed3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed3.ForeColor = System.Drawing.Color.White;
-            this.Bed3.Location = new System.Drawing.Point(143, 49);
+            this.Bed3.Location = new System.Drawing.Point(135, 49);
             this.Bed3.Name = "Bed3";
             this.Bed3.Size = new System.Drawing.Size(40, 25);
             this.Bed3.TabIndex = 3;
@@ -167,7 +165,7 @@
             this.Bed2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bed2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed2.ForeColor = System.Drawing.Color.White;
-            this.Bed2.Location = new System.Drawing.Point(83, 49);
+            this.Bed2.Location = new System.Drawing.Point(75, 49);
             this.Bed2.Name = "Bed2";
             this.Bed2.Size = new System.Drawing.Size(40, 25);
             this.Bed2.TabIndex = 2;
@@ -191,7 +189,8 @@
             this.EjectButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EjectButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.EjectButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EjectButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.EjectButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.EjectButton1.ForeColor = System.Drawing.Color.White;
             this.EjectButton1.Location = new System.Drawing.Point(353, 213);
             this.EjectButton1.Name = "EjectButton1";
             this.EjectButton1.Size = new System.Drawing.Size(20, 20);
@@ -204,29 +203,16 @@
             this.BedPicture.Image = global::FinalProject.Properties.Resources.aaa;
             this.BedPicture.Location = new System.Drawing.Point(12, 106);
             this.BedPicture.Name = "BedPicture";
-            this.BedPicture.Size = new System.Drawing.Size(243, 102);
+            this.BedPicture.Size = new System.Drawing.Size(226, 96);
             this.BedPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BedPicture.TabIndex = 2;
             this.BedPicture.TabStop = false;
-            // 
-            // MaximizeButtonBedSideView
-            // 
-            this.MaximizeButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MaximizeButtonBedSideView.Image = global::FinalProject.Properties.Resources.maximize_size_option;
-            this.MaximizeButtonBedSideView.Location = new System.Drawing.Point(688, 8);
-            this.MaximizeButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeButtonBedSideView.Name = "MaximizeButtonBedSideView";
-            this.MaximizeButtonBedSideView.Size = new System.Drawing.Size(23, 25);
-            this.MaximizeButtonBedSideView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MaximizeButtonBedSideView.TabIndex = 1;
-            this.MaximizeButtonBedSideView.TabStop = false;
-            this.MaximizeButtonBedSideView.Click += new System.EventHandler(this.MaximizeButtonBedSideView_Click);
             // 
             // MinimizeButtonBedSideView
             // 
             this.MinimizeButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MinimizeButtonBedSideView.Image = global::FinalProject.Properties.Resources.minimize__1_;
-            this.MinimizeButtonBedSideView.Location = new System.Drawing.Point(657, 8);
+            this.MinimizeButtonBedSideView.Location = new System.Drawing.Point(681, 10);
             this.MinimizeButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonBedSideView.Name = "MinimizeButtonBedSideView";
             this.MinimizeButtonBedSideView.Size = new System.Drawing.Size(23, 25);
@@ -239,7 +225,7 @@
             // 
             this.CloseButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseButtonBedSideView.Image = global::FinalProject.Properties.Resources.close;
-            this.CloseButtonBedSideView.Location = new System.Drawing.Point(718, 8);
+            this.CloseButtonBedSideView.Location = new System.Drawing.Point(716, 10);
             this.CloseButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonBedSideView.Name = "CloseButtonBedSideView";
             this.CloseButtonBedSideView.Size = new System.Drawing.Size(23, 25);
@@ -265,60 +251,74 @@
             this.EjectButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EjectButton2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.EjectButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EjectButton2.ForeColor = System.Drawing.Color.Transparent;
+            this.EjectButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.EjectButton2.ForeColor = System.Drawing.Color.White;
             this.EjectButton2.Location = new System.Drawing.Point(377, 213);
             this.EjectButton2.Name = "EjectButton2";
             this.EjectButton2.Size = new System.Drawing.Size(20, 20);
             this.EjectButton2.TabIndex = 15;
             this.EjectButton2.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // Display4
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(398, 330);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(340, 100);
-            this.panel1.TabIndex = 18;
+            this.Display4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Display4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display4.ForeColor = System.Drawing.Color.White;
+            this.Display4.Location = new System.Drawing.Point(398, 335);
+            this.Display4.Name = "Display4";
+            this.Display4.Size = new System.Drawing.Size(340, 100);
+            this.Display4.TabIndex = 18;
             // 
-            // button1
+            // EjectButton4
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::FinalProject.Properties.Resources.eject_pngrepo_com;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(377, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 20);
-            this.button1.TabIndex = 19;
-            this.button1.UseVisualStyleBackColor = false;
+            this.EjectButton4.BackColor = System.Drawing.Color.Transparent;
+            this.EjectButton4.BackgroundImage = global::FinalProject.Properties.Resources.eject_pngrepo_com;
+            this.EjectButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EjectButton4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.EjectButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EjectButton4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.EjectButton4.ForeColor = System.Drawing.Color.White;
+            this.EjectButton4.Location = new System.Drawing.Point(377, 334);
+            this.EjectButton4.Name = "EjectButton4";
+            this.EjectButton4.Size = new System.Drawing.Size(20, 20);
+            this.EjectButton4.TabIndex = 19;
+            this.EjectButton4.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // Display3
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(12, 330);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(340, 100);
-            this.panel2.TabIndex = 16;
+            this.Display3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Display3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display3.ForeColor = System.Drawing.Color.White;
+            this.Display3.Location = new System.Drawing.Point(12, 335);
+            this.Display3.Name = "Display3";
+            this.Display3.Size = new System.Drawing.Size(340, 100);
+            this.Display3.TabIndex = 16;
             // 
-            // button2
+            // EjectButton3
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::FinalProject.Properties.Resources.eject_pngrepo_com;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(353, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(20, 20);
-            this.button2.TabIndex = 17;
-            this.button2.UseVisualStyleBackColor = false;
+            this.EjectButton3.BackColor = System.Drawing.Color.Transparent;
+            this.EjectButton3.BackgroundImage = global::FinalProject.Properties.Resources.eject_pngrepo_com;
+            this.EjectButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EjectButton3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.EjectButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EjectButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.EjectButton3.ForeColor = System.Drawing.Color.White;
+            this.EjectButton3.Location = new System.Drawing.Point(353, 334);
+            this.EjectButton3.Name = "EjectButton3";
+            this.EjectButton3.Size = new System.Drawing.Size(20, 20);
+            this.EjectButton3.TabIndex = 17;
+            this.EjectButton3.UseVisualStyleBackColor = false;
+            // 
+            // BigInfoPanelBedSideView
+            // 
+            this.BigInfoPanelBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BigInfoPanelBedSideView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BigInfoPanelBedSideView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BigInfoPanelBedSideView.ForeColor = System.Drawing.Color.White;
+            this.BigInfoPanelBedSideView.Location = new System.Drawing.Point(249, 44);
+            this.BigInfoPanelBedSideView.Name = "BigInfoPanelBedSideView";
+            this.BigInfoPanelBedSideView.Size = new System.Drawing.Size(489, 158);
+            this.BigInfoPanelBedSideView.TabIndex = 10;
             // 
             // BedSideView
             // 
@@ -326,12 +326,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(750, 447);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BigInfoPanelBedSideView);
+            this.Controls.Add(this.Display4);
+            this.Controls.Add(this.EjectButton4);
             this.Controls.Add(this.Display2);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.Display3);
             this.Controls.Add(this.EjectButton2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.EjectButton3);
             this.Controls.Add(this.Display1);
             this.Controls.Add(this.Bed8);
             this.Controls.Add(this.Bed4);
@@ -349,7 +350,6 @@
             this.Text = " ";
             this.PanelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MaximizeButtonBedSideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).EndInit();
             this.ResumeLayout(false);
@@ -359,7 +359,6 @@
         #endregion
 
         private System.Windows.Forms.Panel PanelTop;
-        private System.Windows.Forms.PictureBox MaximizeButtonBedSideView;
         private System.Windows.Forms.PictureBox MinimizeButtonBedSideView;
         private System.Windows.Forms.PictureBox CloseButtonBedSideView;
         private System.Windows.Forms.PictureBox BedPicture;
@@ -375,9 +374,10 @@
         private System.Windows.Forms.Button EjectButton1;
         private System.Windows.Forms.Panel Display2;
         private System.Windows.Forms.Button EjectButton2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel Display4;
+        private System.Windows.Forms.Button EjectButton4;
+        private System.Windows.Forms.Panel Display3;
+        private System.Windows.Forms.Button EjectButton3;
+        private System.Windows.Forms.Panel BigInfoPanelBedSideView;
     }
 }

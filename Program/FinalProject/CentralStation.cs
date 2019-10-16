@@ -11,30 +11,6 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        #region Close/Maximize/Minimize Button
-        private void CloseButtonCentralStation_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void MaximizeButtonCentralStation_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-
-        private void MinimizeButtonCentralStation_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-        #endregion
-
         #region Draggable Top Panel
         // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -52,6 +28,18 @@ namespace FinalProject
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+        #endregion
+
+        #region Close/Minimize Buttons
+        private void CloseButtonCentralStation_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MinimizeButtonCentralStation_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
         #endregion
     }

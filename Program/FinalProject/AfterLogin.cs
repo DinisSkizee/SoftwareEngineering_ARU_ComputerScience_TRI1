@@ -32,24 +32,11 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Maximize/Minimize Buttons
+        #region Close/Minimize Buttons
         // Close Button
         private void CloseButtonAfterLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        // Maximize Button
-        private void MaximizeButtonAfterLogin_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
         }
 
         // Minimize Button
