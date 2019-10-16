@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class BedSideView : Form
+    public partial class BedSideView5 : Form
     {
-        public BedSideView()
+        public BedSideView5()
         {
             InitializeComponent();
         }
@@ -23,11 +23,7 @@ namespace FinalProject
 
         private void PanelTop_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+
         }
         #endregion
 
@@ -56,6 +52,14 @@ namespace FinalProject
         }
 
         #region Bed Buttons Click  -- Dinis & Jorge
+        private void Bed1_Click(object sender, EventArgs e)
+        {
+            BedSideView bedSideView1 = new BedSideView();
+            bedSideView1.Show();
+            bedSideView1.Location = this.Location;
+            this.Hide();
+        }
+
         private void Bed2_Click(object sender, EventArgs e)
         {
             BedSideView2 bedSideView2 = new BedSideView2();
@@ -77,14 +81,6 @@ namespace FinalProject
             BedSideView4 bedSideView4 = new BedSideView4();
             bedSideView4.Show();
             bedSideView4.Location = this.Location;
-            this.Hide();
-        }
-
-        private void Bed5_Click(object sender, EventArgs e)
-        {
-            BedSideView5 bedSideView5 = new BedSideView5();
-            bedSideView5.Show();
-            bedSideView5.Location = this.Location;
             this.Hide();
         }
 

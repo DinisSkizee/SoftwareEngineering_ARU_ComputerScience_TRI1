@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class BedSideView : Form
+    public partial class BedSideView2 : Form
     {
-        public BedSideView()
+        public BedSideView2()
         {
             InitializeComponent();
         }
@@ -56,11 +56,11 @@ namespace FinalProject
         }
 
         #region Bed Buttons Click  -- Dinis & Jorge
-        private void Bed2_Click(object sender, EventArgs e)
+        private void Bed1_Click(object sender, EventArgs e)
         {
-            BedSideView2 bedSideView2 = new BedSideView2();
-            bedSideView2.Show();
-            bedSideView2.Location = this.Location;
+            BedSideView bedSideView1 = new BedSideView();
+            bedSideView1.Show();
+            bedSideView1.Location = this.Location;
             this.Hide();
         }
 

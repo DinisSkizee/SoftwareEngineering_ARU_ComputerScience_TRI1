@@ -58,6 +58,48 @@
     <Compile Include="BedSideView.Designer.cs">
       <DependentUpon>BedSideView.cs</DependentUpon>
     </Compile>
+    <Compile Include="BedSideView2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView2.Designer.cs">
+      <DependentUpon>BedSideView2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedSideView3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView3.Designer.cs">
+      <DependentUpon>BedSideView3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedSideView4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView4.Designer.cs">
+      <DependentUpon>BedSideView4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedSideView5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView5.Designer.cs">
+      <DependentUpon>BedSideView5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedSideView6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView6.Designer.cs">
+      <DependentUpon>BedSideView6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedSideView7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView7.Designer.cs">
+      <DependentUpon>BedSideView7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedSideView8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedSideView8.Designer.cs">
+      <DependentUpon>BedSideView8.cs</DependentUpon>
+    </Compile>
     <Compile Include="CentralStation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +126,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BedSideView.resx">
       <DependentUpon>BedSideView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView2.resx">
+      <DependentUpon>BedSideView2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView3.resx">
+      <DependentUpon>BedSideView3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView4.resx">
+      <DependentUpon>BedSideView4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView5.resx">
+      <DependentUpon>BedSideView5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView6.resx">
+      <DependentUpon>BedSideView6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView7.resx">
+      <DependentUpon>BedSideView7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedSideView8.resx">
+      <DependentUpon>BedSideView8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CentralStation.resx">
       <DependentUpon>CentralStation.cs</DependentUpon>
