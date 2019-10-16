@@ -61,7 +61,7 @@
             // MinimizeButtonSocketSelection
             // 
             this.MinimizeButtonSocketSelection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeButtonSocketSelection.Image = global::FinalProject.Properties.Resources.minimize__1_;
+            this.MinimizeButtonSocketSelection.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.MinimizeButtonSocketSelection.Location = new System.Drawing.Point(681, 10);
             this.MinimizeButtonSocketSelection.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonSocketSelection.Name = "MinimizeButtonSocketSelection";
@@ -74,7 +74,7 @@
             // CloseButtonSocketSelection
             // 
             this.CloseButtonSocketSelection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButtonSocketSelection.Image = global::FinalProject.Properties.Resources.close;
+            this.CloseButtonSocketSelection.Image = global::FinalProject.Properties.Resources.closewhite;
             this.CloseButtonSocketSelection.Location = new System.Drawing.Point(716, 10);
             this.CloseButtonSocketSelection.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonSocketSelection.Name = "CloseButtonSocketSelection";

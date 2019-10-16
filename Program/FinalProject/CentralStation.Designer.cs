@@ -52,7 +52,7 @@
             // MinimizeButtonCentralStation
             // 
             this.MinimizeButtonCentralStation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeButtonCentralStation.Image = global::FinalProject.Properties.Resources.minimize__1_;
+            this.MinimizeButtonCentralStation.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.MinimizeButtonCentralStation.Location = new System.Drawing.Point(681, 10);
             this.MinimizeButtonCentralStation.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonCentralStation.Name = "MinimizeButtonCentralStation";
@@ -65,7 +65,7 @@
             // CloseButtonCentralStation
             // 
             this.CloseButtonCentralStation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButtonCentralStation.Image = global::FinalProject.Properties.Resources.close;
+            this.CloseButtonCentralStation.Image = global::FinalProject.Properties.Resources.closewhite;
             this.CloseButtonCentralStation.Location = new System.Drawing.Point(716, 10);
             this.CloseButtonCentralStation.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonCentralStation.Name = "CloseButtonCentralStation";

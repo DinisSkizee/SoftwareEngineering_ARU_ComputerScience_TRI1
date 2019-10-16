@@ -76,7 +76,7 @@
             // MinimizeButtonAfterLogin
             // 
             this.MinimizeButtonAfterLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeButtonAfterLogin.Image = global::FinalProject.Properties.Resources.minimize__1_;
+            this.MinimizeButtonAfterLogin.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.MinimizeButtonAfterLogin.Location = new System.Drawing.Point(681, 10);
             this.MinimizeButtonAfterLogin.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonAfterLogin.Name = "MinimizeButtonAfterLogin";
@@ -89,7 +89,7 @@
             // CloseButtonAfterLogin
             // 
             this.CloseButtonAfterLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButtonAfterLogin.Image = global::FinalProject.Properties.Resources.close;
+            this.CloseButtonAfterLogin.Image = global::FinalProject.Properties.Resources.closewhite;
             this.CloseButtonAfterLogin.Location = new System.Drawing.Point(716, 10);
             this.CloseButtonAfterLogin.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonAfterLogin.Name = "CloseButtonAfterLogin";

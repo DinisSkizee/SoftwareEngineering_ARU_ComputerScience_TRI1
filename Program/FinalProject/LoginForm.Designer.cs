@@ -177,7 +177,7 @@ namespace FinalProject
             // 
             // CloseButtonLoginForm
             // 
-            this.CloseButtonLoginForm.Image = global::FinalProject.Properties.Resources.close;
+            this.CloseButtonLoginForm.Image = global::FinalProject.Properties.Resources.closewhite;
             this.CloseButtonLoginForm.Location = new System.Drawing.Point(716, 10);
             this.CloseButtonLoginForm.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonLoginForm.Name = "CloseButtonLoginForm";
@@ -189,7 +189,7 @@ namespace FinalProject
             // 
             // MinimizeButtonLoginForm
             // 
-            this.MinimizeButtonLoginForm.Image = global::FinalProject.Properties.Resources.minimize__1_;
+            this.MinimizeButtonLoginForm.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.MinimizeButtonLoginForm.Location = new System.Drawing.Point(681, 10);
             this.MinimizeButtonLoginForm.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonLoginForm.Name = "MinimizeButtonLoginForm";
