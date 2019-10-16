@@ -179,7 +179,7 @@
             this.Display1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Display1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display1.ForeColor = System.Drawing.Color.White;
-            this.Display1.Location = new System.Drawing.Point(12, 210);
+            this.Display1.Location = new System.Drawing.Point(12, 214);
             this.Display1.Name = "Display1";
             this.Display1.Size = new System.Drawing.Size(340, 100);
             this.Display1.TabIndex = 9;
@@ -192,7 +192,7 @@
             this.EjectButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.EjectButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EjectButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.EjectButton1.Location = new System.Drawing.Point(353, 209);
+            this.EjectButton1.Location = new System.Drawing.Point(353, 213);
             this.EjectButton1.Name = "EjectButton1";
             this.EjectButton1.Size = new System.Drawing.Size(20, 20);
             this.EjectButton1.TabIndex = 13;
@@ -253,7 +253,7 @@
             this.Display2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Display2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display2.ForeColor = System.Drawing.Color.White;
-            this.Display2.Location = new System.Drawing.Point(398, 210);
+            this.Display2.Location = new System.Drawing.Point(398, 214);
             this.Display2.Name = "Display2";
             this.Display2.Size = new System.Drawing.Size(340, 100);
             this.Display2.TabIndex = 14;
@@ -266,7 +266,7 @@
             this.EjectButton2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.EjectButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EjectButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.EjectButton2.Location = new System.Drawing.Point(377, 209);
+            this.EjectButton2.Location = new System.Drawing.Point(377, 213);
             this.EjectButton2.Name = "EjectButton2";
             this.EjectButton2.Size = new System.Drawing.Size(20, 20);
             this.EjectButton2.TabIndex = 15;
@@ -277,7 +277,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(398, 326);
+            this.panel1.Location = new System.Drawing.Point(398, 330);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(340, 100);
             this.panel1.TabIndex = 18;
@@ -290,7 +290,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(377, 325);
+            this.button1.Location = new System.Drawing.Point(377, 329);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(20, 20);
             this.button1.TabIndex = 19;
@@ -301,7 +301,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(12, 326);
+            this.panel2.Location = new System.Drawing.Point(12, 330);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(340, 100);
             this.panel2.TabIndex = 16;
@@ -314,7 +314,7 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(353, 325);
+            this.button2.Location = new System.Drawing.Point(353, 329);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(20, 20);
             this.button2.TabIndex = 17;
