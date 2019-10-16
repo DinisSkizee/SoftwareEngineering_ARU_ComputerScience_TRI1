@@ -46,17 +46,18 @@
             this.PanelTop.Controls.Add(this.CloseButtonCentralStation);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
-            this.PanelTop.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 1;
+            this.PanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelTop_MouseMove);
             // 
             // MaximizeButtonCentralStation
             // 
             this.MaximizeButtonCentralStation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MaximizeButtonCentralStation.Image = global::FinalProject.Properties.Resources.maximize_size_option;
             this.MaximizeButtonCentralStation.Location = new System.Drawing.Point(688, 8);
-            this.MaximizeButtonCentralStation.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeButtonCentralStation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeButtonCentralStation.Name = "MaximizeButtonCentralStation";
             this.MaximizeButtonCentralStation.Size = new System.Drawing.Size(23, 25);
             this.MaximizeButtonCentralStation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -69,7 +70,7 @@
             this.MinimizeButtonCentralStation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MinimizeButtonCentralStation.Image = global::FinalProject.Properties.Resources.minimize__1_;
             this.MinimizeButtonCentralStation.Location = new System.Drawing.Point(657, 8);
-            this.MinimizeButtonCentralStation.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimizeButtonCentralStation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeButtonCentralStation.Name = "MinimizeButtonCentralStation";
             this.MinimizeButtonCentralStation.Size = new System.Drawing.Size(23, 25);
             this.MinimizeButtonCentralStation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -82,7 +83,7 @@
             this.CloseButtonCentralStation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseButtonCentralStation.Image = global::FinalProject.Properties.Resources.close;
             this.CloseButtonCentralStation.Location = new System.Drawing.Point(718, 8);
-            this.CloseButtonCentralStation.Margin = new System.Windows.Forms.Padding(2);
+            this.CloseButtonCentralStation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CloseButtonCentralStation.Name = "CloseButtonCentralStation";
             this.CloseButtonCentralStation.Size = new System.Drawing.Size(23, 25);
             this.CloseButtonCentralStation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
