@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -14,7 +15,7 @@ namespace FinalProject
         }
 
 
-        #region Login Button
+        #region Login Button -- Dinis & Jorge
         /* Username & Password check; Clear to remove bugs and MessageBox to
         let the user know something wrong happened. - Dinis & Jorge */
 
@@ -36,14 +37,14 @@ namespace FinalProject
         }
         #endregion
 
-        #region Draggable Grey Background Panel
-        // Draggable Panel
+        #region Draggable Grey Background Panel  -- Dinis & Jorge
+        // Draggable Panel  https://stackoverflow.com/questions/11379209/how-do-i-make-mousedrag-inside-panel-move-form-window
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
-        [DllImportAttribute("user32.dll")]
+        [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [DllImportAttribute("user32.dll")]
+        [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
         private void GreyBackgroundLogin_MouseMove(object sender, MouseEventArgs e)
@@ -56,7 +57,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region Enter to Click on the Login Button shortcut
+        #region Enter to Click on the Login Button shortcut  -- Dinis & Jorge
         // KeyDown feature for a better user experience on the login form
         // Enter to click the Login Button automatically
         private void usernameBox_KeyDown(object sender, KeyEventArgs e)
@@ -76,7 +77,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons
+        #region Close/Minimize Buttons  -- Dinis & Jorge
         // Close Button
         private void CloseButtonLoginForm_Click(object sender, EventArgs e)
         {

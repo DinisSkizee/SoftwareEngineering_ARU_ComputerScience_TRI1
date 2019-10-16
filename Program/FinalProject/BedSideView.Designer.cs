@@ -49,15 +49,18 @@
             this.MinimizeButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.CloseButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.EjectButton1 = new System.Windows.Forms.Button();
+            this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelTop.Controls.Add(this.MainPageButton);
             this.PanelTop.Controls.Add(this.MinimizeButtonBedSideView);
             this.PanelTop.Controls.Add(this.CloseButtonBedSideView);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -320,6 +323,17 @@
             this.EjectButton1.TabIndex = 13;
             this.EjectButton1.UseVisualStyleBackColor = false;
             // 
+            // MainPageButton
+            // 
+            this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
+            this.MainPageButton.Location = new System.Drawing.Point(7, 7);
+            this.MainPageButton.Name = "MainPageButton";
+            this.MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MainPageButton.TabIndex = 5;
+            this.MainPageButton.TabStop = false;
+            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
+            // 
             // BedSideView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +366,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -379,5 +394,6 @@
         private System.Windows.Forms.Panel Display3;
         private System.Windows.Forms.Button EjectButton3;
         private System.Windows.Forms.Panel BigInfoPanelBedSideView;
+        private System.Windows.Forms.PictureBox MainPageButton;
     }
 }

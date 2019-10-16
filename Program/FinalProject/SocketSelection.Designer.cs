@@ -32,14 +32,17 @@
             this.ScrollBarSocketSelection = new System.Windows.Forms.VScrollBar();
             this.MinimizeButtonSocketSelection = new System.Windows.Forms.PictureBox();
             this.CloseButtonSocketSelection = new System.Windows.Forms.PictureBox();
+            this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonSocketSelection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelTop.Controls.Add(this.MainPageButton);
             this.PanelTop.Controls.Add(this.MinimizeButtonSocketSelection);
             this.PanelTop.Controls.Add(this.CloseButtonSocketSelection);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -84,6 +87,17 @@
             this.CloseButtonSocketSelection.TabStop = false;
             this.CloseButtonSocketSelection.Click += new System.EventHandler(this.CloseButtonSocketSelection_Click);
             // 
+            // MainPageButton
+            // 
+            this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
+            this.MainPageButton.Location = new System.Drawing.Point(7, 7);
+            this.MainPageButton.Name = "MainPageButton";
+            this.MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MainPageButton.TabIndex = 5;
+            this.MainPageButton.TabStop = false;
+            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
+            // 
             // SocketSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,6 +112,7 @@
             this.PanelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonSocketSelection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,5 +123,6 @@
         private System.Windows.Forms.PictureBox MinimizeButtonSocketSelection;
         private System.Windows.Forms.PictureBox CloseButtonSocketSelection;
         private System.Windows.Forms.VScrollBar ScrollBarSocketSelection;
+        private System.Windows.Forms.PictureBox MainPageButton;
     }
 }

@@ -31,14 +31,17 @@
             this.PanelTop = new System.Windows.Forms.Panel();
             this.MinimizeButtonCentralStation = new System.Windows.Forms.PictureBox();
             this.CloseButtonCentralStation = new System.Windows.Forms.PictureBox();
+            this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonCentralStation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonCentralStation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelTop.Controls.Add(this.MainPageButton);
             this.PanelTop.Controls.Add(this.MinimizeButtonCentralStation);
             this.PanelTop.Controls.Add(this.CloseButtonCentralStation);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -75,6 +78,17 @@
             this.CloseButtonCentralStation.TabStop = false;
             this.CloseButtonCentralStation.Click += new System.EventHandler(this.CloseButtonCentralStation_Click);
             // 
+            // MainPageButton
+            // 
+            this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
+            this.MainPageButton.Location = new System.Drawing.Point(7, 7);
+            this.MainPageButton.Name = "MainPageButton";
+            this.MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MainPageButton.TabIndex = 4;
+            this.MainPageButton.TabStop = false;
+            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
+            // 
             // CentralStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -87,6 +101,7 @@
             this.PanelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonCentralStation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonCentralStation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -96,5 +111,6 @@
         private System.Windows.Forms.Panel PanelTop;
         private System.Windows.Forms.PictureBox MinimizeButtonCentralStation;
         private System.Windows.Forms.PictureBox CloseButtonCentralStation;
+        private System.Windows.Forms.PictureBox MainPageButton;
     }
 }
