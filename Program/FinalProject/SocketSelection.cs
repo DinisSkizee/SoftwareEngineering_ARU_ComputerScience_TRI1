@@ -11,6 +11,29 @@ namespace FinalProject
             InitializeComponent();
         }
 
+        #region ScrollBar Configuration  -- Dinis & Jorge
+        // Add ScrollBar 
+        VScrollBar vScroll = new VScrollBar();
+        private void HandleScroll(Object sender, ScrollEventArgs e)
+        {
+            int x;
+            int y;
+
+            if (e.ScrollOrientation == ScrollOrientation.HorizontalScroll)
+            {
+                x = e.NewValue;
+                y = vScroll.Value;
+            }
+            else //e.ScrollOrientation == ScrollOrientation.VerticalScroll
+            {
+                y = e.NewValue;
+                x = vScroll.Value;
+            }
+            BackgroundPanelSocketSelection.AutoScroll = true;
+        }
+        #endregion
+
+
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
