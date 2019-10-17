@@ -42,23 +42,31 @@
             this.Bed5 = new System.Windows.Forms.Button();
             this.Bed1 = new System.Windows.Forms.Button();
             this.PanelTop = new System.Windows.Forms.Panel();
+            this.EjectButton4 = new System.Windows.Forms.PictureBox();
+            this.EjectButton3 = new System.Windows.Forms.PictureBox();
+            this.EjectButton2 = new System.Windows.Forms.PictureBox();
+            this.EjectButton1 = new System.Windows.Forms.PictureBox();
+            this.BedPicture = new System.Windows.Forms.PictureBox();
             this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.CloseButtonBedSideView = new System.Windows.Forms.PictureBox();
-            this.BedPicture = new System.Windows.Forms.PictureBox();
-            this.EjectButton1 = new System.Windows.Forms.PictureBox();
-            this.EjectButton2 = new System.Windows.Forms.PictureBox();
-            this.EjectButton4 = new System.Windows.Forms.PictureBox();
-            this.EjectButton3 = new System.Windows.Forms.PictureBox();
+            this.InsertButton4 = new System.Windows.Forms.PictureBox();
+            this.InsertButton3 = new System.Windows.Forms.PictureBox();
+            this.InsertButton2 = new System.Windows.Forms.PictureBox();
+            this.InsertButton1 = new System.Windows.Forms.PictureBox();
             this.PanelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // BigInfoPanelBedSideView
@@ -252,11 +260,63 @@
             this.PanelTop.Click += new System.EventHandler(this.MinimizeButtonBedSideView_Click);
             this.PanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelTop_MouseMove);
             // 
+            // EjectButton4
+            // 
+            this.EjectButton4.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
+            this.EjectButton4.Location = new System.Drawing.Point(503, 412);
+            this.EjectButton4.Name = "EjectButton4";
+            this.EjectButton4.Size = new System.Drawing.Size(27, 25);
+            this.EjectButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EjectButton4.TabIndex = 42;
+            this.EjectButton4.TabStop = false;
+            // 
+            // EjectButton3
+            // 
+            this.EjectButton3.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
+            this.EjectButton3.Location = new System.Drawing.Point(471, 412);
+            this.EjectButton3.Name = "EjectButton3";
+            this.EjectButton3.Size = new System.Drawing.Size(27, 25);
+            this.EjectButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EjectButton3.TabIndex = 41;
+            this.EjectButton3.TabStop = false;
+            // 
+            // EjectButton2
+            // 
+            this.EjectButton2.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
+            this.EjectButton2.Location = new System.Drawing.Point(503, 262);
+            this.EjectButton2.Name = "EjectButton2";
+            this.EjectButton2.Size = new System.Drawing.Size(27, 25);
+            this.EjectButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EjectButton2.TabIndex = 40;
+            this.EjectButton2.TabStop = false;
+            // 
+            // EjectButton1
+            // 
+            this.EjectButton1.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
+            this.EjectButton1.Location = new System.Drawing.Point(471, 262);
+            this.EjectButton1.Name = "EjectButton1";
+            this.EjectButton1.Size = new System.Drawing.Size(27, 25);
+            this.EjectButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EjectButton1.TabIndex = 39;
+            this.EjectButton1.TabStop = false;
+            // 
+            // BedPicture
+            // 
+            this.BedPicture.BackColor = System.Drawing.Color.Transparent;
+            this.BedPicture.Image = global::FinalProject.Properties.Resources.aaa;
+            this.BedPicture.Location = new System.Drawing.Point(16, 130);
+            this.BedPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.BedPicture.Name = "BedPicture";
+            this.BedPicture.Size = new System.Drawing.Size(301, 118);
+            this.BedPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BedPicture.TabIndex = 22;
+            this.BedPicture.TabStop = false;
+            // 
             // MainPageButton
             // 
             this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
             this.MainPageButton.Location = new System.Drawing.Point(9, 9);
-            this.MainPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainPageButton.Margin = new System.Windows.Forms.Padding(4);
             this.MainPageButton.Name = "MainPageButton";
             this.MainPageButton.Size = new System.Drawing.Size(40, 37);
             this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,57 +349,45 @@
             this.CloseButtonBedSideView.TabStop = false;
             this.CloseButtonBedSideView.Click += new System.EventHandler(this.CloseButtonBedSideView_Click);
             // 
-            // BedPicture
+            // InsertButton4
             // 
-            this.BedPicture.BackColor = System.Drawing.Color.Transparent;
-            this.BedPicture.Image = global::FinalProject.Properties.Resources.aaa;
-            this.BedPicture.Location = new System.Drawing.Point(16, 130);
-            this.BedPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BedPicture.Name = "BedPicture";
-            this.BedPicture.Size = new System.Drawing.Size(301, 118);
-            this.BedPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BedPicture.TabIndex = 22;
-            this.BedPicture.TabStop = false;
+            this.InsertButton4.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
+            this.InsertButton4.Location = new System.Drawing.Point(503, 443);
+            this.InsertButton4.Name = "InsertButton4";
+            this.InsertButton4.Size = new System.Drawing.Size(27, 25);
+            this.InsertButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InsertButton4.TabIndex = 68;
+            this.InsertButton4.TabStop = false;
             // 
-            // EjectButton1
+            // InsertButton3
             // 
-            this.EjectButton1.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
-            this.EjectButton1.Location = new System.Drawing.Point(471, 262);
-            this.EjectButton1.Name = "EjectButton1";
-            this.EjectButton1.Size = new System.Drawing.Size(27, 25);
-            this.EjectButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.EjectButton1.TabIndex = 39;
-            this.EjectButton1.TabStop = false;
+            this.InsertButton3.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
+            this.InsertButton3.Location = new System.Drawing.Point(471, 443);
+            this.InsertButton3.Name = "InsertButton3";
+            this.InsertButton3.Size = new System.Drawing.Size(27, 25);
+            this.InsertButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InsertButton3.TabIndex = 67;
+            this.InsertButton3.TabStop = false;
             // 
-            // EjectButton2
+            // InsertButton2
             // 
-            this.EjectButton2.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
-            this.EjectButton2.Location = new System.Drawing.Point(503, 262);
-            this.EjectButton2.Name = "EjectButton2";
-            this.EjectButton2.Size = new System.Drawing.Size(27, 25);
-            this.EjectButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.EjectButton2.TabIndex = 40;
-            this.EjectButton2.TabStop = false;
+            this.InsertButton2.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
+            this.InsertButton2.Location = new System.Drawing.Point(503, 293);
+            this.InsertButton2.Name = "InsertButton2";
+            this.InsertButton2.Size = new System.Drawing.Size(27, 25);
+            this.InsertButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InsertButton2.TabIndex = 66;
+            this.InsertButton2.TabStop = false;
             // 
-            // EjectButton4
+            // InsertButton1
             // 
-            this.EjectButton4.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
-            this.EjectButton4.Location = new System.Drawing.Point(503, 412);
-            this.EjectButton4.Name = "EjectButton4";
-            this.EjectButton4.Size = new System.Drawing.Size(27, 25);
-            this.EjectButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.EjectButton4.TabIndex = 42;
-            this.EjectButton4.TabStop = false;
-            // 
-            // EjectButton3
-            // 
-            this.EjectButton3.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
-            this.EjectButton3.Location = new System.Drawing.Point(471, 412);
-            this.EjectButton3.Name = "EjectButton3";
-            this.EjectButton3.Size = new System.Drawing.Size(27, 25);
-            this.EjectButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.EjectButton3.TabIndex = 41;
-            this.EjectButton3.TabStop = false;
+            this.InsertButton1.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
+            this.InsertButton1.Location = new System.Drawing.Point(471, 293);
+            this.InsertButton1.Name = "InsertButton1";
+            this.InsertButton1.Size = new System.Drawing.Size(27, 25);
+            this.InsertButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InsertButton1.TabIndex = 65;
+            this.InsertButton1.TabStop = false;
             // 
             // BedSideView6
             // 
@@ -347,6 +395,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1000, 550);
+            this.Controls.Add(this.InsertButton4);
+            this.Controls.Add(this.InsertButton3);
+            this.Controls.Add(this.InsertButton2);
+            this.Controls.Add(this.InsertButton1);
             this.Controls.Add(this.EjectButton4);
             this.Controls.Add(this.EjectButton3);
             this.Controls.Add(this.EjectButton2);
@@ -370,14 +422,18 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BedSideView6";
             this.PanelTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EjectButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BedPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EjectButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InsertButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,5 +462,9 @@
         private System.Windows.Forms.PictureBox EjectButton2;
         private System.Windows.Forms.PictureBox EjectButton4;
         private System.Windows.Forms.PictureBox EjectButton3;
+        private System.Windows.Forms.PictureBox InsertButton4;
+        private System.Windows.Forms.PictureBox InsertButton3;
+        private System.Windows.Forms.PictureBox InsertButton2;
+        private System.Windows.Forms.PictureBox InsertButton1;
     }
 }
