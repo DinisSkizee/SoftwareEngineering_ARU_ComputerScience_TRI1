@@ -5,8 +5,7 @@ Patient Monitoring
 	* Pulse Rate
 	* Breathing Rate (measure bpm)
 	* Temperature (measure at Celsius)
-	* Weight (measure at kg)
-	* Age + Height (const)
+	* Age + Height + Weight (yOld + cm + kg)
 
 	Each module needs to have a minimum and a maximum value that suits the patient
 
