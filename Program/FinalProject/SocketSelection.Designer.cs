@@ -32,13 +32,19 @@
             this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonSocketSelection = new System.Windows.Forms.PictureBox();
             this.CloseButtonSocketSelection = new System.Windows.Forms.PictureBox();
-            this.BackgroundPanelSocketSelection = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.InstallButton = new System.Windows.Forms.Button();
+            this.BedComboBox = new System.Windows.Forms.ComboBox();
+            this.BloodPressurePanel = new System.Windows.Forms.Panel();
+            this.SocketComboBox = new System.Windows.Forms.ComboBox();
+            this.PulseRatePanel = new System.Windows.Forms.Panel();
+            this.BreathingRatePanel = new System.Windows.Forms.Panel();
+            this.TemperaturePanel = new System.Windows.Forms.Panel();
+            this.VO2MaxPanel = new System.Windows.Forms.Panel();
+            this.DetailsPanel = new System.Windows.Forms.Panel();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonSocketSelection)).BeginInit();
-            this.BackgroundPanelSocketSelection.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelTop
@@ -59,7 +65,7 @@
             // 
             this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
             this.MainPageButton.Location = new System.Drawing.Point(9, 9);
-            this.MainPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainPageButton.Margin = new System.Windows.Forms.Padding(4);
             this.MainPageButton.Name = "MainPageButton";
             this.MainPageButton.Size = new System.Drawing.Size(40, 37);
             this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -93,24 +99,108 @@
             this.CloseButtonSocketSelection.TabStop = false;
             this.CloseButtonSocketSelection.Click += new System.EventHandler(this.CloseButtonSocketSelection_Click);
             // 
-            // BackgroundPanelSocketSelection
+            // InstallButton
             // 
-            this.BackgroundPanelSocketSelection.AutoScroll = true;
-            this.BackgroundPanelSocketSelection.AutoScrollMargin = new System.Drawing.Size(0, 1000);
-            this.BackgroundPanelSocketSelection.Controls.Add(this.panel1);
-            this.BackgroundPanelSocketSelection.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BackgroundPanelSocketSelection.Location = new System.Drawing.Point(0, 54);
-            this.BackgroundPanelSocketSelection.Name = "BackgroundPanelSocketSelection";
-            this.BackgroundPanelSocketSelection.Size = new System.Drawing.Size(1000, 496);
-            this.BackgroundPanelSocketSelection.TabIndex = 5;
+            this.InstallButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InstallButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InstallButton.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.InstallButton.ForeColor = System.Drawing.Color.White;
+            this.InstallButton.Location = new System.Drawing.Point(572, 75);
+            this.InstallButton.Name = "InstallButton";
+            this.InstallButton.Size = new System.Drawing.Size(290, 38);
+            this.InstallButton.TabIndex = 4;
+            this.InstallButton.Text = "Install";
+            this.InstallButton.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // BedComboBox
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(397, 466);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 187);
-            this.panel1.TabIndex = 4;
+            this.BedComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BedComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedComboBox.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.BedComboBox.ForeColor = System.Drawing.Color.White;
+            this.BedComboBox.FormattingEnabled = true;
+            this.BedComboBox.Items.AddRange(new object[] {
+            "Bed 1",
+            "Bed 2",
+            "Bed 3",
+            "Bed 4",
+            "Bed 5",
+            "Bed 6",
+            "Bed 7",
+            "Bed 8"});
+            this.BedComboBox.Location = new System.Drawing.Point(420, 74);
+            this.BedComboBox.Name = "BedComboBox";
+            this.BedComboBox.Size = new System.Drawing.Size(121, 38);
+            this.BedComboBox.TabIndex = 5;
+            // 
+            // BloodPressurePanel
+            // 
+            this.BloodPressurePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BloodPressurePanel.Location = new System.Drawing.Point(0, 136);
+            this.BloodPressurePanel.Name = "BloodPressurePanel";
+            this.BloodPressurePanel.Size = new System.Drawing.Size(1000, 415);
+            this.BloodPressurePanel.TabIndex = 6;
+            // 
+            // SocketComboBox
+            // 
+            this.SocketComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SocketComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SocketComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SocketComboBox.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.SocketComboBox.ForeColor = System.Drawing.Color.White;
+            this.SocketComboBox.FormattingEnabled = true;
+            this.SocketComboBox.Items.AddRange(new object[] {
+            "Blood Presure",
+            "Pulse Rate",
+            "Breathing Rate",
+            "Temperature",
+            "VO2 Max",
+            "General Details"});
+            this.SocketComboBox.Location = new System.Drawing.Point(139, 75);
+            this.SocketComboBox.Name = "SocketComboBox";
+            this.SocketComboBox.Size = new System.Drawing.Size(250, 38);
+            this.SocketComboBox.TabIndex = 7;
+            // 
+            // PulseRatePanel
+            // 
+            this.PulseRatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PulseRatePanel.Location = new System.Drawing.Point(0, 136);
+            this.PulseRatePanel.Name = "PulseRatePanel";
+            this.PulseRatePanel.Size = new System.Drawing.Size(1000, 415);
+            this.PulseRatePanel.TabIndex = 8;
+            // 
+            // BreathingRatePanel
+            // 
+            this.BreathingRatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BreathingRatePanel.Location = new System.Drawing.Point(0, 136);
+            this.BreathingRatePanel.Name = "BreathingRatePanel";
+            this.BreathingRatePanel.Size = new System.Drawing.Size(1000, 415);
+            this.BreathingRatePanel.TabIndex = 9;
+            // 
+            // TemperaturePanel
+            // 
+            this.TemperaturePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TemperaturePanel.Location = new System.Drawing.Point(0, 136);
+            this.TemperaturePanel.Name = "TemperaturePanel";
+            this.TemperaturePanel.Size = new System.Drawing.Size(1000, 415);
+            this.TemperaturePanel.TabIndex = 10;
+            // 
+            // VO2MaxPanel
+            // 
+            this.VO2MaxPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VO2MaxPanel.Location = new System.Drawing.Point(0, 136);
+            this.VO2MaxPanel.Name = "VO2MaxPanel";
+            this.VO2MaxPanel.Size = new System.Drawing.Size(1000, 415);
+            this.VO2MaxPanel.TabIndex = 11;
+            // 
+            // DetailsPanel
+            // 
+            this.DetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DetailsPanel.Location = new System.Drawing.Point(0, 136);
+            this.DetailsPanel.Name = "DetailsPanel";
+            this.DetailsPanel.Size = new System.Drawing.Size(1000, 415);
+            this.DetailsPanel.TabIndex = 12;
             // 
             // SocketSelection
             // 
@@ -118,8 +208,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1000, 550);
-            this.Controls.Add(this.BackgroundPanelSocketSelection);
+            this.Controls.Add(this.SocketComboBox);
+            this.Controls.Add(this.BloodPressurePanel);
+            this.Controls.Add(this.BedComboBox);
+            this.Controls.Add(this.InstallButton);
             this.Controls.Add(this.PanelTop);
+            this.Controls.Add(this.DetailsPanel);
+            this.Controls.Add(this.VO2MaxPanel);
+            this.Controls.Add(this.TemperaturePanel);
+            this.Controls.Add(this.BreathingRatePanel);
+            this.Controls.Add(this.PulseRatePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SocketSelection";
@@ -127,7 +225,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonSocketSelection)).EndInit();
-            this.BackgroundPanelSocketSelection.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,7 +235,14 @@
         private System.Windows.Forms.PictureBox MinimizeButtonSocketSelection;
         private System.Windows.Forms.PictureBox CloseButtonSocketSelection;
         private System.Windows.Forms.PictureBox MainPageButton;
-        private System.Windows.Forms.Panel BackgroundPanelSocketSelection;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button InstallButton;
+        private System.Windows.Forms.ComboBox BedComboBox;
+        private System.Windows.Forms.Panel BloodPressurePanel;
+        private System.Windows.Forms.ComboBox SocketComboBox;
+        private System.Windows.Forms.Panel PulseRatePanel;
+        private System.Windows.Forms.Panel BreathingRatePanel;
+        private System.Windows.Forms.Panel TemperaturePanel;
+        private System.Windows.Forms.Panel VO2MaxPanel;
+        private System.Windows.Forms.Panel DetailsPanel;
     }
 }

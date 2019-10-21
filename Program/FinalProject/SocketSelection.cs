@@ -9,10 +9,19 @@ namespace FinalProject
         public SocketSelection()
         {
             InitializeComponent();
+
+            // Visible = false to every SocketPanel in the form
+            BloodPressurePanel.Visible = true;
+            PulseRatePanel.Visible = false;
+            BreathingRatePanel.Visible = false;
+            TemperaturePanel.Visible = false;
+            VO2MaxPanel.Visible = false;
+            DetailsPanel.Visible = false;
         }
 
         #region ScrollBar Configuration  -- Dinis & Jorge
-        // Add ScrollBar 
+        /* just in case we need it
+        // Add ScrollBar with scroll up/down event
         VScrollBar vScroll = new VScrollBar();
         private void HandleScroll(Object sender, ScrollEventArgs e)
         {
@@ -29,10 +38,9 @@ namespace FinalProject
                 y = e.NewValue;
                 x = vScroll.Value;
             }
-            BackgroundPanelSocketSelection.AutoScroll = true;
-        }
+            BloodPresurePanel.AutoScroll = true;
+        } */
         #endregion
-
 
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
@@ -75,5 +83,6 @@ namespace FinalProject
             afterlogin.Location = this.Location;
             this.Hide();
         }
+
     }
 }
