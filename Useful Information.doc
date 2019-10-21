@@ -5,6 +5,7 @@ Patient Monitoring
 	* Pulse Rate
 	* Breathing Rate (measure bpm)
 	* Temperature (measure at Celsius)
+	* V02 Max (ml/(kg*min))
 	* Age + Height + Weight (yOld + cm + kg)
 
 	Each module needs to have a minimum and a maximum value that suits the patient
