@@ -1,11 +1,32 @@
 
 Patient Monitoring
 
-	* Blood Pressure (Systolic and Diastolic)
-	* Pulse Rate
+	* Blood Pressure (Systolic # Diastolic)
+	Low ( > 90 # > 60 )
+	Normal ( 90 < 120 # 60 < 80 )
+	Elevated ( 120 < 140 # 80 < 90 )
+	High ( < 140 # < 90 )
+	
+	* Pulse Rate (Not Bad bpm # Low # High)
+	18-25yo ( 49 < 73 # > 49 # < 73 )
+	26-35yo ( 49 < 74 # > 49 # < 74 )
+	36-45yo ( 50 < 75 # > 50 # < 75 )
+	46-55yo ( 50 < 76 # > 50 # < 76 )
+	56-65yo ( 51 < 75 # > 51 # < 75 )
+	65+yo   ( 50 < 73 # > 50 # < 73 )
+	
 	* Breathing Rate (measure bpm)
+	Adult ( 12 - 20 )
+	
 	* Temperature (measure at Celsius)
-	* V02 Max (ml/(kg*min))
+	Adult ( 36.5°C - 37.5°C )
+	
+	* V02 Max (ml/(kg*min) (Not Bad # Bad))
+	20-39yo ( < 28.8 # > 28.7 )
+	40-49yo ( < 26.7 # > 26.6 )
+	50-59yo ( < 23.6 # > 23.5 )
+	60+yo   ( < 20.4 # > 20.3 )
+	
 	* Age + Height + Weight (yOld + cm + kg)
 
 	Each module needs to have a minimum and a maximum value that suits the patient
