@@ -1,0 +1,53 @@
+Common details in all form
+
+* close, minimise buttons
+* now the window can be moved around the screen
+* pressing "tab" will change the selected box
+* we implement read-only to the boxes that does not matter to the selected
+* draggable
+
+
+ Login form
+
+* changed window if input (username and password) correct
+* display message when input is incorrect
+* when "enter" on username or password box will redirect to login button
++
+
+ After Login Form
+
+* Central Station button take us to the Central Station form
+* Bedside button take us to the Bedside form
++ Logout button
+
+Bedside Form
+
+* button to change room
+* modules sockets
+* button to return to After Login form
+
+Modules form
+
+* scrollable form
++ add full view of the modules description
++ button to select the bed that will be install
++ install button
++ small image to help visualise the
+
+
+Medical Register Form
+
++ create a form with a calendar to assign the shifts of each Doctors
++ create a email view to (de)assign the shifts of each Senior Doctors
+
+
+Data base Requirements
+
++ Log register and deregister
++ Log alarm times begin and end
+
+
+
+
++ (things that need to be implemented)
+* (things already are implemented)
