@@ -1,3 +1,4 @@
+
 Common details in all form
 
 * close, minimise buttons
@@ -12,7 +13,7 @@ Common details in all form
 * changed window if input (username and password) correct
 * display message when input is incorrect
 * when "enter" on username or password box will redirect to login button
-+
++ connect with the DB to check credentials
 
  After Login Form
 
@@ -46,6 +47,9 @@ Data base Requirements
 + Log register and deregister
 + Log alarm times begin and end
 
+
+**IMPORTANT**
++ create a class DB to talk with DB (insert, update, remove, select)
 
 
 
