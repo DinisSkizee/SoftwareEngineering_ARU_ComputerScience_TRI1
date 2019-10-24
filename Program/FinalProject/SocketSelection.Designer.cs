@@ -41,6 +41,7 @@
             this.TemperaturePanel = new System.Windows.Forms.Panel();
             this.VO2MaxPanel = new System.Windows.Forms.Panel();
             this.DetailsPanel = new System.Windows.Forms.Panel();
+            this.SelectModuleLabel = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).BeginInit();
@@ -120,15 +121,6 @@
             this.BedComboBox.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BedComboBox.ForeColor = System.Drawing.Color.White;
             this.BedComboBox.FormattingEnabled = true;
-            this.BedComboBox.Items.AddRange(new object[] {
-            "Bed 1",
-            "Bed 2",
-            "Bed 3",
-            "Bed 4",
-            "Bed 5",
-            "Bed 6",
-            "Bed 7",
-            "Bed 8"});
             this.BedComboBox.Location = new System.Drawing.Point(420, 74);
             this.BedComboBox.Name = "BedComboBox";
             this.BedComboBox.Size = new System.Drawing.Size(121, 38);
@@ -150,17 +142,11 @@
             this.SocketComboBox.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.SocketComboBox.ForeColor = System.Drawing.Color.White;
             this.SocketComboBox.FormattingEnabled = true;
-            this.SocketComboBox.Items.AddRange(new object[] {
-            "Blood Presure",
-            "Pulse Rate",
-            "Breathing Rate",
-            "Temperature",
-            "VO2 Max",
-            "General Details"});
             this.SocketComboBox.Location = new System.Drawing.Point(139, 75);
             this.SocketComboBox.Name = "SocketComboBox";
             this.SocketComboBox.Size = new System.Drawing.Size(250, 38);
             this.SocketComboBox.TabIndex = 7;
+            this.SocketComboBox.TextChanged += new System.EventHandler(this.SocketComboBox_TextChanged);
             // 
             // PulseRatePanel
             // 
@@ -202,12 +188,26 @@
             this.DetailsPanel.Size = new System.Drawing.Size(1000, 415);
             this.DetailsPanel.TabIndex = 12;
             // 
+            // SelectModuleLabel
+            // 
+            this.SelectModuleLabel.AutoSize = true;
+            this.SelectModuleLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SelectModuleLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.SelectModuleLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.SelectModuleLabel.Location = new System.Drawing.Point(160, 80);
+            this.SelectModuleLabel.Name = "SelectModuleLabel";
+            this.SelectModuleLabel.Size = new System.Drawing.Size(182, 28);
+            this.SelectModuleLabel.TabIndex = 13;
+            this.SelectModuleLabel.Text = "Select your Module";
+            this.SelectModuleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SocketSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1000, 550);
+            this.Controls.Add(this.SelectModuleLabel);
             this.Controls.Add(this.SocketComboBox);
             this.Controls.Add(this.BloodPressurePanel);
             this.Controls.Add(this.BedComboBox);
@@ -226,6 +226,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonSocketSelection)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -236,7 +237,7 @@
         private System.Windows.Forms.PictureBox CloseButtonSocketSelection;
         private System.Windows.Forms.PictureBox MainPageButton;
         private System.Windows.Forms.Button InstallButton;
-        private System.Windows.Forms.ComboBox BedComboBox;
+        public System.Windows.Forms.ComboBox BedComboBox;
         private System.Windows.Forms.Panel BloodPressurePanel;
         private System.Windows.Forms.ComboBox SocketComboBox;
         private System.Windows.Forms.Panel PulseRatePanel;
@@ -244,5 +245,6 @@
         private System.Windows.Forms.Panel TemperaturePanel;
         private System.Windows.Forms.Panel VO2MaxPanel;
         private System.Windows.Forms.Panel DetailsPanel;
+        private System.Windows.Forms.Label SelectModuleLabel;
     }
 }

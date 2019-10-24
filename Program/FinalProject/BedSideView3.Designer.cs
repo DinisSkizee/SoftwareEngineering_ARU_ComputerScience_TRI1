@@ -358,6 +358,7 @@
             this.InsertButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.InsertButton4.TabIndex = 68;
             this.InsertButton4.TabStop = false;
+            this.InsertButton4.Click += new System.EventHandler(this.InsertButton4_Click);
             // 
             // InsertButton3
             // 
@@ -368,6 +369,7 @@
             this.InsertButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.InsertButton3.TabIndex = 67;
             this.InsertButton3.TabStop = false;
+            this.InsertButton3.Click += new System.EventHandler(this.InsertButton3_Click);
             // 
             // InsertButton2
             // 
@@ -378,6 +380,7 @@
             this.InsertButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.InsertButton2.TabIndex = 66;
             this.InsertButton2.TabStop = false;
+            this.InsertButton2.Click += new System.EventHandler(this.InsertButton2_Click);
             // 
             // InsertButton1
             // 
@@ -388,6 +391,7 @@
             this.InsertButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.InsertButton1.TabIndex = 65;
             this.InsertButton1.TabStop = false;
+            this.InsertButton1.Click += new System.EventHandler(this.InsertButton1_Click);
             // 
             // BedSideView3
             // 

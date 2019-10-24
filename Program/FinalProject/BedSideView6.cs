@@ -113,5 +113,47 @@ namespace FinalProject
         }
         #endregion
 
+        #region InsertButtons Configuration  -- Dinis & Jorge
+        private void InsertButton1_Click(object sender, EventArgs e)
+        {
+            SocketSelection soS = new SocketSelection();
+
+            soS.BedComboBox.SelectedItem = "Bed 6";
+            soS.Show();
+            soS.Location = this.Location;
+            this.Hide();
+        }
+
+        private void InsertButton2_Click(object sender, EventArgs e)
+        {
+            SocketSelection soS = new SocketSelection();
+
+            soS.BedComboBox.SelectedItem = "Bed 6";
+            soS.Show();
+            soS.Location = this.Location;
+            this.Hide();
+        }
+
+        private void InsertButton3_Click(object sender, EventArgs e)
+        {
+            SocketSelection soS = new SocketSelection();
+
+            soS.BedComboBox.SelectedItem = "Bed 6";
+            soS.Show();
+            soS.Location = this.Location;
+            this.Hide();
+        }
+
+        private void InsertButton4_Click(object sender, EventArgs e)
+        {
+            SocketSelection soS = new SocketSelection();
+
+            soS.BedComboBox.SelectedItem = "Bed 6";
+            soS.Show();
+            soS.Location = this.Location;
+            this.Hide();
+        }
+        #endregion
+
     }
 }
