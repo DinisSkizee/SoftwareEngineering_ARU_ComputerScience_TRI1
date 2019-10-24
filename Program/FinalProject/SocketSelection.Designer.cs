@@ -53,6 +53,7 @@
             this.MinuminumParameterSy = new System.Windows.Forms.TextBox();
             this.HeartImageModule = new System.Windows.Forms.Panel();
             this.VO2MaxPanel = new System.Windows.Forms.Panel();
+            this.SelectModuleLabel = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonSocketSelection)).BeginInit();
@@ -249,7 +250,6 @@
             this.SystolicTextBox.TabIndex = 10;
             this.SystolicTextBox.Text = "Systolic";
             this.SystolicTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.SystolicTextBox.TextChanged += new System.EventHandler(this.TextBox6_TextChanged);
             // 
             // MaximunParameterValueFieldDi
             // 
@@ -263,7 +263,6 @@
             this.MaximunParameterValueFieldDi.Name = "MaximunParameterValueFieldDi";
             this.MaximunParameterValueFieldDi.Size = new System.Drawing.Size(120, 35);
             this.MaximunParameterValueFieldDi.TabIndex = 9;
-            this.MaximunParameterValueFieldDi.TextChanged += new System.EventHandler(this.MaximunParameterValueFieldDi_TextChanged);
             // 
             // MinuminumParameterValueFieldDi
             // 
@@ -370,12 +369,25 @@
             this.VO2MaxPanel.Size = new System.Drawing.Size(750, 337);
             this.VO2MaxPanel.TabIndex = 11;
             // 
+            // SelectModuleLabel
+            // 
+            this.SelectModuleLabel.AutoSize = true;
+            this.SelectModuleLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SelectModuleLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.SelectModuleLabel.ForeColor = System.Drawing.Color.White;
+            this.SelectModuleLabel.Location = new System.Drawing.Point(117, 66);
+            this.SelectModuleLabel.Name = "SelectModuleLabel";
+            this.SelectModuleLabel.Size = new System.Drawing.Size(144, 21);
+            this.SelectModuleLabel.TabIndex = 12;
+            this.SelectModuleLabel.Text = "Select your Module";
+            // 
             // SocketSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(750, 447);
+            this.Controls.Add(this.SelectModuleLabel);
             this.Controls.Add(this.TemperaturePanel);
             this.Controls.Add(this.SocketComboBox);
             this.Controls.Add(this.BloodPressurePanel);
@@ -396,6 +408,7 @@
             this.TemperaturePanel.ResumeLayout(false);
             this.TemperaturePanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -426,5 +439,6 @@
         private System.Windows.Forms.TextBox MinuminumParameterDi;
         private System.Windows.Forms.TextBox DiastolicTextBox;
         private System.Windows.Forms.TextBox SystolicTextBox;
+        private System.Windows.Forms.Label SelectModuleLabel;
     }
 }
