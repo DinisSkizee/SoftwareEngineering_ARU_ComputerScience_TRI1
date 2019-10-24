@@ -419,7 +419,7 @@
         private System.Windows.Forms.PictureBox CloseButtonSocketSelection;
         private System.Windows.Forms.PictureBox MainPageButton;
         private System.Windows.Forms.Button InstallButton;
-        private System.Windows.Forms.ComboBox BedComboBox;
+        public System.Windows.Forms.ComboBox BedComboBox;
         private System.Windows.Forms.Panel BloodPressurePanel;
         private System.Windows.Forms.ComboBox SocketComboBox;
         private System.Windows.Forms.Panel PulseRatePanel;
