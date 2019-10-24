@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Diagrams",
-    "\\Program"
+    "\\Program",
+    "\\Program\\FinalProject"
   ],
-  "SelectedNode": "\\Program\\FinalProject.sln",
+  "SelectedNode": "\\Program\\FinalProject\\SocketSelection.cs",
   "PreviewInSolutionExplorer": false
 }
