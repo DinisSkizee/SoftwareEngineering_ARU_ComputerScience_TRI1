@@ -1,31 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinalProject
 {
     class SocketConfiguration
     {
+        public SocketConfiguration()
+        {
+            // Blood Pressure (Systolic and Diastolic)
 
-        // Blood Pressure (Systolic and Diastolic)
-
-
-        // Heart Rate (BPM)
-
-
-        // Breathing Rate (BreathsPM)
+            Random randomSy = new Random();  // Returns a Min and Max Random Value
+            int syValue = randomSy.Next(90, 140);
 
 
-        // Temperature (Celsius)
+
+            // Heart Rate (BPM)
 
 
-        // Weight (Meters)
+            // Breathing Rate (BreathsPM)
 
 
-        // Age + Height (Years + Centimeter)
+            // Temperature (Celsius)
 
 
+            // Weight (Meters)
+
+
+            // Age + Height (Years + Centimeter)
+
+        }
     }
 }
