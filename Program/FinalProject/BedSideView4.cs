@@ -114,7 +114,7 @@ namespace FinalProject
         {
             SocketSelection soS = new SocketSelection();
 
-            soS.BedComboBox.SelectedItem = "Bed 4";
+            soS.DefaultPanel_BedComboBox.SelectedItem = "Bed 4";
             soS.Show();
             soS.Location = this.Location;
             this.Hide();
@@ -124,7 +124,7 @@ namespace FinalProject
         {
             SocketSelection soS = new SocketSelection();
 
-            soS.BedComboBox.SelectedItem = "Bed 4";
+            soS.DefaultPanel_BedComboBox.SelectedItem = "Bed 4";
             soS.Show();
             soS.Location = this.Location;
             this.Hide();
@@ -134,7 +134,7 @@ namespace FinalProject
         {
             SocketSelection soS = new SocketSelection();
 
-            soS.BedComboBox.SelectedItem = "Bed 4";
+            soS.DefaultPanel_BedComboBox.SelectedItem = "Bed 4";
             soS.Show();
             soS.Location = this.Location;
             this.Hide();
@@ -144,7 +144,7 @@ namespace FinalProject
         {
             SocketSelection soS = new SocketSelection();
 
-            soS.BedComboBox.SelectedItem = "Bed 24";
+            soS.DefaultPanel_BedComboBox.SelectedItem = "Bed 24";
             soS.Show();
             soS.Location = this.Location;
             this.Hide();

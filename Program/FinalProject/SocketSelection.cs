@@ -12,32 +12,31 @@ namespace FinalProject
 
             #region Panel Visibility  -- Dinis & Jorge
             // Visible = false to every SocketPanel in the form
-            BloodPressurePanel.Visible = true;
-            PulseRatePanel.Visible = false;
-            BreathingRatePanel.Visible = false;
-            TemperaturePanel.Visible = false;
-            VO2MaxPanel.Visible = false;
-            DetailsPanel.Visible = false;
+            PanelBloodPressure.Visible = true;
+            PanelPulseRate.Visible = false;
+            PanelBreathingRate.Visible = false;
+            PanelTemperature.Visible = false;
+            PanelVO2Max.Visible = false;
             #endregion
 
             #region BedComboBox Items  -- Dinis & Jorge
-            BedComboBox.Items.Add("Bed 1");
-            BedComboBox.Items.Add("Bed 2");
-            BedComboBox.Items.Add("Bed 3");
-            BedComboBox.Items.Add("Bed 4");
-            BedComboBox.Items.Add("Bed 5");
-            BedComboBox.Items.Add("Bed 6");
-            BedComboBox.Items.Add("Bed 7");
-            BedComboBox.Items.Add("Bed 8");
+            DefaultPanel_BedComboBox.Items.Add("Bed 1");
+            DefaultPanel_BedComboBox.Items.Add("Bed 2");
+            DefaultPanel_BedComboBox.Items.Add("Bed 3");
+            DefaultPanel_BedComboBox.Items.Add("Bed 4");
+            DefaultPanel_BedComboBox.Items.Add("Bed 5");
+            DefaultPanel_BedComboBox.Items.Add("Bed 6");
+            DefaultPanel_BedComboBox.Items.Add("Bed 7");
+            DefaultPanel_BedComboBox.Items.Add("Bed 8");
             #endregion
 
             #region SocketComboBox Items  -- Dinis & Jorge
-            SocketComboBox.Items.Add("Blood Pressure");
-            SocketComboBox.Items.Add("Pulse Rate");
-            SocketComboBox.Items.Add("Breathing Rate");
-            SocketComboBox.Items.Add("Temperature");
-            SocketComboBox.Items.Add("VO2 Max");
-            SocketComboBox.Items.Add("General Details");
+            DefaultPanel_SocketComboBox.Items.Add("Blood Pressure");
+            DefaultPanel_SocketComboBox.Items.Add("Pulse Rate");
+            DefaultPanel_SocketComboBox.Items.Add("Breathing Rate");
+            DefaultPanel_SocketComboBox.Items.Add("Temperature");
+            DefaultPanel_SocketComboBox.Items.Add("VO2 Max");
+            DefaultPanel_SocketComboBox.Items.Add("General Details");
             #endregion
 
         }
@@ -109,11 +108,22 @@ namespace FinalProject
 
         private void SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
         {
-            if (SocketComboBox.SelectedIndex < 0)
+            if (DefaultPanel_SocketComboBox.SelectedIndex < 0)
             {
-                SelectModuleLabel.BringToFront();
+                DefaultPanel_SelectSocketLabel.BringToFront();
             }
-            else { SelectModuleLabel.SendToBack(); }
+            else { DefaultPanel_SelectSocketLabel.SendToBack(); }
         }
+
+        private void DetailsPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
