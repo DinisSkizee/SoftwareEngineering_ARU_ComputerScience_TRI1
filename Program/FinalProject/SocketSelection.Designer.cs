@@ -34,31 +34,36 @@
             this.PanelTop_CloseButton = new System.Windows.Forms.PictureBox();
             this.DefaultPanel_InstallButton = new System.Windows.Forms.Button();
             this.DefaultPanel_BedComboBox = new System.Windows.Forms.ComboBox();
-            this.PanelBloodPressure = new System.Windows.Forms.Panel();
+            this.BreathingRatePanel = new System.Windows.Forms.Panel();
+            this.BreathingRateLabel_BreathingRate = new System.Windows.Forms.TextBox();
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue = new System.Windows.Forms.TextBox();
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue = new System.Windows.Forms.TextBox();
+            this.BreathingRateLabel_BreathingRate_Maximum = new System.Windows.Forms.TextBox();
+            this.BreathingRateLabel_BreathingRate_Minimum = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.BreathingRateLabel = new System.Windows.Forms.Label();
             this.BloodPresureLabel = new System.Windows.Forms.Label();
             this.DefaultPanel_SocketComboBox = new System.Windows.Forms.ComboBox();
             this.PanelPulseRate = new System.Windows.Forms.Panel();
             this.PulseRateLabel = new System.Windows.Forms.Label();
-            this.PanelBreathingRate = new System.Windows.Forms.Panel();
-            this.BreathingRateLabel = new System.Windows.Forms.Label();
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample = new System.Windows.Forms.Label();
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample = new System.Windows.Forms.Label();
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample = new System.Windows.Forms.Label();
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample = new System.Windows.Forms.Label();
-            this.BreathingRateLabel_Information = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_Systolic_Description = new System.Windows.Forms.TextBox();
-            this.BreathingRatePicture = new System.Windows.Forms.PictureBox();
-            this.BreathingRateLabel_Diastolic = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_Systolic = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_DiastolicMaximum = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_DiastolicMinimum = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_Diastolic_Description = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_SystolicMaximum = new System.Windows.Forms.TextBox();
-            this.BreathingRateLabel_SystolicMinimum = new System.Windows.Forms.TextBox();
+            this.BloodPresurePanel = new System.Windows.Forms.Panel();
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample = new System.Windows.Forms.Label();
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample = new System.Windows.Forms.Label();
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample = new System.Windows.Forms.Label();
+            this.BloodPresureLabel_Information = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_Systolic_Description = new System.Windows.Forms.TextBox();
+            this.BloodPresureImage = new System.Windows.Forms.PictureBox();
+            this.BloodPresureLabel_Diastolic = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_Systolic = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_DiastolicMaximum = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_DiastolicMinimum = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_Diastolic_Description = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_SystolicMaximum = new System.Windows.Forms.TextBox();
+            this.BloodPresureLabel_SystolicMinimum = new System.Windows.Forms.TextBox();
             this.PanelTemperature = new System.Windows.Forms.Panel();
             this.TemperatureLabel = new System.Windows.Forms.Label();
             this.PanelVO2Max = new System.Windows.Forms.Panel();
@@ -69,10 +74,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_CloseButton)).BeginInit();
-            this.PanelBloodPressure.SuspendLayout();
+            this.BreathingRatePanel.SuspendLayout();
             this.PanelPulseRate.SuspendLayout();
-            this.PanelBreathingRate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BreathingRatePicture)).BeginInit();
+            this.BloodPresurePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodPresureImage)).BeginInit();
             this.PanelTemperature.SuspendLayout();
             this.PanelVO2Max.SuspendLayout();
             this.PanelMain.SuspendLayout();
@@ -80,6 +85,7 @@
             // 
             // PanelTop
             // 
+            this.PanelTop.AutoSize = true;
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PanelTop.Controls.Add(this.PanelTop_MainPageButton);
             this.PanelTop.Controls.Add(this.PanelTop_MinimizeButton);
@@ -165,21 +171,124 @@
             this.DefaultPanel_BedComboBox.Size = new System.Drawing.Size(150, 31);
             this.DefaultPanel_BedComboBox.TabIndex = 5;
             // 
-            // PanelBloodPressure
+            // BreathingRatePanel
             // 
-            this.PanelBloodPressure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.PanelBloodPressure.Controls.Add(this.BloodPresureLabel);
-            this.PanelBloodPressure.Location = new System.Drawing.Point(35, 176);
-            this.PanelBloodPressure.Margin = new System.Windows.Forms.Padding(2);
-            this.PanelBloodPressure.Name = "PanelBloodPressure";
-            this.PanelBloodPressure.Size = new System.Drawing.Size(196, 41);
-            this.PanelBloodPressure.TabIndex = 0;
+            this.BreathingRatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel_BreathingRate);
+            this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue);
+            this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue);
+            this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel_BreathingRate_Maximum);
+            this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel_BreathingRate_Minimum);
+            this.BreathingRatePanel.Controls.Add(this.textBox8);
+            this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel);
+            this.BreathingRatePanel.Location = new System.Drawing.Point(12, 172);
+            this.BreathingRatePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.BreathingRatePanel.Name = "BreathingRatePanel";
+            this.BreathingRatePanel.Size = new System.Drawing.Size(727, 164);
+            this.BreathingRatePanel.TabIndex = 0;
+            // 
+            // BreathingRateLabel_BreathingRate
+            // 
+            this.BreathingRateLabel_BreathingRate.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BreathingRateLabel_BreathingRate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BreathingRateLabel_BreathingRate.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.BreathingRateLabel_BreathingRate.ForeColor = System.Drawing.Color.White;
+            this.BreathingRateLabel_BreathingRate.Location = new System.Drawing.Point(381, 37);
+            this.BreathingRateLabel_BreathingRate.Multiline = true;
+            this.BreathingRateLabel_BreathingRate.Name = "BreathingRateLabel_BreathingRate";
+            this.BreathingRateLabel_BreathingRate.ReadOnly = true;
+            this.BreathingRateLabel_BreathingRate.Size = new System.Drawing.Size(249, 22);
+            this.BreathingRateLabel_BreathingRate.TabIndex = 42;
+            this.BreathingRateLabel_BreathingRate.Text = "BreathingRate test";
+            this.BreathingRateLabel_BreathingRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BreathingRateLabel_BreathingRate_Maximum_ParameterValue
+            // 
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.ForeColor = System.Drawing.Color.White;
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Location = new System.Drawing.Point(511, 97);
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Multiline = true;
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Name = "BreathingRateLabel_BreathingRate_Maximum_ParameterValue";
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.TabIndex = 40;
+            this.BreathingRateLabel_BreathingRate_Maximum_ParameterValue.Text = "exemple";
+            // 
+            // BreathingRateLabel_BreathingRate_Minimum_ParameterValue
+            // 
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.ForeColor = System.Drawing.Color.White;
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Location = new System.Drawing.Point(381, 97);
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Multiline = true;
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Name = "BreathingRateLabel_BreathingRate_Minimum_ParameterValue";
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.TabIndex = 39;
+            this.BreathingRateLabel_BreathingRate_Minimum_ParameterValue.Text = "exemple";
+            // 
+            // BreathingRateLabel_BreathingRate_Maximum
+            // 
+            this.BreathingRateLabel_BreathingRate_Maximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BreathingRateLabel_BreathingRate_Maximum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BreathingRateLabel_BreathingRate_Maximum.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BreathingRateLabel_BreathingRate_Maximum.ForeColor = System.Drawing.Color.White;
+            this.BreathingRateLabel_BreathingRate_Maximum.Location = new System.Drawing.Point(510, 67);
+            this.BreathingRateLabel_BreathingRate_Maximum.Name = "BreathingRateLabel_BreathingRate_Maximum";
+            this.BreathingRateLabel_BreathingRate_Maximum.ReadOnly = true;
+            this.BreathingRateLabel_BreathingRate_Maximum.Size = new System.Drawing.Size(119, 18);
+            this.BreathingRateLabel_BreathingRate_Maximum.TabIndex = 38;
+            this.BreathingRateLabel_BreathingRate_Maximum.Text = "Maximum";
+            this.BreathingRateLabel_BreathingRate_Maximum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BreathingRateLabel_BreathingRate_Minimum
+            // 
+            this.BreathingRateLabel_BreathingRate_Minimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BreathingRateLabel_BreathingRate_Minimum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BreathingRateLabel_BreathingRate_Minimum.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BreathingRateLabel_BreathingRate_Minimum.ForeColor = System.Drawing.Color.White;
+            this.BreathingRateLabel_BreathingRate_Minimum.Location = new System.Drawing.Point(381, 67);
+            this.BreathingRateLabel_BreathingRate_Minimum.Name = "BreathingRateLabel_BreathingRate_Minimum";
+            this.BreathingRateLabel_BreathingRate_Minimum.ReadOnly = true;
+            this.BreathingRateLabel_BreathingRate_Minimum.Size = new System.Drawing.Size(119, 18);
+            this.BreathingRateLabel_BreathingRate_Minimum.TabIndex = 37;
+            this.BreathingRateLabel_BreathingRate_Minimum.Text = "Minimum";
+            this.BreathingRateLabel_BreathingRate_Minimum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBox8.ForeColor = System.Drawing.Color.White;
+            this.textBox8.Location = new System.Drawing.Point(381, 147);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(249, 87);
+            this.textBox8.TabIndex = 36;
+            this.textBox8.Text = "Your diastolic blood pressure is the lower number on your reading. It measures th" +
+    "e force of blood against your artery walls as your heart relaxes and the ventric" +
+    "les are allowed to refill with blood";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BreathingRateLabel
+            // 
+            this.BreathingRateLabel.AutoSize = true;
+            this.BreathingRateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BreathingRateLabel.Location = new System.Drawing.Point(3, 6);
+            this.BreathingRateLabel.Name = "BreathingRateLabel";
+            this.BreathingRateLabel.Size = new System.Drawing.Size(193, 30);
+            this.BreathingRateLabel.TabIndex = 32;
+            this.BreathingRateLabel.Text = "BreathingRateLabel";
             // 
             // BloodPresureLabel
             // 
             this.BloodPresureLabel.AutoSize = true;
             this.BloodPresureLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BloodPresureLabel.Location = new System.Drawing.Point(0, 0);
+            this.BloodPresureLabel.Location = new System.Drawing.Point(3, 0);
             this.BloodPresureLabel.Name = "BloodPresureLabel";
             this.BloodPresureLabel.Size = new System.Drawing.Size(184, 30);
             this.BloodPresureLabel.TabIndex = 0;
@@ -213,7 +322,7 @@
             this.PanelPulseRate.Location = new System.Drawing.Point(35, 20);
             this.PanelPulseRate.Margin = new System.Windows.Forms.Padding(2);
             this.PanelPulseRate.Name = "PanelPulseRate";
-            this.PanelPulseRate.Size = new System.Drawing.Size(622, 268);
+            this.PanelPulseRate.Size = new System.Drawing.Size(196, 36);
             this.PanelPulseRate.TabIndex = 8;
             // 
             // PulseRateLabel
@@ -226,295 +335,273 @@
             this.PulseRateLabel.TabIndex = 0;
             this.PulseRateLabel.Text = "PulseRateLabel";
             // 
-            // PanelBreathingRate
+            // BloodPresurePanel
             // 
-            this.PanelBreathingRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_DiastolicMaximum_ParameterExample);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_DiastolicMinimum_ParameterExample);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_SystolicMaximum_ParameterExample);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_SystolicMinimum_ParameterExample);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_Information);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_Systolic_Description);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRatePicture);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_Diastolic);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_Systolic);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_DiastolicMaximum_ParameterValue);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_DiastolicMinimum_ParameterValue);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_DiastolicMaximum);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_DiastolicMinimum);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_Diastolic_Description);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_SystolicMaximum_ParameterValue);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_SystolicMinimum_ParameterValue);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_SystolicMaximum);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel_SystolicMinimum);
-            this.PanelBreathingRate.Controls.Add(this.BreathingRateLabel);
-            this.PanelBreathingRate.Location = new System.Drawing.Point(35, 230);
-            this.PanelBreathingRate.Margin = new System.Windows.Forms.Padding(2);
-            this.PanelBreathingRate.Name = "PanelBreathingRate";
-            this.PanelBreathingRate.Size = new System.Drawing.Size(206, 38);
-            this.PanelBreathingRate.TabIndex = 9;
+            this.BloodPresurePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_DiastolicMaximum_ParameterExample);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_SystolicMaximum_ParameterExample);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_SystolicMinimum_ParameterExample);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_Information);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_Systolic_Description);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureImage);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_Diastolic);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_Systolic);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_DiastolicMaximum_ParameterValue);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_DiastolicMinimum_ParameterValue);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_DiastolicMaximum);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_DiastolicMinimum);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_Diastolic_Description);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_SystolicMaximum_ParameterValue);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_SystolicMinimum_ParameterValue);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_SystolicMaximum);
+            this.BloodPresurePanel.Controls.Add(this.BloodPresureLabel_SystolicMinimum);
+            this.BloodPresurePanel.Location = new System.Drawing.Point(11, 4);
+            this.BloodPresurePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.BloodPresurePanel.Name = "BloodPresurePanel";
+            this.BloodPresurePanel.Size = new System.Drawing.Size(728, 164);
+            this.BloodPresurePanel.TabIndex = 9;
             // 
-            // BreathingRateLabel
+            // BloodPresureLabel_DiastolicMaximum_ParameterExample
             // 
-            this.BreathingRateLabel.AutoSize = true;
-            this.BreathingRateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreathingRateLabel.Location = new System.Drawing.Point(0, 0);
-            this.BreathingRateLabel.Name = "BreathingRateLabel";
-            this.BreathingRateLabel.Size = new System.Drawing.Size(193, 30);
-            this.BreathingRateLabel.TabIndex = 32;
-            this.BreathingRateLabel.Text = "BreathingRateLabel";
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.AutoSize = true;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.Location = new System.Drawing.Point(382, 113);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.Name = "BloodPresureLabel_DiastolicMaximum_ParameterExample";
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.Size = new System.Drawing.Size(33, 19);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.TabIndex = 31;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterExample.Text = "100";
             // 
-            // BreathingRateLabel_DiastolicMaximum_ParameterExample
+            // BloodPresureLabel_SystolicMaximum_ParameterExample
             // 
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.AutoSize = true;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.Location = new System.Drawing.Point(378, 131);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.Name = "BreathingRateLabel_DiastolicMaximum_ParameterExample";
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.Size = new System.Drawing.Size(33, 19);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.TabIndex = 31;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterExample.Text = "100";
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.AutoSize = true;
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.Location = new System.Drawing.Point(654, 113);
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.Name = "BloodPresureLabel_SystolicMaximum_ParameterExample";
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.Size = new System.Drawing.Size(33, 19);
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.TabIndex = 29;
+            this.BloodPresureLabel_SystolicMaximum_ParameterExample.Text = "140";
             // 
-            // BreathingRateLabel_DiastolicMinimum_ParameterExample
+            // BloodPresureLabel_SystolicMinimum_ParameterExample
             // 
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.AutoSize = true;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.Location = new System.Drawing.Point(250, 131);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.Name = "BreathingRateLabel_DiastolicMinimum_ParameterExample";
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.Size = new System.Drawing.Size(25, 19);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.TabIndex = 30;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterExample.Text = "60";
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.AutoSize = true;
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.Location = new System.Drawing.Point(527, 113);
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.Name = "BloodPresureLabel_SystolicMinimum_ParameterExample";
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.Size = new System.Drawing.Size(25, 19);
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.TabIndex = 28;
+            this.BloodPresureLabel_SystolicMinimum_ParameterExample.Text = "90";
             // 
-            // BreathingRateLabel_SystolicMaximum_ParameterExample
+            // BloodPresureLabel_Information
             // 
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.AutoSize = true;
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.Location = new System.Drawing.Point(650, 131);
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.Name = "BreathingRateLabel_SystolicMaximum_ParameterExample";
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.Size = new System.Drawing.Size(33, 19);
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.TabIndex = 29;
-            this.BreathingRateLabel_SystolicMaximum_ParameterExample.Text = "140";
-            // 
-            // BreathingRateLabel_SystolicMinimum_ParameterExample
-            // 
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.AutoSize = true;
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.Location = new System.Drawing.Point(523, 131);
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.Name = "BreathingRateLabel_SystolicMinimum_ParameterExample";
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.Size = new System.Drawing.Size(25, 19);
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.TabIndex = 28;
-            this.BreathingRateLabel_SystolicMinimum_ParameterExample.Text = "90";
-            // 
-            // BreathingRateLabel_Information
-            // 
-            this.BreathingRateLabel_Information.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BreathingRateLabel_Information.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_Information.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BreathingRateLabel_Information.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_Information.Location = new System.Drawing.Point(71, 309);
-            this.BreathingRateLabel_Information.Multiline = true;
-            this.BreathingRateLabel_Information.Name = "BreathingRateLabel_Information";
-            this.BreathingRateLabel_Information.Size = new System.Drawing.Size(605, 17);
-            this.BreathingRateLabel_Information.TabIndex = 27;
-            this.BreathingRateLabel_Information.Text = "** The recommended values to the Diastolic are between 60 and 100 and for the sys" +
+            this.BloodPresureLabel_Information.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BloodPresureLabel_Information.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_Information.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BloodPresureLabel_Information.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_Information.Location = new System.Drawing.Point(71, 309);
+            this.BloodPresureLabel_Information.Multiline = true;
+            this.BloodPresureLabel_Information.Name = "BloodPresureLabel_Information";
+            this.BloodPresureLabel_Information.Size = new System.Drawing.Size(605, 17);
+            this.BloodPresureLabel_Information.TabIndex = 27;
+            this.BloodPresureLabel_Information.Text = "** The recommended values to the Diastolic are between 60 and 100 and for the sys" +
     "tolic are between 90 and 140 **";
-            this.BreathingRateLabel_Information.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_Information.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_Systolic_Description
+            // BloodPresureLabel_Systolic_Description
             // 
-            this.BreathingRateLabel_Systolic_Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BreathingRateLabel_Systolic_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_Systolic_Description.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BreathingRateLabel_Systolic_Description.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_Systolic_Description.Location = new System.Drawing.Point(472, 173);
-            this.BreathingRateLabel_Systolic_Description.Multiline = true;
-            this.BreathingRateLabel_Systolic_Description.Name = "BreathingRateLabel_Systolic_Description";
-            this.BreathingRateLabel_Systolic_Description.Size = new System.Drawing.Size(249, 67);
-            this.BreathingRateLabel_Systolic_Description.TabIndex = 26;
-            this.BreathingRateLabel_Systolic_Description.Text = "Your systolic blood pressure is the bigger number on your reading. It measures th" +
+            this.BloodPresureLabel_Systolic_Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BloodPresureLabel_Systolic_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_Systolic_Description.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BloodPresureLabel_Systolic_Description.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_Systolic_Description.Location = new System.Drawing.Point(476, 155);
+            this.BloodPresureLabel_Systolic_Description.Multiline = true;
+            this.BloodPresureLabel_Systolic_Description.Name = "BloodPresureLabel_Systolic_Description";
+            this.BloodPresureLabel_Systolic_Description.Size = new System.Drawing.Size(249, 67);
+            this.BloodPresureLabel_Systolic_Description.TabIndex = 26;
+            this.BloodPresureLabel_Systolic_Description.Text = "Your systolic blood pressure is the bigger number on your reading. It measures th" +
     "e force of blood against your artery walls while your ventricles";
-            this.BreathingRateLabel_Systolic_Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_Systolic_Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRatePicture
+            // BloodPresureImage
             // 
-            this.BreathingRatePicture.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
-            this.BreathingRatePicture.Location = new System.Drawing.Point(28, 45);
-            this.BreathingRatePicture.Margin = new System.Windows.Forms.Padding(2);
-            this.BreathingRatePicture.Name = "BreathingRatePicture";
-            this.BreathingRatePicture.Size = new System.Drawing.Size(150, 165);
-            this.BreathingRatePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BreathingRatePicture.TabIndex = 14;
-            this.BreathingRatePicture.TabStop = false;
+            this.BloodPresureImage.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
+            this.BloodPresureImage.Location = new System.Drawing.Point(28, 45);
+            this.BloodPresureImage.Margin = new System.Windows.Forms.Padding(2);
+            this.BloodPresureImage.Name = "BloodPresureImage";
+            this.BloodPresureImage.Size = new System.Drawing.Size(150, 165);
+            this.BloodPresureImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BloodPresureImage.TabIndex = 14;
+            this.BloodPresureImage.TabStop = false;
             // 
-            // BreathingRateLabel_Diastolic
+            // BloodPresureLabel_Diastolic
             // 
-            this.BreathingRateLabel_Diastolic.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_Diastolic.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_Diastolic.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.BreathingRateLabel_Diastolic.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_Diastolic.Location = new System.Drawing.Point(201, 63);
-            this.BreathingRateLabel_Diastolic.Multiline = true;
-            this.BreathingRateLabel_Diastolic.Name = "BreathingRateLabel_Diastolic";
-            this.BreathingRateLabel_Diastolic.ReadOnly = true;
-            this.BreathingRateLabel_Diastolic.Size = new System.Drawing.Size(249, 22);
-            this.BreathingRateLabel_Diastolic.TabIndex = 25;
-            this.BreathingRateLabel_Diastolic.Text = "Diastolic";
-            this.BreathingRateLabel_Diastolic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_Diastolic.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_Diastolic.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_Diastolic.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.BloodPresureLabel_Diastolic.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_Diastolic.Location = new System.Drawing.Point(205, 45);
+            this.BloodPresureLabel_Diastolic.Multiline = true;
+            this.BloodPresureLabel_Diastolic.Name = "BloodPresureLabel_Diastolic";
+            this.BloodPresureLabel_Diastolic.ReadOnly = true;
+            this.BloodPresureLabel_Diastolic.Size = new System.Drawing.Size(249, 22);
+            this.BloodPresureLabel_Diastolic.TabIndex = 25;
+            this.BloodPresureLabel_Diastolic.Text = "Diastolic";
+            this.BloodPresureLabel_Diastolic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_Systolic
+            // BloodPresureLabel_Systolic
             // 
-            this.BreathingRateLabel_Systolic.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_Systolic.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_Systolic.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.BreathingRateLabel_Systolic.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_Systolic.Location = new System.Drawing.Point(472, 63);
-            this.BreathingRateLabel_Systolic.Multiline = true;
-            this.BreathingRateLabel_Systolic.Name = "BreathingRateLabel_Systolic";
-            this.BreathingRateLabel_Systolic.ReadOnly = true;
-            this.BreathingRateLabel_Systolic.Size = new System.Drawing.Size(249, 22);
-            this.BreathingRateLabel_Systolic.TabIndex = 24;
-            this.BreathingRateLabel_Systolic.Text = "Systolic";
-            this.BreathingRateLabel_Systolic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_Systolic.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_Systolic.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_Systolic.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.BloodPresureLabel_Systolic.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_Systolic.Location = new System.Drawing.Point(476, 45);
+            this.BloodPresureLabel_Systolic.Multiline = true;
+            this.BloodPresureLabel_Systolic.Name = "BloodPresureLabel_Systolic";
+            this.BloodPresureLabel_Systolic.ReadOnly = true;
+            this.BloodPresureLabel_Systolic.Size = new System.Drawing.Size(249, 22);
+            this.BloodPresureLabel_Systolic.TabIndex = 24;
+            this.BloodPresureLabel_Systolic.Text = "Systolic";
+            this.BloodPresureLabel_Systolic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_DiastolicMaximum_ParameterValue
+            // BloodPresureLabel_DiastolicMaximum_ParameterValue
             // 
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.Location = new System.Drawing.Point(331, 123);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.Multiline = true;
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.Name = "BreathingRateLabel_DiastolicMaximum_ParameterValue";
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
-            this.BreathingRateLabel_DiastolicMaximum_ParameterValue.TabIndex = 23;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.Location = new System.Drawing.Point(335, 105);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.Multiline = true;
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.Name = "BloodPresureLabel_DiastolicMaximum_ParameterValue";
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
+            this.BloodPresureLabel_DiastolicMaximum_ParameterValue.TabIndex = 23;
             // 
-            // BreathingRateLabel_DiastolicMinimum_ParameterValue
+            // BloodPresureLabel_DiastolicMinimum_ParameterValue
             // 
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.Location = new System.Drawing.Point(201, 123);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.Multiline = true;
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.Name = "BreathingRateLabel_DiastolicMinimum_ParameterValue";
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
-            this.BreathingRateLabel_DiastolicMinimum_ParameterValue.TabIndex = 22;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Location = new System.Drawing.Point(206, 106);
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(10);
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Multiline = true;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Name = "BloodPresureLabel_DiastolicMinimum_ParameterValue";
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.TabIndex = 22;
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.Text = "60";
+            this.BloodPresureLabel_DiastolicMinimum_ParameterValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_DiastolicMaximum
+            // BloodPresureLabel_DiastolicMaximum
             // 
-            this.BreathingRateLabel_DiastolicMaximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_DiastolicMaximum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_DiastolicMaximum.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_DiastolicMaximum.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_DiastolicMaximum.Location = new System.Drawing.Point(330, 93);
-            this.BreathingRateLabel_DiastolicMaximum.Name = "BreathingRateLabel_DiastolicMaximum";
-            this.BreathingRateLabel_DiastolicMaximum.ReadOnly = true;
-            this.BreathingRateLabel_DiastolicMaximum.Size = new System.Drawing.Size(119, 18);
-            this.BreathingRateLabel_DiastolicMaximum.TabIndex = 21;
-            this.BreathingRateLabel_DiastolicMaximum.Text = "Maximum";
-            this.BreathingRateLabel_DiastolicMaximum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_DiastolicMaximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_DiastolicMaximum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_DiastolicMaximum.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_DiastolicMaximum.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_DiastolicMaximum.Location = new System.Drawing.Point(334, 75);
+            this.BloodPresureLabel_DiastolicMaximum.Name = "BloodPresureLabel_DiastolicMaximum";
+            this.BloodPresureLabel_DiastolicMaximum.ReadOnly = true;
+            this.BloodPresureLabel_DiastolicMaximum.Size = new System.Drawing.Size(119, 18);
+            this.BloodPresureLabel_DiastolicMaximum.TabIndex = 21;
+            this.BloodPresureLabel_DiastolicMaximum.Text = "Maximum";
+            this.BloodPresureLabel_DiastolicMaximum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_DiastolicMinimum
+            // BloodPresureLabel_DiastolicMinimum
             // 
-            this.BreathingRateLabel_DiastolicMinimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_DiastolicMinimum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_DiastolicMinimum.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_DiastolicMinimum.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_DiastolicMinimum.Location = new System.Drawing.Point(201, 93);
-            this.BreathingRateLabel_DiastolicMinimum.Name = "BreathingRateLabel_DiastolicMinimum";
-            this.BreathingRateLabel_DiastolicMinimum.ReadOnly = true;
-            this.BreathingRateLabel_DiastolicMinimum.Size = new System.Drawing.Size(119, 18);
-            this.BreathingRateLabel_DiastolicMinimum.TabIndex = 20;
-            this.BreathingRateLabel_DiastolicMinimum.Text = "Minimum";
-            this.BreathingRateLabel_DiastolicMinimum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_DiastolicMinimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_DiastolicMinimum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_DiastolicMinimum.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_DiastolicMinimum.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_DiastolicMinimum.Location = new System.Drawing.Point(205, 75);
+            this.BloodPresureLabel_DiastolicMinimum.Name = "BloodPresureLabel_DiastolicMinimum";
+            this.BloodPresureLabel_DiastolicMinimum.ReadOnly = true;
+            this.BloodPresureLabel_DiastolicMinimum.Size = new System.Drawing.Size(119, 18);
+            this.BloodPresureLabel_DiastolicMinimum.TabIndex = 20;
+            this.BloodPresureLabel_DiastolicMinimum.Text = "Minimum";
+            this.BloodPresureLabel_DiastolicMinimum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_Diastolic_Description
+            // BloodPresureLabel_Diastolic_Description
             // 
-            this.BreathingRateLabel_Diastolic_Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BreathingRateLabel_Diastolic_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_Diastolic_Description.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BreathingRateLabel_Diastolic_Description.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_Diastolic_Description.Location = new System.Drawing.Point(201, 173);
-            this.BreathingRateLabel_Diastolic_Description.Multiline = true;
-            this.BreathingRateLabel_Diastolic_Description.Name = "BreathingRateLabel_Diastolic_Description";
-            this.BreathingRateLabel_Diastolic_Description.Size = new System.Drawing.Size(249, 87);
-            this.BreathingRateLabel_Diastolic_Description.TabIndex = 19;
-            this.BreathingRateLabel_Diastolic_Description.Text = "Your diastolic blood pressure is the lower number on your reading. It measures th" +
+            this.BloodPresureLabel_Diastolic_Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BloodPresureLabel_Diastolic_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_Diastolic_Description.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BloodPresureLabel_Diastolic_Description.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_Diastolic_Description.Location = new System.Drawing.Point(205, 155);
+            this.BloodPresureLabel_Diastolic_Description.Multiline = true;
+            this.BloodPresureLabel_Diastolic_Description.Name = "BloodPresureLabel_Diastolic_Description";
+            this.BloodPresureLabel_Diastolic_Description.Size = new System.Drawing.Size(249, 87);
+            this.BloodPresureLabel_Diastolic_Description.TabIndex = 19;
+            this.BloodPresureLabel_Diastolic_Description.Text = "Your diastolic blood pressure is the lower number on your reading. It measures th" +
     "e force of blood against your artery walls as your heart relaxes and the ventric" +
     "les are allowed to refill with blood";
-            this.BreathingRateLabel_Diastolic_Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_Diastolic_Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_SystolicMaximum_ParameterValue
+            // BloodPresureLabel_SystolicMaximum_ParameterValue
             // 
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.Location = new System.Drawing.Point(602, 123);
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.Multiline = true;
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.Name = "BreathingRateLabel_SystolicMaximum_ParameterValue";
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
-            this.BreathingRateLabel_SystolicMaximum_ParameterValue.TabIndex = 18;
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.Location = new System.Drawing.Point(606, 105);
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.Multiline = true;
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.Name = "BloodPresureLabel_SystolicMaximum_ParameterValue";
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
+            this.BloodPresureLabel_SystolicMaximum_ParameterValue.TabIndex = 18;
             // 
-            // BreathingRateLabel_SystolicMinimum_ParameterValue
+            // BloodPresureLabel_SystolicMinimum_ParameterValue
             // 
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.Location = new System.Drawing.Point(472, 123);
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.Multiline = true;
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.Name = "BreathingRateLabel_SystolicMinimum_ParameterValue";
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.TabIndex = 17;
-            this.BreathingRateLabel_SystolicMinimum_ParameterValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.Location = new System.Drawing.Point(476, 105);
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.Multiline = true;
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.Name = "BloodPresureLabel_SystolicMinimum_ParameterValue";
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.TabIndex = 17;
+            this.BloodPresureLabel_SystolicMinimum_ParameterValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_SystolicMaximum
+            // BloodPresureLabel_SystolicMaximum
             // 
-            this.BreathingRateLabel_SystolicMaximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_SystolicMaximum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_SystolicMaximum.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_SystolicMaximum.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_SystolicMaximum.Location = new System.Drawing.Point(602, 93);
-            this.BreathingRateLabel_SystolicMaximum.Name = "BreathingRateLabel_SystolicMaximum";
-            this.BreathingRateLabel_SystolicMaximum.ReadOnly = true;
-            this.BreathingRateLabel_SystolicMaximum.Size = new System.Drawing.Size(119, 18);
-            this.BreathingRateLabel_SystolicMaximum.TabIndex = 16;
-            this.BreathingRateLabel_SystolicMaximum.Text = "Maximum";
-            this.BreathingRateLabel_SystolicMaximum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_SystolicMaximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_SystolicMaximum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_SystolicMaximum.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_SystolicMaximum.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_SystolicMaximum.Location = new System.Drawing.Point(606, 75);
+            this.BloodPresureLabel_SystolicMaximum.Name = "BloodPresureLabel_SystolicMaximum";
+            this.BloodPresureLabel_SystolicMaximum.ReadOnly = true;
+            this.BloodPresureLabel_SystolicMaximum.Size = new System.Drawing.Size(119, 18);
+            this.BloodPresureLabel_SystolicMaximum.TabIndex = 16;
+            this.BloodPresureLabel_SystolicMaximum.Text = "Maximum";
+            this.BloodPresureLabel_SystolicMaximum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BreathingRateLabel_SystolicMinimum
+            // BloodPresureLabel_SystolicMinimum
             // 
-            this.BreathingRateLabel_SystolicMinimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BreathingRateLabel_SystolicMinimum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BreathingRateLabel_SystolicMinimum.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BreathingRateLabel_SystolicMinimum.ForeColor = System.Drawing.Color.White;
-            this.BreathingRateLabel_SystolicMinimum.Location = new System.Drawing.Point(472, 93);
-            this.BreathingRateLabel_SystolicMinimum.Name = "BreathingRateLabel_SystolicMinimum";
-            this.BreathingRateLabel_SystolicMinimum.ReadOnly = true;
-            this.BreathingRateLabel_SystolicMinimum.Size = new System.Drawing.Size(119, 18);
-            this.BreathingRateLabel_SystolicMinimum.TabIndex = 15;
-            this.BreathingRateLabel_SystolicMinimum.Text = "Minimum";
-            this.BreathingRateLabel_SystolicMinimum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPresureLabel_SystolicMinimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BloodPresureLabel_SystolicMinimum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BloodPresureLabel_SystolicMinimum.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BloodPresureLabel_SystolicMinimum.ForeColor = System.Drawing.Color.White;
+            this.BloodPresureLabel_SystolicMinimum.Location = new System.Drawing.Point(476, 75);
+            this.BloodPresureLabel_SystolicMinimum.Name = "BloodPresureLabel_SystolicMinimum";
+            this.BloodPresureLabel_SystolicMinimum.ReadOnly = true;
+            this.BloodPresureLabel_SystolicMinimum.Size = new System.Drawing.Size(119, 18);
+            this.BloodPresureLabel_SystolicMinimum.TabIndex = 15;
+            this.BloodPresureLabel_SystolicMinimum.Text = "Minimum";
+            this.BloodPresureLabel_SystolicMinimum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PanelTemperature
             // 
@@ -540,6 +627,7 @@
             // 
             this.PanelVO2Max.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PanelVO2Max.Controls.Add(this.Vo2Label);
+            this.PanelVO2Max.Cursor = System.Windows.Forms.Cursors.SizeNESW;
             this.PanelVO2Max.Location = new System.Drawing.Point(35, 72);
             this.PanelVO2Max.Margin = new System.Windows.Forms.Padding(2);
             this.PanelVO2Max.Name = "PanelVO2Max";
@@ -555,7 +643,6 @@
             this.Vo2Label.Size = new System.Drawing.Size(97, 30);
             this.Vo2Label.TabIndex = 33;
             this.Vo2Label.Text = "Vo2Label";
-            this.Vo2Label.Click += new System.EventHandler(this.Label6_Click);
             // 
             // DefaultPanel_SelectSocketLabel
             // 
@@ -571,14 +658,14 @@
             // 
             // PanelMain
             // 
+            this.PanelMain.Controls.Add(this.BloodPresurePanel);
             this.PanelMain.Controls.Add(this.PanelPulseRate);
             this.PanelMain.Controls.Add(this.PanelVO2Max);
-            this.PanelMain.Controls.Add(this.PanelBloodPressure);
             this.PanelMain.Controls.Add(this.PanelTemperature);
-            this.PanelMain.Controls.Add(this.PanelBreathingRate);
-            this.PanelMain.Location = new System.Drawing.Point(7, 100);
+            this.PanelMain.Controls.Add(this.BreathingRatePanel);
+            this.PanelMain.Location = new System.Drawing.Point(0, 100);
             this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Size = new System.Drawing.Size(731, 335);
+            this.PanelMain.Size = new System.Drawing.Size(750, 348);
             this.PanelMain.TabIndex = 13;
             // 
             // SocketSelection
@@ -600,13 +687,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_CloseButton)).EndInit();
-            this.PanelBloodPressure.ResumeLayout(false);
-            this.PanelBloodPressure.PerformLayout();
+            this.BreathingRatePanel.ResumeLayout(false);
+            this.BreathingRatePanel.PerformLayout();
             this.PanelPulseRate.ResumeLayout(false);
             this.PanelPulseRate.PerformLayout();
-            this.PanelBreathingRate.ResumeLayout(false);
-            this.PanelBreathingRate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BreathingRatePicture)).EndInit();
+            this.BloodPresurePanel.ResumeLayout(false);
+            this.BloodPresurePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodPresureImage)).EndInit();
             this.PanelTemperature.ResumeLayout(false);
             this.PanelTemperature.PerformLayout();
             this.PanelVO2Max.ResumeLayout(false);
@@ -625,36 +712,41 @@
         private System.Windows.Forms.PictureBox PanelTop_MainPageButton;
         private System.Windows.Forms.Button DefaultPanel_InstallButton;
         public System.Windows.Forms.ComboBox DefaultPanel_BedComboBox;
-        private System.Windows.Forms.Panel PanelBloodPressure;
+        private System.Windows.Forms.Panel BreathingRatePanel;
         private System.Windows.Forms.ComboBox DefaultPanel_SocketComboBox;
         private System.Windows.Forms.Panel PanelPulseRate;
-        private System.Windows.Forms.Panel PanelBreathingRate;
+        private System.Windows.Forms.Panel BloodPresurePanel;
         private System.Windows.Forms.Panel PanelTemperature;
         private System.Windows.Forms.Panel PanelVO2Max;
         private System.Windows.Forms.Label DefaultPanel_SelectSocketLabel;
-        private System.Windows.Forms.TextBox BreathingRateLabel_Information;
-        private System.Windows.Forms.TextBox BreathingRateLabel_Systolic_Description;
-        private System.Windows.Forms.PictureBox BreathingRatePicture;
-        private System.Windows.Forms.TextBox BreathingRateLabel_Diastolic;
-        private System.Windows.Forms.TextBox BreathingRateLabel_Systolic;
-        private System.Windows.Forms.TextBox BreathingRateLabel_DiastolicMaximum_ParameterValue;
-        private System.Windows.Forms.TextBox BreathingRateLabel_DiastolicMinimum_ParameterValue;
-        private System.Windows.Forms.TextBox BreathingRateLabel_DiastolicMaximum;
-        private System.Windows.Forms.TextBox BreathingRateLabel_DiastolicMinimum;
-        private System.Windows.Forms.TextBox BreathingRateLabel_Diastolic_Description;
-        private System.Windows.Forms.TextBox BreathingRateLabel_SystolicMaximum_ParameterValue;
-        private System.Windows.Forms.TextBox BreathingRateLabel_SystolicMinimum_ParameterValue;
-        private System.Windows.Forms.TextBox BreathingRateLabel_SystolicMaximum;
-        private System.Windows.Forms.TextBox BreathingRateLabel_SystolicMinimum;
-        private System.Windows.Forms.Label BreathingRateLabel_DiastolicMaximum_ParameterExample;
-        private System.Windows.Forms.Label BreathingRateLabel_DiastolicMinimum_ParameterExample;
-        private System.Windows.Forms.Label BreathingRateLabel_SystolicMaximum_ParameterExample;
-        private System.Windows.Forms.Label BreathingRateLabel_SystolicMinimum_ParameterExample;
+        private System.Windows.Forms.TextBox BloodPresureLabel_Information;
+        private System.Windows.Forms.TextBox BloodPresureLabel_Systolic_Description;
+        private System.Windows.Forms.PictureBox BloodPresureImage;
+        private System.Windows.Forms.TextBox BloodPresureLabel_Diastolic;
+        private System.Windows.Forms.TextBox BloodPresureLabel_Systolic;
+        private System.Windows.Forms.TextBox BloodPresureLabel_DiastolicMaximum_ParameterValue;
+        private System.Windows.Forms.TextBox BloodPresureLabel_DiastolicMinimum_ParameterValue;
+        private System.Windows.Forms.TextBox BloodPresureLabel_DiastolicMaximum;
+        private System.Windows.Forms.TextBox BloodPresureLabel_DiastolicMinimum;
+        private System.Windows.Forms.TextBox BloodPresureLabel_Diastolic_Description;
+        private System.Windows.Forms.TextBox BloodPresureLabel_SystolicMaximum_ParameterValue;
+        private System.Windows.Forms.TextBox BloodPresureLabel_SystolicMinimum_ParameterValue;
+        private System.Windows.Forms.TextBox BloodPresureLabel_SystolicMaximum;
+        private System.Windows.Forms.TextBox BloodPresureLabel_SystolicMinimum;
+        private System.Windows.Forms.Label BloodPresureLabel_DiastolicMaximum_ParameterExample;
+        private System.Windows.Forms.Label BloodPresureLabel_SystolicMaximum_ParameterExample;
+        private System.Windows.Forms.Label BloodPresureLabel_SystolicMinimum_ParameterExample;
         private System.Windows.Forms.Label BreathingRateLabel;
         private System.Windows.Forms.Label PulseRateLabel;
         private System.Windows.Forms.Panel PanelMain;
         private System.Windows.Forms.Label TemperatureLabel;
         private System.Windows.Forms.Label Vo2Label;
         private System.Windows.Forms.Label BloodPresureLabel;
+        private System.Windows.Forms.TextBox BreathingRateLabel_BreathingRate;
+        private System.Windows.Forms.TextBox BreathingRateLabel_BreathingRate_Maximum_ParameterValue;
+        private System.Windows.Forms.TextBox BreathingRateLabel_BreathingRate_Minimum_ParameterValue;
+        private System.Windows.Forms.TextBox BreathingRateLabel_BreathingRate_Maximum;
+        private System.Windows.Forms.TextBox BreathingRateLabel_BreathingRate_Minimum;
+        private System.Windows.Forms.TextBox textBox8;
     }
 }

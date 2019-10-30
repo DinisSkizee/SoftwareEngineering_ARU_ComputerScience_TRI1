@@ -12,9 +12,9 @@ namespace FinalProject
 
             #region Panel Visibility  -- Dinis & Jorge
             // Visible = false to every SocketPanel in the form
-            PanelBloodPressure.Visible = true;
+            BreathingRatePanel.Visible = true;
             PanelPulseRate.Visible = false;
-            PanelBreathingRate.Visible = false;
+            BloodPresurePanel.Visible = false;
             PanelTemperature.Visible = false;
             PanelVO2Max.Visible = false;
             #endregion
@@ -113,16 +113,6 @@ namespace FinalProject
                 DefaultPanel_SelectSocketLabel.BringToFront();
             }
             else { DefaultPanel_SelectSocketLabel.SendToBack(); }
-        }
-
-        private void DetailsPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
         }
 
     }
