@@ -18,11 +18,6 @@ namespace FinalProject
             int height;
             #endregion
 
-
-            // 
-            // NEEDS TO BE COMPLETED WITH A WHILE FORM
-            //
-
             /* A randomizer is implemented generating a value from 0 to 100
              * so then we can randomize the values with percentage deciding
              * then in each if how much would it be for the same statement */
