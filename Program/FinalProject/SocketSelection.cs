@@ -41,7 +41,7 @@ namespace FinalProject
 
         }
 
-        #region ScrollBar Configuration  -- Dinis & Jorge  / ITS JUST AN EXTRA
+        #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
         /* just in case we need it
         // Add ScrollBar with scroll up/down event
         VScrollBar vScroll = new VScrollBar();
@@ -106,11 +106,11 @@ namespace FinalProject
             this.Hide();
         }
 
-        private void DefaultPanel_SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
+        private void Default_SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
         {
             if (DefaultPanel_SocketComboBox.SelectedIndex < 0)
             {
-                DefaultPanel_SelectSocketLabel.Visible = true;
+                DefaultPanel_SelectSocketLabel.Visible = true; ;
             }
             else
             {
