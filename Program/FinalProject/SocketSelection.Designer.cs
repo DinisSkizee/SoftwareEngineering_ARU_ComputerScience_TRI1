@@ -679,7 +679,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::FinalProject.Properties.Resources._1437242;
+            this.pictureBox2.Image = global::FinalProject.Properties.Resources.termpng;
             this.pictureBox2.Location = new System.Drawing.Point(35, 41);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(226, 187);
