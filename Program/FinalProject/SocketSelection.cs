@@ -12,7 +12,7 @@ namespace FinalProject
 
             #region Panel Visibility  -- Dinis & Jorge
             // Visible = false to every SocketPanel in the form
-            BreathingRatePanel.Visible = true;
+            BreathingRatePanel.Visible = false;
             PanelPulseRate.Visible = false;
             BloodPresurePanel.Visible = false;
             PanelTemperature.Visible = false;
@@ -41,7 +41,7 @@ namespace FinalProject
 
         }
 
-        #region ScrollBar Configuration  -- Dinis & Jorge
+        #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
         /* just in case we need it
         // Add ScrollBar with scroll up/down event
         VScrollBar vScroll = new VScrollBar();
@@ -106,13 +106,16 @@ namespace FinalProject
             this.Hide();
         }
 
-        private void SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
+        private void Default_SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
         {
             if (DefaultPanel_SocketComboBox.SelectedIndex < 0)
             {
-                DefaultPanel_SelectSocketLabel.BringToFront();
+                DefaultPanel_SelectSocketLabel.Visible = true; ;
             }
-            else { DefaultPanel_SelectSocketLabel.SendToBack(); }
+            else
+            {
+                DefaultPanel_SelectSocketLabel.Visible = false;
+            }
         }
 
     }
