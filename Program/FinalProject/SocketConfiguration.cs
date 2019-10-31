@@ -70,6 +70,24 @@ namespace FinalProject
 
             // Breathing Rate (BreathsPM)
 
+            Random randomBR = new Random();
+            int randomizerBR = randomBR.Next(0, 100);
+
+            if (randomizerBR <= 5)
+            {
+                Random brLowRandomizer = new Random();
+                brValue = brLowRandomizer.Next(2, 6);
+            }
+            else if ((randomizerBR > 5) && (randomizerBR < 95))
+            {
+                Random brNormalRandomizer = new Random();
+                brValue = brNormalRandomizer.Next(7, 45);
+            }
+            else if (randomizerBR >= 95)
+            {
+                Random brHighRandomizer = new Random();
+                brValue = brHighRandomizer.Next(46, 100);
+            }
 
             // Temperature (Celsius)
 
