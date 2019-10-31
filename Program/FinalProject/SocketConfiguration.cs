@@ -6,26 +6,28 @@ namespace FinalProject
     {
         public SocketConfiguration()
         {
+            #region General Variables -- Dinis & Jorge
             // Declarate Variables for the Sockets
             int syValue;
             int diValue;
             int hrValue;
             int brValue;
             int tempValue;
-            int Weight;
-            int Age;
-            int Height;
+            int weight;
+            int age;
+            int height;
+            #endregion
 
-
-            // Blood Pressure (Systolic and Diastolic)
 
             // 
             // NEEDS TO BE COMPLETED WITH A WHILE FORM / NEED TO HAVE THE SOCKETS DONE FIRST
             //
 
-            /* This randomizer will generate a value form 0 to 100
-             * so then we can randomize the values with percentage
-             * 5% to syDiLow and syDiHigh and the other 90% to syDiNormal */
+            /* A randomizer is implemented generating a value from 0 to 100
+             * so then we can randomize the values with percentage deciding
+             * then in each if how much would it be for the same statement */
+
+            #region Blood Pressure * Systolic & Diastolic * -- Dinis & Jorge
             Random randomSyDi = new Random();  // Create a Randomizer for the Systolic and Diastolic Values
             int randomizerSyDi = randomSyDi.Next(0, 100);
 
@@ -47,7 +49,9 @@ namespace FinalProject
                 syValue = syDiHighRandomizer.Next(141, 160);
                 diValue = syDiHighRandomizer.Next(91, 110);
             }
-            // Heart Rate (BPM)
+#endregion
+
+            #region Heart Rate * bpm * -- Dinis & Jorge
 
             Random randomHR = new Random();
             int randomizerHR = randomHR.Next(0, 100);
@@ -67,8 +71,9 @@ namespace FinalProject
                 Random hrHighRandomizer = new Random();
                 hrValue = hrHighRandomizer.Next(76, 95);
             }
+#endregion
 
-            // Breathing Rate (BreathsPM)
+            #region Breathing Rate * Breaths Per Minute * -- Dinis & Jorge
 
             Random randomBR = new Random();
             int randomizerBR = randomBR.Next(0, 100);
@@ -88,14 +93,42 @@ namespace FinalProject
                 Random brHighRandomizer = new Random();
                 brValue = brHighRandomizer.Next(46, 100);
             }
+            #endregion
 
-            // Temperature (Celsius)
+            #region Temperature * °C * -- Dinis & Jorge
 
+            Random randomTemp = new Random();
+            int randomizerTemp = randomTemp.Next(0, 100);
 
-            // Weight (Meters)
+            if (randomizerTemp <= 25)
+            {
+                Random tempLowRandomizer = new Random();
+                tempValue = tempLowRandomizer.Next(350, 364);
+                tempValue = tempValue / 10;
+            }
+            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
+            {
+                Random tempNormalRandomizer = new Random();
+                tempValue = tempNormalRandomizer.Next(365, 375);
+                tempValue = tempValue / 10;
+            }
+            else if (randomizerTemp >= 75)
+            {
+                Random tempHighRandomizer = new Random();
+                tempValue = tempHighRandomizer.Next(376, 410);
+                tempValue = tempValue / 10;
+            }
+            #endregion
 
+            #region Weight + Age + Height * Kg / yOld / Cm * -- Dinis & Jorge
+            Random randomWeight = new Random();
+            Random randomAge = new Random();
+            Random randomHeight = new Random();
 
-            // Age + Height (Years + Centimeter)
+            weight = randomWeight.Next(60, 85);
+            age = randomAge.Next(25, 45);
+            height = randomHeight.Next(150, 210);
+            #endregion
 
         }
     }
