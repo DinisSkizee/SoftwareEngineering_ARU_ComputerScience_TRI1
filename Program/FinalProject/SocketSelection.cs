@@ -14,7 +14,7 @@ namespace FinalProject
             // Visible = false to every SocketPanel in the form
             BreathingRatePanel.Visible = false;
             PanelPulseRate.Visible = false;
-            BloodPresurePanel.Visible = false;
+            BloodPressurePanel.Visible = false;
             PanelTemperature.Visible = false;
             PanelVO2Max.Visible = false;
             #endregion
@@ -35,8 +35,6 @@ namespace FinalProject
             DefaultPanel_SocketComboBox.Items.Add("Pulse Rate");
             DefaultPanel_SocketComboBox.Items.Add("Breathing Rate");
             DefaultPanel_SocketComboBox.Items.Add("Temperature");
-            DefaultPanel_SocketComboBox.Items.Add("VO2 Max");
-            DefaultPanel_SocketComboBox.Items.Add("General Details");
             #endregion
 
         }
@@ -112,9 +110,61 @@ namespace FinalProject
             {
                 DefaultPanel_SelectSocketLabel.Visible = true; ;
             }
-            else
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
             {
+                PanelTemperature.Dock = DockStyle.None;
+                PanelTemperature.Visible = false;
+                BreathingRatePanel.Dock = DockStyle.None;
+                BreathingRatePanel.Visible = false;
+                PanelPulseRate.Dock = DockStyle.None;
+                PanelPulseRate.Visible = false;
+
                 DefaultPanel_SelectSocketLabel.Visible = false;
+
+                BloodPressurePanel.Dock = DockStyle.Fill;
+                BloodPressurePanel.Visible = true;
+            }
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+            {
+                PanelTemperature.Dock = DockStyle.None;
+                PanelTemperature.Visible = false;
+                BreathingRatePanel.Dock = DockStyle.None;
+                BreathingRatePanel.Visible = false;
+                BloodPressurePanel.Dock = DockStyle.None;
+                BloodPressurePanel.Visible = false;
+
+                DefaultPanel_SelectSocketLabel.Visible = false;
+
+                PanelPulseRate.Dock = DockStyle.Fill;
+                PanelPulseRate.Visible = true;
+            }
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+            {
+                PanelPulseRate.Dock = DockStyle.None;
+                PanelPulseRate.Visible = false;
+                PanelTemperature.Dock = DockStyle.None;
+                PanelTemperature.Visible = false;
+                BloodPressurePanel.Dock = DockStyle.None;
+                BloodPressurePanel.Visible = false;
+
+                DefaultPanel_SelectSocketLabel.Visible = false;
+
+                BreathingRatePanel.Dock = DockStyle.Fill;
+                BreathingRatePanel.Visible = true;
+            }
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+            {
+                PanelPulseRate.Dock = DockStyle.None;
+                PanelPulseRate.Visible = false;
+                BreathingRatePanel.Dock = DockStyle.None;
+                BreathingRatePanel.Visible = false;
+                BloodPressurePanel.Dock = DockStyle.None;
+                BloodPressurePanel.Visible = false;
+
+                DefaultPanel_SelectSocketLabel.Visible = false;
+
+                PanelTemperature.Dock = DockStyle.Fill;
+                PanelTemperature.Visible = true;
             }
         }
 
