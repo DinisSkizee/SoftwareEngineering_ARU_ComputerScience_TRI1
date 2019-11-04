@@ -5,26 +5,27 @@ Common details in all form
 * now the window can be moved around the screen
 * pressing "tab" will change the selected box
 * we implement read-only to the boxes that does not matter to the selected
-* draggable
 
 
  Login form
 
-* changed window if input (username and password) correct
-* display message when input is incorrect
+* when the input (username and password) is correct change to another form
+* display message when input is incorrect "the username or the password is incorrect. Please, try again."
 * when "enter" on username or password box will redirect to login button
 + connect with the DB to check credentials
+
 
  After Login Form
 
 * Central Station button take us to the Central Station form
 * Bedside button take us to the Bedside form
-+ Logout button
+* Logout button
 
 Bedside Form
 
 * button to change room
 * modules sockets
+* insert buttons and eject
 * button to return to After Login form
 
 Modules form
