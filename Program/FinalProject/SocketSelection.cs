@@ -16,7 +16,6 @@ namespace FinalProject
             PanelPulseRate.Visible = false;
             BloodPressurePanel.Visible = false;
             PanelTemperature.Visible = false;
-            PanelVO2Max.Visible = false;
             #endregion
 
             #region BedComboBox Items  -- Dinis & Jorge
