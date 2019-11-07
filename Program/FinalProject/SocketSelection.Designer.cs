@@ -984,9 +984,10 @@
             // PanelTop_MainPageButton
             // 
             this.PanelTop_MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
-            this.PanelTop_MainPageButton.Location = new System.Drawing.Point(7, 7);
+            this.PanelTop_MainPageButton.Location = new System.Drawing.Point(9, 9);
+            this.PanelTop_MainPageButton.Margin = new System.Windows.Forms.Padding(4);
             this.PanelTop_MainPageButton.Name = "PanelTop_MainPageButton";
-            this.PanelTop_MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.PanelTop_MainPageButton.Size = new System.Drawing.Size(40, 37);
             this.PanelTop_MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PanelTop_MainPageButton.TabIndex = 5;
             this.PanelTop_MainPageButton.TabStop = false;
@@ -996,10 +997,10 @@
             // 
             this.PanelTop_MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelTop_MinimizeButton.Image = global::FinalProject.Properties.Resources.minimizewhite;
-            this.PanelTop_MinimizeButton.Location = new System.Drawing.Point(681, 10);
-            this.PanelTop_MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelTop_MinimizeButton.Location = new System.Drawing.Point(908, 12);
+            this.PanelTop_MinimizeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelTop_MinimizeButton.Name = "PanelTop_MinimizeButton";
-            this.PanelTop_MinimizeButton.Size = new System.Drawing.Size(23, 25);
+            this.PanelTop_MinimizeButton.Size = new System.Drawing.Size(31, 31);
             this.PanelTop_MinimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PanelTop_MinimizeButton.TabIndex = 2;
             this.PanelTop_MinimizeButton.TabStop = false;
@@ -1009,10 +1010,10 @@
             // 
             this.PanelTop_CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelTop_CloseButton.Image = global::FinalProject.Properties.Resources.closewhite;
-            this.PanelTop_CloseButton.Location = new System.Drawing.Point(716, 10);
-            this.PanelTop_CloseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelTop_CloseButton.Location = new System.Drawing.Point(955, 12);
+            this.PanelTop_CloseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelTop_CloseButton.Name = "PanelTop_CloseButton";
-            this.PanelTop_CloseButton.Size = new System.Drawing.Size(23, 25);
+            this.PanelTop_CloseButton.Size = new System.Drawing.Size(31, 31);
             this.PanelTop_CloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PanelTop_CloseButton.TabIndex = 1;
             this.PanelTop_CloseButton.TabStop = false;
