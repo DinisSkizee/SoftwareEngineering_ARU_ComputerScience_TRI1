@@ -58,7 +58,7 @@ namespace FinalProject
         #region Bed Buttons Click  -- Dinis & Jorge
         private void Bed1_Click(object sender, EventArgs e)
         {
-            BedSideView bedSideView1 = new BedSideView();
+            BedSideView1 bedSideView1 = new BedSideView1();
             bedSideView1.Show();
             bedSideView1.Location = this.Location;
             this.Hide();

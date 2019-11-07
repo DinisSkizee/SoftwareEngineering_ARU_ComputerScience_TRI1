@@ -10,8 +10,6 @@ namespace FinalProject
         {
             InitializeComponent();
 
-
-
             #region Panel Visibility  -- Dinis & Jorge
             // Visible = false to every SocketPanel in the form
             BreathingRatePanel.Visible = false;
@@ -95,7 +93,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region TextBox Change effects  -- Dinis & Jorge
+        #region TextBox Change effects BLOODPRESSURE  -- Dinis & Jorge
 
         // Diastolic Minimum TextBox \\
         // On Mouse Down and the text is "Insert Minimum" it will clear the textbox
@@ -161,6 +159,111 @@ namespace FinalProject
             if (BloodPressureTextBox_SystolicMaximum_ParameterValue.Text == "")
             {
                 BloodPressureTextBox_SystolicMaximum_ParameterValue.Text = "Insert Maximum";
+            }
+        }
+        #endregion
+
+        #region TextBox Change effects PULSERATE  -- Dinis & Jorge
+
+        // Pulse Rate Minimum TextBox \\
+        private void PulseRate_Minimum_TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (PulseRate_Minimum_TextBox.Text == "Insert Minimum")
+            {
+                PulseRate_Minimum_TextBox.Text = "";
+            }
+        }
+        private void PulseRate_Minimum_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (PulseRate_Minimum_TextBox.Text == "")
+            {
+                PulseRate_Minimum_TextBox.Text = "Insert Minimum";
+            }
+        }
+
+        // Pulse Rate Maximum TextBox \\
+        private void PulseRate_Maximum_TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (PulseRate_Maximum_TextBox.Text == "Insert Maximum")
+            {
+                PulseRate_Maximum_TextBox.Text = "";
+            }
+        }
+        private void PulseRate_Maximum_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (PulseRate_Maximum_TextBox.Text == "")
+            {
+                PulseRate_Maximum_TextBox.Text = "Insert Maximum";
+            }
+        }
+        #endregion
+
+        #region TextBox Change effects BREATHINGRATE  -- Dinis & Jorge
+
+        // Breathing Rate Minimum TextBox \\
+        private void BreathingRate_Minimum_TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (BreathingRate_Minimum_TextBox.Text == "Insert Minimum")
+            {
+                BreathingRate_Minimum_TextBox.Text = "";
+            }
+        }
+        private void BreathingRate_Minimum_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (BreathingRate_Minimum_TextBox.Text == "")
+            {
+                BreathingRate_Minimum_TextBox.Text = "Insert Minimum";
+            }
+        }
+
+        // Breathing Rate Maximum TextBox \\
+        private void BreathingRate_Maximum_TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (BreathingRate_Maximum_TextBox.Text == "Insert Maximum")
+            {
+                BreathingRate_Maximum_TextBox.Text = "";
+            }
+        }
+        private void BreathingRate_Maximum_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (BreathingRate_Maximum_TextBox.Text == "")
+            {
+                BreathingRate_Maximum_TextBox.Text = "Insert Maximum";
+            }
+        }
+        #endregion
+
+        #region TextBox Change effects TEMPERATURE  -- Dinis & Jorge
+
+        // Temperature Minimum TextBox \\
+        private void Temperature_Minimum_TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (Temperature_Minimum_TextBox.Text == "Insert Minimum")
+            {
+                Temperature_Minimum_TextBox.Text = "";
+            }
+        }
+        private void Temperature_Minimum_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (Temperature_Minimum_TextBox.Text == "")
+            {
+                Temperature_Minimum_TextBox.Text = "Insert Minimum";
+            }
+        }
+
+        // Temperature Maximum TextBox \\
+        private void Temperature_Maximum_TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (Temperature_Maximum_TextBox.Text == "Insert Maximum")
+            {
+                Temperature_Maximum_TextBox.Text = "";
+            }
+        }
+        private void Temperature_Maximum_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (Temperature_Maximum_TextBox.Text == "")
+            {
+                Temperature_Maximum_TextBox.Text = "Insert Maximum";
             }
         }
         #endregion
@@ -247,14 +350,27 @@ namespace FinalProject
             }
         }
 
+        // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
             #region Variable Declaration  -- Dinis & Jorge
-            // Blood Pressure Panel Variables
+            // Blood Pressure Secondary Variables
             string diMin = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
             string diMax = BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text;
             string syMin = BloodPressureTextBox_SystolicMinimum_ParameterValue.Text;
             string syMax = BloodPressureTextBox_SystolicMaximum_ParameterValue.Text;
+
+            // Pulse Rate Secondary Variables
+            string prMin = PulseRate_Minimum_TextBox.Text;
+            string prMax = PulseRate_Maximum_TextBox.Text;
+
+            // Breathing Rate Secondary Variables
+            string brMin = BreathingRate_Minimum_TextBox.Text;
+            string brMax = BreathingRate_Maximum_TextBox.Text;
+
+            // Temperature Secondary Variables
+            string tpMin = Temperature_Minimum_TextBox.Text;
+            string tpMax = Temperature_Maximum_TextBox.Text;
 
             // Parameters Verification
             int bpParameters = 0;
@@ -262,8 +378,18 @@ namespace FinalProject
             bool dMa = IsNumeric(diMax);
             bool sMi = IsNumeric(syMin);
             bool sMa = IsNumeric(syMax);
+            int prParameters = 0;
+            bool pMi = IsNumeric(prMin);
+            bool pMa = IsNumeric(prMax);
+            int brParameters = 0;
+            bool bMi = IsNumeric(brMin);
+            bool bMa = IsNumeric(brMax);
+            int tpParameters = 0;
+            bool tMi = IsNumeric(tpMin);
+            bool tMa = IsNumeric(tpMax);
             #endregion
 
+            #region String Verifier - Must be only numeric  -- Dinis & Jorge
             // Check if the string has a numeric value
             bool IsNumeric(string s)
             {
@@ -271,38 +397,93 @@ namespace FinalProject
                 return int.TryParse(s, out Result);
             }
 
-            // Check if every textbox has input
+            // Check if every textbox has input - Blood Pressure
             if (dMi == true && dMa == true && sMi == true && sMa == true)
             {
                 bpParameters = 1;
             }
             else { bpParameters = 0; }
 
+            // Pulse Rate
+            if (pMi == true && pMa == true)
+            {
+                prParameters = 1;
+            }
+            else { prParameters = 0; }
+
+            // Breathing Rate
+            if (bMi == true && bMa == true)
+            {
+                brParameters = 1;
+            }
+            else { brParameters = 0; }
+
+            // Temperature
+            if (tMi == true && tMa == true)
+            {
+                tpParameters = 1;
+            }
+            else { tpParameters = 0; }
+            #endregion
+
+            #region Install Button Main Functions  -- Dinis & Jorge
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
-                MessageBox.Show("Please, select a Module.");
+                MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && bpParameters == 1)
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && bpParameters == 1)  // Blood Pressure
             {
-                // ADD CODE
+                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
+                {
+                    MessageBox.Show(Convert.ToString(i));
+                    return;
+                }
             }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && bpParameters == 0)
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && bpParameters == 0)  // Blood Pressure
             {
-                MessageBox.Show("Please verify the input values, it must be numbers only.");
+                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
             }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && prParameters == 1)  // Pulse Rate
             {
-                // ADD CODE
+                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
+                {
+                    MessageBox.Show(Convert.ToString(i));
+                    return;
+                }
             }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && prParameters == 0)  // Pulse Rate
             {
-                // ADD CODE
+                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
             }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && brParameters == 1)  // Breathing Rate
             {
-                // ADD CODE
+                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
+                {
+                    MessageBox.Show(Convert.ToString(i));
+                    return;
+                }
             }
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && brParameters == 0)  // Breathing Rate
+            {
+                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
+            }
+
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && tpParameters == 1)  // Temperature
+            {
+                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
+                {
+                    MessageBox.Show(Convert.ToString(i));
+                    return;
+                }
+            }
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && tpParameters == 0)  // Temperature
+            {
+                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
+            }
+            #endregion
         }
     }
 }

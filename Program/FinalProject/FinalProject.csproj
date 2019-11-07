@@ -54,11 +54,11 @@
     <Compile Include="AfterLogin.Designer.cs">
       <DependentUpon>AfterLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="BedSideView.cs">
+    <Compile Include="BedSideView1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BedSideView.Designer.cs">
-      <DependentUpon>BedSideView.cs</DependentUpon>
+    <Compile Include="BedSideView1.Designer.cs">
+      <DependentUpon>BedSideView1.cs</DependentUpon>
     </Compile>
     <Compile Include="BedSideView2.cs">
       <SubType>Form</SubType>
@@ -114,6 +114,11 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SocketConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,8 +131,8 @@
     <EmbeddedResource Include="AfterLogin.resx">
       <DependentUpon>AfterLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BedSideView.resx">
-      <DependentUpon>BedSideView.cs</DependentUpon>
+    <EmbeddedResource Include="BedSideView1.resx">
+      <DependentUpon>BedSideView1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BedSideView2.resx">
       <DependentUpon>BedSideView2.cs</DependentUpon>
@@ -158,14 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SocketSelection.resx">
       <DependentUpon>SocketSelection.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +241,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Lungs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-temperature-sensitive-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-temperature-sensitive-801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature-icon-png-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\termometro-vetor-11551052339qzaxoahljj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\745646_temperature_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
