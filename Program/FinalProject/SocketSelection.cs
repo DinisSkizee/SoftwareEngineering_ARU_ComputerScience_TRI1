@@ -103,6 +103,11 @@ namespace FinalProject
             this.Hide();
         }
 
+
+         /* When we choose another option on the SocketComboBox
+         * the panels would be picked and turned visible and the Label invisible
+         * If none is picked everything would be invisible
+         * and the Label would be visible aswell */
         private void Default_SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
         {
             if (DefaultPanel_SocketComboBox.SelectedIndex < 0)
@@ -111,11 +116,12 @@ namespace FinalProject
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
             {
-                PanelTemperature.Dock = DockStyle.None;
-                PanelTemperature.Visible = false;
                 BreathingRatePanel.Dock = DockStyle.None;
-                BreathingRatePanel.Visible = false;
+                PanelTemperature.Dock = DockStyle.None;
                 PanelPulseRate.Dock = DockStyle.None;
+
+                BreathingRatePanel.Visible = false;
+                PanelTemperature.Visible = false;
                 PanelPulseRate.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
@@ -125,11 +131,12 @@ namespace FinalProject
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
             {
-                PanelTemperature.Dock = DockStyle.None;
-                PanelTemperature.Visible = false;
                 BreathingRatePanel.Dock = DockStyle.None;
-                BreathingRatePanel.Visible = false;
+                PanelTemperature.Dock = DockStyle.None;
                 BloodPressurePanel.Dock = DockStyle.None;
+
+                BreathingRatePanel.Visible = false;
+                PanelTemperature.Visible = false;
                 BloodPressurePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
@@ -140,10 +147,11 @@ namespace FinalProject
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
             {
                 PanelPulseRate.Dock = DockStyle.None;
-                PanelPulseRate.Visible = false;
                 PanelTemperature.Dock = DockStyle.None;
-                PanelTemperature.Visible = false;
                 BloodPressurePanel.Dock = DockStyle.None;
+
+                PanelPulseRate.Visible = false;
+                PanelTemperature.Visible = false;
                 BloodPressurePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
@@ -154,10 +162,11 @@ namespace FinalProject
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
             {
                 PanelPulseRate.Dock = DockStyle.None;
-                PanelPulseRate.Visible = false;
                 BreathingRatePanel.Dock = DockStyle.None;
-                BreathingRatePanel.Visible = false;
                 BloodPressurePanel.Dock = DockStyle.None;
+
+                PanelPulseRate.Visible = false;
+                BreathingRatePanel.Visible = false;
                 BloodPressurePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
