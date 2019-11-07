@@ -249,7 +249,6 @@ namespace FinalProject
 
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
-
             #region Variable Declaration  -- Dinis & Jorge
             // Blood Pressure Panel Variables
             string diMin = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
