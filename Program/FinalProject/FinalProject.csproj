@@ -236,5 +236,11 @@
   <ItemGroup>
     <None Include="Resources\termpng.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lungs.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -183,6 +183,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lungs {
+            get {
+                object obj = ResourceManager.GetObject("Lungs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize_size_option {
             get {
                 object obj = ResourceManager.GetObject("maximize-size-option", resourceCulture);
@@ -216,6 +226,16 @@ namespace FinalProject.Properties {
         internal static System.Drawing.Bitmap minimizewhite {
             get {
                 object obj = ResourceManager.GetObject("minimizewhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pulse {
+            get {
+                object obj = ResourceManager.GetObject("pulse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
