@@ -166,6 +166,5 @@ namespace FinalProject
                 PanelTemperature.Visible = true;
             }
         }
-
     }
 }
