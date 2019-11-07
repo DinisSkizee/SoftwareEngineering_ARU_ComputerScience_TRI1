@@ -203,7 +203,7 @@
             this.BreathingRatePanel.Location = new System.Drawing.Point(47, 180);
             this.BreathingRatePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BreathingRatePanel.Name = "BreathingRatePanel";
-            this.BreathingRatePanel.Size = new System.Drawing.Size(267, 52);
+            this.BreathingRatePanel.Size = new System.Drawing.Size(282, 55);
             this.BreathingRatePanel.TabIndex = 0;
             // 
             // pictureBox1
