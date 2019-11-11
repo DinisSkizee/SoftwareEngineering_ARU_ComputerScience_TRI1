@@ -988,6 +988,7 @@
             this.DefaultPanel_SelectSocketLabel.Size = new System.Drawing.Size(144, 21);
             this.DefaultPanel_SelectSocketLabel.TabIndex = 12;
             this.DefaultPanel_SelectSocketLabel.Text = "Select your Module";
+            this.DefaultPanel_SelectSocketLabel.Click += new System.EventHandler(this.DefaultPanel_SelectSocketLabel_Click);
             // 
             // PanelMain
             // 
