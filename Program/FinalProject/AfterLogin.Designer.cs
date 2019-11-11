@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.PanelTop = new System.Windows.Forms.Panel();
-            this.BedsButton = new System.Windows.Forms.Button();
-            this.CentralStationButton = new System.Windows.Forms.Button();
             this.LogoutButton = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonAfterLogin = new System.Windows.Forms.PictureBox();
             this.CloseButtonAfterLogin = new System.Windows.Forms.PictureBox();
+            this.BedsButton = new System.Windows.Forms.Button();
+            this.CentralStationButton = new System.Windows.Forms.Button();
+            this.ManagementButton = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonAfterLogin)).BeginInit();
@@ -53,30 +54,6 @@
             this.PanelTop.Size = new System.Drawing.Size(1000, 54);
             this.PanelTop.TabIndex = 0;
             this.PanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelTop_MouseMove);
-            // 
-            // BedsButton
-            // 
-            this.BedsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BedsButton.Location = new System.Drawing.Point(195, 214);
-            this.BedsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BedsButton.Name = "BedsButton";
-            this.BedsButton.Size = new System.Drawing.Size(267, 123);
-            this.BedsButton.TabIndex = 1;
-            this.BedsButton.Text = "*Beds*";
-            this.BedsButton.UseVisualStyleBackColor = true;
-            this.BedsButton.Click += new System.EventHandler(this.BedsButton_Click);
-            // 
-            // CentralStationButton
-            // 
-            this.CentralStationButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CentralStationButton.Location = new System.Drawing.Point(539, 214);
-            this.CentralStationButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CentralStationButton.Name = "CentralStationButton";
-            this.CentralStationButton.Size = new System.Drawing.Size(267, 123);
-            this.CentralStationButton.TabIndex = 2;
-            this.CentralStationButton.Text = "*Central Station*";
-            this.CentralStationButton.UseVisualStyleBackColor = true;
-            this.CentralStationButton.Click += new System.EventHandler(this.CentralStationButton_Click);
             // 
             // LogoutButton
             // 
@@ -115,12 +92,49 @@
             this.CloseButtonAfterLogin.TabStop = false;
             this.CloseButtonAfterLogin.Click += new System.EventHandler(this.CloseButtonAfterLogin_Click);
             // 
+            // BedsButton
+            // 
+            this.BedsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BedsButton.Location = new System.Drawing.Point(195, 156);
+            this.BedsButton.Margin = new System.Windows.Forms.Padding(4);
+            this.BedsButton.Name = "BedsButton";
+            this.BedsButton.Size = new System.Drawing.Size(267, 123);
+            this.BedsButton.TabIndex = 1;
+            this.BedsButton.Text = "*Beds*";
+            this.BedsButton.UseVisualStyleBackColor = true;
+            this.BedsButton.Click += new System.EventHandler(this.BedsButton_Click);
+            // 
+            // CentralStationButton
+            // 
+            this.CentralStationButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CentralStationButton.Location = new System.Drawing.Point(539, 156);
+            this.CentralStationButton.Margin = new System.Windows.Forms.Padding(4);
+            this.CentralStationButton.Name = "CentralStationButton";
+            this.CentralStationButton.Size = new System.Drawing.Size(267, 123);
+            this.CentralStationButton.TabIndex = 2;
+            this.CentralStationButton.Text = "*Central Station*";
+            this.CentralStationButton.UseVisualStyleBackColor = true;
+            this.CentralStationButton.Click += new System.EventHandler(this.CentralStationButton_Click);
+            // 
+            // ManagementButton
+            // 
+            this.ManagementButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ManagementButton.Location = new System.Drawing.Point(367, 314);
+            this.ManagementButton.Margin = new System.Windows.Forms.Padding(4);
+            this.ManagementButton.Name = "ManagementButton";
+            this.ManagementButton.Size = new System.Drawing.Size(267, 123);
+            this.ManagementButton.TabIndex = 3;
+            this.ManagementButton.Text = "*Management*";
+            this.ManagementButton.UseVisualStyleBackColor = true;
+            this.ManagementButton.Click += new System.EventHandler(this.ManagementButton_Click);
+            // 
             // AfterLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1000, 550);
+            this.Controls.Add(this.ManagementButton);
             this.Controls.Add(this.CentralStationButton);
             this.Controls.Add(this.BedsButton);
             this.Controls.Add(this.PanelTop);
@@ -143,5 +157,6 @@
         private System.Windows.Forms.Button BedsButton;
         private System.Windows.Forms.Button CentralStationButton;
         private System.Windows.Forms.PictureBox LogoutButton;
+        private System.Windows.Forms.Button ManagementButton;
     }
 }

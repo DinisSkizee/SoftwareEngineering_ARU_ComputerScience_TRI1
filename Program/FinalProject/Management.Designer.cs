@@ -1,6 +1,6 @@
-﻿namespace medical_staff
+﻿namespace FinalProject
 {
-    partial class Form1
+    partial class Management
     {
         /// <summary>
         /// Required designer variable.

@@ -71,5 +71,13 @@ namespace FinalProject
             loginForm.Location = this.Location;
             this.Hide();
         }
+
+        private void ManagementButton_Click(object sender, EventArgs e)
+        {
+            Management management = new Management();
+            management.Show();
+            management.Location = this.Location;
+            this.Hide();
+        }
     }
 }

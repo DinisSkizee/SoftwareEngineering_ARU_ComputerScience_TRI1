@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace medical_staff
 {
-    public partial class Form1 : Form
+    public partial class Management : Form
     {
-        public Form1()
+        public Management()
         {
             InitializeComponent();
         }
