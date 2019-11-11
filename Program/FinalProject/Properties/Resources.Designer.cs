@@ -63,6 +63,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _745646_temperature_512x512 {
+            get {
+                object obj = ResourceManager.GetObject("745646_temperature_512x512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aaa {
             get {
                 object obj = ResourceManager.GetObject("aaa", resourceCulture);
@@ -183,6 +193,26 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_temperature_sensitive_802 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-temperature-sensitive-802", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lungs {
+            get {
+                object obj = ResourceManager.GetObject("Lungs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize_size_option {
             get {
                 object obj = ResourceManager.GetObject("maximize-size-option", resourceCulture);
@@ -216,6 +246,36 @@ namespace FinalProject.Properties {
         internal static System.Drawing.Bitmap minimizewhite {
             get {
                 object obj = ResourceManager.GetObject("minimizewhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pulse {
+            get {
+                object obj = ResourceManager.GetObject("pulse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap temperature_icon_png_18 {
+            get {
+                object obj = ResourceManager.GetObject("temperature-icon-png-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap termometro_vetor_11551052339qzaxoahljj {
+            get {
+                object obj = ResourceManager.GetObject("termometro-vetor-11551052339qzaxoahljj", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class BedSideView
+    partial class BedSideView1
     {
         /// <summary>
         /// Required designer variable.

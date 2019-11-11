@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject
+namespace medical_staff
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AfterLogin());
+            Application.Run(new Management());
         }
     }
 }

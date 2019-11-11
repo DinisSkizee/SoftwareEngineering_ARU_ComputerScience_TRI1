@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class BedSideView : Form
+    public partial class BedSideView1 : Form
     {
-        public BedSideView()
+        public BedSideView1()
         {
             InitializeComponent();
         }

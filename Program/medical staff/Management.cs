@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject
+namespace medical_staff
 {
     public partial class Management : Form
     {

@@ -49,7 +49,7 @@ namespace FinalProject
         #region 2 Buttons  -- Dinis & Jorge
         private void BedsButton_Click(object sender, EventArgs e)
         {
-            BedSideView bedsideview = new BedSideView();
+            BedSideView1 bedsideview = new BedSideView1();
             bedsideview.Show();
             bedsideview.Location = this.Location;
             this.Hide();
@@ -69,6 +69,14 @@ namespace FinalProject
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             loginForm.Location = this.Location;
+            this.Hide();
+        }
+
+        private void ManagementButton_Click(object sender, EventArgs e)
+        {
+            Management management = new Management();
+            management.Show();
+            management.Location = this.Location;
             this.Hide();
         }
     }

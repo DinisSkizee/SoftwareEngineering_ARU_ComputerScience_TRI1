@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class Management : Form
+    public partial class test : Form
     {
-        public Management()
+        public test()
         {
             InitializeComponent();
-        }
-
-        private void BtnAddNew_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Add new record");
         }
     }
 }

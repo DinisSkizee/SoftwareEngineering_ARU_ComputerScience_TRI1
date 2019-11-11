@@ -8,11 +8,25 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>FinalProject</RootNamespace>
     <AssemblyName>FinalProject</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +47,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,11 +69,11 @@
     <Compile Include="AfterLogin.Designer.cs">
       <DependentUpon>AfterLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="BedSideView.cs">
+    <Compile Include="BedSideView1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BedSideView.Designer.cs">
-      <DependentUpon>BedSideView.cs</DependentUpon>
+    <Compile Include="BedSideView1.Designer.cs">
+      <DependentUpon>BedSideView1.cs</DependentUpon>
     </Compile>
     <Compile Include="BedSideView2.cs">
       <SubType>Form</SubType>
@@ -107,23 +123,27 @@
     <Compile Include="CentralStation.Designer.cs">
       <DependentUpon>CentralStation.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Medical staffs.cs">
+    <Compile Include="Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Medical staffs.Designer.cs">
-      <DependentUpon>Medical staffs.cs</DependentUpon>
+    <Compile Include="Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="On call staffs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="On call staffs.Designer.cs">
-      <DependentUpon>On call staffs.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SocketConfiguration.cs" />
     <Compile Include="Program.cs" />
@@ -137,8 +157,8 @@
     <EmbeddedResource Include="AfterLogin.resx">
       <DependentUpon>AfterLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BedSideView.resx">
-      <DependentUpon>BedSideView.cs</DependentUpon>
+    <EmbeddedResource Include="BedSideView1.resx">
+      <DependentUpon>BedSideView1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BedSideView2.resx">
       <DependentUpon>BedSideView2.cs</DependentUpon>
@@ -167,25 +187,28 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Medical staffs.resx">
-      <DependentUpon>Medical staffs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="On call staffs.resx">
-      <DependentUpon>On call staffs.cs</DependentUpon>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SocketSelection.resx">
       <DependentUpon>SocketSelection.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -252,6 +275,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\termpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lungs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-temperature-sensitive-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-temperature-sensitive-801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature-icon-png-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\termometro-vetor-11551052339qzaxoahljj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\745646_temperature_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
