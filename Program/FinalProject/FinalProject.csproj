@@ -146,10 +146,6 @@
     <Compile Include="OnCallStaff.Designer.cs">
       <DependentUpon>OnCallStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="On Call staffs\Program.cs" />
-    <Compile Include="On Call staffs\Properties\AssemblyInfo.cs" />
-    <Compile Include="On Call staffs\Properties\Resources.Designer.cs" />
-    <Compile Include="On Call staffs\Properties\Settings.Designer.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -209,7 +205,6 @@
     <EmbeddedResource Include="OnCallStaff.resx">
       <DependentUpon>OnCallStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="On Call staffs\Properties\Resources.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -232,13 +227,6 @@
     <None Include="DatabaseDataSet.xss">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="On Call staffs\.vs\On Call staffs\v16\.suo" />
-    <None Include="On Call staffs\.vs\On Call staffs\v16\Server\sqlite3\db.lock" />
-    <None Include="On Call staffs\.vs\On Call staffs\v16\Server\sqlite3\storage.ide" />
-    <None Include="On Call staffs\App.config" />
-    <None Include="On Call staffs\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="On Call staffs\obj\Debug\On Call staffs.csprojAssemblyReference.cache" />
-    <None Include="On Call staffs\Properties\Settings.settings" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -335,7 +323,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
-    <Content Include="On Call staffs\On Call staffs.csproj" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -349,11 +336,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="On Call staffs\bin\Debug\" />
-    <Folder Include="On Call staffs\bin\Release\" />
-    <Folder Include="On Call staffs\obj\Debug\TempPE\" />
-    <Folder Include="On Call staffs\obj\Release\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
