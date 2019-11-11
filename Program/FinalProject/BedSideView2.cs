@@ -155,5 +155,9 @@ namespace FinalProject
         }
         #endregion
 
+        private void Bed2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
