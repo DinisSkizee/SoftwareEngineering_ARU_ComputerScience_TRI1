@@ -19,7 +19,7 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        private DataTable table = new DataTable();
+        private DataTable table1 = new DataTable();
         
         public int selectedRow { get; private set; }
 
@@ -50,8 +50,8 @@ namespace FinalProject
         private void button1_Click(object sender, EventArgs e)
         {
           
-            table.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
-            dataGridView1.DataSource = table;
+            table1.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+            dataGridView1.DataSource = table1;
         }
 
         private void button3_Click(object sender, EventArgs e)
