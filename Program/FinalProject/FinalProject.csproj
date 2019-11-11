@@ -140,6 +140,12 @@
     <Compile Include="Management.Designer.cs">
       <DependentUpon>Management.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medical staffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medical staffs.Designer.cs">
+      <DependentUpon>Medical staffs.cs</DependentUpon>
+    </Compile>
     <Compile Include="OnCallStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medical staffs.resx">
+      <DependentUpon>Medical staffs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OnCallStaff.resx">
       <DependentUpon>OnCallStaff.cs</DependentUpon>
