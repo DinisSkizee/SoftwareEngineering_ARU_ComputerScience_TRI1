@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace medical_staff
+namespace On_Call_staffs
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void BtnAddNew_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Add new record");
         }
     }
 }

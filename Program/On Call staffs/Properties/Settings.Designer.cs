@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace medical_staff.Properties
+namespace On_Call_staffs.Properties
 {
 
 

@@ -30,15 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SocketSelection));
             this.PanelTop = new System.Windows.Forms.Panel();
-            this.PanelTop_MainPageButton = new System.Windows.Forms.PictureBox();
-            this.PanelTop_MinimizeButton = new System.Windows.Forms.PictureBox();
-            this.PanelTop_CloseButton = new System.Windows.Forms.PictureBox();
             this.DefaultPanel_InstallButton = new System.Windows.Forms.Button();
             this.DefaultPanel_BedComboBox = new System.Windows.Forms.ComboBox();
             this.BreathingRatePanel = new System.Windows.Forms.Panel();
             this.BreathingRate_Label_Description2 = new System.Windows.Forms.Label();
             this.BreathingRate_Label_Description1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BreathingRate_Maximum_TextBox = new System.Windows.Forms.TextBox();
             this.BreathingRate_Minimum_TextBox = new System.Windows.Forms.TextBox();
             this.BreathingRate_Label_Description = new System.Windows.Forms.Label();
@@ -62,7 +58,6 @@
             this.PulseRate_Maximum_label = new System.Windows.Forms.Label();
             this.PulseRate_Minimum_panel = new System.Windows.Forms.Panel();
             this.PulseRate_Minimum_label = new System.Windows.Forms.Label();
-            this.PulseRateImage = new System.Windows.Forms.PictureBox();
             this.PulseRateLabel = new System.Windows.Forms.Label();
             this.BloodPressurePanel = new System.Windows.Forms.Panel();
             this.BloodPressureLabel_Information = new System.Windows.Forms.Label();
@@ -80,7 +75,6 @@
             this.BloodPressure_SystolicLabel = new System.Windows.Forms.Label();
             this.BloodPressureLabel_Diastolic = new System.Windows.Forms.Panel();
             this.BloodPressure_DiastolicLabel = new System.Windows.Forms.Label();
-            this.BloodPressureImage = new System.Windows.Forms.PictureBox();
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue = new System.Windows.Forms.TextBox();
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
@@ -95,16 +89,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Temperature_Minimum_Panel = new System.Windows.Forms.Panel();
             this.Temperature_Minimum_Label = new System.Windows.Forms.Label();
-            this.Temperature_Picture = new System.Windows.Forms.PictureBox();
             this.TemperatureLabel = new System.Windows.Forms.Label();
             this.DefaultPanel_SelectSocketLabel = new System.Windows.Forms.Label();
             this.PanelMain = new System.Windows.Forms.Panel();
+            this.Temperature_Picture = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PulseRateImage = new System.Windows.Forms.PictureBox();
+            this.BloodPressureImage = new System.Windows.Forms.PictureBox();
+            this.PanelTop_MainPageButton = new System.Windows.Forms.PictureBox();
+            this.PanelTop_MinimizeButton = new System.Windows.Forms.PictureBox();
+            this.PanelTop_CloseButton = new System.Windows.Forms.PictureBox();
             this.PanelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_CloseButton)).BeginInit();
             this.BreathingRatePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BreathingRate_Panel.SuspendLayout();
             this.BreathingRate_Maximum_Panel.SuspendLayout();
             this.BreathingRate_Minimum_Panel.SuspendLayout();
@@ -112,7 +108,6 @@
             this.PulseRate_PulseRate_panel.SuspendLayout();
             this.PulseRate_Maximum_panel.SuspendLayout();
             this.PulseRate_Minimum_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PulseRateImage)).BeginInit();
             this.BloodPressurePanel.SuspendLayout();
             this.BloodPressurePanel_SystolicMaximum.SuspendLayout();
             this.BloodPressurePanel_SystolicMinimum.SuspendLayout();
@@ -120,13 +115,18 @@
             this.BloodPressurePanel_DiastolicMinimum.SuspendLayout();
             this.BloodPressureLabel_Systolic.SuspendLayout();
             this.BloodPressureLabel_Diastolic.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BloodPressureImage)).BeginInit();
             this.PanelTemperature.SuspendLayout();
             this.Temperature_Panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.Temperature_Minimum_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Temperature_Picture)).BeginInit();
             this.PanelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Temperature_Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PulseRateImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodPressureImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_CloseButton)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
@@ -142,43 +142,6 @@
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 2;
             this.PanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelTop_MouseMove);
-            // 
-            // PanelTop_MainPageButton
-            // 
-            this.PanelTop_MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
-            this.PanelTop_MainPageButton.Location = new System.Drawing.Point(7, 7);
-            this.PanelTop_MainPageButton.Name = "PanelTop_MainPageButton";
-            this.PanelTop_MainPageButton.Size = new System.Drawing.Size(30, 30);
-            this.PanelTop_MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PanelTop_MainPageButton.TabIndex = 5;
-            this.PanelTop_MainPageButton.TabStop = false;
-            this.PanelTop_MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
-            // 
-            // PanelTop_MinimizeButton
-            // 
-            this.PanelTop_MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelTop_MinimizeButton.Image = global::FinalProject.Properties.Resources.minimizewhite;
-            this.PanelTop_MinimizeButton.Location = new System.Drawing.Point(681, 10);
-            this.PanelTop_MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.PanelTop_MinimizeButton.Name = "PanelTop_MinimizeButton";
-            this.PanelTop_MinimizeButton.Size = new System.Drawing.Size(23, 25);
-            this.PanelTop_MinimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PanelTop_MinimizeButton.TabIndex = 2;
-            this.PanelTop_MinimizeButton.TabStop = false;
-            this.PanelTop_MinimizeButton.Click += new System.EventHandler(this.MinimizeButtonSocketSelection_Click);
-            // 
-            // PanelTop_CloseButton
-            // 
-            this.PanelTop_CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelTop_CloseButton.Image = global::FinalProject.Properties.Resources.closewhite;
-            this.PanelTop_CloseButton.Location = new System.Drawing.Point(716, 10);
-            this.PanelTop_CloseButton.Margin = new System.Windows.Forms.Padding(2);
-            this.PanelTop_CloseButton.Name = "PanelTop_CloseButton";
-            this.PanelTop_CloseButton.Size = new System.Drawing.Size(23, 25);
-            this.PanelTop_CloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PanelTop_CloseButton.TabIndex = 1;
-            this.PanelTop_CloseButton.TabStop = false;
-            this.PanelTop_CloseButton.Click += new System.EventHandler(this.CloseButtonSocketSelection_Click);
             // 
             // DefaultPanel_InstallButton
             // 
@@ -253,17 +216,6 @@
             this.BreathingRate_Label_Description1.Text = "From when you are born until the Adult life the breathing rate will decrease, fro" +
     "m 65 onwards it will increase again\r\n";
             this.BreathingRate_Label_Description1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FinalProject.Properties.Resources.Lungs;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 134);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // BreathingRate_Maximum_TextBox
             // 
@@ -578,17 +530,6 @@
             this.PulseRate_Minimum_label.Text = "Minimum";
             this.PulseRate_Minimum_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PulseRateImage
-            // 
-            this.PulseRateImage.Image = global::FinalProject.Properties.Resources.pulse;
-            this.PulseRateImage.Location = new System.Drawing.Point(31, 47);
-            this.PulseRateImage.Margin = new System.Windows.Forms.Padding(2);
-            this.PulseRateImage.Name = "PulseRateImage";
-            this.PulseRateImage.Size = new System.Drawing.Size(136, 134);
-            this.PulseRateImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PulseRateImage.TabIndex = 40;
-            this.PulseRateImage.TabStop = false;
-            // 
             // PulseRateLabel
             // 
             this.PulseRateLabel.AutoSize = true;
@@ -618,10 +559,11 @@
             this.BloodPressurePanel.Controls.Add(this.BloodPressureTextBox_DiastolicMinimum_ParameterValue);
             this.BloodPressurePanel.Controls.Add(this.BloodPressureTextBox_SystolicMaximum_ParameterValue);
             this.BloodPressurePanel.Controls.Add(this.BloodPressureTextBox_SystolicMinimum_ParameterValue);
-            this.BloodPressurePanel.Location = new System.Drawing.Point(2, 8);
+            this.BloodPressurePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BloodPressurePanel.Location = new System.Drawing.Point(0, 0);
             this.BloodPressurePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel.Name = "BloodPressurePanel";
-            this.BloodPressurePanel.Size = new System.Drawing.Size(202, 33);
+            this.BloodPressurePanel.Size = new System.Drawing.Size(750, 347);
             this.BloodPressurePanel.TabIndex = 9;
             // 
             // BloodPressureLabel_Information
@@ -813,17 +755,6 @@
             this.BloodPressure_DiastolicLabel.TabIndex = 0;
             this.BloodPressure_DiastolicLabel.Text = "Diastolic";
             this.BloodPressure_DiastolicLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // BloodPressureImage
-            // 
-            this.BloodPressureImage.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
-            this.BloodPressureImage.Location = new System.Drawing.Point(21, 37);
-            this.BloodPressureImage.Margin = new System.Windows.Forms.Padding(2);
-            this.BloodPressureImage.Name = "BloodPressureImage";
-            this.BloodPressureImage.Size = new System.Drawing.Size(136, 134);
-            this.BloodPressureImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BloodPressureImage.TabIndex = 14;
-            this.BloodPressureImage.TabStop = false;
             // 
             // BloodPressureTextBox_DiastolicMaximum_ParameterValue
             // 
@@ -1033,17 +964,6 @@
             this.Temperature_Minimum_Label.Text = "Minimum";
             this.Temperature_Minimum_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Temperature_Picture
-            // 
-            this.Temperature_Picture.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
-            this.Temperature_Picture.Location = new System.Drawing.Point(31, 47);
-            this.Temperature_Picture.Margin = new System.Windows.Forms.Padding(2);
-            this.Temperature_Picture.Name = "Temperature_Picture";
-            this.Temperature_Picture.Size = new System.Drawing.Size(136, 134);
-            this.Temperature_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Temperature_Picture.TabIndex = 49;
-            this.Temperature_Picture.TabStop = false;
-            // 
             // TemperatureLabel
             // 
             this.TemperatureLabel.AutoSize = true;
@@ -1072,14 +992,95 @@
             // 
             // PanelMain
             // 
+            this.PanelMain.Controls.Add(this.BloodPressurePanel);
             this.PanelMain.Controls.Add(this.PanelTemperature);
             this.PanelMain.Controls.Add(this.BreathingRatePanel);
             this.PanelMain.Controls.Add(this.PanelPulseRate);
-            this.PanelMain.Controls.Add(this.BloodPressurePanel);
             this.PanelMain.Location = new System.Drawing.Point(0, 100);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Size = new System.Drawing.Size(750, 347);
             this.PanelMain.TabIndex = 13;
+            // 
+            // Temperature_Picture
+            // 
+            this.Temperature_Picture.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
+            this.Temperature_Picture.Location = new System.Drawing.Point(31, 47);
+            this.Temperature_Picture.Margin = new System.Windows.Forms.Padding(2);
+            this.Temperature_Picture.Name = "Temperature_Picture";
+            this.Temperature_Picture.Size = new System.Drawing.Size(136, 134);
+            this.Temperature_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Temperature_Picture.TabIndex = 49;
+            this.Temperature_Picture.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FinalProject.Properties.Resources.Lungs;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 37);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(136, 134);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PulseRateImage
+            // 
+            this.PulseRateImage.Image = global::FinalProject.Properties.Resources.pulse;
+            this.PulseRateImage.Location = new System.Drawing.Point(31, 47);
+            this.PulseRateImage.Margin = new System.Windows.Forms.Padding(2);
+            this.PulseRateImage.Name = "PulseRateImage";
+            this.PulseRateImage.Size = new System.Drawing.Size(136, 134);
+            this.PulseRateImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PulseRateImage.TabIndex = 40;
+            this.PulseRateImage.TabStop = false;
+            // 
+            // BloodPressureImage
+            // 
+            this.BloodPressureImage.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
+            this.BloodPressureImage.Location = new System.Drawing.Point(21, 37);
+            this.BloodPressureImage.Margin = new System.Windows.Forms.Padding(2);
+            this.BloodPressureImage.Name = "BloodPressureImage";
+            this.BloodPressureImage.Size = new System.Drawing.Size(136, 134);
+            this.BloodPressureImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BloodPressureImage.TabIndex = 14;
+            this.BloodPressureImage.TabStop = false;
+            // 
+            // PanelTop_MainPageButton
+            // 
+            this.PanelTop_MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
+            this.PanelTop_MainPageButton.Location = new System.Drawing.Point(7, 7);
+            this.PanelTop_MainPageButton.Name = "PanelTop_MainPageButton";
+            this.PanelTop_MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.PanelTop_MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PanelTop_MainPageButton.TabIndex = 5;
+            this.PanelTop_MainPageButton.TabStop = false;
+            this.PanelTop_MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
+            // 
+            // PanelTop_MinimizeButton
+            // 
+            this.PanelTop_MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelTop_MinimizeButton.Image = global::FinalProject.Properties.Resources.minimizewhite;
+            this.PanelTop_MinimizeButton.Location = new System.Drawing.Point(681, 10);
+            this.PanelTop_MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelTop_MinimizeButton.Name = "PanelTop_MinimizeButton";
+            this.PanelTop_MinimizeButton.Size = new System.Drawing.Size(23, 25);
+            this.PanelTop_MinimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PanelTop_MinimizeButton.TabIndex = 2;
+            this.PanelTop_MinimizeButton.TabStop = false;
+            this.PanelTop_MinimizeButton.Click += new System.EventHandler(this.MinimizeButtonSocketSelection_Click);
+            // 
+            // PanelTop_CloseButton
+            // 
+            this.PanelTop_CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelTop_CloseButton.Image = global::FinalProject.Properties.Resources.closewhite;
+            this.PanelTop_CloseButton.Location = new System.Drawing.Point(716, 10);
+            this.PanelTop_CloseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelTop_CloseButton.Name = "PanelTop_CloseButton";
+            this.PanelTop_CloseButton.Size = new System.Drawing.Size(23, 25);
+            this.PanelTop_CloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PanelTop_CloseButton.TabIndex = 1;
+            this.PanelTop_CloseButton.TabStop = false;
+            this.PanelTop_CloseButton.Click += new System.EventHandler(this.CloseButtonSocketSelection_Click);
             // 
             // SocketSelection
             // 
@@ -1097,12 +1098,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SocketSelection";
             this.PanelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_CloseButton)).EndInit();
             this.BreathingRatePanel.ResumeLayout(false);
             this.BreathingRatePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.BreathingRate_Panel.ResumeLayout(false);
             this.BreathingRate_Panel.PerformLayout();
             this.BreathingRate_Maximum_Panel.ResumeLayout(false);
@@ -1117,7 +1114,6 @@
             this.PulseRate_Maximum_panel.PerformLayout();
             this.PulseRate_Minimum_panel.ResumeLayout(false);
             this.PulseRate_Minimum_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PulseRateImage)).EndInit();
             this.BloodPressurePanel.ResumeLayout(false);
             this.BloodPressurePanel.PerformLayout();
             this.BloodPressurePanel_SystolicMaximum.ResumeLayout(false);
@@ -1132,7 +1128,6 @@
             this.BloodPressureLabel_Systolic.PerformLayout();
             this.BloodPressureLabel_Diastolic.ResumeLayout(false);
             this.BloodPressureLabel_Diastolic.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BloodPressureImage)).EndInit();
             this.PanelTemperature.ResumeLayout(false);
             this.PanelTemperature.PerformLayout();
             this.Temperature_Panel.ResumeLayout(false);
@@ -1141,8 +1136,14 @@
             this.panel2.PerformLayout();
             this.Temperature_Minimum_Panel.ResumeLayout(false);
             this.Temperature_Minimum_Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Temperature_Picture)).EndInit();
             this.PanelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Temperature_Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PulseRateImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodPressureImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelTop_CloseButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

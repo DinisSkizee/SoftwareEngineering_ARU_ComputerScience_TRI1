@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace medical_staff
+namespace On_Call_staffs
 {
     static class Program
     {
