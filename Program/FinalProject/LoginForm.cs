@@ -91,5 +91,9 @@ namespace FinalProject
         }
         #endregion
 
+        private void usernameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

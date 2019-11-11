@@ -155,5 +155,9 @@ namespace FinalProject
         }
         #endregion
 
+        private void BedPicture_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

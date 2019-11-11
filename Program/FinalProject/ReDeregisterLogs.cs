@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class AlarmLogs : Form
+    public partial class ReDeregisterLogs : Form
     {
-        public AlarmLogs()
+        public ReDeregisterLogs()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

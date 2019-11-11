@@ -485,5 +485,10 @@ namespace FinalProject
             }
             #endregion
         }
+
+        private void DefaultPanel_SelectSocketLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
