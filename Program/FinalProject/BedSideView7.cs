@@ -193,9 +193,5 @@ namespace FinalProject
         }
         #endregion
 
-        private void EjectButton1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
