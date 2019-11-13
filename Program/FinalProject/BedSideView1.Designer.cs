@@ -2061,6 +2061,7 @@
             this.EjectButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.EjectButton4.TabIndex = 46;
             this.EjectButton4.TabStop = false;
+            this.EjectButton4.Click += new System.EventHandler(this.EjectButton4_Click);
             // 
             // EjectButton3
             // 
@@ -2072,6 +2073,7 @@
             this.EjectButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.EjectButton3.TabIndex = 45;
             this.EjectButton3.TabStop = false;
+            this.EjectButton3.Click += new System.EventHandler(this.EjectButton3_Click);
             // 
             // EjectButton2
             // 
@@ -2083,6 +2085,7 @@
             this.EjectButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.EjectButton2.TabIndex = 44;
             this.EjectButton2.TabStop = false;
+            this.EjectButton2.Click += new System.EventHandler(this.EjectButton2_Click);
             // 
             // EjectButton1
             // 
@@ -2094,6 +2097,7 @@
             this.EjectButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.EjectButton1.TabIndex = 43;
             this.EjectButton1.TabStop = false;
+            this.EjectButton1.Click += new System.EventHandler(this.EjectButton1_Click);
             // 
             // BedPicture
             // 

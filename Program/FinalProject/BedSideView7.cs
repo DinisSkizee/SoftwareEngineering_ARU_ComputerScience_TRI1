@@ -155,7 +155,45 @@ namespace FinalProject
         }
         #endregion
 
-        private void BedPicture_Click(object sender, EventArgs e)
+        #region EjectButton Configuration  -- Dinis & Jorge
+        private void EjectButton1_Click(object sender, EventArgs e)
+        {
+            BreathingRatePanelBed1.Visible = false;
+            BloodPressurePanelBed1.Visible = false;
+            TemperaturePanelBed1.Visible = false;
+            PulseRatePanelBed1.Visible = false;
+            InsertASocket1.Visible = true;
+        }
+
+        private void EjectButton2_Click(object sender, EventArgs e)
+        {
+            BreathingRatePanelBed1.Visible = false;
+            BloodPressurePanelBed1.Visible = false;
+            TemperaturePanelBed1.Visible = false;
+            PulseRatePanelBed1.Visible = false;
+            InsertASocket1.Visible = true;
+        }
+
+        private void EjectButton3_Click(object sender, EventArgs e)
+        {
+            BreathingRatePanelBed1.Visible = false;
+            BloodPressurePanelBed1.Visible = false;
+            TemperaturePanelBed1.Visible = false;
+            PulseRatePanelBed1.Visible = false;
+            InsertASocket1.Visible = true;
+        }
+
+        private void EjectButton4_Click(object sender, EventArgs e)
+        {
+            BreathingRatePanelBed1.Visible = false;
+            BloodPressurePanelBed1.Visible = false;
+            TemperaturePanelBed1.Visible = false;
+            PulseRatePanelBed1.Visible = false;
+            InsertASocket1.Visible = true;
+        }
+        #endregion
+
+        private void EjectButton1_Click_1(object sender, EventArgs e)
         {
 
         }
