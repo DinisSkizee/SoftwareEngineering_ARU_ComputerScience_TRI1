@@ -10,7 +10,7 @@ namespace FinalProject
             // Declarate Variables for the Sockets
             int syValue;
             int diValue;
-            int hrValue;
+            int prValue;
             int brValue;
             int tempValue;
             int weight;
@@ -58,25 +58,25 @@ namespace FinalProject
                 }
                 #endregion
 
-                #region Heart Rate * bpm * -- Dinis & Jorge
+                #region Pulse Rate * bpm * -- Dinis & Jorge
 
-                Random randomHR = new Random();
-                int randomizerHR = randomHR.Next(0, 100);
+                Random randomPR = new Random();
+                int randomizerPR = randomPR.Next(0, 100);
 
-                if (randomizerHR <= 5)
+                if (randomizerPR <= 5)
                 {
-                    Random hrLowRandomizer = new Random();
-                    hrValue = hrLowRandomizer.Next(30, 49);
+                    Random prLowRandomizer = new Random();
+                    prValue = prLowRandomizer.Next(30, 49);
                 }
-                else if ((randomizerHR > 5) && (randomizerHR < 95))
+                else if ((randomizerPR > 5) && (randomizerPR < 95))
                 {
                     Random hrNormalRandomizer = new Random();
-                    hrValue = hrNormalRandomizer.Next(50, 75);
+                    prValue = hrNormalRandomizer.Next(50, 75);
                 }
-                else if (randomizerHR > 95)
+                else if (randomizerPR > 95)
                 {
                     Random hrHighRandomizer = new Random();
-                    hrValue = hrHighRandomizer.Next(76, 95);
+                    prValue = hrHighRandomizer.Next(76, 95);
                 }
                 #endregion
 
