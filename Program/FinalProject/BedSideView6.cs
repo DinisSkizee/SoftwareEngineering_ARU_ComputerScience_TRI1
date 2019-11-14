@@ -167,29 +167,29 @@ namespace FinalProject
 
         private void EjectButton2_Click(object sender, EventArgs e)
         {
-            BreathingRatePanelBed1.Visible = false;
-            BloodPressurePanelBed1.Visible = false;
-            TemperaturePanelBed1.Visible = false;
-            PulseRatePanelBed1.Visible = false;
-            InsertASocket1.Visible = true;
+            BreathingRatePanelBed2.Visible = false;
+            BloodPressurePanelBed2.Visible = false;
+            TemperaturePanelBed2.Visible = false;
+            PulseRatePanelBed2.Visible = false;
+            InsertASocket2.Visible = true;
         }
 
         private void EjectButton3_Click(object sender, EventArgs e)
         {
-            BreathingRatePanelBed1.Visible = false;
-            BloodPressurePanelBed1.Visible = false;
-            TemperaturePanelBed1.Visible = false;
-            PulseRatePanelBed1.Visible = false;
-            InsertASocket1.Visible = true;
+            BreathingRatePanelBed3.Visible = false;
+            BloodPressurePanelBed3.Visible = false;
+            TemperaturePanelBed3.Visible = false;
+            PulseRatePanelBed3.Visible = false;
+            InsertASocket3.Visible = true;
         }
 
         private void EjectButton4_Click(object sender, EventArgs e)
         {
-            BreathingRatePanelBed1.Visible = false;
-            BloodPressurePanelBed1.Visible = false;
-            TemperaturePanelBed1.Visible = false;
-            PulseRatePanelBed1.Visible = false;
-            InsertASocket1.Visible = true;
+            BreathingRatePanelBed4.Visible = false;
+            BloodPressurePanelBed4.Visible = false;
+            TemperaturePanelBed4.Visible = false;
+            PulseRatePanelBed4.Visible = false;
+            InsertASocket4.Visible = true;
         }
         #endregion
 
