@@ -1,35 +1,74 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace FinalProject
 {
     class SocketConfiguration
     {
+        public static int weight, age, height;
+        public static int syValue, diValue, prValue, brValue, tempValue;
+        public static int intVerifier;
+        public static int diMinI, diMaxI, syMinI, syMaxI, prMinI, prMaxI, brMinI, brMaxI, tpMinI, tpMaxI;
+        public static int diDiff, syDiff, prDiff, brDiff, tempDiff;
+
         public SocketConfiguration()
         {
-            #region General Variables -- Dinis & Jorge
-            // Declarate Variables for the Sockets
-            int syValue;
-            int diValue;
-            int prValue;
-            int brValue;
-            int tempValue;
-            int weight;
-            int age;
-            int height;
-            #endregion
-
+            SocketSelection socket = new SocketSelection();
             /* A randomizer is implemented generating a value from 0 to 100
              * so then we can randomize the values with percentage deciding
              * then in each if how much would it be for the same statement */
 
-            #region Weight + Age + Height * Kg / yOld / Cm * -- Dinis & Jorge
-            Random randomWeight = new Random();
-            Random randomAge = new Random();
-            Random randomHeight = new Random();
+            RandomGenBasicValues();
 
-            weight = randomWeight.Next(60, 85);
-            age = randomAge.Next(25, 45);
-            height = randomHeight.Next(150, 210);
+            #region Difference Verifier
+            // Blood Pressure Secondary Variables Integer
+            diMinI = Convert.ToInt32(socket.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text);
+            diMaxI = Convert.ToInt32(socket.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text);
+            syMinI = Convert.ToInt32(socket.BloodPressureTextBox_SystolicMinimum_ParameterValue.Text);
+            syMaxI = Convert.ToInt32(socket.BloodPressureTextBox_SystolicMaximum_ParameterValue.Text);
+
+            // Pulse Rate Secondary Variables Integer
+            prMinI = Convert.ToInt32(socket.PulseRate_Minimum_TextBox.Text);
+            prMaxI = Convert.ToInt32(socket.PulseRate_Maximum_TextBox.Text);
+
+            // Breathing Rate Secondary Variables Integer
+            brMinI = Convert.ToInt32(socket.BreathingRate_Minimum_TextBox.Text);
+            brMaxI = Convert.ToInt32(socket.BreathingRate_Maximum_TextBox.Text);
+
+            // Temperature Secondary Variables Integer
+            tpMinI = Convert.ToInt32(socket.Temperature_Minimum_TextBox.Text);
+            tpMaxI = Convert.ToInt32(socket.Temperature_Maximum_TextBox.Text);
+
+            diDiff = diMaxI - diMinI;      // BPDi = 30
+            syDiff = syMaxI - syMinI;      // BPSy = 20
+            prDiff = prMaxI - prMinI;      // PR = 30
+            brDiff = brMaxI - brMinI;      // BR = 5
+            tempDiff = tpMaxI - tpMinI;    // TP = 2
+
+            if (diDiff < 30 && syDiff < 20)
+            {
+                MessageBox.Show("The Systolic / Diastolic Values are INVALID, their difference MUST be greater than Di: 30; Sy: 20");
+                intVerifier = 0;
+            }
+            else { intVerifier = 1; }
+            if (prDiff < 30)
+            {
+                MessageBox.Show("The Pulse Rate Values are INVALID, their difference MUST be greater than 30");
+                intVerifier = 0;
+            }
+            else { intVerifier = 1; }
+            if (brDiff < 5)
+            {
+                MessageBox.Show("The Breathing Rate Values are INVALID, their difference MUST be greater than 5");
+                intVerifier = 0;
+            }
+            else { intVerifier = 1; }
+            if (tempDiff < 1)
+            {
+                MessageBox.Show("The Temperature Values are INVALID, their difference MUST be greater than 1");
+                intVerifier = 0;
+            }
+            else { intVerifier = 1; }
             #endregion
 
             while (true)
@@ -127,6 +166,25 @@ namespace FinalProject
                 }
                 #endregion 
             }
+        }
+        /// <summary>
+        /// Weight + Age + Height -- Dinis & Jorge
+        /// </summary>
+        /// <returns>
+        /// Weight
+        /// Age
+        /// Height
+        /// </returns>
+        void RandomGenBasicValues()
+        {
+            Random randomWeight = new Random();
+            Random randomAge = new Random();
+            Random randomHeight = new Random();
+
+            weight = randomWeight.Next(60, 85);
+            age = randomAge.Next(25, 45);
+            height = randomHeight.Next(150, 210);
+
         }
     }
 }

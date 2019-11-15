@@ -353,49 +353,53 @@ namespace FinalProject
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
+
             #region Variable Declaration  -- Dinis & Jorge
+            bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
+            string diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
+            int bpParameters, prParameters, brParameters, tpParameters;
+
             // Blood Pressure Secondary Variables
-            string diMin = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
-            string diMax = BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text;
-            string syMin = BloodPressureTextBox_SystolicMinimum_ParameterValue.Text;
-            string syMax = BloodPressureTextBox_SystolicMaximum_ParameterValue.Text;
+            diMin = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
+            diMax = BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text;
+            syMin = BloodPressureTextBox_SystolicMinimum_ParameterValue.Text;
+            syMax = BloodPressureTextBox_SystolicMaximum_ParameterValue.Text;
 
             // Pulse Rate Secondary Variables
-            string prMin = PulseRate_Minimum_TextBox.Text;
-            string prMax = PulseRate_Maximum_TextBox.Text;
+            prMin = PulseRate_Minimum_TextBox.Text;
+            prMax = PulseRate_Maximum_TextBox.Text;
 
             // Breathing Rate Secondary Variables
-            string brMin = BreathingRate_Minimum_TextBox.Text;
-            string brMax = BreathingRate_Maximum_TextBox.Text;
+            brMin = BreathingRate_Minimum_TextBox.Text;
+            brMax = BreathingRate_Maximum_TextBox.Text;
 
             // Temperature Secondary Variables
-            string tpMin = Temperature_Minimum_TextBox.Text;
-            string tpMax = Temperature_Maximum_TextBox.Text;
+            tpMin = Temperature_Minimum_TextBox.Text;
+            tpMax = Temperature_Maximum_TextBox.Text;
 
             // Parameters Verification
-            int bpParameters = 0;
-            bool dMi = IsNumeric(diMin);
-            bool dMa = IsNumeric(diMax);
-            bool sMi = IsNumeric(syMin);
-            bool sMa = IsNumeric(syMax);
-            int prParameters = 0;
-            bool pMi = IsNumeric(prMin);
-            bool pMa = IsNumeric(prMax);
-            int brParameters = 0;
-            bool bMi = IsNumeric(brMin);
-            bool bMa = IsNumeric(brMax);
-            int tpParameters = 0;
-            bool tMi = IsNumeric(tpMin);
-            bool tMa = IsNumeric(tpMax);
+            dMi = IsNumeric(diMin);
+            dMa = IsNumeric(diMax);
+            sMi = IsNumeric(syMin);
+            sMa = IsNumeric(syMax);
+
+            pMi = IsNumeric(prMin);
+            pMa = IsNumeric(prMax);
+
+            bMi = IsNumeric(brMin);
+            bMa = IsNumeric(brMax);
+            tMi = IsNumeric(tpMin);
+            tMa = IsNumeric(tpMax);
             #endregion
 
-            #region String Verifier - Must be only numeric  -- Dinis & Jorge
             // Check if the string has a numeric value
-            bool IsNumeric(string s)
+            static bool IsNumeric(string s)
             {
                 int Result;
                 return int.TryParse(s, out Result);
             }
+
+            #region String Verifier - Must be only numeric  -- Dinis & Jorge
 
             // Check if every textbox has input - Blood Pressure
             if (dMi == true && dMa == true && sMi == true && sMa == true)
@@ -426,7 +430,6 @@ namespace FinalProject
             else { tpParameters = 0; }
             #endregion
 
-            #region Install Button Main Functions  -- Dinis & Jorge
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please, select a Module to proceed.");
@@ -436,7 +439,7 @@ namespace FinalProject
             {
                 for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
                 {
-                    MessageBox.Show(Convert.ToString(i));
+                    MessageBox.Show("OLA");
                     return;
                 }
             }
@@ -449,7 +452,7 @@ namespace FinalProject
             {
                 for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
                 {
-                    MessageBox.Show(Convert.ToString(i));
+                    MessageBox.Show("{0}", Convert.ToString(i));
                     return;
                 }
             }
@@ -462,7 +465,7 @@ namespace FinalProject
             {
                 for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
                 {
-                    MessageBox.Show(Convert.ToString(i));
+
                     return;
                 }
             }
@@ -475,7 +478,7 @@ namespace FinalProject
             {
                 for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
                 {
-                    MessageBox.Show(Convert.ToString(i));
+
                     return;
                 }
             }
@@ -483,12 +486,6 @@ namespace FinalProject
             {
                 MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
             }
-            #endregion
-        }
-
-        private void DefaultPanel_SelectSocketLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

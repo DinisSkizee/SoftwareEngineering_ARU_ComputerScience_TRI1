@@ -69,6 +69,12 @@
     <Compile Include="AfterLogin.Designer.cs">
       <DependentUpon>AfterLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlarmLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmLogs.Designer.cs">
+      <DependentUpon>AlarmLogs.cs</DependentUpon>
+    </Compile>
     <Compile Include="BedSideView1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,14 +172,11 @@
     <Compile Include="SocketSelection.Designer.cs">
       <DependentUpon>SocketSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AfterLogin.resx">
       <DependentUpon>AfterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmLogs.resx">
+      <DependentUpon>AlarmLogs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BedSideView1.resx">
       <DependentUpon>BedSideView1.cs</DependentUpon>
@@ -221,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SocketSelection.resx">
       <DependentUpon>SocketSelection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
