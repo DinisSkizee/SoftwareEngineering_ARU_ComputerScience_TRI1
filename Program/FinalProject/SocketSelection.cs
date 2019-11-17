@@ -13,9 +13,9 @@ namespace FinalProject
             #region Panel Visibility  -- Dinis & Jorge
             // Visible = false to every SocketPanel in the form
             BreathingRatePanel.Visible = false;
-            PanelPulseRate.Visible = false;
+            PulseRatePanel.Visible = false;
             BloodPressurePanel.Visible = false;
-            PanelTemperature.Visible = false;
+            TemperaturePanel.Visible = false;
             #endregion
 
             #region BedComboBox Items  -- Dinis & Jorge
@@ -35,7 +35,7 @@ namespace FinalProject
             DefaultPanel_SocketComboBox.Items.Add("Breathing Rate");
             DefaultPanel_SocketComboBox.Items.Add("Temperature");
             #endregion
-
+            
         }
 
         #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
@@ -277,7 +277,6 @@ namespace FinalProject
             this.Hide();
         }
 
-
         /* When we choose another option on the SocketComboBox
         * the panels would be picked and turned visible and the Label invisible
         * If none is picked everything would be invisible
@@ -291,12 +290,12 @@ namespace FinalProject
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
             {
                 BreathingRatePanel.Dock = DockStyle.None;
-                PanelTemperature.Dock = DockStyle.None;
-                PanelPulseRate.Dock = DockStyle.None;
+                TemperaturePanel.Dock = DockStyle.None;
+                PulseRatePanel.Dock = DockStyle.None;
 
                 BreathingRatePanel.Visible = false;
-                PanelTemperature.Visible = false;
-                PanelPulseRate.Visible = false;
+                TemperaturePanel.Visible = false;
+                PulseRatePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
 
@@ -306,26 +305,26 @@ namespace FinalProject
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
             {
                 BreathingRatePanel.Dock = DockStyle.None;
-                PanelTemperature.Dock = DockStyle.None;
+                TemperaturePanel.Dock = DockStyle.None;
                 BloodPressurePanel.Dock = DockStyle.None;
 
                 BreathingRatePanel.Visible = false;
-                PanelTemperature.Visible = false;
+                TemperaturePanel.Visible = false;
                 BloodPressurePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
 
-                PanelPulseRate.Dock = DockStyle.Fill;
-                PanelPulseRate.Visible = true;
+                PulseRatePanel.Dock = DockStyle.Fill;
+                PulseRatePanel.Visible = true;
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
             {
-                PanelPulseRate.Dock = DockStyle.None;
-                PanelTemperature.Dock = DockStyle.None;
+                PulseRatePanel.Dock = DockStyle.None;
+                TemperaturePanel.Dock = DockStyle.None;
                 BloodPressurePanel.Dock = DockStyle.None;
 
-                PanelPulseRate.Visible = false;
-                PanelTemperature.Visible = false;
+                PulseRatePanel.Visible = false;
+                TemperaturePanel.Visible = false;
                 BloodPressurePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
@@ -335,157 +334,94 @@ namespace FinalProject
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
             {
-                PanelPulseRate.Dock = DockStyle.None;
+                PulseRatePanel.Dock = DockStyle.None;
                 BreathingRatePanel.Dock = DockStyle.None;
                 BloodPressurePanel.Dock = DockStyle.None;
 
-                PanelPulseRate.Visible = false;
+                PulseRatePanel.Visible = false;
                 BreathingRatePanel.Visible = false;
                 BloodPressurePanel.Visible = false;
 
                 DefaultPanel_SelectSocketLabel.Visible = false;
 
-                PanelTemperature.Dock = DockStyle.Fill;
-                PanelTemperature.Visible = true;
+                TemperaturePanel.Dock = DockStyle.Fill;
+                TemperaturePanel.Visible = true;
             }
         }
+
 
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
+            #region Giving Variables to the TextBoxes
+            int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin);
+            int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax);
+            int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin);
+            int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax);
 
-            #region Variable Declaration  -- Dinis & Jorge
-            bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
-            string diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
-            int bpParameters, prParameters, brParameters, tpParameters;
+            // Pulse Rate Secondary Variables Integer
+            int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin);
+            int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax);
 
-            // Blood Pressure Secondary Variables
-            diMin = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
-            diMax = BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text;
-            syMin = BloodPressureTextBox_SystolicMinimum_ParameterValue.Text;
-            syMax = BloodPressureTextBox_SystolicMaximum_ParameterValue.Text;
+            // Breathing Rate Secondary Variables Integer
+            int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin);
+            int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax);
 
-            // Pulse Rate Secondary Variables
-            prMin = PulseRate_Minimum_TextBox.Text;
-            prMax = PulseRate_Maximum_TextBox.Text;
-
-            // Breathing Rate Secondary Variables
-            brMin = BreathingRate_Minimum_TextBox.Text;
-            brMax = BreathingRate_Maximum_TextBox.Text;
-
-            // Temperature Secondary Variables
-            tpMin = Temperature_Minimum_TextBox.Text;
-            tpMax = Temperature_Maximum_TextBox.Text;
-
-            // Parameters Verification
-            dMi = IsNumeric(diMin);
-            dMa = IsNumeric(diMax);
-            sMi = IsNumeric(syMin);
-            sMa = IsNumeric(syMax);
-
-            pMi = IsNumeric(prMin);
-            pMa = IsNumeric(prMax);
-
-            bMi = IsNumeric(brMin);
-            bMa = IsNumeric(brMax);
-            tMi = IsNumeric(tpMin);
-            tMa = IsNumeric(tpMax);
+            // Temperature Secondary Variables Integer
+            int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin);
+            int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax);
             #endregion
 
-            // Check if the string has a numeric value
-            static bool IsNumeric(string s)
+            // Verifying which Panel is filled
+            switch (SocketConfiguration.dockActive)
             {
-                int Result;
-                return int.TryParse(s, out Result);
+                case 0:
+                    BloodPressurePanel.Dock = DockStyle.Fill;
+                    break;
+                case 1:
+                    PulseRatePanel.Dock = DockStyle.Fill;
+                    break;
+                case 2:
+                    BreathingRatePanel.Dock = DockStyle.Fill;
+                    break;
+                case 3:
+                    TemperaturePanel.Dock = DockStyle.Fill;
+                    break;
             }
 
-            #region String Verifier - Must be only numeric  -- Dinis & Jorge
+            SocketConfiguration socket = new SocketConfiguration();
 
-            // Check if every textbox has input - Blood Pressure
-            if (dMi == true && dMa == true && sMi == true && sMa == true)
-            {
-                bpParameters = 1;
-            }
-            else { bpParameters = 0; }
-
-            // Pulse Rate
-            if (pMi == true && pMa == true)
-            {
-                prParameters = 1;
-            }
-            else { prParameters = 0; }
-
-            // Breathing Rate
-            if (bMi == true && bMa == true)
-            {
-                brParameters = 1;
-            }
-            else { brParameters = 0; }
-
-            // Temperature
-            if (tMi == true && tMa == true)
-            {
-                tpParameters = 1;
-            }
-            else { tpParameters = 0; }
-            #endregion
-
+            #region Button Configuration
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && bpParameters == 1)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.Difference() == 1)  // Blood Pressure
             {
-                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
-                {
-                    MessageBox.Show("OLA");
-                    return;
-                }
-            }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && bpParameters == 0)  // Blood Pressure
-            {
-                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
+                
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && prParameters == 1)  // Pulse Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.Difference() == 1)  // Pulse Rate
             {
-                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
-                {
-                    MessageBox.Show("{0}", Convert.ToString(i));
-                    return;
-                }
-            }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && prParameters == 0)  // Pulse Rate
-            {
-                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
+                
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && brParameters == 1)  // Breathing Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brParameters == 1 && SocketConfiguration.Difference() == 1)  // Breathing Rate
             {
-                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
-                {
-
-                    return;
-                }
-            }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && brParameters == 0)  // Breathing Rate
-            {
-                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
+                
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && tpParameters == 1)  // Temperature
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tpParameters == 1 && SocketConfiguration.Difference() == 1)  // Temperature
             {
-                for (int i = DefaultPanel_BedComboBox.SelectedIndex; i < 8;)
-                {
+                
+            }
+            #endregion
+        }
 
-                    return;
-                }
-            }
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && tpParameters == 0)  // Temperature
-            {
-                MessageBox.Show("Please verify the input values, it must be numbers only and can't be empty.");
-            }
+        private void SocketSelection_Load(object sender, EventArgs e)
+        {
+            SocketConfiguration socket = new SocketConfiguration();
         }
     }
 }

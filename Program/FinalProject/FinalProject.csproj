@@ -123,6 +123,7 @@
     <Compile Include="BedSideView8.Designer.cs">
       <DependentUpon>BedSideView8.cs</DependentUpon>
     </Compile>
+    <Compile Include="BedSideViewConfiguration.cs" />
     <Compile Include="CentralStation.cs">
       <SubType>Form</SubType>
     </Compile>
