@@ -18,12 +18,6 @@
 	* Temperature (measure at Celsius)
 	Adult ( 36.5°C - 37.5°C )
 	
-	* V02 Max (ml/(kg*min) (Not Bad # Bad))
-	20-39yo ( > 28.8 # < 28.7 )
-	40-49yo ( > 26.7 # < 26.6 )
-	50-59yo ( > 23.6 # < 23.5 )
-	60+yo   ( > 20.4 # < 20.3 )
-	
 	* Age + Height + Weight (yOld + cm + kg)
 
 	Each module needs to have a minimum and a maximum value that suits the patient
