@@ -340,6 +340,5 @@ namespace FinalProject
             InsertASocket4.Visible = true;
         }
         #endregion
-
     }
 }

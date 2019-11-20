@@ -30,6 +30,7 @@ namespace FinalProject
 
         // Variables
         string bedActive;
+        public static string diastolicMinimum;
 
         #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
         /* just in case we need it
@@ -346,6 +347,7 @@ namespace FinalProject
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
             #region Giving Variables to the TextBoxes
+            // Blood Pressure Secondary Variables Integer
             int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin);
             int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax);
             int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin);
@@ -362,6 +364,8 @@ namespace FinalProject
             // Temperature Secondary Variables Integer
             int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin);
             int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax);
+
+            diastolicMinimum = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
             #endregion
 
             bedActive = BedLabel.Text;
@@ -607,6 +611,7 @@ namespace FinalProject
                     bed8.Location = this.Location;
                     this.Hide();
                 }
+                
             }
 
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
