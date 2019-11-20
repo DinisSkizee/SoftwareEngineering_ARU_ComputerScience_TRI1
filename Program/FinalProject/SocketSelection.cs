@@ -18,25 +18,18 @@ namespace FinalProject
             TemperaturePanel.Visible = false;
             #endregion
 
-            #region BedComboBox Items  -- Dinis & Jorge
-            DefaultPanel_BedComboBox.Items.Add("Bed 1");
-            DefaultPanel_BedComboBox.Items.Add("Bed 2");
-            DefaultPanel_BedComboBox.Items.Add("Bed 3");
-            DefaultPanel_BedComboBox.Items.Add("Bed 4");
-            DefaultPanel_BedComboBox.Items.Add("Bed 5");
-            DefaultPanel_BedComboBox.Items.Add("Bed 6");
-            DefaultPanel_BedComboBox.Items.Add("Bed 7");
-            DefaultPanel_BedComboBox.Items.Add("Bed 8");
-            #endregion
-
             #region SocketComboBox Items  -- Dinis & Jorge
             DefaultPanel_SocketComboBox.Items.Add("Blood Pressure");
             DefaultPanel_SocketComboBox.Items.Add("Pulse Rate");
             DefaultPanel_SocketComboBox.Items.Add("Breathing Rate");
             DefaultPanel_SocketComboBox.Items.Add("Temperature");
             #endregion
-            
+
+            SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
         }
+
+        // Variables
+        string bedActive;
 
         #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
         /* just in case we need it
@@ -349,7 +342,6 @@ namespace FinalProject
             }
         }
 
-
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
@@ -372,22 +364,7 @@ namespace FinalProject
             int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax);
             #endregion
 
-            // Verifying which Panel is filled
-            switch (SocketConfiguration.dockActive)
-            {
-                case 0:
-                    BloodPressurePanel.Dock = DockStyle.Fill;
-                    break;
-                case 1:
-                    PulseRatePanel.Dock = DockStyle.Fill;
-                    break;
-                case 2:
-                    BreathingRatePanel.Dock = DockStyle.Fill;
-                    break;
-                case 3:
-                    TemperaturePanel.Dock = DockStyle.Fill;
-                    break;
-            }
+            bedActive = BedLabel.Text;
 
             SocketConfiguration socket = new SocketConfiguration();
 
@@ -397,24 +374,967 @@ namespace FinalProject
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.Difference() == 1)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-                
+                if (bedActive == "Bed 1")
+                {
+                    if (BedSideView1.insertClicked1 == 1)
+                    {
+                        BedSideView1.bloodInsert1 = 1;
+                        BedSideView1.moduleState1 = 1;
+                    }
+                    else if (BedSideView1.insertClicked2 == 1)
+                    {
+                        BedSideView1.bloodInsert2 = 1;
+                        BedSideView1.moduleState2 = 1;
+                    }
+                    else if (BedSideView1.insertClicked3 == 1)
+                    {
+                        BedSideView1.bloodInsert3 = 1;
+                        BedSideView1.moduleState3 = 1;
+                    }
+                    else if (BedSideView1.insertClicked4 == 1)
+                    {
+                        BedSideView1.bloodInsert4 = 1;
+                        BedSideView1.moduleState4 = 1;
+                    }
+
+                    BedSideView1 bed1 = new BedSideView1();
+                    bed1.Show();
+                    bed1.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 2")
+                {
+                    if (BedSideView2.insertClicked1 == 1)
+                    {
+                        BedSideView2.bloodInsert1 = 1;
+                        BedSideView2.moduleState1 = 1;
+                    }
+                    else if (BedSideView2.insertClicked2 == 1)
+                    {
+                        BedSideView2.bloodInsert2 = 1;
+                        BedSideView2.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView2.bloodInsert3 = 1;
+                        BedSideView2.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView2.bloodInsert4 = 1;
+                        BedSideView2.moduleState4 = 1;
+                    }
+
+                    BedSideView2 bed2 = new BedSideView2();
+                    bed2.Show();
+                    bed2.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 3")
+                {
+                    if (BedSideView3.insertClicked1 == 1)
+                    {
+                        BedSideView3.bloodInsert1 = 1;
+                        BedSideView3.moduleState1 = 1;
+                    }
+                    else if (BedSideView3.insertClicked2 == 1)
+                    {
+                        BedSideView3.bloodInsert2 = 1;
+                        BedSideView3.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView3.bloodInsert3 = 1;
+                        BedSideView3.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView3.bloodInsert4 = 1;
+                        BedSideView3.moduleState4 = 1;
+                    }
+
+                    BedSideView3 bed3 = new BedSideView3();
+                    bed3.Show();
+                    bed3.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 4")
+                {
+                    if (BedSideView4.insertClicked1 == 1)
+                    {
+                        BedSideView4.bloodInsert1 = 1;
+                        BedSideView4.moduleState1 = 1;
+                    }
+                    else if (BedSideView4.insertClicked2 == 1)
+                    {
+                        BedSideView4.bloodInsert2 = 1;
+                        BedSideView4.moduleState2 = 1;
+                    }
+                    else if (BedSideView4.insertClicked3 == 1)
+                    {
+                        BedSideView4.bloodInsert3 = 1;
+                        BedSideView4.moduleState3 = 1;
+                    }
+                    else if (BedSideView4.insertClicked4 == 1)
+                    {
+                        BedSideView4.bloodInsert4 = 1;
+                        BedSideView4.moduleState4 = 1;
+                    }
+
+                    BedSideView4 bed4 = new BedSideView4();
+                    bed4.Show();
+                    bed4.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 5")
+                {
+                    if (BedSideView5.insertClicked1 == 1)
+                    {
+                        BedSideView5.bloodInsert1 = 1;
+                        BedSideView5.moduleState1 = 1;
+                    }
+                    else if (BedSideView5.insertClicked2 == 1)
+                    {
+                        BedSideView5.bloodInsert2 = 1;
+                        BedSideView5.moduleState2 = 1;
+                    }
+                    else if (BedSideView5.insertClicked3 == 1)
+                    {
+                        BedSideView5.bloodInsert3 = 1;
+                        BedSideView5.moduleState3 = 1;
+                    }
+                    else if (BedSideView5.insertClicked4 == 1)
+                    {
+                        BedSideView5.bloodInsert4 = 1;
+                        BedSideView5.moduleState4 = 1;
+                    }
+
+                    BedSideView5 bed5 = new BedSideView5();
+                    bed5.Show();
+                    bed5.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 6")
+                {
+                    if (BedSideView6.insertClicked1 == 1)
+                    {
+                        BedSideView6.bloodInsert1 = 1;
+                        BedSideView6.moduleState1 = 1;
+                    }
+                    else if (BedSideView6.insertClicked2 == 1)
+                    {
+                        BedSideView6.bloodInsert2 = 1;
+                        BedSideView6.moduleState2 = 1;
+                    }
+                    else if (BedSideView6.insertClicked3 == 1)
+                    {
+                        BedSideView6.bloodInsert3 = 1;
+                        BedSideView6.moduleState3 = 1;
+                    }
+                    else if (BedSideView6.insertClicked4 == 1)
+                    {
+                        BedSideView6.bloodInsert4 = 1;
+                        BedSideView6.moduleState4 = 1;
+                    }
+
+                    BedSideView6 bed6 = new BedSideView6();
+                    bed6.Show();
+                    bed6.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 7")
+                {
+                    if (BedSideView7.insertClicked1 == 1)
+                    {
+                        BedSideView7.bloodInsert1 = 1;
+                        BedSideView7.moduleState1 = 1;
+                    }
+                    else if (BedSideView7.insertClicked2 == 1)
+                    {
+                        BedSideView7.bloodInsert2 = 1;
+                        BedSideView7.moduleState2 = 1;
+                    }
+                    else if (BedSideView7.insertClicked3 == 1)
+                    {
+                        BedSideView7.bloodInsert3 = 1;
+                        BedSideView7.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView7.bloodInsert4 = 1;
+                        BedSideView7.moduleState4 = 1;
+                    }
+
+                    BedSideView7 bed7 = new BedSideView7();
+                    bed7.Show();
+                    bed7.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 8")
+                {
+                    if (BedSideView8.insertClicked1 == 1)
+                    {
+                        BedSideView8.bloodInsert1 = 1;
+                        BedSideView8.moduleState1 = 1;
+                    }
+                    else if (BedSideView8.insertClicked2 == 1)
+                    {
+                        BedSideView8.bloodInsert2 = 1;
+                        BedSideView8.moduleState2 = 1;
+                    }
+                    else if (BedSideView8.insertClicked3 == 1)
+                    {
+                        BedSideView8.bloodInsert3 = 1;
+                        BedSideView8.moduleState3 = 1;
+                    }
+                    else if (BedSideView8.insertClicked4 == 1)
+                    {
+                        BedSideView8.bloodInsert4 = 1;
+                        BedSideView8.moduleState4 = 1;
+                    }
+
+                    BedSideView8 bed8 = new BedSideView8();
+                    bed8.Show();
+                    bed8.Location = this.Location;
+                    this.Hide();
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.Difference() == 1)  // Pulse Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
             {
-                
+                if (bedActive == "Bed 1")
+                {
+                    if (BedSideView1.insertClicked1 == 1)
+                    {
+                        BedSideView1.pulseInsert1 = 1;
+                        BedSideView1.moduleState1 = 1;
+                    }
+                    else if (BedSideView1.insertClicked2 == 1)
+                    {
+                        BedSideView1.pulseInsert2 = 1;
+                        BedSideView1.moduleState2 = 1;
+                    }
+                    else if (BedSideView1.insertClicked3 == 1)
+                    {
+                        BedSideView1.pulseInsert3 = 1;
+                        BedSideView1.moduleState3 = 1;
+                    }
+                    else if (BedSideView1.insertClicked4 == 1)
+                    {
+                        BedSideView1.pulseInsert4 = 1;
+                        BedSideView1.moduleState4 = 1;
+                    }
+
+                    BedSideView1 bed1 = new BedSideView1();
+                    bed1.Show();
+                    bed1.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 2")
+                {
+                    if (BedSideView2.insertClicked1 == 1)
+                    {
+                        BedSideView2.pulseInsert1 = 1;
+                        BedSideView2.moduleState1 = 1;
+                    }
+                    else if (BedSideView2.insertClicked2 == 1)
+                    {
+                        BedSideView2.pulseInsert2 = 1;
+                        BedSideView2.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView2.pulseInsert3 = 1;
+                        BedSideView2.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView2.pulseInsert4 = 1;
+                        BedSideView2.moduleState4 = 1;
+                    }
+
+                    BedSideView2 bed2 = new BedSideView2();
+                    bed2.Show();
+                    bed2.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 3")
+                {
+                    if (BedSideView3.insertClicked1 == 1)
+                    {
+                        BedSideView3.pulseInsert1 = 1;
+                        BedSideView3.moduleState1 = 1;
+                    }
+                    else if (BedSideView3.insertClicked2 == 1)
+                    {
+                        BedSideView3.pulseInsert2 = 1;
+                        BedSideView3.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView3.pulseInsert3 = 1;
+                        BedSideView3.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView3.pulseInsert4 = 1;
+                        BedSideView3.moduleState4 = 1;
+                    }
+
+                    BedSideView3 bed3 = new BedSideView3();
+                    bed3.Show();
+                    bed3.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 4")
+                {
+                    if (BedSideView4.insertClicked1 == 1)
+                    {
+                        BedSideView4.pulseInsert1 = 1;
+                        BedSideView4.moduleState1 = 1;
+                    }
+                    else if (BedSideView4.insertClicked2 == 1)
+                    {
+                        BedSideView4.pulseInsert2 = 1;
+                        BedSideView4.moduleState2 = 1;
+                    }
+                    else if (BedSideView4.insertClicked3 == 1)
+                    {
+                        BedSideView4.pulseInsert3 = 1;
+                        BedSideView4.moduleState3 = 1;
+                    }
+                    else if (BedSideView4.insertClicked4 == 1)
+                    {
+                        BedSideView4.pulseInsert4 = 1;
+                        BedSideView4.moduleState4 = 1;
+                    }
+
+                    BedSideView4 bed4 = new BedSideView4();
+                    bed4.Show();
+                    bed4.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 5")
+                {
+                    if (BedSideView5.insertClicked1 == 1)
+                    {
+                        BedSideView5.pulseInsert1 = 1;
+                        BedSideView5.moduleState1 = 1;
+                    }
+                    else if (BedSideView5.insertClicked2 == 1)
+                    {
+                        BedSideView5.pulseInsert2 = 1;
+                        BedSideView5.moduleState2 = 1;
+                    }
+                    else if (BedSideView5.insertClicked3 == 1)
+                    {
+                        BedSideView5.pulseInsert3 = 1;
+                        BedSideView5.moduleState3 = 1;
+                    }
+                    else if (BedSideView5.insertClicked4 == 1)
+                    {
+                        BedSideView5.pulseInsert4 = 1;
+                        BedSideView5.moduleState4 = 1;
+                    }
+
+                    BedSideView5 bed5 = new BedSideView5();
+                    bed5.Show();
+                    bed5.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 6")
+                {
+                    if (BedSideView6.insertClicked1 == 1)
+                    {
+                        BedSideView6.pulseInsert1 = 1;
+                        BedSideView6.moduleState1 = 1;
+                    }
+                    else if (BedSideView6.insertClicked2 == 1)
+                    {
+                        BedSideView6.pulseInsert2 = 1;
+                        BedSideView6.moduleState2 = 1;
+                    }
+                    else if (BedSideView6.insertClicked3 == 1)
+                    {
+                        BedSideView6.pulseInsert3 = 1;
+                        BedSideView6.moduleState3 = 1;
+                    }
+                    else if (BedSideView6.insertClicked4 == 1)
+                    {
+                        BedSideView6.pulseInsert4 = 1;
+                        BedSideView6.moduleState4 = 1;
+                    }
+
+                    BedSideView6 bed6 = new BedSideView6();
+                    bed6.Show();
+                    bed6.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 7")
+                {
+                    if (BedSideView7.insertClicked1 == 1)
+                    {
+                        BedSideView7.pulseInsert1 = 1;
+                        BedSideView7.moduleState1 = 1;
+                    }
+                    else if (BedSideView7.insertClicked2 == 1)
+                    {
+                        BedSideView7.pulseInsert2 = 1;
+                        BedSideView7.moduleState2 = 1;
+                    }
+                    else if (BedSideView7.insertClicked3 == 1)
+                    {
+                        BedSideView7.pulseInsert3 = 1;
+                        BedSideView7.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView7.pulseInsert4 = 1;
+                        BedSideView7.moduleState4 = 1;
+                    }
+
+                    BedSideView7 bed7 = new BedSideView7();
+                    bed7.Show();
+                    bed7.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 8")
+                {
+                    if (BedSideView8.insertClicked1 == 1)
+                    {
+                        BedSideView8.pulseInsert1 = 1;
+                        BedSideView8.moduleState1 = 1;
+                    }
+                    else if (BedSideView8.insertClicked2 == 1)
+                    {
+                        BedSideView8.pulseInsert2 = 1;
+                        BedSideView8.moduleState2 = 1;
+                    }
+                    else if (BedSideView8.insertClicked3 == 1)
+                    {
+                        BedSideView8.pulseInsert3 = 1;
+                        BedSideView8.moduleState3 = 1;
+                    }
+                    else if (BedSideView8.insertClicked4 == 1)
+                    {
+                        BedSideView8.pulseInsert4 = 1;
+                        BedSideView8.moduleState4 = 1;
+                    }
+
+                    BedSideView8 bed8 = new BedSideView8();
+                    bed8.Show();
+                    bed8.Location = this.Location;
+                    this.Hide();
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brParameters == 1 && SocketConfiguration.Difference() == 1)  // Breathing Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brParameters == 1 && SocketConfiguration.brDiff >= 5)  // Breathing Rate
             {
-                
+                if (bedActive == "Bed 1")
+                {
+                    if (BedSideView1.insertClicked1 == 1)
+                    {
+                        BedSideView1.breathingInsert1 = 1;
+                        BedSideView1.moduleState1 = 1;
+                    }
+                    else if (BedSideView1.insertClicked2 == 1)
+                    {
+                        BedSideView1.breathingInsert2 = 1;
+                        BedSideView1.moduleState2 = 1;
+                    }
+                    else if (BedSideView1.insertClicked3 == 1)
+                    {
+                        BedSideView1.breathingInsert3 = 1;
+                        BedSideView1.moduleState3 = 1;
+                    }
+                    else if (BedSideView1.insertClicked4 == 1)
+                    {
+                        BedSideView1.breathingInsert4 = 1;
+                        BedSideView1.moduleState4 = 1;
+                    }
+
+                    BedSideView1 bed1 = new BedSideView1();
+                    bed1.Show();
+                    bed1.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 2")
+                {
+                    if (BedSideView2.insertClicked1 == 1)
+                    {
+                        BedSideView2.breathingInsert1 = 1;
+                        BedSideView2.moduleState1 = 1;
+                    }
+                    else if (BedSideView2.insertClicked2 == 1)
+                    {
+                        BedSideView2.breathingInsert2 = 1;
+                        BedSideView2.moduleState2 = 1;
+                    }
+                    else if (BedSideView2.insertClicked3 == 1)
+                    {
+                        BedSideView2.breathingInsert3 = 1;
+                        BedSideView2.moduleState3 = 1;
+                    }
+                    else if (BedSideView2.insertClicked4 == 1)
+                    {
+                        BedSideView2.breathingInsert4 = 1;
+                        BedSideView2.moduleState4 = 1;
+                    }
+
+                    BedSideView2 bed2 = new BedSideView2();
+                    bed2.Show();
+                    bed2.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 3")
+                {
+                    if (BedSideView3.insertClicked1 == 1)
+                    {
+                        BedSideView3.breathingInsert1 = 1;
+                        BedSideView3.moduleState1 = 1;
+                    }
+                    else if (BedSideView3.insertClicked2 == 1)
+                    {
+                        BedSideView3.breathingInsert2 = 1;
+                        BedSideView3.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView3.breathingInsert3 = 1;
+                        BedSideView3.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView3.breathingInsert4 = 1;
+                        BedSideView3.moduleState4 = 1;
+                    }
+
+                    BedSideView3 bed3 = new BedSideView3();
+                    bed3.Show();
+                    bed3.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 4")
+                {
+                    if (BedSideView4.insertClicked1 == 1)
+                    {
+                        BedSideView4.breathingInsert1 = 1;
+                        BedSideView4.moduleState1 = 1;
+                    }
+                    else if (BedSideView4.insertClicked2 == 1)
+                    {
+                        BedSideView4.breathingInsert2 = 1;
+                        BedSideView4.moduleState2 = 1;
+                    }
+                    else if (BedSideView4.insertClicked3 == 1)
+                    {
+                        BedSideView4.breathingInsert3 = 1;
+                        BedSideView4.moduleState3 = 1;
+                    }
+                    else if (BedSideView4.insertClicked4 == 1)
+                    {
+                        BedSideView4.breathingInsert4 = 1;
+                        BedSideView4.moduleState4 = 1;
+                    }
+
+                    BedSideView4 bed4 = new BedSideView4();
+                    bed4.Show();
+                    bed4.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 5")
+                {
+                    if (BedSideView5.insertClicked1 == 1)
+                    {
+                        BedSideView5.breathingInsert1 = 1;
+                        BedSideView5.moduleState1 = 1;
+                    }
+                    else if (BedSideView5.insertClicked2 == 1)
+                    {
+                        BedSideView5.breathingInsert2 = 1;
+                        BedSideView5.moduleState2 = 1;
+                    }
+                    else if (BedSideView5.insertClicked3 == 1)
+                    {
+                        BedSideView5.breathingInsert3 = 1;
+                        BedSideView5.moduleState3 = 1;
+                    }
+                    else if (BedSideView5.insertClicked4 == 1)
+                    {
+                        BedSideView5.breathingInsert4 = 1;
+                        BedSideView5.moduleState4 = 1;
+                    }
+
+                    BedSideView5 bed5 = new BedSideView5();
+                    bed5.Show();
+                    bed5.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 6")
+                {
+                    if (BedSideView6.insertClicked1 == 1)
+                    {
+                        BedSideView6.breathingInsert1 = 1;
+                        BedSideView6.moduleState1 = 1;
+                    }
+                    else if (BedSideView6.insertClicked2 == 1)
+                    {
+                        BedSideView6.breathingInsert2 = 1;
+                        BedSideView6.moduleState2 = 1;
+                    }
+                    else if (BedSideView6.insertClicked3 == 1)
+                    {
+                        BedSideView6.breathingInsert3 = 1;
+                        BedSideView6.moduleState3 = 1;
+                    }
+                    else if (BedSideView6.insertClicked4 == 1)
+                    {
+                        BedSideView6.breathingInsert4 = 1;
+                        BedSideView6.moduleState4 = 1;
+                    }
+
+                    BedSideView6 bed6 = new BedSideView6();
+                    bed6.Show();
+                    bed6.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 7")
+                {
+                    if (BedSideView7.insertClicked1 == 1)
+                    {
+                        BedSideView7.breathingInsert1 = 1;
+                        BedSideView7.moduleState1 = 1;
+                    }
+                    else if (BedSideView7.insertClicked2 == 1)
+                    {
+                        BedSideView7.breathingInsert2 = 1;
+                        BedSideView7.moduleState2 = 1;
+                    }
+                    else if (BedSideView7.insertClicked3 == 1)
+                    {
+                        BedSideView7.breathingInsert3 = 1;
+                        BedSideView7.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView7.breathingInsert4 = 1;
+                        BedSideView7.moduleState4 = 1;
+                    }
+
+                    BedSideView7 bed7 = new BedSideView7();
+                    bed7.Show();
+                    bed7.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 8")
+                {
+                    if (BedSideView8.insertClicked1 == 1)
+                    {
+                        BedSideView8.breathingInsert1 = 1;
+                        BedSideView8.moduleState1 = 1;
+                    }
+                    else if (BedSideView8.insertClicked2 == 1)
+                    {
+                        BedSideView8.breathingInsert2 = 1;
+                        BedSideView8.moduleState2 = 1;
+                    }
+                    else if (BedSideView8.insertClicked3 == 1)
+                    {
+                        BedSideView8.breathingInsert3 = 1;
+                        BedSideView8.moduleState3 = 1;
+                    }
+                    else if (BedSideView8.insertClicked4 == 1)
+                    {
+                        BedSideView8.breathingInsert4 = 1;
+                        BedSideView8.moduleState4 = 1;
+                    }
+
+                    BedSideView8 bed8 = new BedSideView8();
+                    bed8.Show();
+                    bed8.Location = this.Location;
+                    this.Hide();
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tpParameters == 1 && SocketConfiguration.Difference() == 1)  // Temperature
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tpParameters == 1 && SocketConfiguration.tempDiff >= 1)  // Temperature
             {
-                
+                if (bedActive == "Bed 1")
+                {
+                    if (BedSideView1.insertClicked1 == 1)
+                    {
+                        BedSideView1.tempInsert1 = 1;
+                        BedSideView1.moduleState1 = 1;
+                    }
+                    else if (BedSideView1.insertClicked2 == 1)
+                    {
+                        BedSideView1.tempInsert2 = 1;
+                        BedSideView1.moduleState2 = 1;
+                    }
+                    else if (BedSideView1.insertClicked3 == 1)
+                    {
+                        BedSideView1.tempInsert3 = 1;
+                        BedSideView1.moduleState3 = 1;
+                    }
+                    else if (BedSideView1.insertClicked4 == 1)
+                    {
+                        BedSideView1.tempInsert4 = 1;
+                        BedSideView1.moduleState4 = 1;
+                    }
+
+                    BedSideView1 bed1 = new BedSideView1();
+                    bed1.Show();
+                    bed1.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 2")
+                {
+                    if (BedSideView2.insertClicked1 == 1)
+                    {
+                        BedSideView2.tempInsert1 = 1;
+                        BedSideView2.moduleState1 = 1;
+                    }
+                    else if (BedSideView2.insertClicked2 == 1)
+                    {
+                        BedSideView2.tempInsert2 = 1;
+                        BedSideView2.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView2.tempInsert3 = 1;
+                        BedSideView2.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView2.tempInsert4 = 1;
+                        BedSideView2.moduleState4 = 1;
+                    }
+
+                    BedSideView2 bed2 = new BedSideView2();
+                    bed2.Show();
+                    bed2.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 3")
+                {
+                    if (BedSideView3.insertClicked1 == 1)
+                    {
+                        BedSideView3.tempInsert1 = 1;
+                        BedSideView3.moduleState1 = 1;
+                    }
+                    else if (BedSideView3.insertClicked2 == 1)
+                    {
+                        BedSideView3.tempInsert2 = 1;
+                        BedSideView3.moduleState2 = 1;
+                    }
+                    else if (BedSideView3.insertClicked3 == 1)
+                    {
+                        BedSideView3.tempInsert3 = 1;
+                        BedSideView3.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView3.tempInsert4 = 1;
+                        BedSideView3.moduleState4 = 1;
+                    }
+
+                    BedSideView3 bed3 = new BedSideView3();
+                    bed3.Show();
+                    bed3.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 4")
+                {
+                    if (BedSideView4.insertClicked1 == 1)
+                    {
+                        BedSideView4.tempInsert1 = 1;
+                        BedSideView4.moduleState1 = 1;
+                    }
+                    else if (BedSideView4.insertClicked2 == 1)
+                    {
+                        BedSideView4.tempInsert2 = 1;
+                        BedSideView4.moduleState2 = 1;
+                    }
+                    else if (BedSideView4.insertClicked3 == 1)
+                    {
+                        BedSideView4.tempInsert3 = 1;
+                        BedSideView4.moduleState3 = 1;
+                    }
+                    else if (BedSideView4.insertClicked4 == 1)
+                    {
+                        BedSideView4.tempInsert4 = 1;
+                        BedSideView4.moduleState4 = 1;
+                    }
+
+                    BedSideView4 bed4 = new BedSideView4();
+                    bed4.Show();
+                    bed4.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 5")
+                {
+                    if (BedSideView5.insertClicked1 == 1)
+                    {
+                        BedSideView5.tempInsert1 = 1;
+                        BedSideView5.moduleState1 = 1;
+                    }
+                    else if (BedSideView5.insertClicked2 == 1)
+                    {
+                        BedSideView5.tempInsert2 = 1;
+                        BedSideView5.moduleState2 = 1;
+                    }
+                    else if (BedSideView5.insertClicked3 == 1)
+                    {
+                        BedSideView5.tempInsert3 = 1;
+                        BedSideView5.moduleState3 = 1;
+                    }
+                    else if (BedSideView5.insertClicked4 == 1)
+                    {
+                        BedSideView5.tempInsert4 = 1;
+                        BedSideView5.moduleState4 = 1;
+                    }
+
+                    BedSideView5 bed5 = new BedSideView5();
+                    bed5.Show();
+                    bed5.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 6")
+                {
+                    if (BedSideView6.insertClicked1 == 1)
+                    {
+                        BedSideView6.tempInsert1 = 1;
+                        BedSideView6.moduleState1 = 1;
+                    }
+                    else if (BedSideView6.insertClicked2 == 1)
+                    {
+                        BedSideView6.tempInsert2 = 1;
+                        BedSideView6.moduleState2 = 1;
+                    }
+                    else if (BedSideView6.insertClicked3 == 1)
+                    {
+                        BedSideView6.tempInsert3 = 1;
+                        BedSideView6.moduleState3 = 1;
+                    }
+                    else if (BedSideView6.insertClicked4 == 1)
+                    {
+                        BedSideView6.tempInsert4 = 1;
+                        BedSideView6.moduleState4 = 1;
+                    }
+
+                    BedSideView6 bed6 = new BedSideView6();
+                    bed6.Show();
+                    bed6.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 7")
+                {
+                    if (BedSideView7.insertClicked1 == 1)
+                    {
+                        BedSideView7.tempInsert1 = 1;
+                        BedSideView7.moduleState1 = 1;
+                    }
+                    else if (BedSideView7.insertClicked2 == 1)
+                    {
+                        BedSideView7.tempInsert2 = 1;
+                        BedSideView7.moduleState2 = 1;
+                    }
+                    else if (BedSideView7.insertClicked3 == 1)
+                    {
+                        BedSideView7.tempInsert3 = 1;
+                        BedSideView7.moduleState3 = 1;
+                    }
+                    else if (BedSideView3.insertClicked4 == 1)
+                    {
+                        BedSideView7.tempInsert4 = 1;
+                        BedSideView7.moduleState4 = 1;
+                    }
+
+                    BedSideView7 bed7 = new BedSideView7();
+                    bed7.Show();
+                    bed7.Location = this.Location;
+                    this.Hide();
+                }
+
+                else if (bedActive == "Bed 8")
+                {
+                    if (BedSideView8.insertClicked1 == 1)
+                    {
+                        BedSideView8.tempInsert1 = 1;
+                        BedSideView8.moduleState1 = 1;
+                    }
+                    else if (BedSideView8.insertClicked2 == 1)
+                    {
+                        BedSideView8.tempInsert2 = 1;
+                        BedSideView8.moduleState2 = 1;
+                    }
+                    else if (BedSideView8.insertClicked3 == 1)
+                    {
+                        BedSideView8.tempInsert3 = 1;
+                        BedSideView8.moduleState3 = 1;
+                    }
+                    else if (BedSideView8.insertClicked4 == 1)
+                    {
+                        BedSideView8.tempInsert4 = 1;
+                        BedSideView8.moduleState4 = 1;
+                    }
+
+                    BedSideView8 bed8 = new BedSideView8();
+                    bed8.Show();
+                    bed8.Location = this.Location;
+                    this.Hide();
+                }
+            }
+            else
+            {
+                if (SocketConfiguration.bpParameters == 0)
+                {
+                    MessageBox.Show("Make sure the input is numeric ONLY");
+                }
+                if ((SocketConfiguration.diDiff < 30 && DefaultPanel_SocketComboBox.SelectedIndex == 0) || (SocketConfiguration.syDiff < 20 && DefaultPanel_SocketComboBox.SelectedIndex == 0))
+                {
+                    MessageBox.Show("The Diastolic difference must be 30 or greater and the Systolic difference must be 20 or greater");
+                }
+                if (SocketConfiguration.prDiff < 30 && DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    MessageBox.Show("The Pulse Rate Difference must be 30 or greater");
+                }
+                if (SocketConfiguration.brDiff < 5 && DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    MessageBox.Show("The Breathing Rate difference must be 5 or greater");
+                }
+                if (SocketConfiguration.tempDiff < 1 && DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    MessageBox.Show("The temperature difference must be 1 or greater");
+                }
             }
             #endregion
         }

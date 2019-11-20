@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FinalProject
 {
@@ -17,10 +18,14 @@ namespace FinalProject
         BedSideView7 bed7 = new BedSideView7();
         BedSideView8 bed8 = new BedSideView8();
 
-        List<string> DiastolicValue = new List<string>();
-        List<string> SystolicValue = new List<string>();
-        List<string> PulseRateValue = new List<string>();
-        List<string> BreathingRateValue = new List<string>();
-        List<string> TemperatureValue = new List<string>();
+        List<string> DiastolicValue = new List<string>(SocketConfiguration.diValue);
+
+        List<string> SystolicValue = new List<string>(SocketConfiguration.syValue);
+        List<string> PulseRateValue = new List<string>(SocketConfiguration.prValue);
+        List<string> BreathingRateValue = new List<string>(SocketConfiguration.brValue);
+        List<string> TemperatureValue = new List<string>(SocketConfiguration.tempValue);
+
+        // Variables
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace FinalProject
@@ -8,6 +9,7 @@ namespace FinalProject
         #region Variable Region
         // Variables used for the Randoms
         public static int syValue, diValue, prValue, brValue, tempValue;
+
         Random randomSyDi = new Random();
         Random syDiLowRandomizer = new Random();
         Random syDiNormalRandomizer = new Random();
@@ -30,21 +32,32 @@ namespace FinalProject
 
         // User Variables
         public static int weight, age, height;
+        public static int firstNameNumber, lastNameNumber;
+        public static string firstName, lastName;
+        List<string> firstNameList = new List<string>()
+        {
+            "Dinis", "Jorge", "Haris", "Kelly", "Brett", "Kevin", "Aaron", "Elias", "Erica", "Jacob", "Kye",
+            "Herbert", "Lucie", "Nancy", "Rebekah", "Maria", "Jamie", "Rhonda", "Haleema", "Poppy", "Melanie"
+        };
+        List<string> lastNameList = new List<string>()
+        {
+            "Silva", "Costa", "Cooper", "Dunn", "Jordan", "Patton", "Gibson", "Lopez", "King", "Carroll",
+            "Sanchez", "Benson", "Lane", "Kennedy", "Luna", "Harrison", "Morris", "Henry", "Keller", "Daniel", "Russell"
+        };
 
         // Verifiers Variables
-        public static int intVerifier;
         public static int bpParameters, prParameters, brParameters, tpParameters;
-        public static int dockActive = 0;
+        public static int dockActive;
 
         // Values Variables
         public static int diDiff, syDiff, prDiff, brDiff, tempDiff;
         public bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
-        // public int diMinI, diMaxI, syMinI, syMaxI, prMinI, prMaxI, brMinI, brMaxI, tpMinI, tpMaxI;
         #endregion
 
         public SocketConfiguration()
         {
+
             diDiff = diMax - diMin;      // BPDi = 30
             syDiff = syMax - syMin;      // BPSy = 20
             prDiff = prMax - prMin;      // PR = 30
@@ -55,6 +68,7 @@ namespace FinalProject
              * so then we can randomize the values with percentage deciding
              * then in each if how much would it be for the same statement */
 
+            RandomNameGenerator();
             RandomGenUserValues();
             RandomGenModValues();
 
@@ -114,51 +128,6 @@ namespace FinalProject
         {
             int Result;
             return int.TryParse(var, out Result);
-        }
-
-        public static int Difference()
-        {
-            if (dockActive == 0)
-            {
-                if (diDiff < 30 && syDiff < 20)
-                {
-                    intVerifier = 0;
-                    MessageBox.Show("The Systolic / Diastolic Values are INVALID, their difference MUST be greater than Di: 30; Sy: 20");
-                }
-                else { intVerifier = 1; }
-            }
-
-            else if (dockActive == 1)
-            {
-                if (prDiff < 30)
-                {
-                    intVerifier = 0;
-                    MessageBox.Show("The Pulse Rate Values are INVALID, their difference MUST be greater than 30");
-                }
-                else { intVerifier = 1; }
-            }
-
-            else if (dockActive == 2)
-            {
-                if (brDiff < 5)
-                {
-                    intVerifier = 0;
-                    MessageBox.Show("The Breathing Rate Values are INVALID, their difference MUST be greater than 5");
-                }
-                else { intVerifier = 1; }
-            }
-
-            else if (dockActive == 3)
-            {
-                if (tempDiff < 1)
-                {
-                    intVerifier = 0;
-                    MessageBox.Show("The Temperature Values are INVALID, their difference MUST be greater than 1");
-                }
-                else { intVerifier = 1; }
-            }
-
-            return intVerifier;
         }
 
         void RandomGenModValues()
@@ -265,9 +234,24 @@ namespace FinalProject
             Random randomAge = new Random();
             Random randomHeight = new Random();
 
+
+
             weight = randomWeight.Next(60, 85);
             age = randomAge.Next(25, 45);
             height = randomHeight.Next(150, 210);
+
+
+        }
+
+        void RandomNameGenerator()
+        {
+            Random nameNumberSelect = new Random();
+
+            firstNameNumber = nameNumberSelect.Next(0, firstNameList.Count);
+            lastNameNumber = nameNumberSelect.Next(0, lastNameList.Count);
+
+            firstName = firstNameList[firstNameNumber];
+            lastName = lastNameList[lastNameNumber];
         }
 
     }

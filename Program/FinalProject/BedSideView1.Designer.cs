@@ -3643,7 +3643,7 @@
         private System.Windows.Forms.PictureBox InsertButton3;
         private System.Windows.Forms.PictureBox InsertButton2;
         private System.Windows.Forms.PictureBox InsertButton1;
-        private System.Windows.Forms.Panel BloodPressurePanelBed1;
+        public System.Windows.Forms.Panel BloodPressurePanelBed1;
         private System.Windows.Forms.PictureBox BloodPressurePanelBed_Pic1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -3654,7 +3654,7 @@
         private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text;
         private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text;
         private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text;
-        private System.Windows.Forms.Panel PulseRatePanelBed2;
+        public System.Windows.Forms.Panel PulseRatePanelBed2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -3665,7 +3665,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox PulseRate_Minimum_Text2;
         private System.Windows.Forms.PictureBox PulseRateBed_Pic1;
-        private System.Windows.Forms.Panel TemperaturePanelBed4;
+        public System.Windows.Forms.Panel TemperaturePanelBed4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -3676,7 +3676,7 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TextBox Temperature_Minimum_Text4;
         private System.Windows.Forms.PictureBox TemperaturePanelBed_Pic1;
-        private System.Windows.Forms.Panel BreathingRatePanelBed3;
+        public System.Windows.Forms.Panel BreathingRatePanelBed3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -3698,7 +3698,7 @@
         private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text;
         private System.Windows.Forms.Panel DiBloodPressurePanelBed_Minimum;
         private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text;
-        private System.Windows.Forms.Panel BloodPressurePanelBed2;
+        public System.Windows.Forms.Panel BloodPressurePanelBed2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -3720,7 +3720,7 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel PulseRatePanelBed1;
+        public System.Windows.Forms.Panel PulseRatePanelBed1;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
@@ -3731,7 +3731,7 @@
         private System.Windows.Forms.Panel panel36;
         private System.Windows.Forms.TextBox PulseRate_Minimum_Text;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel BloodPressurePanelBed4;
+        public System.Windows.Forms.Panel BloodPressurePanelBed4;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
@@ -3753,7 +3753,7 @@
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel BloodPressurePanelBed3;
+        public System.Windows.Forms.Panel BloodPressurePanelBed3;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
@@ -3775,7 +3775,7 @@
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel BreathingRatePanelBed1;
+        public System.Windows.Forms.Panel BreathingRatePanelBed1;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
@@ -3786,7 +3786,7 @@
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.TextBox BreathingRate_Minimum_Text;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel PulseRatePanelBed3;
+        public System.Windows.Forms.Panel PulseRatePanelBed3;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
@@ -3797,7 +3797,7 @@
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.TextBox PulseRate_Minimum_Text3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel BreathingRatePanelBed2;
+        public System.Windows.Forms.Panel BreathingRatePanelBed2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
@@ -3808,7 +3808,7 @@
         private System.Windows.Forms.Panel panel48;
         private System.Windows.Forms.TextBox BreathingRate_Minimum_Text2;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Panel BreathingRatePanelBed4;
+        public System.Windows.Forms.Panel BreathingRatePanelBed4;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
@@ -3819,7 +3819,7 @@
         private System.Windows.Forms.Panel panel52;
         private System.Windows.Forms.TextBox BreathingRate_Minimum_Text4;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Panel TemperaturePanelBed1;
+        public System.Windows.Forms.Panel TemperaturePanelBed1;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
@@ -3830,7 +3830,7 @@
         private System.Windows.Forms.Panel panel64;
         private System.Windows.Forms.TextBox Temperature_Minimum_Text;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Panel TemperaturePanelBed2;
+        public System.Windows.Forms.Panel TemperaturePanelBed2;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
@@ -3841,7 +3841,7 @@
         private System.Windows.Forms.Panel panel56;
         private System.Windows.Forms.TextBox Temperature_Minimum_Text2;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel TemperaturePanelBed3;
+        public System.Windows.Forms.Panel TemperaturePanelBed3;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
@@ -3852,7 +3852,7 @@
         private System.Windows.Forms.Panel panel60;
         private System.Windows.Forms.TextBox Temperature_Minimum_Text3;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Panel PulseRatePanelBed4;
+        public System.Windows.Forms.Panel PulseRatePanelBed4;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;

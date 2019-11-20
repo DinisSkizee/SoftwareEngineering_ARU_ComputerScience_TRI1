@@ -34,7 +34,6 @@
             this.PanelTop_MinimizeButton = new System.Windows.Forms.PictureBox();
             this.PanelTop_CloseButton = new System.Windows.Forms.PictureBox();
             this.DefaultPanel_InstallButton = new System.Windows.Forms.Button();
-            this.DefaultPanel_BedComboBox = new System.Windows.Forms.ComboBox();
             this.BreathingRatePanel = new System.Windows.Forms.Panel();
             this.BreathingRate_Label_Description2 = new System.Windows.Forms.Label();
             this.BreathingRate_Label_Description1 = new System.Windows.Forms.Label();
@@ -99,6 +98,8 @@
             this.TemperatureLabel = new System.Windows.Forms.Label();
             this.DefaultPanel_SelectSocketLabel = new System.Windows.Forms.Label();
             this.PanelMain = new System.Windows.Forms.Panel();
+            this.BedPanel = new System.Windows.Forms.Panel();
+            this.BedLabel = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).BeginInit();
@@ -127,6 +128,7 @@
             this.Temperature_Minimum_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Temperature_Picture)).BeginInit();
             this.PanelMain.SuspendLayout();
+            this.BedPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelTop
@@ -137,7 +139,7 @@
             this.PanelTop.Controls.Add(this.PanelTop_MinimizeButton);
             this.PanelTop.Controls.Add(this.PanelTop_CloseButton);
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
-            this.PanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelTop.Margin = new System.Windows.Forms.Padding(2);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 2;
@@ -159,7 +161,7 @@
             this.PanelTop_MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelTop_MinimizeButton.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.PanelTop_MinimizeButton.Location = new System.Drawing.Point(681, 10);
-            this.PanelTop_MinimizeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelTop_MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
             this.PanelTop_MinimizeButton.Name = "PanelTop_MinimizeButton";
             this.PanelTop_MinimizeButton.Size = new System.Drawing.Size(23, 25);
             this.PanelTop_MinimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +174,7 @@
             this.PanelTop_CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelTop_CloseButton.Image = global::FinalProject.Properties.Resources.closewhite;
             this.PanelTop_CloseButton.Location = new System.Drawing.Point(716, 10);
-            this.PanelTop_CloseButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelTop_CloseButton.Margin = new System.Windows.Forms.Padding(2);
             this.PanelTop_CloseButton.Name = "PanelTop_CloseButton";
             this.PanelTop_CloseButton.Size = new System.Drawing.Size(23, 25);
             this.PanelTop_CloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,27 +189,13 @@
             this.DefaultPanel_InstallButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.DefaultPanel_InstallButton.ForeColor = System.Drawing.Color.White;
             this.DefaultPanel_InstallButton.Location = new System.Drawing.Point(498, 57);
-            this.DefaultPanel_InstallButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DefaultPanel_InstallButton.Margin = new System.Windows.Forms.Padding(2);
             this.DefaultPanel_InstallButton.Name = "DefaultPanel_InstallButton";
             this.DefaultPanel_InstallButton.Size = new System.Drawing.Size(200, 31);
             this.DefaultPanel_InstallButton.TabIndex = 4;
             this.DefaultPanel_InstallButton.Text = "Install";
             this.DefaultPanel_InstallButton.UseVisualStyleBackColor = false;
             this.DefaultPanel_InstallButton.Click += new System.EventHandler(this.DefaultPanel_InstallButton_Click);
-            // 
-            // DefaultPanel_BedComboBox
-            // 
-            this.DefaultPanel_BedComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DefaultPanel_BedComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.DefaultPanel_BedComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DefaultPanel_BedComboBox.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.DefaultPanel_BedComboBox.ForeColor = System.Drawing.Color.White;
-            this.DefaultPanel_BedComboBox.FormattingEnabled = true;
-            this.DefaultPanel_BedComboBox.Location = new System.Drawing.Point(298, 57);
-            this.DefaultPanel_BedComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.DefaultPanel_BedComboBox.Name = "DefaultPanel_BedComboBox";
-            this.DefaultPanel_BedComboBox.Size = new System.Drawing.Size(150, 31);
-            this.DefaultPanel_BedComboBox.TabIndex = 5;
             // 
             // BreathingRatePanel
             // 
@@ -223,7 +211,7 @@
             this.BreathingRatePanel.Controls.Add(this.BreathingRate_Minimum_Panel);
             this.BreathingRatePanel.Controls.Add(this.BreathingRateLabel);
             this.BreathingRatePanel.Location = new System.Drawing.Point(2, 45);
-            this.BreathingRatePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BreathingRatePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRatePanel.Name = "BreathingRatePanel";
             this.BreathingRatePanel.Size = new System.Drawing.Size(200, 33);
             this.BreathingRatePanel.TabIndex = 0;
@@ -258,7 +246,7 @@
             // 
             this.pictureBox1.Image = global::FinalProject.Properties.Resources.Lungs;
             this.pictureBox1.Location = new System.Drawing.Point(21, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(136, 134);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -272,7 +260,7 @@
             this.BreathingRate_Maximum_TextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreathingRate_Maximum_TextBox.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Maximum_TextBox.Location = new System.Drawing.Point(476, 129);
-            this.BreathingRate_Maximum_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BreathingRate_Maximum_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRate_Maximum_TextBox.Multiline = true;
             this.BreathingRate_Maximum_TextBox.Name = "BreathingRate_Maximum_TextBox";
             this.BreathingRate_Maximum_TextBox.Size = new System.Drawing.Size(249, 32);
@@ -289,7 +277,7 @@
             this.BreathingRate_Minimum_TextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreathingRate_Minimum_TextBox.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Minimum_TextBox.Location = new System.Drawing.Point(205, 129);
-            this.BreathingRate_Minimum_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BreathingRate_Minimum_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRate_Minimum_TextBox.Multiline = true;
             this.BreathingRate_Minimum_TextBox.Name = "BreathingRate_Minimum_TextBox";
             this.BreathingRate_Minimum_TextBox.Size = new System.Drawing.Size(249, 32);
@@ -317,7 +305,7 @@
             this.BreathingRate_Panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BreathingRate_Panel.Controls.Add(this.BreathingRate_Label);
             this.BreathingRate_Panel.Location = new System.Drawing.Point(205, 45);
-            this.BreathingRate_Panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BreathingRate_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRate_Panel.Name = "BreathingRate_Panel";
             this.BreathingRate_Panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BreathingRate_Panel.Size = new System.Drawing.Size(520, 30);
@@ -342,7 +330,7 @@
             this.BreathingRate_Maximum_Panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BreathingRate_Maximum_Panel.Controls.Add(this.BreathingRate_Maximum_Label);
             this.BreathingRate_Maximum_Panel.Location = new System.Drawing.Point(476, 85);
-            this.BreathingRate_Maximum_Panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BreathingRate_Maximum_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRate_Maximum_Panel.Name = "BreathingRate_Maximum_Panel";
             this.BreathingRate_Maximum_Panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BreathingRate_Maximum_Panel.Size = new System.Drawing.Size(249, 32);
@@ -368,7 +356,7 @@
             this.BreathingRate_Minimum_Panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BreathingRate_Minimum_Panel.Controls.Add(this.BreathingRate_Minimum_Label);
             this.BreathingRate_Minimum_Panel.Location = new System.Drawing.Point(205, 85);
-            this.BreathingRate_Minimum_Panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BreathingRate_Minimum_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRate_Minimum_Panel.Name = "BreathingRate_Minimum_Panel";
             this.BreathingRate_Minimum_Panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BreathingRate_Minimum_Panel.Size = new System.Drawing.Size(249, 32);
@@ -419,7 +407,7 @@
             this.DefaultPanel_SocketComboBox.ForeColor = System.Drawing.Color.White;
             this.DefaultPanel_SocketComboBox.FormattingEnabled = true;
             this.DefaultPanel_SocketComboBox.Location = new System.Drawing.Point(48, 57);
-            this.DefaultPanel_SocketComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DefaultPanel_SocketComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.DefaultPanel_SocketComboBox.Name = "DefaultPanel_SocketComboBox";
             this.DefaultPanel_SocketComboBox.Size = new System.Drawing.Size(200, 31);
             this.DefaultPanel_SocketComboBox.TabIndex = 7;
@@ -438,7 +426,7 @@
             this.PulseRatePanel.Controls.Add(this.PulseRateImage);
             this.PulseRatePanel.Controls.Add(this.PulseRateLabel);
             this.PulseRatePanel.Location = new System.Drawing.Point(213, 8);
-            this.PulseRatePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRatePanel.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRatePanel.Name = "PulseRatePanel";
             this.PulseRatePanel.Size = new System.Drawing.Size(172, 30);
             this.PulseRatePanel.TabIndex = 8;
@@ -463,7 +451,7 @@
             this.PulseRate_Maximum_TextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PulseRate_Maximum_TextBox.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Maximum_TextBox.Location = new System.Drawing.Point(476, 129);
-            this.PulseRate_Maximum_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRate_Maximum_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRate_Maximum_TextBox.Multiline = true;
             this.PulseRate_Maximum_TextBox.Name = "PulseRate_Maximum_TextBox";
             this.PulseRate_Maximum_TextBox.Size = new System.Drawing.Size(249, 32);
@@ -480,7 +468,7 @@
             this.PulseRate_Minimum_TextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PulseRate_Minimum_TextBox.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Minimum_TextBox.Location = new System.Drawing.Point(205, 129);
-            this.PulseRate_Minimum_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRate_Minimum_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRate_Minimum_TextBox.Multiline = true;
             this.PulseRate_Minimum_TextBox.Name = "PulseRate_Minimum_TextBox";
             this.PulseRate_Minimum_TextBox.Size = new System.Drawing.Size(249, 32);
@@ -507,7 +495,7 @@
             this.PulseRate_PulseRate_panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PulseRate_PulseRate_panel.Controls.Add(this.PulseRate_PulseRateLabel);
             this.PulseRate_PulseRate_panel.Location = new System.Drawing.Point(205, 45);
-            this.PulseRate_PulseRate_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRate_PulseRate_panel.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRate_PulseRate_panel.Name = "PulseRate_PulseRate_panel";
             this.PulseRate_PulseRate_panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PulseRate_PulseRate_panel.Size = new System.Drawing.Size(520, 30);
@@ -532,7 +520,7 @@
             this.PulseRate_Maximum_panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PulseRate_Maximum_panel.Controls.Add(this.PulseRate_Maximum_label);
             this.PulseRate_Maximum_panel.Location = new System.Drawing.Point(476, 85);
-            this.PulseRate_Maximum_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRate_Maximum_panel.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRate_Maximum_panel.Name = "PulseRate_Maximum_panel";
             this.PulseRate_Maximum_panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PulseRate_Maximum_panel.Size = new System.Drawing.Size(249, 32);
@@ -558,7 +546,7 @@
             this.PulseRate_Minimum_panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PulseRate_Minimum_panel.Controls.Add(this.PulseRate_Minimum_label);
             this.PulseRate_Minimum_panel.Location = new System.Drawing.Point(205, 85);
-            this.PulseRate_Minimum_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRate_Minimum_panel.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRate_Minimum_panel.Name = "PulseRate_Minimum_panel";
             this.PulseRate_Minimum_panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PulseRate_Minimum_panel.Size = new System.Drawing.Size(249, 32);
@@ -582,7 +570,7 @@
             // 
             this.PulseRateImage.Image = global::FinalProject.Properties.Resources.pulse;
             this.PulseRateImage.Location = new System.Drawing.Point(31, 47);
-            this.PulseRateImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PulseRateImage.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRateImage.Name = "PulseRateImage";
             this.PulseRateImage.Size = new System.Drawing.Size(136, 134);
             this.PulseRateImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -619,7 +607,7 @@
             this.BloodPressurePanel.Controls.Add(this.BloodPressureTextBox_SystolicMaximum_ParameterValue);
             this.BloodPressurePanel.Controls.Add(this.BloodPressureTextBox_SystolicMinimum_ParameterValue);
             this.BloodPressurePanel.Location = new System.Drawing.Point(0, 0);
-            this.BloodPressurePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressurePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel.Name = "BloodPressurePanel";
             this.BloodPressurePanel.Size = new System.Drawing.Size(202, 38);
             this.BloodPressurePanel.TabIndex = 9;
@@ -669,7 +657,7 @@
             this.BloodPressurePanel_SystolicMaximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressurePanel_SystolicMaximum.Controls.Add(this.BloodPressureLabel_SystolicMaximum);
             this.BloodPressurePanel_SystolicMaximum.Location = new System.Drawing.Point(607, 75);
-            this.BloodPressurePanel_SystolicMaximum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressurePanel_SystolicMaximum.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel_SystolicMaximum.Name = "BloodPressurePanel_SystolicMaximum";
             this.BloodPressurePanel_SystolicMaximum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BloodPressurePanel_SystolicMaximum.Size = new System.Drawing.Size(118, 22);
@@ -694,7 +682,7 @@
             this.BloodPressurePanel_SystolicMinimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressurePanel_SystolicMinimum.Controls.Add(this.BloodPressureLabel_SystolicMinimum);
             this.BloodPressurePanel_SystolicMinimum.Location = new System.Drawing.Point(476, 75);
-            this.BloodPressurePanel_SystolicMinimum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressurePanel_SystolicMinimum.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel_SystolicMinimum.Name = "BloodPressurePanel_SystolicMinimum";
             this.BloodPressurePanel_SystolicMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BloodPressurePanel_SystolicMinimum.Size = new System.Drawing.Size(118, 22);
@@ -719,7 +707,7 @@
             this.BloodPressurePanel_DiastolicMaximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressurePanel_DiastolicMaximum.Controls.Add(this.BloodPressureLabel_DiastolicMaximum);
             this.BloodPressurePanel_DiastolicMaximum.Location = new System.Drawing.Point(336, 75);
-            this.BloodPressurePanel_DiastolicMaximum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressurePanel_DiastolicMaximum.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel_DiastolicMaximum.Name = "BloodPressurePanel_DiastolicMaximum";
             this.BloodPressurePanel_DiastolicMaximum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BloodPressurePanel_DiastolicMaximum.Size = new System.Drawing.Size(118, 22);
@@ -744,7 +732,7 @@
             this.BloodPressurePanel_DiastolicMinimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressurePanel_DiastolicMinimum.Controls.Add(this.BloodPressureLabel_DiastolicMinimum);
             this.BloodPressurePanel_DiastolicMinimum.Location = new System.Drawing.Point(206, 75);
-            this.BloodPressurePanel_DiastolicMinimum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressurePanel_DiastolicMinimum.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel_DiastolicMinimum.Name = "BloodPressurePanel_DiastolicMinimum";
             this.BloodPressurePanel_DiastolicMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BloodPressurePanel_DiastolicMinimum.Size = new System.Drawing.Size(118, 22);
@@ -769,7 +757,7 @@
             this.BloodPressureLabel_Systolic.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressureLabel_Systolic.Controls.Add(this.BloodPressure_SystolicLabel);
             this.BloodPressureLabel_Systolic.Location = new System.Drawing.Point(476, 45);
-            this.BloodPressureLabel_Systolic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureLabel_Systolic.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureLabel_Systolic.Name = "BloodPressureLabel_Systolic";
             this.BloodPressureLabel_Systolic.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BloodPressureLabel_Systolic.Size = new System.Drawing.Size(249, 22);
@@ -794,7 +782,7 @@
             this.BloodPressureLabel_Diastolic.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressureLabel_Diastolic.Controls.Add(this.BloodPressure_DiastolicLabel);
             this.BloodPressureLabel_Diastolic.Location = new System.Drawing.Point(205, 45);
-            this.BloodPressureLabel_Diastolic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureLabel_Diastolic.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureLabel_Diastolic.Name = "BloodPressureLabel_Diastolic";
             this.BloodPressureLabel_Diastolic.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BloodPressureLabel_Diastolic.Size = new System.Drawing.Size(249, 22);
@@ -818,7 +806,7 @@
             // 
             this.BloodPressureImage.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
             this.BloodPressureImage.Location = new System.Drawing.Point(21, 37);
-            this.BloodPressureImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureImage.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureImage.Name = "BloodPressureImage";
             this.BloodPressureImage.Size = new System.Drawing.Size(136, 134);
             this.BloodPressureImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -832,7 +820,7 @@
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.ForeColor = System.Drawing.Color.White;
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Location = new System.Drawing.Point(335, 105);
-            this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Multiline = true;
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Name = "BloodPressureTextBox_DiastolicMaximum_ParameterValue";
             this.BloodPressureTextBox_DiastolicMaximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
@@ -849,7 +837,7 @@
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.ForeColor = System.Drawing.Color.White;
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Location = new System.Drawing.Point(205, 105);
-            this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Multiline = true;
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Name = "BloodPressureTextBox_DiastolicMinimum_ParameterValue";
             this.BloodPressureTextBox_DiastolicMinimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
@@ -866,7 +854,7 @@
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.ForeColor = System.Drawing.Color.White;
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Location = new System.Drawing.Point(606, 105);
-            this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Multiline = true;
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Name = "BloodPressureTextBox_SystolicMaximum_ParameterValue";
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Size = new System.Drawing.Size(119, 35);
@@ -883,7 +871,7 @@
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue.ForeColor = System.Drawing.Color.White;
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Location = new System.Drawing.Point(476, 105);
-            this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Multiline = true;
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Name = "BloodPressureTextBox_SystolicMinimum_ParameterValue";
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue.Size = new System.Drawing.Size(119, 35);
@@ -905,7 +893,7 @@
             this.TemperaturePanel.Controls.Add(this.Temperature_Picture);
             this.TemperaturePanel.Controls.Add(this.TemperatureLabel);
             this.TemperaturePanel.Location = new System.Drawing.Point(213, 45);
-            this.TemperaturePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TemperaturePanel.Margin = new System.Windows.Forms.Padding(2);
             this.TemperaturePanel.Name = "TemperaturePanel";
             this.TemperaturePanel.Size = new System.Drawing.Size(202, 33);
             this.TemperaturePanel.TabIndex = 1;
@@ -917,7 +905,7 @@
             this.Temperature_Maximum_TextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Temperature_Maximum_TextBox.ForeColor = System.Drawing.Color.White;
             this.Temperature_Maximum_TextBox.Location = new System.Drawing.Point(476, 129);
-            this.Temperature_Maximum_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Temperature_Maximum_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Temperature_Maximum_TextBox.Multiline = true;
             this.Temperature_Maximum_TextBox.Name = "Temperature_Maximum_TextBox";
             this.Temperature_Maximum_TextBox.Size = new System.Drawing.Size(249, 32);
@@ -934,7 +922,7 @@
             this.Temperature_Minimum_TextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Temperature_Minimum_TextBox.ForeColor = System.Drawing.Color.White;
             this.Temperature_Minimum_TextBox.Location = new System.Drawing.Point(205, 129);
-            this.Temperature_Minimum_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Temperature_Minimum_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Temperature_Minimum_TextBox.Multiline = true;
             this.Temperature_Minimum_TextBox.Name = "Temperature_Minimum_TextBox";
             this.Temperature_Minimum_TextBox.Size = new System.Drawing.Size(249, 32);
@@ -962,7 +950,7 @@
             this.Temperature_Panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Temperature_Panel.Controls.Add(this.Temperature_Label);
             this.Temperature_Panel.Location = new System.Drawing.Point(205, 45);
-            this.Temperature_Panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Temperature_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.Temperature_Panel.Name = "Temperature_Panel";
             this.Temperature_Panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Temperature_Panel.Size = new System.Drawing.Size(520, 30);
@@ -987,7 +975,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(476, 85);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel2.Size = new System.Drawing.Size(249, 32);
@@ -1013,7 +1001,7 @@
             this.Temperature_Minimum_Panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Temperature_Minimum_Panel.Controls.Add(this.Temperature_Minimum_Label);
             this.Temperature_Minimum_Panel.Location = new System.Drawing.Point(205, 85);
-            this.Temperature_Minimum_Panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Temperature_Minimum_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.Temperature_Minimum_Panel.Name = "Temperature_Minimum_Panel";
             this.Temperature_Minimum_Panel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Temperature_Minimum_Panel.Size = new System.Drawing.Size(249, 32);
@@ -1037,7 +1025,7 @@
             // 
             this.Temperature_Picture.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
             this.Temperature_Picture.Location = new System.Drawing.Point(31, 47);
-            this.Temperature_Picture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Temperature_Picture.Margin = new System.Windows.Forms.Padding(2);
             this.Temperature_Picture.Name = "Temperature_Picture";
             this.Temperature_Picture.Size = new System.Drawing.Size(136, 134);
             this.Temperature_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1080,20 +1068,40 @@
             this.PanelMain.Size = new System.Drawing.Size(750, 347);
             this.PanelMain.TabIndex = 13;
             // 
+            // BedPanel
+            // 
+            this.BedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedPanel.Controls.Add(this.BedLabel);
+            this.BedPanel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BedPanel.ForeColor = System.Drawing.Color.White;
+            this.BedPanel.Location = new System.Drawing.Point(298, 57);
+            this.BedPanel.Name = "BedPanel";
+            this.BedPanel.Size = new System.Drawing.Size(150, 31);
+            this.BedPanel.TabIndex = 10;
+            // 
+            // BedLabel
+            // 
+            this.BedLabel.AutoSize = true;
+            this.BedLabel.Location = new System.Drawing.Point(51, 5);
+            this.BedLabel.Name = "BedLabel";
+            this.BedLabel.Size = new System.Drawing.Size(49, 21);
+            this.BedLabel.TabIndex = 0;
+            this.BedLabel.Text = "Bed 1";
+            // 
             // SocketSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(750, 447);
+            this.Controls.Add(this.BedPanel);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.DefaultPanel_SelectSocketLabel);
             this.Controls.Add(this.DefaultPanel_SocketComboBox);
-            this.Controls.Add(this.DefaultPanel_BedComboBox);
             this.Controls.Add(this.DefaultPanel_InstallButton);
             this.Controls.Add(this.PanelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SocketSelection";
             this.Load += new System.EventHandler(this.SocketSelection_Load);
             this.PanelTop.ResumeLayout(false);
@@ -1143,6 +1151,8 @@
             this.Temperature_Minimum_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Temperature_Picture)).EndInit();
             this.PanelMain.ResumeLayout(false);
+            this.BedPanel.ResumeLayout(false);
+            this.BedPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1155,9 +1165,7 @@
         private System.Windows.Forms.PictureBox PanelTop_CloseButton;
         private System.Windows.Forms.PictureBox PanelTop_MainPageButton;
         private System.Windows.Forms.Button DefaultPanel_InstallButton;
-        public System.Windows.Forms.ComboBox DefaultPanel_BedComboBox;
         private System.Windows.Forms.Panel BreathingRatePanel;
-        private System.Windows.Forms.ComboBox DefaultPanel_SocketComboBox;
         private System.Windows.Forms.Panel PulseRatePanel;
         private System.Windows.Forms.Panel BloodPressurePanel;
         private System.Windows.Forms.Panel TemperaturePanel;
@@ -1220,5 +1228,8 @@
         public System.Windows.Forms.TextBox PulseRate_Minimum_TextBox;
         private System.Windows.Forms.Label BreathingRate_Label_Description1;
         private System.Windows.Forms.Label BreathingRate_Label_Description2;
+        private System.Windows.Forms.Panel BedPanel;
+        public System.Windows.Forms.Label BedLabel;
+        public System.Windows.Forms.ComboBox DefaultPanel_SocketComboBox;
     }
 }
