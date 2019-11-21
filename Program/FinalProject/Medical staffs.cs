@@ -47,7 +47,10 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+            //get data from the textfields
+            //send them to the DB to be saved
+            //refresh the datagridview
+            fillInDataGridView();
             table1.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
             dataGridView1.DataSource = table1;
         }
@@ -56,6 +59,11 @@ namespace FinalProject
         {
             selectedRow = dataGridView1.CurrentCell.RowIndex;
             dataGridView1.Rows.RemoveAt(selectedRow);
+        }
+
+        private void fillInDataGridView()
+        {
+            //pull data from the DB and populate the datagridview
         }
     }
 }
