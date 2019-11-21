@@ -79,5 +79,18 @@ namespace FinalProject
             management.Location = this.Location;
             this.Hide();
         }
+        // Added this button that leads to Management/Logs bit (Priyanka)
+        private void LogsButton_Click(object sender, EventArgs e)
+        {
+            Logs logs = new Logs();
+            logs.Show();
+            logs.Location = this.Location;
+            this.Hide();
+
+        }
+
+        
+       
     }
-}
+    }
+

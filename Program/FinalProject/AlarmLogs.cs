@@ -17,9 +17,35 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void MinimizeButtonAlarmLogs_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Minimized;
 
         }
+
+        private void CloseButtonAlarmLogs_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+        // backbutton leads the page back to Logs page
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Logs logs = new Logs();
+            logs.Show();
+            logs.Location = this.Location;
+            this.Hide();
+        }
     }
-}
+   
+
+       
+    }
+
+    
+    
+
+ 
+
+        
+ 

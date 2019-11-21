@@ -141,6 +141,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logs.Designer.cs">
+      <DependentUpon>Logs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,7 +170,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SocketConfiguration.cs" />
+    <Compile Include="RDLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDLogs.Designer.cs">
+      <DependentUpon>RDLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketSelection.cs">
@@ -209,6 +223,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Logs.resx">
+      <DependentUpon>Logs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +239,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDLogs.resx">
+      <DependentUpon>RDLogs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SocketSelection.resx">
       <DependentUpon>SocketSelection.cs</DependentUpon>
@@ -333,6 +353,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\8B7gpJyx_400x400.png" />
+    <None Include="Resources\Download-Back-Logo-Png-Image-58922-For-Designing-Projects.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

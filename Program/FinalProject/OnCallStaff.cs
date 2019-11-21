@@ -76,7 +76,10 @@ namespace FinalProject
             throw new NotImplementedException();
         }
 
-        (Exception ex)
-       }
+        (Exception ex) private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 }
