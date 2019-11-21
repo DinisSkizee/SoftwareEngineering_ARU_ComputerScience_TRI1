@@ -12,8 +12,6 @@ namespace FinalProject
 {
     public partial class Medical_staffs : Form
     {
-        private object table;
-
         public Medical_staffs()
         {
             InitializeComponent();
