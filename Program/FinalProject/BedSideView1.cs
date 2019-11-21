@@ -11,31 +11,25 @@ namespace FinalProject
             InitializeComponent();
 
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
-                (TemperaturePanelBed1.Dock == DockStyle.Fill) || (PulseRatePanelBed1.Dock == DockStyle.Fill))
-            {
-                moduleState1 = 1;
-            }
+                (TemperaturePanelBed1.Dock == DockStyle.Fill) || (PulseRatePanelBed1.Dock == DockStyle.Fill)) { moduleState1 = 1; }
+            else if ((BreathingRatePanelBed1.Dock == DockStyle.None) && (BloodPressurePanelBed1.Dock == DockStyle.None) &&
+                (TemperaturePanelBed1.Dock == DockStyle.None) && (PulseRatePanelBed1.Dock == DockStyle.None)) { moduleState1 = 0; }
 
-            if ((BreathingRatePanelBed2.Dock == DockStyle.Fill) || (BloodPressurePanelBed2.Dock == DockStyle.Fill) ||
-                (TemperaturePanelBed2.Dock == DockStyle.Fill) || (PulseRatePanelBed2.Dock == DockStyle.Fill))
-            {
-                moduleState2 = 1;
-            }
+            else if ((BreathingRatePanelBed2.Dock == DockStyle.Fill) || (BloodPressurePanelBed2.Dock == DockStyle.Fill) ||
+                (TemperaturePanelBed2.Dock == DockStyle.Fill) || (PulseRatePanelBed2.Dock == DockStyle.Fill)) { moduleState2 = 1; }
+            else if ((BreathingRatePanelBed2.Dock == DockStyle.None) || (BloodPressurePanelBed2.Dock == DockStyle.None) ||
+                (TemperaturePanelBed2.Dock == DockStyle.None) || (PulseRatePanelBed2.Dock == DockStyle.None)) { moduleState2 = 0; }
 
-            if ((BreathingRatePanelBed3.Dock == DockStyle.Fill) || (BloodPressurePanelBed3.Dock == DockStyle.Fill) ||
-                (TemperaturePanelBed3.Dock == DockStyle.Fill) || (PulseRatePanelBed3.Dock == DockStyle.Fill))
-            {
-                moduleState3 = 1;
-            }
+            else if ((BreathingRatePanelBed3.Dock == DockStyle.Fill) || (BloodPressurePanelBed3.Dock == DockStyle.Fill) ||
+                (TemperaturePanelBed3.Dock == DockStyle.Fill) || (PulseRatePanelBed3.Dock == DockStyle.Fill)) { moduleState3 = 1; }
+            else if((BreathingRatePanelBed3.Dock == DockStyle.None) || (BloodPressurePanelBed3.Dock == DockStyle.None) ||
+                (TemperaturePanelBed3.Dock == DockStyle.None) || (PulseRatePanelBed3.Dock == DockStyle.None)) { moduleState3 = 0; }
 
-            if ((BreathingRatePanelBed4.Dock == DockStyle.Fill) || (BloodPressurePanelBed4.Dock == DockStyle.Fill) ||
-                (TemperaturePanelBed4.Dock == DockStyle.Fill) || (PulseRatePanelBed4.Dock == DockStyle.Fill))
-            {
-                moduleState4 = 1;
-            }
+            else if ((BreathingRatePanelBed4.Dock == DockStyle.Fill) || (BloodPressurePanelBed4.Dock == DockStyle.Fill) ||
+                (TemperaturePanelBed4.Dock == DockStyle.Fill) || (PulseRatePanelBed4.Dock == DockStyle.Fill)) { moduleState4 = 1; }
+            else if ((BreathingRatePanelBed4.Dock == DockStyle.None) || (BloodPressurePanelBed4.Dock == DockStyle.None) ||
+                (TemperaturePanelBed4.Dock == DockStyle.None) || (PulseRatePanelBed4.Dock == DockStyle.None)) { moduleState4 = 0; }
 
-
-            // FALTA ADICIONAR x3 PORQUE ISTO ESTA A VERIFICAR SO UM PAINEL DE CADA VEZ E NAO VERIFICA OS 4 ENTAO E SO ADICIONAR ISTO +3x e está funcional
             #region BloodInsert IF Statements
             if (bloodInsert1 == 1)
             {
@@ -53,7 +47,7 @@ namespace FinalProject
             {
                 BloodPressurePanelBed3.Dock = DockStyle.Fill;
                 BloodPressurePanelBed3.Visible = true;
-                InsertASocket2.Visible = false;
+                InsertASocket3.Visible = false;
             }
             else if (bloodInsert4 == 1)
             {
@@ -143,6 +137,8 @@ namespace FinalProject
                 InsertASocket4.Visible = false;
             }
             #endregion
+
+            DiBloodPressurePanelBed_Minimum_Text.Text = SocketSelection.diastolicMinimum;
         }
 
         // Variables
@@ -361,6 +357,5 @@ namespace FinalProject
             InsertASocket4.Visible = true;
         }
         #endregion
-
     }
 }
