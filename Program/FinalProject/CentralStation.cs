@@ -53,5 +53,15 @@ namespace FinalProject
             this.Hide();
             
         }
+
+        private void CentralStation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
