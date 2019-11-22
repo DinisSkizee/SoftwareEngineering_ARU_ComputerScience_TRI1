@@ -54,6 +54,7 @@ namespace FinalProject
             this.GreyBackgroundLogin.Controls.Add(this.MinimizeButtonLoginForm);
             this.GreyBackgroundLogin.Controls.Add(this.WelcomeTextBox);
             this.GreyBackgroundLogin.Controls.Add(this.WhitePanelLogin);
+            this.GreyBackgroundLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GreyBackgroundLogin.Location = new System.Drawing.Point(0, 0);
             this.GreyBackgroundLogin.Margin = new System.Windows.Forms.Padding(2);
             this.GreyBackgroundLogin.Name = "GreyBackgroundLogin";
@@ -197,7 +198,6 @@ namespace FinalProject
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(226, 36);
             this.usernameBox.TabIndex = 0;
-            this.usernameBox.TextChanged += new System.EventHandler(this.usernameBox_TextChanged);
             this.usernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameBox_KeyDown);
             // 
             // LoginForm
@@ -210,6 +210,7 @@ namespace FinalProject
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginForm";
+            this.Shown += new System.EventHandler(this.LoginForm_Shown);
             this.GreyBackgroundLogin.ResumeLayout(false);
             this.GreyBackgroundLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLoginForm)).EndInit();

@@ -10,25 +10,27 @@ namespace FinalProject
         {
             InitializeComponent();
 
+            #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed1.Dock == DockStyle.Fill) || (PulseRatePanelBed1.Dock == DockStyle.Fill)) { moduleState1 = 1; }
             else if ((BreathingRatePanelBed1.Dock == DockStyle.None) && (BloodPressurePanelBed1.Dock == DockStyle.None) &&
                 (TemperaturePanelBed1.Dock == DockStyle.None) && (PulseRatePanelBed1.Dock == DockStyle.None)) { moduleState1 = 0; }
 
-            else if ((BreathingRatePanelBed2.Dock == DockStyle.Fill) || (BloodPressurePanelBed2.Dock == DockStyle.Fill) ||
+            if ((BreathingRatePanelBed2.Dock == DockStyle.Fill) || (BloodPressurePanelBed2.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed2.Dock == DockStyle.Fill) || (PulseRatePanelBed2.Dock == DockStyle.Fill)) { moduleState2 = 1; }
             else if ((BreathingRatePanelBed2.Dock == DockStyle.None) || (BloodPressurePanelBed2.Dock == DockStyle.None) ||
                 (TemperaturePanelBed2.Dock == DockStyle.None) || (PulseRatePanelBed2.Dock == DockStyle.None)) { moduleState2 = 0; }
 
-            else if ((BreathingRatePanelBed3.Dock == DockStyle.Fill) || (BloodPressurePanelBed3.Dock == DockStyle.Fill) ||
+            if ((BreathingRatePanelBed3.Dock == DockStyle.Fill) || (BloodPressurePanelBed3.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed3.Dock == DockStyle.Fill) || (PulseRatePanelBed3.Dock == DockStyle.Fill)) { moduleState3 = 1; }
-            else if((BreathingRatePanelBed3.Dock == DockStyle.None) || (BloodPressurePanelBed3.Dock == DockStyle.None) ||
+            else if ((BreathingRatePanelBed3.Dock == DockStyle.None) || (BloodPressurePanelBed3.Dock == DockStyle.None) ||
                 (TemperaturePanelBed3.Dock == DockStyle.None) || (PulseRatePanelBed3.Dock == DockStyle.None)) { moduleState3 = 0; }
 
-            else if ((BreathingRatePanelBed4.Dock == DockStyle.Fill) || (BloodPressurePanelBed4.Dock == DockStyle.Fill) ||
+            if ((BreathingRatePanelBed4.Dock == DockStyle.Fill) || (BloodPressurePanelBed4.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed4.Dock == DockStyle.Fill) || (PulseRatePanelBed4.Dock == DockStyle.Fill)) { moduleState4 = 1; }
             else if ((BreathingRatePanelBed4.Dock == DockStyle.None) || (BloodPressurePanelBed4.Dock == DockStyle.None) ||
                 (TemperaturePanelBed4.Dock == DockStyle.None) || (PulseRatePanelBed4.Dock == DockStyle.None)) { moduleState4 = 0; }
+            #endregion
 
             #region BloodInsert IF Statements
             if (bloodInsert1 == 1)
@@ -36,24 +38,28 @@ namespace FinalProject
                 BloodPressurePanelBed1.Dock = DockStyle.Fill;
                 BloodPressurePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
+                bloodInsert1 = 0;
             }
             else if (bloodInsert2 == 1)
             {
                 BloodPressurePanelBed2.Dock = DockStyle.Fill;
                 BloodPressurePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
+                bloodInsert2 = 0;
             }
             else if (bloodInsert3 == 1)
             {
                 BloodPressurePanelBed3.Dock = DockStyle.Fill;
                 BloodPressurePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
+                bloodInsert3 = 0;
             }
             else if (bloodInsert4 == 1)
             {
                 BloodPressurePanelBed4.Dock = DockStyle.Fill;
                 BloodPressurePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
+                bloodInsert4 = 0;
             }
             #endregion
 
@@ -63,24 +69,28 @@ namespace FinalProject
                 BreathingRatePanelBed1.Dock = DockStyle.Fill;
                 BreathingRatePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
+                breathingInsert1 = 0;
             }
             else if (breathingInsert2 == 1)
             {
                 BreathingRatePanelBed2.Dock = DockStyle.Fill;
                 BreathingRatePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
+                breathingInsert2 = 0;
             }
             else if (breathingInsert3 == 1)
             {
                 BreathingRatePanelBed3.Dock = DockStyle.Fill;
                 BreathingRatePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
+                breathingInsert3 = 0;
             }
             else if (breathingInsert4 == 1)
             {
                 BreathingRatePanelBed4.Dock = DockStyle.Fill;
                 BreathingRatePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
+                breathingInsert4 = 0;
             }
             #endregion
 
@@ -90,24 +100,28 @@ namespace FinalProject
                 PulseRatePanelBed1.Dock = DockStyle.Fill;
                 PulseRatePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
+                pulseInsert1 = 0;
             }
             else if (pulseInsert2 == 1)
             {
                 PulseRatePanelBed2.Dock = DockStyle.Fill;
                 PulseRatePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
+                pulseInsert2 = 0;
             }
             else if (pulseInsert3 == 1)
             {
                 PulseRatePanelBed3.Dock = DockStyle.Fill;
                 PulseRatePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
+                pulseInsert3 = 0;
             }
             else if (pulseInsert4 == 1)
             {
                 PulseRatePanelBed4.Dock = DockStyle.Fill;
                 PulseRatePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
+                pulseInsert4 = 0;
             }
             #endregion
 
@@ -117,28 +131,68 @@ namespace FinalProject
                 TemperaturePanelBed1.Dock = DockStyle.Fill;
                 TemperaturePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
+                tempInsert1 = 0;
             }
             else if (tempInsert2 == 1)
             {
                 TemperaturePanelBed2.Dock = DockStyle.Fill;
                 TemperaturePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
+                tempInsert2 = 0;
             }
             else if (tempInsert3 == 1)
             {
                 TemperaturePanelBed3.Dock = DockStyle.Fill;
                 TemperaturePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
+                tempInsert3 = 0;
             }
             else if (tempInsert4 == 1)
             {
                 TemperaturePanelBed4.Dock = DockStyle.Fill;
                 TemperaturePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
+                tempInsert4 = 0;
             }
             #endregion
 
-            DiBloodPressurePanelBed_Minimum_Text.Text = SocketSelection.diastolicMinimum;
+            #region TextBox Text Assignment
+
+            #region BloodPressure 1 Panel
+            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
+            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
+
+            SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
+            SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
+            #endregion
+
+            #endregion
+
+            #region ActivePanels Variable Assignment
+            if (BloodPressurePanelBed1.Visible == true || BloodPressurePanelBed2.Visible == true ||
+                BloodPressurePanelBed3.Visible == true || BloodPressurePanelBed4.Visible == true)
+            {
+                bloodActive = true;
+            }
+            if(PulseRatePanelBed1.Visible == true || PulseRatePanelBed2.Visible == true ||
+                PulseRatePanelBed3.Visible == true || PulseRatePanelBed4.Visible == true)
+            {
+                pulseActive = true;
+            }
+            if (BreathingRatePanelBed1.Visible == true || BreathingRatePanelBed2.Visible == true ||
+                BreathingRatePanelBed3.Visible == true || BreathingRatePanelBed4.Visible == true)
+            {
+                breathingActive = true;
+            }
+            if (TemperaturePanelBed1.Visible == true || TemperaturePanelBed2.Visible == true ||
+                TemperaturePanelBed3.Visible == true || TemperaturePanelBed4.Visible == true)
+            {
+                tempActive = true;
+            }
+            #endregion
+
         }
 
         // Variables
@@ -148,6 +202,7 @@ namespace FinalProject
         public static int pulseInsert1, pulseInsert2, pulseInsert3, pulseInsert4;
         public static int breathingInsert1, breathingInsert2, breathingInsert3, breathingInsert4;
         public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
+        public static bool bloodActive = false, pulseActive = false, breathingActive = false, tempActive = false;
 
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
@@ -357,5 +412,10 @@ namespace FinalProject
             InsertASocket4.Visible = true;
         }
         #endregion
+
+        private void BedSideView1_Shown(object sender, EventArgs e)
+        {
+            SocketConfiguration.Timer();
+        }
     }
 }

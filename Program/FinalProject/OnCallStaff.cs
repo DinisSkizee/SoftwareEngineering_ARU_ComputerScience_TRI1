@@ -39,8 +39,8 @@ namespace FinalProject
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            myDateTimeBegin = Convert.ToDateTime(dtpDateTimeBegin.Text).ToString("yyy-MM-dd");
-            myDateTimeEnd = Convert.ToDateTime(dtpDateTimeEnd.Text).ToString("yyy-MM-dd");
+            //myDateTimeBegin = Convert.ToDateTime(dtpDateTimeBegin.Text).ToString("yyy-MM-dd");
+            //myDateTimeEnd = Convert.ToDateTime(dtpDateTimeEnd.Text).ToString("yyy-MM-dd");
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace FinalProject
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
+            /*try
             {
                 DataGridViewRow myRow = dataGridView1.CurrentRow;
                 myStaffID = myRow.Cells[0].Value.ToString();
@@ -64,19 +64,18 @@ namespace FinalProject
                     PopulateDataGrid();
                     frm.ShowDialog();
                 }
-            }
+            }*/
         }
-        catch private void PopulateDataGrid()
-        {
-            throw new NotImplementedException();
-        }
+        //catch private void PopulateDataGrid()
+        //{
+         //   throw new NotImplementedException();
+        //}
 
         private void del(object txtAction)
         {
             throw new NotImplementedException();
         }
 
-        (Exception ex)
+        //(Exception ex)
        }
     }
-}

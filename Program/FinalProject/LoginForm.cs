@@ -91,9 +91,9 @@ namespace FinalProject
         }
         #endregion
 
-        private void usernameBox_TextChanged(object sender, EventArgs e)
+        private void LoginForm_Shown(object sender, EventArgs e)
         {
-
+            SocketConfiguration.Timer();
         }
     }
 }

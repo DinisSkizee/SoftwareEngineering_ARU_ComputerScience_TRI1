@@ -30,7 +30,6 @@ namespace FinalProject
 
         // Variables
         string bedActive;
-        public static string diastolicMinimum;
 
         #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
         /* just in case we need it
@@ -364,8 +363,6 @@ namespace FinalProject
             // Temperature Secondary Variables Integer
             int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin);
             int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax);
-
-            diastolicMinimum = BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text;
             #endregion
 
             bedActive = BedLabel.Text;
@@ -384,23 +381,25 @@ namespace FinalProject
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
-                        BedSideView1.bloodInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+                        BedSideView1.bloodInsert1 = 1;
+                        BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
-                        BedSideView1.bloodInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+                        BedSideView1.bloodInsert2 = 1;
+                        BedSideView1.insertClicked2 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
-                        BedSideView1.bloodInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+                        BedSideView1.bloodInsert3 = 1;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
-                        BedSideView1.bloodInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+                        BedSideView1.bloodInsert4 = 1;
                     }
 
                     BedSideView1 bed1 = new BedSideView1();
@@ -611,7 +610,7 @@ namespace FinalProject
                     bed8.Location = this.Location;
                     this.Hide();
                 }
-                
+
             }
 
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
