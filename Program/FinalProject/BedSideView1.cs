@@ -158,11 +158,6 @@ namespace FinalProject
 
             #region TextBox Text Assignment
 
-            for (int i = 0; i < 5;)
-            {
-                DiBloodPressurePanelBed_Actual_Text.Update();
-            }
-
             #region BloodPressure 1 Panel
             DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
             DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
@@ -181,7 +176,7 @@ namespace FinalProject
             {
                 bloodActive = true;
             }
-            if(PulseRatePanelBed1.Visible == true || PulseRatePanelBed2.Visible == true ||
+            if (PulseRatePanelBed1.Visible == true || PulseRatePanelBed2.Visible == true ||
                 PulseRatePanelBed3.Visible == true || PulseRatePanelBed4.Visible == true)
             {
                 pulseActive = true;

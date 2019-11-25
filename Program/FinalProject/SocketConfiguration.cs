@@ -340,10 +340,9 @@ namespace FinalProject
             timer.Tick += new EventHandler(StartRandom);
             timer.Start();
         }
-        public static string dibpact, sybpact;
         public static void StartRandom(object sender, EventArgs e)
         {
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 100; i++)
             {
                 SystolicValueRandom();
                 DiastolicValueRandom();
