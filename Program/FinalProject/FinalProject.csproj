@@ -243,6 +243,9 @@
     <EmbeddedResource Include="RDLogs.resx">
       <DependentUpon>RDLogs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SocketConfiguration.resx">
+      <DependentUpon>SocketConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SocketSelection.resx">
       <DependentUpon>SocketSelection.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Timers;
+using System.Windows.Forms;
 
 namespace FinalProject
 {
@@ -9,7 +9,8 @@ namespace FinalProject
         #region Variable 
         // Variables used for the Randoms
         public static int syValue, diValue, prValue, brValue, tempValue;
-        public static Timer timer;
+        static Timer timer = new Timer();
+
 
         static Random randomizer = new Random();
 
@@ -34,6 +35,7 @@ namespace FinalProject
 
         // Values Variables
         public static int diDiff, syDiff, prDiff, brDiff, tempDiff;
+
         public bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
         #endregion
@@ -334,21 +336,14 @@ namespace FinalProject
 
         public static void Timer()
         {
-            timer = new Timer(3000);
-
-            timer.Elapsed += Timer_Elapsed;
-            timer.AutoReset = true;
-            timer.Enabled = true;
-        }
-        private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            StartRandom();
+            timer.Interval = 2000;
+            timer.Tick += new EventHandler(StartRandom);
             timer.Start();
         }
-
-        public static void StartRandom()
+        public static string dibpact, sybpact;
+        public static void StartRandom(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10;)
+            for (int i = 0; i < 8; i++)
             {
                 SystolicValueRandom();
                 DiastolicValueRandom();
