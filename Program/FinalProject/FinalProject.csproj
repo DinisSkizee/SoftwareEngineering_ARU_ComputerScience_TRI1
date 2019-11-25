@@ -349,13 +349,6 @@
     <None Include="Resources\745646_temperature_512x512.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\8B7gpJyx_400x400.png" />
     <None Include="Resources\Download-Back-Logo-Png-Image-58922-For-Designing-Projects.png" />
   </ItemGroup>
