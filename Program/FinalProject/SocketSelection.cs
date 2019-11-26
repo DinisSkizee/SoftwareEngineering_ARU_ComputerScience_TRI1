@@ -395,11 +395,13 @@ namespace FinalProject
                     {
                         BedSideView1.moduleState3 = 1;
                         BedSideView1.bloodInsert3 = 1;
+                        BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
                         BedSideView1.moduleState4 = 1;
                         BedSideView1.bloodInsert4 = 1;
+                        BedSideView1.insertClicked4 = 0;
                     }
 
                     BedSideView1 bed1 = new BedSideView1();
