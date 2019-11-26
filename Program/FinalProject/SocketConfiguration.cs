@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    class SocketConfiguration : SocketSelection
+    class SocketConfiguration
     {
         #region Variable 
         // Variables used for the Randoms
@@ -16,12 +16,12 @@ namespace FinalProject
         public static int weight, age, height;
         public static int firstNameNumber, lastNameNumber;
         public static string firstName, lastName;
-        List<string> firstNameList = new List<string>()
+        public static List<string> firstNameList = new List<string>()
         {
             "Dinis", "Jorge", "Haris", "Kelly", "Brett", "Kevin", "Aaron", "Elias", "Erica", "Jacob", "Kye",
             "Herbert", "Lucie", "Nancy", "Rebekah", "Maria", "Jamie", "Rhonda", "Haleema", "Poppy", "Melanie"
         };
-        List<string> lastNameList = new List<string>()
+        public static List<string> lastNameList = new List<string>()
         {
             "Silva", "Costa", "Cooper", "Dunn", "Jordan", "Patton", "Gibson", "Lopez", "King", "Carroll",
             "Sanchez", "Benson", "Lane", "Kennedy", "Luna", "Harrison", "Morris", "Henry", "Keller", "Daniel", "Russell"
@@ -37,9 +37,10 @@ namespace FinalProject
         public bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
         #endregion
-
+        
         public SocketConfiguration()
         {
+            
 
             diDiff = diMax - diMin;      // BPDi = 30
             syDiff = syMax - syMin;      // BPSy = 20
@@ -209,14 +210,14 @@ namespace FinalProject
 
         }*/
 
-        void RandomGenUserValues()
+        public static void RandomGenUserValues()
         {
             weight = randomizer.Next(60, 85);
             age = randomizer.Next(25, 45);
             height = randomizer.Next(150, 210);
         }
 
-        void RandomNameGenerator()
+        public static void RandomNameGenerator()
         {
             firstNameNumber = randomizer.Next(0, firstNameList.Count);
             lastNameNumber = randomizer.Next(0, lastNameList.Count);
@@ -229,7 +230,7 @@ namespace FinalProject
         // Variables for the Randomizers below
         public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
 
-        public static int SystolicValueRandom() // Returns syValue
+        public static string SystolicValueRandom() // Returns syValue
         {
             randomizerSy = randomizer.Next(0, 100);
 
@@ -246,10 +247,10 @@ namespace FinalProject
                 syValue = randomizer.Next(syMax + 1, syMax + 20);
             }
 
-            return syValue;
+            return syValue.ToString();
         }
 
-        public static int DiastolicValueRandom() // Returns diValue
+        public static string DiastolicValueRandom() // Returns diValue
         {
             randomizerDi = randomizer.Next(0, 100);
 
@@ -266,10 +267,10 @@ namespace FinalProject
                 diValue = randomizer.Next(diMin + 1, diMax + 20);
             }
 
-            return diValue;
+            return diValue.ToString();
         }
 
-        public static int PulseValueRandom()
+        public static string PulseValueRandom()
         {
             randomizerPR = randomizer.Next(0, 100);
 
@@ -286,10 +287,10 @@ namespace FinalProject
                 prValue = randomizer.Next(prMax + 1, prMax + 20);
             }
 
-            return prValue;
+            return prValue.ToString();
         } // Returns prValue
 
-        public static int BreathingValueRandom()
+        public static string BreathingValueRandom()
         {
             randomizerBR = randomizer.Next(0, 100);
 
@@ -306,10 +307,10 @@ namespace FinalProject
                 brValue = randomizer.Next(brMax + 1, brMax + 50);
             }
 
-            return brValue;
+            return brValue.ToString();
         } // Returns brValue
 
-        public static int TemperatureValueRandom()
+        public static string TemperatureValueRandom()
         {
             randomizerTemp = randomizer.Next(0, 100);
 
@@ -329,7 +330,7 @@ namespace FinalProject
                 tempValue /= 10;
             }
 
-            return tempValue;
+            return tempValue.ToString();
         } // Returns tempValue
 
         public static void StartRandom(object sender, EventArgs e)
@@ -340,6 +341,5 @@ namespace FinalProject
             BreathingValueRandom();
             TemperatureValueRandom();
         }
-        
     }
 }

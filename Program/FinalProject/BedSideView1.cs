@@ -7,11 +7,14 @@ namespace FinalProject
     public partial class BedSideView1 : Form
     {
 
-        public static int ModuleIndex = 0;
+        public static BedSideView1 singleton;
 
         public BedSideView1()
         {
             InitializeComponent();
+
+            singleton = this;
+            new BedSideViewConfiguration();
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
@@ -167,12 +170,6 @@ namespace FinalProject
 
             SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
             SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
-
-            while (SyBloodPressurePanelBed_Actual_Text.Text != "" || DiBloodPressurePanelBed_Actual_Text.Text != "")
-            {
-                SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
-                DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
-            }
             #endregion
 
             #endregion
@@ -298,7 +295,24 @@ namespace FinalProject
 
         }
 
-        public static BedSideView1 bed1;
+
+        public void UpdateTextBox(object sender, EventArgs e)
+        {
+            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text2.Text = SocketConfiguration.DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text3.Text = SocketConfiguration.DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text4.Text = SocketConfiguration.DiastolicValueRandom();
+
+            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text2.Text = SocketConfiguration.SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text3.Text = SocketConfiguration.SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text4.Text = SocketConfiguration.SystolicValueRandom();
+
+            PulseRate_Actual_Text.Text = SocketConfiguration.PulseValueRandom();
+            PulseRate_Actual_Text2.Text = SocketConfiguration.PulseValueRandom();
+            PulseRate_Actual_Text3.Text = SocketConfiguration.PulseValueRandom();
+            PulseRate_Actual_Text4.Text = SocketConfiguration.PulseValueRandom();
+        }
 
         // Variables
         // How the module is, if it's active or not
@@ -417,9 +431,6 @@ namespace FinalProject
         #region InsertButtons Configuration  -- Dinis & Jorge
         private void InsertButton1_Click(object sender, EventArgs e)
         {
-
-            ModuleIndex = 1;
-
             if (moduleState1 == 0)
             {
                 insertClicked1 = 1;
@@ -525,14 +536,5 @@ namespace FinalProject
         }
         #endregion
 
-        public void BloodPresureAssign()
-        {
-            BloodPressurePanelBed1.Dock = DockStyle.Fill;
-
-            BedSideView1 bed1 = new BedSideView1();
-            bed1.Show();
-            bed1.Location = this.Location;
-            this.Hide();
-        }
     }
 }

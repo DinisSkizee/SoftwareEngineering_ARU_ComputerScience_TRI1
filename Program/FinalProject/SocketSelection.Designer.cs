@@ -609,7 +609,7 @@
             this.BloodPressurePanel.Location = new System.Drawing.Point(0, 0);
             this.BloodPressurePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel.Name = "BloodPressurePanel";
-            this.BloodPressurePanel.Size = new System.Drawing.Size(202, 38);
+            this.BloodPressurePanel.Size = new System.Drawing.Size(194, 38);
             this.BloodPressurePanel.TabIndex = 9;
             // 
             // BloodPressureLabel_Information
@@ -1103,7 +1103,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SocketSelection";
-            this.Load += new System.EventHandler(this.SocketSelection_Load);
             this.PanelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).EndInit();

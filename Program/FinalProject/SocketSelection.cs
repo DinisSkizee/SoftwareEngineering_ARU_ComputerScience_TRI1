@@ -380,7 +380,7 @@ namespace FinalProject
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && BedSideView1.ModuleIndex == 1 &&SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
 
                 if (bedActive == "Bed 1")
@@ -1350,11 +1350,6 @@ namespace FinalProject
             }
 
             #endregion
-        }
-
-        private void SocketSelection_Load(object sender, EventArgs e)
-        {
-            SocketConfiguration socket = new SocketConfiguration();
         }
     }
 }
