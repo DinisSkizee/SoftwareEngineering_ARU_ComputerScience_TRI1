@@ -609,7 +609,7 @@
             this.BloodPressurePanel.Location = new System.Drawing.Point(0, 0);
             this.BloodPressurePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel.Name = "BloodPressurePanel";
-            this.BloodPressurePanel.Size = new System.Drawing.Size(202, 38);
+            this.BloodPressurePanel.Size = new System.Drawing.Size(698, 275);
             this.BloodPressurePanel.TabIndex = 9;
             // 
             // BloodPressureLabel_Information
@@ -861,6 +861,7 @@
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.TabIndex = 3;
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Text = "Insert Maximum";
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BloodPressureTextBox_SystolicMaximum_ParameterValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BloodPressureTextBox_SystolicMaximum_ParameterValue_KeyDown);
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.Leave += new System.EventHandler(this.BloodPressureTextBox_SystolicMaximum_ParameterValue_Leave);
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BloodPressureTextBox_SystolicMaximum_ParameterValue_MouseDown);
             // 

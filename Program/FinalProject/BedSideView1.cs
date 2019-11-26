@@ -424,8 +424,6 @@ namespace FinalProject
         private void InsertButton1_Click(object sender, EventArgs e)
         {
 
-            ModuleIndex = 1;
-
             if (moduleState1 == 0)
             {
                 insertClicked1 = 1;
@@ -531,21 +529,6 @@ namespace FinalProject
         }
         #endregion
 
-        private void BedSideView1_Shown(object sender, EventArgs e)
-        {
-            SocketConfiguration.Timer();
-        }
-        public void BloodPresureAssign()
-        {
-
-
-            BloodPressurePanelBed1.Dock = DockStyle.Fill;
-
-            BedSideView1 bed1 = new BedSideView1();
-            bed1.Show();
-            bed1.Location = this.Location;
-            this.Hide();
-
-        }
+   
     }
 }

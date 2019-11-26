@@ -397,7 +397,7 @@
             this.PanelTop.Controls.Add(this.CloseButtonBedSideView);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
-            this.PanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelTop.Margin = new System.Windows.Forms.Padding(2);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 1;
@@ -419,7 +419,7 @@
             this.MinimizeButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MinimizeButtonBedSideView.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.MinimizeButtonBedSideView.Location = new System.Drawing.Point(681, 10);
-            this.MinimizeButtonBedSideView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimizeButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonBedSideView.Name = "MinimizeButtonBedSideView";
             this.MinimizeButtonBedSideView.Size = new System.Drawing.Size(23, 25);
             this.MinimizeButtonBedSideView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -432,7 +432,7 @@
             this.CloseButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseButtonBedSideView.Image = global::FinalProject.Properties.Resources.closewhite;
             this.CloseButtonBedSideView.Location = new System.Drawing.Point(716, 10);
-            this.CloseButtonBedSideView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CloseButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonBedSideView.Name = "CloseButtonBedSideView";
             this.CloseButtonBedSideView.Size = new System.Drawing.Size(23, 25);
             this.CloseButtonBedSideView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -956,7 +956,7 @@
             this.BloodPressurePanelBed1.ForeColor = System.Drawing.Color.White;
             this.BloodPressurePanelBed1.Location = new System.Drawing.Point(206, 7);
             this.BloodPressurePanelBed1.Name = "BloodPressurePanelBed1";
-            this.BloodPressurePanelBed1.Size = new System.Drawing.Size(124, 16);
+            this.BloodPressurePanelBed1.Size = new System.Drawing.Size(124, 30);
             this.BloodPressurePanelBed1.TabIndex = 10;
             this.BloodPressurePanelBed1.Visible = false;
             // 
@@ -3051,7 +3051,7 @@
             // 
             this.EjectButton4.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton4.Location = new System.Drawing.Point(377, 336);
-            this.EjectButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton4.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton4.Name = "EjectButton4";
             this.EjectButton4.Size = new System.Drawing.Size(20, 20);
             this.EjectButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3063,7 +3063,7 @@
             // 
             this.EjectButton3.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton3.Location = new System.Drawing.Point(353, 336);
-            this.EjectButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton3.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton3.Name = "EjectButton3";
             this.EjectButton3.Size = new System.Drawing.Size(20, 20);
             this.EjectButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3075,7 +3075,7 @@
             // 
             this.EjectButton2.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton2.Location = new System.Drawing.Point(377, 214);
-            this.EjectButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton2.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton2.Name = "EjectButton2";
             this.EjectButton2.Size = new System.Drawing.Size(20, 20);
             this.EjectButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3087,7 +3087,7 @@
             // 
             this.EjectButton1.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton1.Location = new System.Drawing.Point(353, 214);
-            this.EjectButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton1.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton1.Name = "EjectButton1";
             this.EjectButton1.Size = new System.Drawing.Size(20, 20);
             this.EjectButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3110,7 +3110,7 @@
             // 
             this.InsertButton4.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
             this.InsertButton4.Location = new System.Drawing.Point(377, 361);
-            this.InsertButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton4.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton4.Name = "InsertButton4";
             this.InsertButton4.Size = new System.Drawing.Size(20, 20);
             this.InsertButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3122,7 +3122,7 @@
             // 
             this.InsertButton3.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
             this.InsertButton3.Location = new System.Drawing.Point(353, 361);
-            this.InsertButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton3.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton3.Name = "InsertButton3";
             this.InsertButton3.Size = new System.Drawing.Size(20, 20);
             this.InsertButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3134,7 +3134,7 @@
             // 
             this.InsertButton2.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
             this.InsertButton2.Location = new System.Drawing.Point(377, 239);
-            this.InsertButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton2.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton2.Name = "InsertButton2";
             this.InsertButton2.Size = new System.Drawing.Size(20, 20);
             this.InsertButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3146,7 +3146,7 @@
             // 
             this.InsertButton1.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
             this.InsertButton1.Location = new System.Drawing.Point(353, 239);
-            this.InsertButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton1.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton1.Name = "InsertButton1";
             this.InsertButton1.Size = new System.Drawing.Size(20, 20);
             this.InsertButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
