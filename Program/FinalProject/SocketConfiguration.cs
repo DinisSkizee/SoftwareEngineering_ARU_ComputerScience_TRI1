@@ -9,8 +9,6 @@ namespace FinalProject
         #region Variable 
         // Variables used for the Randoms
         public static int syValue, diValue, prValue, brValue, tempValue;
-        static Timer timer = new Timer();
-
 
         static Random randomizer = new Random();
 
@@ -233,42 +231,42 @@ namespace FinalProject
 
         public static int SystolicValueRandom() // Returns syValue
         {
-                randomizerSy = randomizer.Next(0, 100);
+            randomizerSy = randomizer.Next(0, 100);
 
-                if (randomizerSy <= 5)
-                {
-                    syValue = randomizer.Next(syMin - 20, syMin - 1);
-                }
-                else if ((randomizerSy > 5) && (randomizerSy < 95))
-                {
-                    syValue = randomizer.Next(syMin, syMax);
-                }
-                else if (randomizerSy >= 95)
-                {
-                    syValue = randomizer.Next(syMax + 1, syMax + 20);
-                }
+            if (randomizerSy <= 5)
+            {
+                syValue = randomizer.Next(syMin - 20, syMin - 1);
+            }
+            else if ((randomizerSy > 5) && (randomizerSy < 95))
+            {
+                syValue = randomizer.Next(syMin, syMax);
+            }
+            else if (randomizerSy >= 95)
+            {
+                syValue = randomizer.Next(syMax + 1, syMax + 20);
+            }
 
-                return syValue;
+            return syValue;
         }
 
         public static int DiastolicValueRandom() // Returns diValue
         {
-                randomizerDi = randomizer.Next(0, 100);
+            randomizerDi = randomizer.Next(0, 100);
 
-                if (randomizerDi <= 5)
-                {
-                    diValue = randomizer.Next(diMin - 20, diMin - 1);
-                }
-                else if ((randomizerDi > 5) && (randomizerDi < 95))
-                {
-                    diValue = randomizer.Next(diMin, diMax);
-                }
-                else if (randomizerDi >= 95)
-                {
-                    diValue = randomizer.Next(diMin + 1, diMax + 20);
-                }
+            if (randomizerDi <= 5)
+            {
+                diValue = randomizer.Next(diMin - 20, diMin - 1);
+            }
+            else if ((randomizerDi > 5) && (randomizerDi < 95))
+            {
+                diValue = randomizer.Next(diMin, diMax);
+            }
+            else if (randomizerDi >= 95)
+            {
+                diValue = randomizer.Next(diMin + 1, diMax + 20);
+            }
 
-                return diValue;
+            return diValue;
         }
 
         public static int PulseValueRandom()
@@ -334,22 +332,13 @@ namespace FinalProject
             return tempValue;
         } // Returns tempValue
 
-        public static void Timer()
-        {
-            timer.Interval = 2000;
-            timer.Tick += new EventHandler(StartRandom);
-            timer.Start();
-        }
         public static void StartRandom(object sender, EventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                SystolicValueRandom();
-                DiastolicValueRandom();
-                PulseValueRandom();
-                BreathingValueRandom();
-                TemperatureValueRandom();
-            }
+            SystolicValueRandom();
+            DiastolicValueRandom();
+            PulseValueRandom();
+            BreathingValueRandom();
+            TemperatureValueRandom();
         }
         
     }

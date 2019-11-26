@@ -41,7 +41,7 @@ namespace FinalProject
                 BloodPressurePanelBed1.Dock = DockStyle.Fill;
                 BloodPressurePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
-                bloodInsert1 = 0;
+
             }
             else if (bloodInsert2 == 1)
             {
@@ -162,10 +162,14 @@ namespace FinalProject
             #region TextBox Text Assignment
 
             #region BloodPressure 1 Panel
+            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
 
+            SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
 
-            
-
+            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
+            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
             #endregion
 
             #endregion
@@ -193,6 +197,101 @@ namespace FinalProject
             }
             #endregion
 
+            #region Insert Assignment
+
+            #region Blood Pressure
+            if (BloodPressurePanelBed1.Dock == DockStyle.Fill)
+            {
+                bloodInsert1 = 1;
+            }
+            else { bloodInsert1 = 0; }
+            if (BloodPressurePanelBed2.Dock == DockStyle.Fill)
+            {
+                bloodInsert2 = 1;
+            }
+            else { bloodInsert2 = 0; }
+            if (BloodPressurePanelBed3.Dock == DockStyle.Fill)
+            {
+                bloodInsert3 = 1;
+            }
+            else { bloodInsert3 = 0; }
+            if (BloodPressurePanelBed4.Dock == DockStyle.Fill)
+            {
+                bloodInsert4 = 1;
+            }
+            else { bloodInsert4 = 0; }
+            #endregion
+
+            #region Pulse Rate
+            if (PulseRatePanelBed1.Dock == DockStyle.Fill)
+            {
+                pulseInsert1 = 1;
+            }
+            else { pulseInsert1 = 0; }
+            if (PulseRatePanelBed2.Dock == DockStyle.Fill)
+            {
+                pulseInsert2 = 1;
+            }
+            else { pulseInsert2 = 0; }
+            if (PulseRatePanelBed3.Dock == DockStyle.Fill)
+            {
+                pulseInsert3 = 1;
+            }
+            else { pulseInsert3 = 0; }
+            if (PulseRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                pulseInsert4 = 1;
+            }
+            else { pulseInsert4 = 0; }
+            #endregion
+
+            #region Breathing Rate
+            if (BreathingRatePanelBed1.Dock == DockStyle.Fill)
+            {
+                breathingInsert1 = 1;
+            }
+            else { breathingInsert1 = 0; }
+            if (BreathingRatePanelBed2.Dock == DockStyle.Fill)
+            {
+                breathingInsert2 = 1;
+            }
+            else { breathingInsert2 = 0; }
+            if (BreathingRatePanelBed3.Dock == DockStyle.Fill)
+            {
+                breathingInsert3 = 1;
+            }
+            else { breathingInsert3 = 0; }
+            if (BreathingRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                breathingInsert4 = 1;
+            }
+            else { breathingInsert4 = 0; }
+            #endregion
+
+            #region Temperature
+            if (TemperaturePanelBed1.Dock == DockStyle.Fill)
+            {
+                tempInsert1 = 1;
+            }
+            else { tempInsert1 = 0; }
+            if (TemperaturePanelBed2.Dock == DockStyle.Fill)
+            {
+                tempInsert2 = 1;
+            }
+            else { tempInsert2 = 0; }
+            if (TemperaturePanelBed3.Dock == DockStyle.Fill)
+            {
+                tempInsert3 = 1;
+            }
+            else { tempInsert3 = 0; }
+            if (TemperaturePanelBed4.Dock == DockStyle.Fill)
+            {
+                tempInsert4 = 1;
+            }
+            else { tempInsert4 = 0; }
+            #endregion
+
+            #endregion
         }
 
         private void refresh(object sender, EventArgs e)
@@ -208,12 +307,16 @@ namespace FinalProject
         }
 
         // Variables
+        // How the module is, if it's active or not
         public static int moduleState1, moduleState2, moduleState3, moduleState4;
+        // What Insert was Clicked
         public static int insertClicked1, insertClicked2, insertClicked3, insertClicked4;
+        // what was inserted
         public static int bloodInsert1, bloodInsert2, bloodInsert3, bloodInsert4;
         public static int pulseInsert1, pulseInsert2, pulseInsert3, pulseInsert4;
         public static int breathingInsert1, breathingInsert2, breathingInsert3, breathingInsert4;
         public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
+        // if the panel is visible
         public static bool bloodActive = false, pulseActive = false, breathingActive = false, tempActive = false;
 
         #region Draggable Top Panel  -- Dinis & Jorge

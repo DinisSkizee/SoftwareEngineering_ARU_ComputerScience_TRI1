@@ -91,9 +91,5 @@ namespace FinalProject
         }
         #endregion
 
-        private void LoginForm_Shown(object sender, EventArgs e)
-        {
-            SocketConfiguration.Timer();
-        }
     }
 }
