@@ -382,8 +382,7 @@ namespace FinalProject
 
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && BedSideView1.ModuleIndex == 1 &&SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-                BedSideView1 bed1 = new BedSideView1();
-                
+
                 if (bedActive == "Bed 1")
                 {
                     if (BedSideView1.insertClicked1 == 1)
@@ -410,7 +409,7 @@ namespace FinalProject
                         BedSideView1.bloodInsert4 = 1;
                         BedSideView1.insertClicked4 = 0;
                     }
-
+                    BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
@@ -1356,21 +1355,6 @@ namespace FinalProject
         private void SocketSelection_Load(object sender, EventArgs e)
         {
             SocketConfiguration socket = new SocketConfiguration();
-        }
-
-        private void BloodPressureTextBox_SystolicMaximum_ParameterValue_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                DefaultPanel_InstallButton.PerformClick();
-
-                BedSideView1 bed1 = new BedSideView1();
-                bed1.Show();
-                bed1.Location = this.Location;
-                this.Hide();
-
-
-            }
         }
     }
 }

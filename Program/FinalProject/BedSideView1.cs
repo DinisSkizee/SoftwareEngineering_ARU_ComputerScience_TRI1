@@ -168,8 +168,11 @@ namespace FinalProject
             SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
             SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
 
-            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
-            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
+            while (SyBloodPressurePanelBed_Actual_Text.Text != "" || DiBloodPressurePanelBed_Actual_Text.Text != "")
+            {
+                SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
+                DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
+            }
             #endregion
 
             #endregion
@@ -292,19 +295,10 @@ namespace FinalProject
             #endregion
 
             #endregion
-        }
-
-        private void refresh(object sender, EventArgs e)
-        {
-            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
-            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
-            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
-
-            SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
-            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
-            SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
 
         }
+
+        public static BedSideView1 bed1;
 
         // Variables
         // How the module is, if it's active or not
@@ -529,6 +523,14 @@ namespace FinalProject
         }
         #endregion
 
-   
+        public void BloodPresureAssign()
+        {
+            BloodPressurePanelBed1.Dock = DockStyle.Fill;
+
+            BedSideView1 bed1 = new BedSideView1();
+            bed1.Show();
+            bed1.Location = this.Location;
+            this.Hide();
+        }
     }
 }

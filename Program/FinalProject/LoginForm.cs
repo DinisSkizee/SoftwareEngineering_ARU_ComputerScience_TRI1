@@ -14,7 +14,6 @@ namespace FinalProject
             InitializeComponent();
         }
 
-
         #region Login Button -- Dinis & Jorge
         /* Username & Password check; Clear to remove bugs and MessageBox to
         let the user know something wrong happened. - Dinis & Jorge */
