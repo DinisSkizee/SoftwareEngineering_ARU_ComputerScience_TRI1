@@ -6,53 +6,23 @@ namespace FinalProject
 {
     public partial class SocketSelection : Form
     {
-        public SocketSelection()
-        {
-            InitializeComponent();
-
-            #region Panel Visibility  -- Dinis & Jorge
-            // Visible = false to every SocketPanel in the form
-            BreathingRatePanel.Visible = false;
-            PulseRatePanel.Visible = false;
-            BloodPressurePanel.Visible = false;
-            TemperaturePanel.Visible = false;
-            #endregion
-
-            #region SocketComboBox Items  -- Dinis & Jorge
-            DefaultPanel_SocketComboBox.Items.Add("Blood Pressure");
-            DefaultPanel_SocketComboBox.Items.Add("Pulse Rate");
-            DefaultPanel_SocketComboBox.Items.Add("Breathing Rate");
-            DefaultPanel_SocketComboBox.Items.Add("Temperature");
-            #endregion
-
-            SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
-        }
 
         // Variables
         string bedActive;
 
-        #region ScrollBar Configuration  -- Dinis & Jorge  /  ITS EXTRA
-        /* just in case we need it
-        // Add ScrollBar with scroll up/down event
-        VScrollBar vScroll = new VScrollBar();
-        private void HandleScroll(Object sender, ScrollEventArgs e)
-        {
-            int x;
-            int y;
 
-            if (e.ScrollOrientation == ScrollOrientation.HorizontalScroll)
-            {
-                x = e.NewValue;
-                y = vScroll.Value;
-            }
-            else //e.ScrollOrientation == ScrollOrientation.VerticalScroll
-            {
-                y = e.NewValue;
-                x = vScroll.Value;
-            }
-            BloodPresurePanel.AutoScroll = true;
-        } */
-        #endregion
+        public SocketSelection()
+        {
+            InitializeComponent();
+
+            HideAllSokets();
+
+            AddNamesToSoketComboBox();
+
+            SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
+
+
+        }
 
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
@@ -86,10 +56,15 @@ namespace FinalProject
         }
         #endregion
 
+        #region InsertReturnEffect -- Dinis & Jorge
+
         #region TextBox Change effects BLOODPRESSURE  -- Dinis & Jorge
 
+        /* On Mouse Down and the text is "Insert Minimum" it will clear the textbox
+        / When is not being Selected/Focused and there's no input it would return to the normal "Insert Minimum"
+           If there's any input it would stay in the textbox */
+
         // Diastolic Minimum TextBox \\
-        // On Mouse Down and the text is "Insert Minimum" it will clear the textbox
         private void BloodPressureTextBox_DiastolicMinimum_ParameterValue_MouseDown(object sender, MouseEventArgs e)
         {
             if (BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text == "Insert Minimum")
@@ -97,8 +72,6 @@ namespace FinalProject
                 BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text = "";
             }
         }
-        /* When is not being Selected/Focused and there's no input it would return to the normal "Insert Minimum"
-           If there's any input it would stay in the textbox */
         private void BloodPressureTextBox_DiastolicMinimum_ParameterValue_Leave(object sender, EventArgs e)
         {
             if (BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text == "")
@@ -261,14 +234,23 @@ namespace FinalProject
         }
         #endregion
 
+        #endregion
+
+        #region Main Bottum Return Dinis & Jorge
+
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
         {
-            AfterLogin afterlogin = new AfterLogin();
-            afterlogin.Show();
-            afterlogin.Location = this.Location;
+
+            BedSideView1 bedSideView1 = new BedSideView1();
+            bedSideView1.Show();
+            bedSideView1.Location = this.Location;
             this.Hide();
+
         }
+        #endregion
+
+        #region ChangeMainPanel
 
         /* When we choose another option on the SocketComboBox
         * the panels would be picked and turned visible and the Label invisible
@@ -276,76 +258,99 @@ namespace FinalProject
         * and the Label would be visible aswell */
         private void Default_SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
         {
+
             if (DefaultPanel_SocketComboBox.SelectedIndex < 0)
             {
-                DefaultPanel_SelectSocketLabel.Visible = true; ;
+
+                DefaultPanel_SelectSocketLabel.Visible = true;
+                BloodPressurePanel.Dock = DockStyle.None;
+                PulseRatePanel.Dock = DockStyle.None;
+                BreathingRatePanel.Dock = DockStyle.None;
+                TemperaturePanel.Dock = DockStyle.None;
+
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
             {
-                BreathingRatePanel.Dock = DockStyle.None;
-                TemperaturePanel.Dock = DockStyle.None;
-                PulseRatePanel.Dock = DockStyle.None;
+                BloodPressurePanel.Dock = DockStyle.Fill;
+                PulseRatePanel.Dock = DockStyle.Fill;
+                BreathingRatePanel.Dock = DockStyle.Fill;
+                TemperaturePanel.Dock = DockStyle.Fill;
 
+                BloodPressurePanel.Visible = true;
+                PulseRatePanel.Visible = false;
                 BreathingRatePanel.Visible = false;
                 TemperaturePanel.Visible = false;
-                PulseRatePanel.Visible = false;
-
                 DefaultPanel_SelectSocketLabel.Visible = false;
-
-                BloodPressurePanel.Dock = DockStyle.Fill;
-                BloodPressurePanel.Visible = true;
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
             {
-                BreathingRatePanel.Dock = DockStyle.None;
-                TemperaturePanel.Dock = DockStyle.None;
-                BloodPressurePanel.Dock = DockStyle.None;
+                BloodPressurePanel.Dock = DockStyle.Fill;
+                PulseRatePanel.Dock = DockStyle.Fill;
+                BreathingRatePanel.Dock = DockStyle.Fill;
+                TemperaturePanel.Dock = DockStyle.Fill;
 
+                BloodPressurePanel.Visible = false;
+                PulseRatePanel.Visible = true;
                 BreathingRatePanel.Visible = false;
                 TemperaturePanel.Visible = false;
-                BloodPressurePanel.Visible = false;
-
                 DefaultPanel_SelectSocketLabel.Visible = false;
-
-                PulseRatePanel.Dock = DockStyle.Fill;
-                PulseRatePanel.Visible = true;
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
             {
-                PulseRatePanel.Dock = DockStyle.None;
-                TemperaturePanel.Dock = DockStyle.None;
-                BloodPressurePanel.Dock = DockStyle.None;
-
-                PulseRatePanel.Visible = false;
-                TemperaturePanel.Visible = false;
-                BloodPressurePanel.Visible = false;
-
-                DefaultPanel_SelectSocketLabel.Visible = false;
-
+                BloodPressurePanel.Dock = DockStyle.Fill;
+                PulseRatePanel.Dock = DockStyle.Fill;
                 BreathingRatePanel.Dock = DockStyle.Fill;
+                TemperaturePanel.Dock = DockStyle.Fill;
+
+                BloodPressurePanel.Visible = false;
+                PulseRatePanel.Visible = false;
                 BreathingRatePanel.Visible = true;
+                TemperaturePanel.Visible = false;
+                DefaultPanel_SelectSocketLabel.Visible = false;
             }
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
             {
-                PulseRatePanel.Dock = DockStyle.None;
-                BreathingRatePanel.Dock = DockStyle.None;
-                BloodPressurePanel.Dock = DockStyle.None;
+                BloodPressurePanel.Dock = DockStyle.Fill;
+                PulseRatePanel.Dock = DockStyle.Fill;
+                BreathingRatePanel.Dock = DockStyle.Fill;
+                TemperaturePanel.Dock = DockStyle.Fill;
 
+                BloodPressurePanel.Visible = false;
                 PulseRatePanel.Visible = false;
                 BreathingRatePanel.Visible = false;
-                BloodPressurePanel.Visible = false;
-
-                DefaultPanel_SelectSocketLabel.Visible = false;
-
-                TemperaturePanel.Dock = DockStyle.Fill;
                 TemperaturePanel.Visible = true;
+                DefaultPanel_SelectSocketLabel.Visible = false;
             }
+
         }
+
+        #endregion
+
+
+        private void HideAllSokets()
+        {
+
+            BreathingRatePanel.Visible = false;
+            PulseRatePanel.Visible = false;
+            BloodPressurePanel.Visible = false;
+            TemperaturePanel.Visible = false;
+
+        }
+        public void AddNamesToSoketComboBox()
+        {
+            DefaultPanel_SocketComboBox.Items.Add("Blood Pressure");
+            DefaultPanel_SocketComboBox.Items.Add("Pulse Rate");
+            DefaultPanel_SocketComboBox.Items.Add("Breathing Rate");
+            DefaultPanel_SocketComboBox.Items.Add("Temperature");
+        }
+
+
+
 
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
-            #region Giving Variables to the TextBoxes
+            #region Geting Variables From TextBox
             // Blood Pressure Secondary Variables Integer
             int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin);
             int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax);
@@ -375,8 +380,12 @@ namespace FinalProject
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && BedSideView1.ModuleIndex == 1 &&SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
+                BedSideView1 bed1 = new BedSideView1();
+                bed1.BloodPresureAssign();
+
+
                 if (bedActive == "Bed 1")
                 {
                     if (BedSideView1.insertClicked1 == 1)
@@ -402,7 +411,6 @@ namespace FinalProject
                         BedSideView1.bloodInsert4 = 1;
                     }
 
-                    BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
@@ -1317,6 +1325,7 @@ namespace FinalProject
                     this.Hide();
                 }
             }
+
             else
             {
                 if (SocketConfiguration.bpParameters == 0)
@@ -1340,6 +1349,7 @@ namespace FinalProject
                     MessageBox.Show("The temperature difference must be 1 or greater");
                 }
             }
+
             #endregion
         }
 

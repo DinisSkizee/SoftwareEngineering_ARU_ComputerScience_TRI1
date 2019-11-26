@@ -3648,7 +3648,7 @@
         private System.Windows.Forms.PictureBox InsertButton3;
         private System.Windows.Forms.PictureBox InsertButton2;
         private System.Windows.Forms.PictureBox InsertButton1;
-        public System.Windows.Forms.Panel BloodPressurePanelBed1;
+        private System.Windows.Forms.Panel BloodPressurePanelBed1;
         private System.Windows.Forms.PictureBox BloodPressurePanelBed_Pic1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

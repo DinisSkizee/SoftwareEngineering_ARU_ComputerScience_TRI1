@@ -6,6 +6,9 @@ namespace FinalProject
 {
     public partial class BedSideView1 : Form
     {
+
+        public static int ModuleIndex = 0;
+
         public BedSideView1()
         {
             InitializeComponent();
@@ -159,13 +162,10 @@ namespace FinalProject
             #region TextBox Text Assignment
 
             #region BloodPressure 1 Panel
-            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
-            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
-            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
 
-            SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
-            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
-            SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
+
+            
+
             #endregion
 
             #endregion
@@ -192,6 +192,18 @@ namespace FinalProject
                 tempActive = true;
             }
             #endregion
+
+        }
+
+        private void refresh(object sender, EventArgs e)
+        {
+            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom().ToString();
+            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
+
+            SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom().ToString();
+            SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
 
         }
 
@@ -308,6 +320,9 @@ namespace FinalProject
         #region InsertButtons Configuration  -- Dinis & Jorge
         private void InsertButton1_Click(object sender, EventArgs e)
         {
+
+            ModuleIndex = 1;
+
             if (moduleState1 == 0)
             {
                 insertClicked1 = 1;
@@ -416,6 +431,18 @@ namespace FinalProject
         private void BedSideView1_Shown(object sender, EventArgs e)
         {
             SocketConfiguration.Timer();
+        }
+        public void BloodPresureAssign()
+        {
+
+
+            BloodPressurePanelBed1.Dock = DockStyle.Fill;
+
+            BedSideView1 bed1 = new BedSideView1();
+            bed1.Show();
+            bed1.Location = this.Location;
+            this.Hide();
+
         }
     }
 }

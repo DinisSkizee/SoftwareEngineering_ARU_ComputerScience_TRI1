@@ -47,7 +47,7 @@
             this.PanelTop.Controls.Add(this.CloseButtonCentralStation);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
-            this.PanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelTop.Margin = new System.Windows.Forms.Padding(2);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 1;
