@@ -382,9 +382,6 @@ namespace FinalProject
 
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && BedSideView1.ModuleIndex == 1 &&SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-                BedSideView1 bed1 = new BedSideView1();
-                bed1.BloodPresureAssign();
-
 
                 if (bedActive == "Bed 1")
                 {
@@ -412,7 +409,7 @@ namespace FinalProject
                         BedSideView1.bloodInsert4 = 1;
                         BedSideView1.insertClicked4 = 0;
                     }
-
+                    BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
