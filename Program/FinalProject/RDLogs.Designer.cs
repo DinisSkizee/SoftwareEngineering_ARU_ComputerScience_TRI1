@@ -44,23 +44,23 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.LogoutButton = new System.Windows.Forms.PictureBox();
-            this.MinimizeButtonAfterLogin = new System.Windows.Forms.PictureBox();
-            this.CloseButtonAfterLogin = new System.Windows.Forms.PictureBox();
+            this.BackButtonRDLogs = new System.Windows.Forms.PictureBox();
+            this.MinimizeButtonRDLogs = new System.Windows.Forms.PictureBox();
+            this.CloseButtonRDLogs = new System.Windows.Forms.PictureBox();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonAfterLogin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonAfterLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButtonRDLogs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonRDLogs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonRDLogs)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PanelTop.Controls.Add(this.LogoutButton);
-            this.PanelTop.Controls.Add(this.MinimizeButtonAfterLogin);
-            this.PanelTop.Controls.Add(this.CloseButtonAfterLogin);
+            this.PanelTop.Controls.Add(this.CloseButtonRDLogs);
+            this.PanelTop.Controls.Add(this.MinimizeButtonRDLogs);
+            this.PanelTop.Controls.Add(this.BackButtonRDLogs);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
             this.PanelTop.Margin = new System.Windows.Forms.Padding(2);
@@ -200,40 +200,38 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Date";
             // 
-            // LogoutButton
+            // BackButtonRDLogs
             // 
-            this.LogoutButton.Image = global::FinalProject.Properties.Resources.icons8_exit_641;
-            this.LogoutButton.Location = new System.Drawing.Point(8, 8);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2);
-            this.LogoutButton.Name = "LogoutButton";
-            this.LogoutButton.Size = new System.Drawing.Size(34, 28);
-            this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoutButton.TabIndex = 3;
-            this.LogoutButton.TabStop = false;
+            this.BackButtonRDLogs.Image = global::FinalProject.Properties.Resources._8B7gpJyx_400x400;
+            this.BackButtonRDLogs.Location = new System.Drawing.Point(4, 9);
+            this.BackButtonRDLogs.Name = "BackButtonRDLogs";
+            this.BackButtonRDLogs.Size = new System.Drawing.Size(34, 28);
+            this.BackButtonRDLogs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BackButtonRDLogs.TabIndex = 0;
+            this.BackButtonRDLogs.TabStop = false;
+            this.BackButtonRDLogs.Click += new System.EventHandler(this.BackButtonRDLogs_Click);
             // 
-            // MinimizeButtonAfterLogin
+            // MinimizeButtonRDLogs
             // 
-            this.MinimizeButtonAfterLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeButtonAfterLogin.Image = global::FinalProject.Properties.Resources.minimizewhite;
-            this.MinimizeButtonAfterLogin.Location = new System.Drawing.Point(790, 10);
-            this.MinimizeButtonAfterLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimizeButtonAfterLogin.Name = "MinimizeButtonAfterLogin";
-            this.MinimizeButtonAfterLogin.Size = new System.Drawing.Size(23, 25);
-            this.MinimizeButtonAfterLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MinimizeButtonAfterLogin.TabIndex = 2;
-            this.MinimizeButtonAfterLogin.TabStop = false;
+            this.MinimizeButtonRDLogs.Image = global::FinalProject.Properties.Resources.minimizewhite;
+            this.MinimizeButtonRDLogs.Location = new System.Drawing.Point(804, 12);
+            this.MinimizeButtonRDLogs.Name = "MinimizeButtonRDLogs";
+            this.MinimizeButtonRDLogs.Size = new System.Drawing.Size(23, 25);
+            this.MinimizeButtonRDLogs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MinimizeButtonRDLogs.TabIndex = 1;
+            this.MinimizeButtonRDLogs.TabStop = false;
+            this.MinimizeButtonRDLogs.Click += new System.EventHandler(this.MinimizeButtonRDLogs_Click);
             // 
-            // CloseButtonAfterLogin
+            // CloseButtonRDLogs
             // 
-            this.CloseButtonAfterLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButtonAfterLogin.Image = global::FinalProject.Properties.Resources.closewhite;
-            this.CloseButtonAfterLogin.Location = new System.Drawing.Point(825, 10);
-            this.CloseButtonAfterLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.CloseButtonAfterLogin.Name = "CloseButtonAfterLogin";
-            this.CloseButtonAfterLogin.Size = new System.Drawing.Size(23, 25);
-            this.CloseButtonAfterLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CloseButtonAfterLogin.TabIndex = 1;
-            this.CloseButtonAfterLogin.TabStop = false;
+            this.CloseButtonRDLogs.Image = global::FinalProject.Properties.Resources.closewhite;
+            this.CloseButtonRDLogs.Location = new System.Drawing.Point(833, 12);
+            this.CloseButtonRDLogs.Name = "CloseButtonRDLogs";
+            this.CloseButtonRDLogs.Size = new System.Drawing.Size(23, 25);
+            this.CloseButtonRDLogs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CloseButtonRDLogs.TabIndex = 2;
+            this.CloseButtonRDLogs.TabStop = false;
+            this.CloseButtonRDLogs.Click += new System.EventHandler(this.CloseButtonRDLogs_Click);
             // 
             // RDLogs
             // 
@@ -250,9 +248,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonAfterLogin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonAfterLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButtonRDLogs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonRDLogs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseButtonRDLogs)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,9 +258,6 @@
         #endregion
 
         private System.Windows.Forms.Panel PanelTop;
-        private System.Windows.Forms.PictureBox LogoutButton;
-        private System.Windows.Forms.PictureBox MinimizeButtonAfterLogin;
-        private System.Windows.Forms.PictureBox CloseButtonAfterLogin;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -278,5 +273,8 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox CloseButtonRDLogs;
+        private System.Windows.Forms.PictureBox MinimizeButtonRDLogs;
+        private System.Windows.Forms.PictureBox BackButtonRDLogs;
     }
 }
