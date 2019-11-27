@@ -136,7 +136,7 @@
             this.LogsButton.TabIndex = 4;
             this.LogsButton.Text = "*Logs*";
             this.LogsButton.UseVisualStyleBackColor = true;
-            
+            this.LogsButton.Click += new System.EventHandler(this.LogsButton_Click);
             // 
             // AfterLogin
             // 
