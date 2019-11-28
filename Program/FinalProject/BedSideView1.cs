@@ -7,11 +7,11 @@ namespace FinalProject
     public partial class BedSideView1 : Form
     {
 
-        public static int ModuleIndex = 0;
-
         public BedSideView1()
         {
             InitializeComponent();
+
+            _BedSideView1 = this;
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
@@ -298,6 +298,20 @@ namespace FinalProject
 
         }
 
+        public static BedSideView1 _BedSideView1;
+
+        public void update(string message)
+        {
+            DiBloodPressurePanelBed_Actual_Text.Text = message;
+        }
+        private void BedSideView1_Load(object sender, EventArgs e)
+        {
+
+            SocketConfiguration sample = new SocketConfiguration();
+        }
+
+
+
         public static BedSideView1 bed1;
 
         // Variables
@@ -522,15 +536,13 @@ namespace FinalProject
             InsertASocket4.Visible = true;
         }
         #endregion
+        
 
-        public void BloodPresureAssign()
-        {
-            BloodPressurePanelBed1.Dock = DockStyle.Fill;
 
-            BedSideView1 bed1 = new BedSideView1();
-            bed1.Show();
-            bed1.Location = this.Location;
-            this.Hide();
-        }
+
+
+
+
+
     }
 }

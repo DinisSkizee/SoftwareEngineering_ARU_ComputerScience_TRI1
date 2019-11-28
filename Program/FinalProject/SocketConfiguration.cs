@@ -332,14 +332,18 @@ namespace FinalProject
             return tempValue;
         } // Returns tempValue
 
-        public static void StartRandom(object sender, EventArgs e)
+        public static void StartRandom()
         {
             SystolicValueRandom();
             DiastolicValueRandom();
             PulseValueRandom();
             BreathingValueRandom();
             TemperatureValueRandom();
+
+            BedSideView1._BedSideView1.update("test");
+
         }
-        
+
+
     }
 }

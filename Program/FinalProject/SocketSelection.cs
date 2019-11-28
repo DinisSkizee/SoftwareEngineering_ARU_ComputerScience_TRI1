@@ -350,6 +350,8 @@ namespace FinalProject
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
+            
+
             #region Geting Variables From TextBox
             // Blood Pressure Secondary Variables Integer
             int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin);
@@ -374,13 +376,16 @@ namespace FinalProject
 
             SocketConfiguration socket = new SocketConfiguration();
 
+
+            SocketConfiguration.StartRandom();
+
             #region Button Configuration
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && BedSideView1.ModuleIndex == 1 &&SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
 
                 if (bedActive == "Bed 1")
