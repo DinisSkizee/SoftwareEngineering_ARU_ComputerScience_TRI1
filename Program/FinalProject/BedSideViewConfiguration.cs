@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace FinalProject
 {
-    class BedSideViewConfiguration : Form
+    class BedSideViewConfiguration
     {
 
+        public BedSideViewConfiguration()
+        {
+            Timer timer = new Timer();
+            timer = new Timer();
+            timer.Tick += SocketConfiguration.StartRandom;
+            timer.Tick += BedSideView1.singleton.UpdateTextBox;
+            timer.Interval = 1500;
+            timer.Start();
+        }
     }
 }

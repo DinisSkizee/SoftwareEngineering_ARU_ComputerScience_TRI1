@@ -16,5 +16,25 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+        //returns to previous page
+        private void BackButtonRDLogs_Click(object sender, EventArgs e)
+        {
+            Logs logs = new Logs();
+            logs.Show();
+            logs.Location = this.Location;
+            this.Hide();
+        }
+        //to minimize
+        private void MinimizeButtonRDLogs_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        //to exit 
+        private void CloseButtonRDLogs_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
+
+
 }

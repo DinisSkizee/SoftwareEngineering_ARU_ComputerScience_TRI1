@@ -1356,10 +1356,5 @@ namespace FinalProject
 
             #endregion
         }
-
-        private void SocketSelection_Load(object sender, EventArgs e)
-        {
-            SocketConfiguration socket = new SocketConfiguration();
-        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+
 
 namespace FinalProject
 {
@@ -12,7 +12,9 @@ namespace FinalProject
         {
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
+
         }
+
 
         #region Login Button -- Dinis & Jorge
         /* Username & Password check; Clear to remove bugs and MessageBox to

@@ -113,7 +113,7 @@
             this.Controls.Add(this.RDLogs);
             this.Controls.Add(this.panel1);
             this.Name = "Logs";
-            this.Load += new System.EventHandler(this.Logs_Load_1);
+
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLogs)).EndInit();

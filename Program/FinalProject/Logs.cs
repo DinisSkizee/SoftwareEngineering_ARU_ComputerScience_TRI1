@@ -16,37 +16,7 @@ namespace FinalProject
         {
             InitializeComponent();
         }
-
-        private void Logs_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            AlarmLogs alarmlogs = new AlarmLogs();
-            alarmlogs.Show();
-            alarmlogs.Location = this.Location;
-            this.Hide();
-        }
-
-        
-private void LogoutButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // leads to Alarm Logs page
         private void button4_Click(object sender, EventArgs e)
         {
           
@@ -56,31 +26,29 @@ private void LogoutButton_Click(object sender, EventArgs e)
             this.Hide();
         }
 
-        private void Logs_Load_1(object sender, EventArgs e)
-        {
-
-        }
 
        
 
         private void RDLogs_Click(object sender, EventArgs e)
         {
-
+            RDLogs rdlogs = new RDLogs();
+            rdlogs.Show();
+            rdlogs.Location = this.Location;
+            this.Hide();
         }
-        // heart icon in the top left corner leads to AfterLogin page 
-       
-
+        
+        // to close/exit 
         private void CloseButtonLogs_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // to minimize the page 
         private void MinimizeButtonLogs_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
 
         }
-
+        //heart icon on the top left corner leads back to AfterLogin Pagelogs
         private void MainPageButton_Click_1(object sender, EventArgs e)
         {
             AfterLogin afterlogin = new AfterLogin();
