@@ -13,6 +13,7 @@ namespace FinalProject
             InitializeComponent();
 
             new BedSideViewConfiguration();
+            BedSideViewConfiguration.timer.Tick += UpdateTextBox;
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
