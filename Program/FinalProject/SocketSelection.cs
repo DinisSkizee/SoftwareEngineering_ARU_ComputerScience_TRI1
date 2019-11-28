@@ -11,6 +11,7 @@ namespace FinalProject
 
         public SocketSelection()
         {
+
             InitializeComponent();
 
             HideAllSokets();
@@ -341,39 +342,279 @@ namespace FinalProject
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
-            #region Getting Variables From TextBox
-            if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-            {
-                // Blood Pressure Secondary Variables Integer
-                int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin);
-                int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax);
-                int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin);
-                int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax);
-            }
+            bedActive = BedLabel.Text;
 
-            if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-            {
-                // Pulse Rate Secondary Variables Integer
-                int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin);
-                int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax);
-            }
+            // Blood Pressure Secondary Variables Integer
+            int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMinC);
+            int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMaxC);
+            int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMinC);
+            int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMaxC);
+            // Pulse Rate Secondary Variables Integer
+            int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMinC);
+            int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMaxC);
+            // Breathing Rate Secondary Variables Integer
+            int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMinC);
+            int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMaxC);
+            // Temperature Secondary Variables Integer
+            int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMinC);
+            int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMaxC);
 
-            if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+            if (bedActive == "Bed 1")
             {
-                // Breathing Rate Secondary Variables Integer
-                int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin);
-                int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax);
-            }
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView1.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView1.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView1.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView1.syMax);
+                }
 
-            if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView1.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView1.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView1.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView1.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView1.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView1.tpMax);
+                }
+            }
+            if (bedActive == "Bed 2")
             {
-                // Temperature Secondary Variables Integer
-                int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin);
-                int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax);
-            }
-                #endregion
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView2.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView2.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView2.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView2.syMax);
+                }
 
-                bedActive = BedLabel.Text;
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView2.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView2.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView2.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView2.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView2.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView2.tpMax);
+                }
+            }
+            if (bedActive == "Bed 3")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView3.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView3.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView3.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView3.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView3.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView3.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView3.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView3.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView3.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView3.tpMax);
+                }
+            }
+            if (bedActive == "Bed 4")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView4.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView4.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView4.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView4.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView4.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView4.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView4.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView4.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView4.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView4.tpMax);
+                }
+            }
+            if (bedActive == "Bed 5")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView5.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView5.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView5.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView5.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView5.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView5.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView5.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView5.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView5.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView5.tpMax);
+                }
+            }
+            if (bedActive == "Bed 6")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView6.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView6.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView6.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView6.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView6.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView6.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView6.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView6.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView6.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView6.tpMax);
+                }
+            }
+            if (bedActive == "Bed 7")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView7.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView7.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView7.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView7.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView7.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView7.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView7.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView7.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView7.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView7.tpMax);
+                }
+            }
+            if (bedActive == "Bed 8")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView8.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView8.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView8.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView8.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView8.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView8.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView8.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView8.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView8.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView8.tpMax);
+                }
+            }
 
             SocketConfiguration socket = new SocketConfiguration();
 
@@ -385,7 +626,7 @@ namespace FinalProject
 
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-                
+
                 if (bedActive == "Bed 1")
                 {
                     if (BedSideView1.insertClicked1 == 1)

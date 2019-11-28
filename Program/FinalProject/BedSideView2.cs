@@ -145,61 +145,62 @@ namespace FinalProject
             #region TextBox Text Assignment (Min & Max)
 
             #region Blood Pressure
-            SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
-            SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin.ToString();
-            SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin.ToString();
-            SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text.Text = syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text2.Text = syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text3.Text = syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text4.Text = syMin.ToString();
 
-            SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
-            SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax.ToString();
-            SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax.ToString();
-            SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text.Text = syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text2.Text = syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text3.Text = syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text4.Text = syMax.ToString();
 
-            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
-            DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin.ToString();
-            DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin.ToString();
-            DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text.Text = diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text2.Text = diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text3.Text = diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text4.Text = diMin.ToString();
 
-            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
-            DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax.ToString();
-            DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax.ToString();
-            DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text.Text = diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text2.Text = diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text3.Text = diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text4.Text = diMax.ToString();
+
             #endregion
 
             #region Breathing Rate
-            BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin.ToString();
-            BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin.ToString();
-            BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin.ToString();
-            BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin.ToString();
+            BreathingRate_Minimum_Text.Text = brMin.ToString();
+            BreathingRate_Minimum_Text2.Text = brMin.ToString();
+            BreathingRate_Minimum_Text3.Text = brMin.ToString();
+            BreathingRate_Minimum_Text4.Text = brMin.ToString();
 
-            BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax.ToString();
-            BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax.ToString();
-            BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax.ToString();
-            BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax.ToString();
+            BreathingRate_Maximum_Text.Text = brMax.ToString();
+            BreathingRate_Maximum_Text2.Text = brMax.ToString();
+            BreathingRate_Maximum_Text3.Text = brMax.ToString();
+            BreathingRate_Maximum_Text4.Text = brMax.ToString();
             #endregion
 
             #region Pulse Rate
-            PulseRate_Minimum_Text.Text = SocketConfiguration.prMin.ToString();
-            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin.ToString();
-            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin.ToString();
-            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text.Text = prMin.ToString();
+            PulseRate_Minimum_Text2.Text = prMin.ToString();
+            PulseRate_Minimum_Text3.Text = prMin.ToString();
+            PulseRate_Minimum_Text4.Text = prMin.ToString();
 
-            PulseRate_Minimum_Text.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text.Text = prMax.ToString();
+            PulseRate_Maximum_Text2.Text = prMax.ToString();
+            PulseRate_Maximum_Text3.Text = prMax.ToString();
+            PulseRate_Maximum_Text4.Text = prMax.ToString();
             #endregion
 
             #region Temperature
-            Temperature_Minimum_Text.Text = SocketConfiguration.tpMin.ToString();
-            Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin.ToString();
-            Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin.ToString();
-            Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin.ToString();
+            Temperature_Minimum_Text.Text = tpMin.ToString();
+            Temperature_Minimum_Text2.Text = tpMin.ToString();
+            Temperature_Minimum_Text3.Text = tpMin.ToString();
+            Temperature_Minimum_Text4.Text = tpMin.ToString();
 
-            Temperature_Maximum_Text.Text = SocketConfiguration.tpMax.ToString();
-            Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax.ToString();
-            Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax.ToString();
-            Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax.ToString();
+            Temperature_Maximum_Text.Text = tpMax.ToString();
+            Temperature_Maximum_Text2.Text = tpMax.ToString();
+            Temperature_Maximum_Text3.Text = tpMax.ToString();
+            Temperature_Maximum_Text4.Text = tpMax.ToString();
             #endregion
 
             #endregion
@@ -249,15 +250,22 @@ namespace FinalProject
             #endregion
 
             #region Pulse Rate
-            PulseRate_Minimum_Text.Text = SocketConfiguration.prMin.ToString();
-            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin.ToString();
-            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin.ToString();
-            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin.ToString();
-
-            PulseRate_Maximum_Text.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax.ToString();
+            if (PulseRatePanelBed1.Dock == DockStyle.Fill)
+            {
+                pulseInsert1 = 1;
+            }
+            if (PulseRatePanelBed2.Dock == DockStyle.Fill)
+            {
+                pulseInsert2 = 1;
+            }
+            if (PulseRatePanelBed3.Dock == DockStyle.Fill)
+            {
+                pulseInsert3 = 1;
+            }
+            if (PulseRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                pulseInsert4 = 1;
+            }
             #endregion
 
             #region Breathing Rate
@@ -299,34 +307,48 @@ namespace FinalProject
             #endregion
 
             #endregion
+
+            // Parameters Verification
+            SocketConfiguration.dMi = SocketConfiguration.IsNumeric(Convert.ToString(diMin));
+            SocketConfiguration.dMa = SocketConfiguration.IsNumeric(Convert.ToString(diMax));
+            SocketConfiguration.sMi = SocketConfiguration.IsNumeric(Convert.ToString(syMin));
+            SocketConfiguration.sMa = SocketConfiguration.IsNumeric(Convert.ToString(syMax));
+
+            SocketConfiguration.pMi = SocketConfiguration.IsNumeric(Convert.ToString(prMin));
+            SocketConfiguration.pMa = SocketConfiguration.IsNumeric(Convert.ToString(prMax));
+
+            SocketConfiguration.bMi = SocketConfiguration.IsNumeric(Convert.ToString(brMin));
+            SocketConfiguration.bMa = SocketConfiguration.IsNumeric(Convert.ToString(brMax));
+            SocketConfiguration.tMi = SocketConfiguration.IsNumeric(Convert.ToString(tpMin));
+            SocketConfiguration.tMa = SocketConfiguration.IsNumeric(Convert.ToString(tpMax));
         }
 
         public void UpdateTextBox(object sender, EventArgs e)
         {
-            DiBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.DiastolicValueRandom();
-            DiBloodPressurePanelBed_Actual_Text2.Text = SocketConfiguration.DiastolicValueRandom();
-            DiBloodPressurePanelBed_Actual_Text3.Text = SocketConfiguration.DiastolicValueRandom();
-            DiBloodPressurePanelBed_Actual_Text4.Text = SocketConfiguration.DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text.Text = DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text2.Text = DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text3.Text = DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text4.Text = DiastolicValueRandom();
 
-            SyBloodPressurePanelBed_Actual_Text.Text = SocketConfiguration.SystolicValueRandom();
-            SyBloodPressurePanelBed_Actual_Text2.Text = SocketConfiguration.SystolicValueRandom();
-            SyBloodPressurePanelBed_Actual_Text3.Text = SocketConfiguration.SystolicValueRandom();
-            SyBloodPressurePanelBed_Actual_Text4.Text = SocketConfiguration.SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text.Text = SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text2.Text = SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text3.Text = SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text4.Text = SystolicValueRandom();
 
-            PulseRate_Actual_Text.Text = SocketConfiguration.PulseValueRandom();
-            PulseRate_Actual_Text2.Text = SocketConfiguration.PulseValueRandom();
-            PulseRate_Actual_Text3.Text = SocketConfiguration.PulseValueRandom();
-            PulseRate_Actual_Text4.Text = SocketConfiguration.PulseValueRandom();
+            PulseRate_Actual_Text.Text = PulseValueRandom();
+            PulseRate_Actual_Text2.Text = PulseValueRandom();
+            PulseRate_Actual_Text3.Text = PulseValueRandom();
+            PulseRate_Actual_Text4.Text = PulseValueRandom();
 
-            BreathingRate_Actual_Text.Text = SocketConfiguration.BreathingValueRandom();
-            BreathingRate_Actual_Text2.Text = SocketConfiguration.BreathingValueRandom();
-            BreathingRate_Actual_Text3.Text = SocketConfiguration.BreathingValueRandom();
-            BreathingRate_Actual_Text4.Text = SocketConfiguration.BreathingValueRandom();
+            BreathingRate_Actual_Text.Text = BreathingValueRandom();
+            BreathingRate_Actual_Text2.Text = BreathingValueRandom();
+            BreathingRate_Actual_Text3.Text = BreathingValueRandom();
+            BreathingRate_Actual_Text4.Text = BreathingValueRandom();
 
-            Temperature_Actual_Text.Text = SocketConfiguration.TemperatureValueRandom();
-            Temperature_Actual_Text2.Text = SocketConfiguration.TemperatureValueRandom();
-            Temperature_Actual_Text3.Text = SocketConfiguration.TemperatureValueRandom();
-            Temperature_Actual_Text4.Text = SocketConfiguration.TemperatureValueRandom();
+            Temperature_Actual_Text.Text = TemperatureValueRandom();
+            Temperature_Actual_Text2.Text = TemperatureValueRandom();
+            Temperature_Actual_Text3.Text = TemperatureValueRandom();
+            Temperature_Actual_Text4.Text = TemperatureValueRandom();
         }
 
         // Variables
@@ -337,13 +359,18 @@ namespace FinalProject
         // What Insert was Clicked
         public static int insertClicked1, insertClicked2, insertClicked3, insertClicked4;
 
-        // what was inserted
+        // What was inserted
         public static int bloodInsert1, bloodInsert2, bloodInsert3, bloodInsert4;
         public static int pulseInsert1, pulseInsert2, pulseInsert3, pulseInsert4;
         public static int breathingInsert1, breathingInsert2, breathingInsert3, breathingInsert4;
         public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
-        // if the panel is visible
+        // If the panel is visible
         public static bool bloodActive = false, pulseActive = false, breathingActive = false, tempActive = false;
+
+        // TextBox Values
+        public static int syValue, diValue, prValue, brValue;
+        public static double tempValue;
+        public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
         #endregion
 
         #region Draggable Top Panel  -- Dinis & Jorge
@@ -595,5 +622,111 @@ namespace FinalProject
         }
         #endregion
 
+        // Variables for the Randomizers below
+        public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
+
+        public static string SystolicValueRandom() // Returns syValue
+        {
+            randomizerSy = SocketConfiguration.randomizer.Next(0, 100);
+
+            if (randomizerSy <= 5)
+            {
+                syValue = SocketConfiguration.randomizer.Next(syMin - 20, syMin - 1);
+            }
+            else if ((randomizerSy > 5) && (randomizerSy < 95))
+            {
+                syValue = SocketConfiguration.randomizer.Next(syMin, syMax);
+            }
+            else if (randomizerSy >= 95)
+            {
+                syValue = SocketConfiguration.randomizer.Next(syMax + 1, syMax + 20);
+            }
+
+            return syValue.ToString();
+        }
+
+        public static string DiastolicValueRandom() // Returns diValue
+        {
+            randomizerDi = SocketConfiguration.randomizer.Next(0, 100);
+
+            if (randomizerDi <= 5)
+            {
+                diValue = SocketConfiguration.randomizer.Next(diMin - 20, diMin - 1);
+            }
+            else if ((randomizerDi > 5) && (randomizerDi < 95))
+            {
+                diValue = SocketConfiguration.randomizer.Next(diMin, diMax);
+            }
+            else if (randomizerDi >= 95)
+            {
+                diValue = SocketConfiguration.randomizer.Next(diMin + 1, diMax + 20);
+            }
+
+            return diValue.ToString();
+        }
+
+        public static string PulseValueRandom()
+        {
+            randomizerPR = SocketConfiguration.randomizer.Next(0, 100);
+
+            if (randomizerPR <= 5)
+            {
+                prValue = SocketConfiguration.randomizer.Next(prMin - 20, prMin - 1);
+            }
+            else if ((randomizerPR > 5) && (randomizerPR < 95))
+            {
+                prValue = SocketConfiguration.randomizer.Next(prMin, prMax);
+            }
+            else if (randomizerPR >= 95)
+            {
+                prValue = SocketConfiguration.randomizer.Next(prMax + 1, prMax + 20);
+            }
+
+            return prValue.ToString();
+        } // Returns prValue
+
+        public static string BreathingValueRandom()
+        {
+            randomizerBR = SocketConfiguration.randomizer.Next(0, 100);
+
+            if (randomizerBR <= 5)
+            {
+                brValue = SocketConfiguration.randomizer.Next(brMin - 5, brMin - 1);
+            }
+            else if ((randomizerBR > 5) && (randomizerBR < 95))
+            {
+                brValue = SocketConfiguration.randomizer.Next(brMin, brMax);
+            }
+            else if (randomizerBR >= 95)
+            {
+                brValue = SocketConfiguration.randomizer.Next(brMax + 1, brMax + 50);
+            }
+
+            return brValue.ToString();
+        } // Returns brValue
+
+        public static string TemperatureValueRandom()
+        {
+            randomizerTemp = SocketConfiguration.randomizer.Next(0, 100);
+
+            if (randomizerTemp <= 25)
+            {
+                tempValue = SocketConfiguration.randomizer.Next(tpMin - 25, tpMin - 1);
+                tempValue /= 10;
+            }
+            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
+            {
+                tempValue = SocketConfiguration.randomizer.Next(tpMin, tpMax);
+                tempValue /= 10;
+            }
+            else if (randomizerTemp >= 75)
+            {
+                tempValue = SocketConfiguration.randomizer.Next(tpMax + 1, tpMax + 45);
+                tempValue /= 10;
+            }
+
+            return tempValue.ToString();
+        } // Returns tempValue
+        
     }
 }
