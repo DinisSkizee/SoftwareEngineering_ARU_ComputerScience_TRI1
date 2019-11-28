@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -8,28 +6,6 @@ namespace FinalProject
 {
     public partial class BedSideView1 : Form
     {
-        // Actual Values List
-        List<TextBox> _sy = new List<TextBox>();
-        List<TextBox> _di = new List<TextBox>();
-        List<TextBox> _pr = new List<TextBox>();
-        List<TextBox> _br = new List<TextBox>();
-        List<TextBox> _tp = new List<TextBox>();
-
-
-
-        // Minimum & Maximum Values List
-        List<string> _syMin = new List<string>();
-        List<string> _syMax = new List<string>();
-        List<string> _diMin = new List<string>();
-        List<string> _diMax = new List<string>();
-        List<string> _prMin = new List<string>();
-        List<string> _prMax = new List<string>();
-        List<string> _brMin = new List<string>();
-        List<string> _brMax = new List<string>();
-        List<string> _tpMin = new List<string>();
-        List<string> _tpMax = new List<string>();
-
-
         public static BedSideView1 bed1singleton;
 
         public BedSideView1()
@@ -358,25 +334,6 @@ namespace FinalProject
             Temperature_Actual_Text2.Text = SocketConfiguration.TemperatureValueRandom();
             Temperature_Actual_Text3.Text = SocketConfiguration.TemperatureValueRandom();
             Temperature_Actual_Text4.Text = SocketConfiguration.TemperatureValueRandom();
-
-        }
-
-        public void AddToList(object sender, EventArgs e)
-        {
-            // Actual Values
-            _sy.Add(SyBloodPressurePanelBed_Actual_Text);
-            _di.Add(DiBloodPressurePanelBed_Actual_Text);
-
-            // Minimum & Maximum Values
-            _syMin.Add(SocketConfiguration.syMin.ToString());
-            _syMax.Add(SocketConfiguration.syMax.ToString());
-            _diMin.Add(SocketConfiguration.diMin.ToString());
-            _diMax.Add(SocketConfiguration.diMax.ToString());
-        }
-
-        public void ListToFile()
-        {
-            // NEEDS CODE
         }
 
         // Variables

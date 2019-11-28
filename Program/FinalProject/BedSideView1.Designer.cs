@@ -407,7 +407,7 @@
             // 
             this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
             this.MainPageButton.Location = new System.Drawing.Point(9, 9);
-            this.MainPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainPageButton.Margin = new System.Windows.Forms.Padding(4);
             this.MainPageButton.Name = "MainPageButton";
             this.MainPageButton.Size = new System.Drawing.Size(40, 37);
             this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -448,7 +448,7 @@
             this.Bed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed1.ForeColor = System.Drawing.Color.White;
             this.Bed1.Location = new System.Drawing.Point(16, 60);
-            this.Bed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed1.Margin = new System.Windows.Forms.Padding(4);
             this.Bed1.Name = "Bed1";
             this.Bed1.Size = new System.Drawing.Size(53, 31);
             this.Bed1.TabIndex = 1;
@@ -463,7 +463,7 @@
             this.Bed5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed5.ForeColor = System.Drawing.Color.White;
             this.Bed5.Location = new System.Drawing.Point(16, 97);
-            this.Bed5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed5.Margin = new System.Windows.Forms.Padding(4);
             this.Bed5.Name = "Bed5";
             this.Bed5.Size = new System.Drawing.Size(53, 31);
             this.Bed5.TabIndex = 4;
@@ -478,7 +478,7 @@
             this.Bed6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed6.ForeColor = System.Drawing.Color.White;
             this.Bed6.Location = new System.Drawing.Point(100, 97);
-            this.Bed6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed6.Margin = new System.Windows.Forms.Padding(4);
             this.Bed6.Name = "Bed6";
             this.Bed6.Size = new System.Drawing.Size(53, 31);
             this.Bed6.TabIndex = 5;
@@ -493,7 +493,7 @@
             this.Bed7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed7.ForeColor = System.Drawing.Color.White;
             this.Bed7.Location = new System.Drawing.Point(180, 97);
-            this.Bed7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed7.Margin = new System.Windows.Forms.Padding(4);
             this.Bed7.Name = "Bed7";
             this.Bed7.Size = new System.Drawing.Size(53, 31);
             this.Bed7.TabIndex = 6;
@@ -508,7 +508,7 @@
             this.Bed8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed8.ForeColor = System.Drawing.Color.White;
             this.Bed8.Location = new System.Drawing.Point(264, 97);
-            this.Bed8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed8.Margin = new System.Windows.Forms.Padding(4);
             this.Bed8.Name = "Bed8";
             this.Bed8.Size = new System.Drawing.Size(53, 31);
             this.Bed8.TabIndex = 7;
@@ -523,7 +523,7 @@
             this.Bed4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed4.ForeColor = System.Drawing.Color.White;
             this.Bed4.Location = new System.Drawing.Point(264, 60);
-            this.Bed4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed4.Margin = new System.Windows.Forms.Padding(4);
             this.Bed4.Name = "Bed4";
             this.Bed4.Size = new System.Drawing.Size(53, 31);
             this.Bed4.TabIndex = 3;
@@ -538,7 +538,7 @@
             this.Bed3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed3.ForeColor = System.Drawing.Color.White;
             this.Bed3.Location = new System.Drawing.Point(180, 60);
-            this.Bed3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed3.Margin = new System.Windows.Forms.Padding(4);
             this.Bed3.Name = "Bed3";
             this.Bed3.Size = new System.Drawing.Size(53, 31);
             this.Bed3.TabIndex = 2;
@@ -553,7 +553,7 @@
             this.Bed2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bed2.ForeColor = System.Drawing.Color.White;
             this.Bed2.Location = new System.Drawing.Point(100, 60);
-            this.Bed2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Bed2.Margin = new System.Windows.Forms.Padding(4);
             this.Bed2.Name = "Bed2";
             this.Bed2.Size = new System.Drawing.Size(53, 31);
             this.Bed2.TabIndex = 1;
@@ -572,7 +572,7 @@
             this.Display1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display1.ForeColor = System.Drawing.Color.White;
             this.Display1.Location = new System.Drawing.Point(16, 263);
-            this.Display1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Display1.Margin = new System.Windows.Forms.Padding(4);
             this.Display1.Name = "Display1";
             this.Display1.Size = new System.Drawing.Size(453, 123);
             this.Display1.TabIndex = 9;
@@ -600,10 +600,10 @@
             this.TemperaturePanelBed1.Controls.Add(this.pictureBox11);
             this.TemperaturePanelBed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TemperaturePanelBed1.ForeColor = System.Drawing.Color.White;
-            this.TemperaturePanelBed1.Location = new System.Drawing.Point(7, 90);
-            this.TemperaturePanelBed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TemperaturePanelBed1.Location = new System.Drawing.Point(7, 86);
+            this.TemperaturePanelBed1.Margin = new System.Windows.Forms.Padding(4);
             this.TemperaturePanelBed1.Name = "TemperaturePanelBed1";
-            this.TemperaturePanelBed1.Size = new System.Drawing.Size(171, 23);
+            this.TemperaturePanelBed1.Size = new System.Drawing.Size(187, 32);
             this.TemperaturePanelBed1.TabIndex = 75;
             this.TemperaturePanelBed1.Visible = false;
             // 
@@ -642,7 +642,7 @@
             this.panel62.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel62.Controls.Add(this.Temperature_Maximum_Text);
             this.panel62.Location = new System.Drawing.Point(343, 38);
-            this.panel62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel62.Margin = new System.Windows.Forms.Padding(4);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(87, 49);
             this.panel62.TabIndex = 71;
@@ -654,18 +654,19 @@
             this.Temperature_Maximum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Maximum_Text.ForeColor = System.Drawing.Color.White;
             this.Temperature_Maximum_Text.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Maximum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Maximum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Maximum_Text.Multiline = true;
             this.Temperature_Maximum_Text.Name = "Temperature_Maximum_Text";
             this.Temperature_Maximum_Text.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Maximum_Text.TabIndex = 75;
+            this.Temperature_Maximum_Text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel63
             // 
             this.panel63.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel63.Controls.Add(this.Temperature_Actual_Text);
             this.panel63.Location = new System.Drawing.Point(245, 38);
-            this.panel63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel63.Margin = new System.Windows.Forms.Padding(4);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(87, 49);
             this.panel63.TabIndex = 71;
@@ -677,18 +678,19 @@
             this.Temperature_Actual_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Actual_Text.ForeColor = System.Drawing.Color.White;
             this.Temperature_Actual_Text.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Actual_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Actual_Text.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Actual_Text.Multiline = true;
             this.Temperature_Actual_Text.Name = "Temperature_Actual_Text";
             this.Temperature_Actual_Text.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Actual_Text.TabIndex = 1;
+            this.Temperature_Actual_Text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel64
             // 
             this.panel64.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel64.Controls.Add(this.Temperature_Minimum_Text);
             this.panel64.Location = new System.Drawing.Point(148, 38);
-            this.panel64.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel64.Margin = new System.Windows.Forms.Padding(4);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(87, 49);
             this.panel64.TabIndex = 70;
@@ -700,7 +702,7 @@
             this.Temperature_Minimum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Minimum_Text.ForeColor = System.Drawing.Color.White;
             this.Temperature_Minimum_Text.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Minimum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Minimum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Minimum_Text.Multiline = true;
             this.Temperature_Minimum_Text.Name = "Temperature_Minimum_Text";
             this.Temperature_Minimum_Text.Size = new System.Drawing.Size(87, 25);
@@ -711,7 +713,7 @@
             // 
             this.pictureBox11.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
             this.pictureBox11.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(129, 108);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -731,9 +733,9 @@
             this.BreathingRatePanelBed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreathingRatePanelBed1.ForeColor = System.Drawing.Color.White;
             this.BreathingRatePanelBed1.Location = new System.Drawing.Point(7, 11);
-            this.BreathingRatePanelBed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRatePanelBed1.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRatePanelBed1.Name = "BreathingRatePanelBed1";
-            this.BreathingRatePanelBed1.Size = new System.Drawing.Size(165, 25);
+            this.BreathingRatePanelBed1.Size = new System.Drawing.Size(171, 28);
             this.BreathingRatePanelBed1.TabIndex = 75;
             this.BreathingRatePanelBed1.Visible = false;
             // 
@@ -772,7 +774,7 @@
             this.panel42.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel42.Controls.Add(this.BreathingRate_Maximum_Text);
             this.panel42.Location = new System.Drawing.Point(343, 38);
-            this.panel42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel42.Margin = new System.Windows.Forms.Padding(4);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(87, 49);
             this.panel42.TabIndex = 71;
@@ -784,18 +786,19 @@
             this.BreathingRate_Maximum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Maximum_Text.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Maximum_Text.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Maximum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Maximum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Maximum_Text.Multiline = true;
             this.BreathingRate_Maximum_Text.Name = "BreathingRate_Maximum_Text";
             this.BreathingRate_Maximum_Text.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Maximum_Text.TabIndex = 75;
+            this.BreathingRate_Maximum_Text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel43
             // 
             this.panel43.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel43.Controls.Add(this.BreathingRate_Actual_Text);
             this.panel43.Location = new System.Drawing.Point(245, 38);
-            this.panel43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel43.Margin = new System.Windows.Forms.Padding(4);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(87, 49);
             this.panel43.TabIndex = 71;
@@ -807,18 +810,19 @@
             this.BreathingRate_Actual_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Actual_Text.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Actual_Text.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Actual_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Actual_Text.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Actual_Text.Multiline = true;
             this.BreathingRate_Actual_Text.Name = "BreathingRate_Actual_Text";
             this.BreathingRate_Actual_Text.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Actual_Text.TabIndex = 1;
+            this.BreathingRate_Actual_Text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel44
             // 
             this.panel44.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel44.Controls.Add(this.BreathingRate_Minimum_Text);
             this.panel44.Location = new System.Drawing.Point(148, 38);
-            this.panel44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel44.Margin = new System.Windows.Forms.Padding(4);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(87, 49);
             this.panel44.TabIndex = 70;
@@ -830,7 +834,7 @@
             this.BreathingRate_Minimum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Minimum_Text.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Minimum_Text.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Minimum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Minimum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Minimum_Text.Multiline = true;
             this.BreathingRate_Minimum_Text.Name = "BreathingRate_Minimum_Text";
             this.BreathingRate_Minimum_Text.Size = new System.Drawing.Size(87, 25);
@@ -841,7 +845,7 @@
             // 
             this.pictureBox6.Image = global::FinalProject.Properties.Resources.Lungs;
             this.pictureBox6.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(129, 108);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -860,10 +864,10 @@
             this.PulseRatePanelBed1.Controls.Add(this.pictureBox4);
             this.PulseRatePanelBed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PulseRatePanelBed1.ForeColor = System.Drawing.Color.White;
-            this.PulseRatePanelBed1.Location = new System.Drawing.Point(289, 80);
-            this.PulseRatePanelBed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRatePanelBed1.Location = new System.Drawing.Point(265, 87);
+            this.PulseRatePanelBed1.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRatePanelBed1.Name = "PulseRatePanelBed1";
-            this.PulseRatePanelBed1.Size = new System.Drawing.Size(147, 34);
+            this.PulseRatePanelBed1.Size = new System.Drawing.Size(161, 29);
             this.PulseRatePanelBed1.TabIndex = 12;
             this.PulseRatePanelBed1.Visible = false;
             // 
@@ -902,7 +906,7 @@
             this.panel34.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel34.Controls.Add(this.PulseRate_Maximum_Text);
             this.panel34.Location = new System.Drawing.Point(343, 38);
-            this.panel34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel34.Margin = new System.Windows.Forms.Padding(4);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(87, 49);
             this.panel34.TabIndex = 71;
@@ -914,18 +918,19 @@
             this.PulseRate_Maximum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Maximum_Text.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Maximum_Text.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Maximum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Maximum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Maximum_Text.Multiline = true;
             this.PulseRate_Maximum_Text.Name = "PulseRate_Maximum_Text";
             this.PulseRate_Maximum_Text.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Maximum_Text.TabIndex = 75;
+            this.PulseRate_Maximum_Text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel35
             // 
             this.panel35.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel35.Controls.Add(this.PulseRate_Actual_Text);
             this.panel35.Location = new System.Drawing.Point(245, 38);
-            this.panel35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel35.Margin = new System.Windows.Forms.Padding(4);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(87, 49);
             this.panel35.TabIndex = 71;
@@ -937,18 +942,19 @@
             this.PulseRate_Actual_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Actual_Text.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Actual_Text.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Actual_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Actual_Text.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Actual_Text.Multiline = true;
             this.PulseRate_Actual_Text.Name = "PulseRate_Actual_Text";
             this.PulseRate_Actual_Text.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Actual_Text.TabIndex = 1;
+            this.PulseRate_Actual_Text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel36
             // 
             this.panel36.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel36.Controls.Add(this.PulseRate_Minimum_Text);
             this.panel36.Location = new System.Drawing.Point(148, 38);
-            this.panel36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel36.Margin = new System.Windows.Forms.Padding(4);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(87, 49);
             this.panel36.TabIndex = 70;
@@ -960,7 +966,7 @@
             this.PulseRate_Minimum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Minimum_Text.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Minimum_Text.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Minimum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Minimum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Minimum_Text.Multiline = true;
             this.PulseRate_Minimum_Text.Name = "PulseRate_Minimum_Text";
             this.PulseRate_Minimum_Text.Size = new System.Drawing.Size(87, 25);
@@ -971,7 +977,7 @@
             // 
             this.pictureBox4.Image = global::FinalProject.Properties.Resources.pulse;
             this.pictureBox4.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(129, 108);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -998,10 +1004,10 @@
             this.BloodPressurePanelBed1.Controls.Add(this.BloodPressurePanelBed_Pic1);
             this.BloodPressurePanelBed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressurePanelBed1.ForeColor = System.Drawing.Color.White;
-            this.BloodPressurePanelBed1.Location = new System.Drawing.Point(273, 6);
-            this.BloodPressurePanelBed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BloodPressurePanelBed1.Location = new System.Drawing.Point(270, 11);
+            this.BloodPressurePanelBed1.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressurePanelBed1.Name = "BloodPressurePanelBed1";
-            this.BloodPressurePanelBed1.Size = new System.Drawing.Size(165, 34);
+            this.BloodPressurePanelBed1.Size = new System.Drawing.Size(167, 35);
             this.BloodPressurePanelBed1.TabIndex = 10;
             this.BloodPressurePanelBed1.Visible = false;
             // 
@@ -1062,7 +1068,7 @@
             this.DiBloodPressurePanelBed_Maximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DiBloodPressurePanelBed_Maximum.Controls.Add(this.DiBloodPressurePanelBed_Maximum_Text);
             this.DiBloodPressurePanelBed_Maximum.Location = new System.Drawing.Point(343, 25);
-            this.DiBloodPressurePanelBed_Maximum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Maximum.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Maximum.Name = "DiBloodPressurePanelBed_Maximum";
             this.DiBloodPressurePanelBed_Maximum.Size = new System.Drawing.Size(87, 31);
             this.DiBloodPressurePanelBed_Maximum.TabIndex = 76;
@@ -1074,7 +1080,7 @@
             this.DiBloodPressurePanelBed_Maximum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Maximum_Text.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Maximum_Text.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Maximum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Maximum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Maximum_Text.Multiline = true;
             this.DiBloodPressurePanelBed_Maximum_Text.Name = "DiBloodPressurePanelBed_Maximum_Text";
             this.DiBloodPressurePanelBed_Maximum_Text.Size = new System.Drawing.Size(87, 25);
@@ -1086,7 +1092,7 @@
             this.DiBloodPressurePanelBed_Actual.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DiBloodPressurePanelBed_Actual.Controls.Add(this.DiBloodPressurePanelBed_Actual_Text);
             this.DiBloodPressurePanelBed_Actual.Location = new System.Drawing.Point(245, 25);
-            this.DiBloodPressurePanelBed_Actual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Actual.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Actual.Name = "DiBloodPressurePanelBed_Actual";
             this.DiBloodPressurePanelBed_Actual.Size = new System.Drawing.Size(87, 31);
             this.DiBloodPressurePanelBed_Actual.TabIndex = 77;
@@ -1098,7 +1104,7 @@
             this.DiBloodPressurePanelBed_Actual_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Actual_Text.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Actual_Text.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Actual_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Actual_Text.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Actual_Text.Multiline = true;
             this.DiBloodPressurePanelBed_Actual_Text.Name = "DiBloodPressurePanelBed_Actual_Text";
             this.DiBloodPressurePanelBed_Actual_Text.Size = new System.Drawing.Size(87, 25);
@@ -1110,7 +1116,7 @@
             this.DiBloodPressurePanelBed_Minimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DiBloodPressurePanelBed_Minimum.Controls.Add(this.DiBloodPressurePanelBed_Minimum_Text);
             this.DiBloodPressurePanelBed_Minimum.Location = new System.Drawing.Point(148, 25);
-            this.DiBloodPressurePanelBed_Minimum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Minimum.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Minimum.Name = "DiBloodPressurePanelBed_Minimum";
             this.DiBloodPressurePanelBed_Minimum.Size = new System.Drawing.Size(87, 31);
             this.DiBloodPressurePanelBed_Minimum.TabIndex = 75;
@@ -1122,7 +1128,7 @@
             this.DiBloodPressurePanelBed_Minimum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Minimum_Text.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Minimum_Text.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Minimum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Minimum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Minimum_Text.Multiline = true;
             this.DiBloodPressurePanelBed_Minimum_Text.Name = "DiBloodPressurePanelBed_Minimum_Text";
             this.DiBloodPressurePanelBed_Minimum_Text.Size = new System.Drawing.Size(87, 25);
@@ -1164,7 +1170,7 @@
             this.SyBloodPressurePanelBed_Maximum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.SyBloodPressurePanelBed_Maximum.Controls.Add(this.SyBloodPressurePanelBed_Maximum_Text);
             this.SyBloodPressurePanelBed_Maximum.Location = new System.Drawing.Point(343, 75);
-            this.SyBloodPressurePanelBed_Maximum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Maximum.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Maximum.Name = "SyBloodPressurePanelBed_Maximum";
             this.SyBloodPressurePanelBed_Maximum.Size = new System.Drawing.Size(87, 31);
             this.SyBloodPressurePanelBed_Maximum.TabIndex = 71;
@@ -1176,7 +1182,7 @@
             this.SyBloodPressurePanelBed_Maximum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Maximum_Text.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Maximum_Text.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Maximum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Maximum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Maximum_Text.Multiline = true;
             this.SyBloodPressurePanelBed_Maximum_Text.Name = "SyBloodPressurePanelBed_Maximum_Text";
             this.SyBloodPressurePanelBed_Maximum_Text.Size = new System.Drawing.Size(87, 25);
@@ -1188,7 +1194,7 @@
             this.SyBloodPressurePanelBed_Actual.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.SyBloodPressurePanelBed_Actual.Controls.Add(this.SyBloodPressurePanelBed_Actual_Text);
             this.SyBloodPressurePanelBed_Actual.Location = new System.Drawing.Point(245, 75);
-            this.SyBloodPressurePanelBed_Actual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Actual.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Actual.Name = "SyBloodPressurePanelBed_Actual";
             this.SyBloodPressurePanelBed_Actual.Size = new System.Drawing.Size(87, 31);
             this.SyBloodPressurePanelBed_Actual.TabIndex = 71;
@@ -1200,7 +1206,7 @@
             this.SyBloodPressurePanelBed_Actual_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Actual_Text.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Actual_Text.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Actual_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Actual_Text.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Actual_Text.Multiline = true;
             this.SyBloodPressurePanelBed_Actual_Text.Name = "SyBloodPressurePanelBed_Actual_Text";
             this.SyBloodPressurePanelBed_Actual_Text.Size = new System.Drawing.Size(87, 25);
@@ -1212,7 +1218,7 @@
             this.BloodPressurePanelBed_Minimum.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BloodPressurePanelBed_Minimum.Controls.Add(this.SyBloodPressurePanelBed_Minimum_Text);
             this.BloodPressurePanelBed_Minimum.Location = new System.Drawing.Point(148, 75);
-            this.BloodPressurePanelBed_Minimum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BloodPressurePanelBed_Minimum.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressurePanelBed_Minimum.Name = "BloodPressurePanelBed_Minimum";
             this.BloodPressurePanelBed_Minimum.Size = new System.Drawing.Size(87, 31);
             this.BloodPressurePanelBed_Minimum.TabIndex = 70;
@@ -1224,7 +1230,7 @@
             this.SyBloodPressurePanelBed_Minimum_Text.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Minimum_Text.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Minimum_Text.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Minimum_Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Minimum_Text.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Minimum_Text.Multiline = true;
             this.SyBloodPressurePanelBed_Minimum_Text.Name = "SyBloodPressurePanelBed_Minimum_Text";
             this.SyBloodPressurePanelBed_Minimum_Text.Size = new System.Drawing.Size(87, 25);
@@ -1235,7 +1241,7 @@
             // 
             this.BloodPressurePanelBed_Pic1.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
             this.BloodPressurePanelBed_Pic1.Location = new System.Drawing.Point(4, 4);
-            this.BloodPressurePanelBed_Pic1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BloodPressurePanelBed_Pic1.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressurePanelBed_Pic1.Name = "BloodPressurePanelBed_Pic1";
             this.BloodPressurePanelBed_Pic1.Size = new System.Drawing.Size(112, 108);
             this.BloodPressurePanelBed_Pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1253,7 +1259,7 @@
             this.Display2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display2.ForeColor = System.Drawing.Color.White;
             this.Display2.Location = new System.Drawing.Point(531, 263);
-            this.Display2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Display2.Margin = new System.Windows.Forms.Padding(4);
             this.Display2.Name = "Display2";
             this.Display2.Size = new System.Drawing.Size(453, 123);
             this.Display2.TabIndex = 14;
@@ -1282,7 +1288,7 @@
             this.TemperaturePanelBed2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TemperaturePanelBed2.ForeColor = System.Drawing.Color.White;
             this.TemperaturePanelBed2.Location = new System.Drawing.Point(283, 84);
-            this.TemperaturePanelBed2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TemperaturePanelBed2.Margin = new System.Windows.Forms.Padding(4);
             this.TemperaturePanelBed2.Name = "TemperaturePanelBed2";
             this.TemperaturePanelBed2.Size = new System.Drawing.Size(163, 25);
             this.TemperaturePanelBed2.TabIndex = 75;
@@ -1323,7 +1329,7 @@
             this.panel54.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel54.Controls.Add(this.Temperature_Maximum_Text2);
             this.panel54.Location = new System.Drawing.Point(343, 38);
-            this.panel54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel54.Margin = new System.Windows.Forms.Padding(4);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(87, 49);
             this.panel54.TabIndex = 71;
@@ -1335,18 +1341,19 @@
             this.Temperature_Maximum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Maximum_Text2.ForeColor = System.Drawing.Color.White;
             this.Temperature_Maximum_Text2.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Maximum_Text2.Multiline = true;
             this.Temperature_Maximum_Text2.Name = "Temperature_Maximum_Text2";
             this.Temperature_Maximum_Text2.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Maximum_Text2.TabIndex = 75;
+            this.Temperature_Maximum_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel55
             // 
             this.panel55.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel55.Controls.Add(this.Temperature_Actual_Text2);
             this.panel55.Location = new System.Drawing.Point(245, 38);
-            this.panel55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel55.Margin = new System.Windows.Forms.Padding(4);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(87, 49);
             this.panel55.TabIndex = 71;
@@ -1358,18 +1365,19 @@
             this.Temperature_Actual_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Actual_Text2.ForeColor = System.Drawing.Color.White;
             this.Temperature_Actual_Text2.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Actual_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Actual_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Actual_Text2.Multiline = true;
             this.Temperature_Actual_Text2.Name = "Temperature_Actual_Text2";
             this.Temperature_Actual_Text2.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Actual_Text2.TabIndex = 1;
+            this.Temperature_Actual_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel56
             // 
             this.panel56.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel56.Controls.Add(this.Temperature_Minimum_Text2);
             this.panel56.Location = new System.Drawing.Point(148, 38);
-            this.panel56.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel56.Margin = new System.Windows.Forms.Padding(4);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(87, 49);
             this.panel56.TabIndex = 70;
@@ -1381,7 +1389,7 @@
             this.Temperature_Minimum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Minimum_Text2.ForeColor = System.Drawing.Color.White;
             this.Temperature_Minimum_Text2.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Minimum_Text2.Multiline = true;
             this.Temperature_Minimum_Text2.Name = "Temperature_Minimum_Text2";
             this.Temperature_Minimum_Text2.Size = new System.Drawing.Size(87, 25);
@@ -1392,7 +1400,7 @@
             // 
             this.pictureBox9.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
             this.pictureBox9.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(129, 108);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1412,7 +1420,7 @@
             this.BreathingRatePanelBed2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreathingRatePanelBed2.ForeColor = System.Drawing.Color.White;
             this.BreathingRatePanelBed2.Location = new System.Drawing.Point(8, 81);
-            this.BreathingRatePanelBed2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRatePanelBed2.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRatePanelBed2.Name = "BreathingRatePanelBed2";
             this.BreathingRatePanelBed2.Size = new System.Drawing.Size(163, 30);
             this.BreathingRatePanelBed2.TabIndex = 75;
@@ -1453,7 +1461,7 @@
             this.panel46.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel46.Controls.Add(this.BreathingRate_Maximum_Text2);
             this.panel46.Location = new System.Drawing.Point(343, 38);
-            this.panel46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel46.Margin = new System.Windows.Forms.Padding(4);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(87, 49);
             this.panel46.TabIndex = 71;
@@ -1465,18 +1473,19 @@
             this.BreathingRate_Maximum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Maximum_Text2.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Maximum_Text2.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Maximum_Text2.Multiline = true;
             this.BreathingRate_Maximum_Text2.Name = "BreathingRate_Maximum_Text2";
             this.BreathingRate_Maximum_Text2.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Maximum_Text2.TabIndex = 75;
+            this.BreathingRate_Maximum_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel47
             // 
             this.panel47.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel47.Controls.Add(this.BreathingRate_Actual_Text2);
             this.panel47.Location = new System.Drawing.Point(245, 38);
-            this.panel47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel47.Margin = new System.Windows.Forms.Padding(4);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(87, 49);
             this.panel47.TabIndex = 71;
@@ -1488,18 +1497,19 @@
             this.BreathingRate_Actual_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Actual_Text2.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Actual_Text2.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Actual_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Actual_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Actual_Text2.Multiline = true;
             this.BreathingRate_Actual_Text2.Name = "BreathingRate_Actual_Text2";
             this.BreathingRate_Actual_Text2.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Actual_Text2.TabIndex = 1;
+            this.BreathingRate_Actual_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel48
             // 
             this.panel48.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel48.Controls.Add(this.BreathingRate_Minimum_Text2);
             this.panel48.Location = new System.Drawing.Point(148, 38);
-            this.panel48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel48.Margin = new System.Windows.Forms.Padding(4);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(87, 49);
             this.panel48.TabIndex = 70;
@@ -1511,7 +1521,7 @@
             this.BreathingRate_Minimum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Minimum_Text2.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Minimum_Text2.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Minimum_Text2.Multiline = true;
             this.BreathingRate_Minimum_Text2.Name = "BreathingRate_Minimum_Text2";
             this.BreathingRate_Minimum_Text2.Size = new System.Drawing.Size(87, 25);
@@ -1522,7 +1532,7 @@
             // 
             this.pictureBox7.Image = global::FinalProject.Properties.Resources.Lungs;
             this.pictureBox7.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(129, 108);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1542,7 +1552,7 @@
             this.PulseRatePanelBed2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PulseRatePanelBed2.ForeColor = System.Drawing.Color.White;
             this.PulseRatePanelBed2.Location = new System.Drawing.Point(9, 9);
-            this.PulseRatePanelBed2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRatePanelBed2.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRatePanelBed2.Name = "PulseRatePanelBed2";
             this.PulseRatePanelBed2.Size = new System.Drawing.Size(164, 25);
             this.PulseRatePanelBed2.TabIndex = 11;
@@ -1583,7 +1593,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel2.Controls.Add(this.PulseRate_Maximum_Text2);
             this.panel2.Location = new System.Drawing.Point(343, 38);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(87, 49);
             this.panel2.TabIndex = 71;
@@ -1595,18 +1605,19 @@
             this.PulseRate_Maximum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Maximum_Text2.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Maximum_Text2.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Maximum_Text2.Multiline = true;
             this.PulseRate_Maximum_Text2.Name = "PulseRate_Maximum_Text2";
             this.PulseRate_Maximum_Text2.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Maximum_Text2.TabIndex = 75;
+            this.PulseRate_Maximum_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Controls.Add(this.PulseRate_Actual_Text2);
             this.panel3.Location = new System.Drawing.Point(245, 38);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(87, 49);
             this.panel3.TabIndex = 71;
@@ -1618,18 +1629,19 @@
             this.PulseRate_Actual_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Actual_Text2.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Actual_Text2.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Actual_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Actual_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Actual_Text2.Multiline = true;
             this.PulseRate_Actual_Text2.Name = "PulseRate_Actual_Text2";
             this.PulseRate_Actual_Text2.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Actual_Text2.TabIndex = 1;
+            this.PulseRate_Actual_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.PulseRate_Minimum_Text2);
             this.panel4.Location = new System.Drawing.Point(148, 38);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(87, 49);
             this.panel4.TabIndex = 70;
@@ -1641,7 +1653,7 @@
             this.PulseRate_Minimum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Minimum_Text2.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Minimum_Text2.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Minimum_Text2.Multiline = true;
             this.PulseRate_Minimum_Text2.Name = "PulseRate_Minimum_Text2";
             this.PulseRate_Minimum_Text2.Size = new System.Drawing.Size(87, 25);
@@ -1652,7 +1664,7 @@
             // 
             this.PulseRateBed_Pic1.Image = global::FinalProject.Properties.Resources.pulse;
             this.PulseRateBed_Pic1.Location = new System.Drawing.Point(4, 4);
-            this.PulseRateBed_Pic1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRateBed_Pic1.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRateBed_Pic1.Name = "PulseRateBed_Pic1";
             this.PulseRateBed_Pic1.Size = new System.Drawing.Size(129, 108);
             this.PulseRateBed_Pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1680,7 +1692,7 @@
             this.BloodPressurePanelBed2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressurePanelBed2.ForeColor = System.Drawing.Color.White;
             this.BloodPressurePanelBed2.Location = new System.Drawing.Point(245, 11);
-            this.BloodPressurePanelBed2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BloodPressurePanelBed2.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressurePanelBed2.Name = "BloodPressurePanelBed2";
             this.BloodPressurePanelBed2.Size = new System.Drawing.Size(199, 22);
             this.BloodPressurePanelBed2.TabIndex = 83;
@@ -1743,7 +1755,7 @@
             this.panel14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel14.Controls.Add(this.DiBloodPressurePanelBed_Maximum_Text2);
             this.panel14.Location = new System.Drawing.Point(343, 25);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(87, 31);
             this.panel14.TabIndex = 76;
@@ -1755,18 +1767,19 @@
             this.DiBloodPressurePanelBed_Maximum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Maximum_Text2.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Maximum_Text2.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Maximum_Text2.Multiline = true;
             this.DiBloodPressurePanelBed_Maximum_Text2.Name = "DiBloodPressurePanelBed_Maximum_Text2";
             this.DiBloodPressurePanelBed_Maximum_Text2.Size = new System.Drawing.Size(87, 25);
             this.DiBloodPressurePanelBed_Maximum_Text2.TabIndex = 75;
+            this.DiBloodPressurePanelBed_Maximum_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel15.Controls.Add(this.DiBloodPressurePanelBed_Actual_Text2);
             this.panel15.Location = new System.Drawing.Point(245, 25);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(87, 31);
             this.panel15.TabIndex = 77;
@@ -1778,18 +1791,19 @@
             this.DiBloodPressurePanelBed_Actual_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Actual_Text2.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Actual_Text2.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Actual_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Actual_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Actual_Text2.Multiline = true;
             this.DiBloodPressurePanelBed_Actual_Text2.Name = "DiBloodPressurePanelBed_Actual_Text2";
             this.DiBloodPressurePanelBed_Actual_Text2.Size = new System.Drawing.Size(87, 25);
             this.DiBloodPressurePanelBed_Actual_Text2.TabIndex = 1;
+            this.DiBloodPressurePanelBed_Actual_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel16.Controls.Add(this.DiBloodPressurePanelBed_Minimum_Text2);
             this.panel16.Location = new System.Drawing.Point(148, 25);
-            this.panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(87, 31);
             this.panel16.TabIndex = 75;
@@ -1801,7 +1815,7 @@
             this.DiBloodPressurePanelBed_Minimum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Minimum_Text2.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Minimum_Text2.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Minimum_Text2.Multiline = true;
             this.DiBloodPressurePanelBed_Minimum_Text2.Name = "DiBloodPressurePanelBed_Minimum_Text2";
             this.DiBloodPressurePanelBed_Minimum_Text2.Size = new System.Drawing.Size(87, 25);
@@ -1843,7 +1857,7 @@
             this.panel17.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel17.Controls.Add(this.SyBloodPressurePanelBed_Maximum_Text2);
             this.panel17.Location = new System.Drawing.Point(343, 75);
-            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(87, 31);
             this.panel17.TabIndex = 71;
@@ -1855,18 +1869,19 @@
             this.SyBloodPressurePanelBed_Maximum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Maximum_Text2.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Maximum_Text2.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Maximum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Maximum_Text2.Multiline = true;
             this.SyBloodPressurePanelBed_Maximum_Text2.Name = "SyBloodPressurePanelBed_Maximum_Text2";
             this.SyBloodPressurePanelBed_Maximum_Text2.Size = new System.Drawing.Size(87, 25);
             this.SyBloodPressurePanelBed_Maximum_Text2.TabIndex = 75;
+            this.SyBloodPressurePanelBed_Maximum_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel18.Controls.Add(this.SyBloodPressurePanelBed_Actual_Text2);
             this.panel18.Location = new System.Drawing.Point(245, 75);
-            this.panel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel18.Margin = new System.Windows.Forms.Padding(4);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(87, 31);
             this.panel18.TabIndex = 71;
@@ -1878,18 +1893,19 @@
             this.SyBloodPressurePanelBed_Actual_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Actual_Text2.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Actual_Text2.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Actual_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Actual_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Actual_Text2.Multiline = true;
             this.SyBloodPressurePanelBed_Actual_Text2.Name = "SyBloodPressurePanelBed_Actual_Text2";
             this.SyBloodPressurePanelBed_Actual_Text2.Size = new System.Drawing.Size(87, 25);
             this.SyBloodPressurePanelBed_Actual_Text2.TabIndex = 1;
+            this.SyBloodPressurePanelBed_Actual_Text2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel19.Controls.Add(this.SyBloodPressurePanelBed_Minimum_Text2);
             this.panel19.Location = new System.Drawing.Point(148, 75);
-            this.panel19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel19.Margin = new System.Windows.Forms.Padding(4);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(87, 31);
             this.panel19.TabIndex = 70;
@@ -1901,7 +1917,7 @@
             this.SyBloodPressurePanelBed_Minimum_Text2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Minimum_Text2.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Minimum_Text2.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Minimum_Text2.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Minimum_Text2.Multiline = true;
             this.SyBloodPressurePanelBed_Minimum_Text2.Name = "SyBloodPressurePanelBed_Minimum_Text2";
             this.SyBloodPressurePanelBed_Minimum_Text2.Size = new System.Drawing.Size(87, 25);
@@ -1912,7 +1928,7 @@
             // 
             this.pictureBox1.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
             this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1930,7 +1946,7 @@
             this.Display4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display4.ForeColor = System.Drawing.Color.White;
             this.Display4.Location = new System.Drawing.Point(531, 412);
-            this.Display4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Display4.Margin = new System.Windows.Forms.Padding(4);
             this.Display4.Name = "Display4";
             this.Display4.Size = new System.Drawing.Size(453, 123);
             this.Display4.TabIndex = 18;
@@ -1959,7 +1975,7 @@
             this.PulseRatePanelBed4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PulseRatePanelBed4.ForeColor = System.Drawing.Color.White;
             this.PulseRatePanelBed4.Location = new System.Drawing.Point(11, 81);
-            this.PulseRatePanelBed4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRatePanelBed4.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRatePanelBed4.Name = "PulseRatePanelBed4";
             this.PulseRatePanelBed4.Size = new System.Drawing.Size(155, 33);
             this.PulseRatePanelBed4.TabIndex = 76;
@@ -2000,7 +2016,7 @@
             this.panel13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel13.Controls.Add(this.PulseRate_Maximum_Text4);
             this.panel13.Location = new System.Drawing.Point(343, 38);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(87, 49);
             this.panel13.TabIndex = 71;
@@ -2012,18 +2028,19 @@
             this.PulseRate_Maximum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Maximum_Text4.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Maximum_Text4.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Maximum_Text4.Multiline = true;
             this.PulseRate_Maximum_Text4.Name = "PulseRate_Maximum_Text4";
             this.PulseRate_Maximum_Text4.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Maximum_Text4.TabIndex = 75;
+            this.PulseRate_Maximum_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel26.Controls.Add(this.PulseRate_Actual_Text4);
             this.panel26.Location = new System.Drawing.Point(245, 38);
-            this.panel26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel26.Margin = new System.Windows.Forms.Padding(4);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(87, 49);
             this.panel26.TabIndex = 71;
@@ -2035,18 +2052,19 @@
             this.PulseRate_Actual_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Actual_Text4.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Actual_Text4.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Actual_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Actual_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Actual_Text4.Multiline = true;
             this.PulseRate_Actual_Text4.Name = "PulseRate_Actual_Text4";
             this.PulseRate_Actual_Text4.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Actual_Text4.TabIndex = 1;
+            this.PulseRate_Actual_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel41
             // 
             this.panel41.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel41.Controls.Add(this.PulseRate_Minimum_Text4);
             this.panel41.Location = new System.Drawing.Point(148, 38);
-            this.panel41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel41.Margin = new System.Windows.Forms.Padding(4);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(87, 49);
             this.panel41.TabIndex = 70;
@@ -2058,7 +2076,7 @@
             this.PulseRate_Minimum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Minimum_Text4.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Minimum_Text4.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Minimum_Text4.Multiline = true;
             this.PulseRate_Minimum_Text4.Name = "PulseRate_Minimum_Text4";
             this.PulseRate_Minimum_Text4.Size = new System.Drawing.Size(87, 25);
@@ -2069,7 +2087,7 @@
             // 
             this.pictureBox12.Image = global::FinalProject.Properties.Resources.pulse;
             this.pictureBox12.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(129, 108);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2089,7 +2107,7 @@
             this.BreathingRatePanelBed4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreathingRatePanelBed4.ForeColor = System.Drawing.Color.White;
             this.BreathingRatePanelBed4.Location = new System.Drawing.Point(281, 81);
-            this.BreathingRatePanelBed4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRatePanelBed4.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRatePanelBed4.Name = "BreathingRatePanelBed4";
             this.BreathingRatePanelBed4.Size = new System.Drawing.Size(164, 33);
             this.BreathingRatePanelBed4.TabIndex = 75;
@@ -2130,7 +2148,7 @@
             this.panel50.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel50.Controls.Add(this.BreathingRate_Maximum_Text4);
             this.panel50.Location = new System.Drawing.Point(343, 38);
-            this.panel50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel50.Margin = new System.Windows.Forms.Padding(4);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(87, 49);
             this.panel50.TabIndex = 71;
@@ -2142,18 +2160,19 @@
             this.BreathingRate_Maximum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Maximum_Text4.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Maximum_Text4.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Maximum_Text4.Multiline = true;
             this.BreathingRate_Maximum_Text4.Name = "BreathingRate_Maximum_Text4";
             this.BreathingRate_Maximum_Text4.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Maximum_Text4.TabIndex = 75;
+            this.BreathingRate_Maximum_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel51
             // 
             this.panel51.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel51.Controls.Add(this.BreathingRate_Actual_Text4);
             this.panel51.Location = new System.Drawing.Point(245, 38);
-            this.panel51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel51.Margin = new System.Windows.Forms.Padding(4);
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(87, 49);
             this.panel51.TabIndex = 71;
@@ -2165,18 +2184,19 @@
             this.BreathingRate_Actual_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Actual_Text4.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Actual_Text4.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Actual_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Actual_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Actual_Text4.Multiline = true;
             this.BreathingRate_Actual_Text4.Name = "BreathingRate_Actual_Text4";
             this.BreathingRate_Actual_Text4.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Actual_Text4.TabIndex = 1;
+            this.BreathingRate_Actual_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel52
             // 
             this.panel52.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel52.Controls.Add(this.BreathingRate_Minimum_Text4);
             this.panel52.Location = new System.Drawing.Point(148, 38);
-            this.panel52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel52.Margin = new System.Windows.Forms.Padding(4);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(87, 49);
             this.panel52.TabIndex = 70;
@@ -2188,7 +2208,7 @@
             this.BreathingRate_Minimum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Minimum_Text4.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Minimum_Text4.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Minimum_Text4.Multiline = true;
             this.BreathingRate_Minimum_Text4.Name = "BreathingRate_Minimum_Text4";
             this.BreathingRate_Minimum_Text4.Size = new System.Drawing.Size(87, 25);
@@ -2199,7 +2219,7 @@
             // 
             this.pictureBox8.Image = global::FinalProject.Properties.Resources.Lungs;
             this.pictureBox8.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(129, 108);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2227,7 +2247,7 @@
             this.BloodPressurePanelBed4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressurePanelBed4.ForeColor = System.Drawing.Color.White;
             this.BloodPressurePanelBed4.Location = new System.Drawing.Point(203, 9);
-            this.BloodPressurePanelBed4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BloodPressurePanelBed4.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressurePanelBed4.Name = "BloodPressurePanelBed4";
             this.BloodPressurePanelBed4.Size = new System.Drawing.Size(241, 36);
             this.BloodPressurePanelBed4.TabIndex = 83;
@@ -2290,7 +2310,7 @@
             this.panel27.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel27.Controls.Add(this.DiBloodPressurePanelBed_Maximum_Text4);
             this.panel27.Location = new System.Drawing.Point(343, 25);
-            this.panel27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel27.Margin = new System.Windows.Forms.Padding(4);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(87, 31);
             this.panel27.TabIndex = 76;
@@ -2302,18 +2322,19 @@
             this.DiBloodPressurePanelBed_Maximum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Maximum_Text4.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Maximum_Text4.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Maximum_Text4.Multiline = true;
             this.DiBloodPressurePanelBed_Maximum_Text4.Name = "DiBloodPressurePanelBed_Maximum_Text4";
             this.DiBloodPressurePanelBed_Maximum_Text4.Size = new System.Drawing.Size(87, 25);
             this.DiBloodPressurePanelBed_Maximum_Text4.TabIndex = 75;
+            this.DiBloodPressurePanelBed_Maximum_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel28.Controls.Add(this.DiBloodPressurePanelBed_Actual_Text4);
             this.panel28.Location = new System.Drawing.Point(245, 25);
-            this.panel28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel28.Margin = new System.Windows.Forms.Padding(4);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(87, 31);
             this.panel28.TabIndex = 77;
@@ -2325,18 +2346,19 @@
             this.DiBloodPressurePanelBed_Actual_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Actual_Text4.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Actual_Text4.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Actual_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Actual_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Actual_Text4.Multiline = true;
             this.DiBloodPressurePanelBed_Actual_Text4.Name = "DiBloodPressurePanelBed_Actual_Text4";
             this.DiBloodPressurePanelBed_Actual_Text4.Size = new System.Drawing.Size(87, 25);
             this.DiBloodPressurePanelBed_Actual_Text4.TabIndex = 1;
+            this.DiBloodPressurePanelBed_Actual_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel29
             // 
             this.panel29.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel29.Controls.Add(this.DiBloodPressurePanelBed_Minimum_Text4);
             this.panel29.Location = new System.Drawing.Point(148, 25);
-            this.panel29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel29.Margin = new System.Windows.Forms.Padding(4);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(87, 31);
             this.panel29.TabIndex = 75;
@@ -2348,7 +2370,7 @@
             this.DiBloodPressurePanelBed_Minimum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Minimum_Text4.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Minimum_Text4.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Minimum_Text4.Multiline = true;
             this.DiBloodPressurePanelBed_Minimum_Text4.Name = "DiBloodPressurePanelBed_Minimum_Text4";
             this.DiBloodPressurePanelBed_Minimum_Text4.Size = new System.Drawing.Size(87, 25);
@@ -2390,7 +2412,7 @@
             this.panel30.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel30.Controls.Add(this.SyBloodPressurePanelBed_Maximum_Text4);
             this.panel30.Location = new System.Drawing.Point(343, 75);
-            this.panel30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel30.Margin = new System.Windows.Forms.Padding(4);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(87, 31);
             this.panel30.TabIndex = 71;
@@ -2402,18 +2424,19 @@
             this.SyBloodPressurePanelBed_Maximum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Maximum_Text4.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Maximum_Text4.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Maximum_Text4.Multiline = true;
             this.SyBloodPressurePanelBed_Maximum_Text4.Name = "SyBloodPressurePanelBed_Maximum_Text4";
             this.SyBloodPressurePanelBed_Maximum_Text4.Size = new System.Drawing.Size(87, 25);
             this.SyBloodPressurePanelBed_Maximum_Text4.TabIndex = 75;
+            this.SyBloodPressurePanelBed_Maximum_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel31
             // 
             this.panel31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel31.Controls.Add(this.SyBloodPressurePanelBed_Actual_Text4);
             this.panel31.Location = new System.Drawing.Point(245, 75);
-            this.panel31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel31.Margin = new System.Windows.Forms.Padding(4);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(87, 31);
             this.panel31.TabIndex = 71;
@@ -2425,18 +2448,19 @@
             this.SyBloodPressurePanelBed_Actual_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Actual_Text4.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Actual_Text4.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Actual_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Actual_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Actual_Text4.Multiline = true;
             this.SyBloodPressurePanelBed_Actual_Text4.Name = "SyBloodPressurePanelBed_Actual_Text4";
             this.SyBloodPressurePanelBed_Actual_Text4.Size = new System.Drawing.Size(87, 25);
             this.SyBloodPressurePanelBed_Actual_Text4.TabIndex = 1;
+            this.SyBloodPressurePanelBed_Actual_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel32
             // 
             this.panel32.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel32.Controls.Add(this.SyBloodPressurePanelBed_Minimum_Text4);
             this.panel32.Location = new System.Drawing.Point(148, 75);
-            this.panel32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel32.Margin = new System.Windows.Forms.Padding(4);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(87, 31);
             this.panel32.TabIndex = 70;
@@ -2448,7 +2472,7 @@
             this.SyBloodPressurePanelBed_Minimum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Minimum_Text4.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Minimum_Text4.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Minimum_Text4.Multiline = true;
             this.SyBloodPressurePanelBed_Minimum_Text4.Name = "SyBloodPressurePanelBed_Minimum_Text4";
             this.SyBloodPressurePanelBed_Minimum_Text4.Size = new System.Drawing.Size(87, 25);
@@ -2459,7 +2483,7 @@
             // 
             this.pictureBox3.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
             this.pictureBox3.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(112, 108);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2479,7 +2503,7 @@
             this.TemperaturePanelBed4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TemperaturePanelBed4.ForeColor = System.Drawing.Color.White;
             this.TemperaturePanelBed4.Location = new System.Drawing.Point(7, 7);
-            this.TemperaturePanelBed4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TemperaturePanelBed4.Margin = new System.Windows.Forms.Padding(4);
             this.TemperaturePanelBed4.Name = "TemperaturePanelBed4";
             this.TemperaturePanelBed4.Size = new System.Drawing.Size(164, 22);
             this.TemperaturePanelBed4.TabIndex = 69;
@@ -2520,7 +2544,7 @@
             this.panel10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel10.Controls.Add(this.Temperature_Maximum_Text4);
             this.panel10.Location = new System.Drawing.Point(343, 38);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(87, 49);
             this.panel10.TabIndex = 71;
@@ -2532,18 +2556,19 @@
             this.Temperature_Maximum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Maximum_Text4.ForeColor = System.Drawing.Color.White;
             this.Temperature_Maximum_Text4.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Maximum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Maximum_Text4.Multiline = true;
             this.Temperature_Maximum_Text4.Name = "Temperature_Maximum_Text4";
             this.Temperature_Maximum_Text4.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Maximum_Text4.TabIndex = 75;
+            this.Temperature_Maximum_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel11.Controls.Add(this.Temperature_Actual_Text4);
             this.panel11.Location = new System.Drawing.Point(245, 38);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(87, 49);
             this.panel11.TabIndex = 71;
@@ -2555,18 +2580,19 @@
             this.Temperature_Actual_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Actual_Text4.ForeColor = System.Drawing.Color.White;
             this.Temperature_Actual_Text4.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Actual_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Actual_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Actual_Text4.Multiline = true;
             this.Temperature_Actual_Text4.Name = "Temperature_Actual_Text4";
             this.Temperature_Actual_Text4.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Actual_Text4.TabIndex = 1;
+            this.Temperature_Actual_Text4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel12.Controls.Add(this.Temperature_Minimum_Text4);
             this.panel12.Location = new System.Drawing.Point(148, 38);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(87, 49);
             this.panel12.TabIndex = 70;
@@ -2578,7 +2604,7 @@
             this.Temperature_Minimum_Text4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Minimum_Text4.ForeColor = System.Drawing.Color.White;
             this.Temperature_Minimum_Text4.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Minimum_Text4.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Minimum_Text4.Multiline = true;
             this.Temperature_Minimum_Text4.Name = "Temperature_Minimum_Text4";
             this.Temperature_Minimum_Text4.Size = new System.Drawing.Size(87, 25);
@@ -2589,7 +2615,7 @@
             // 
             this.TemperaturePanelBed_Pic1.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
             this.TemperaturePanelBed_Pic1.Location = new System.Drawing.Point(4, 4);
-            this.TemperaturePanelBed_Pic1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TemperaturePanelBed_Pic1.Margin = new System.Windows.Forms.Padding(4);
             this.TemperaturePanelBed_Pic1.Name = "TemperaturePanelBed_Pic1";
             this.TemperaturePanelBed_Pic1.Size = new System.Drawing.Size(129, 108);
             this.TemperaturePanelBed_Pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2607,7 +2633,7 @@
             this.Display3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display3.ForeColor = System.Drawing.Color.White;
             this.Display3.Location = new System.Drawing.Point(16, 412);
-            this.Display3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Display3.Margin = new System.Windows.Forms.Padding(4);
             this.Display3.Name = "Display3";
             this.Display3.Size = new System.Drawing.Size(453, 123);
             this.Display3.TabIndex = 16;
@@ -2635,10 +2661,10 @@
             this.TemperaturePanelBed3.Controls.Add(this.pictureBox10);
             this.TemperaturePanelBed3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TemperaturePanelBed3.ForeColor = System.Drawing.Color.White;
-            this.TemperaturePanelBed3.Location = new System.Drawing.Point(7, 85);
-            this.TemperaturePanelBed3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TemperaturePanelBed3.Location = new System.Drawing.Point(7, 82);
+            this.TemperaturePanelBed3.Margin = new System.Windows.Forms.Padding(4);
             this.TemperaturePanelBed3.Name = "TemperaturePanelBed3";
-            this.TemperaturePanelBed3.Size = new System.Drawing.Size(169, 27);
+            this.TemperaturePanelBed3.Size = new System.Drawing.Size(164, 27);
             this.TemperaturePanelBed3.TabIndex = 75;
             this.TemperaturePanelBed3.Visible = false;
             // 
@@ -2677,7 +2703,7 @@
             this.panel58.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel58.Controls.Add(this.Temperature_Maximum_Text3);
             this.panel58.Location = new System.Drawing.Point(343, 38);
-            this.panel58.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel58.Margin = new System.Windows.Forms.Padding(4);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(87, 49);
             this.panel58.TabIndex = 71;
@@ -2689,18 +2715,19 @@
             this.Temperature_Maximum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Maximum_Text3.ForeColor = System.Drawing.Color.White;
             this.Temperature_Maximum_Text3.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Maximum_Text3.Multiline = true;
             this.Temperature_Maximum_Text3.Name = "Temperature_Maximum_Text3";
             this.Temperature_Maximum_Text3.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Maximum_Text3.TabIndex = 75;
+            this.Temperature_Maximum_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel59
             // 
             this.panel59.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel59.Controls.Add(this.Temperature_Actual_Text3);
             this.panel59.Location = new System.Drawing.Point(245, 38);
-            this.panel59.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel59.Margin = new System.Windows.Forms.Padding(4);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(87, 49);
             this.panel59.TabIndex = 71;
@@ -2712,18 +2739,19 @@
             this.Temperature_Actual_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Actual_Text3.ForeColor = System.Drawing.Color.White;
             this.Temperature_Actual_Text3.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Actual_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Actual_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Actual_Text3.Multiline = true;
             this.Temperature_Actual_Text3.Name = "Temperature_Actual_Text3";
             this.Temperature_Actual_Text3.Size = new System.Drawing.Size(87, 25);
             this.Temperature_Actual_Text3.TabIndex = 1;
+            this.Temperature_Actual_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel60
             // 
             this.panel60.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel60.Controls.Add(this.Temperature_Minimum_Text3);
             this.panel60.Location = new System.Drawing.Point(148, 38);
-            this.panel60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel60.Margin = new System.Windows.Forms.Padding(4);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(87, 49);
             this.panel60.TabIndex = 70;
@@ -2735,7 +2763,7 @@
             this.Temperature_Minimum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Temperature_Minimum_Text3.ForeColor = System.Drawing.Color.White;
             this.Temperature_Minimum_Text3.Location = new System.Drawing.Point(0, 12);
-            this.Temperature_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Temperature_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.Temperature_Minimum_Text3.Multiline = true;
             this.Temperature_Minimum_Text3.Name = "Temperature_Minimum_Text3";
             this.Temperature_Minimum_Text3.Size = new System.Drawing.Size(87, 25);
@@ -2746,7 +2774,7 @@
             // 
             this.pictureBox10.Image = global::FinalProject.Properties.Resources._745646_temperature_512x512;
             this.pictureBox10.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(129, 108);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2765,10 +2793,10 @@
             this.PulseRatePanelBed3.Controls.Add(this.pictureBox5);
             this.PulseRatePanelBed3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PulseRatePanelBed3.ForeColor = System.Drawing.Color.White;
-            this.PulseRatePanelBed3.Location = new System.Drawing.Point(285, 11);
-            this.PulseRatePanelBed3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRatePanelBed3.Location = new System.Drawing.Point(256, 10);
+            this.PulseRatePanelBed3.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRatePanelBed3.Name = "PulseRatePanelBed3";
-            this.PulseRatePanelBed3.Size = new System.Drawing.Size(163, 28);
+            this.PulseRatePanelBed3.Size = new System.Drawing.Size(183, 24);
             this.PulseRatePanelBed3.TabIndex = 75;
             this.PulseRatePanelBed3.Visible = false;
             // 
@@ -2807,7 +2835,7 @@
             this.panel38.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel38.Controls.Add(this.PulseRate_Maximum_Text3);
             this.panel38.Location = new System.Drawing.Point(343, 38);
-            this.panel38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel38.Margin = new System.Windows.Forms.Padding(4);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(87, 49);
             this.panel38.TabIndex = 71;
@@ -2819,18 +2847,19 @@
             this.PulseRate_Maximum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Maximum_Text3.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Maximum_Text3.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Maximum_Text3.Multiline = true;
             this.PulseRate_Maximum_Text3.Name = "PulseRate_Maximum_Text3";
             this.PulseRate_Maximum_Text3.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Maximum_Text3.TabIndex = 75;
+            this.PulseRate_Maximum_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel39
             // 
             this.panel39.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel39.Controls.Add(this.PulseRate_Actual_Text3);
             this.panel39.Location = new System.Drawing.Point(245, 38);
-            this.panel39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel39.Margin = new System.Windows.Forms.Padding(4);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(87, 49);
             this.panel39.TabIndex = 71;
@@ -2842,18 +2871,19 @@
             this.PulseRate_Actual_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Actual_Text3.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Actual_Text3.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Actual_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Actual_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Actual_Text3.Multiline = true;
             this.PulseRate_Actual_Text3.Name = "PulseRate_Actual_Text3";
             this.PulseRate_Actual_Text3.Size = new System.Drawing.Size(87, 25);
             this.PulseRate_Actual_Text3.TabIndex = 1;
+            this.PulseRate_Actual_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel40
             // 
             this.panel40.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel40.Controls.Add(this.PulseRate_Minimum_Text3);
             this.panel40.Location = new System.Drawing.Point(148, 38);
-            this.panel40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel40.Margin = new System.Windows.Forms.Padding(4);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(87, 49);
             this.panel40.TabIndex = 70;
@@ -2865,7 +2895,7 @@
             this.PulseRate_Minimum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PulseRate_Minimum_Text3.ForeColor = System.Drawing.Color.White;
             this.PulseRate_Minimum_Text3.Location = new System.Drawing.Point(0, 12);
-            this.PulseRate_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PulseRate_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRate_Minimum_Text3.Multiline = true;
             this.PulseRate_Minimum_Text3.Name = "PulseRate_Minimum_Text3";
             this.PulseRate_Minimum_Text3.Size = new System.Drawing.Size(87, 25);
@@ -2876,7 +2906,7 @@
             // 
             this.pictureBox5.Image = global::FinalProject.Properties.Resources.pulse;
             this.pictureBox5.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(129, 108);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2903,10 +2933,10 @@
             this.BloodPressurePanelBed3.Controls.Add(this.pictureBox2);
             this.BloodPressurePanelBed3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressurePanelBed3.ForeColor = System.Drawing.Color.White;
-            this.BloodPressurePanelBed3.Location = new System.Drawing.Point(256, 81);
-            this.BloodPressurePanelBed3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BloodPressurePanelBed3.Location = new System.Drawing.Point(273, 88);
+            this.BloodPressurePanelBed3.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressurePanelBed3.Name = "BloodPressurePanelBed3";
-            this.BloodPressurePanelBed3.Size = new System.Drawing.Size(180, 27);
+            this.BloodPressurePanelBed3.Size = new System.Drawing.Size(164, 27);
             this.BloodPressurePanelBed3.TabIndex = 83;
             this.BloodPressurePanelBed3.Visible = false;
             // 
@@ -2967,7 +2997,7 @@
             this.panel20.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel20.Controls.Add(this.DiBloodPressurePanelBed_Maximum_Text3);
             this.panel20.Location = new System.Drawing.Point(343, 25);
-            this.panel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(87, 31);
             this.panel20.TabIndex = 76;
@@ -2979,18 +3009,19 @@
             this.DiBloodPressurePanelBed_Maximum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Maximum_Text3.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Maximum_Text3.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Maximum_Text3.Multiline = true;
             this.DiBloodPressurePanelBed_Maximum_Text3.Name = "DiBloodPressurePanelBed_Maximum_Text3";
             this.DiBloodPressurePanelBed_Maximum_Text3.Size = new System.Drawing.Size(87, 25);
             this.DiBloodPressurePanelBed_Maximum_Text3.TabIndex = 75;
+            this.DiBloodPressurePanelBed_Maximum_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel21.Controls.Add(this.DiBloodPressurePanelBed_Actual_Text3);
             this.panel21.Location = new System.Drawing.Point(245, 25);
-            this.panel21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel21.Margin = new System.Windows.Forms.Padding(4);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(87, 31);
             this.panel21.TabIndex = 77;
@@ -3002,18 +3033,19 @@
             this.DiBloodPressurePanelBed_Actual_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Actual_Text3.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Actual_Text3.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Actual_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Actual_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Actual_Text3.Multiline = true;
             this.DiBloodPressurePanelBed_Actual_Text3.Name = "DiBloodPressurePanelBed_Actual_Text3";
             this.DiBloodPressurePanelBed_Actual_Text3.Size = new System.Drawing.Size(87, 25);
             this.DiBloodPressurePanelBed_Actual_Text3.TabIndex = 1;
+            this.DiBloodPressurePanelBed_Actual_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel22.Controls.Add(this.DiBloodPressurePanelBed_Minimum_Text3);
             this.panel22.Location = new System.Drawing.Point(148, 25);
-            this.panel22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel22.Margin = new System.Windows.Forms.Padding(4);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(87, 31);
             this.panel22.TabIndex = 75;
@@ -3025,7 +3057,7 @@
             this.DiBloodPressurePanelBed_Minimum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DiBloodPressurePanelBed_Minimum_Text3.ForeColor = System.Drawing.Color.White;
             this.DiBloodPressurePanelBed_Minimum_Text3.Location = new System.Drawing.Point(0, 2);
-            this.DiBloodPressurePanelBed_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiBloodPressurePanelBed_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.DiBloodPressurePanelBed_Minimum_Text3.Multiline = true;
             this.DiBloodPressurePanelBed_Minimum_Text3.Name = "DiBloodPressurePanelBed_Minimum_Text3";
             this.DiBloodPressurePanelBed_Minimum_Text3.Size = new System.Drawing.Size(87, 25);
@@ -3067,7 +3099,7 @@
             this.panel23.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel23.Controls.Add(this.SyBloodPressurePanelBed_Maximum_Text3);
             this.panel23.Location = new System.Drawing.Point(343, 75);
-            this.panel23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel23.Margin = new System.Windows.Forms.Padding(4);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(87, 31);
             this.panel23.TabIndex = 71;
@@ -3079,18 +3111,19 @@
             this.SyBloodPressurePanelBed_Maximum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Maximum_Text3.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Maximum_Text3.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Maximum_Text3.Multiline = true;
             this.SyBloodPressurePanelBed_Maximum_Text3.Name = "SyBloodPressurePanelBed_Maximum_Text3";
             this.SyBloodPressurePanelBed_Maximum_Text3.Size = new System.Drawing.Size(87, 25);
             this.SyBloodPressurePanelBed_Maximum_Text3.TabIndex = 75;
+            this.SyBloodPressurePanelBed_Maximum_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel24.Controls.Add(this.SyBloodPressurePanelBed_Actual_Text3);
             this.panel24.Location = new System.Drawing.Point(245, 75);
-            this.panel24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel24.Margin = new System.Windows.Forms.Padding(4);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(87, 31);
             this.panel24.TabIndex = 71;
@@ -3102,18 +3135,19 @@
             this.SyBloodPressurePanelBed_Actual_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Actual_Text3.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Actual_Text3.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Actual_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Actual_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Actual_Text3.Multiline = true;
             this.SyBloodPressurePanelBed_Actual_Text3.Name = "SyBloodPressurePanelBed_Actual_Text3";
             this.SyBloodPressurePanelBed_Actual_Text3.Size = new System.Drawing.Size(87, 25);
             this.SyBloodPressurePanelBed_Actual_Text3.TabIndex = 1;
+            this.SyBloodPressurePanelBed_Actual_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel25.Controls.Add(this.SyBloodPressurePanelBed_Minimum_Text3);
             this.panel25.Location = new System.Drawing.Point(148, 75);
-            this.panel25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel25.Margin = new System.Windows.Forms.Padding(4);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(87, 31);
             this.panel25.TabIndex = 70;
@@ -3125,7 +3159,7 @@
             this.SyBloodPressurePanelBed_Minimum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SyBloodPressurePanelBed_Minimum_Text3.ForeColor = System.Drawing.Color.White;
             this.SyBloodPressurePanelBed_Minimum_Text3.Location = new System.Drawing.Point(0, 2);
-            this.SyBloodPressurePanelBed_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SyBloodPressurePanelBed_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.SyBloodPressurePanelBed_Minimum_Text3.Multiline = true;
             this.SyBloodPressurePanelBed_Minimum_Text3.Name = "SyBloodPressurePanelBed_Minimum_Text3";
             this.SyBloodPressurePanelBed_Minimum_Text3.Size = new System.Drawing.Size(87, 25);
@@ -3136,7 +3170,7 @@
             // 
             this.pictureBox2.Image = global::FinalProject.Properties.Resources.heart_PNG51337;
             this.pictureBox2.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(112, 108);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3156,9 +3190,9 @@
             this.BreathingRatePanelBed3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreathingRatePanelBed3.ForeColor = System.Drawing.Color.White;
             this.BreathingRatePanelBed3.Location = new System.Drawing.Point(7, 10);
-            this.BreathingRatePanelBed3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRatePanelBed3.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRatePanelBed3.Name = "BreathingRatePanelBed3";
-            this.BreathingRatePanelBed3.Size = new System.Drawing.Size(165, 27);
+            this.BreathingRatePanelBed3.Size = new System.Drawing.Size(170, 19);
             this.BreathingRatePanelBed3.TabIndex = 11;
             this.BreathingRatePanelBed3.Visible = false;
             // 
@@ -3197,7 +3231,7 @@
             this.panel6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel6.Controls.Add(this.BreathingRate_Maximum_Text3);
             this.panel6.Location = new System.Drawing.Point(343, 38);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(87, 49);
             this.panel6.TabIndex = 71;
@@ -3209,18 +3243,19 @@
             this.BreathingRate_Maximum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Maximum_Text3.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Maximum_Text3.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Maximum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Maximum_Text3.Multiline = true;
             this.BreathingRate_Maximum_Text3.Name = "BreathingRate_Maximum_Text3";
             this.BreathingRate_Maximum_Text3.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Maximum_Text3.TabIndex = 75;
+            this.BreathingRate_Maximum_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel7.Controls.Add(this.BreathingRate_Actual_Text3);
             this.panel7.Location = new System.Drawing.Point(245, 38);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(87, 49);
             this.panel7.TabIndex = 71;
@@ -3232,18 +3267,19 @@
             this.BreathingRate_Actual_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Actual_Text3.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Actual_Text3.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Actual_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Actual_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Actual_Text3.Multiline = true;
             this.BreathingRate_Actual_Text3.Name = "BreathingRate_Actual_Text3";
             this.BreathingRate_Actual_Text3.Size = new System.Drawing.Size(87, 25);
             this.BreathingRate_Actual_Text3.TabIndex = 1;
+            this.BreathingRate_Actual_Text3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel8.Controls.Add(this.BreathingRate_Minimum_Text3);
             this.panel8.Location = new System.Drawing.Point(148, 38);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(87, 49);
             this.panel8.TabIndex = 70;
@@ -3255,7 +3291,7 @@
             this.BreathingRate_Minimum_Text3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BreathingRate_Minimum_Text3.ForeColor = System.Drawing.Color.White;
             this.BreathingRate_Minimum_Text3.Location = new System.Drawing.Point(0, 12);
-            this.BreathingRate_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRate_Minimum_Text3.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRate_Minimum_Text3.Multiline = true;
             this.BreathingRate_Minimum_Text3.Name = "BreathingRate_Minimum_Text3";
             this.BreathingRate_Minimum_Text3.Size = new System.Drawing.Size(87, 25);
@@ -3266,7 +3302,7 @@
             // 
             this.BreathingRatePanelBed_Pic1.Image = global::FinalProject.Properties.Resources.Lungs;
             this.BreathingRatePanelBed_Pic1.Location = new System.Drawing.Point(4, 4);
-            this.BreathingRatePanelBed_Pic1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreathingRatePanelBed_Pic1.Margin = new System.Windows.Forms.Padding(4);
             this.BreathingRatePanelBed_Pic1.Name = "BreathingRatePanelBed_Pic1";
             this.BreathingRatePanelBed_Pic1.Size = new System.Drawing.Size(129, 108);
             this.BreathingRatePanelBed_Pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3280,7 +3316,7 @@
             this.BigInfoPanelBedSideView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BigInfoPanelBedSideView.ForeColor = System.Drawing.Color.White;
             this.BigInfoPanelBedSideView.Location = new System.Drawing.Point(332, 55);
-            this.BigInfoPanelBedSideView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BigInfoPanelBedSideView.Margin = new System.Windows.Forms.Padding(4);
             this.BigInfoPanelBedSideView.Name = "BigInfoPanelBedSideView";
             this.BigInfoPanelBedSideView.Size = new System.Drawing.Size(652, 194);
             this.BigInfoPanelBedSideView.TabIndex = 10;
@@ -3338,7 +3374,7 @@
             this.BedPicture.BackColor = System.Drawing.Color.Transparent;
             this.BedPicture.Image = global::FinalProject.Properties.Resources.aaa;
             this.BedPicture.Location = new System.Drawing.Point(16, 130);
-            this.BedPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BedPicture.Margin = new System.Windows.Forms.Padding(4);
             this.BedPicture.Name = "BedPicture";
             this.BedPicture.Size = new System.Drawing.Size(301, 118);
             this.BedPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3423,7 +3459,7 @@
             this.Controls.Add(this.BedPicture);
             this.Controls.Add(this.PanelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BedSideView1";
             this.Text = " ";
             this.PanelTop.ResumeLayout(false);
