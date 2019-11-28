@@ -8,9 +8,10 @@ namespace FinalProject
     {
         #region Variable 
         // Variables used for the Randoms
-        public static int syValue, diValue, prValue, brValue, tempValue;
+        //public static int syValue, diValue, prValue, brValue;
+        //public static double tempValue;
 
-        static Random randomizer = new Random();
+        public static Random randomizer = new Random();
 
         // User Variables
         public static int weight, age, height;
@@ -34,19 +35,18 @@ namespace FinalProject
         // Values Variables
         public static int diDiff, syDiff, prDiff, brDiff, tempDiff;
 
-        public bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
-        public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
+        public static bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
+        public static int diMinC, diMaxC, syMinC, syMaxC, prMinC, prMaxC, brMinC, brMaxC, tpMinC, tpMaxC;
         #endregion
         
         public SocketConfiguration()
         {
             
-
-            diDiff = diMax - diMin;      // BPDi = 30
-            syDiff = syMax - syMin;      // BPSy = 20
-            prDiff = prMax - prMin;      // PR = 30
-            brDiff = brMax - brMin;      // BR = 5
-            tempDiff = tpMax - tpMin;    // TP = 2
+            diDiff = diMaxC - diMinC;      // BPDi = 30
+            syDiff = syMaxC - syMinC;      // BPSy = 20
+            prDiff = prMaxC - prMinC;      // PR = 30
+            brDiff = brMaxC - brMinC;      // BR = 5
+            tempDiff = tpMaxC - tpMinC;    // TP = 2
 
             /* A randomizer is implemented generating a value from 0 to 100
              * so then we can randomize the values with percentage deciding
@@ -55,7 +55,7 @@ namespace FinalProject
             RandomNameGenerator();
             RandomGenUserValues();
 
-            #region Verifier
+            /*#region Verifier
 
             // Parameters Verification
             dMi = IsNumeric(Convert.ToString(diMin));
@@ -71,9 +71,7 @@ namespace FinalProject
             tMi = IsNumeric(Convert.ToString(tpMin));
             tMa = IsNumeric(Convert.ToString(tpMax));
 
-            // Check if the string has a numeric value
-
-            #endregion
+            #endregion*/
 
             #region String Verifier - Must be only numeric  -- Dinis & Jorge
             // Check if every textbox has input - Blood Pressure
@@ -107,108 +105,11 @@ namespace FinalProject
 
         }
 
-        bool IsNumeric(string var)
+        public static bool IsNumeric(string var)
         {
             int Result;
             return int.TryParse(var, out Result);
         }
-
-        /*public static void RandomGenModValues()
-        {
-            #region Blood Pressure * Systolic & Diastolic * -- Dinis & Jorge
-            // Random randomSyDi = new Random();  // Create a Randomizer for the Systolic and Diastolic Values
-            int randomizerSyDi = randomizer.Next(0, 100);
-
-            if (randomizerSyDi <= 5)
-            {
-                // Random syDiLowRandomizer = new Random();
-                syValue = randomizer.Next(syMin - 20, syMin - 1); // 70 - 89
-                diValue = randomizer.Next(diMin - 20, diMin - 1); // 40 - 59
-            }
-            else if ((randomizerSyDi > 5) && (randomizerSyDi < 95))
-            {
-                // Random syDiNormalRandomizer = new Random();
-                syValue = randomizer.Next(syMin, syMax); // 90 - 140
-                diValue = randomizer.Next(diMin, diMax); // 60 - 90
-            }
-            else if (randomizerSyDi >= 95)
-            {
-                // Random syDiHighRandomizer = new Random();
-                syValue = randomizer.Next(syMax + 1, syMax + 20); // 141 - 160
-                diValue = randomizer.Next(diMin + 1, diMax + 20); // 91 - 110
-            }
-            #endregion
-
-            #region Pulse Rate * bpm * -- Dinis & Jorge
-
-            // Random randomPR = new Random();
-            int randomizerPR = randomizer.Next(0, 100);
-
-            if (randomizerPR <= 5)
-            {
-                // Random prLowRandomizer = new Random();
-                prValue = randomizer.Next(30, 49);
-            }
-            else if ((randomizerPR > 5) && (randomizerPR < 95))
-            {
-                // Random hrNormalRandomizer = new Random();
-                prValue = randomizer.Next(50, 75);
-            }
-            else if (randomizerPR > 95)
-            {
-                // Random hrHighRandomizer = new Random();
-                prValue = randomizer.Next(76, 95);
-            }
-            #endregion
-
-            #region Breathing Rate * Breaths Per Minute * -- Dinis & Jorge
-
-            // Random randomBR = new Random();
-            int randomizerBR = randomizer.Next(0, 100);
-
-            if (randomizerBR <= 5)
-            {
-                // Random brLowRandomizer = new Random();
-                brValue = randomizer.Next(2, 6);
-            }
-            else if ((randomizerBR > 5) && (randomizerBR < 95))
-            {
-                // Random brNormalRandomizer = new Random();
-                brValue = randomizer.Next(7, 45);
-            }
-            else if (randomizerBR >= 95)
-            {
-                // Random brHighRandomizer = new Random();
-                brValue = randomizer.Next(46, 100);
-            }
-            #endregion
-
-            #region Temperature * °C * -- Dinis & Jorge
-
-            // Random randomTemp = new Random();
-            int randomizerTemp = randomizer.Next(0, 100);
-
-            if (randomizerTemp <= 25)
-            {
-                // Random tempLowRandomizer = new Random();
-                tempValue = randomizer.Next(350, 364);
-                tempValue /= 10;
-            }
-            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
-            {
-                // Random tempNormalRandomizer = new Random();
-                tempValue = randomizer.Next(365, 375);
-                tempValue /= 10;
-            }
-            else if (randomizerTemp >= 75)
-            {
-                // Random tempHighRandomizer = new Random();
-                tempValue = randomizer.Next(376, 410);
-                tempValue /= 10;
-            }
-            #endregion
-
-        }*/
 
         public static void RandomGenUserValues()
         {
@@ -227,119 +128,158 @@ namespace FinalProject
         }
 
 
-        // Variables for the Randomizers below
-        public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
+        //// Variables for the Randomizers below
+        //public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
 
-        public static string SystolicValueRandom() // Returns syValue
-        {
-            randomizerSy = randomizer.Next(0, 100);
+        //public static string SystolicValueRandom() // Returns syValue
+        //{
+        //    randomizerSy = randomizer.Next(0, 100);
 
-            if (randomizerSy <= 5)
-            {
-                syValue = randomizer.Next(syMin - 20, syMin - 1);
-            }
-            else if ((randomizerSy > 5) && (randomizerSy < 95))
-            {
-                syValue = randomizer.Next(syMin, syMax);
-            }
-            else if (randomizerSy >= 95)
-            {
-                syValue = randomizer.Next(syMax + 1, syMax + 20);
-            }
+        //    if (randomizerSy <= 5)
+        //    {
+        //        syValue = randomizer.Next(syMin - 20, syMin - 1);
+        //    }
+        //    else if ((randomizerSy > 5) && (randomizerSy < 95))
+        //    {
+        //        syValue = randomizer.Next(syMin, syMax);
+        //    }
+        //    else if (randomizerSy >= 95)
+        //    {
+        //        syValue = randomizer.Next(syMax + 1, syMax + 20);
+        //    }
 
-            return syValue.ToString();
-        }
+        //    return syValue.ToString();
+        //}
 
-        public static string DiastolicValueRandom() // Returns diValue
-        {
-            randomizerDi = randomizer.Next(0, 100);
+        //public static string DiastolicValueRandom() // Returns diValue
+        //{
+        //    randomizerDi = randomizer.Next(0, 100);
 
-            if (randomizerDi <= 5)
-            {
-                diValue = randomizer.Next(diMin - 20, diMin - 1);
-            }
-            else if ((randomizerDi > 5) && (randomizerDi < 95))
-            {
-                diValue = randomizer.Next(diMin, diMax);
-            }
-            else if (randomizerDi >= 95)
-            {
-                diValue = randomizer.Next(diMin + 1, diMax + 20);
-            }
+        //    if (randomizerDi <= 5)
+        //    {
+        //        diValue = randomizer.Next(diMin - 20, diMin - 1);
+        //    }
+        //    else if ((randomizerDi > 5) && (randomizerDi < 95))
+        //    {
+        //        diValue = randomizer.Next(diMin, diMax);
+        //    }
+        //    else if (randomizerDi >= 95)
+        //    {
+        //        diValue = randomizer.Next(diMin + 1, diMax + 20);
+        //    }
 
-            return diValue.ToString();
-        }
+        //    return diValue.ToString();
+        //}
 
-        public static string PulseValueRandom()
-        {
-            randomizerPR = randomizer.Next(0, 100);
+        //public static string PulseValueRandom()
+        //{
+        //    randomizerPR = randomizer.Next(0, 100);
 
-            if (randomizerPR <= 5)
-            {
-                prValue = randomizer.Next(prMin - 20, prMin - 1);
-            }
-            else if ((randomizerPR > 5) && (randomizerPR < 95))
-            {
-                prValue = randomizer.Next(prMin, prMax);
-            }
-            else if (randomizerPR >= 95)
-            {
-                prValue = randomizer.Next(prMax + 1, prMax + 20);
-            }
+        //    if (randomizerPR <= 5)
+        //    {
+        //        prValue = randomizer.Next(prMin - 20, prMin - 1);
+        //    }
+        //    else if ((randomizerPR > 5) && (randomizerPR < 95))
+        //    {
+        //        prValue = randomizer.Next(prMin, prMax);
+        //    }
+        //    else if (randomizerPR >= 95)
+        //    {
+        //        prValue = randomizer.Next(prMax + 1, prMax + 20);
+        //    }
 
-            return prValue.ToString();
-        } // Returns prValue
+        //    return prValue.ToString();
+        //} // Returns prValue
 
-        public static string BreathingValueRandom()
-        {
-            randomizerBR = randomizer.Next(0, 100);
+        //public static string BreathingValueRandom()
+        //{
+        //    randomizerBR = randomizer.Next(0, 100);
 
-            if (randomizerBR <= 5)
-            {
-                brValue = randomizer.Next(brMin - 5, brMin - 1);
-            }
-            else if ((randomizerBR > 5) && (randomizerBR < 95))
-            {
-                brValue = randomizer.Next(brMin, brMax);
-            }
-            else if (randomizerBR >= 95)
-            {
-                brValue = randomizer.Next(brMax + 1, brMax + 50);
-            }
+        //    if (randomizerBR <= 5)
+        //    {
+        //        brValue = randomizer.Next(brMin - 5, brMin - 1);
+        //    }
+        //    else if ((randomizerBR > 5) && (randomizerBR < 95))
+        //    {
+        //        brValue = randomizer.Next(brMin, brMax);
+        //    }
+        //    else if (randomizerBR >= 95)
+        //    {
+        //        brValue = randomizer.Next(brMax + 1, brMax + 50);
+        //    }
 
-            return brValue.ToString();
-        } // Returns brValue
+        //    return brValue.ToString();
+        //} // Returns brValue
 
-        public static string TemperatureValueRandom()
-        {
-            randomizerTemp = randomizer.Next(0, 100);
+        //public static string TemperatureValueRandom()
+        //{
+        //    randomizerTemp = randomizer.Next(0, 100);
 
-            if (randomizerTemp <= 25)
-            {
-                tempValue = randomizer.Next(tpMin - 25, tpMin - 1);
-                tempValue /= 10;
-            }
-            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
-            {
-                tempValue = randomizer.Next(tpMin, tpMax);
-                tempValue /= 10;
-            }
-            else if (randomizerTemp >= 75)
-            {
-                tempValue = randomizer.Next(tpMax + 1, tpMax + 45);
-                tempValue /= 10;
-            }
+        //    if (randomizerTemp <= 25)
+        //    {
+        //        tempValue = randomizer.Next(tpMin - 25, tpMin - 1);
+        //        tempValue /= 10;
+        //    }
+        //    else if ((randomizerTemp > 25) && (randomizerTemp < 75))
+        //    {
+        //        tempValue = randomizer.Next(tpMin, tpMax);
+        //        tempValue /= 10;
+        //    }
+        //    else if (randomizerTemp >= 75)
+        //    {
+        //        tempValue = randomizer.Next(tpMax + 1, tpMax + 45);
+        //        tempValue /= 10;
+        //    }
 
-            return tempValue.ToString();
-        } // Returns tempValue
+        //    return tempValue.ToString();
+        //} // Returns tempValue
 
         public static void StartRandom(object sender, EventArgs e)
         {
-            SystolicValueRandom();
-            DiastolicValueRandom();
-            PulseValueRandom();
-            BreathingValueRandom();
-            TemperatureValueRandom();
+            BedSideView1.SystolicValueRandom();
+            BedSideView2.SystolicValueRandom();
+            BedSideView3.SystolicValueRandom();
+            BedSideView4.SystolicValueRandom();
+            BedSideView5.SystolicValueRandom();
+            BedSideView6.SystolicValueRandom();
+            BedSideView7.SystolicValueRandom();
+            BedSideView8.SystolicValueRandom();
+
+            BedSideView1.DiastolicValueRandom();
+            BedSideView2.DiastolicValueRandom();
+            BedSideView3.DiastolicValueRandom();
+            BedSideView4.DiastolicValueRandom();
+            BedSideView5.DiastolicValueRandom();
+            BedSideView6.DiastolicValueRandom();
+            BedSideView7.DiastolicValueRandom();
+            BedSideView8.DiastolicValueRandom();
+
+            BedSideView1.PulseValueRandom();
+            BedSideView2.PulseValueRandom();
+            BedSideView3.PulseValueRandom();
+            BedSideView4.PulseValueRandom();
+            BedSideView5.PulseValueRandom();
+            BedSideView6.PulseValueRandom();
+            BedSideView7.PulseValueRandom();
+            BedSideView8.PulseValueRandom();
+
+            BedSideView1.BreathingValueRandom();
+            BedSideView2.BreathingValueRandom();
+            BedSideView3.BreathingValueRandom();
+            BedSideView4.BreathingValueRandom();
+            BedSideView5.BreathingValueRandom();
+            BedSideView6.BreathingValueRandom();
+            BedSideView7.BreathingValueRandom();
+            BedSideView8.BreathingValueRandom();
+
+            BedSideView1.TemperatureValueRandom();
+            BedSideView2.TemperatureValueRandom();
+            BedSideView3.TemperatureValueRandom();
+            BedSideView4.TemperatureValueRandom();
+            BedSideView5.TemperatureValueRandom();
+            BedSideView6.TemperatureValueRandom();
+            BedSideView7.TemperatureValueRandom();
+            BedSideView8.TemperatureValueRandom();
         }
     }
 }

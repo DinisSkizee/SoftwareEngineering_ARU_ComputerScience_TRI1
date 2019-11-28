@@ -6,13 +6,12 @@ namespace FinalProject
 {
     public partial class SocketSelection : Form
     {
-
         // Variables
         string bedActive;
 
-
         public SocketSelection()
         {
+
             InitializeComponent();
 
             HideAllSokets();
@@ -20,7 +19,6 @@ namespace FinalProject
             AddNamesToSoketComboBox();
 
             SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
-
 
         }
 
@@ -236,17 +234,15 @@ namespace FinalProject
 
         #endregion
 
-        #region Main Bottum Return Dinis & Jorge
+        #region Main Button Return Dinis & Jorge
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
         {
-
             BedSideView1 bedSideView1 = new BedSideView1();
             bedSideView1.Show();
             bedSideView1.Location = this.Location;
             this.Hide();
-
         }
         #endregion
 
@@ -329,13 +325,12 @@ namespace FinalProject
 
         private void HideAllSokets()
         {
-
             BreathingRatePanel.Visible = false;
             PulseRatePanel.Visible = false;
             BloodPressurePanel.Visible = false;
             TemperaturePanel.Visible = false;
-
         }
+
         public void AddNamesToSoketComboBox()
         {
             DefaultPanel_SocketComboBox.Items.Add("Blood Pressure");
@@ -344,38 +339,285 @@ namespace FinalProject
             DefaultPanel_SocketComboBox.Items.Add("Temperature");
         }
 
-
-
-
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
-            
-
-            #region Geting Variables From TextBox
-            // Blood Pressure Secondary Variables Integer
-            int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin);
-            int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax);
-            int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin);
-            int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax);
-
-            // Pulse Rate Secondary Variables Integer
-            int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin);
-            int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax);
-
-            // Breathing Rate Secondary Variables Integer
-            int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin);
-            int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax);
-
-            // Temperature Secondary Variables Integer
-            int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin);
-            int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax);
-            #endregion
-
             bedActive = BedLabel.Text;
 
+            // Blood Pressure Secondary Variables Integer
+            int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMinC);
+            int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMaxC);
+            int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMinC);
+            int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMaxC);
+            // Pulse Rate Secondary Variables Integer
+            int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMinC);
+            int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMaxC);
+            // Breathing Rate Secondary Variables Integer
+            int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMinC);
+            int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMaxC);
+            // Temperature Secondary Variables Integer
+            int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMinC);
+            int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMaxC);
+
+            if (bedActive == "Bed 1")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView1.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView1.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView1.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView1.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView1.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView1.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView1.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView1.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView1.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView1.tpMax);
+                }
+            }
+            if (bedActive == "Bed 2")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView2.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView2.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView2.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView2.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView2.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView2.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView2.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView2.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView2.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView2.tpMax);
+                }
+            }
+            if (bedActive == "Bed 3")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView3.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView3.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView3.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView3.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView3.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView3.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView3.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView3.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView3.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView3.tpMax);
+                }
+            }
+            if (bedActive == "Bed 4")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView4.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView4.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView4.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView4.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView4.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView4.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView4.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView4.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView4.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView4.tpMax);
+                }
+            }
+            if (bedActive == "Bed 5")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView5.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView5.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView5.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView5.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView5.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView5.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView5.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView5.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView5.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView5.tpMax);
+                }
+            }
+            if (bedActive == "Bed 6")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView6.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView6.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView6.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView6.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView6.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView6.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView6.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView6.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView6.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView6.tpMax);
+                }
+            }
+            if (bedActive == "Bed 7")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView7.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView7.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView7.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView7.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView7.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView7.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView7.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView7.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView7.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView7.tpMax);
+                }
+            }
+            if (bedActive == "Bed 8")
+            {
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
+                {
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView8.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView8.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView8.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView8.syMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
+                {
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView8.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView8.prMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
+                {
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView8.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView8.brMax);
+                }
+
+                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
+                {
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView8.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView8.tpMax);
+                }
+            }
+
             SocketConfiguration socket = new SocketConfiguration();
-    
+
             #region Button Configuration
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
@@ -423,21 +665,25 @@ namespace FinalProject
                     {
                         BedSideView2.bloodInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+                        BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
                         BedSideView2.bloodInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+                        BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView2.bloodInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+                        BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView2.bloodInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+                        BedSideView2.insertClicked4 = 0;
                     }
 
                     BedSideView2 bed2 = new BedSideView2();
@@ -452,21 +698,25 @@ namespace FinalProject
                     {
                         BedSideView3.bloodInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+                        BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
                         BedSideView3.bloodInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+                        BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView3.bloodInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+                        BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView3.bloodInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+                        BedSideView3.insertClicked4 = 0;
                     }
 
                     BedSideView3 bed3 = new BedSideView3();
@@ -481,21 +731,25 @@ namespace FinalProject
                     {
                         BedSideView4.bloodInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+                        BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
                         BedSideView4.bloodInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+                        BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
                         BedSideView4.bloodInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+                        BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
                         BedSideView4.bloodInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+                        BedSideView4.insertClicked4 = 0;
                     }
 
                     BedSideView4 bed4 = new BedSideView4();
@@ -510,21 +764,25 @@ namespace FinalProject
                     {
                         BedSideView5.bloodInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+                        BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
                         BedSideView5.bloodInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+                        BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
                         BedSideView5.bloodInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+                        BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
                         BedSideView5.bloodInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+                        BedSideView5.insertClicked4 = 0;
                     }
 
                     BedSideView5 bed5 = new BedSideView5();
@@ -539,21 +797,25 @@ namespace FinalProject
                     {
                         BedSideView6.bloodInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+                        BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
                         BedSideView6.bloodInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+                        BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
                         BedSideView6.bloodInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+                        BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
                         BedSideView6.bloodInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+                        BedSideView6.insertClicked4 = 0;
                     }
 
                     BedSideView6 bed6 = new BedSideView6();
@@ -568,21 +830,25 @@ namespace FinalProject
                     {
                         BedSideView7.bloodInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+                        BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
                         BedSideView7.bloodInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+                        BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
                         BedSideView7.bloodInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+                        BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView7.bloodInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+                        BedSideView7.insertClicked4 = 0;
                     }
 
                     BedSideView7 bed7 = new BedSideView7();
@@ -597,21 +863,25 @@ namespace FinalProject
                     {
                         BedSideView8.bloodInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+                        BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
                         BedSideView8.bloodInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+                        BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
                         BedSideView8.bloodInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+                        BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
                         BedSideView8.bloodInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+                        BedSideView8.insertClicked4 = 0;
                     }
 
                     BedSideView8 bed8 = new BedSideView8();
@@ -630,21 +900,25 @@ namespace FinalProject
                     {
                         BedSideView1.pulseInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+                        BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
                         BedSideView1.pulseInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+                        BedSideView1.insertClicked2 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
                         BedSideView1.pulseInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+                        BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
                         BedSideView1.pulseInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+                        BedSideView1.insertClicked4 = 0;
                     }
 
                     BedSideView1 bed1 = new BedSideView1();
@@ -659,21 +933,25 @@ namespace FinalProject
                     {
                         BedSideView2.pulseInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+                        BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
                         BedSideView2.pulseInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+                        BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView2.pulseInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+                        BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView2.pulseInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+                        BedSideView2.insertClicked4 = 0;
                     }
 
                     BedSideView2 bed2 = new BedSideView2();
@@ -688,21 +966,25 @@ namespace FinalProject
                     {
                         BedSideView3.pulseInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+                        BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
                         BedSideView3.pulseInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+                        BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView3.pulseInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+                        BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView3.pulseInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+                        BedSideView3.insertClicked4 = 0;
                     }
 
                     BedSideView3 bed3 = new BedSideView3();
@@ -717,21 +999,25 @@ namespace FinalProject
                     {
                         BedSideView4.pulseInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+                        BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
                         BedSideView4.pulseInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+                        BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
                         BedSideView4.pulseInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+                        BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
                         BedSideView4.pulseInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+                        BedSideView4.insertClicked4 = 0;
                     }
 
                     BedSideView4 bed4 = new BedSideView4();
@@ -746,21 +1032,25 @@ namespace FinalProject
                     {
                         BedSideView5.pulseInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+                        BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
                         BedSideView5.pulseInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+                        BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
                         BedSideView5.pulseInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+                        BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
                         BedSideView5.pulseInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+                        BedSideView5.insertClicked4 = 0;
                     }
 
                     BedSideView5 bed5 = new BedSideView5();
@@ -775,21 +1065,25 @@ namespace FinalProject
                     {
                         BedSideView6.pulseInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+                        BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
                         BedSideView6.pulseInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+                        BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
                         BedSideView6.pulseInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+                        BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
                         BedSideView6.pulseInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+                        BedSideView6.insertClicked4 = 0;
                     }
 
                     BedSideView6 bed6 = new BedSideView6();
@@ -804,21 +1098,25 @@ namespace FinalProject
                     {
                         BedSideView7.pulseInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+                        BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
                         BedSideView7.pulseInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+                        BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
                         BedSideView7.pulseInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+                        BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView7.pulseInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+                        BedSideView7.insertClicked4 = 0;
                     }
 
                     BedSideView7 bed7 = new BedSideView7();
@@ -833,21 +1131,25 @@ namespace FinalProject
                     {
                         BedSideView8.pulseInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+                        BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
                         BedSideView8.pulseInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+                        BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
                         BedSideView8.pulseInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+                        BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
                         BedSideView8.pulseInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+                        BedSideView8.insertClicked4 = 0;
                     }
 
                     BedSideView8 bed8 = new BedSideView8();
@@ -865,21 +1167,25 @@ namespace FinalProject
                     {
                         BedSideView1.breathingInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+                        BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
                         BedSideView1.breathingInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+                        BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
                         BedSideView1.breathingInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+                        BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
                         BedSideView1.breathingInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+                        BedSideView1.insertClicked4 = 0;
                     }
 
                     BedSideView1 bed1 = new BedSideView1();
@@ -894,21 +1200,25 @@ namespace FinalProject
                     {
                         BedSideView2.breathingInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+                        BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
                         BedSideView2.breathingInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+                        BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView2.insertClicked3 == 1)
                     {
                         BedSideView2.breathingInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+                        BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView2.insertClicked4 == 1)
                     {
                         BedSideView2.breathingInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+                        BedSideView2.insertClicked4 = 0;
                     }
 
                     BedSideView2 bed2 = new BedSideView2();
@@ -923,21 +1233,25 @@ namespace FinalProject
                     {
                         BedSideView3.breathingInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+                        BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
                         BedSideView3.breathingInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+                        BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView3.breathingInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+                        BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView3.breathingInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+                        BedSideView3.insertClicked4 = 0;
                     }
 
                     BedSideView3 bed3 = new BedSideView3();
@@ -952,21 +1266,25 @@ namespace FinalProject
                     {
                         BedSideView4.breathingInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+                        BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
                         BedSideView4.breathingInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+                        BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
                         BedSideView4.breathingInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+                        BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
                         BedSideView4.breathingInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+                        BedSideView4.insertClicked4 = 0;
                     }
 
                     BedSideView4 bed4 = new BedSideView4();
@@ -981,21 +1299,25 @@ namespace FinalProject
                     {
                         BedSideView5.breathingInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+                        BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
                         BedSideView5.breathingInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+                        BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
                         BedSideView5.breathingInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+                        BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
                         BedSideView5.breathingInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+                        BedSideView5.insertClicked4 = 0;
                     }
 
                     BedSideView5 bed5 = new BedSideView5();
@@ -1010,21 +1332,25 @@ namespace FinalProject
                     {
                         BedSideView6.breathingInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+                        BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
                         BedSideView6.breathingInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+                        BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
                         BedSideView6.breathingInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+                        BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
                         BedSideView6.breathingInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+                        BedSideView6.insertClicked4 = 0;
                     }
 
                     BedSideView6 bed6 = new BedSideView6();
@@ -1039,21 +1365,25 @@ namespace FinalProject
                     {
                         BedSideView7.breathingInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+                        BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
                         BedSideView7.breathingInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+                        BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
                         BedSideView7.breathingInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+                        BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView7.breathingInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+                        BedSideView7.insertClicked4 = 0;
                     }
 
                     BedSideView7 bed7 = new BedSideView7();
@@ -1068,21 +1398,25 @@ namespace FinalProject
                     {
                         BedSideView8.breathingInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+                        BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
                         BedSideView8.breathingInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+                        BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
                         BedSideView8.breathingInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+                        BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
                         BedSideView8.breathingInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+                        BedSideView8.insertClicked4 = 0;
                     }
 
                     BedSideView8 bed8 = new BedSideView8();
@@ -1100,21 +1434,25 @@ namespace FinalProject
                     {
                         BedSideView1.tempInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+                        BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
                         BedSideView1.tempInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+                        BedSideView1.insertClicked2 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
                         BedSideView1.tempInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+                        BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
                         BedSideView1.tempInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+                        BedSideView1.insertClicked4 = 0;
                     }
 
                     BedSideView1 bed1 = new BedSideView1();
@@ -1129,21 +1467,25 @@ namespace FinalProject
                     {
                         BedSideView2.tempInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+                        BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
                         BedSideView2.tempInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+                        BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView2.tempInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+                        BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView2.tempInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+                        BedSideView2.insertClicked4 = 0;
                     }
 
                     BedSideView2 bed2 = new BedSideView2();
@@ -1158,21 +1500,25 @@ namespace FinalProject
                     {
                         BedSideView3.tempInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+                        BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
                         BedSideView3.tempInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+                        BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
                         BedSideView3.tempInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+                        BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView3.tempInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+                        BedSideView3.insertClicked4 = 0;
                     }
 
                     BedSideView3 bed3 = new BedSideView3();
@@ -1187,21 +1533,25 @@ namespace FinalProject
                     {
                         BedSideView4.tempInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+                        BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
                         BedSideView4.tempInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+                        BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
                         BedSideView4.tempInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+                        BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
                         BedSideView4.tempInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+                        BedSideView4.insertClicked4 = 0;
                     }
 
                     BedSideView4 bed4 = new BedSideView4();
@@ -1216,21 +1566,25 @@ namespace FinalProject
                     {
                         BedSideView5.tempInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+                        BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
                         BedSideView5.tempInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+                        BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
                         BedSideView5.tempInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+                        BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
                         BedSideView5.tempInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+                        BedSideView5.insertClicked4 = 0;
                     }
 
                     BedSideView5 bed5 = new BedSideView5();
@@ -1245,21 +1599,25 @@ namespace FinalProject
                     {
                         BedSideView6.tempInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+                        BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
                         BedSideView6.tempInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+                        BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
                         BedSideView6.tempInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+                        BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
                         BedSideView6.tempInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+                        BedSideView6.insertClicked4 = 0;
                     }
 
                     BedSideView6 bed6 = new BedSideView6();
@@ -1274,21 +1632,25 @@ namespace FinalProject
                     {
                         BedSideView7.tempInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+                        BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
                         BedSideView7.tempInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+                        BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
                         BedSideView7.tempInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+                        BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
                         BedSideView7.tempInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+                        BedSideView7.insertClicked4 = 0;
                     }
 
                     BedSideView7 bed7 = new BedSideView7();
@@ -1303,21 +1665,25 @@ namespace FinalProject
                     {
                         BedSideView8.tempInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+                        BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
                         BedSideView8.tempInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+                        BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
                         BedSideView8.tempInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+                        BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
                         BedSideView8.tempInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+                        BedSideView8.insertClicked4 = 0;
                     }
 
                     BedSideView8 bed8 = new BedSideView8();
