@@ -3247,6 +3247,8 @@
             // 
             // MainPageButton
             // 
+            
+            
             this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
             this.MainPageButton.Location = new System.Drawing.Point(9, 9);
             this.MainPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

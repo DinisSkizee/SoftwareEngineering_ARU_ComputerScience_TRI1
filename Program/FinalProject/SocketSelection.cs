@@ -375,10 +375,7 @@ namespace FinalProject
             bedActive = BedLabel.Text;
 
             SocketConfiguration socket = new SocketConfiguration();
-
-
-            SocketConfiguration.StartRandom();
-
+    
             #region Button Configuration
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
