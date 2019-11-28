@@ -10,7 +10,7 @@ namespace FinalProject
             Timer timer = new Timer();
             timer = new Timer();
             timer.Tick += SocketConfiguration.StartRandom;
-            timer.Tick += BedSideView1.singleton.UpdateTextBox;
+            timer.Tick += BedSideView1.bed1singleton.UpdateTextBox;
             timer.Interval = 1500;
             timer.Start();
         }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -6,36 +8,49 @@ namespace FinalProject
 {
     public partial class BedSideView1 : Form
     {
+        // Actual Values List
+        List<TextBox> _sy = new List<TextBox>();
+        List<TextBox> _di = new List<TextBox>();
+        List<TextBox> _pr = new List<TextBox>();
+        List<TextBox> _br = new List<TextBox>();
+        List<TextBox> _tp = new List<TextBox>();
 
-        public static BedSideView1 singleton;
+
+
+        // Minimum & Maximum Values List
+        List<string> _syMin = new List<string>();
+        List<string> _syMax = new List<string>();
+        List<string> _diMin = new List<string>();
+        List<string> _diMax = new List<string>();
+        List<string> _prMin = new List<string>();
+        List<string> _prMax = new List<string>();
+        List<string> _brMin = new List<string>();
+        List<string> _brMax = new List<string>();
+        List<string> _tpMin = new List<string>();
+        List<string> _tpMax = new List<string>();
+
+
+        public static BedSideView1 bed1singleton;
 
         public BedSideView1()
         {
+            bed1singleton = this;
             InitializeComponent();
 
-            singleton = this;
             new BedSideViewConfiguration();
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed1.Dock == DockStyle.Fill) || (PulseRatePanelBed1.Dock == DockStyle.Fill)) { moduleState1 = 1; }
-            else if ((BreathingRatePanelBed1.Dock == DockStyle.None) && (BloodPressurePanelBed1.Dock == DockStyle.None) &&
-                (TemperaturePanelBed1.Dock == DockStyle.None) && (PulseRatePanelBed1.Dock == DockStyle.None)) { moduleState1 = 0; }
 
             if ((BreathingRatePanelBed2.Dock == DockStyle.Fill) || (BloodPressurePanelBed2.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed2.Dock == DockStyle.Fill) || (PulseRatePanelBed2.Dock == DockStyle.Fill)) { moduleState2 = 1; }
-            else if ((BreathingRatePanelBed2.Dock == DockStyle.None) || (BloodPressurePanelBed2.Dock == DockStyle.None) ||
-                (TemperaturePanelBed2.Dock == DockStyle.None) || (PulseRatePanelBed2.Dock == DockStyle.None)) { moduleState2 = 0; }
 
             if ((BreathingRatePanelBed3.Dock == DockStyle.Fill) || (BloodPressurePanelBed3.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed3.Dock == DockStyle.Fill) || (PulseRatePanelBed3.Dock == DockStyle.Fill)) { moduleState3 = 1; }
-            else if ((BreathingRatePanelBed3.Dock == DockStyle.None) || (BloodPressurePanelBed3.Dock == DockStyle.None) ||
-                (TemperaturePanelBed3.Dock == DockStyle.None) || (PulseRatePanelBed3.Dock == DockStyle.None)) { moduleState3 = 0; }
 
             if ((BreathingRatePanelBed4.Dock == DockStyle.Fill) || (BloodPressurePanelBed4.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed4.Dock == DockStyle.Fill) || (PulseRatePanelBed4.Dock == DockStyle.Fill)) { moduleState4 = 1; }
-            else if ((BreathingRatePanelBed4.Dock == DockStyle.None) || (BloodPressurePanelBed4.Dock == DockStyle.None) ||
-                (TemperaturePanelBed4.Dock == DockStyle.None) || (PulseRatePanelBed4.Dock == DockStyle.None)) { moduleState4 = 0; }
             #endregion
 
             #region BloodInsert IF Statements
@@ -44,28 +59,24 @@ namespace FinalProject
                 BloodPressurePanelBed1.Dock = DockStyle.Fill;
                 BloodPressurePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
-
             }
             else if (bloodInsert2 == 1)
             {
                 BloodPressurePanelBed2.Dock = DockStyle.Fill;
                 BloodPressurePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
-                bloodInsert2 = 0;
             }
             else if (bloodInsert3 == 1)
             {
                 BloodPressurePanelBed3.Dock = DockStyle.Fill;
                 BloodPressurePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
-                bloodInsert3 = 0;
             }
             else if (bloodInsert4 == 1)
             {
                 BloodPressurePanelBed4.Dock = DockStyle.Fill;
                 BloodPressurePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
-                bloodInsert4 = 0;
             }
             #endregion
 
@@ -75,28 +86,24 @@ namespace FinalProject
                 BreathingRatePanelBed1.Dock = DockStyle.Fill;
                 BreathingRatePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
-                breathingInsert1 = 0;
             }
             else if (breathingInsert2 == 1)
             {
                 BreathingRatePanelBed2.Dock = DockStyle.Fill;
                 BreathingRatePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
-                breathingInsert2 = 0;
             }
             else if (breathingInsert3 == 1)
             {
                 BreathingRatePanelBed3.Dock = DockStyle.Fill;
                 BreathingRatePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
-                breathingInsert3 = 0;
             }
             else if (breathingInsert4 == 1)
             {
                 BreathingRatePanelBed4.Dock = DockStyle.Fill;
                 BreathingRatePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
-                breathingInsert4 = 0;
             }
             #endregion
 
@@ -106,28 +113,24 @@ namespace FinalProject
                 PulseRatePanelBed1.Dock = DockStyle.Fill;
                 PulseRatePanelBed1.Visible = true;
                 InsertASocket1.Visible = false;
-                pulseInsert1 = 0;
             }
             else if (pulseInsert2 == 1)
             {
                 PulseRatePanelBed2.Dock = DockStyle.Fill;
                 PulseRatePanelBed2.Visible = true;
                 InsertASocket2.Visible = false;
-                pulseInsert2 = 0;
             }
             else if (pulseInsert3 == 1)
             {
                 PulseRatePanelBed3.Dock = DockStyle.Fill;
                 PulseRatePanelBed3.Visible = true;
                 InsertASocket3.Visible = false;
-                pulseInsert3 = 0;
             }
             else if (pulseInsert4 == 1)
             {
                 PulseRatePanelBed4.Dock = DockStyle.Fill;
                 PulseRatePanelBed4.Visible = true;
                 InsertASocket4.Visible = false;
-                pulseInsert4 = 0;
             }
             #endregion
 
@@ -162,14 +165,64 @@ namespace FinalProject
             }
             #endregion
 
-            #region TextBox Text Assignment
+            #region TextBox Text Assignment (Min & Max)
 
-            #region BloodPressure 1 Panel
-            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
-            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
-
+            #region Blood Pressure
             SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin.ToString();
+            SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin.ToString();
+
             SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax.ToString();
+            SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax.ToString();
+
+            DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin.ToString();
+            DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin.ToString();
+
+            DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax.ToString();
+            DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax.ToString();
+            #endregion
+
+            #region Breathing Rate
+            BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin.ToString();
+            BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin.ToString();
+            BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin.ToString();
+            BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin.ToString();
+
+            BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax.ToString();
+            BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax.ToString();
+            BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax.ToString();
+            BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax.ToString();
+            #endregion
+
+            #region Pulse Rate
+            PulseRate_Minimum_Text.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin.ToString();
+
+            PulseRate_Minimum_Text.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMax.ToString();
+            #endregion
+
+            #region Temperature
+            Temperature_Minimum_Text.Text = SocketConfiguration.tpMin.ToString();
+            Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin.ToString();
+            Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin.ToString();
+            Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin.ToString();
+
+            Temperature_Maximum_Text.Text = SocketConfiguration.tpMax.ToString();
+            Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax.ToString();
+            Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax.ToString();
+            Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax.ToString();
             #endregion
 
             #endregion
@@ -204,22 +257,18 @@ namespace FinalProject
             {
                 bloodInsert1 = 1;
             }
-            else { bloodInsert1 = 0; }
             if (BloodPressurePanelBed2.Dock == DockStyle.Fill)
             {
                 bloodInsert2 = 1;
             }
-            else { bloodInsert2 = 0; }
             if (BloodPressurePanelBed3.Dock == DockStyle.Fill)
             {
                 bloodInsert3 = 1;
             }
-            else { bloodInsert3 = 0; }
             if (BloodPressurePanelBed4.Dock == DockStyle.Fill)
             {
                 bloodInsert4 = 1;
             }
-            else { bloodInsert4 = 0; }
             #endregion
 
             #region Pulse Rate
@@ -227,22 +276,18 @@ namespace FinalProject
             {
                 pulseInsert1 = 1;
             }
-            else { pulseInsert1 = 0; }
             if (PulseRatePanelBed2.Dock == DockStyle.Fill)
             {
                 pulseInsert2 = 1;
             }
-            else { pulseInsert2 = 0; }
             if (PulseRatePanelBed3.Dock == DockStyle.Fill)
             {
                 pulseInsert3 = 1;
             }
-            else { pulseInsert3 = 0; }
             if (PulseRatePanelBed4.Dock == DockStyle.Fill)
             {
                 pulseInsert4 = 1;
             }
-            else { pulseInsert4 = 0; }
             #endregion
 
             #region Breathing Rate
@@ -250,22 +295,18 @@ namespace FinalProject
             {
                 breathingInsert1 = 1;
             }
-            else { breathingInsert1 = 0; }
             if (BreathingRatePanelBed2.Dock == DockStyle.Fill)
             {
                 breathingInsert2 = 1;
             }
-            else { breathingInsert2 = 0; }
             if (BreathingRatePanelBed3.Dock == DockStyle.Fill)
             {
                 breathingInsert3 = 1;
             }
-            else { breathingInsert3 = 0; }
             if (BreathingRatePanelBed4.Dock == DockStyle.Fill)
             {
                 breathingInsert4 = 1;
             }
-            else { breathingInsert4 = 0; }
             #endregion
 
             #region Temperature
@@ -273,28 +314,23 @@ namespace FinalProject
             {
                 tempInsert1 = 1;
             }
-            else { tempInsert1 = 0; }
             if (TemperaturePanelBed2.Dock == DockStyle.Fill)
             {
                 tempInsert2 = 1;
             }
-            else { tempInsert2 = 0; }
             if (TemperaturePanelBed3.Dock == DockStyle.Fill)
             {
                 tempInsert3 = 1;
             }
-            else { tempInsert3 = 0; }
             if (TemperaturePanelBed4.Dock == DockStyle.Fill)
             {
                 tempInsert4 = 1;
             }
-            else { tempInsert4 = 0; }
             #endregion
 
             #endregion
 
         }
-
 
         public void UpdateTextBox(object sender, EventArgs e)
         {
@@ -312,13 +348,45 @@ namespace FinalProject
             PulseRate_Actual_Text2.Text = SocketConfiguration.PulseValueRandom();
             PulseRate_Actual_Text3.Text = SocketConfiguration.PulseValueRandom();
             PulseRate_Actual_Text4.Text = SocketConfiguration.PulseValueRandom();
+
+            BreathingRate_Actual_Text.Text = SocketConfiguration.BreathingValueRandom();
+            BreathingRate_Actual_Text2.Text = SocketConfiguration.BreathingValueRandom();
+            BreathingRate_Actual_Text3.Text = SocketConfiguration.BreathingValueRandom();
+            BreathingRate_Actual_Text4.Text = SocketConfiguration.BreathingValueRandom();
+
+            Temperature_Actual_Text.Text = SocketConfiguration.TemperatureValueRandom();
+            Temperature_Actual_Text2.Text = SocketConfiguration.TemperatureValueRandom();
+            Temperature_Actual_Text3.Text = SocketConfiguration.TemperatureValueRandom();
+            Temperature_Actual_Text4.Text = SocketConfiguration.TemperatureValueRandom();
+
+        }
+
+        public void AddToList(object sender, EventArgs e)
+        {
+            // Actual Values
+            _sy.Add(SyBloodPressurePanelBed_Actual_Text);
+            _di.Add(DiBloodPressurePanelBed_Actual_Text);
+
+            // Minimum & Maximum Values
+            _syMin.Add(SocketConfiguration.syMin.ToString());
+            _syMax.Add(SocketConfiguration.syMax.ToString());
+            _diMin.Add(SocketConfiguration.diMin.ToString());
+            _diMax.Add(SocketConfiguration.diMax.ToString());
+        }
+
+        public void ListToFile()
+        {
+            // NEEDS CODE
         }
 
         // Variables
+        #region Variables
         // How the module is, if it's active or not
         public static int moduleState1, moduleState2, moduleState3, moduleState4;
+
         // What Insert was Clicked
         public static int insertClicked1, insertClicked2, insertClicked3, insertClicked4;
+
         // what was inserted
         public static int bloodInsert1, bloodInsert2, bloodInsert3, bloodInsert4;
         public static int pulseInsert1, pulseInsert2, pulseInsert3, pulseInsert4;
@@ -326,6 +394,7 @@ namespace FinalProject
         public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
         // if the panel is visible
         public static bool bloodActive = false, pulseActive = false, breathingActive = false, tempActive = false;
+        #endregion
 
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
@@ -495,6 +564,16 @@ namespace FinalProject
         {
             moduleState1 = 0;
 
+            bloodInsert1 = 0;
+            pulseInsert1 = 0;
+            breathingInsert1 = 0;
+            tempInsert1 = 0;
+
+            BreathingRatePanelBed1.Dock = DockStyle.None;
+            BloodPressurePanelBed1.Dock = DockStyle.None;
+            TemperaturePanelBed1.Dock = DockStyle.None;
+            PulseRatePanelBed1.Dock = DockStyle.None;
+
             BreathingRatePanelBed1.Visible = false;
             BloodPressurePanelBed1.Visible = false;
             TemperaturePanelBed1.Visible = false;
@@ -505,6 +584,16 @@ namespace FinalProject
         private void EjectButton2_Click(object sender, EventArgs e)
         {
             moduleState2 = 0;
+
+            bloodInsert2 = 0;
+            pulseInsert2 = 0;
+            breathingInsert2 = 0;
+            tempInsert2 = 0;
+
+            BreathingRatePanelBed2.Dock = DockStyle.None;
+            BloodPressurePanelBed2.Dock = DockStyle.None;
+            TemperaturePanelBed2.Dock = DockStyle.None;
+            PulseRatePanelBed2.Dock = DockStyle.None;
 
             BreathingRatePanelBed2.Visible = false;
             BloodPressurePanelBed2.Visible = false;
@@ -517,6 +606,16 @@ namespace FinalProject
         {
             moduleState3 = 0;
 
+            bloodInsert3 = 0;
+            pulseInsert3 = 0;
+            breathingInsert3 = 0;
+            tempInsert3 = 0;
+
+            BreathingRatePanelBed3.Dock = DockStyle.None;
+            BloodPressurePanelBed3.Dock = DockStyle.None;
+            TemperaturePanelBed3.Dock = DockStyle.None;
+            PulseRatePanelBed3.Dock = DockStyle.None;
+
             BreathingRatePanelBed3.Visible = false;
             BloodPressurePanelBed3.Visible = false;
             TemperaturePanelBed3.Visible = false;
@@ -527,6 +626,16 @@ namespace FinalProject
         private void EjectButton4_Click(object sender, EventArgs e)
         {
             moduleState4 = 0;
+
+            bloodInsert4 = 0;
+            pulseInsert4 = 0;
+            breathingInsert4 = 0;
+            tempInsert4 = 0;
+
+            BreathingRatePanelBed4.Dock = DockStyle.None;
+            BloodPressurePanelBed4.Dock = DockStyle.None;
+            TemperaturePanelBed4.Dock = DockStyle.None;
+            PulseRatePanelBed4.Dock = DockStyle.None;
 
             BreathingRatePanelBed4.Visible = false;
             BloodPressurePanelBed4.Visible = false;
