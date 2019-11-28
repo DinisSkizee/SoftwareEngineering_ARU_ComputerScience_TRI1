@@ -29,13 +29,11 @@ namespace FinalProject
         };
 
         // Verifiers Variables
-        public static int bpParameters, prParameters, brParameters, tpParameters;
         public static int dockActive;
 
         // Values Variables
         public static int diDiff, syDiff, prDiff, brDiff, tempDiff;
 
-        public static bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
         public static int diMinC, diMaxC, syMinC, syMaxC, prMinC, prMaxC, brMinC, brMaxC, tpMinC, tpMaxC;
         #endregion
         
@@ -55,60 +53,6 @@ namespace FinalProject
             RandomNameGenerator();
             RandomGenUserValues();
 
-            /*#region Verifier
-
-            // Parameters Verification
-            dMi = IsNumeric(Convert.ToString(diMin));
-            dMa = IsNumeric(Convert.ToString(diMax));
-            sMi = IsNumeric(Convert.ToString(syMin));
-            sMa = IsNumeric(Convert.ToString(syMax));
-
-            pMi = IsNumeric(Convert.ToString(prMin));
-            pMa = IsNumeric(Convert.ToString(prMax));
-
-            bMi = IsNumeric(Convert.ToString(brMin));
-            bMa = IsNumeric(Convert.ToString(brMax));
-            tMi = IsNumeric(Convert.ToString(tpMin));
-            tMa = IsNumeric(Convert.ToString(tpMax));
-
-            #endregion*/
-
-            #region String Verifier - Must be only numeric  -- Dinis & Jorge
-            // Check if every textbox has input - Blood Pressure
-            if (dMi == true && dMa == true && sMi == true && sMa == true)
-            {
-                bpParameters = 1;
-            }
-            else { bpParameters = 0; }
-
-            // Pulse Rate
-            if (pMi == true && pMa == true)
-            {
-                prParameters = 1;
-            }
-            else { prParameters = 0; }
-
-            // Breathing Rate
-            if (bMi == true && bMa == true)
-            {
-                brParameters = 1;
-            }
-            else { brParameters = 0; }
-
-            // Temperature
-            if (tMi == true && tMa == true)
-            {
-                tpParameters = 1;
-            }
-            else { tpParameters = 0; }
-            #endregion
-
-        }
-
-        public static bool IsNumeric(string var)
-        {
-            int Result;
-            return int.TryParse(var, out Result);
         }
 
         public static void RandomGenUserValues()

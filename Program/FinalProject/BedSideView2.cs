@@ -308,19 +308,6 @@ namespace FinalProject
 
             #endregion
 
-            // Parameters Verification
-            SocketConfiguration.dMi = SocketConfiguration.IsNumeric(Convert.ToString(diMin));
-            SocketConfiguration.dMa = SocketConfiguration.IsNumeric(Convert.ToString(diMax));
-            SocketConfiguration.sMi = SocketConfiguration.IsNumeric(Convert.ToString(syMin));
-            SocketConfiguration.sMa = SocketConfiguration.IsNumeric(Convert.ToString(syMax));
-
-            SocketConfiguration.pMi = SocketConfiguration.IsNumeric(Convert.ToString(prMin));
-            SocketConfiguration.pMa = SocketConfiguration.IsNumeric(Convert.ToString(prMax));
-
-            SocketConfiguration.bMi = SocketConfiguration.IsNumeric(Convert.ToString(brMin));
-            SocketConfiguration.bMa = SocketConfiguration.IsNumeric(Convert.ToString(brMax));
-            SocketConfiguration.tMi = SocketConfiguration.IsNumeric(Convert.ToString(tpMin));
-            SocketConfiguration.tMa = SocketConfiguration.IsNumeric(Convert.ToString(tpMax));
         }
 
         public void UpdateTextBox(object sender, EventArgs e)

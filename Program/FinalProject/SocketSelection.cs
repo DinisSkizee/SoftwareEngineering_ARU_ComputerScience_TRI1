@@ -6,12 +6,8 @@ namespace FinalProject
 {
     public partial class SocketSelection : Form
     {
-        // Variables
-        string bedActive;
-
         public SocketSelection()
         {
-
             InitializeComponent();
 
             HideAllSokets();
@@ -19,7 +15,6 @@ namespace FinalProject
             AddNamesToSoketComboBox();
 
             SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
-
         }
 
         #region Draggable Top Panel  -- Dinis & Jorge
@@ -54,7 +49,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region InsertReturnEffect -- Dinis & Jorge
+        #region InsertReturnEffect  -- Dinis & Jorge
 
         #region TextBox Change effects BLOODPRESSURE  -- Dinis & Jorge
 
@@ -234,7 +229,7 @@ namespace FinalProject
 
         #endregion
 
-        #region Main Button Return Dinis & Jorge
+        #region Main Button Return  -- Dinis & Jorge
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
@@ -246,7 +241,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region ChangeMainPanel
+        #region Change Main Panel  -- Dinis & Jorge
 
         /* When we choose another option on the SocketComboBox
         * the panels would be picked and turned visible and the Label invisible
@@ -342,7 +337,6 @@ namespace FinalProject
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
-            bedActive = BedLabel.Text;
 
             // Blood Pressure Secondary Variables Integer
             int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMinC);
@@ -359,275 +353,17 @@ namespace FinalProject
             int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMinC);
             int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMaxC);
 
-            if (bedActive == "Bed 1")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView1.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView1.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView1.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView1.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView1.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView1.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView1.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView1.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView1.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView1.tpMax);
-                }
-            }
-            if (bedActive == "Bed 2")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView2.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView2.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView2.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView2.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView2.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView2.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView2.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView2.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView2.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView2.tpMax);
-                }
-            }
-            if (bedActive == "Bed 3")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView3.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView3.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView3.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView3.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView3.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView3.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView3.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView3.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView3.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView3.tpMax);
-                }
-            }
-            if (bedActive == "Bed 4")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView4.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView4.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView4.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView4.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView4.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView4.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView4.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView4.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView4.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView4.tpMax);
-                }
-            }
-            if (bedActive == "Bed 5")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView5.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView5.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView5.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView5.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView5.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView5.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView5.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView5.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView5.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView5.tpMax);
-                }
-            }
-            if (bedActive == "Bed 6")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView6.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView6.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView6.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView6.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView6.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView6.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView6.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView6.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView6.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView6.tpMax);
-                }
-            }
-            if (bedActive == "Bed 7")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView7.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView7.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView7.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView7.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView7.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView7.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView7.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView7.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView7.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView7.tpMax);
-                }
-            }
-            if (bedActive == "Bed 8")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView8.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView8.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView8.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView8.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView8.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView8.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView8.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView8.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView8.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView8.tpMax);
-                }
-            }
-
             SocketConfiguration socket = new SocketConfiguration();
 
-            #region Button Configuration
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-
-                if (bedActive == "Bed 1")
+                
+                if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
@@ -653,15 +389,26 @@ namespace FinalProject
                         BedSideView1.bloodInsert4 = 1;
                         BedSideView1.insertClicked4 = 0;
                     }
+
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView1.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView1.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView1.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView1.syMax);
+
                     BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
                 }
-
-                else if (bedActive == "Bed 2")
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == true)
                 {
-                    if (BedSideView2.insertClicked1 == 1)
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
+
+                if (BedLabel.Text == "Bed 2" && BedSideView2.bloodActive == false)
+                {
+                    if (BedSideView2.insertClicked1 == 1 && BedSideView2.bloodActive == false)
                     {
                         BedSideView2.bloodInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
@@ -686,13 +433,23 @@ namespace FinalProject
                         BedSideView2.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView2.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView2.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView2.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView2.syMax);
+
                     BedSideView2 bed2 = new BedSideView2();
                     bed2.Show();
                     bed2.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.bloodActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
@@ -719,13 +476,23 @@ namespace FinalProject
                         BedSideView3.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView3.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView3.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView3.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView3.syMax);
+
                     BedSideView3 bed3 = new BedSideView3();
                     bed3.Show();
                     bed3.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.bloodActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
@@ -752,13 +519,23 @@ namespace FinalProject
                         BedSideView4.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView4.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView4.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView4.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView4.syMax);
+
                     BedSideView4 bed4 = new BedSideView4();
                     bed4.Show();
                     bed4.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.bloodActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
@@ -785,13 +562,23 @@ namespace FinalProject
                         BedSideView5.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView5.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView5.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView5.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView5.syMax);
+
                     BedSideView5 bed5 = new BedSideView5();
                     bed5.Show();
                     bed5.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.bloodActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
@@ -818,13 +605,23 @@ namespace FinalProject
                         BedSideView6.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView6.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView6.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView6.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView6.syMax);
+
                     BedSideView6 bed6 = new BedSideView6();
                     bed6.Show();
                     bed6.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.bloodActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
@@ -851,13 +648,23 @@ namespace FinalProject
                         BedSideView7.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView7.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView7.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView7.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView7.syMax);
+
                     BedSideView7 bed7 = new BedSideView7();
                     bed7.Show();
                     bed7.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView7.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.bloodActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
@@ -884,17 +691,26 @@ namespace FinalProject
                         BedSideView8.insertClicked4 = 0;
                     }
 
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView8.diMin);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView8.diMax);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView8.syMin);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView8.syMax);
+
                     BedSideView8 bed8 = new BedSideView8();
                     bed8.Show();
                     bed8.Location = this.Location;
                     this.Hide();
                 }
-
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
             {
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.pulseActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
@@ -921,13 +737,21 @@ namespace FinalProject
                         BedSideView1.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView1.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView1.prMax);
+
                     BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 2")
+                if (BedLabel.Text == "Bed 2" && BedSideView2.pulseActive == false)
                 {
                     if (BedSideView2.insertClicked1 == 1)
                     {
@@ -954,13 +778,21 @@ namespace FinalProject
                         BedSideView2.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView2.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView2.prMax);
+
                     BedSideView2 bed2 = new BedSideView2();
                     bed2.Show();
                     bed2.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.pulseActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
@@ -987,13 +819,21 @@ namespace FinalProject
                         BedSideView3.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView3.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView3.prMax);
+
                     BedSideView3 bed3 = new BedSideView3();
                     bed3.Show();
                     bed3.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.pulseActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
@@ -1020,13 +860,21 @@ namespace FinalProject
                         BedSideView4.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView4.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView4.prMax);
+
                     BedSideView4 bed4 = new BedSideView4();
                     bed4.Show();
                     bed4.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.pulseActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
@@ -1053,13 +901,21 @@ namespace FinalProject
                         BedSideView5.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView5.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView5.prMax);
+
                     BedSideView5 bed5 = new BedSideView5();
                     bed5.Show();
                     bed5.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.pulseActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
@@ -1086,13 +942,21 @@ namespace FinalProject
                         BedSideView6.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView6.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView6.prMax);
+
                     BedSideView6 bed6 = new BedSideView6();
                     bed6.Show();
                     bed6.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.pulseActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
@@ -1119,13 +983,21 @@ namespace FinalProject
                         BedSideView7.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView7.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView7.prMax);
+
                     BedSideView7 bed7 = new BedSideView7();
                     bed7.Show();
                     bed7.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView8.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.pulseActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
@@ -1152,16 +1024,24 @@ namespace FinalProject
                         BedSideView8.insertClicked4 = 0;
                     }
 
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView8.prMin);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView8.prMax);
+
                     BedSideView8 bed8 = new BedSideView8();
                     bed8.Show();
                     bed8.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brParameters == 1 && SocketConfiguration.brDiff >= 5)  // Breathing Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brDiff >= 5)  // Breathing Rate
             {
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.breathingActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
@@ -1188,13 +1068,21 @@ namespace FinalProject
                         BedSideView1.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView1.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView1.brMax);
+
                     BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 2")
+                if (BedLabel.Text == "Bed 2" && BedSideView2.breathingActive == false)
                 {
                     if (BedSideView2.insertClicked1 == 1)
                     {
@@ -1221,13 +1109,21 @@ namespace FinalProject
                         BedSideView2.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView2.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView2.brMax);
+
                     BedSideView2 bed2 = new BedSideView2();
                     bed2.Show();
                     bed2.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.breathingActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
@@ -1254,13 +1150,21 @@ namespace FinalProject
                         BedSideView3.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView3.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView3.brMax);
+
                     BedSideView3 bed3 = new BedSideView3();
                     bed3.Show();
                     bed3.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.breathingActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
@@ -1287,13 +1191,21 @@ namespace FinalProject
                         BedSideView4.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView4.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView4.brMax);
+
                     BedSideView4 bed4 = new BedSideView4();
                     bed4.Show();
                     bed4.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.breathingActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
@@ -1320,13 +1232,21 @@ namespace FinalProject
                         BedSideView5.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView5.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView5.brMax);
+
                     BedSideView5 bed5 = new BedSideView5();
                     bed5.Show();
                     bed5.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.breathingActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
@@ -1353,13 +1273,21 @@ namespace FinalProject
                         BedSideView6.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView6.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView6.brMax);
+
                     BedSideView6 bed6 = new BedSideView6();
                     bed6.Show();
                     bed6.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.breathingActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
@@ -1386,13 +1314,21 @@ namespace FinalProject
                         BedSideView7.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView7.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView7.brMax);
+
                     BedSideView7 bed7 = new BedSideView7();
                     bed7.Show();
                     bed7.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView7.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.breathingActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
@@ -1419,16 +1355,24 @@ namespace FinalProject
                         BedSideView8.insertClicked4 = 0;
                     }
 
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView8.brMin);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView8.brMax);
+
                     BedSideView8 bed8 = new BedSideView8();
                     bed8.Show();
                     bed8.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tpParameters == 1 && SocketConfiguration.tempDiff >= 1)  // Temperature
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tempDiff >= 1)  // Temperature
             {
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.tempActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
@@ -1455,13 +1399,21 @@ namespace FinalProject
                         BedSideView1.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView1.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView1.tpMax);
+
                     BedSideView1 bed1 = new BedSideView1();
                     bed1.Show();
                     bed1.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 2")
+                if (BedLabel.Text == "Bed 2" && BedSideView2.tempActive == false)
                 {
                     if (BedSideView2.insertClicked1 == 1)
                     {
@@ -1488,13 +1440,21 @@ namespace FinalProject
                         BedSideView2.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView2.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView2.tpMax);
+
                     BedSideView2 bed2 = new BedSideView2();
                     bed2.Show();
                     bed2.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.tempActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
@@ -1521,13 +1481,21 @@ namespace FinalProject
                         BedSideView3.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView3.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView3.tpMax);
+
                     BedSideView3 bed3 = new BedSideView3();
                     bed3.Show();
                     bed3.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.tempActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
@@ -1554,13 +1522,21 @@ namespace FinalProject
                         BedSideView4.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView4.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView4.tpMax);
+
                     BedSideView4 bed4 = new BedSideView4();
                     bed4.Show();
                     bed4.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.tempActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
@@ -1587,13 +1563,21 @@ namespace FinalProject
                         BedSideView5.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView5.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView5.tpMax);
+
                     BedSideView5 bed5 = new BedSideView5();
                     bed5.Show();
                     bed5.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.tempActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
@@ -1620,13 +1604,21 @@ namespace FinalProject
                         BedSideView6.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView6.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView6.tpMax);
+
                     BedSideView6 bed6 = new BedSideView6();
                     bed6.Show();
                     bed6.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.tempActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
@@ -1653,13 +1645,21 @@ namespace FinalProject
                         BedSideView7.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView7.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView7.tpMax);
+
                     BedSideView7 bed7 = new BedSideView7();
                     bed7.Show();
                     bed7.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView7.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.tempActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
@@ -1686,19 +1686,23 @@ namespace FinalProject
                         BedSideView8.insertClicked4 = 0;
                     }
 
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView8.tpMin);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView8.tpMax);
+
                     BedSideView8 bed8 = new BedSideView8();
                     bed8.Show();
                     bed8.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
             }
 
             else
             {
-                if (SocketConfiguration.bpParameters == 0)
-                {
-                    MessageBox.Show("Make sure the input is numeric ONLY");
-                }
                 if ((SocketConfiguration.diDiff < 30 && DefaultPanel_SocketComboBox.SelectedIndex == 0) || (SocketConfiguration.syDiff < 20 && DefaultPanel_SocketComboBox.SelectedIndex == 0))
                 {
                     MessageBox.Show("The Diastolic difference must be 30 or greater and the Systolic difference must be 20 or greater");
@@ -1717,7 +1721,6 @@ namespace FinalProject
                 }
             }
 
-            #endregion
         }
     }
 }

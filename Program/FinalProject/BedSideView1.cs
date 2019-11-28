@@ -15,6 +15,7 @@ namespace FinalProject
 
             new BedSideViewConfiguration();
             BedSideViewConfiguration.timer.Tick += UpdateTextBox;
+            BedSideViewConfiguration.timer.Tick += ActiveCheck;
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
@@ -205,29 +206,6 @@ namespace FinalProject
 
             #endregion
 
-            #region ActivePanels Variable Assignment
-            if (BloodPressurePanelBed1.Visible == true || BloodPressurePanelBed2.Visible == true ||
-                BloodPressurePanelBed3.Visible == true || BloodPressurePanelBed4.Visible == true)
-            {
-                bloodActive = true;
-            }
-            if (PulseRatePanelBed1.Visible == true || PulseRatePanelBed2.Visible == true ||
-                PulseRatePanelBed3.Visible == true || PulseRatePanelBed4.Visible == true)
-            {
-                pulseActive = true;
-            }
-            if (BreathingRatePanelBed1.Visible == true || BreathingRatePanelBed2.Visible == true ||
-                BreathingRatePanelBed3.Visible == true || BreathingRatePanelBed4.Visible == true)
-            {
-                breathingActive = true;
-            }
-            if (TemperaturePanelBed1.Visible == true || TemperaturePanelBed2.Visible == true ||
-                TemperaturePanelBed3.Visible == true || TemperaturePanelBed4.Visible == true)
-            {
-                tempActive = true;
-            }
-            #endregion
-
             #region Insert Assignment
 
             #region Blood Pressure
@@ -308,19 +286,6 @@ namespace FinalProject
 
             #endregion
 
-            // Parameters Verification
-            SocketConfiguration.dMi = SocketConfiguration.IsNumeric(Convert.ToString(diMin));
-            SocketConfiguration.dMa = SocketConfiguration.IsNumeric(Convert.ToString(diMax));
-            SocketConfiguration.sMi = SocketConfiguration.IsNumeric(Convert.ToString(syMin));
-            SocketConfiguration.sMa = SocketConfiguration.IsNumeric(Convert.ToString(syMax));
-
-            SocketConfiguration.pMi = SocketConfiguration.IsNumeric(Convert.ToString(prMin));
-            SocketConfiguration.pMa = SocketConfiguration.IsNumeric(Convert.ToString(prMax));
-
-            SocketConfiguration.bMi = SocketConfiguration.IsNumeric(Convert.ToString(brMin));
-            SocketConfiguration.bMa = SocketConfiguration.IsNumeric(Convert.ToString(brMax));
-            SocketConfiguration.tMi = SocketConfiguration.IsNumeric(Convert.ToString(tpMin));
-            SocketConfiguration.tMa = SocketConfiguration.IsNumeric(Convert.ToString(tpMax));
         }
 
         public void UpdateTextBox(object sender, EventArgs e)
@@ -365,7 +330,7 @@ namespace FinalProject
         public static int breathingInsert1, breathingInsert2, breathingInsert3, breathingInsert4;
         public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
         // If the panel is visible
-        public static bool bloodActive = false, pulseActive = false, breathingActive = false, tempActive = false;
+        public static bool bloodActive, pulseActive, breathingActive, tempActive;
 
         // TextBox Values
         public static int syValue, diValue, prValue, brValue;
@@ -727,6 +692,38 @@ namespace FinalProject
 
             return tempValue.ToString();
         } // Returns tempValue
+
+        public void ActiveCheck(object sender, EventArgs e)
+        {
+            if (BloodPressurePanelBed1.Dock == DockStyle.Fill || BloodPressurePanelBed2.Dock == DockStyle.Fill ||
+                BloodPressurePanelBed3.Dock == DockStyle.Fill || BloodPressurePanelBed4.Dock == DockStyle.Fill)
+            {
+                bloodActive = true;
+            }
+            else { bloodActive = false; }
+
+            if (PulseRatePanelBed1.Dock == DockStyle.Fill || PulseRatePanelBed2.Dock == DockStyle.Fill ||
+                PulseRatePanelBed3.Dock == DockStyle.Fill || PulseRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                pulseActive = true;
+            }
+            else { pulseActive = false; }
+
+            if (BreathingRatePanelBed1.Dock == DockStyle.Fill || BreathingRatePanelBed2.Dock == DockStyle.Fill ||
+                BreathingRatePanelBed3.Dock == DockStyle.Fill || BreathingRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                breathingActive = true;
+            }
+            else { breathingActive = false; }
+
+            if (TemperaturePanelBed1.Dock == DockStyle.Fill || TemperaturePanelBed2.Dock == DockStyle.Fill ||
+                TemperaturePanelBed3.Dock == DockStyle.Fill || TemperaturePanelBed4.Dock == DockStyle.Fill)
+            {
+                tempActive = true;
+            }
+            else { tempActive = false; }
+
+        }
 
     }
 }
