@@ -3360,8 +3360,8 @@
             // InsertButton3
             // 
             this.InsertButton3.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
-            this.InsertButton3.Location = new System.Drawing.Point(471, 444);
-            this.InsertButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.InsertButton3.Location = new System.Drawing.Point(353, 361);
+            this.InsertButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InsertButton3.Name = "InsertButton3";
             this.InsertButton3.Size = new System.Drawing.Size(27, 25);
             this.InsertButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3372,8 +3372,8 @@
             // InsertButton2
             // 
             this.InsertButton2.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
-            this.InsertButton2.Location = new System.Drawing.Point(503, 294);
-            this.InsertButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.InsertButton2.Location = new System.Drawing.Point(377, 239);
+            this.InsertButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InsertButton2.Name = "InsertButton2";
             this.InsertButton2.Size = new System.Drawing.Size(27, 25);
             this.InsertButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
