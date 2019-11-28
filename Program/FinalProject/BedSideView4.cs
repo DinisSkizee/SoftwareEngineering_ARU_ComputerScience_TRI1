@@ -248,22 +248,15 @@ namespace FinalProject
             #endregion
 
             #region Pulse Rate
-            if (PulseRatePanelBed1.Dock == DockStyle.Fill)
-            {
-                pulseInsert1 = 1;
-            }
-            if (PulseRatePanelBed2.Dock == DockStyle.Fill)
-            {
-                pulseInsert2 = 1;
-            }
-            if (PulseRatePanelBed3.Dock == DockStyle.Fill)
-            {
-                pulseInsert3 = 1;
-            }
-            if (PulseRatePanelBed4.Dock == DockStyle.Fill)
-            {
-                pulseInsert4 = 1;
-            }
+            PulseRate_Minimum_Text.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin.ToString();
+            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin.ToString();
+
+            PulseRate_Maximum_Text.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax.ToString();
             #endregion
 
             #region Breathing Rate
@@ -458,7 +451,7 @@ namespace FinalProject
                 insertClicked1 = 1;
                 SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
+                soS.BedLabel.Text = "Bed 4";
                 soS.Show();
                 soS.Location = this.Location;
                 this.Hide();
@@ -473,7 +466,7 @@ namespace FinalProject
                 insertClicked2 = 1;
                 SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
+                soS.BedLabel.Text = "Bed 4";
                 soS.Show();
                 soS.Location = this.Location;
                 this.Hide();
@@ -488,7 +481,7 @@ namespace FinalProject
                 insertClicked3 = 1;
                 SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
+                soS.BedLabel.Text = "Bed 4";
                 soS.Show();
                 soS.Location = this.Location;
                 this.Hide();
@@ -503,7 +496,7 @@ namespace FinalProject
                 insertClicked4 = 1;
                 SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
+                soS.BedLabel.Text = "Bed 4";
                 soS.Show();
                 soS.Location = this.Location;
                 this.Hide();

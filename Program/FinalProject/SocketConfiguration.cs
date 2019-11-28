@@ -8,7 +8,8 @@ namespace FinalProject
     {
         #region Variable 
         // Variables used for the Randoms
-        public static int syValue, diValue, prValue, brValue, tempValue;
+        public static int syValue, diValue, prValue, brValue;
+        public static double tempValue;
 
         static Random randomizer = new Random();
 
@@ -112,103 +113,6 @@ namespace FinalProject
             int Result;
             return int.TryParse(var, out Result);
         }
-
-        /*public static void RandomGenModValues()
-        {
-            #region Blood Pressure * Systolic & Diastolic * -- Dinis & Jorge
-            // Random randomSyDi = new Random();  // Create a Randomizer for the Systolic and Diastolic Values
-            int randomizerSyDi = randomizer.Next(0, 100);
-
-            if (randomizerSyDi <= 5)
-            {
-                // Random syDiLowRandomizer = new Random();
-                syValue = randomizer.Next(syMin - 20, syMin - 1); // 70 - 89
-                diValue = randomizer.Next(diMin - 20, diMin - 1); // 40 - 59
-            }
-            else if ((randomizerSyDi > 5) && (randomizerSyDi < 95))
-            {
-                // Random syDiNormalRandomizer = new Random();
-                syValue = randomizer.Next(syMin, syMax); // 90 - 140
-                diValue = randomizer.Next(diMin, diMax); // 60 - 90
-            }
-            else if (randomizerSyDi >= 95)
-            {
-                // Random syDiHighRandomizer = new Random();
-                syValue = randomizer.Next(syMax + 1, syMax + 20); // 141 - 160
-                diValue = randomizer.Next(diMin + 1, diMax + 20); // 91 - 110
-            }
-            #endregion
-
-            #region Pulse Rate * bpm * -- Dinis & Jorge
-
-            // Random randomPR = new Random();
-            int randomizerPR = randomizer.Next(0, 100);
-
-            if (randomizerPR <= 5)
-            {
-                // Random prLowRandomizer = new Random();
-                prValue = randomizer.Next(30, 49);
-            }
-            else if ((randomizerPR > 5) && (randomizerPR < 95))
-            {
-                // Random hrNormalRandomizer = new Random();
-                prValue = randomizer.Next(50, 75);
-            }
-            else if (randomizerPR > 95)
-            {
-                // Random hrHighRandomizer = new Random();
-                prValue = randomizer.Next(76, 95);
-            }
-            #endregion
-
-            #region Breathing Rate * Breaths Per Minute * -- Dinis & Jorge
-
-            // Random randomBR = new Random();
-            int randomizerBR = randomizer.Next(0, 100);
-
-            if (randomizerBR <= 5)
-            {
-                // Random brLowRandomizer = new Random();
-                brValue = randomizer.Next(2, 6);
-            }
-            else if ((randomizerBR > 5) && (randomizerBR < 95))
-            {
-                // Random brNormalRandomizer = new Random();
-                brValue = randomizer.Next(7, 45);
-            }
-            else if (randomizerBR >= 95)
-            {
-                // Random brHighRandomizer = new Random();
-                brValue = randomizer.Next(46, 100);
-            }
-            #endregion
-
-            #region Temperature * °C * -- Dinis & Jorge
-
-            // Random randomTemp = new Random();
-            int randomizerTemp = randomizer.Next(0, 100);
-
-            if (randomizerTemp <= 25)
-            {
-                // Random tempLowRandomizer = new Random();
-                tempValue = randomizer.Next(350, 364);
-                tempValue /= 10;
-            }
-            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
-            {
-                // Random tempNormalRandomizer = new Random();
-                tempValue = randomizer.Next(365, 375);
-                tempValue /= 10;
-            }
-            else if (randomizerTemp >= 75)
-            {
-                // Random tempHighRandomizer = new Random();
-                tempValue = randomizer.Next(376, 410);
-                tempValue /= 10;
-            }
-            #endregion
-
-        }*/
 
         public static void RandomGenUserValues()
         {

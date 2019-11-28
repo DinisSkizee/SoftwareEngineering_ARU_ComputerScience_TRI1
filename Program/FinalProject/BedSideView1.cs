@@ -183,10 +183,10 @@ namespace FinalProject
             PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin.ToString();
             PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin.ToString();
 
-            PulseRate_Minimum_Text.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Minimum_Text2.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Minimum_Text3.Text = SocketConfiguration.prMax.ToString();
-            PulseRate_Minimum_Text4.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax.ToString();
+            PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax.ToString();
             #endregion
 
             #region Temperature

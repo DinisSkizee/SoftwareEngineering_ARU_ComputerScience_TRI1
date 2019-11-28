@@ -1554,7 +1554,7 @@
             this.PulseRatePanelBed2.Location = new System.Drawing.Point(9, 9);
             this.PulseRatePanelBed2.Margin = new System.Windows.Forms.Padding(4);
             this.PulseRatePanelBed2.Name = "PulseRatePanelBed2";
-            this.PulseRatePanelBed2.Size = new System.Drawing.Size(164, 25);
+            this.PulseRatePanelBed2.Size = new System.Drawing.Size(196, 30);
             this.PulseRatePanelBed2.TabIndex = 11;
             this.PulseRatePanelBed2.Visible = false;
             // 
