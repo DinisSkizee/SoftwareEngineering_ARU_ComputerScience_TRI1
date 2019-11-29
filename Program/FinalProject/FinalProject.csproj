@@ -150,11 +150,11 @@
     <Compile Include="Logs.Designer.cs">
       <DependentUpon>Logs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Management.cs">
+    <Compile Include="Senior medical staffs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Management.Designer.cs">
-      <DependentUpon>Management.cs</DependentUpon>
+    <Compile Include="Senior medical staffs.Designer.cs">
+      <DependentUpon>Senior medical staffs.cs</DependentUpon>
     </Compile>
     <Compile Include="Medical staffs.cs">
       <SubType>Form</SubType>
@@ -229,8 +229,8 @@
     <EmbeddedResource Include="Logs.resx">
       <DependentUpon>Logs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Management.resx">
-      <DependentUpon>Management.cs</DependentUpon>
+    <EmbeddedResource Include="Senior medical staffs.resx">
+      <DependentUpon>Senior medical staffs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medical staffs.resx">
       <DependentUpon>Medical staffs.cs</DependentUpon>
