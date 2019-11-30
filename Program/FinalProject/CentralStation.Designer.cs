@@ -33,7 +33,7 @@
             this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonCentralStation = new System.Windows.Forms.PictureBox();
             this.CloseButtonCentralStation = new System.Windows.Forms.PictureBox();
-            this.Bed2 = new System.Windows.Forms.Button();
+            this.BedButton1 = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.tbsy1 = new System.Windows.Forms.TextBox();
             this.tbtp1 = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@
             this.tbpr2 = new System.Windows.Forms.TextBox();
             this.tbbr2 = new System.Windows.Forms.TextBox();
             this.tbdi2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BedButton2 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.tbpr4 = new System.Windows.Forms.TextBox();
             this.tbbr4 = new System.Windows.Forms.TextBox();
             this.tbdi4 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BedButton4 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@
             this.tbpr3 = new System.Windows.Forms.TextBox();
             this.tbbr3 = new System.Windows.Forms.TextBox();
             this.tbdi3 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BedButton3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             this.tbpr8 = new System.Windows.Forms.TextBox();
             this.tbbr8 = new System.Windows.Forms.TextBox();
             this.tbdi8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BedButton8 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -99,7 +99,7 @@
             this.tbpr7 = new System.Windows.Forms.TextBox();
             this.tbbr7 = new System.Windows.Forms.TextBox();
             this.tbdi7 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BedButton7 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -110,7 +110,7 @@
             this.tbpr6 = new System.Windows.Forms.TextBox();
             this.tbbr6 = new System.Windows.Forms.TextBox();
             this.tbdi6 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BedButton6 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -121,7 +121,7 @@
             this.tbpr5 = new System.Windows.Forms.TextBox();
             this.tbbr5 = new System.Windows.Forms.TextBox();
             this.tbdi5 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.BedButton5 = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonCentralStation)).BeginInit();
@@ -179,18 +179,19 @@
             this.CloseButtonCentralStation.TabStop = false;
             this.CloseButtonCentralStation.Click += new System.EventHandler(this.CloseButtonCentralStation_Click);
             // 
-            // Bed2
+            // BedButton1
             // 
-            this.Bed2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Bed2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bed2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Bed2.ForeColor = System.Drawing.Color.White;
-            this.Bed2.Location = new System.Drawing.Point(7, 49);
-            this.Bed2.Name = "Bed2";
-            this.Bed2.Size = new System.Drawing.Size(357, 25);
-            this.Bed2.TabIndex = 91;
-            this.Bed2.Text = "1";
-            this.Bed2.UseVisualStyleBackColor = false;
+            this.BedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton1.ForeColor = System.Drawing.Color.White;
+            this.BedButton1.Location = new System.Drawing.Point(7, 49);
+            this.BedButton1.Name = "BedButton1";
+            this.BedButton1.Size = new System.Drawing.Size(357, 25);
+            this.BedButton1.TabIndex = 91;
+            this.BedButton1.Text = "1";
+            this.BedButton1.UseVisualStyleBackColor = false;
+            this.BedButton1.Click += new System.EventHandler(this.BedButton1_Click);
             // 
             // textBox17
             // 
@@ -425,18 +426,19 @@
             this.tbdi2.TabIndex = 140;
             this.tbdi2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button3
+            // BedButton2
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(7, 187);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(357, 25);
-            this.button3.TabIndex = 139;
-            this.button3.Text = "2";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton2.ForeColor = System.Drawing.Color.White;
+            this.BedButton2.Location = new System.Drawing.Point(7, 187);
+            this.BedButton2.Name = "BedButton2";
+            this.BedButton2.Size = new System.Drawing.Size(357, 25);
+            this.BedButton2.TabIndex = 139;
+            this.BedButton2.Text = "2";
+            this.BedButton2.UseVisualStyleBackColor = false;
+            this.BedButton2.Click += new System.EventHandler(this.BedButton2_Click);
             // 
             // label16
             // 
@@ -548,18 +550,19 @@
             this.tbdi4.TabIndex = 162;
             this.tbdi4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button4
+            // BedButton4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(7, 463);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(357, 25);
-            this.button4.TabIndex = 161;
-            this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton4.ForeColor = System.Drawing.Color.White;
+            this.BedButton4.Location = new System.Drawing.Point(7, 463);
+            this.BedButton4.Name = "BedButton4";
+            this.BedButton4.Size = new System.Drawing.Size(357, 25);
+            this.BedButton4.TabIndex = 161;
+            this.BedButton4.Text = "4";
+            this.BedButton4.UseVisualStyleBackColor = false;
+            this.BedButton4.Click += new System.EventHandler(this.BedButton4_Click);
             // 
             // label21
             // 
@@ -671,18 +674,19 @@
             this.tbdi3.TabIndex = 151;
             this.tbdi3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button5
+            // BedButton3
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(7, 325);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(357, 25);
-            this.button5.TabIndex = 150;
-            this.button5.Text = "3";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton3.ForeColor = System.Drawing.Color.White;
+            this.BedButton3.Location = new System.Drawing.Point(7, 325);
+            this.BedButton3.Name = "BedButton3";
+            this.BedButton3.Size = new System.Drawing.Size(357, 25);
+            this.BedButton3.TabIndex = 150;
+            this.BedButton3.Text = "3";
+            this.BedButton3.UseVisualStyleBackColor = false;
+            this.BedButton3.Click += new System.EventHandler(this.BedButton3_Click);
             // 
             // label1
             // 
@@ -794,18 +798,19 @@
             this.tbdi8.TabIndex = 207;
             this.tbdi8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // BedButton8
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(386, 463);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(357, 25);
-            this.button1.TabIndex = 206;
-            this.button1.Text = "8";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BedButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton8.ForeColor = System.Drawing.Color.White;
+            this.BedButton8.Location = new System.Drawing.Point(386, 463);
+            this.BedButton8.Name = "BedButton8";
+            this.BedButton8.Size = new System.Drawing.Size(357, 25);
+            this.BedButton8.TabIndex = 206;
+            this.BedButton8.Text = "8";
+            this.BedButton8.UseVisualStyleBackColor = false;
+            this.BedButton8.Click += new System.EventHandler(this.BedButton8_Click);
             // 
             // label26
             // 
@@ -917,18 +922,19 @@
             this.tbdi7.TabIndex = 196;
             this.tbdi7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button2
+            // BedButton7
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(386, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(357, 25);
-            this.button2.TabIndex = 195;
-            this.button2.Text = "7";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton7.ForeColor = System.Drawing.Color.White;
+            this.BedButton7.Location = new System.Drawing.Point(386, 325);
+            this.BedButton7.Name = "BedButton7";
+            this.BedButton7.Size = new System.Drawing.Size(357, 25);
+            this.BedButton7.TabIndex = 195;
+            this.BedButton7.Text = "7";
+            this.BedButton7.UseVisualStyleBackColor = false;
+            this.BedButton7.Click += new System.EventHandler(this.BedButton7_Click);
             // 
             // label31
             // 
@@ -1040,18 +1046,19 @@
             this.tbdi6.TabIndex = 185;
             this.tbdi6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button6
+            // BedButton6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(386, 187);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(357, 25);
-            this.button6.TabIndex = 184;
-            this.button6.Text = "6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.BedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton6.ForeColor = System.Drawing.Color.White;
+            this.BedButton6.Location = new System.Drawing.Point(386, 187);
+            this.BedButton6.Name = "BedButton6";
+            this.BedButton6.Size = new System.Drawing.Size(357, 25);
+            this.BedButton6.TabIndex = 184;
+            this.BedButton6.Text = "6";
+            this.BedButton6.UseVisualStyleBackColor = false;
+            this.BedButton6.Click += new System.EventHandler(this.BedButton6_Click);
             // 
             // label36
             // 
@@ -1163,18 +1170,19 @@
             this.tbdi5.TabIndex = 174;
             this.tbdi5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button7
+            // BedButton5
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(386, 49);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(357, 25);
-            this.button7.TabIndex = 172;
-            this.button7.Text = "5";
-            this.button7.UseVisualStyleBackColor = false;
+            this.BedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BedButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BedButton5.ForeColor = System.Drawing.Color.White;
+            this.BedButton5.Location = new System.Drawing.Point(386, 49);
+            this.BedButton5.Name = "BedButton5";
+            this.BedButton5.Size = new System.Drawing.Size(357, 25);
+            this.BedButton5.TabIndex = 172;
+            this.BedButton5.Text = "5";
+            this.BedButton5.UseVisualStyleBackColor = false;
+            this.BedButton5.Click += new System.EventHandler(this.BedButton5_Click);
             // 
             // CentralStation
             // 
@@ -1192,7 +1200,7 @@
             this.Controls.Add(this.tbpr8);
             this.Controls.Add(this.tbbr8);
             this.Controls.Add(this.tbdi8);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BedButton8);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label28);
@@ -1203,7 +1211,7 @@
             this.Controls.Add(this.tbpr7);
             this.Controls.Add(this.tbbr7);
             this.Controls.Add(this.tbdi7);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BedButton7);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label33);
@@ -1214,7 +1222,7 @@
             this.Controls.Add(this.tbpr6);
             this.Controls.Add(this.tbbr6);
             this.Controls.Add(this.tbdi6);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.BedButton6);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label38);
@@ -1225,7 +1233,7 @@
             this.Controls.Add(this.tbpr5);
             this.Controls.Add(this.tbbr5);
             this.Controls.Add(this.tbdi5);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.BedButton5);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
@@ -1236,7 +1244,7 @@
             this.Controls.Add(this.tbpr4);
             this.Controls.Add(this.tbbr4);
             this.Controls.Add(this.tbdi4);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BedButton4);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
@@ -1247,7 +1255,7 @@
             this.Controls.Add(this.tbpr3);
             this.Controls.Add(this.tbbr3);
             this.Controls.Add(this.tbdi3);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BedButton3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -1258,7 +1266,7 @@
             this.Controls.Add(this.tbpr2);
             this.Controls.Add(this.tbbr2);
             this.Controls.Add(this.tbdi2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BedButton2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -1269,7 +1277,7 @@
             this.Controls.Add(this.tbpr1);
             this.Controls.Add(this.tbbr1);
             this.Controls.Add(this.tbdi1);
-            this.Controls.Add(this.Bed2);
+            this.Controls.Add(this.BedButton1);
             this.Controls.Add(this.PanelTop);
             this.Controls.Add(this.textBox17);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1290,7 +1298,7 @@
         private System.Windows.Forms.PictureBox MinimizeButtonCentralStation;
         private System.Windows.Forms.PictureBox CloseButtonCentralStation;
         private System.Windows.Forms.PictureBox MainPageButton;
-        private System.Windows.Forms.Button Bed2;
+        private System.Windows.Forms.Button BedButton1;
         public System.Windows.Forms.TextBox textBox17;
         public System.Windows.Forms.TextBox tbsy1;
         public System.Windows.Forms.TextBox tbtp1;
@@ -1312,7 +1320,7 @@
         public System.Windows.Forms.TextBox tbpr2;
         public System.Windows.Forms.TextBox tbbr2;
         public System.Windows.Forms.TextBox tbdi2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BedButton2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -1323,7 +1331,7 @@
         public System.Windows.Forms.TextBox tbpr4;
         public System.Windows.Forms.TextBox tbbr4;
         public System.Windows.Forms.TextBox tbdi4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BedButton4;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -1334,7 +1342,7 @@
         public System.Windows.Forms.TextBox tbpr3;
         public System.Windows.Forms.TextBox tbbr3;
         public System.Windows.Forms.TextBox tbdi3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BedButton3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -1345,7 +1353,7 @@
         public System.Windows.Forms.TextBox tbpr8;
         public System.Windows.Forms.TextBox tbbr8;
         public System.Windows.Forms.TextBox tbdi8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BedButton8;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
@@ -1356,7 +1364,7 @@
         public System.Windows.Forms.TextBox tbpr7;
         public System.Windows.Forms.TextBox tbbr7;
         public System.Windows.Forms.TextBox tbdi7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BedButton7;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
@@ -1367,7 +1375,7 @@
         public System.Windows.Forms.TextBox tbpr6;
         public System.Windows.Forms.TextBox tbbr6;
         public System.Windows.Forms.TextBox tbdi6;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BedButton6;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
@@ -1378,6 +1386,6 @@
         public System.Windows.Forms.TextBox tbpr5;
         public System.Windows.Forms.TextBox tbbr5;
         public System.Windows.Forms.TextBox tbdi5;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button BedButton5;
     }
 }

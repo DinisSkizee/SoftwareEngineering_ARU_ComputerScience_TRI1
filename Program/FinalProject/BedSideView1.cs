@@ -319,32 +319,32 @@ namespace FinalProject
             #region Central Station TextBoxes Assignment
             if (bloodActive == true)
             {
-                CentralStation.centralsingleton.tbdi1.Text = DiastolicValueRandom();
-                CentralStation.centralsingleton.tbsy1.Text = SystolicValueRandom();
+                FinalProject.CentralStation.centralsingleton.tbdi1.Text = DiastolicValueRandom();
+                FinalProject.CentralStation.centralsingleton.tbsy1.Text = SystolicValueRandom();
             }
             else
             {
-                CentralStation.centralsingleton.tbdi1.Text = "";
-                CentralStation.centralsingleton.tbsy1.Text = "";
+                FinalProject.CentralStation.centralsingleton.tbdi1.Text = "";
+                FinalProject.CentralStation.centralsingleton.tbsy1.Text = "";
             }
 
             if (breathingActive == true)
             {
-                CentralStation.centralsingleton.tbbr1.Text = BreathingValueRandom();
+                FinalProject.CentralStation.centralsingleton.tbbr1.Text = BreathingValueRandom();
             }
-            else { CentralStation.centralsingleton.tbbr1.Text = ""; }
+            else { FinalProject.CentralStation.centralsingleton.tbbr1.Text = ""; }
 
             if (pulseActive == true)
             {
-                CentralStation.centralsingleton.tbpr1.Text = PulseValueRandom();
+                FinalProject.CentralStation.centralsingleton.tbpr1.Text = PulseValueRandom();
             }
-            else { CentralStation.centralsingleton.tbpr1.Text = ""; }
+            else { FinalProject.CentralStation.centralsingleton.tbpr1.Text = ""; }
 
             if (tempActive == true)
             {
-                CentralStation.centralsingleton.tbtp1.Text = TemperatureValueRandom();
+                FinalProject.CentralStation.centralsingleton.tbtp1.Text = TemperatureValueRandom();
             }
-            else { CentralStation.centralsingleton.tbtp1.Text = ""; }
+            else { FinalProject.CentralStation.centralsingleton.tbtp1.Text = ""; }
             #endregion
 
         }
@@ -369,6 +369,15 @@ namespace FinalProject
         public static int syValue, diValue, prValue, brValue;
         public static double tempValue;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
+
+        private void CentralStationPic_Click(object sender, EventArgs e)
+        {
+            CentralStation centralStation = new CentralStation();
+            centralStation.Show();
+            centralStation.Location = this.Location;
+            this.Hide();
+        }
+
         #endregion
 
         #region Draggable Top Panel  -- Dinis & Jorge

@@ -390,6 +390,14 @@ namespace FinalProject
         public static int syValue, diValue, prValue, brValue;
         public static double tempValue;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
+
+        private void CentralStationPic_Click(object sender, EventArgs e)
+        {
+            CentralStation centralStation = new CentralStation();
+            centralStation.Show();
+            centralStation.Location = this.Location;
+            this.Hide();
+        }
         #endregion
 
         #region Draggable Top Panel  -- Dinis & Jorge
