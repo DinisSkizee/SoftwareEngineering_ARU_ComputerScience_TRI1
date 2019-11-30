@@ -13,6 +13,7 @@ namespace FinalProject
             bed1singleton = this;
             InitializeComponent();
 
+            new CentralStation();
             new BedSideViewConfiguration();
             BedSideViewConfiguration.timer.Tick += UpdateTextBox;
             BedSideViewConfiguration.timer.Tick += ActiveCheck;
@@ -314,6 +315,38 @@ namespace FinalProject
             Temperature_Actual_Text2.Text = TemperatureValueRandom();
             Temperature_Actual_Text3.Text = TemperatureValueRandom();
             Temperature_Actual_Text4.Text = TemperatureValueRandom();
+
+            #region Central Station TextBoxes Assignment
+            if (bloodActive == true)
+            {
+                CentralStation.centralsingleton.tbdi1.Text = DiastolicValueRandom();
+                CentralStation.centralsingleton.tbsy1.Text = SystolicValueRandom();
+            }
+            else
+            {
+                CentralStation.centralsingleton.tbdi1.Text = "";
+                CentralStation.centralsingleton.tbsy1.Text = "";
+            }
+
+            if (breathingActive == true)
+            {
+                CentralStation.centralsingleton.tbbr1.Text = BreathingValueRandom();
+            }
+            else { CentralStation.centralsingleton.tbbr1.Text = ""; }
+
+            if (pulseActive == true)
+            {
+                CentralStation.centralsingleton.tbpr1.Text = PulseValueRandom();
+            }
+            else { CentralStation.centralsingleton.tbpr1.Text = ""; }
+
+            if (tempActive == true)
+            {
+                CentralStation.centralsingleton.tbtp1.Text = TemperatureValueRandom();
+            }
+            else { CentralStation.centralsingleton.tbtp1.Text = ""; }
+            #endregion
+
         }
 
         // Variables

@@ -335,6 +335,38 @@ namespace FinalProject
             Temperature_Actual_Text2.Text = TemperatureValueRandom();
             Temperature_Actual_Text3.Text = TemperatureValueRandom();
             Temperature_Actual_Text4.Text = TemperatureValueRandom();
+
+            #region Central Station TextBoxes Assignment
+            if (bloodActive == true)
+            {
+                CentralStation.centralsingleton.tbdi6.Text = DiastolicValueRandom();
+                CentralStation.centralsingleton.tbsy6.Text = SystolicValueRandom();
+            }
+            else
+            {
+                CentralStation.centralsingleton.tbdi6.Text = "";
+                CentralStation.centralsingleton.tbsy6.Text = "";
+            }
+
+            if (breathingActive == true)
+            {
+                CentralStation.centralsingleton.tbbr6.Text = BreathingValueRandom();
+            }
+            else { CentralStation.centralsingleton.tbbr6.Text = ""; }
+
+            if (pulseActive == true)
+            {
+                CentralStation.centralsingleton.tbpr6.Text = PulseValueRandom();
+            }
+            else { CentralStation.centralsingleton.tbpr6.Text = ""; }
+
+            if (tempActive == true)
+            {
+                CentralStation.centralsingleton.tbtp6.Text = TemperatureValueRandom();
+            }
+            else { CentralStation.centralsingleton.tbtp6.Text = ""; }
+            #endregion
+
         }
 
         // Variables

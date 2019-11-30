@@ -6,8 +6,11 @@ namespace FinalProject
 {
     public partial class CentralStation : Form
     {
+        public static CentralStation centralsingleton;
+
         public CentralStation()
         {
+            centralsingleton = this;
             InitializeComponent();
         }
 
@@ -54,15 +57,9 @@ namespace FinalProject
             
         }
 
-        private void CentralStation_Load(object sender, EventArgs e)
+        public void TextBoxesUpdate(object sender, EventArgs e)
         {
 
         }
-
-        private void PanelTop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }

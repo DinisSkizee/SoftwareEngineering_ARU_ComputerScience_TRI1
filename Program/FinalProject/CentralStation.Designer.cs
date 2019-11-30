@@ -35,11 +35,11 @@
             this.CloseButtonCentralStation = new System.Windows.Forms.PictureBox();
             this.Bed2 = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbsy1 = new System.Windows.Forms.TextBox();
+            this.tbtp1 = new System.Windows.Forms.TextBox();
+            this.tbpr1 = new System.Windows.Forms.TextBox();
+            this.tbbr1 = new System.Windows.Forms.TextBox();
+            this.tbdi1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,77 +50,77 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.tbsy2 = new System.Windows.Forms.TextBox();
+            this.tbtp2 = new System.Windows.Forms.TextBox();
+            this.tbpr2 = new System.Windows.Forms.TextBox();
+            this.tbbr2 = new System.Windows.Forms.TextBox();
+            this.tbdi2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.tbsy4 = new System.Windows.Forms.TextBox();
+            this.tbtp4 = new System.Windows.Forms.TextBox();
+            this.tbpr4 = new System.Windows.Forms.TextBox();
+            this.tbbr4 = new System.Windows.Forms.TextBox();
+            this.tbdi4 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.tbsy3 = new System.Windows.Forms.TextBox();
+            this.tbtp3 = new System.Windows.Forms.TextBox();
+            this.tbpr3 = new System.Windows.Forms.TextBox();
+            this.tbbr3 = new System.Windows.Forms.TextBox();
+            this.tbdi3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbsy8 = new System.Windows.Forms.TextBox();
+            this.tbtp8 = new System.Windows.Forms.TextBox();
+            this.tbpr8 = new System.Windows.Forms.TextBox();
+            this.tbbr8 = new System.Windows.Forms.TextBox();
+            this.tbdi8 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tbsy7 = new System.Windows.Forms.TextBox();
+            this.tbtp7 = new System.Windows.Forms.TextBox();
+            this.tbpr7 = new System.Windows.Forms.TextBox();
+            this.tbbr7 = new System.Windows.Forms.TextBox();
+            this.tbdi7 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.tbsy6 = new System.Windows.Forms.TextBox();
+            this.tbtp6 = new System.Windows.Forms.TextBox();
+            this.tbpr6 = new System.Windows.Forms.TextBox();
+            this.tbbr6 = new System.Windows.Forms.TextBox();
+            this.tbdi6 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.tbsy5 = new System.Windows.Forms.TextBox();
+            this.tbtp5 = new System.Windows.Forms.TextBox();
+            this.tbpr5 = new System.Windows.Forms.TextBox();
+            this.tbbr5 = new System.Windows.Forms.TextBox();
+            this.tbdi5 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
@@ -140,7 +140,6 @@
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 1;
-            this.PanelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTop_Paint);
             this.PanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelTop_MouseMove);
             // 
             // MainPageButton
@@ -206,225 +205,225 @@
             this.textBox17.TabIndex = 112;
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // tbsy1
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(98, 102);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(83, 25);
-            this.textBox4.TabIndex = 117;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy1.ForeColor = System.Drawing.Color.White;
+            this.tbsy1.Location = new System.Drawing.Point(98, 102);
+            this.tbsy1.Multiline = true;
+            this.tbsy1.Name = "tbsy1";
+            this.tbsy1.Size = new System.Drawing.Size(83, 25);
+            this.tbsy1.TabIndex = 117;
+            this.tbsy1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // tbtp1
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(191, 156);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(173, 25);
-            this.textBox5.TabIndex = 116;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp1.ForeColor = System.Drawing.Color.White;
+            this.tbtp1.Location = new System.Drawing.Point(191, 156);
+            this.tbtp1.Multiline = true;
+            this.tbtp1.Name = "tbtp1";
+            this.tbtp1.Size = new System.Drawing.Size(173, 25);
+            this.tbtp1.TabIndex = 116;
+            this.tbtp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // tbpr1
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(7, 156);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(174, 25);
-            this.textBox6.TabIndex = 115;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr1.ForeColor = System.Drawing.Color.White;
+            this.tbpr1.Location = new System.Drawing.Point(7, 156);
+            this.tbpr1.Multiline = true;
+            this.tbpr1.Name = "tbpr1";
+            this.tbpr1.Size = new System.Drawing.Size(174, 25);
+            this.tbpr1.TabIndex = 115;
+            this.tbpr1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // tbbr1
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(191, 102);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(173, 25);
-            this.textBox7.TabIndex = 114;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr1.ForeColor = System.Drawing.Color.White;
+            this.tbbr1.Location = new System.Drawing.Point(191, 102);
+            this.tbbr1.Multiline = true;
+            this.tbbr1.Name = "tbbr1";
+            this.tbbr1.Size = new System.Drawing.Size(173, 25);
+            this.tbbr1.TabIndex = 114;
+            this.tbbr1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // tbdi1
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox8.ForeColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(7, 102);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(83, 25);
-            this.textBox8.TabIndex = 113;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi1.ForeColor = System.Drawing.Color.White;
+            this.tbdi1.Location = new System.Drawing.Point(7, 102);
+            this.tbdi1.Multiline = true;
+            this.tbdi1.Name = "tbdi1";
+            this.tbdi1.Size = new System.Drawing.Size(83, 25);
+            this.tbdi1.TabIndex = 113;
+            this.tbdi1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(42, 86);
+            this.label5.Location = new System.Drawing.Point(24, 86);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 134;
-            this.label5.Text = "Minimum";
+            this.label5.Text = "Diastolic";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(137, 86);
+            this.label6.Location = new System.Drawing.Point(121, 86);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 135;
-            this.label6.Text = "Minimum";
+            this.label6.Text = "Systolic";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(316, 86);
+            this.label7.Location = new System.Drawing.Point(244, 86);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 13);
+            this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 136;
-            this.label7.Text = "Minimum";
+            this.label7.Text = "Breathing Rate";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(137, 140);
+            this.label8.Location = new System.Drawing.Point(63, 140);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
+            this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 137;
-            this.label8.Text = "Minimum";
+            this.label8.Text = "Pulse Rate";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(316, 140);
+            this.label9.Location = new System.Drawing.Point(252, 140);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.Size = new System.Drawing.Size(67, 13);
             this.label9.TabIndex = 138;
-            this.label9.Text = "Minimum";
+            this.label9.Text = "Temperature";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(316, 278);
+            this.label10.Location = new System.Drawing.Point(252, 278);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 13);
+            this.label10.Size = new System.Drawing.Size(67, 13);
             this.label10.TabIndex = 149;
-            this.label10.Text = "Minimum";
+            this.label10.Text = "Temperature";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(137, 278);
+            this.label11.Location = new System.Drawing.Point(63, 278);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 13);
+            this.label11.Size = new System.Drawing.Size(59, 13);
             this.label11.TabIndex = 148;
-            this.label11.Text = "Minimum";
+            this.label11.Text = "Pulse Rate";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(316, 224);
+            this.label12.Location = new System.Drawing.Point(244, 224);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 13);
+            this.label12.Size = new System.Drawing.Size(78, 13);
             this.label12.TabIndex = 147;
-            this.label12.Text = "Minimum";
+            this.label12.Text = "Breathing Rate";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(137, 224);
+            this.label13.Location = new System.Drawing.Point(121, 224);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 13);
+            this.label13.Size = new System.Drawing.Size(43, 13);
             this.label13.TabIndex = 146;
-            this.label13.Text = "Minimum";
+            this.label13.Text = "Systolic";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(42, 224);
+            this.label14.Location = new System.Drawing.Point(24, 224);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.Size = new System.Drawing.Size(47, 13);
             this.label14.TabIndex = 145;
-            this.label14.Text = "Minimum";
+            this.label14.Text = "Diastolic";
             // 
-            // textBox21
+            // tbsy2
             // 
-            this.textBox21.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox21.ForeColor = System.Drawing.Color.White;
-            this.textBox21.Location = new System.Drawing.Point(98, 240);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(83, 25);
-            this.textBox21.TabIndex = 144;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy2.ForeColor = System.Drawing.Color.White;
+            this.tbsy2.Location = new System.Drawing.Point(98, 240);
+            this.tbsy2.Multiline = true;
+            this.tbsy2.Name = "tbsy2";
+            this.tbsy2.Size = new System.Drawing.Size(83, 25);
+            this.tbsy2.TabIndex = 144;
+            this.tbsy2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // tbtp2
             // 
-            this.textBox22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox22.ForeColor = System.Drawing.Color.White;
-            this.textBox22.Location = new System.Drawing.Point(191, 294);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(173, 25);
-            this.textBox22.TabIndex = 143;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp2.ForeColor = System.Drawing.Color.White;
+            this.tbtp2.Location = new System.Drawing.Point(191, 294);
+            this.tbtp2.Multiline = true;
+            this.tbtp2.Name = "tbtp2";
+            this.tbtp2.Size = new System.Drawing.Size(173, 25);
+            this.tbtp2.TabIndex = 143;
+            this.tbtp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox23
+            // tbpr2
             // 
-            this.textBox23.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox23.ForeColor = System.Drawing.Color.White;
-            this.textBox23.Location = new System.Drawing.Point(7, 294);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(174, 25);
-            this.textBox23.TabIndex = 142;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr2.ForeColor = System.Drawing.Color.White;
+            this.tbpr2.Location = new System.Drawing.Point(7, 294);
+            this.tbpr2.Multiline = true;
+            this.tbpr2.Name = "tbpr2";
+            this.tbpr2.Size = new System.Drawing.Size(174, 25);
+            this.tbpr2.TabIndex = 142;
+            this.tbpr2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox24
+            // tbbr2
             // 
-            this.textBox24.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox24.ForeColor = System.Drawing.Color.White;
-            this.textBox24.Location = new System.Drawing.Point(191, 240);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(173, 25);
-            this.textBox24.TabIndex = 141;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr2.ForeColor = System.Drawing.Color.White;
+            this.tbbr2.Location = new System.Drawing.Point(191, 240);
+            this.tbbr2.Multiline = true;
+            this.tbbr2.Name = "tbbr2";
+            this.tbbr2.Size = new System.Drawing.Size(173, 25);
+            this.tbbr2.TabIndex = 141;
+            this.tbbr2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox25
+            // tbdi2
             // 
-            this.textBox25.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox25.ForeColor = System.Drawing.Color.White;
-            this.textBox25.Location = new System.Drawing.Point(7, 240);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(83, 25);
-            this.textBox25.TabIndex = 140;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi2.ForeColor = System.Drawing.Color.White;
+            this.tbdi2.Location = new System.Drawing.Point(7, 240);
+            this.tbdi2.Multiline = true;
+            this.tbdi2.Name = "tbdi2";
+            this.tbdi2.Size = new System.Drawing.Size(83, 25);
+            this.tbdi2.TabIndex = 140;
+            this.tbdi2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button3
             // 
@@ -442,112 +441,112 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(316, 554);
+            this.label16.Location = new System.Drawing.Point(252, 554);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 13);
+            this.label16.Size = new System.Drawing.Size(67, 13);
             this.label16.TabIndex = 171;
-            this.label16.Text = "Minimum";
+            this.label16.Text = "Temperature";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(137, 554);
+            this.label17.Location = new System.Drawing.Point(63, 554);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 13);
+            this.label17.Size = new System.Drawing.Size(59, 13);
             this.label17.TabIndex = 170;
-            this.label17.Text = "Minimum";
+            this.label17.Text = "Pulse Rate";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(316, 500);
+            this.label18.Location = new System.Drawing.Point(244, 500);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(48, 13);
+            this.label18.Size = new System.Drawing.Size(78, 13);
             this.label18.TabIndex = 169;
-            this.label18.Text = "Minimum";
+            this.label18.Text = "Breathing Rate";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(137, 500);
+            this.label19.Location = new System.Drawing.Point(121, 500);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(48, 13);
+            this.label19.Size = new System.Drawing.Size(43, 13);
             this.label19.TabIndex = 168;
-            this.label19.Text = "Minimum";
+            this.label19.Text = "Systolic";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(42, 500);
+            this.label20.Location = new System.Drawing.Point(24, 500);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 13);
+            this.label20.Size = new System.Drawing.Size(47, 13);
             this.label20.TabIndex = 167;
-            this.label20.Text = "Minimum";
+            this.label20.Text = "Diastolic";
             // 
-            // textBox26
+            // tbsy4
             // 
-            this.textBox26.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox26.ForeColor = System.Drawing.Color.White;
-            this.textBox26.Location = new System.Drawing.Point(98, 516);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(83, 25);
-            this.textBox26.TabIndex = 166;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy4.ForeColor = System.Drawing.Color.White;
+            this.tbsy4.Location = new System.Drawing.Point(98, 516);
+            this.tbsy4.Multiline = true;
+            this.tbsy4.Name = "tbsy4";
+            this.tbsy4.Size = new System.Drawing.Size(83, 25);
+            this.tbsy4.TabIndex = 166;
+            this.tbsy4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox27
+            // tbtp4
             // 
-            this.textBox27.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox27.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox27.ForeColor = System.Drawing.Color.White;
-            this.textBox27.Location = new System.Drawing.Point(191, 570);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(173, 25);
-            this.textBox27.TabIndex = 165;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp4.ForeColor = System.Drawing.Color.White;
+            this.tbtp4.Location = new System.Drawing.Point(191, 570);
+            this.tbtp4.Multiline = true;
+            this.tbtp4.Name = "tbtp4";
+            this.tbtp4.Size = new System.Drawing.Size(173, 25);
+            this.tbtp4.TabIndex = 165;
+            this.tbtp4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox28
+            // tbpr4
             // 
-            this.textBox28.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox28.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox28.ForeColor = System.Drawing.Color.White;
-            this.textBox28.Location = new System.Drawing.Point(7, 570);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(174, 25);
-            this.textBox28.TabIndex = 164;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr4.ForeColor = System.Drawing.Color.White;
+            this.tbpr4.Location = new System.Drawing.Point(7, 570);
+            this.tbpr4.Multiline = true;
+            this.tbpr4.Name = "tbpr4";
+            this.tbpr4.Size = new System.Drawing.Size(174, 25);
+            this.tbpr4.TabIndex = 164;
+            this.tbpr4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox29
+            // tbbr4
             // 
-            this.textBox29.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox29.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox29.ForeColor = System.Drawing.Color.White;
-            this.textBox29.Location = new System.Drawing.Point(191, 516);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(173, 25);
-            this.textBox29.TabIndex = 163;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr4.ForeColor = System.Drawing.Color.White;
+            this.tbbr4.Location = new System.Drawing.Point(191, 516);
+            this.tbbr4.Multiline = true;
+            this.tbbr4.Name = "tbbr4";
+            this.tbbr4.Size = new System.Drawing.Size(173, 25);
+            this.tbbr4.TabIndex = 163;
+            this.tbbr4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox30
+            // tbdi4
             // 
-            this.textBox30.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox30.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox30.ForeColor = System.Drawing.Color.White;
-            this.textBox30.Location = new System.Drawing.Point(7, 516);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(83, 25);
-            this.textBox30.TabIndex = 162;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi4.ForeColor = System.Drawing.Color.White;
+            this.tbdi4.Location = new System.Drawing.Point(7, 516);
+            this.tbdi4.Multiline = true;
+            this.tbdi4.Name = "tbdi4";
+            this.tbdi4.Size = new System.Drawing.Size(83, 25);
+            this.tbdi4.TabIndex = 162;
+            this.tbdi4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button4
             // 
@@ -565,112 +564,112 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(316, 416);
+            this.label21.Location = new System.Drawing.Point(252, 416);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(48, 13);
+            this.label21.Size = new System.Drawing.Size(67, 13);
             this.label21.TabIndex = 160;
-            this.label21.Text = "Minimum";
+            this.label21.Text = "Temperature";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(137, 416);
+            this.label22.Location = new System.Drawing.Point(63, 416);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(48, 13);
+            this.label22.Size = new System.Drawing.Size(59, 13);
             this.label22.TabIndex = 159;
-            this.label22.Text = "Minimum";
+            this.label22.Text = "Pulse Rate";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(316, 362);
+            this.label23.Location = new System.Drawing.Point(244, 362);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(48, 13);
+            this.label23.Size = new System.Drawing.Size(78, 13);
             this.label23.TabIndex = 158;
-            this.label23.Text = "Minimum";
+            this.label23.Text = "Breathing Rate";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(137, 362);
+            this.label24.Location = new System.Drawing.Point(121, 362);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(48, 13);
+            this.label24.Size = new System.Drawing.Size(43, 13);
             this.label24.TabIndex = 157;
-            this.label24.Text = "Minimum";
+            this.label24.Text = "Systolic";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(42, 362);
+            this.label25.Location = new System.Drawing.Point(24, 362);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(48, 13);
+            this.label25.Size = new System.Drawing.Size(47, 13);
             this.label25.TabIndex = 156;
-            this.label25.Text = "Minimum";
+            this.label25.Text = "Diastolic";
             // 
-            // textBox31
+            // tbsy3
             // 
-            this.textBox31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox31.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox31.ForeColor = System.Drawing.Color.White;
-            this.textBox31.Location = new System.Drawing.Point(98, 378);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(83, 25);
-            this.textBox31.TabIndex = 155;
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy3.ForeColor = System.Drawing.Color.White;
+            this.tbsy3.Location = new System.Drawing.Point(98, 378);
+            this.tbsy3.Multiline = true;
+            this.tbsy3.Name = "tbsy3";
+            this.tbsy3.Size = new System.Drawing.Size(83, 25);
+            this.tbsy3.TabIndex = 155;
+            this.tbsy3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox32
+            // tbtp3
             // 
-            this.textBox32.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox32.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox32.ForeColor = System.Drawing.Color.White;
-            this.textBox32.Location = new System.Drawing.Point(191, 432);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(173, 25);
-            this.textBox32.TabIndex = 154;
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp3.ForeColor = System.Drawing.Color.White;
+            this.tbtp3.Location = new System.Drawing.Point(191, 432);
+            this.tbtp3.Multiline = true;
+            this.tbtp3.Name = "tbtp3";
+            this.tbtp3.Size = new System.Drawing.Size(173, 25);
+            this.tbtp3.TabIndex = 154;
+            this.tbtp3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox33
+            // tbpr3
             // 
-            this.textBox33.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox33.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox33.ForeColor = System.Drawing.Color.White;
-            this.textBox33.Location = new System.Drawing.Point(7, 432);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(174, 25);
-            this.textBox33.TabIndex = 153;
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr3.ForeColor = System.Drawing.Color.White;
+            this.tbpr3.Location = new System.Drawing.Point(7, 432);
+            this.tbpr3.Multiline = true;
+            this.tbpr3.Name = "tbpr3";
+            this.tbpr3.Size = new System.Drawing.Size(174, 25);
+            this.tbpr3.TabIndex = 153;
+            this.tbpr3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox34
+            // tbbr3
             // 
-            this.textBox34.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox34.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox34.ForeColor = System.Drawing.Color.White;
-            this.textBox34.Location = new System.Drawing.Point(191, 378);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(173, 25);
-            this.textBox34.TabIndex = 152;
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr3.ForeColor = System.Drawing.Color.White;
+            this.tbbr3.Location = new System.Drawing.Point(191, 378);
+            this.tbbr3.Multiline = true;
+            this.tbbr3.Name = "tbbr3";
+            this.tbbr3.Size = new System.Drawing.Size(173, 25);
+            this.tbbr3.TabIndex = 152;
+            this.tbbr3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox35
+            // tbdi3
             // 
-            this.textBox35.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox35.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox35.ForeColor = System.Drawing.Color.White;
-            this.textBox35.Location = new System.Drawing.Point(7, 378);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(83, 25);
-            this.textBox35.TabIndex = 151;
-            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi3.ForeColor = System.Drawing.Color.White;
+            this.tbdi3.Location = new System.Drawing.Point(7, 378);
+            this.tbdi3.Multiline = true;
+            this.tbdi3.Name = "tbdi3";
+            this.tbdi3.Size = new System.Drawing.Size(83, 25);
+            this.tbdi3.TabIndex = 151;
+            this.tbdi3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button5
             // 
@@ -688,112 +687,112 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(695, 554);
+            this.label1.Location = new System.Drawing.Point(633, 554);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 216;
-            this.label1.Text = "Minimum";
+            this.label1.Text = "Temperature";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 554);
+            this.label2.Location = new System.Drawing.Point(444, 554);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 215;
-            this.label2.Text = "Minimum";
+            this.label2.Text = "Pulse Rate";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(695, 500);
+            this.label3.Location = new System.Drawing.Point(625, 500);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 214;
-            this.label3.Text = "Minimum";
+            this.label3.Text = "Breathing Rate";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(516, 500);
+            this.label4.Location = new System.Drawing.Point(498, 500);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 213;
-            this.label4.Text = "Minimum";
+            this.label4.Text = "Systolic";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(421, 500);
+            this.label15.Location = new System.Drawing.Point(405, 500);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(48, 13);
+            this.label15.Size = new System.Drawing.Size(47, 13);
             this.label15.TabIndex = 212;
-            this.label15.Text = "Minimum";
+            this.label15.Text = "Diastolic";
             // 
-            // textBox1
+            // tbsy8
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(477, 516);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 25);
-            this.textBox1.TabIndex = 211;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy8.ForeColor = System.Drawing.Color.White;
+            this.tbsy8.Location = new System.Drawing.Point(477, 516);
+            this.tbsy8.Multiline = true;
+            this.tbsy8.Name = "tbsy8";
+            this.tbsy8.Size = new System.Drawing.Size(83, 25);
+            this.tbsy8.TabIndex = 211;
+            this.tbsy8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // tbtp8
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(570, 570);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 25);
-            this.textBox2.TabIndex = 210;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp8.ForeColor = System.Drawing.Color.White;
+            this.tbtp8.Location = new System.Drawing.Point(570, 570);
+            this.tbtp8.Multiline = true;
+            this.tbtp8.Name = "tbtp8";
+            this.tbtp8.Size = new System.Drawing.Size(173, 25);
+            this.tbtp8.TabIndex = 210;
+            this.tbtp8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // tbpr8
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(386, 570);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 25);
-            this.textBox3.TabIndex = 209;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr8.ForeColor = System.Drawing.Color.White;
+            this.tbpr8.Location = new System.Drawing.Point(386, 570);
+            this.tbpr8.Multiline = true;
+            this.tbpr8.Name = "tbpr8";
+            this.tbpr8.Size = new System.Drawing.Size(174, 25);
+            this.tbpr8.TabIndex = 209;
+            this.tbpr8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // tbbr8
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox9.ForeColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(570, 516);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(173, 25);
-            this.textBox9.TabIndex = 208;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr8.ForeColor = System.Drawing.Color.White;
+            this.tbbr8.Location = new System.Drawing.Point(570, 516);
+            this.tbbr8.Multiline = true;
+            this.tbbr8.Name = "tbbr8";
+            this.tbbr8.Size = new System.Drawing.Size(173, 25);
+            this.tbbr8.TabIndex = 208;
+            this.tbbr8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // tbdi8
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox10.ForeColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(386, 516);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(83, 25);
-            this.textBox10.TabIndex = 207;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi8.ForeColor = System.Drawing.Color.White;
+            this.tbdi8.Location = new System.Drawing.Point(386, 516);
+            this.tbdi8.Multiline = true;
+            this.tbdi8.Name = "tbdi8";
+            this.tbdi8.Size = new System.Drawing.Size(83, 25);
+            this.tbdi8.TabIndex = 207;
+            this.tbdi8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -811,112 +810,112 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(695, 416);
+            this.label26.Location = new System.Drawing.Point(633, 416);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(48, 13);
+            this.label26.Size = new System.Drawing.Size(67, 13);
             this.label26.TabIndex = 205;
-            this.label26.Text = "Minimum";
+            this.label26.Text = "Temperature";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(516, 416);
+            this.label27.Location = new System.Drawing.Point(444, 416);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(48, 13);
+            this.label27.Size = new System.Drawing.Size(59, 13);
             this.label27.TabIndex = 204;
-            this.label27.Text = "Minimum";
+            this.label27.Text = "Pulse Rate";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(695, 362);
+            this.label28.Location = new System.Drawing.Point(625, 362);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(48, 13);
+            this.label28.Size = new System.Drawing.Size(78, 13);
             this.label28.TabIndex = 203;
-            this.label28.Text = "Minimum";
+            this.label28.Text = "Breathing Rate";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(516, 362);
+            this.label29.Location = new System.Drawing.Point(498, 362);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(48, 13);
+            this.label29.Size = new System.Drawing.Size(43, 13);
             this.label29.TabIndex = 202;
-            this.label29.Text = "Minimum";
+            this.label29.Text = "Systolic";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(421, 362);
+            this.label30.Location = new System.Drawing.Point(405, 362);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(48, 13);
+            this.label30.Size = new System.Drawing.Size(47, 13);
             this.label30.TabIndex = 201;
-            this.label30.Text = "Minimum";
+            this.label30.Text = "Diastolic";
             // 
-            // textBox11
+            // tbsy7
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox11.ForeColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(477, 378);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(83, 25);
-            this.textBox11.TabIndex = 200;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy7.ForeColor = System.Drawing.Color.White;
+            this.tbsy7.Location = new System.Drawing.Point(477, 378);
+            this.tbsy7.Multiline = true;
+            this.tbsy7.Name = "tbsy7";
+            this.tbsy7.Size = new System.Drawing.Size(83, 25);
+            this.tbsy7.TabIndex = 200;
+            this.tbsy7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // tbtp7
             // 
-            this.textBox12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox12.ForeColor = System.Drawing.Color.White;
-            this.textBox12.Location = new System.Drawing.Point(570, 432);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(173, 25);
-            this.textBox12.TabIndex = 199;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp7.ForeColor = System.Drawing.Color.White;
+            this.tbtp7.Location = new System.Drawing.Point(570, 432);
+            this.tbtp7.Multiline = true;
+            this.tbtp7.Name = "tbtp7";
+            this.tbtp7.Size = new System.Drawing.Size(173, 25);
+            this.tbtp7.TabIndex = 199;
+            this.tbtp7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
+            // tbpr7
             // 
-            this.textBox13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox13.ForeColor = System.Drawing.Color.White;
-            this.textBox13.Location = new System.Drawing.Point(386, 432);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(174, 25);
-            this.textBox13.TabIndex = 198;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr7.ForeColor = System.Drawing.Color.White;
+            this.tbpr7.Location = new System.Drawing.Point(386, 432);
+            this.tbpr7.Multiline = true;
+            this.tbpr7.Name = "tbpr7";
+            this.tbpr7.Size = new System.Drawing.Size(174, 25);
+            this.tbpr7.TabIndex = 198;
+            this.tbpr7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // tbbr7
             // 
-            this.textBox14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox14.ForeColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(570, 378);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(173, 25);
-            this.textBox14.TabIndex = 197;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr7.ForeColor = System.Drawing.Color.White;
+            this.tbbr7.Location = new System.Drawing.Point(570, 378);
+            this.tbbr7.Multiline = true;
+            this.tbbr7.Name = "tbbr7";
+            this.tbbr7.Size = new System.Drawing.Size(173, 25);
+            this.tbbr7.TabIndex = 197;
+            this.tbbr7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // tbdi7
             // 
-            this.textBox15.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox15.ForeColor = System.Drawing.Color.White;
-            this.textBox15.Location = new System.Drawing.Point(386, 378);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(83, 25);
-            this.textBox15.TabIndex = 196;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi7.ForeColor = System.Drawing.Color.White;
+            this.tbdi7.Location = new System.Drawing.Point(386, 378);
+            this.tbdi7.Multiline = true;
+            this.tbdi7.Name = "tbdi7";
+            this.tbdi7.Size = new System.Drawing.Size(83, 25);
+            this.tbdi7.TabIndex = 196;
+            this.tbdi7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
@@ -934,112 +933,112 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(695, 278);
+            this.label31.Location = new System.Drawing.Point(633, 278);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(48, 13);
+            this.label31.Size = new System.Drawing.Size(67, 13);
             this.label31.TabIndex = 194;
-            this.label31.Text = "Minimum";
+            this.label31.Text = "Temperature";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(516, 278);
+            this.label32.Location = new System.Drawing.Point(444, 278);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(48, 13);
+            this.label32.Size = new System.Drawing.Size(59, 13);
             this.label32.TabIndex = 193;
-            this.label32.Text = "Minimum";
+            this.label32.Text = "Pulse Rate";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(695, 224);
+            this.label33.Location = new System.Drawing.Point(625, 224);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(48, 13);
+            this.label33.Size = new System.Drawing.Size(78, 13);
             this.label33.TabIndex = 192;
-            this.label33.Text = "Minimum";
+            this.label33.Text = "Breathing Rate";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(516, 224);
+            this.label34.Location = new System.Drawing.Point(498, 224);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(48, 13);
+            this.label34.Size = new System.Drawing.Size(43, 13);
             this.label34.TabIndex = 191;
-            this.label34.Text = "Minimum";
+            this.label34.Text = "Systolic";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(421, 224);
+            this.label35.Location = new System.Drawing.Point(405, 224);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(48, 13);
+            this.label35.Size = new System.Drawing.Size(47, 13);
             this.label35.TabIndex = 190;
-            this.label35.Text = "Minimum";
+            this.label35.Text = "Diastolic";
             // 
-            // textBox16
+            // tbsy6
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox16.ForeColor = System.Drawing.Color.White;
-            this.textBox16.Location = new System.Drawing.Point(477, 240);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(83, 25);
-            this.textBox16.TabIndex = 189;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy6.ForeColor = System.Drawing.Color.White;
+            this.tbsy6.Location = new System.Drawing.Point(477, 240);
+            this.tbsy6.Multiline = true;
+            this.tbsy6.Name = "tbsy6";
+            this.tbsy6.Size = new System.Drawing.Size(83, 25);
+            this.tbsy6.TabIndex = 189;
+            this.tbsy6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // tbtp6
             // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox18.ForeColor = System.Drawing.Color.White;
-            this.textBox18.Location = new System.Drawing.Point(570, 294);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(173, 25);
-            this.textBox18.TabIndex = 188;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp6.ForeColor = System.Drawing.Color.White;
+            this.tbtp6.Location = new System.Drawing.Point(570, 294);
+            this.tbtp6.Multiline = true;
+            this.tbtp6.Name = "tbtp6";
+            this.tbtp6.Size = new System.Drawing.Size(173, 25);
+            this.tbtp6.TabIndex = 188;
+            this.tbtp6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox19
+            // tbpr6
             // 
-            this.textBox19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox19.ForeColor = System.Drawing.Color.White;
-            this.textBox19.Location = new System.Drawing.Point(386, 294);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(174, 25);
-            this.textBox19.TabIndex = 187;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr6.ForeColor = System.Drawing.Color.White;
+            this.tbpr6.Location = new System.Drawing.Point(386, 294);
+            this.tbpr6.Multiline = true;
+            this.tbpr6.Name = "tbpr6";
+            this.tbpr6.Size = new System.Drawing.Size(174, 25);
+            this.tbpr6.TabIndex = 187;
+            this.tbpr6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox20
+            // tbbr6
             // 
-            this.textBox20.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox20.ForeColor = System.Drawing.Color.White;
-            this.textBox20.Location = new System.Drawing.Point(570, 240);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(173, 25);
-            this.textBox20.TabIndex = 186;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr6.ForeColor = System.Drawing.Color.White;
+            this.tbbr6.Location = new System.Drawing.Point(570, 240);
+            this.tbbr6.Multiline = true;
+            this.tbbr6.Name = "tbbr6";
+            this.tbbr6.Size = new System.Drawing.Size(173, 25);
+            this.tbbr6.TabIndex = 186;
+            this.tbbr6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox36
+            // tbdi6
             // 
-            this.textBox36.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox36.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox36.ForeColor = System.Drawing.Color.White;
-            this.textBox36.Location = new System.Drawing.Point(386, 240);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(83, 25);
-            this.textBox36.TabIndex = 185;
-            this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi6.ForeColor = System.Drawing.Color.White;
+            this.tbdi6.Location = new System.Drawing.Point(386, 240);
+            this.tbdi6.Multiline = true;
+            this.tbdi6.Name = "tbdi6";
+            this.tbdi6.Size = new System.Drawing.Size(83, 25);
+            this.tbdi6.TabIndex = 185;
+            this.tbdi6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button6
             // 
@@ -1057,112 +1056,112 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(695, 140);
+            this.label36.Location = new System.Drawing.Point(633, 140);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(48, 13);
+            this.label36.Size = new System.Drawing.Size(67, 13);
             this.label36.TabIndex = 183;
-            this.label36.Text = "Minimum";
+            this.label36.Text = "Temperature";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(516, 140);
+            this.label37.Location = new System.Drawing.Point(444, 140);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(48, 13);
+            this.label37.Size = new System.Drawing.Size(59, 13);
             this.label37.TabIndex = 182;
-            this.label37.Text = "Minimum";
+            this.label37.Text = "Pulse Rate";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(695, 86);
+            this.label38.Location = new System.Drawing.Point(625, 86);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(48, 13);
+            this.label38.Size = new System.Drawing.Size(78, 13);
             this.label38.TabIndex = 181;
-            this.label38.Text = "Minimum";
+            this.label38.Text = "Breathing Rate";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(516, 86);
+            this.label39.Location = new System.Drawing.Point(498, 86);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(48, 13);
+            this.label39.Size = new System.Drawing.Size(43, 13);
             this.label39.TabIndex = 180;
-            this.label39.Text = "Minimum";
+            this.label39.Text = "Systolic";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(421, 86);
+            this.label40.Location = new System.Drawing.Point(405, 86);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(48, 13);
+            this.label40.Size = new System.Drawing.Size(47, 13);
             this.label40.TabIndex = 179;
-            this.label40.Text = "Minimum";
+            this.label40.Text = "Diastolic";
             // 
-            // textBox37
+            // tbsy5
             // 
-            this.textBox37.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox37.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox37.ForeColor = System.Drawing.Color.White;
-            this.textBox37.Location = new System.Drawing.Point(477, 102);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(83, 25);
-            this.textBox37.TabIndex = 178;
-            this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbsy5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbsy5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy5.ForeColor = System.Drawing.Color.White;
+            this.tbsy5.Location = new System.Drawing.Point(477, 102);
+            this.tbsy5.Multiline = true;
+            this.tbsy5.Name = "tbsy5";
+            this.tbsy5.Size = new System.Drawing.Size(83, 25);
+            this.tbsy5.TabIndex = 178;
+            this.tbsy5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox38
+            // tbtp5
             // 
-            this.textBox38.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox38.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox38.ForeColor = System.Drawing.Color.White;
-            this.textBox38.Location = new System.Drawing.Point(570, 156);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(173, 25);
-            this.textBox38.TabIndex = 177;
-            this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbtp5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbtp5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp5.ForeColor = System.Drawing.Color.White;
+            this.tbtp5.Location = new System.Drawing.Point(570, 156);
+            this.tbtp5.Multiline = true;
+            this.tbtp5.Name = "tbtp5";
+            this.tbtp5.Size = new System.Drawing.Size(173, 25);
+            this.tbtp5.TabIndex = 177;
+            this.tbtp5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox39
+            // tbpr5
             // 
-            this.textBox39.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox39.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox39.ForeColor = System.Drawing.Color.White;
-            this.textBox39.Location = new System.Drawing.Point(386, 156);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(174, 25);
-            this.textBox39.TabIndex = 176;
-            this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpr5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbpr5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr5.ForeColor = System.Drawing.Color.White;
+            this.tbpr5.Location = new System.Drawing.Point(386, 156);
+            this.tbpr5.Multiline = true;
+            this.tbpr5.Name = "tbpr5";
+            this.tbpr5.Size = new System.Drawing.Size(174, 25);
+            this.tbpr5.TabIndex = 176;
+            this.tbpr5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox40
+            // tbbr5
             // 
-            this.textBox40.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox40.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox40.ForeColor = System.Drawing.Color.White;
-            this.textBox40.Location = new System.Drawing.Point(570, 102);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(173, 25);
-            this.textBox40.TabIndex = 175;
-            this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbbr5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbbr5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr5.ForeColor = System.Drawing.Color.White;
+            this.tbbr5.Location = new System.Drawing.Point(570, 102);
+            this.tbbr5.Multiline = true;
+            this.tbbr5.Name = "tbbr5";
+            this.tbbr5.Size = new System.Drawing.Size(173, 25);
+            this.tbbr5.TabIndex = 175;
+            this.tbbr5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox41
+            // tbdi5
             // 
-            this.textBox41.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox41.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox41.ForeColor = System.Drawing.Color.White;
-            this.textBox41.Location = new System.Drawing.Point(386, 102);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(83, 25);
-            this.textBox41.TabIndex = 174;
-            this.textBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdi5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdi5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi5.ForeColor = System.Drawing.Color.White;
+            this.tbdi5.Location = new System.Drawing.Point(386, 102);
+            this.tbdi5.Multiline = true;
+            this.tbdi5.Name = "tbdi5";
+            this.tbdi5.Size = new System.Drawing.Size(83, 25);
+            this.tbdi5.TabIndex = 174;
+            this.tbdi5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button7
             // 
@@ -1188,95 +1187,94 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.tbsy8);
+            this.Controls.Add(this.tbtp8);
+            this.Controls.Add(this.tbpr8);
+            this.Controls.Add(this.tbbr8);
+            this.Controls.Add(this.tbdi8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.tbsy7);
+            this.Controls.Add(this.tbtp7);
+            this.Controls.Add(this.tbpr7);
+            this.Controls.Add(this.tbbr7);
+            this.Controls.Add(this.tbdi7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label35);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox36);
+            this.Controls.Add(this.tbsy6);
+            this.Controls.Add(this.tbtp6);
+            this.Controls.Add(this.tbpr6);
+            this.Controls.Add(this.tbbr6);
+            this.Controls.Add(this.tbdi6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label40);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
+            this.Controls.Add(this.tbsy5);
+            this.Controls.Add(this.tbtp5);
+            this.Controls.Add(this.tbpr5);
+            this.Controls.Add(this.tbbr5);
+            this.Controls.Add(this.tbdi5);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
+            this.Controls.Add(this.tbsy4);
+            this.Controls.Add(this.tbtp4);
+            this.Controls.Add(this.tbpr4);
+            this.Controls.Add(this.tbbr4);
+            this.Controls.Add(this.tbdi4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
+            this.Controls.Add(this.tbsy3);
+            this.Controls.Add(this.tbtp3);
+            this.Controls.Add(this.tbpr3);
+            this.Controls.Add(this.tbbr3);
+            this.Controls.Add(this.tbdi3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.tbsy2);
+            this.Controls.Add(this.tbtp2);
+            this.Controls.Add(this.tbpr2);
+            this.Controls.Add(this.tbbr2);
+            this.Controls.Add(this.tbdi2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.tbsy1);
+            this.Controls.Add(this.tbtp1);
+            this.Controls.Add(this.tbpr1);
+            this.Controls.Add(this.tbbr1);
+            this.Controls.Add(this.tbdi1);
             this.Controls.Add(this.Bed2);
             this.Controls.Add(this.PanelTop);
             this.Controls.Add(this.textBox17);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CentralStation";
             this.Text = resources.GetString("$this.Text");
-            this.Load += new System.EventHandler(this.CentralStation_Load);
             this.PanelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonCentralStation)).EndInit();
@@ -1294,11 +1292,11 @@
         private System.Windows.Forms.PictureBox MainPageButton;
         private System.Windows.Forms.Button Bed2;
         public System.Windows.Forms.TextBox textBox17;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox tbsy1;
+        public System.Windows.Forms.TextBox tbtp1;
+        public System.Windows.Forms.TextBox tbpr1;
+        public System.Windows.Forms.TextBox tbbr1;
+        public System.Windows.Forms.TextBox tbdi1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -1309,77 +1307,77 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.TextBox textBox21;
-        public System.Windows.Forms.TextBox textBox22;
-        public System.Windows.Forms.TextBox textBox23;
-        public System.Windows.Forms.TextBox textBox24;
-        public System.Windows.Forms.TextBox textBox25;
+        public System.Windows.Forms.TextBox tbsy2;
+        public System.Windows.Forms.TextBox tbtp2;
+        public System.Windows.Forms.TextBox tbpr2;
+        public System.Windows.Forms.TextBox tbbr2;
+        public System.Windows.Forms.TextBox tbdi2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        public System.Windows.Forms.TextBox textBox26;
-        public System.Windows.Forms.TextBox textBox27;
-        public System.Windows.Forms.TextBox textBox28;
-        public System.Windows.Forms.TextBox textBox29;
-        public System.Windows.Forms.TextBox textBox30;
+        public System.Windows.Forms.TextBox tbsy4;
+        public System.Windows.Forms.TextBox tbtp4;
+        public System.Windows.Forms.TextBox tbpr4;
+        public System.Windows.Forms.TextBox tbbr4;
+        public System.Windows.Forms.TextBox tbdi4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        public System.Windows.Forms.TextBox textBox31;
-        public System.Windows.Forms.TextBox textBox32;
-        public System.Windows.Forms.TextBox textBox33;
-        public System.Windows.Forms.TextBox textBox34;
-        public System.Windows.Forms.TextBox textBox35;
+        public System.Windows.Forms.TextBox tbsy3;
+        public System.Windows.Forms.TextBox tbtp3;
+        public System.Windows.Forms.TextBox tbpr3;
+        public System.Windows.Forms.TextBox tbbr3;
+        public System.Windows.Forms.TextBox tbdi3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label15;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox9;
-        public System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.TextBox tbsy8;
+        public System.Windows.Forms.TextBox tbtp8;
+        public System.Windows.Forms.TextBox tbpr8;
+        public System.Windows.Forms.TextBox tbbr8;
+        public System.Windows.Forms.TextBox tbdi8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        public System.Windows.Forms.TextBox textBox11;
-        public System.Windows.Forms.TextBox textBox12;
-        public System.Windows.Forms.TextBox textBox13;
-        public System.Windows.Forms.TextBox textBox14;
-        public System.Windows.Forms.TextBox textBox15;
+        public System.Windows.Forms.TextBox tbsy7;
+        public System.Windows.Forms.TextBox tbtp7;
+        public System.Windows.Forms.TextBox tbpr7;
+        public System.Windows.Forms.TextBox tbbr7;
+        public System.Windows.Forms.TextBox tbdi7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        public System.Windows.Forms.TextBox textBox16;
-        public System.Windows.Forms.TextBox textBox18;
-        public System.Windows.Forms.TextBox textBox19;
-        public System.Windows.Forms.TextBox textBox20;
-        public System.Windows.Forms.TextBox textBox36;
+        public System.Windows.Forms.TextBox tbsy6;
+        public System.Windows.Forms.TextBox tbtp6;
+        public System.Windows.Forms.TextBox tbpr6;
+        public System.Windows.Forms.TextBox tbbr6;
+        public System.Windows.Forms.TextBox tbdi6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        public System.Windows.Forms.TextBox textBox37;
-        public System.Windows.Forms.TextBox textBox38;
-        public System.Windows.Forms.TextBox textBox39;
-        public System.Windows.Forms.TextBox textBox40;
-        public System.Windows.Forms.TextBox textBox41;
+        public System.Windows.Forms.TextBox tbsy5;
+        public System.Windows.Forms.TextBox tbtp5;
+        public System.Windows.Forms.TextBox tbpr5;
+        public System.Windows.Forms.TextBox tbbr5;
+        public System.Windows.Forms.TextBox tbdi5;
         private System.Windows.Forms.Button button7;
     }
 }
