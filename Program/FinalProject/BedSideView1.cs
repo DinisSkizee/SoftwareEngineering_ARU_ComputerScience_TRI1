@@ -290,6 +290,12 @@ namespace FinalProject
 
             #endregion
 
+            #region TextBox Multiline Disable
+            textBox1.Multiline = false;
+            textBox1.AutoSize = false;
+            textBox1.Size = new System.Drawing.Size(152, 36);
+            #endregion // NEEDS CODE
+
         }
 
         public static int ditext, sytext, prtext, brtext, tptext;
