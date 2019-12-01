@@ -71,6 +71,7 @@
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(846, 44);
             this.PanelTop.TabIndex = 6;
+           
             // 
             // CloseButtonAlarmLogs
             // 

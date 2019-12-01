@@ -36,6 +36,8 @@ namespace FinalProject
             logs.Location = this.Location;
             this.Hide();
         }
+
+        
     }
    
 
