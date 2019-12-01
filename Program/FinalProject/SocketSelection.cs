@@ -1427,13 +1427,13 @@ namespace FinalProject
                         BedSideView2.moduleState2 = 1;
                         BedSideView2.insertClicked2 = 0;
                     }
-                    else if (BedSideView3.insertClicked3 == 1)
+                    else if (BedSideView2.insertClicked3 == 1)
                     {
                         BedSideView2.tempInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
                         BedSideView2.insertClicked3 = 0;
                     }
-                    else if (BedSideView3.insertClicked4 == 1)
+                    else if (BedSideView2.insertClicked4 == 1)
                     {
                         BedSideView2.tempInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
@@ -1638,7 +1638,7 @@ namespace FinalProject
                         BedSideView7.moduleState3 = 1;
                         BedSideView7.insertClicked3 = 0;
                     }
-                    else if (BedSideView3.insertClicked4 == 1)
+                    else if (BedSideView7.insertClicked4 == 1)
                     {
                         BedSideView7.tempInsert4 = 1;
                         BedSideView7.moduleState4 = 1;

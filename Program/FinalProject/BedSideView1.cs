@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -12,11 +13,13 @@ namespace FinalProject
         {
             bed1singleton = this;
             InitializeComponent();
-
             new CentralStation();
             new BedSideViewConfiguration();
+
             BedSideViewConfiguration.timer.Tick += UpdateTextBox;
             BedSideViewConfiguration.timer.Tick += ActiveCheck;
+            BedSideViewConfiguration.timer.Tick += UpdateCentralStation;
+            BedSideViewConfiguration.timer.Tick += UpdateColor;
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
@@ -289,6 +292,68 @@ namespace FinalProject
 
         }
 
+        public static int ditext, sytext, prtext, brtext, tptext;
+        public void UpdateColor(object sender, EventArgs e)
+        {
+            // Passing textbox.text to variable
+            int.TryParse(CentralStation.centralsingleton.tbdi1.Text, out ditext); // Diastolic Value
+            int.TryParse(CentralStation.centralsingleton.tbsy1.Text, out sytext); // Systolic Value
+            int.TryParse(CentralStation.centralsingleton.tbpr1.Text, out prtext); // Pulse Value
+            int.TryParse(CentralStation.centralsingleton.tbbr1.Text, out brtext); // Breathing Value
+            int.TryParse(CentralStation.centralsingleton.tbtp1.Text, out tptext); // Temperature Value
+
+
+            // Diastolic TextBox Color
+            if (ditext < diMin || ditext > diMax)
+            {
+                CentralStation.centralsingleton.tbdi1.BackColor = Color.Red;
+            }
+            else if (ditext > diMin && ditext < diMax)
+            {
+                CentralStation.centralsingleton.tbdi1.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Systolic TextBox Color
+            if (sytext < syMin || sytext > syMax)
+            {
+                CentralStation.centralsingleton.tbsy1.BackColor = Color.Red;
+            }
+            else if (sytext > syMin && sytext < syMax)
+            {
+                CentralStation.centralsingleton.tbsy1.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Pulse Textbox Color
+            if (prtext < prMin || prtext > prMax)
+            {
+                CentralStation.centralsingleton.tbpr1.BackColor = Color.Red;
+            }
+            else if (prtext > prMin && prtext < prMax)
+            {
+                CentralStation.centralsingleton.tbpr1.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Breathing Textbox Color
+            if (brtext < brMin || brtext > brMax)
+            {
+                CentralStation.centralsingleton.tbbr1.BackColor = Color.Red;
+            }
+            else if (brtext > brMin && brtext < brMax)
+            {
+                CentralStation.centralsingleton.tbbr1.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Temperature Textbox Color
+            if (tptext < tpMin || tptext < tpMax)
+            {
+                CentralStation.centralsingleton.tbtp1.BackColor = Color.Red;
+            }
+            else if (tptext > tpMin && tptext > tpMax)
+            {
+                CentralStation.centralsingleton.tbtp1.BackColor = Color.FromArgb(105, 105, 105);
+            }
+        }
+
         public void UpdateTextBox(object sender, EventArgs e)
         {
             DiBloodPressurePanelBed_Actual_Text.Text = DiastolicValueRandom();
@@ -316,36 +381,38 @@ namespace FinalProject
             Temperature_Actual_Text3.Text = TemperatureValueRandom();
             Temperature_Actual_Text4.Text = TemperatureValueRandom();
 
-            #region Central Station TextBoxes Assignment
+        }
+
+        public void UpdateCentralStation(object sender, EventArgs e)
+        {
             if (bloodActive == true)
             {
-                FinalProject.CentralStation.centralsingleton.tbdi1.Text = DiastolicValueRandom();
-                FinalProject.CentralStation.centralsingleton.tbsy1.Text = SystolicValueRandom();
+                CentralStation.centralsingleton.tbdi1.Text = DiastolicValueRandom();
+                CentralStation.centralsingleton.tbsy1.Text = SystolicValueRandom();
             }
             else
             {
-                FinalProject.CentralStation.centralsingleton.tbdi1.Text = "";
-                FinalProject.CentralStation.centralsingleton.tbsy1.Text = "";
+                CentralStation.centralsingleton.tbdi1.Text = "";
+                CentralStation.centralsingleton.tbsy1.Text = "";
             }
 
             if (breathingActive == true)
             {
-                FinalProject.CentralStation.centralsingleton.tbbr1.Text = BreathingValueRandom();
+                CentralStation.centralsingleton.tbbr1.Text = BreathingValueRandom();
             }
-            else { FinalProject.CentralStation.centralsingleton.tbbr1.Text = ""; }
+            else { CentralStation.centralsingleton.tbbr1.Text = ""; }
 
             if (pulseActive == true)
             {
-                FinalProject.CentralStation.centralsingleton.tbpr1.Text = PulseValueRandom();
+                CentralStation.centralsingleton.tbpr1.Text = PulseValueRandom();
             }
-            else { FinalProject.CentralStation.centralsingleton.tbpr1.Text = ""; }
+            else { CentralStation.centralsingleton.tbpr1.Text = ""; }
 
             if (tempActive == true)
             {
-                FinalProject.CentralStation.centralsingleton.tbtp1.Text = TemperatureValueRandom();
+                CentralStation.centralsingleton.tbtp1.Text = TemperatureValueRandom();
             }
-            else { FinalProject.CentralStation.centralsingleton.tbtp1.Text = ""; }
-            #endregion
+            else { CentralStation.centralsingleton.tbtp1.Text = ""; }
 
         }
 
@@ -369,6 +436,7 @@ namespace FinalProject
         public static int syValue, diValue, prValue, brValue;
         public static double tempValue;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
+        #endregion
 
         private void CentralStationPic_Click(object sender, EventArgs e)
         {
@@ -377,8 +445,6 @@ namespace FinalProject
             centralStation.Location = this.Location;
             this.Hide();
         }
-
-        #endregion
 
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
@@ -719,17 +785,14 @@ namespace FinalProject
             if (randomizerTemp <= 25)
             {
                 tempValue = SocketConfiguration.randomizer.Next(tpMin - 25, tpMin - 1);
-                tempValue /= 10;
             }
             else if ((randomizerTemp > 25) && (randomizerTemp < 75))
             {
                 tempValue = SocketConfiguration.randomizer.Next(tpMin, tpMax);
-                tempValue /= 10;
             }
             else if (randomizerTemp >= 75)
             {
                 tempValue = SocketConfiguration.randomizer.Next(tpMax + 1, tpMax + 45);
-                tempValue /= 10;
             }
 
             return tempValue.ToString();

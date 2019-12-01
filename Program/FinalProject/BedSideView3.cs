@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -12,9 +13,13 @@ namespace FinalProject
         {
             bed3singleton = this;
             InitializeComponent();
-
+            new CentralStation();
             new BedSideViewConfiguration();
+
             BedSideViewConfiguration.timer.Tick += UpdateTextBox;
+            BedSideViewConfiguration.timer.Tick += ActiveCheck;
+            BedSideViewConfiguration.timer.Tick += UpdateCentralStation;
+            BedSideViewConfiguration.timer.Tick += UpdateColor;
 
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
@@ -205,29 +210,6 @@ namespace FinalProject
 
             #endregion
 
-            #region ActivePanels Variable Assignment
-            if (BloodPressurePanelBed1.Visible == true || BloodPressurePanelBed2.Visible == true ||
-                BloodPressurePanelBed3.Visible == true || BloodPressurePanelBed4.Visible == true)
-            {
-                bloodActive = true;
-            }
-            if (PulseRatePanelBed1.Visible == true || PulseRatePanelBed2.Visible == true ||
-                PulseRatePanelBed3.Visible == true || PulseRatePanelBed4.Visible == true)
-            {
-                pulseActive = true;
-            }
-            if (BreathingRatePanelBed1.Visible == true || BreathingRatePanelBed2.Visible == true ||
-                BreathingRatePanelBed3.Visible == true || BreathingRatePanelBed4.Visible == true)
-            {
-                breathingActive = true;
-            }
-            if (TemperaturePanelBed1.Visible == true || TemperaturePanelBed2.Visible == true ||
-                TemperaturePanelBed3.Visible == true || TemperaturePanelBed4.Visible == true)
-            {
-                tempActive = true;
-            }
-            #endregion
-
             #region Insert Assignment
 
             #region Blood Pressure
@@ -308,6 +290,69 @@ namespace FinalProject
 
             #endregion
 
+        }
+
+        public static int ditext, sytext, prtext, brtext, tptext;
+        public void UpdateColor(object sender, EventArgs e)
+        {
+            // Passing textbox.text to variable
+            int.TryParse(CentralStation.centralsingleton.tbdi3.Text, out ditext); // Diastolic Value
+            int.TryParse(CentralStation.centralsingleton.tbsy3.Text, out sytext); // Systolic Value
+            int.TryParse(CentralStation.centralsingleton.tbpr3.Text, out prtext); // Pulse Value
+            int.TryParse(CentralStation.centralsingleton.tbbr3.Text, out brtext); // Breathing Value
+            int.TryParse(CentralStation.centralsingleton.tbtp3.Text, out tptext); // Temperature Value
+
+            #region Textbox Color
+            // Diastolic TextBox Color
+            if (ditext < diMin || ditext > diMax)
+            {
+                CentralStation.centralsingleton.tbdi3.BackColor = Color.Red;
+            }
+            else if (ditext > diMin && ditext < diMax)
+            {
+                CentralStation.centralsingleton.tbdi3.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Systolic TextBox Color
+            if (sytext < syMin || sytext > syMax)
+            {
+                CentralStation.centralsingleton.tbsy3.BackColor = Color.Red;
+            }
+            else if (sytext > syMin && sytext < syMax)
+            {
+                CentralStation.centralsingleton.tbsy3.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Pulse Textbox Color
+            if (prtext < prMin || prtext > prMax)
+            {
+                CentralStation.centralsingleton.tbpr3.BackColor = Color.Red;
+            }
+            else if (prtext > prMin && prtext < prMax)
+            {
+                CentralStation.centralsingleton.tbpr3.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Breathing Textbox Color
+            if (brtext < brMin || brtext > brMax)
+            {
+                CentralStation.centralsingleton.tbbr3.BackColor = Color.Red;
+            }
+            else if (brtext > brMin && brtext < brMax)
+            {
+                CentralStation.centralsingleton.tbbr3.BackColor = Color.FromArgb(105, 105, 105);
+            }
+
+            // Temperature Textbox Color
+            if (tptext < tpMin || tptext < tpMax)
+            {
+                CentralStation.centralsingleton.tbtp3.BackColor = Color.Red;
+            }
+            else if (tptext > tpMin && tptext > tpMax)
+            {
+                CentralStation.centralsingleton.tbtp3.BackColor = Color.FromArgb(105, 105, 105);
+            }
+            #endregion
 
         }
 
@@ -338,7 +383,9 @@ namespace FinalProject
             Temperature_Actual_Text3.Text = TemperatureValueRandom();
             Temperature_Actual_Text4.Text = TemperatureValueRandom();
 
-            #region Central Station TextBoxes Assignment
+        }
+        public void UpdateCentralStation(object sender, EventArgs e)
+        {
             if (bloodActive == true)
             {
                 CentralStation.centralsingleton.tbdi3.Text = DiastolicValueRandom();
@@ -367,7 +414,6 @@ namespace FinalProject
                 CentralStation.centralsingleton.tbtp3.Text = TemperatureValueRandom();
             }
             else { CentralStation.centralsingleton.tbtp3.Text = ""; }
-            #endregion
 
         }
 
@@ -385,12 +431,13 @@ namespace FinalProject
         public static int breathingInsert1, breathingInsert2, breathingInsert3, breathingInsert4;
         public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
         // If the panel is visible
-        public static bool bloodActive = false, pulseActive = false, breathingActive = false, tempActive = false;
+        public static bool bloodActive, pulseActive, breathingActive, tempActive;
 
         // TextBox Values
         public static int syValue, diValue, prValue, brValue;
         public static double tempValue;
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
+        #endregion
 
         private void CentralStationPic_Click(object sender, EventArgs e)
         {
@@ -399,7 +446,6 @@ namespace FinalProject
             centralStation.Location = this.Location;
             this.Hide();
         }
-        #endregion
 
         #region Draggable Top Panel  -- Dinis & Jorge
         // Draggable Top Panel
@@ -736,21 +782,50 @@ namespace FinalProject
             if (randomizerTemp <= 25)
             {
                 tempValue = SocketConfiguration.randomizer.Next(tpMin - 25, tpMin - 1);
-                tempValue /= 10;
             }
             else if ((randomizerTemp > 25) && (randomizerTemp < 75))
             {
                 tempValue = SocketConfiguration.randomizer.Next(tpMin, tpMax);
-                tempValue /= 10;
             }
             else if (randomizerTemp >= 75)
             {
                 tempValue = SocketConfiguration.randomizer.Next(tpMax + 1, tpMax + 45);
-                tempValue /= 10;
             }
 
             return tempValue.ToString();
         } // Returns tempValue
+
+        public void ActiveCheck(object sender, EventArgs e)
+        {
+            if (BloodPressurePanelBed1.Dock == DockStyle.Fill || BloodPressurePanelBed2.Dock == DockStyle.Fill ||
+                BloodPressurePanelBed3.Dock == DockStyle.Fill || BloodPressurePanelBed4.Dock == DockStyle.Fill)
+            {
+                bloodActive = true;
+            }
+            else { bloodActive = false; }
+
+            if (PulseRatePanelBed1.Dock == DockStyle.Fill || PulseRatePanelBed2.Dock == DockStyle.Fill ||
+                PulseRatePanelBed3.Dock == DockStyle.Fill || PulseRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                pulseActive = true;
+            }
+            else { pulseActive = false; }
+
+            if (BreathingRatePanelBed1.Dock == DockStyle.Fill || BreathingRatePanelBed2.Dock == DockStyle.Fill ||
+                BreathingRatePanelBed3.Dock == DockStyle.Fill || BreathingRatePanelBed4.Dock == DockStyle.Fill)
+            {
+                breathingActive = true;
+            }
+            else { breathingActive = false; }
+
+            if (TemperaturePanelBed1.Dock == DockStyle.Fill || TemperaturePanelBed2.Dock == DockStyle.Fill ||
+                TemperaturePanelBed3.Dock == DockStyle.Fill || TemperaturePanelBed4.Dock == DockStyle.Fill)
+            {
+                tempActive = true;
+            }
+            else { tempActive = false; }
+
+        }
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -12,6 +13,7 @@ namespace FinalProject
         {
             centralsingleton = this;
             InitializeComponent();
+
         }
 
         #region Draggable Top Panel  -- Dinis & Jorge
@@ -45,7 +47,6 @@ namespace FinalProject
             this.WindowState = FormWindowState.Minimized;
         }
         #endregion
-
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
