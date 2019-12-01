@@ -34,14 +34,15 @@
             this.BackButtonRDLogs = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DELETEBUTTON = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ActionComboBox = new System.Windows.Forms.ComboBox();
+            this.VIEWBUTTON = new System.Windows.Forms.Button();
+            this.SAVEBUTTON = new System.Windows.Forms.Button();
             this.IDTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ActionComboBox = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonRDLogs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonRDLogs)).BeginInit();
@@ -99,49 +100,90 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(297, 61);
+            this.dataGridView1.Location = new System.Drawing.Point(343, 61);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(551, 309);
+            this.dataGridView1.Size = new System.Drawing.Size(505, 309);
             this.dataGridView1.TabIndex = 7;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.DELETEBUTTON);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.ActionComboBox);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.VIEWBUTTON);
+            this.groupBox1.Controls.Add(this.SAVEBUTTON);
             this.groupBox1.Controls.Add(this.IDTextBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(4, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(287, 208);
+            this.groupBox1.Size = new System.Drawing.Size(333, 208);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details";
             // 
-            // button3
+            // DELETEBUTTON
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Location = new System.Drawing.Point(192, 167);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "View Logs";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DELETEBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DELETEBUTTON.Location = new System.Drawing.Point(243, 167);
+            this.DELETEBUTTON.Name = "DELETEBUTTON";
+            this.DELETEBUTTON.Size = new System.Drawing.Size(75, 23);
+            this.DELETEBUTTON.TabIndex = 14;
+            this.DELETEBUTTON.Text = "Delete";
+            this.DELETEBUTTON.UseVisualStyleBackColor = false;
+            this.DELETEBUTTON.Click += new System.EventHandler(this.DELETEBUTTON_Click);
             // 
-            // button1
+            // dateTimePicker1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(111, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(81, 84);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 22);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "ACTION";
+            // 
+            // ActionComboBox
+            // 
+            this.ActionComboBox.FormattingEnabled = true;
+            this.ActionComboBox.Items.AddRange(new object[] {
+            "REGISTER ",
+            "DEREGISTER"});
+            this.ActionComboBox.Location = new System.Drawing.Point(81, 119);
+            this.ActionComboBox.Name = "ActionComboBox";
+            this.ActionComboBox.Size = new System.Drawing.Size(135, 21);
+            this.ActionComboBox.TabIndex = 10;
+            // 
+            // VIEWBUTTON
+            // 
+            this.VIEWBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VIEWBUTTON.Location = new System.Drawing.Point(162, 167);
+            this.VIEWBUTTON.Name = "VIEWBUTTON";
+            this.VIEWBUTTON.Size = new System.Drawing.Size(75, 23);
+            this.VIEWBUTTON.TabIndex = 7;
+            this.VIEWBUTTON.Text = "View Logs";
+            this.VIEWBUTTON.UseVisualStyleBackColor = false;
+            this.VIEWBUTTON.Click += new System.EventHandler(this.VIEWBUTTON_Click);
+            // 
+            // SAVEBUTTON
+            // 
+            this.SAVEBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SAVEBUTTON.Location = new System.Drawing.Point(81, 167);
+            this.SAVEBUTTON.Name = "SAVEBUTTON";
+            this.SAVEBUTTON.Size = new System.Drawing.Size(75, 23);
+            this.SAVEBUTTON.TabIndex = 6;
+            this.SAVEBUTTON.Text = "Save";
+            this.SAVEBUTTON.UseVisualStyleBackColor = false;
+            this.SAVEBUTTON.Click += new System.EventHandler(this.SAVEBUTTON_Click);
             // 
             // IDTextBox
             // 
@@ -167,33 +209,6 @@
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "DATE";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "ACTION";
-            // 
-            // ActionComboBox
-            // 
-            this.ActionComboBox.FormattingEnabled = true;
-            this.ActionComboBox.Items.AddRange(new object[] {
-            "REGISTER ",
-            "DEREGISTER"});
-            this.ActionComboBox.Location = new System.Drawing.Point(81, 119);
-            this.ActionComboBox.Name = "ActionComboBox";
-            this.ActionComboBox.Size = new System.Drawing.Size(135, 21);
-            this.ActionComboBox.TabIndex = 10;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(81, 84);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 22);
-            this.dateTimePicker1.TabIndex = 11;
             // 
             // RDLogs
             // 
@@ -222,8 +237,8 @@
         private System.Windows.Forms.Panel PanelTop;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button VIEWBUTTON;
+        private System.Windows.Forms.Button SAVEBUTTON;
         private System.Windows.Forms.TextBox IDTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -233,5 +248,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox ActionComboBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button DELETEBUTTON;
     }
 }
