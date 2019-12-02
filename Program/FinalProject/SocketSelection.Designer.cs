@@ -35,6 +35,7 @@
             this.PanelTop_CloseButton = new System.Windows.Forms.PictureBox();
             this.DefaultPanel_InstallButton = new System.Windows.Forms.Button();
             this.BreathingRatePanel = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.BreathingRate_Label_Description2 = new System.Windows.Forms.Label();
             this.BreathingRate_Label_Description1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -51,6 +52,7 @@
             this.BloodPressureLabel = new System.Windows.Forms.Label();
             this.DefaultPanel_SocketComboBox = new System.Windows.Forms.ComboBox();
             this.PulseRatePanel = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.PulseRate_Maximum_TextBox = new System.Windows.Forms.TextBox();
             this.PulseRate_Minimum_TextBox = new System.Windows.Forms.TextBox();
@@ -64,6 +66,8 @@
             this.PulseRateImage = new System.Windows.Forms.PictureBox();
             this.PulseRateLabel = new System.Windows.Forms.Label();
             this.BloodPressurePanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.BloodPressureLabel_Information = new System.Windows.Forms.Label();
             this.BloodPressureLabel_Systolic_Description = new System.Windows.Forms.Label();
             this.BloodPressureLabel_Diastolic_Description = new System.Windows.Forms.Label();
@@ -85,6 +89,7 @@
             this.BloodPressureTextBox_SystolicMaximum_ParameterValue = new System.Windows.Forms.TextBox();
             this.BloodPressureTextBox_SystolicMinimum_ParameterValue = new System.Windows.Forms.TextBox();
             this.TemperaturePanel = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.Temperature_Maximum_TextBox = new System.Windows.Forms.TextBox();
             this.Temperature_Minimum_TextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -100,11 +105,6 @@
             this.PanelMain = new System.Windows.Forms.Panel();
             this.BedPanel = new System.Windows.Forms.Panel();
             this.BedLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelTop_MinimizeButton)).BeginInit();
@@ -219,8 +219,20 @@
             this.BreathingRatePanel.Location = new System.Drawing.Point(2, 45);
             this.BreathingRatePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BreathingRatePanel.Name = "BreathingRatePanel";
-            this.BreathingRatePanel.Size = new System.Drawing.Size(192, 33);
+            this.BreathingRatePanel.Size = new System.Drawing.Size(199, 33);
             this.BreathingRatePanel.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(412, 23);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 20);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "Difference > 5";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BreathingRate_Label_Description2
             // 
@@ -435,8 +447,20 @@
             this.PulseRatePanel.Location = new System.Drawing.Point(213, 8);
             this.PulseRatePanel.Margin = new System.Windows.Forms.Padding(2);
             this.PulseRatePanel.Name = "PulseRatePanel";
-            this.PulseRatePanel.Size = new System.Drawing.Size(174, 30);
+            this.PulseRatePanel.Size = new System.Drawing.Size(174, 33);
             this.PulseRatePanel.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(413, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(112, 20);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Difference > 30";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -618,8 +642,32 @@
             this.BloodPressurePanel.Location = new System.Drawing.Point(0, 0);
             this.BloodPressurePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BloodPressurePanel.Name = "BloodPressurePanel";
-            this.BloodPressurePanel.Size = new System.Drawing.Size(194, 38);
+            this.BloodPressurePanel.Size = new System.Drawing.Size(192, 38);
             this.BloodPressurePanel.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(548, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 20);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Difference > 20";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(275, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 20);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Difference > 30";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BloodPressureLabel_Information
             // 
@@ -905,8 +953,20 @@
             this.TemperaturePanel.Location = new System.Drawing.Point(213, 45);
             this.TemperaturePanel.Margin = new System.Windows.Forms.Padding(2);
             this.TemperaturePanel.Name = "TemperaturePanel";
-            this.TemperaturePanel.Size = new System.Drawing.Size(185, 30);
+            this.TemperaturePanel.Size = new System.Drawing.Size(196, 33);
             this.TemperaturePanel.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(421, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 20);
+            this.label8.TabIndex = 56;
+            this.label8.Text = "Difference > 1";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Temperature_Maximum_TextBox
             // 
@@ -1097,66 +1157,6 @@
             this.BedLabel.Size = new System.Drawing.Size(49, 21);
             this.BedLabel.TabIndex = 0;
             this.BedLabel.Text = "Bed 1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(275, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 20);
-            this.label4.TabIndex = 35;
-            this.label4.Text = "Difference > 30";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(548, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 20);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Difference > 20";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(413, 23);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 20);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Difference > 30";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(412, 23);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 20);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "Difference > 5";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(421, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 20);
-            this.label8.TabIndex = 56;
-            this.label8.Text = "Difference > 1";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SocketSelection
             // 

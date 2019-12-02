@@ -270,12 +270,18 @@
             this.BreathingRate_Minimum_Text3 = new System.Windows.Forms.TextBox();
             this.BreathingRatePanelBed_Pic1 = new System.Windows.Forms.PictureBox();
             this.BigInfoPanelBedSideView = new System.Windows.Forms.Panel();
+            this.label73 = new System.Windows.Forms.Label();
+            this.tbheight = new System.Windows.Forms.TextBox();
+            this.tbweight = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.tbgender = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbln = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbdob = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbfn = new System.Windows.Forms.TextBox();
             this.InsertButton4 = new System.Windows.Forms.PictureBox();
             this.InsertButton3 = new System.Windows.Forms.PictureBox();
             this.InsertButton2 = new System.Windows.Forms.PictureBox();
@@ -285,12 +291,6 @@
             this.EjectButton2 = new System.Windows.Forms.PictureBox();
             this.EjectButton1 = new System.Windows.Forms.PictureBox();
             this.BedPicture = new System.Windows.Forms.PictureBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CentralStationPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
@@ -739,7 +739,7 @@
             this.BreathingRatePanelBed1.ForeColor = System.Drawing.Color.White;
             this.BreathingRatePanelBed1.Location = new System.Drawing.Point(5, 9);
             this.BreathingRatePanelBed1.Name = "BreathingRatePanelBed1";
-            this.BreathingRatePanelBed1.Size = new System.Drawing.Size(128, 23);
+            this.BreathingRatePanelBed1.Size = new System.Drawing.Size(123, 20);
             this.BreathingRatePanelBed1.TabIndex = 75;
             this.BreathingRatePanelBed1.Visible = false;
             // 
@@ -987,9 +987,9 @@
             this.BloodPressurePanelBed1.Controls.Add(this.BloodPressurePanelBed_Pic1);
             this.BloodPressurePanelBed1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodPressurePanelBed1.ForeColor = System.Drawing.Color.White;
-            this.BloodPressurePanelBed1.Location = new System.Drawing.Point(202, 9);
+            this.BloodPressurePanelBed1.Location = new System.Drawing.Point(211, 9);
             this.BloodPressurePanelBed1.Name = "BloodPressurePanelBed1";
-            this.BloodPressurePanelBed1.Size = new System.Drawing.Size(125, 28);
+            this.BloodPressurePanelBed1.Size = new System.Drawing.Size(112, 18);
             this.BloodPressurePanelBed1.TabIndex = 10;
             this.BloodPressurePanelBed1.Visible = false;
             // 
@@ -1490,7 +1490,7 @@
             this.PulseRatePanelBed2.ForeColor = System.Drawing.Color.White;
             this.PulseRatePanelBed2.Location = new System.Drawing.Point(7, 7);
             this.PulseRatePanelBed2.Name = "PulseRatePanelBed2";
-            this.PulseRatePanelBed2.Size = new System.Drawing.Size(147, 24);
+            this.PulseRatePanelBed2.Size = new System.Drawing.Size(140, 20);
             this.PulseRatePanelBed2.TabIndex = 11;
             this.PulseRatePanelBed2.Visible = false;
             // 
@@ -2362,7 +2362,7 @@
             this.TemperaturePanelBed4.ForeColor = System.Drawing.Color.White;
             this.TemperaturePanelBed4.Location = new System.Drawing.Point(5, 6);
             this.TemperaturePanelBed4.Name = "TemperaturePanelBed4";
-            this.TemperaturePanelBed4.Size = new System.Drawing.Size(123, 18);
+            this.TemperaturePanelBed4.Size = new System.Drawing.Size(119, 22);
             this.TemperaturePanelBed4.TabIndex = 69;
             this.TemperaturePanelBed4.Visible = false;
             // 
@@ -3104,23 +3104,89 @@
             this.BigInfoPanelBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BigInfoPanelBedSideView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BigInfoPanelBedSideView.Controls.Add(this.label73);
-            this.BigInfoPanelBedSideView.Controls.Add(this.textBox7);
-            this.BigInfoPanelBedSideView.Controls.Add(this.textBox6);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbheight);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbweight);
             this.BigInfoPanelBedSideView.Controls.Add(this.label71);
             this.BigInfoPanelBedSideView.Controls.Add(this.label70);
-            this.BigInfoPanelBedSideView.Controls.Add(this.textBox4);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbgender);
             this.BigInfoPanelBedSideView.Controls.Add(this.label69);
-            this.BigInfoPanelBedSideView.Controls.Add(this.textBox3);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbln);
             this.BigInfoPanelBedSideView.Controls.Add(this.label68);
-            this.BigInfoPanelBedSideView.Controls.Add(this.textBox2);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbdob);
             this.BigInfoPanelBedSideView.Controls.Add(this.label67);
-            this.BigInfoPanelBedSideView.Controls.Add(this.textBox1);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbfn);
             this.BigInfoPanelBedSideView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BigInfoPanelBedSideView.ForeColor = System.Drawing.Color.White;
             this.BigInfoPanelBedSideView.Location = new System.Drawing.Point(249, 45);
             this.BigInfoPanelBedSideView.Name = "BigInfoPanelBedSideView";
             this.BigInfoPanelBedSideView.Size = new System.Drawing.Size(489, 158);
             this.BigInfoPanelBedSideView.TabIndex = 10;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(224, 82);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(42, 13);
+            this.label73.TabIndex = 14;
+            this.label73.Text = "Height";
+            // 
+            // tbheight
+            // 
+            this.tbheight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbheight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbheight.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbheight.ForeColor = System.Drawing.Color.White;
+            this.tbheight.Location = new System.Drawing.Point(170, 98);
+            this.tbheight.Multiline = true;
+            this.tbheight.Name = "tbheight";
+            this.tbheight.Size = new System.Drawing.Size(151, 36);
+            this.tbheight.TabIndex = 13;
+            this.tbheight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbweight
+            // 
+            this.tbweight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbweight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbweight.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbweight.ForeColor = System.Drawing.Color.White;
+            this.tbweight.Location = new System.Drawing.Point(328, 98);
+            this.tbweight.Multiline = true;
+            this.tbweight.Name = "tbweight";
+            this.tbweight.Size = new System.Drawing.Size(151, 36);
+            this.tbweight.TabIndex = 11;
+            this.tbweight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(383, 82);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(45, 13);
+            this.label71.TabIndex = 10;
+            this.label71.Text = "Weight";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(223, 10);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(45, 13);
+            this.label70.TabIndex = 8;
+            this.label70.Text = "Gender";
+            // 
+            // tbgender
+            // 
+            this.tbgender.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbgender.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbgender.ForeColor = System.Drawing.Color.White;
+            this.tbgender.Location = new System.Drawing.Point(169, 26);
+            this.tbgender.Multiline = true;
+            this.tbgender.Name = "tbgender";
+            this.tbgender.Size = new System.Drawing.Size(151, 36);
+            this.tbgender.TabIndex = 7;
+            this.tbgender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label69
             // 
@@ -3131,18 +3197,18 @@
             this.label69.TabIndex = 6;
             this.label69.Text = "Last Name";
             // 
-            // textBox3
+            // tbln
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(9, 98);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(151, 36);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbln.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbln.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbln.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbln.ForeColor = System.Drawing.Color.White;
+            this.tbln.Location = new System.Drawing.Point(9, 98);
+            this.tbln.Multiline = true;
+            this.tbln.Name = "tbln";
+            this.tbln.Size = new System.Drawing.Size(151, 36);
+            this.tbln.TabIndex = 5;
+            this.tbln.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label68
             // 
@@ -3153,18 +3219,18 @@
             this.label68.TabIndex = 4;
             this.label68.Text = "Date of Birthday";
             // 
-            // textBox2
+            // tbdob
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(328, 26);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 36);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbdob.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdob.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdob.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdob.ForeColor = System.Drawing.Color.White;
+            this.tbdob.Location = new System.Drawing.Point(328, 26);
+            this.tbdob.Multiline = true;
+            this.tbdob.Name = "tbdob";
+            this.tbdob.Size = new System.Drawing.Size(151, 36);
+            this.tbdob.TabIndex = 3;
+            this.tbdob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label67
             // 
@@ -3175,18 +3241,18 @@
             this.label67.TabIndex = 2;
             this.label67.Text = "First Name";
             // 
-            // textBox1
+            // tbfn
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(9, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 36);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbfn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbfn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbfn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbfn.ForeColor = System.Drawing.Color.White;
+            this.tbfn.Location = new System.Drawing.Point(9, 26);
+            this.tbfn.Multiline = true;
+            this.tbfn.Name = "tbfn";
+            this.tbfn.Size = new System.Drawing.Size(151, 36);
+            this.tbfn.TabIndex = 1;
+            this.tbfn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // InsertButton4
             // 
@@ -3294,72 +3360,6 @@
             this.BedPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BedPicture.TabIndex = 2;
             this.BedPicture.TabStop = false;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(223, 10);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(45, 13);
-            this.label70.TabIndex = 8;
-            this.label70.Text = "Gender";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(169, 26);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(151, 36);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(383, 82);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(45, 13);
-            this.label71.TabIndex = 10;
-            this.label71.Text = "Weight";
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(328, 98);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(151, 36);
-            this.textBox6.TabIndex = 11;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(170, 98);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(151, 36);
-            this.textBox7.TabIndex = 13;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(224, 82);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(42, 13);
-            this.label73.TabIndex = 14;
-            this.label73.Text = "Height";
             // 
             // BedSideView1
             // 
@@ -3843,16 +3843,16 @@
         public System.Windows.Forms.Label InsertASocket3;
         private System.Windows.Forms.PictureBox CentralStationPic;
         private System.Windows.Forms.Label label68;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox tbdob;
         private System.Windows.Forms.Label label67;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox tbfn;
         private System.Windows.Forms.Label label69;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox tbln;
+        public System.Windows.Forms.TextBox tbweight;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
-        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox tbgender;
         private System.Windows.Forms.Label label73;
-        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox tbheight;
     }
 }

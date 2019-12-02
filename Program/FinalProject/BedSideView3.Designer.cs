@@ -266,6 +266,7 @@
             this.Bed5 = new System.Windows.Forms.Button();
             this.Bed1 = new System.Windows.Forms.Button();
             this.PanelTop = new System.Windows.Forms.Panel();
+            this.CentralStationPic = new System.Windows.Forms.PictureBox();
             this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonBedSideView = new System.Windows.Forms.PictureBox();
             this.CloseButtonBedSideView = new System.Windows.Forms.PictureBox();
@@ -278,7 +279,19 @@
             this.InsertButton3 = new System.Windows.Forms.PictureBox();
             this.InsertButton2 = new System.Windows.Forms.PictureBox();
             this.InsertButton1 = new System.Windows.Forms.PictureBox();
-            this.CentralStationPic = new System.Windows.Forms.PictureBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.tbheight = new System.Windows.Forms.TextBox();
+            this.tbweight = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.tbgender = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.tbln = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.tbdob = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.tbfn = new System.Windows.Forms.TextBox();
+            this.BigInfoPanelBedSideView.SuspendLayout();
             this.Display4.SuspendLayout();
             this.PulseRatePanelBed4.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -376,6 +389,7 @@
             this.BloodPressurePanelBed_Minimum.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BloodPressurePanelBed_Pic1)).BeginInit();
             this.PanelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CentralStationPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).BeginInit();
@@ -388,13 +402,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.InsertButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InsertButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InsertButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CentralStationPic)).BeginInit();
             this.SuspendLayout();
             // 
             // BigInfoPanelBedSideView
             // 
             this.BigInfoPanelBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BigInfoPanelBedSideView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BigInfoPanelBedSideView.Controls.Add(this.label73);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbheight);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbweight);
+            this.BigInfoPanelBedSideView.Controls.Add(this.label71);
+            this.BigInfoPanelBedSideView.Controls.Add(this.label70);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbgender);
+            this.BigInfoPanelBedSideView.Controls.Add(this.label69);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbln);
+            this.BigInfoPanelBedSideView.Controls.Add(this.label68);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbdob);
+            this.BigInfoPanelBedSideView.Controls.Add(this.label67);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbfn);
             this.BigInfoPanelBedSideView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BigInfoPanelBedSideView.ForeColor = System.Drawing.Color.White;
             this.BigInfoPanelBedSideView.Location = new System.Drawing.Point(249, 45);
@@ -3043,12 +3068,23 @@
             this.PanelTop.Controls.Add(this.CloseButtonBedSideView);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
-            this.PanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelTop.Margin = new System.Windows.Forms.Padding(2);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(750, 44);
             this.PanelTop.TabIndex = 21;
             this.PanelTop.Click += new System.EventHandler(this.MinimizeButtonBedSideView_Click);
             this.PanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelTop_MouseMove);
+            // 
+            // CentralStationPic
+            // 
+            this.CentralStationPic.Image = global::FinalProject.Properties.Resources._276_2768812_central_station_icon;
+            this.CentralStationPic.Location = new System.Drawing.Point(54, 7);
+            this.CentralStationPic.Name = "CentralStationPic";
+            this.CentralStationPic.Size = new System.Drawing.Size(30, 31);
+            this.CentralStationPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CentralStationPic.TabIndex = 8;
+            this.CentralStationPic.TabStop = false;
+            this.CentralStationPic.Click += new System.EventHandler(this.CentralStationPic_Click);
             // 
             // MainPageButton
             // 
@@ -3066,7 +3102,7 @@
             this.MinimizeButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MinimizeButtonBedSideView.Image = global::FinalProject.Properties.Resources.minimizewhite;
             this.MinimizeButtonBedSideView.Location = new System.Drawing.Point(681, 10);
-            this.MinimizeButtonBedSideView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimizeButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButtonBedSideView.Name = "MinimizeButtonBedSideView";
             this.MinimizeButtonBedSideView.Size = new System.Drawing.Size(23, 25);
             this.MinimizeButtonBedSideView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3078,7 +3114,7 @@
             this.CloseButtonBedSideView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseButtonBedSideView.Image = global::FinalProject.Properties.Resources.closewhite;
             this.CloseButtonBedSideView.Location = new System.Drawing.Point(716, 10);
-            this.CloseButtonBedSideView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CloseButtonBedSideView.Margin = new System.Windows.Forms.Padding(2);
             this.CloseButtonBedSideView.Name = "CloseButtonBedSideView";
             this.CloseButtonBedSideView.Size = new System.Drawing.Size(23, 25);
             this.CloseButtonBedSideView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3090,7 +3126,7 @@
             // 
             this.EjectButton4.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton4.Location = new System.Drawing.Point(377, 336);
-            this.EjectButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton4.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton4.Name = "EjectButton4";
             this.EjectButton4.Size = new System.Drawing.Size(20, 20);
             this.EjectButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3102,7 +3138,7 @@
             // 
             this.EjectButton3.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton3.Location = new System.Drawing.Point(353, 336);
-            this.EjectButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton3.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton3.Name = "EjectButton3";
             this.EjectButton3.Size = new System.Drawing.Size(20, 20);
             this.EjectButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3114,7 +3150,7 @@
             // 
             this.EjectButton2.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton2.Location = new System.Drawing.Point(377, 214);
-            this.EjectButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton2.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton2.Name = "EjectButton2";
             this.EjectButton2.Size = new System.Drawing.Size(20, 20);
             this.EjectButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3126,7 +3162,7 @@
             // 
             this.EjectButton1.Image = global::FinalProject.Properties.Resources.eject_pngrepo_com;
             this.EjectButton1.Location = new System.Drawing.Point(353, 214);
-            this.EjectButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EjectButton1.Margin = new System.Windows.Forms.Padding(2);
             this.EjectButton1.Name = "EjectButton1";
             this.EjectButton1.Size = new System.Drawing.Size(20, 20);
             this.EjectButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3149,7 +3185,7 @@
             // 
             this.InsertButton4.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
             this.InsertButton4.Location = new System.Drawing.Point(377, 361);
-            this.InsertButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton4.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton4.Name = "InsertButton4";
             this.InsertButton4.Size = new System.Drawing.Size(20, 20);
             this.InsertButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3161,7 +3197,7 @@
             // 
             this.InsertButton3.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
             this.InsertButton3.Location = new System.Drawing.Point(353, 361);
-            this.InsertButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton3.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton3.Name = "InsertButton3";
             this.InsertButton3.Size = new System.Drawing.Size(20, 20);
             this.InsertButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3173,7 +3209,7 @@
             // 
             this.InsertButton2.Image = global::FinalProject.Properties.Resources.forward_pngrepo_com;
             this.InsertButton2.Location = new System.Drawing.Point(377, 239);
-            this.InsertButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton2.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton2.Name = "InsertButton2";
             this.InsertButton2.Size = new System.Drawing.Size(20, 20);
             this.InsertButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3185,7 +3221,7 @@
             // 
             this.InsertButton1.Image = global::FinalProject.Properties.Resources.backward_pngrepo_com;
             this.InsertButton1.Location = new System.Drawing.Point(353, 239);
-            this.InsertButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InsertButton1.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton1.Name = "InsertButton1";
             this.InsertButton1.Size = new System.Drawing.Size(20, 20);
             this.InsertButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3193,16 +3229,137 @@
             this.InsertButton1.TabStop = false;
             this.InsertButton1.Click += new System.EventHandler(this.InsertButton1_Click);
             // 
-            // CentralStationPic
+            // label73
             // 
-            this.CentralStationPic.Image = global::FinalProject.Properties.Resources._276_2768812_central_station_icon;
-            this.CentralStationPic.Location = new System.Drawing.Point(54, 7);
-            this.CentralStationPic.Name = "CentralStationPic";
-            this.CentralStationPic.Size = new System.Drawing.Size(30, 31);
-            this.CentralStationPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CentralStationPic.TabIndex = 8;
-            this.CentralStationPic.TabStop = false;
-            this.CentralStationPic.Click += new System.EventHandler(this.CentralStationPic_Click);
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(224, 82);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(42, 13);
+            this.label73.TabIndex = 26;
+            this.label73.Text = "Height";
+            // 
+            // tbheight
+            // 
+            this.tbheight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbheight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbheight.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbheight.ForeColor = System.Drawing.Color.White;
+            this.tbheight.Location = new System.Drawing.Point(170, 98);
+            this.tbheight.Multiline = true;
+            this.tbheight.Name = "tbheight";
+            this.tbheight.Size = new System.Drawing.Size(151, 36);
+            this.tbheight.TabIndex = 25;
+            this.tbheight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbweight
+            // 
+            this.tbweight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbweight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbweight.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbweight.ForeColor = System.Drawing.Color.White;
+            this.tbweight.Location = new System.Drawing.Point(328, 98);
+            this.tbweight.Multiline = true;
+            this.tbweight.Name = "tbweight";
+            this.tbweight.Size = new System.Drawing.Size(151, 36);
+            this.tbweight.TabIndex = 24;
+            this.tbweight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(383, 82);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(45, 13);
+            this.label71.TabIndex = 23;
+            this.label71.Text = "Weight";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(223, 10);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(45, 13);
+            this.label70.TabIndex = 22;
+            this.label70.Text = "Gender";
+            // 
+            // tbgender
+            // 
+            this.tbgender.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbgender.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbgender.ForeColor = System.Drawing.Color.White;
+            this.tbgender.Location = new System.Drawing.Point(169, 26);
+            this.tbgender.Multiline = true;
+            this.tbgender.Name = "tbgender";
+            this.tbgender.Size = new System.Drawing.Size(151, 36);
+            this.tbgender.TabIndex = 21;
+            this.tbgender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(55, 82);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(59, 13);
+            this.label69.TabIndex = 20;
+            this.label69.Text = "Last Name";
+            // 
+            // tbln
+            // 
+            this.tbln.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbln.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbln.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbln.ForeColor = System.Drawing.Color.White;
+            this.tbln.Location = new System.Drawing.Point(9, 98);
+            this.tbln.Multiline = true;
+            this.tbln.Name = "tbln";
+            this.tbln.Size = new System.Drawing.Size(151, 36);
+            this.tbln.TabIndex = 19;
+            this.tbln.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(363, 10);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(90, 13);
+            this.label68.TabIndex = 18;
+            this.label68.Text = "Date of Birthday";
+            // 
+            // tbdob
+            // 
+            this.tbdob.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdob.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdob.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdob.ForeColor = System.Drawing.Color.White;
+            this.tbdob.Location = new System.Drawing.Point(328, 26);
+            this.tbdob.Multiline = true;
+            this.tbdob.Name = "tbdob";
+            this.tbdob.Size = new System.Drawing.Size(151, 36);
+            this.tbdob.TabIndex = 17;
+            this.tbdob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(54, 10);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(61, 13);
+            this.label67.TabIndex = 16;
+            this.label67.Text = "First Name";
+            // 
+            // tbfn
+            // 
+            this.tbfn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbfn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbfn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbfn.ForeColor = System.Drawing.Color.White;
+            this.tbfn.Location = new System.Drawing.Point(9, 26);
+            this.tbfn.Multiline = true;
+            this.tbfn.Name = "tbfn";
+            this.tbfn.Size = new System.Drawing.Size(151, 36);
+            this.tbfn.TabIndex = 15;
+            this.tbfn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BedSideView3
             // 
@@ -3235,6 +3392,8 @@
             this.Controls.Add(this.PanelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BedSideView3";
+            this.BigInfoPanelBedSideView.ResumeLayout(false);
+            this.BigInfoPanelBedSideView.PerformLayout();
             this.Display4.ResumeLayout(false);
             this.Display4.PerformLayout();
             this.PulseRatePanelBed4.ResumeLayout(false);
@@ -3412,6 +3571,7 @@
             this.BloodPressurePanelBed_Minimum.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BloodPressurePanelBed_Pic1)).EndInit();
             this.PanelTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CentralStationPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonBedSideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonBedSideView)).EndInit();
@@ -3424,7 +3584,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.InsertButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InsertButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InsertButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CentralStationPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3682,5 +3841,17 @@
         private System.Windows.Forms.TextBox Temperature_Minimum_Text4;
         private System.Windows.Forms.PictureBox TemperaturePanelBed_Pic1;
         private System.Windows.Forms.PictureBox CentralStationPic;
+        private System.Windows.Forms.Label label73;
+        public System.Windows.Forms.TextBox tbheight;
+        public System.Windows.Forms.TextBox tbweight;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label70;
+        public System.Windows.Forms.TextBox tbgender;
+        private System.Windows.Forms.Label label69;
+        public System.Windows.Forms.TextBox tbln;
+        private System.Windows.Forms.Label label68;
+        public System.Windows.Forms.TextBox tbdob;
+        private System.Windows.Forms.Label label67;
+        public System.Windows.Forms.TextBox tbfn;
     }
 }

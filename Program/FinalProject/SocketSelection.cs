@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -15,6 +16,46 @@ namespace FinalProject
             AddNamesToSoketComboBox();
 
             SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
+
+            #region TextBox Multiline Disable
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.Multiline = false;
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.Multiline = false;
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.Multiline = false;
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.Multiline = false;
+            BreathingRate_Minimum_TextBox.Multiline = false;
+            BreathingRate_Maximum_TextBox.Multiline = false;
+            PulseRate_Maximum_TextBox.Multiline = false;
+            PulseRate_Minimum_TextBox.Multiline = false;
+            Temperature_Maximum_TextBox.Multiline = false;
+            Temperature_Minimum_TextBox.Multiline = false;
+            #endregion
+
+            #region Disable AutoSize
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.AutoSize = false;
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.AutoSize = false;
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.AutoSize = false;
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.AutoSize = false;
+            BreathingRate_Minimum_TextBox.AutoSize = false;
+            BreathingRate_Maximum_TextBox.AutoSize = false;
+            PulseRate_Maximum_TextBox.AutoSize = false;
+            PulseRate_Minimum_TextBox.AutoSize = false;
+            Temperature_Maximum_TextBox.AutoSize = false;
+            Temperature_Minimum_TextBox.AutoSize = false;
+            #endregion
+
+            #region Set the Size of the TextBox
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.Size = new Size(119, 35);
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.Size = new Size(119, 35);
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.Size = new Size(119, 35);
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.Size = new Size(119, 35);
+            BreathingRate_Minimum_TextBox.Size = new Size(249,32);
+            BreathingRate_Maximum_TextBox.Size = new Size(249, 32);
+            PulseRate_Maximum_TextBox.Size = new Size(249, 32);
+            PulseRate_Minimum_TextBox.Size = new Size(249, 32);
+            Temperature_Maximum_TextBox.Size = new Size(249, 32);
+            Temperature_Minimum_TextBox.Size = new Size(249, 32);
+            #endregion
+
         }
 
         #region Draggable Top Panel  -- Dinis & Jorge
@@ -362,7 +403,7 @@ namespace FinalProject
 
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-                
+
                 if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
@@ -1722,5 +1763,6 @@ namespace FinalProject
             }
 
         }
+
     }
 }
