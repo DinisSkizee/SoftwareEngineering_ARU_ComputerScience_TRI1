@@ -65,10 +65,15 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BackButtonmanagements = new System.Windows.Forms.PictureBox();
+            this.MainPageButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButtonmanagements)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -113,10 +118,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView2);
-            this.groupBox1.Location = new System.Drawing.Point(219, 20);
+            this.groupBox1.Location = new System.Drawing.Point(219, 99);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(569, 149);
+            this.groupBox1.Size = new System.Drawing.Size(569, 176);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
@@ -131,7 +135,7 @@
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 0);
+            this.dataGridView2.Location = new System.Drawing.Point(245, 106);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(537, 150);
@@ -291,7 +295,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 20);
+            this.label6.Location = new System.Drawing.Point(13, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 4;
@@ -300,7 +304,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 57);
+            this.label7.Location = new System.Drawing.Point(13, 99);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 5;
@@ -309,7 +313,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 156);
+            this.label8.Location = new System.Drawing.Point(9, 178);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 13);
             this.label8.TabIndex = 6;
@@ -318,7 +322,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 190);
+            this.label9.Location = new System.Drawing.Point(9, 225);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 13);
             this.label9.TabIndex = 7;
@@ -327,7 +331,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 106);
+            this.label10.Location = new System.Drawing.Point(9, 144);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 8;
@@ -335,44 +339,78 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(76, 17);
+            this.textBox6.Location = new System.Drawing.Point(98, 51);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 9;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(76, 57);
+            this.textBox7.Location = new System.Drawing.Point(98, 92);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 10;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(76, 99);
+            this.textBox10.Location = new System.Drawing.Point(107, 137);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 13;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(107, 153);
+            this.textBox8.Location = new System.Drawing.Point(113, 171);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 14;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(107, 190);
+            this.textBox9.Location = new System.Drawing.Point(113, 222);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 15;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BackButtonmanagements);
+            this.panel1.Controls.Add(this.MainPageButton);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(14, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(773, 33);
+            this.panel1.TabIndex = 16;
+            // 
+            // BackButtonmanagements
+            // 
+            this.BackButtonmanagements.Image = global::FinalProject.Properties.Resources._8B7gpJyx_400x400;
+            this.BackButtonmanagements.Location = new System.Drawing.Point(736, 0);
+            this.BackButtonmanagements.Name = "BackButtonmanagements";
+            this.BackButtonmanagements.Size = new System.Drawing.Size(34, 28);
+            this.BackButtonmanagements.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BackButtonmanagements.TabIndex = 5;
+            this.BackButtonmanagements.TabStop = false;
+            this.BackButtonmanagements.Click += new System.EventHandler(this.BackButtonmanagements_Click);
+            // 
+            // MainPageButton
+            // 
+            this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
+            this.MainPageButton.Location = new System.Drawing.Point(12, 3);
+            this.MainPageButton.Name = "MainPageButton";
+            this.MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MainPageButton.TabIndex = 4;
+            this.MainPageButton.TabStop = false;
+            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
             // 
             // OnCallStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox10);
@@ -389,9 +427,11 @@
             this.Text = "CallShif Detail";
             this.Load += new System.EventHandler(this.OnCallStaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BackButtonmanagements)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,5 +476,8 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox BackButtonmanagements;
+        private System.Windows.Forms.PictureBox MainPageButton;
     }
 }

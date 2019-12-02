@@ -53,6 +53,22 @@ namespace FinalProject
             dataGridView1.DataSource = table;
 
         }
+
+        private void MainPageButton_Click(object sender, EventArgs e)
+        {
+            AfterLogin afterlogin = new AfterLogin();
+            afterlogin.Show();
+            afterlogin.Location = this.Location;
+            this.Hide();
+        }
+
+        private void BackButtonmanagements_Click(object sender, EventArgs e)
+        {
+            managerments managerments = new managerments();
+            managerments.Show();
+            managerments.Location = this.Location;
+            this.Hide();
+        }
     }
 }
         
