@@ -171,9 +171,7 @@
     <Compile Include="RDLogs.Designer.cs">
       <DependentUpon>RDLogs.cs</DependentUpon>
     </Compile>
-    <Compile Include="SocketConfiguration.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="SocketConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketSelection.cs">
@@ -350,15 +348,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\276-2768812_central-station-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
