@@ -65,5 +65,26 @@ namespace FinalProject
         {
             //pull data from the DB and populate the datagridview
         }
+
+        private void BackButtonmanagements_Click(object sender, EventArgs e)
+        {
+            managerments managerments = new managerments();
+            managerments.Show();
+            managerments.Location = this.Location;
+            this.Hide();
+        }
+
+        private void MainPageButton_Click(object sender, EventArgs e)
+        {
+            AfterLogin afterlogin = new AfterLogin();
+            afterlogin.Show();
+            afterlogin.Location = this.Location;
+            this.Hide();
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,6 +55,16 @@ namespace FinalProject
             afterlogin.Location = this.Location;
             this.Hide();
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
     }

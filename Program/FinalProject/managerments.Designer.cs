@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class Logs
+    partial class managerments
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.seniorDoc = new System.Windows.Forms.Button();
+            this.Regstff = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.RDLogs = new System.Windows.Forms.Button();
-            this.AlarmLogs = new System.Windows.Forms.Button();
             this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.MinimizeButtonLogs = new System.Windows.Forms.PictureBox();
             this.CloseButtonLogs = new System.Windows.Forms.PictureBox();
@@ -41,39 +41,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonLogs)).BeginInit();
             this.SuspendLayout();
             // 
+            // seniorDoc
+            // 
+            this.seniorDoc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seniorDoc.Location = new System.Drawing.Point(143, 231);
+            this.seniorDoc.Name = "seniorDoc";
+            this.seniorDoc.Size = new System.Drawing.Size(200, 100);
+            this.seniorDoc.TabIndex = 6;
+            this.seniorDoc.Text = "Senior Doctors";
+            this.seniorDoc.UseVisualStyleBackColor = true;
+            this.seniorDoc.Click += new System.EventHandler(this.SeniorDoc_Click);
+            // 
+            // Regstff
+            // 
+            this.Regstff.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Regstff.Location = new System.Drawing.Point(457, 231);
+            this.Regstff.Name = "Regstff";
+            this.Regstff.Size = new System.Drawing.Size(200, 100);
+            this.Regstff.TabIndex = 5;
+            this.Regstff.Text = "Register On call staffs";
+            this.Regstff.UseVisualStyleBackColor = true;
+            this.Regstff.Click += new System.EventHandler(this.Regstff_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.MainPageButton);
             this.panel1.Controls.Add(this.MinimizeButtonLogs);
             this.panel1.Controls.Add(this.CloseButtonLogs);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(25, 36);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 44);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
-            // 
-            // RDLogs
-            // 
-            this.RDLogs.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RDLogs.Location = new System.Drawing.Point(432, 195);
-            this.RDLogs.Name = "RDLogs";
-            this.RDLogs.Size = new System.Drawing.Size(200, 100);
-            this.RDLogs.TabIndex = 1;
-            this.RDLogs.Text = "Register/Deregister Logs";
-            this.RDLogs.UseVisualStyleBackColor = true;
-            this.RDLogs.Click += new System.EventHandler(this.RDLogs_Click);
-            // 
-            // AlarmLogs
-            // 
-            this.AlarmLogs.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AlarmLogs.Location = new System.Drawing.Point(118, 195);
-            this.AlarmLogs.Name = "AlarmLogs";
-            this.AlarmLogs.Size = new System.Drawing.Size(200, 100);
-            this.AlarmLogs.TabIndex = 2;
-            this.AlarmLogs.Text = "Alarm Logs";
-            this.AlarmLogs.UseVisualStyleBackColor = true;
-            this.AlarmLogs.Click += new System.EventHandler(this.button4_Click);
+            this.panel1.TabIndex = 4;
             // 
             // MainPageButton
             // 
@@ -84,7 +83,7 @@
             this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MainPageButton.TabIndex = 3;
             this.MainPageButton.TabStop = false;
-            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click_1);
+            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
             // 
             // MinimizeButtonLogs
             // 
@@ -110,20 +109,22 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(222, 358);
+            this.dateTimePicker1.Location = new System.Drawing.Point(247, 394);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
+            this.dateTimePicker1.TabIndex = 7;
             // 
-            // Logs
+            // management
             // 
-            this.ClientSize = new System.Drawing.Size(754, 378);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.AlarmLogs);
-            this.Controls.Add(this.RDLogs);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.seniorDoc);
+            this.Controls.Add(this.Regstff);
             this.Controls.Add(this.panel1);
-            this.Name = "Logs";
+            this.Controls.Add(this.dateTimePicker1);
+            this.Name = "management";
+            this.Text = "management";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonLogs)).EndInit();
@@ -133,18 +134,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel PanelTop;
-        private System.Windows.Forms.PictureBox BackButton;
-        private System.Windows.Forms.PictureBox MinimizeButtonAfterLogin;
-        private System.Windows.Forms.PictureBox CloseButtonAfterLogin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+
+        private System.Windows.Forms.Button seniorDoc;
+        private System.Windows.Forms.Button Regstff;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button RDLogs;
-        private System.Windows.Forms.Button AlarmLogs;
+        private System.Windows.Forms.PictureBox MainPageButton;
         private System.Windows.Forms.PictureBox MinimizeButtonLogs;
         private System.Windows.Forms.PictureBox CloseButtonLogs;
-        private System.Windows.Forms.PictureBox MainPageButton;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
