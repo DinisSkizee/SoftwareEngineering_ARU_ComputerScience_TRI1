@@ -14,13 +14,10 @@ namespace FinalProject
         public static Random randomizer = new Random();
 
         // User Variables
-        public static int weight, age, height;
-        public static int firstNameNumber, lastNameNumber;
-        public static string firstName, lastName;
         public static List<string> firstNameList = new List<string>()
         {
-            "Dinis", "Jorge", "Haris", "Kelly", "Brett", "Kevin", "Aaron", "Elias", "Erica", "Jacob", "Kye",
-            "Herbert", "Lucie", "Nancy", "Rebekah", "Maria", "Jamie", "Rhonda", "Haleema", "Poppy", "Melanie"
+            "Dinis", "Jorge", "Haris", "John", "Herbert", "Kevin", "Aaron", "Elias", "Jamie", "Jacob", "Kye",
+            "Brett", "Lucie", "Nancy", "Rebekah", "Maria", "Erica", "Rhonda", "Haleema", "Poppy", "Melanie"
         };
         public static List<string> lastNameList = new List<string>()
         {
@@ -46,29 +43,6 @@ namespace FinalProject
             brDiff = brMaxC - brMinC;      // BR = 5
             tempDiff = tpMaxC - tpMinC;    // TP = 2
 
-            /* A randomizer is implemented generating a value from 0 to 100
-             * so then we can randomize the values with percentage deciding
-             * then in each if how much would it be for the same statement */
-
-            RandomNameGenerator();
-            RandomGenUserValues();
-
-        }
-
-        public static void RandomGenUserValues()
-        {
-            weight = randomizer.Next(60, 85);
-            age = randomizer.Next(25, 45);
-            height = randomizer.Next(150, 210);
-        }
-
-        public static void RandomNameGenerator()
-        {
-            firstNameNumber = randomizer.Next(0, firstNameList.Count);
-            lastNameNumber = randomizer.Next(0, lastNameList.Count);
-
-            firstName = firstNameList[firstNameNumber];
-            lastName = lastNameList[lastNameNumber];
         }
 
         public static void StartRandom(object sender, EventArgs e)

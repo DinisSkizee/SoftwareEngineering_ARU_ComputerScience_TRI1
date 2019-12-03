@@ -221,7 +221,7 @@ namespace FinalProject
         #endregion
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
-        private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
+        private void MainPageButton_Click(object sender, EventArgs e)
         {
             AfterLogin afterlogin = new AfterLogin();
             afterlogin.Show();

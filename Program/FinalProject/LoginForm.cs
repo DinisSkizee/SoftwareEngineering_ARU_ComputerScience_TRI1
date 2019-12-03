@@ -13,6 +13,8 @@ namespace FinalProject
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
 
+            new BedSideViewConfiguration();
+
         }
 
 

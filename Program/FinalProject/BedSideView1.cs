@@ -293,7 +293,7 @@ namespace FinalProject
             #region TextBox Multiline Disable
             tbfn.Multiline = false;
             tbgender.Multiline = false;
-            tbdob.Multiline = false;
+            tbage.Multiline = false;
             tbln.Multiline = false;
             tbheight.Multiline = false;
             tbweight.Multiline = false;
@@ -363,7 +363,7 @@ namespace FinalProject
             #region AutoSize False
             tbfn.AutoSize = false;
             tbgender.AutoSize = false;
-            tbdob.AutoSize = false;
+            tbage.AutoSize = false;
             tbln.AutoSize = false;
             tbheight.AutoSize = false;
             tbweight.AutoSize = false;
@@ -432,7 +432,7 @@ namespace FinalProject
             #region TextBox Size
             tbfn.Size = new Size(151, 36);
             tbgender.Size = new Size(151, 36);
-            tbdob.Size = new Size(151, 36);
+            tbage.Size = new Size(151, 36);
             tbln.Size = new Size(151, 36);
             tbheight.Size = new Size(151, 36);
             tbweight.Size = new Size(151, 36);
@@ -501,7 +501,7 @@ namespace FinalProject
             #region TextBox ReadOnly
             tbfn.ReadOnly = true;
             tbgender.ReadOnly = true;
-            tbdob.ReadOnly = true;
+            tbage.ReadOnly = true;
             tbln.ReadOnly = true;
             tbheight.ReadOnly = true;
             tbweight.ReadOnly = true;
@@ -567,6 +567,38 @@ namespace FinalProject
             Temperature_Minimum_Text4.ReadOnly = true;
             #endregion
 
+        }
+
+        public static int weight, age, height;
+        public static int firstNameNumber, lastNameNumber;
+        public static string firstName, lastName;
+        public void RandomGenUserValues()
+        {
+            weight = SocketConfiguration.randomizer.Next(60, 85);
+            height = SocketConfiguration.randomizer.Next(150, 210);
+            age = SocketConfiguration.randomizer.Next(25, 45);
+
+            tbweight.Text = weight.ToString() + " Kg";
+            tbheight.Text = height.ToString() + " Centimeters";
+            tbage.Text = age.ToString() + " YOld";
+        }
+
+        public void RandomNameGenerator()
+        {
+            firstNameNumber = SocketConfiguration.randomizer.Next(0, SocketConfiguration.firstNameList.Count);
+            lastNameNumber = SocketConfiguration.randomizer.Next(0, SocketConfiguration.lastNameList.Count);
+
+            firstName = SocketConfiguration.firstNameList[firstNameNumber];
+            lastName = SocketConfiguration.lastNameList[lastNameNumber];
+
+            tbfn.Text = firstName;
+            tbln.Text = lastName;
+
+            if (firstNameNumber <= 11)
+            {
+                tbgender.Text = "Male";
+            }
+            else { tbgender.Text = "Female"; }
         }
 
         public static int ditext, sytext, prtext, brtext, tptext;
@@ -712,8 +744,19 @@ namespace FinalProject
         // TextBox Values
         public static int syValue, diValue, prValue, brValue;
         public static double tempValue;
+
         public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
         #endregion
+
+        private void BedPicture_Click(object sender, EventArgs e)
+        {
+            if (tbfn.Text == "")
+            {
+                RandomNameGenerator();
+                RandomGenUserValues();
+            }
+            else { MessageBox.Show("You already have a person assigned to this Bed"); }
+        }
 
         private void CentralStationPic_Click(object sender, EventArgs e)
         {
@@ -827,47 +870,59 @@ namespace FinalProject
         #region InsertButtons Configuration  -- Dinis & Jorge
         private void InsertButton1_Click(object sender, EventArgs e)
         {
-            if (moduleState1 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked1 = 1;
-                SocketSelection soS = new SocketSelection();
+                if (moduleState1 == 0)
+                {
+                    insertClicked1 = 1;
+                    SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
-                soS.Show();
-                soS.Location = this.Location;
-                this.Hide();
+                    soS.BedLabel.Text = "Bed 1";
+                    soS.Show();
+                    soS.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
 
         private void InsertButton2_Click(object sender, EventArgs e)
         {
-            if (moduleState2 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked2 = 1;
-                SocketSelection soS = new SocketSelection();
+                if (moduleState2 == 0)
+                {
+                    insertClicked2 = 1;
+                    SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
-                soS.Show();
-                soS.Location = this.Location;
-                this.Hide();
+                    soS.BedLabel.Text = "Bed 1";
+                    soS.Show();
+                    soS.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
 
         private void InsertButton3_Click(object sender, EventArgs e)
         {
-            if (moduleState3 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked3 = 1;
-                SocketSelection soS = new SocketSelection();
+                if (moduleState3 == 0)
+                {
+                    insertClicked3 = 1;
+                    SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 1";
-                soS.Show();
-                soS.Location = this.Location;
-                this.Hide();
+                    soS.BedLabel.Text = "Bed 1";
+                    soS.Show();
+                    soS.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
 
         private void InsertButton4_Click(object sender, EventArgs e)
