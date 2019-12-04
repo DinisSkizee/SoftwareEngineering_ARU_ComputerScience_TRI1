@@ -7,14 +7,15 @@ namespace FinalProject
 {
     public partial class LoginForm : Form
     {
+        public static LoginForm loginsingleton = new LoginForm();
 
         public LoginForm()
         {
+            loginsingleton = this;
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
 
             new BedSideViewConfiguration();
-
         }
 
 
@@ -26,9 +27,8 @@ namespace FinalProject
         {
             if (usernameBox.Text == "admin" && passwordBox.Text == "admin")
             {
-                AfterLogin afterLogin = new AfterLogin();
-                afterLogin.Show();
-                afterLogin.Location = this.Location;
+                AfterLogin.aftersingleton.Show();
+                AfterLogin.aftersingleton.Location = this.Location;
                 this.Hide();
             }
             else
@@ -37,6 +37,9 @@ namespace FinalProject
                 passwordBox.Clear();
                 MessageBox.Show("The Username or Password is incorrect, Please try again.");
             }
+
+            usernameBox.Clear();
+            passwordBox.Clear();
         }
         #endregion
 

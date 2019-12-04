@@ -7,7 +7,7 @@ namespace FinalProject
 {
     public partial class CentralStation : Form
     {
-        public static CentralStation centralsingleton;
+        public static CentralStation centralsingleton = new CentralStation();
 
         public CentralStation()
         {
@@ -223,73 +223,64 @@ namespace FinalProject
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)
         {
-            AfterLogin afterlogin = new AfterLogin();
-            afterlogin.Show();
-            afterlogin.Location = this.Location;
+            AfterLogin.aftersingleton.Show();
+            AfterLogin.aftersingleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton1_Click(object sender, EventArgs e)
         {
-            BedSideView1 bed1 = new BedSideView1();
-            bed1.Show();
-            bed1.Location = this.Location;
+            BedSideView1.bed1singleton.Show();
+            BedSideView1.bed1singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton2_Click(object sender, EventArgs e)
         {
-            BedSideView2 bed2 = new BedSideView2();
-            bed2.Show();
-            bed2.Location = this.Location;
+            BedSideView2.bed2singleton.Show();
+            BedSideView2.bed2singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton3_Click(object sender, EventArgs e)
         {
-            BedSideView3 bed3 = new BedSideView3();
-            bed3.Show();
-            bed3.Location = this.Location;
+            BedSideView3.bed3singleton.Show();
+            BedSideView3.bed3singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton4_Click(object sender, EventArgs e)
         {
-            BedSideView4 bed4 = new BedSideView4();
-            bed4.Show();
-            bed4.Location = this.Location;
+            BedSideView4.bed4singleton.Show();
+            BedSideView4.bed4singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton5_Click(object sender, EventArgs e)
         {
-            BedSideView5 bed5 = new BedSideView5();
-            bed5.Show();
-            bed5.Location = this.Location;
+            BedSideView5.bed5singleton.Show();
+            BedSideView5.bed5singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton6_Click(object sender, EventArgs e)
         {
-            BedSideView6 bed6 = new BedSideView6();
-            bed6.Show();
-            bed6.Location = this.Location;
+            BedSideView6.bed6singleton.Show();
+            BedSideView6.bed6singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton7_Click(object sender, EventArgs e)
         {
-            BedSideView7 bed7 = new BedSideView7();
-            bed7.Show();
-            bed7.Location = this.Location;
+            BedSideView7.bed7singleton.Show();
+            BedSideView7.bed7singleton.Location = this.Location;
             this.Hide();
         }
 
         private void BedButton8_Click(object sender, EventArgs e)
         {
-            BedSideView8 bed8 = new BedSideView8();
-            bed8.Show();
-            bed8.Location = this.Location;
+            BedSideView8.bed8singleton.Show();
+            BedSideView8.bed8singleton.Location = this.Location;
             this.Hide();
         }
     }

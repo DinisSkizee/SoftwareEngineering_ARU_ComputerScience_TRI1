@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             this.BigInfoPanelBedSideView = new System.Windows.Forms.Panel();
+            this.label73 = new System.Windows.Forms.Label();
+            this.tbheight = new System.Windows.Forms.TextBox();
+            this.tbweight = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.tbgender = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.tbln = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.tbdob = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.tbfn = new System.Windows.Forms.TextBox();
             this.Display4 = new System.Windows.Forms.Panel();
             this.PulseRatePanelBed4 = new System.Windows.Forms.Panel();
             this.label64 = new System.Windows.Forms.Label();
@@ -279,18 +291,6 @@
             this.InsertButton3 = new System.Windows.Forms.PictureBox();
             this.InsertButton2 = new System.Windows.Forms.PictureBox();
             this.InsertButton1 = new System.Windows.Forms.PictureBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.tbheight = new System.Windows.Forms.TextBox();
-            this.tbweight = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.tbgender = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.tbln = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.tbdob = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.tbfn = new System.Windows.Forms.TextBox();
             this.BigInfoPanelBedSideView.SuspendLayout();
             this.Display4.SuspendLayout();
             this.PulseRatePanelBed4.SuspendLayout();
@@ -426,6 +426,138 @@
             this.BigInfoPanelBedSideView.Name = "BigInfoPanelBedSideView";
             this.BigInfoPanelBedSideView.Size = new System.Drawing.Size(489, 158);
             this.BigInfoPanelBedSideView.TabIndex = 31;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(224, 82);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(42, 13);
+            this.label73.TabIndex = 26;
+            this.label73.Text = "Height";
+            // 
+            // tbheight
+            // 
+            this.tbheight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbheight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbheight.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbheight.ForeColor = System.Drawing.Color.White;
+            this.tbheight.Location = new System.Drawing.Point(170, 98);
+            this.tbheight.Multiline = true;
+            this.tbheight.Name = "tbheight";
+            this.tbheight.Size = new System.Drawing.Size(151, 36);
+            this.tbheight.TabIndex = 25;
+            this.tbheight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbweight
+            // 
+            this.tbweight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbweight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbweight.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbweight.ForeColor = System.Drawing.Color.White;
+            this.tbweight.Location = new System.Drawing.Point(328, 98);
+            this.tbweight.Multiline = true;
+            this.tbweight.Name = "tbweight";
+            this.tbweight.Size = new System.Drawing.Size(151, 36);
+            this.tbweight.TabIndex = 24;
+            this.tbweight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(383, 82);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(45, 13);
+            this.label71.TabIndex = 23;
+            this.label71.Text = "Weight";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(223, 10);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(45, 13);
+            this.label70.TabIndex = 22;
+            this.label70.Text = "Gender";
+            // 
+            // tbgender
+            // 
+            this.tbgender.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbgender.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbgender.ForeColor = System.Drawing.Color.White;
+            this.tbgender.Location = new System.Drawing.Point(169, 26);
+            this.tbgender.Multiline = true;
+            this.tbgender.Name = "tbgender";
+            this.tbgender.Size = new System.Drawing.Size(151, 36);
+            this.tbgender.TabIndex = 21;
+            this.tbgender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(55, 82);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(59, 13);
+            this.label69.TabIndex = 20;
+            this.label69.Text = "Last Name";
+            // 
+            // tbln
+            // 
+            this.tbln.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbln.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbln.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbln.ForeColor = System.Drawing.Color.White;
+            this.tbln.Location = new System.Drawing.Point(9, 98);
+            this.tbln.Multiline = true;
+            this.tbln.Name = "tbln";
+            this.tbln.Size = new System.Drawing.Size(151, 36);
+            this.tbln.TabIndex = 19;
+            this.tbln.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(363, 10);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(90, 13);
+            this.label68.TabIndex = 18;
+            this.label68.Text = "Date of Birthday";
+            // 
+            // tbdob
+            // 
+            this.tbdob.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdob.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdob.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdob.ForeColor = System.Drawing.Color.White;
+            this.tbdob.Location = new System.Drawing.Point(328, 26);
+            this.tbdob.Multiline = true;
+            this.tbdob.Name = "tbdob";
+            this.tbdob.Size = new System.Drawing.Size(151, 36);
+            this.tbdob.TabIndex = 17;
+            this.tbdob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(54, 10);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(61, 13);
+            this.label67.TabIndex = 16;
+            this.label67.Text = "First Name";
+            // 
+            // tbfn
+            // 
+            this.tbfn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbfn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbfn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbfn.ForeColor = System.Drawing.Color.White;
+            this.tbfn.Location = new System.Drawing.Point(9, 26);
+            this.tbfn.Multiline = true;
+            this.tbfn.Name = "tbfn";
+            this.tbfn.Size = new System.Drawing.Size(151, 36);
+            this.tbfn.TabIndex = 15;
+            this.tbfn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Display4
             // 
@@ -3229,138 +3361,6 @@
             this.InsertButton1.TabStop = false;
             this.InsertButton1.Click += new System.EventHandler(this.InsertButton1_Click);
             // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(224, 82);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(42, 13);
-            this.label73.TabIndex = 26;
-            this.label73.Text = "Height";
-            // 
-            // tbheight
-            // 
-            this.tbheight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbheight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbheight.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbheight.ForeColor = System.Drawing.Color.White;
-            this.tbheight.Location = new System.Drawing.Point(170, 98);
-            this.tbheight.Multiline = true;
-            this.tbheight.Name = "tbheight";
-            this.tbheight.Size = new System.Drawing.Size(151, 36);
-            this.tbheight.TabIndex = 25;
-            this.tbheight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbweight
-            // 
-            this.tbweight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbweight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbweight.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbweight.ForeColor = System.Drawing.Color.White;
-            this.tbweight.Location = new System.Drawing.Point(328, 98);
-            this.tbweight.Multiline = true;
-            this.tbweight.Name = "tbweight";
-            this.tbweight.Size = new System.Drawing.Size(151, 36);
-            this.tbweight.TabIndex = 24;
-            this.tbweight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(383, 82);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(45, 13);
-            this.label71.TabIndex = 23;
-            this.label71.Text = "Weight";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(223, 10);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(45, 13);
-            this.label70.TabIndex = 22;
-            this.label70.Text = "Gender";
-            // 
-            // tbgender
-            // 
-            this.tbgender.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbgender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbgender.ForeColor = System.Drawing.Color.White;
-            this.tbgender.Location = new System.Drawing.Point(169, 26);
-            this.tbgender.Multiline = true;
-            this.tbgender.Name = "tbgender";
-            this.tbgender.Size = new System.Drawing.Size(151, 36);
-            this.tbgender.TabIndex = 21;
-            this.tbgender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(55, 82);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(59, 13);
-            this.label69.TabIndex = 20;
-            this.label69.Text = "Last Name";
-            // 
-            // tbln
-            // 
-            this.tbln.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbln.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbln.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbln.ForeColor = System.Drawing.Color.White;
-            this.tbln.Location = new System.Drawing.Point(9, 98);
-            this.tbln.Multiline = true;
-            this.tbln.Name = "tbln";
-            this.tbln.Size = new System.Drawing.Size(151, 36);
-            this.tbln.TabIndex = 19;
-            this.tbln.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(363, 10);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(90, 13);
-            this.label68.TabIndex = 18;
-            this.label68.Text = "Date of Birthday";
-            // 
-            // tbdob
-            // 
-            this.tbdob.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbdob.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbdob.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbdob.ForeColor = System.Drawing.Color.White;
-            this.tbdob.Location = new System.Drawing.Point(328, 26);
-            this.tbdob.Multiline = true;
-            this.tbdob.Name = "tbdob";
-            this.tbdob.Size = new System.Drawing.Size(151, 36);
-            this.tbdob.TabIndex = 17;
-            this.tbdob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(54, 10);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(61, 13);
-            this.label67.TabIndex = 16;
-            this.label67.Text = "First Name";
-            // 
-            // tbfn
-            // 
-            this.tbfn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbfn.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbfn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbfn.ForeColor = System.Drawing.Color.White;
-            this.tbfn.Location = new System.Drawing.Point(9, 26);
-            this.tbfn.Multiline = true;
-            this.tbfn.Name = "tbfn";
-            this.tbfn.Size = new System.Drawing.Size(151, 36);
-            this.tbfn.TabIndex = 15;
-            this.tbfn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // BedSideView6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3616,42 +3616,38 @@
         private System.Windows.Forms.PictureBox InsertButton3;
         private System.Windows.Forms.PictureBox InsertButton2;
         private System.Windows.Forms.PictureBox InsertButton1;
-        private System.Windows.Forms.Label InsertASocket1;
-        private System.Windows.Forms.Label InsertASocket2;
-        private System.Windows.Forms.Label InsertASocket3;
-        private System.Windows.Forms.Label InsertASocket4;
         public System.Windows.Forms.Panel TemperaturePanelBed1;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Panel panel62;
-        private System.Windows.Forms.TextBox Temperature_Maximum_Text;
+        public System.Windows.Forms.TextBox Temperature_Maximum_Text;
         private System.Windows.Forms.Panel panel63;
-        private System.Windows.Forms.TextBox Temperature_Actual_Text;
+        public System.Windows.Forms.TextBox Temperature_Actual_Text;
         private System.Windows.Forms.Panel panel64;
-        private System.Windows.Forms.TextBox Temperature_Minimum_Text;
+        public System.Windows.Forms.TextBox Temperature_Minimum_Text;
         private System.Windows.Forms.PictureBox pictureBox11;
         public System.Windows.Forms.Panel BreathingRatePanelBed1;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.TextBox BreathingRate_Maximum_Text;
+        public System.Windows.Forms.TextBox BreathingRate_Maximum_Text;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.TextBox BreathingRate_Actual_Text;
+        public System.Windows.Forms.TextBox BreathingRate_Actual_Text;
         private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.TextBox BreathingRate_Minimum_Text;
+        public System.Windows.Forms.TextBox BreathingRate_Minimum_Text;
         private System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.Panel PulseRatePanelBed1;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.TextBox PulseRate_Maximum_Text;
+        public System.Windows.Forms.TextBox PulseRate_Maximum_Text;
         private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.TextBox PulseRate_Actual_Text;
+        public System.Windows.Forms.TextBox PulseRate_Actual_Text;
         private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.TextBox PulseRate_Minimum_Text;
+        public System.Windows.Forms.TextBox PulseRate_Minimum_Text;
         private System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Panel BloodPressurePanelBed1;
         private System.Windows.Forms.Label Sy;
@@ -3680,33 +3676,33 @@
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Panel panel54;
-        private System.Windows.Forms.TextBox Temperature_Maximum_Text2;
+        public System.Windows.Forms.TextBox Temperature_Maximum_Text2;
         private System.Windows.Forms.Panel panel55;
-        private System.Windows.Forms.TextBox Temperature_Actual_Text2;
+        public System.Windows.Forms.TextBox Temperature_Actual_Text2;
         private System.Windows.Forms.Panel panel56;
-        private System.Windows.Forms.TextBox Temperature_Minimum_Text2;
+        public System.Windows.Forms.TextBox Temperature_Minimum_Text2;
         private System.Windows.Forms.PictureBox pictureBox9;
         public System.Windows.Forms.Panel BreathingRatePanelBed2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Panel panel46;
-        private System.Windows.Forms.TextBox BreathingRate_Maximum_Text2;
+        public System.Windows.Forms.TextBox BreathingRate_Maximum_Text2;
         private System.Windows.Forms.Panel panel47;
-        private System.Windows.Forms.TextBox BreathingRate_Actual_Text2;
+        public System.Windows.Forms.TextBox BreathingRate_Actual_Text2;
         private System.Windows.Forms.Panel panel48;
-        private System.Windows.Forms.TextBox BreathingRate_Minimum_Text2;
+        public System.Windows.Forms.TextBox BreathingRate_Minimum_Text2;
         private System.Windows.Forms.PictureBox pictureBox7;
         public System.Windows.Forms.Panel PulseRatePanelBed2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox PulseRate_Maximum_Text2;
+        public System.Windows.Forms.TextBox PulseRate_Maximum_Text2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox PulseRate_Actual_Text2;
+        public System.Windows.Forms.TextBox PulseRate_Actual_Text2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox PulseRate_Minimum_Text2;
+        public System.Windows.Forms.TextBox PulseRate_Minimum_Text2;
         private System.Windows.Forms.PictureBox PulseRateBed_Pic1;
         public System.Windows.Forms.Panel BloodPressurePanelBed2;
         private System.Windows.Forms.Label label16;
@@ -3715,42 +3711,42 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Maximum_Text2;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Maximum_Text2;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text2;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text2;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text2;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text2;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text2;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text2;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text2;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text2;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text2;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel TemperaturePanelBed3;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Panel panel58;
-        private System.Windows.Forms.TextBox Temperature_Maximum_Text3;
+        public System.Windows.Forms.TextBox Temperature_Maximum_Text3;
         private System.Windows.Forms.Panel panel59;
-        private System.Windows.Forms.TextBox Temperature_Actual_Text3;
+        public System.Windows.Forms.TextBox Temperature_Actual_Text3;
         private System.Windows.Forms.Panel panel60;
-        private System.Windows.Forms.TextBox Temperature_Minimum_Text3;
+        public System.Windows.Forms.TextBox Temperature_Minimum_Text3;
         private System.Windows.Forms.PictureBox pictureBox10;
         public System.Windows.Forms.Panel PulseRatePanelBed3;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel panel38;
-        private System.Windows.Forms.TextBox PulseRate_Maximum_Text3;
+        public System.Windows.Forms.TextBox PulseRate_Maximum_Text3;
         private System.Windows.Forms.Panel panel39;
-        private System.Windows.Forms.TextBox PulseRate_Actual_Text3;
+        public System.Windows.Forms.TextBox PulseRate_Actual_Text3;
         private System.Windows.Forms.Panel panel40;
-        private System.Windows.Forms.TextBox PulseRate_Minimum_Text3;
+        public System.Windows.Forms.TextBox PulseRate_Minimum_Text3;
         private System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.Panel BloodPressurePanelBed3;
         private System.Windows.Forms.Label label24;
@@ -3759,53 +3755,53 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Maximum_Text3;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Maximum_Text3;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text3;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text3;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text3;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text3;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text3;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text3;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text3;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text3;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text3;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text3;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Panel BreathingRatePanelBed3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox BreathingRate_Maximum_Text3;
+        public System.Windows.Forms.TextBox BreathingRate_Maximum_Text3;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox BreathingRate_Actual_Text3;
+        public System.Windows.Forms.TextBox BreathingRate_Actual_Text3;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox BreathingRate_Minimum_Text3;
+        public System.Windows.Forms.TextBox BreathingRate_Minimum_Text3;
         private System.Windows.Forms.PictureBox BreathingRatePanelBed_Pic1;
         public System.Windows.Forms.Panel PulseRatePanelBed4;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox PulseRate_Maximum_Text4;
+        public System.Windows.Forms.TextBox PulseRate_Maximum_Text4;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.TextBox PulseRate_Actual_Text4;
+        public System.Windows.Forms.TextBox PulseRate_Actual_Text4;
         private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.TextBox PulseRate_Minimum_Text4;
+        public System.Windows.Forms.TextBox PulseRate_Minimum_Text4;
         private System.Windows.Forms.PictureBox pictureBox12;
         public System.Windows.Forms.Panel BreathingRatePanelBed4;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.TextBox BreathingRate_Maximum_Text4;
+        public System.Windows.Forms.TextBox BreathingRate_Maximum_Text4;
         private System.Windows.Forms.Panel panel51;
-        private System.Windows.Forms.TextBox BreathingRate_Actual_Text4;
+        public System.Windows.Forms.TextBox BreathingRate_Actual_Text4;
         private System.Windows.Forms.Panel panel52;
-        private System.Windows.Forms.TextBox BreathingRate_Minimum_Text4;
+        public System.Windows.Forms.TextBox BreathingRate_Minimum_Text4;
         private System.Windows.Forms.PictureBox pictureBox8;
         public System.Windows.Forms.Panel BloodPressurePanelBed4;
         private System.Windows.Forms.Label label32;
@@ -3814,31 +3810,31 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Maximum_Text4;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Maximum_Text4;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text4;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Actual_Text4;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text4;
+        public System.Windows.Forms.TextBox DiBloodPressurePanelBed_Minimum_Text4;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text4;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Maximum_Text4;
         private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text4;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Actual_Text4;
         private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text4;
+        public System.Windows.Forms.TextBox SyBloodPressurePanelBed_Minimum_Text4;
         private System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Panel TemperaturePanelBed4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox Temperature_Maximum_Text4;
+        public System.Windows.Forms.TextBox Temperature_Maximum_Text4;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox Temperature_Actual_Text4;
+        public System.Windows.Forms.TextBox Temperature_Actual_Text4;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox Temperature_Minimum_Text4;
+        public System.Windows.Forms.TextBox Temperature_Minimum_Text4;
         private System.Windows.Forms.PictureBox TemperaturePanelBed_Pic1;
         private System.Windows.Forms.PictureBox CentralStationPic;
         private System.Windows.Forms.Label label73;
@@ -3853,5 +3849,9 @@
         public System.Windows.Forms.TextBox tbdob;
         private System.Windows.Forms.Label label67;
         public System.Windows.Forms.TextBox tbfn;
+        public System.Windows.Forms.Label InsertASocket1;
+        public System.Windows.Forms.Label InsertASocket2;
+        public System.Windows.Forms.Label InsertASocket3;
+        public System.Windows.Forms.Label InsertASocket4;
     }
 }

@@ -7,7 +7,8 @@ namespace FinalProject
 {
     public partial class BedSideView6 : Form
     {
-        public static BedSideView6 bed6singleton;
+        public static BedSideView6 bed6singleton = new BedSideView6();
+
         public BedSideView6()
         {
             bed6singleton = this;
@@ -32,261 +33,6 @@ namespace FinalProject
 
             if ((BreathingRatePanelBed4.Dock == DockStyle.Fill) || (BloodPressurePanelBed4.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed4.Dock == DockStyle.Fill) || (PulseRatePanelBed4.Dock == DockStyle.Fill)) { moduleState4 = 1; }
-            #endregion
-
-            #region BloodInsert IF Statements
-            if (bloodInsert1 == 1)
-            {
-                BloodPressurePanelBed1.Dock = DockStyle.Fill;
-                BloodPressurePanelBed1.Visible = true;
-                InsertASocket1.Visible = false;
-            }
-            else if (bloodInsert2 == 1)
-            {
-                BloodPressurePanelBed2.Dock = DockStyle.Fill;
-                BloodPressurePanelBed2.Visible = true;
-                InsertASocket2.Visible = false;
-            }
-            else if (bloodInsert3 == 1)
-            {
-                BloodPressurePanelBed3.Dock = DockStyle.Fill;
-                BloodPressurePanelBed3.Visible = true;
-                InsertASocket3.Visible = false;
-            }
-            else if (bloodInsert4 == 1)
-            {
-                BloodPressurePanelBed4.Dock = DockStyle.Fill;
-                BloodPressurePanelBed4.Visible = true;
-                InsertASocket4.Visible = false;
-            }
-            #endregion
-
-            #region BreathingInsert IF Statements
-            if (breathingInsert1 == 1)
-            {
-                BreathingRatePanelBed1.Dock = DockStyle.Fill;
-                BreathingRatePanelBed1.Visible = true;
-                InsertASocket1.Visible = false;
-            }
-            else if (breathingInsert2 == 1)
-            {
-                BreathingRatePanelBed2.Dock = DockStyle.Fill;
-                BreathingRatePanelBed2.Visible = true;
-                InsertASocket2.Visible = false;
-            }
-            else if (breathingInsert3 == 1)
-            {
-                BreathingRatePanelBed3.Dock = DockStyle.Fill;
-                BreathingRatePanelBed3.Visible = true;
-                InsertASocket3.Visible = false;
-            }
-            else if (breathingInsert4 == 1)
-            {
-                BreathingRatePanelBed4.Dock = DockStyle.Fill;
-                BreathingRatePanelBed4.Visible = true;
-                InsertASocket4.Visible = false;
-            }
-            #endregion
-
-            #region PulseInsert IF Statements
-            if (pulseInsert1 == 1)
-            {
-                PulseRatePanelBed1.Dock = DockStyle.Fill;
-                PulseRatePanelBed1.Visible = true;
-                InsertASocket1.Visible = false;
-            }
-            else if (pulseInsert2 == 1)
-            {
-                PulseRatePanelBed2.Dock = DockStyle.Fill;
-                PulseRatePanelBed2.Visible = true;
-                InsertASocket2.Visible = false;
-            }
-            else if (pulseInsert3 == 1)
-            {
-                PulseRatePanelBed3.Dock = DockStyle.Fill;
-                PulseRatePanelBed3.Visible = true;
-                InsertASocket3.Visible = false;
-            }
-            else if (pulseInsert4 == 1)
-            {
-                PulseRatePanelBed4.Dock = DockStyle.Fill;
-                PulseRatePanelBed4.Visible = true;
-                InsertASocket4.Visible = false;
-            }
-            #endregion
-
-            #region TempInsert IF Statements
-            if (tempInsert1 == 1)
-            {
-                TemperaturePanelBed1.Dock = DockStyle.Fill;
-                TemperaturePanelBed1.Visible = true;
-                InsertASocket1.Visible = false;
-                tempInsert1 = 0;
-            }
-            else if (tempInsert2 == 1)
-            {
-                TemperaturePanelBed2.Dock = DockStyle.Fill;
-                TemperaturePanelBed2.Visible = true;
-                InsertASocket2.Visible = false;
-                tempInsert2 = 0;
-            }
-            else if (tempInsert3 == 1)
-            {
-                TemperaturePanelBed3.Dock = DockStyle.Fill;
-                TemperaturePanelBed3.Visible = true;
-                InsertASocket3.Visible = false;
-                tempInsert3 = 0;
-            }
-            else if (tempInsert4 == 1)
-            {
-                TemperaturePanelBed4.Dock = DockStyle.Fill;
-                TemperaturePanelBed4.Visible = true;
-                InsertASocket4.Visible = false;
-                tempInsert4 = 0;
-            }
-            #endregion
-
-            #region TextBox Text Assignment (Min & Max)
-
-            #region Blood Pressure
-            SyBloodPressurePanelBed_Minimum_Text.Text = syMin.ToString();
-            SyBloodPressurePanelBed_Minimum_Text2.Text = syMin.ToString();
-            SyBloodPressurePanelBed_Minimum_Text3.Text = syMin.ToString();
-            SyBloodPressurePanelBed_Minimum_Text4.Text = syMin.ToString();
-
-            SyBloodPressurePanelBed_Maximum_Text.Text = syMax.ToString();
-            SyBloodPressurePanelBed_Maximum_Text2.Text = syMax.ToString();
-            SyBloodPressurePanelBed_Maximum_Text3.Text = syMax.ToString();
-            SyBloodPressurePanelBed_Maximum_Text4.Text = syMax.ToString();
-
-            DiBloodPressurePanelBed_Minimum_Text.Text = diMin.ToString();
-            DiBloodPressurePanelBed_Minimum_Text2.Text = diMin.ToString();
-            DiBloodPressurePanelBed_Minimum_Text3.Text = diMin.ToString();
-            DiBloodPressurePanelBed_Minimum_Text4.Text = diMin.ToString();
-
-            DiBloodPressurePanelBed_Maximum_Text.Text = diMax.ToString();
-            DiBloodPressurePanelBed_Maximum_Text2.Text = diMax.ToString();
-            DiBloodPressurePanelBed_Maximum_Text3.Text = diMax.ToString();
-            DiBloodPressurePanelBed_Maximum_Text4.Text = diMax.ToString();
-
-            #endregion
-
-            #region Breathing Rate
-            BreathingRate_Minimum_Text.Text = brMin.ToString();
-            BreathingRate_Minimum_Text2.Text = brMin.ToString();
-            BreathingRate_Minimum_Text3.Text = brMin.ToString();
-            BreathingRate_Minimum_Text4.Text = brMin.ToString();
-
-            BreathingRate_Maximum_Text.Text = brMax.ToString();
-            BreathingRate_Maximum_Text2.Text = brMax.ToString();
-            BreathingRate_Maximum_Text3.Text = brMax.ToString();
-            BreathingRate_Maximum_Text4.Text = brMax.ToString();
-            #endregion
-
-            #region Pulse Rate
-            PulseRate_Minimum_Text.Text = prMin.ToString();
-            PulseRate_Minimum_Text2.Text = prMin.ToString();
-            PulseRate_Minimum_Text3.Text = prMin.ToString();
-            PulseRate_Minimum_Text4.Text = prMin.ToString();
-
-            PulseRate_Maximum_Text.Text = prMax.ToString();
-            PulseRate_Maximum_Text2.Text = prMax.ToString();
-            PulseRate_Maximum_Text3.Text = prMax.ToString();
-            PulseRate_Maximum_Text4.Text = prMax.ToString();
-            #endregion
-
-            #region Temperature
-            Temperature_Minimum_Text.Text = tpMin.ToString();
-            Temperature_Minimum_Text2.Text = tpMin.ToString();
-            Temperature_Minimum_Text3.Text = tpMin.ToString();
-            Temperature_Minimum_Text4.Text = tpMin.ToString();
-
-            Temperature_Maximum_Text.Text = tpMax.ToString();
-            Temperature_Maximum_Text2.Text = tpMax.ToString();
-            Temperature_Maximum_Text3.Text = tpMax.ToString();
-            Temperature_Maximum_Text4.Text = tpMax.ToString();
-            #endregion
-
-            #endregion
-
-            #region Insert Assignment
-
-            #region Blood Pressure
-            if (BloodPressurePanelBed1.Dock == DockStyle.Fill)
-            {
-                bloodInsert1 = 1;
-            }
-            if (BloodPressurePanelBed2.Dock == DockStyle.Fill)
-            {
-                bloodInsert2 = 1;
-            }
-            if (BloodPressurePanelBed3.Dock == DockStyle.Fill)
-            {
-                bloodInsert3 = 1;
-            }
-            if (BloodPressurePanelBed4.Dock == DockStyle.Fill)
-            {
-                bloodInsert4 = 1;
-            }
-            #endregion
-
-            #region Pulse Rate
-            if (PulseRatePanelBed1.Dock == DockStyle.Fill)
-            {
-                pulseInsert1 = 1;
-            }
-            if (PulseRatePanelBed2.Dock == DockStyle.Fill)
-            {
-                pulseInsert2 = 1;
-            }
-            if (PulseRatePanelBed3.Dock == DockStyle.Fill)
-            {
-                pulseInsert3 = 1;
-            }
-            if (PulseRatePanelBed4.Dock == DockStyle.Fill)
-            {
-                pulseInsert4 = 1;
-            }
-            #endregion
-
-            #region Breathing Rate
-            if (BreathingRatePanelBed1.Dock == DockStyle.Fill)
-            {
-                breathingInsert1 = 1;
-            }
-            if (BreathingRatePanelBed2.Dock == DockStyle.Fill)
-            {
-                breathingInsert2 = 1;
-            }
-            if (BreathingRatePanelBed3.Dock == DockStyle.Fill)
-            {
-                breathingInsert3 = 1;
-            }
-            if (BreathingRatePanelBed4.Dock == DockStyle.Fill)
-            {
-                breathingInsert4 = 1;
-            }
-            #endregion
-
-            #region Temperature
-            if (TemperaturePanelBed1.Dock == DockStyle.Fill)
-            {
-                tempInsert1 = 1;
-            }
-            if (TemperaturePanelBed2.Dock == DockStyle.Fill)
-            {
-                tempInsert2 = 1;
-            }
-            if (TemperaturePanelBed3.Dock == DockStyle.Fill)
-            {
-                tempInsert3 = 1;
-            }
-            if (TemperaturePanelBed4.Dock == DockStyle.Fill)
-            {
-                tempInsert4 = 1;
-            }
-            #endregion
-
             #endregion
 
             #region TextBox Multiline Disable
@@ -580,51 +326,51 @@ namespace FinalProject
 
             #region Textbox Color
             // Diastolic TextBox Color
-            if (ditext < diMin || ditext > diMax)
+            if (ditext < SocketSelection.diMin6 || ditext > SocketSelection.diMax6)
             {
                 CentralStation.centralsingleton.tbdi6.BackColor = Color.Red;
             }
-            else if (ditext > diMin && ditext < diMax)
+            else if (ditext > SocketSelection.diMin6 && ditext < SocketSelection.diMax6)
             {
                 CentralStation.centralsingleton.tbdi6.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Systolic TextBox Color
-            if (sytext < syMin || sytext > syMax)
+            if (sytext < SocketSelection.syMin6 || sytext > SocketSelection.syMax6)
             {
                 CentralStation.centralsingleton.tbsy6.BackColor = Color.Red;
             }
-            else if (sytext > syMin && sytext < syMax)
+            else if (sytext > SocketSelection.syMin6 && sytext < SocketSelection.syMax6)
             {
                 CentralStation.centralsingleton.tbsy6.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Pulse Textbox Color
-            if (prtext < prMin || prtext > prMax)
+            if (prtext < SocketSelection.prMin6 || prtext > SocketSelection.prMax6)
             {
                 CentralStation.centralsingleton.tbpr6.BackColor = Color.Red;
             }
-            else if (prtext > prMin && prtext < prMax)
+            else if (prtext > SocketSelection.prMin6 && prtext < SocketSelection.prMax6)
             {
                 CentralStation.centralsingleton.tbpr6.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Breathing Textbox Color
-            if (brtext < brMin || brtext > brMax)
+            if (brtext < SocketSelection.brMin6 || brtext > SocketSelection.brMax6)
             {
                 CentralStation.centralsingleton.tbbr6.BackColor = Color.Red;
             }
-            else if (brtext > brMin && brtext < brMax)
+            else if (brtext > SocketSelection.brMin6 && brtext < SocketSelection.brMax6)
             {
                 CentralStation.centralsingleton.tbbr6.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Temperature Textbox Color
-            if (tptext < tpMin || tptext < tpMax)
+            if (tptext < SocketSelection.tpMin6 || tptext < SocketSelection.tpMax6)
             {
                 CentralStation.centralsingleton.tbtp6.BackColor = Color.Red;
             }
-            else if (tptext > tpMin && tptext > tpMax)
+            else if (tptext > SocketSelection.tpMin6 && tptext > SocketSelection.tpMax6)
             {
                 CentralStation.centralsingleton.tbtp6.BackColor = Color.FromArgb(105, 105, 105);
             }
@@ -702,25 +448,18 @@ namespace FinalProject
         // What Insert was Clicked
         public static int insertClicked1, insertClicked2, insertClicked3, insertClicked4;
 
-        // What was inserted
-        public static int bloodInsert1, bloodInsert2, bloodInsert3, bloodInsert4;
-        public static int pulseInsert1, pulseInsert2, pulseInsert3, pulseInsert4;
-        public static int breathingInsert1, breathingInsert2, breathingInsert3, breathingInsert4;
-        public static int tempInsert1, tempInsert2, tempInsert3, tempInsert4;
         // If the panel is visible
         public static bool bloodActive, pulseActive, breathingActive, tempActive;
 
         // TextBox Values
         public static int syValue, diValue, prValue, brValue;
         public static double tempValue;
-        public static int diMin, diMax, syMin, syMax, prMin, prMax, brMin, brMax, tpMin, tpMax;
         #endregion
 
         private void CentralStationPic_Click(object sender, EventArgs e)
         {
-            CentralStation centralStation = new CentralStation();
-            centralStation.Show();
-            centralStation.Location = this.Location;
+            CentralStation.centralsingleton.Show();
+            CentralStation.centralsingleton.Location = this.Location;
             this.Hide();
         }
 
@@ -761,70 +500,61 @@ namespace FinalProject
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
         {
-            AfterLogin afterlogin = new AfterLogin();
-            afterlogin.Show();
-            afterlogin.Location = this.Location;
+            AfterLogin.aftersingleton.Show();
+            AfterLogin.aftersingleton.Location = this.Location;
             this.Hide();
         }
 
         #region Bed Buttons Click  -- Dinis & Jorge
         private void Bed1_Click(object sender, EventArgs e)
         {
-            BedSideView1 bedSideView1 = new BedSideView1();
-            bedSideView1.Show();
-            bedSideView1.Location = this.Location;
+            BedSideView1.bed1singleton.Show();
+            BedSideView1.bed1singleton.Location = this.Location;
             this.Hide();
         }
 
         private void Bed2_Click(object sender, EventArgs e)
         {
-            BedSideView2 bedSideView2 = new BedSideView2();
-            bedSideView2.Show();
-            bedSideView2.Location = this.Location;
+            BedSideView2.bed2singleton.Show();
+            BedSideView2.bed2singleton.Location = this.Location;
             this.Hide();
         }
 
         private void Bed3_Click(object sender, EventArgs e)
         {
-            BedSideView3 bedSideView3 = new BedSideView3();
-            bedSideView3.Show();
-            bedSideView3.Location = this.Location;
+            BedSideView3.bed3singleton.Show();
+            BedSideView3.bed3singleton.Location = this.Location;
             this.Hide();
         }
 
         private void Bed4_Click(object sender, EventArgs e)
         {
-            BedSideView4 bedSideView4 = new BedSideView4();
-            bedSideView4.Show();
-            bedSideView4.Location = this.Location;
+            BedSideView4.bed4singleton.Show();
+            BedSideView4.bed4singleton.Location = this.Location;
             this.Hide();
         }
 
         private void Bed5_Click(object sender, EventArgs e)
         {
-            BedSideView5 bedSideView5 = new BedSideView5();
-            bedSideView5.Show();
-            bedSideView5.Location = this.Location;
+            BedSideView5.bed5singleton.Show();
+            BedSideView5.bed5singleton.Location = this.Location;
             this.Hide();
         }
 
         private void Bed7_Click(object sender, EventArgs e)
         {
-            BedSideView7 bedSideView7 = new BedSideView7();
-            bedSideView7.Show();
-            bedSideView7.Location = this.Location;
+            BedSideView7.bed7singleton.Show();
+            BedSideView7.bed7singleton.Location = this.Location;
             this.Hide();
         }
 
         private void Bed8_Click(object sender, EventArgs e)
         {
-            BedSideView8 bedSideView8 = new BedSideView8();
-            bedSideView8.Show();
-            bedSideView8.Location = this.Location;
+            BedSideView8.bed8singleton.Show();
+            BedSideView8.bed8singleton.Location = this.Location;
             this.Hide();
         }
         #endregion
-
 
         #region InsertButtons Configuration  -- Dinis & Jorge
         private void InsertButton1_Click(object sender, EventArgs e)
@@ -832,11 +562,10 @@ namespace FinalProject
             if (moduleState1 == 0)
             {
                 insertClicked1 = 1;
-                SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 6";
-                soS.Show();
-                soS.Location = this.Location;
+                SocketSelection.socketsingleton.BedLabel.Text = "Bed 6";
+                SocketSelection.socketsingleton.Show();
+                SocketSelection.socketsingleton.Location = this.Location;
                 this.Hide();
             }
             else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
@@ -847,11 +576,10 @@ namespace FinalProject
             if (moduleState2 == 0)
             {
                 insertClicked2 = 1;
-                SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 6";
-                soS.Show();
-                soS.Location = this.Location;
+                SocketSelection.socketsingleton.BedLabel.Text = "Bed 6";
+                SocketSelection.socketsingleton.Show();
+                SocketSelection.socketsingleton.Location = this.Location;
                 this.Hide();
             }
             else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
@@ -862,11 +590,10 @@ namespace FinalProject
             if (moduleState3 == 0)
             {
                 insertClicked3 = 1;
-                SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 6";
-                soS.Show();
-                soS.Location = this.Location;
+                SocketSelection.socketsingleton.BedLabel.Text = "Bed 6";
+                SocketSelection.socketsingleton.Show();
+                SocketSelection.socketsingleton.Location = this.Location;
                 this.Hide();
             }
             else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
@@ -877,11 +604,10 @@ namespace FinalProject
             if (moduleState4 == 0)
             {
                 insertClicked4 = 1;
-                SocketSelection soS = new SocketSelection();
 
-                soS.BedLabel.Text = "Bed 6";
-                soS.Show();
-                soS.Location = this.Location;
+                SocketSelection.socketsingleton.BedLabel.Text = "Bed 6";
+                SocketSelection.socketsingleton.Show();
+                SocketSelection.socketsingleton.Location = this.Location;
                 this.Hide();
             }
             else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
@@ -892,11 +618,6 @@ namespace FinalProject
         private void EjectButton1_Click(object sender, EventArgs e)
         {
             moduleState1 = 0;
-
-            bloodInsert1 = 0;
-            pulseInsert1 = 0;
-            breathingInsert1 = 0;
-            tempInsert1 = 0;
 
             BreathingRatePanelBed1.Dock = DockStyle.None;
             BloodPressurePanelBed1.Dock = DockStyle.None;
@@ -914,11 +635,6 @@ namespace FinalProject
         {
             moduleState2 = 0;
 
-            bloodInsert2 = 0;
-            pulseInsert2 = 0;
-            breathingInsert2 = 0;
-            tempInsert2 = 0;
-
             BreathingRatePanelBed2.Dock = DockStyle.None;
             BloodPressurePanelBed2.Dock = DockStyle.None;
             TemperaturePanelBed2.Dock = DockStyle.None;
@@ -935,11 +651,6 @@ namespace FinalProject
         {
             moduleState3 = 0;
 
-            bloodInsert3 = 0;
-            pulseInsert3 = 0;
-            breathingInsert3 = 0;
-            tempInsert3 = 0;
-
             BreathingRatePanelBed3.Dock = DockStyle.None;
             BloodPressurePanelBed3.Dock = DockStyle.None;
             TemperaturePanelBed3.Dock = DockStyle.None;
@@ -955,11 +666,6 @@ namespace FinalProject
         private void EjectButton4_Click(object sender, EventArgs e)
         {
             moduleState4 = 0;
-
-            bloodInsert4 = 0;
-            pulseInsert4 = 0;
-            breathingInsert4 = 0;
-            tempInsert4 = 0;
 
             BreathingRatePanelBed4.Dock = DockStyle.None;
             BloodPressurePanelBed4.Dock = DockStyle.None;
@@ -983,15 +689,15 @@ namespace FinalProject
 
             if (randomizerSy <= 5)
             {
-                syValue = SocketConfiguration.randomizer.Next(syMin - 20, syMin - 1);
+                syValue = SocketConfiguration.randomizer.Next(SocketSelection.syMin6 - 20, SocketSelection.syMin6 - 1);
             }
             else if ((randomizerSy > 5) && (randomizerSy < 95))
             {
-                syValue = SocketConfiguration.randomizer.Next(syMin, syMax);
+                syValue = SocketConfiguration.randomizer.Next(SocketSelection.syMin6, SocketSelection.syMax6);
             }
             else if (randomizerSy >= 95)
             {
-                syValue = SocketConfiguration.randomizer.Next(syMax + 1, syMax + 20);
+                syValue = SocketConfiguration.randomizer.Next(SocketSelection.syMax6 + 1, SocketSelection.syMax6 + 20);
             }
 
             return syValue.ToString();
@@ -1003,15 +709,15 @@ namespace FinalProject
 
             if (randomizerDi <= 5)
             {
-                diValue = SocketConfiguration.randomizer.Next(diMin - 20, diMin - 1);
+                diValue = SocketConfiguration.randomizer.Next(SocketSelection.diMin6 - 20, SocketSelection.diMin6 - 1);
             }
             else if ((randomizerDi > 5) && (randomizerDi < 95))
             {
-                diValue = SocketConfiguration.randomizer.Next(diMin, diMax);
+                diValue = SocketConfiguration.randomizer.Next(SocketSelection.diMin6, SocketSelection.diMax6);
             }
             else if (randomizerDi >= 95)
             {
-                diValue = SocketConfiguration.randomizer.Next(diMin + 1, diMax + 20);
+                diValue = SocketConfiguration.randomizer.Next(SocketSelection.diMin6 + 1, SocketSelection.diMax6 + 20);
             }
 
             return diValue.ToString();
@@ -1023,15 +729,15 @@ namespace FinalProject
 
             if (randomizerPR <= 5)
             {
-                prValue = SocketConfiguration.randomizer.Next(prMin - 20, prMin - 1);
+                prValue = SocketConfiguration.randomizer.Next(SocketSelection.prMin6 - 20, SocketSelection.prMin6 - 1);
             }
             else if ((randomizerPR > 5) && (randomizerPR < 95))
             {
-                prValue = SocketConfiguration.randomizer.Next(prMin, prMax);
+                prValue = SocketConfiguration.randomizer.Next(SocketSelection.prMin6, SocketSelection.prMax6);
             }
             else if (randomizerPR >= 95)
             {
-                prValue = SocketConfiguration.randomizer.Next(prMax + 1, prMax + 20);
+                prValue = SocketConfiguration.randomizer.Next(SocketSelection.prMax6 + 1, SocketSelection.prMax6 + 20);
             }
 
             return prValue.ToString();
@@ -1043,15 +749,15 @@ namespace FinalProject
 
             if (randomizerBR <= 5)
             {
-                brValue = SocketConfiguration.randomizer.Next(brMin - 5, brMin - 1);
+                brValue = SocketConfiguration.randomizer.Next(SocketSelection.brMin6 - 5, SocketSelection.brMin6 - 1);
             }
             else if ((randomizerBR > 5) && (randomizerBR < 95))
             {
-                brValue = SocketConfiguration.randomizer.Next(brMin, brMax);
+                brValue = SocketConfiguration.randomizer.Next(SocketSelection.brMin6, SocketSelection.brMax6);
             }
             else if (randomizerBR >= 95)
             {
-                brValue = SocketConfiguration.randomizer.Next(brMax + 1, brMax + 50);
+                brValue = SocketConfiguration.randomizer.Next(SocketSelection.brMax6 + 1, SocketSelection.brMax6 + 50);
             }
 
             return brValue.ToString();
@@ -1063,15 +769,15 @@ namespace FinalProject
 
             if (randomizerTemp <= 25)
             {
-                tempValue = SocketConfiguration.randomizer.Next(tpMin - 25, tpMin - 1);
+                tempValue = SocketConfiguration.randomizer.Next(SocketSelection.tpMin6 - 25, SocketSelection.tpMin6 - 1);
             }
             else if ((randomizerTemp > 25) && (randomizerTemp < 75))
             {
-                tempValue = SocketConfiguration.randomizer.Next(tpMin, tpMax);
+                tempValue = SocketConfiguration.randomizer.Next(SocketSelection.tpMin6, SocketSelection.tpMax6);
             }
             else if (randomizerTemp >= 75)
             {
-                tempValue = SocketConfiguration.randomizer.Next(tpMax + 1, tpMax + 45);
+                tempValue = SocketConfiguration.randomizer.Next(SocketSelection.tpMax6 + 1, SocketSelection.tpMax6 + 45);
             }
 
             return tempValue.ToString();
