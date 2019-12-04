@@ -283,5 +283,6 @@ namespace FinalProject
             BedSideView8.bed8singleton.Location = this.Location;
             this.Hide();
         }
+
     }
 }

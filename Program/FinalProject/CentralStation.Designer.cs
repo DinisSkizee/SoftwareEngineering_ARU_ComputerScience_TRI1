@@ -122,6 +122,46 @@
             this.tbbr5 = new System.Windows.Forms.TextBox();
             this.tbdi5 = new System.Windows.Forms.TextBox();
             this.BedButton5 = new System.Windows.Forms.Button();
+            this.tbdi1l = new System.Windows.Forms.Label();
+            this.tbsy1l = new System.Windows.Forms.Label();
+            this.tbbr1l = new System.Windows.Forms.Label();
+            this.tbpr1l = new System.Windows.Forms.Label();
+            this.tbtp1l = new System.Windows.Forms.Label();
+            this.tbdi5l = new System.Windows.Forms.Label();
+            this.tbsy5l = new System.Windows.Forms.Label();
+            this.tbpr5l = new System.Windows.Forms.Label();
+            this.tbtp5l = new System.Windows.Forms.Label();
+            this.tbbr5l = new System.Windows.Forms.Label();
+            this.tbdi2l = new System.Windows.Forms.Label();
+            this.tbsy2l = new System.Windows.Forms.Label();
+            this.tbbr2l = new System.Windows.Forms.Label();
+            this.tbdi6l = new System.Windows.Forms.Label();
+            this.tbsy6l = new System.Windows.Forms.Label();
+            this.tbbr6l = new System.Windows.Forms.Label();
+            this.tbpr2l = new System.Windows.Forms.Label();
+            this.tbtp2l = new System.Windows.Forms.Label();
+            this.tbpr6l = new System.Windows.Forms.Label();
+            this.tbtp6l = new System.Windows.Forms.Label();
+            this.tbdi3l = new System.Windows.Forms.Label();
+            this.tbsy3l = new System.Windows.Forms.Label();
+            this.tbbr3l = new System.Windows.Forms.Label();
+            this.tbdi7l = new System.Windows.Forms.Label();
+            this.tbsy7l = new System.Windows.Forms.Label();
+            this.tbbr7l = new System.Windows.Forms.Label();
+            this.tbpr3l = new System.Windows.Forms.Label();
+            this.tbtp3l = new System.Windows.Forms.Label();
+            this.tbpr7l = new System.Windows.Forms.Label();
+            this.tbtp7l = new System.Windows.Forms.Label();
+            this.tbpr4l = new System.Windows.Forms.Label();
+            this.tbdi4l = new System.Windows.Forms.Label();
+            this.tbsy4l = new System.Windows.Forms.Label();
+            this.tbbr4l = new System.Windows.Forms.Label();
+            this.tbdi8l = new System.Windows.Forms.Label();
+            this.tbsy8l = new System.Windows.Forms.Label();
+            this.tbbr8l = new System.Windows.Forms.Label();
+            this.tbpr8l = new System.Windows.Forms.Label();
+            this.tbtp4l = new System.Windows.Forms.Label();
+            this.tbtp8l = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonCentralStation)).BeginInit();
@@ -1184,12 +1224,532 @@
             this.BedButton5.UseVisualStyleBackColor = false;
             this.BedButton5.Click += new System.EventHandler(this.BedButton5_Click);
             // 
+            // tbdi1l
+            // 
+            this.tbdi1l.AutoSize = true;
+            this.tbdi1l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi1l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi1l.ForeColor = System.Drawing.Color.White;
+            this.tbdi1l.Location = new System.Drawing.Point(25, 105);
+            this.tbdi1l.Name = "tbdi1l";
+            this.tbdi1l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi1l.TabIndex = 217;
+            this.tbdi1l.Text = "NONE";
+            // 
+            // tbsy1l
+            // 
+            this.tbsy1l.AutoSize = true;
+            this.tbsy1l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy1l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy1l.ForeColor = System.Drawing.Color.White;
+            this.tbsy1l.Location = new System.Drawing.Point(116, 105);
+            this.tbsy1l.Name = "tbsy1l";
+            this.tbsy1l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy1l.TabIndex = 218;
+            this.tbsy1l.Text = "NONE";
+            // 
+            // tbbr1l
+            // 
+            this.tbbr1l.AutoSize = true;
+            this.tbbr1l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr1l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr1l.ForeColor = System.Drawing.Color.White;
+            this.tbbr1l.Location = new System.Drawing.Point(254, 105);
+            this.tbbr1l.Name = "tbbr1l";
+            this.tbbr1l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr1l.TabIndex = 219;
+            this.tbbr1l.Text = "NONE";
+            // 
+            // tbpr1l
+            // 
+            this.tbpr1l.AutoSize = true;
+            this.tbpr1l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr1l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr1l.ForeColor = System.Drawing.Color.White;
+            this.tbpr1l.Location = new System.Drawing.Point(71, 159);
+            this.tbpr1l.Name = "tbpr1l";
+            this.tbpr1l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr1l.TabIndex = 220;
+            this.tbpr1l.Text = "NONE";
+            // 
+            // tbtp1l
+            // 
+            this.tbtp1l.AutoSize = true;
+            this.tbtp1l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp1l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp1l.ForeColor = System.Drawing.Color.White;
+            this.tbtp1l.Location = new System.Drawing.Point(254, 159);
+            this.tbtp1l.Name = "tbtp1l";
+            this.tbtp1l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp1l.TabIndex = 221;
+            this.tbtp1l.Text = "NONE";
+            // 
+            // tbdi5l
+            // 
+            this.tbdi5l.AutoSize = true;
+            this.tbdi5l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi5l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi5l.ForeColor = System.Drawing.Color.White;
+            this.tbdi5l.Location = new System.Drawing.Point(404, 105);
+            this.tbdi5l.Name = "tbdi5l";
+            this.tbdi5l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi5l.TabIndex = 222;
+            this.tbdi5l.Text = "NONE";
+            // 
+            // tbsy5l
+            // 
+            this.tbsy5l.AutoSize = true;
+            this.tbsy5l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy5l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy5l.ForeColor = System.Drawing.Color.White;
+            this.tbsy5l.Location = new System.Drawing.Point(495, 105);
+            this.tbsy5l.Name = "tbsy5l";
+            this.tbsy5l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy5l.TabIndex = 223;
+            this.tbsy5l.Text = "NONE";
+            // 
+            // tbpr5l
+            // 
+            this.tbpr5l.AutoSize = true;
+            this.tbpr5l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr5l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr5l.ForeColor = System.Drawing.Color.White;
+            this.tbpr5l.Location = new System.Drawing.Point(450, 159);
+            this.tbpr5l.Name = "tbpr5l";
+            this.tbpr5l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr5l.TabIndex = 224;
+            this.tbpr5l.Text = "NONE";
+            // 
+            // tbtp5l
+            // 
+            this.tbtp5l.AutoSize = true;
+            this.tbtp5l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp5l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp5l.ForeColor = System.Drawing.Color.White;
+            this.tbtp5l.Location = new System.Drawing.Point(633, 159);
+            this.tbtp5l.Name = "tbtp5l";
+            this.tbtp5l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp5l.TabIndex = 225;
+            this.tbtp5l.Text = "NONE";
+            // 
+            // tbbr5l
+            // 
+            this.tbbr5l.AutoSize = true;
+            this.tbbr5l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr5l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr5l.ForeColor = System.Drawing.Color.White;
+            this.tbbr5l.Location = new System.Drawing.Point(633, 105);
+            this.tbbr5l.Name = "tbbr5l";
+            this.tbbr5l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr5l.TabIndex = 226;
+            this.tbbr5l.Text = "NONE";
+            // 
+            // tbdi2l
+            // 
+            this.tbdi2l.AutoSize = true;
+            this.tbdi2l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi2l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi2l.ForeColor = System.Drawing.Color.White;
+            this.tbdi2l.Location = new System.Drawing.Point(25, 243);
+            this.tbdi2l.Name = "tbdi2l";
+            this.tbdi2l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi2l.TabIndex = 227;
+            this.tbdi2l.Text = "NONE";
+            // 
+            // tbsy2l
+            // 
+            this.tbsy2l.AutoSize = true;
+            this.tbsy2l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy2l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy2l.ForeColor = System.Drawing.Color.White;
+            this.tbsy2l.Location = new System.Drawing.Point(116, 243);
+            this.tbsy2l.Name = "tbsy2l";
+            this.tbsy2l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy2l.TabIndex = 228;
+            this.tbsy2l.Text = "NONE";
+            // 
+            // tbbr2l
+            // 
+            this.tbbr2l.AutoSize = true;
+            this.tbbr2l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr2l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr2l.ForeColor = System.Drawing.Color.White;
+            this.tbbr2l.Location = new System.Drawing.Point(254, 243);
+            this.tbbr2l.Name = "tbbr2l";
+            this.tbbr2l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr2l.TabIndex = 229;
+            this.tbbr2l.Text = "NONE";
+            // 
+            // tbdi6l
+            // 
+            this.tbdi6l.AutoSize = true;
+            this.tbdi6l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi6l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi6l.ForeColor = System.Drawing.Color.White;
+            this.tbdi6l.Location = new System.Drawing.Point(404, 243);
+            this.tbdi6l.Name = "tbdi6l";
+            this.tbdi6l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi6l.TabIndex = 230;
+            this.tbdi6l.Text = "NONE";
+            // 
+            // tbsy6l
+            // 
+            this.tbsy6l.AutoSize = true;
+            this.tbsy6l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy6l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy6l.ForeColor = System.Drawing.Color.White;
+            this.tbsy6l.Location = new System.Drawing.Point(495, 243);
+            this.tbsy6l.Name = "tbsy6l";
+            this.tbsy6l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy6l.TabIndex = 231;
+            this.tbsy6l.Text = "NONE";
+            // 
+            // tbbr6l
+            // 
+            this.tbbr6l.AutoSize = true;
+            this.tbbr6l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr6l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr6l.ForeColor = System.Drawing.Color.White;
+            this.tbbr6l.Location = new System.Drawing.Point(633, 243);
+            this.tbbr6l.Name = "tbbr6l";
+            this.tbbr6l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr6l.TabIndex = 232;
+            this.tbbr6l.Text = "NONE";
+            // 
+            // tbpr2l
+            // 
+            this.tbpr2l.AutoSize = true;
+            this.tbpr2l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr2l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr2l.ForeColor = System.Drawing.Color.White;
+            this.tbpr2l.Location = new System.Drawing.Point(71, 297);
+            this.tbpr2l.Name = "tbpr2l";
+            this.tbpr2l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr2l.TabIndex = 233;
+            this.tbpr2l.Text = "NONE";
+            // 
+            // tbtp2l
+            // 
+            this.tbtp2l.AutoSize = true;
+            this.tbtp2l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp2l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp2l.ForeColor = System.Drawing.Color.White;
+            this.tbtp2l.Location = new System.Drawing.Point(254, 297);
+            this.tbtp2l.Name = "tbtp2l";
+            this.tbtp2l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp2l.TabIndex = 234;
+            this.tbtp2l.Text = "NONE";
+            // 
+            // tbpr6l
+            // 
+            this.tbpr6l.AutoSize = true;
+            this.tbpr6l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr6l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr6l.ForeColor = System.Drawing.Color.White;
+            this.tbpr6l.Location = new System.Drawing.Point(450, 297);
+            this.tbpr6l.Name = "tbpr6l";
+            this.tbpr6l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr6l.TabIndex = 235;
+            this.tbpr6l.Text = "NONE";
+            // 
+            // tbtp6l
+            // 
+            this.tbtp6l.AutoSize = true;
+            this.tbtp6l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp6l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp6l.ForeColor = System.Drawing.Color.White;
+            this.tbtp6l.Location = new System.Drawing.Point(633, 297);
+            this.tbtp6l.Name = "tbtp6l";
+            this.tbtp6l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp6l.TabIndex = 236;
+            this.tbtp6l.Text = "NONE";
+            // 
+            // tbdi3l
+            // 
+            this.tbdi3l.AutoSize = true;
+            this.tbdi3l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi3l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi3l.ForeColor = System.Drawing.Color.White;
+            this.tbdi3l.Location = new System.Drawing.Point(22, 381);
+            this.tbdi3l.Name = "tbdi3l";
+            this.tbdi3l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi3l.TabIndex = 237;
+            this.tbdi3l.Text = "NONE";
+            // 
+            // tbsy3l
+            // 
+            this.tbsy3l.AutoSize = true;
+            this.tbsy3l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy3l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy3l.ForeColor = System.Drawing.Color.White;
+            this.tbsy3l.Location = new System.Drawing.Point(120, 381);
+            this.tbsy3l.Name = "tbsy3l";
+            this.tbsy3l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy3l.TabIndex = 238;
+            this.tbsy3l.Text = "NONE";
+            // 
+            // tbbr3l
+            // 
+            this.tbbr3l.AutoSize = true;
+            this.tbbr3l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr3l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr3l.ForeColor = System.Drawing.Color.White;
+            this.tbbr3l.Location = new System.Drawing.Point(254, 381);
+            this.tbbr3l.Name = "tbbr3l";
+            this.tbbr3l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr3l.TabIndex = 239;
+            this.tbbr3l.Text = "NONE";
+            // 
+            // tbdi7l
+            // 
+            this.tbdi7l.AutoSize = true;
+            this.tbdi7l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi7l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi7l.ForeColor = System.Drawing.Color.White;
+            this.tbdi7l.Location = new System.Drawing.Point(404, 381);
+            this.tbdi7l.Name = "tbdi7l";
+            this.tbdi7l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi7l.TabIndex = 240;
+            this.tbdi7l.Text = "NONE";
+            // 
+            // tbsy7l
+            // 
+            this.tbsy7l.AutoSize = true;
+            this.tbsy7l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy7l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy7l.ForeColor = System.Drawing.Color.White;
+            this.tbsy7l.Location = new System.Drawing.Point(495, 381);
+            this.tbsy7l.Name = "tbsy7l";
+            this.tbsy7l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy7l.TabIndex = 241;
+            this.tbsy7l.Text = "NONE";
+            // 
+            // tbbr7l
+            // 
+            this.tbbr7l.AutoSize = true;
+            this.tbbr7l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr7l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr7l.ForeColor = System.Drawing.Color.White;
+            this.tbbr7l.Location = new System.Drawing.Point(633, 381);
+            this.tbbr7l.Name = "tbbr7l";
+            this.tbbr7l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr7l.TabIndex = 242;
+            this.tbbr7l.Text = "NONE";
+            // 
+            // tbpr3l
+            // 
+            this.tbpr3l.AutoSize = true;
+            this.tbpr3l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr3l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr3l.ForeColor = System.Drawing.Color.White;
+            this.tbpr3l.Location = new System.Drawing.Point(71, 435);
+            this.tbpr3l.Name = "tbpr3l";
+            this.tbpr3l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr3l.TabIndex = 243;
+            this.tbpr3l.Text = "NONE";
+            // 
+            // tbtp3l
+            // 
+            this.tbtp3l.AutoSize = true;
+            this.tbtp3l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp3l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp3l.ForeColor = System.Drawing.Color.White;
+            this.tbtp3l.Location = new System.Drawing.Point(254, 435);
+            this.tbtp3l.Name = "tbtp3l";
+            this.tbtp3l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp3l.TabIndex = 244;
+            this.tbtp3l.Text = "NONE";
+            // 
+            // tbpr7l
+            // 
+            this.tbpr7l.AutoSize = true;
+            this.tbpr7l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr7l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr7l.ForeColor = System.Drawing.Color.White;
+            this.tbpr7l.Location = new System.Drawing.Point(450, 435);
+            this.tbpr7l.Name = "tbpr7l";
+            this.tbpr7l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr7l.TabIndex = 245;
+            this.tbpr7l.Text = "NONE";
+            // 
+            // tbtp7l
+            // 
+            this.tbtp7l.AutoSize = true;
+            this.tbtp7l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp7l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp7l.ForeColor = System.Drawing.Color.White;
+            this.tbtp7l.Location = new System.Drawing.Point(633, 435);
+            this.tbtp7l.Name = "tbtp7l";
+            this.tbtp7l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp7l.TabIndex = 246;
+            this.tbtp7l.Text = "NONE";
+            // 
+            // tbpr4l
+            // 
+            this.tbpr4l.AutoSize = true;
+            this.tbpr4l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr4l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr4l.ForeColor = System.Drawing.Color.White;
+            this.tbpr4l.Location = new System.Drawing.Point(71, 573);
+            this.tbpr4l.Name = "tbpr4l";
+            this.tbpr4l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr4l.TabIndex = 247;
+            this.tbpr4l.Text = "NONE";
+            // 
+            // tbdi4l
+            // 
+            this.tbdi4l.AutoSize = true;
+            this.tbdi4l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi4l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi4l.ForeColor = System.Drawing.Color.White;
+            this.tbdi4l.Location = new System.Drawing.Point(25, 519);
+            this.tbdi4l.Name = "tbdi4l";
+            this.tbdi4l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi4l.TabIndex = 248;
+            this.tbdi4l.Text = "NONE";
+            // 
+            // tbsy4l
+            // 
+            this.tbsy4l.AutoSize = true;
+            this.tbsy4l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy4l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy4l.ForeColor = System.Drawing.Color.White;
+            this.tbsy4l.Location = new System.Drawing.Point(120, 519);
+            this.tbsy4l.Name = "tbsy4l";
+            this.tbsy4l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy4l.TabIndex = 249;
+            this.tbsy4l.Text = "NONE";
+            // 
+            // tbbr4l
+            // 
+            this.tbbr4l.AutoSize = true;
+            this.tbbr4l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr4l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr4l.ForeColor = System.Drawing.Color.White;
+            this.tbbr4l.Location = new System.Drawing.Point(254, 519);
+            this.tbbr4l.Name = "tbbr4l";
+            this.tbbr4l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr4l.TabIndex = 250;
+            this.tbbr4l.Text = "NONE";
+            // 
+            // tbdi8l
+            // 
+            this.tbdi8l.AutoSize = true;
+            this.tbdi8l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbdi8l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdi8l.ForeColor = System.Drawing.Color.White;
+            this.tbdi8l.Location = new System.Drawing.Point(404, 519);
+            this.tbdi8l.Name = "tbdi8l";
+            this.tbdi8l.Size = new System.Drawing.Size(47, 19);
+            this.tbdi8l.TabIndex = 251;
+            this.tbdi8l.Text = "NONE";
+            // 
+            // tbsy8l
+            // 
+            this.tbsy8l.AutoSize = true;
+            this.tbsy8l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbsy8l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbsy8l.ForeColor = System.Drawing.Color.White;
+            this.tbsy8l.Location = new System.Drawing.Point(495, 519);
+            this.tbsy8l.Name = "tbsy8l";
+            this.tbsy8l.Size = new System.Drawing.Size(47, 19);
+            this.tbsy8l.TabIndex = 252;
+            this.tbsy8l.Text = "NONE";
+            // 
+            // tbbr8l
+            // 
+            this.tbbr8l.AutoSize = true;
+            this.tbbr8l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbbr8l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbbr8l.ForeColor = System.Drawing.Color.White;
+            this.tbbr8l.Location = new System.Drawing.Point(633, 519);
+            this.tbbr8l.Name = "tbbr8l";
+            this.tbbr8l.Size = new System.Drawing.Size(47, 19);
+            this.tbbr8l.TabIndex = 253;
+            this.tbbr8l.Text = "NONE";
+            // 
+            // tbpr8l
+            // 
+            this.tbpr8l.AutoSize = true;
+            this.tbpr8l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbpr8l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbpr8l.ForeColor = System.Drawing.Color.White;
+            this.tbpr8l.Location = new System.Drawing.Point(450, 573);
+            this.tbpr8l.Name = "tbpr8l";
+            this.tbpr8l.Size = new System.Drawing.Size(47, 19);
+            this.tbpr8l.TabIndex = 254;
+            this.tbpr8l.Text = "NONE";
+            // 
+            // tbtp4l
+            // 
+            this.tbtp4l.AutoSize = true;
+            this.tbtp4l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp4l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp4l.ForeColor = System.Drawing.Color.White;
+            this.tbtp4l.Location = new System.Drawing.Point(254, 573);
+            this.tbtp4l.Name = "tbtp4l";
+            this.tbtp4l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp4l.TabIndex = 255;
+            this.tbtp4l.Text = "NONE";
+            // 
+            // tbtp8l
+            // 
+            this.tbtp8l.AutoSize = true;
+            this.tbtp8l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbtp8l.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbtp8l.ForeColor = System.Drawing.Color.White;
+            this.tbtp8l.Location = new System.Drawing.Point(633, 573);
+            this.tbtp8l.Name = "tbtp8l";
+            this.tbtp8l.Size = new System.Drawing.Size(47, 19);
+            this.tbtp8l.TabIndex = 256;
+            this.tbtp8l.Text = "NONE";
+            // 
             // CentralStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(750, 603);
+            this.Controls.Add(this.tbtp8l);
+            this.Controls.Add(this.tbtp4l);
+            this.Controls.Add(this.tbpr8l);
+            this.Controls.Add(this.tbbr8l);
+            this.Controls.Add(this.tbsy8l);
+            this.Controls.Add(this.tbdi8l);
+            this.Controls.Add(this.tbbr4l);
+            this.Controls.Add(this.tbsy4l);
+            this.Controls.Add(this.tbdi4l);
+            this.Controls.Add(this.tbpr4l);
+            this.Controls.Add(this.tbtp7l);
+            this.Controls.Add(this.tbpr7l);
+            this.Controls.Add(this.tbtp3l);
+            this.Controls.Add(this.tbpr3l);
+            this.Controls.Add(this.tbbr7l);
+            this.Controls.Add(this.tbsy7l);
+            this.Controls.Add(this.tbdi7l);
+            this.Controls.Add(this.tbbr3l);
+            this.Controls.Add(this.tbsy3l);
+            this.Controls.Add(this.tbdi3l);
+            this.Controls.Add(this.tbtp6l);
+            this.Controls.Add(this.tbpr6l);
+            this.Controls.Add(this.tbtp2l);
+            this.Controls.Add(this.tbpr2l);
+            this.Controls.Add(this.tbbr6l);
+            this.Controls.Add(this.tbsy6l);
+            this.Controls.Add(this.tbdi6l);
+            this.Controls.Add(this.tbbr2l);
+            this.Controls.Add(this.tbsy2l);
+            this.Controls.Add(this.tbdi2l);
+            this.Controls.Add(this.tbbr5l);
+            this.Controls.Add(this.tbtp5l);
+            this.Controls.Add(this.tbpr5l);
+            this.Controls.Add(this.tbsy5l);
+            this.Controls.Add(this.tbdi5l);
+            this.Controls.Add(this.tbtp1l);
+            this.Controls.Add(this.tbpr1l);
+            this.Controls.Add(this.tbbr1l);
+            this.Controls.Add(this.tbsy1l);
+            this.Controls.Add(this.tbdi1l);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -1387,5 +1947,45 @@
         public System.Windows.Forms.TextBox tbbr5;
         public System.Windows.Forms.TextBox tbdi5;
         private System.Windows.Forms.Button BedButton5;
+        public System.Windows.Forms.Label tbdi1l;
+        public System.Windows.Forms.Label tbsy1l;
+        public System.Windows.Forms.Label tbbr1l;
+        public System.Windows.Forms.Label tbpr1l;
+        public System.Windows.Forms.Label tbtp1l;
+        public System.Windows.Forms.Label tbdi5l;
+        public System.Windows.Forms.Label tbsy5l;
+        public System.Windows.Forms.Label tbpr5l;
+        public System.Windows.Forms.Label tbtp5l;
+        public System.Windows.Forms.Label tbbr5l;
+        public System.Windows.Forms.Label tbdi2l;
+        public System.Windows.Forms.Label tbsy2l;
+        public System.Windows.Forms.Label tbbr2l;
+        public System.Windows.Forms.Label tbdi6l;
+        public System.Windows.Forms.Label tbsy6l;
+        public System.Windows.Forms.Label tbbr6l;
+        public System.Windows.Forms.Label tbpr2l;
+        public System.Windows.Forms.Label tbtp2l;
+        public System.Windows.Forms.Label tbpr6l;
+        public System.Windows.Forms.Label tbtp6l;
+        public System.Windows.Forms.Label tbdi3l;
+        public System.Windows.Forms.Label tbsy3l;
+        public System.Windows.Forms.Label tbbr3l;
+        public System.Windows.Forms.Label tbdi7l;
+        public System.Windows.Forms.Label tbsy7l;
+        public System.Windows.Forms.Label tbbr7l;
+        public System.Windows.Forms.Label tbpr3l;
+        public System.Windows.Forms.Label tbtp3l;
+        public System.Windows.Forms.Label tbpr7l;
+        public System.Windows.Forms.Label tbtp7l;
+        public System.Windows.Forms.Label tbpr4l;
+        public System.Windows.Forms.Label tbdi4l;
+        public System.Windows.Forms.Label tbsy4l;
+        public System.Windows.Forms.Label tbbr4l;
+        public System.Windows.Forms.Label tbdi8l;
+        public System.Windows.Forms.Label tbsy8l;
+        public System.Windows.Forms.Label tbbr8l;
+        public System.Windows.Forms.Label tbpr8l;
+        public System.Windows.Forms.Label tbtp4l;
+        public System.Windows.Forms.Label tbtp8l;
     }
 }

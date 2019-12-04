@@ -13,11 +13,11 @@ namespace FinalProject
         {
             bed8singleton = this;
             InitializeComponent();
-            new CentralStation();
             new BedSideViewConfiguration();
 
-            BedSideViewConfiguration.timer.Tick += UpdateTextBox;
             BedSideViewConfiguration.timer.Tick += ActiveCheck;
+            BedSideViewConfiguration.timer.Tick += UpdateRandoms;
+            BedSideViewConfiguration.timer.Tick += UpdateTextBox;
             BedSideViewConfiguration.timer.Tick += UpdateCentralStation;
             BedSideViewConfiguration.timer.Tick += UpdateColor;
 
@@ -314,134 +314,152 @@ namespace FinalProject
 
         }
 
+        public static int dirandom, syrandom, prrandom, brrandom;
+        public static double tprandom;
         public static int ditext, sytext, prtext, brtext, tptext;
         public void UpdateColor(object sender, EventArgs e)
         {
             // Passing textbox.text to variable
-            int.TryParse(CentralStation.centralsingleton.tbdi8.Text, out ditext); // Diastolic Value
-            int.TryParse(CentralStation.centralsingleton.tbsy8.Text, out sytext); // Systolic Value
-            int.TryParse(CentralStation.centralsingleton.tbpr8.Text, out prtext); // Pulse Value
-            int.TryParse(CentralStation.centralsingleton.tbbr8.Text, out brtext); // Breathing Value
-            int.TryParse(CentralStation.centralsingleton.tbtp8.Text, out tptext); // Temperature Value
+            int.TryParse(CentralStation.centralsingleton.tbdi8l.Text, out ditext); // Diastolic Value
+            int.TryParse(CentralStation.centralsingleton.tbsy8l.Text, out sytext); // Systolic Value
+            int.TryParse(CentralStation.centralsingleton.tbpr8l.Text, out prtext); // Pulse Value
+            int.TryParse(CentralStation.centralsingleton.tbbr8l.Text, out brtext); // Breathing Value
+            int.TryParse(CentralStation.centralsingleton.tbtp8l.Text, out tptext); // Temperature Value 
 
             #region Textbox Color
             // Diastolic TextBox Color
-            if (ditext < SocketSelection.diMin8 || ditext > SocketSelection.diMax8)
+            if (ditext < SocketConfiguration.diMin8 || ditext > SocketConfiguration.diMax8)
             {
                 CentralStation.centralsingleton.tbdi8.BackColor = Color.Red;
+                CentralStation.centralsingleton.tbdi8l.BackColor = Color.Red;
             }
-            else if (ditext > SocketSelection.diMin8 && ditext < SocketSelection.diMax8)
+            else if (ditext > SocketConfiguration.diMin8 && ditext < SocketConfiguration.diMax8)
             {
                 CentralStation.centralsingleton.tbdi8.BackColor = Color.FromArgb(105, 105, 105);
+                CentralStation.centralsingleton.tbdi8l.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Systolic TextBox Color
-            if (sytext < SocketSelection.syMin8 || sytext > SocketSelection.syMax8)
+            if (sytext < SocketConfiguration.syMin8 || sytext > SocketConfiguration.syMax8)
             {
                 CentralStation.centralsingleton.tbsy8.BackColor = Color.Red;
+                CentralStation.centralsingleton.tbsy8l.BackColor = Color.Red;
             }
-            else if (sytext > SocketSelection.syMin8 && sytext < SocketSelection.syMax8)
+            else if (sytext > SocketConfiguration.syMin8 && sytext < SocketConfiguration.syMax8)
             {
                 CentralStation.centralsingleton.tbsy8.BackColor = Color.FromArgb(105, 105, 105);
+                CentralStation.centralsingleton.tbsy8l.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Pulse Textbox Color
-            if (prtext < SocketSelection.prMin8 || prtext > SocketSelection.prMax8)
+            if (prtext < SocketConfiguration.prMin8 || prtext > SocketConfiguration.prMax8)
             {
                 CentralStation.centralsingleton.tbpr8.BackColor = Color.Red;
+                CentralStation.centralsingleton.tbpr8l.BackColor = Color.Red;
             }
-            else if (prtext > SocketSelection.prMin8 && prtext < SocketSelection.prMax8)
+            else if (prtext > SocketConfiguration.prMin8 && prtext < SocketConfiguration.prMax8)
             {
                 CentralStation.centralsingleton.tbpr8.BackColor = Color.FromArgb(105, 105, 105);
+                CentralStation.centralsingleton.tbpr8l.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Breathing Textbox Color
-            if (brtext < SocketSelection.brMin8 || brtext > SocketSelection.brMax8)
+            if (brtext < SocketConfiguration.brMin8 || brtext > SocketConfiguration.brMax8)
             {
                 CentralStation.centralsingleton.tbbr8.BackColor = Color.Red;
+                CentralStation.centralsingleton.tbbr8l.BackColor = Color.Red;
             }
-            else if (brtext > SocketSelection.brMin8 && brtext < SocketSelection.brMax8)
+            else if (brtext > SocketConfiguration.brMin8 && brtext < SocketConfiguration.brMax8)
             {
                 CentralStation.centralsingleton.tbbr8.BackColor = Color.FromArgb(105, 105, 105);
+                CentralStation.centralsingleton.tbbr8l.BackColor = Color.FromArgb(105, 105, 105);
             }
 
             // Temperature Textbox Color
-            if (tptext < SocketSelection.tpMin8 || tptext < SocketSelection.tpMax8)
+            if (tptext < SocketConfiguration.tpMin8 || tptext < SocketConfiguration.tpMax8)
             {
                 CentralStation.centralsingleton.tbtp8.BackColor = Color.Red;
+                CentralStation.centralsingleton.tbtp8l.BackColor = Color.Red;
             }
-            else if (tptext > SocketSelection.tpMin8 && tptext > SocketSelection.tpMax8)
+            else if (tptext > SocketConfiguration.tpMin8 && tptext > SocketConfiguration.tpMax8)
             {
                 CentralStation.centralsingleton.tbtp8.BackColor = Color.FromArgb(105, 105, 105);
+                CentralStation.centralsingleton.tbtp8l.BackColor = Color.FromArgb(105, 105, 105);
             }
             #endregion
 
         }
 
+        public void UpdateRandoms(object sender, EventArgs e)
+        {
+            dirandom = SocketConfiguration.DiastolicValueRandom();
+            syrandom = SocketConfiguration.SystolicValueRandom();
+            prrandom = SocketConfiguration.PulseValueRandom();
+            brrandom = SocketConfiguration.BreathingValueRandom();
+            tprandom = SocketConfiguration.TemperatureValueRandom();
+        }
+
         public void UpdateTextBox(object sender, EventArgs e)
         {
-            DiBloodPressurePanelBed_Actual_Text.Text = DiastolicValueRandom();
-            DiBloodPressurePanelBed_Actual_Text2.Text = DiastolicValueRandom();
-            DiBloodPressurePanelBed_Actual_Text3.Text = DiastolicValueRandom();
-            DiBloodPressurePanelBed_Actual_Text4.Text = DiastolicValueRandom();
+            DiBloodPressurePanelBed_Actual_Text.Text = dirandom.ToString();
+            DiBloodPressurePanelBed_Actual_Text2.Text = dirandom.ToString();
+            DiBloodPressurePanelBed_Actual_Text3.Text = dirandom.ToString();
+            DiBloodPressurePanelBed_Actual_Text4.Text = dirandom.ToString();
 
-            SyBloodPressurePanelBed_Actual_Text.Text = SystolicValueRandom();
-            SyBloodPressurePanelBed_Actual_Text2.Text = SystolicValueRandom();
-            SyBloodPressurePanelBed_Actual_Text3.Text = SystolicValueRandom();
-            SyBloodPressurePanelBed_Actual_Text4.Text = SystolicValueRandom();
+            SyBloodPressurePanelBed_Actual_Text.Text = syrandom.ToString();
+            SyBloodPressurePanelBed_Actual_Text2.Text = syrandom.ToString();
+            SyBloodPressurePanelBed_Actual_Text3.Text = syrandom.ToString();
+            SyBloodPressurePanelBed_Actual_Text4.Text = syrandom.ToString();
 
-            PulseRate_Actual_Text.Text = PulseValueRandom();
-            PulseRate_Actual_Text2.Text = PulseValueRandom();
-            PulseRate_Actual_Text3.Text = PulseValueRandom();
-            PulseRate_Actual_Text4.Text = PulseValueRandom();
+            PulseRate_Actual_Text.Text = prrandom.ToString();
+            PulseRate_Actual_Text2.Text = prrandom.ToString();
+            PulseRate_Actual_Text3.Text = prrandom.ToString();
+            PulseRate_Actual_Text4.Text = prrandom.ToString();
 
-            BreathingRate_Actual_Text.Text = BreathingValueRandom();
-            BreathingRate_Actual_Text2.Text = BreathingValueRandom();
-            BreathingRate_Actual_Text3.Text = BreathingValueRandom();
-            BreathingRate_Actual_Text4.Text = BreathingValueRandom();
+            BreathingRate_Actual_Text.Text = brrandom.ToString();
+            BreathingRate_Actual_Text2.Text = brrandom.ToString();
+            BreathingRate_Actual_Text3.Text = brrandom.ToString();
+            BreathingRate_Actual_Text4.Text = brrandom.ToString();
 
-            Temperature_Actual_Text.Text = TemperatureValueRandom();
-            Temperature_Actual_Text2.Text = TemperatureValueRandom();
-            Temperature_Actual_Text3.Text = TemperatureValueRandom();
-            Temperature_Actual_Text4.Text = TemperatureValueRandom();
-
+            Temperature_Actual_Text.Text = tprandom.ToString();
+            Temperature_Actual_Text2.Text = tprandom.ToString();
+            Temperature_Actual_Text3.Text = tprandom.ToString();
+            Temperature_Actual_Text4.Text = tprandom.ToString();
         }
 
         public void UpdateCentralStation(object sender, EventArgs e)
         {
             if (bloodActive == true)
             {
-                CentralStation.centralsingleton.tbdi8.Text = DiastolicValueRandom();
-                CentralStation.centralsingleton.tbsy8.Text = SystolicValueRandom();
+                CentralStation.centralsingleton.tbdi8l.Text = dirandom.ToString();
+                CentralStation.centralsingleton.tbsy8l.Text = syrandom.ToString();
             }
             else
             {
-                CentralStation.centralsingleton.tbdi8.Text = "";
-                CentralStation.centralsingleton.tbsy8.Text = "";
+                CentralStation.centralsingleton.tbdi8l.Text = "";
+                CentralStation.centralsingleton.tbsy8l.Text = "";
             }
 
             if (breathingActive == true)
             {
-                CentralStation.centralsingleton.tbbr8.Text = BreathingValueRandom();
+                CentralStation.centralsingleton.tbbr8l.Text = brrandom.ToString();
             }
-            else { CentralStation.centralsingleton.tbbr8.Text = ""; }
+            else { CentralStation.centralsingleton.tbbr8l.Text = ""; }
 
             if (pulseActive == true)
             {
-                CentralStation.centralsingleton.tbpr8.Text = PulseValueRandom();
+                CentralStation.centralsingleton.tbpr8l.Text = prrandom.ToString();
             }
-            else { CentralStation.centralsingleton.tbpr8.Text = ""; }
+            else { CentralStation.centralsingleton.tbpr8l.Text = ""; }
 
             if (tempActive == true)
             {
-                CentralStation.centralsingleton.tbtp8.Text = TemperatureValueRandom();
+                CentralStation.centralsingleton.tbtp8l.Text = tprandom.ToString();
             }
-            else { CentralStation.centralsingleton.tbtp8.Text = ""; }
-
+            else { CentralStation.centralsingleton.tbtp8l.Text = ""; }
         }
 
         // Variables
-        #region Variables
         // How the module is, if it's active or not
         public static int moduleState1, moduleState2, moduleState3, moduleState4;
 
@@ -450,11 +468,6 @@ namespace FinalProject
 
         // If the panel is visible
         public static bool bloodActive, pulseActive, breathingActive, tempActive;
-
-        // TextBox Values
-        public static int syValue, diValue, prValue, brValue;
-        public static double tempValue;
-        #endregion
 
         private void CentralStationPic_Click(object sender, EventArgs e)
         {
@@ -548,6 +561,14 @@ namespace FinalProject
             this.Hide();
         }
 
+        private void Bed7_Click(object sender, EventArgs e)
+        {
+            BedSideView7.bed7singleton.Show();
+            BedSideView7.bed7singleton.Location = this.Location;
+            this.Hide();
+        }
+        #endregion
+
         private void BedPicture_Click(object sender, EventArgs e)
         {
             if (tbfn.Text == "")
@@ -569,14 +590,6 @@ namespace FinalProject
             }
             else { MessageBox.Show("You already have a person assigned to this Bed"); }
         }
-
-        private void Bed7_Click(object sender, EventArgs e)
-        {
-            BedSideView7.bed7singleton.Show();
-            BedSideView7.bed7singleton.Location = this.Location;
-            this.Hide();
-        }
-        #endregion
 
         #region InsertButtons Configuration  -- Dinis & Jorge
         private void InsertButton1_Click(object sender, EventArgs e)
@@ -717,109 +730,6 @@ namespace FinalProject
             InsertASocket4.Visible = true;
         }
         #endregion
-
-        // Variables for the Randomizers below
-        public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
-
-        public static string SystolicValueRandom() // Returns syValue
-        {
-            randomizerSy = SocketConfiguration.randomizer.Next(0, 100);
-
-            if (randomizerSy <= 5)
-            {
-                syValue = SocketConfiguration.randomizer.Next(SocketSelection.syMin8 - 20, SocketSelection.syMin8 - 1);
-            }
-            else if ((randomizerSy > 5) && (randomizerSy < 95))
-            {
-                syValue = SocketConfiguration.randomizer.Next(SocketSelection.syMin8, SocketSelection.syMax8);
-            }
-            else if (randomizerSy >= 95)
-            {
-                syValue = SocketConfiguration.randomizer.Next(SocketSelection.syMax8 + 1, SocketSelection.syMax8 + 20);
-            }
-
-            return syValue.ToString();
-        }
-
-        public static string DiastolicValueRandom() // Returns diValue
-        {
-            randomizerDi = SocketConfiguration.randomizer.Next(0, 100);
-
-            if (randomizerDi <= 5)
-            {
-                diValue = SocketConfiguration.randomizer.Next(SocketSelection.diMin8 - 20, SocketSelection.diMin8 - 1);
-            }
-            else if ((randomizerDi > 5) && (randomizerDi < 95))
-            {
-                diValue = SocketConfiguration.randomizer.Next(SocketSelection.diMin8, SocketSelection.diMax8);
-            }
-            else if (randomizerDi >= 95)
-            {
-                diValue = SocketConfiguration.randomizer.Next(SocketSelection.diMin8 + 1, SocketSelection.diMax8 + 20);
-            }
-
-            return diValue.ToString();
-        }
-
-        public static string PulseValueRandom()
-        {
-            randomizerPR = SocketConfiguration.randomizer.Next(0, 100);
-
-            if (randomizerPR <= 5)
-            {
-                prValue = SocketConfiguration.randomizer.Next(SocketSelection.prMin8 - 20, SocketSelection.prMin8 - 1);
-            }
-            else if ((randomizerPR > 5) && (randomizerPR < 95))
-            {
-                prValue = SocketConfiguration.randomizer.Next(SocketSelection.prMin8, SocketSelection.prMax8);
-            }
-            else if (randomizerPR >= 95)
-            {
-                prValue = SocketConfiguration.randomizer.Next(SocketSelection.prMax8 + 1, SocketSelection.prMax8 + 20);
-            }
-
-            return prValue.ToString();
-        } // Returns prValue
-
-        public static string BreathingValueRandom()
-        {
-            randomizerBR = SocketConfiguration.randomizer.Next(0, 100);
-
-            if (randomizerBR <= 5)
-            {
-                brValue = SocketConfiguration.randomizer.Next(SocketSelection.brMin8 - 5, SocketSelection.brMin8 - 1);
-            }
-            else if ((randomizerBR > 5) && (randomizerBR < 95))
-            {
-                brValue = SocketConfiguration.randomizer.Next(SocketSelection.brMin8, SocketSelection.brMax8);
-            }
-            else if (randomizerBR >= 95)
-            {
-                brValue = SocketConfiguration.randomizer.Next(SocketSelection.brMax8 + 1, SocketSelection.brMax8 + 50);
-            }
-
-            return brValue.ToString();
-        } // Returns brValue
-
-        public static string TemperatureValueRandom()
-        {
-            randomizerTemp = SocketConfiguration.randomizer.Next(0, 100);
-
-            if (randomizerTemp <= 25)
-            {
-                tempValue = SocketConfiguration.randomizer.Next(SocketSelection.tpMin8 - 25, SocketSelection.tpMin8 - 1);
-            }
-            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
-            {
-                tempValue = SocketConfiguration.randomizer.Next(SocketSelection.tpMin8, SocketSelection.tpMax8);
-            }
-            else if (randomizerTemp >= 75)
-            {
-                tempValue = SocketConfiguration.randomizer.Next(SocketSelection.tpMax8 + 1, SocketSelection.tpMax8 + 45);
-            }
-
-            return tempValue.ToString();
-        } // Returns tempValue
 
         public void ActiveCheck(object sender, EventArgs e)
         {

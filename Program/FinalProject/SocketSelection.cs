@@ -359,7 +359,6 @@ namespace FinalProject
 
         #endregion
 
-
         private void HideAllSokets()
         {
             BreathingRatePanel.Visible = false;
@@ -376,14 +375,6 @@ namespace FinalProject
             DefaultPanel_SocketComboBox.Items.Add("Temperature");
         }
 
-        public static int diMin1, diMax1, syMin1, syMax1, prMin1, prMax1, brMin1, brMax1, tpMin1, tpMax1;
-        public static int diMin2, diMax2, syMin2, syMax2, prMin2, prMax2, brMin2, brMax2, tpMin2, tpMax2;
-        public static int diMin3, diMax3, syMin3, syMax3, prMin3, prMax3, brMin3, brMax3, tpMin3, tpMax3;
-        public static int diMin4, diMax4, syMin4, syMax4, prMin4, prMax4, brMin4, brMax4, tpMin4, tpMax4;
-        public static int diMin5, diMax5, syMin5, syMax5, prMin5, prMax5, brMin5, brMax5, tpMin5, tpMax5;
-        public static int diMin6, diMax6, syMin6, syMax6, prMin6, prMax6, brMin6, brMax6, tpMin6, tpMax6;
-        public static int diMin7, diMax7, syMin7, syMax7, prMin7, prMax7, brMin7, brMax7, tpMin7, tpMax7;
-        public static int diMin8, diMax8, syMin8, syMax8, prMin8, prMax8, brMin8, brMax8, tpMin8, tpMax8;
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
@@ -457,10 +448,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin1);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax1);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin1);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax1);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin1);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax1);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin1);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax1);
 
                     BedSideView1.bed1singleton.Show();
                     BedSideView1.bed1singleton.Location = this.Location;
@@ -515,10 +506,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin2);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax2);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin2);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax2);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin2);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax2);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin2);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax2);
 
                     BedSideView2.bed2singleton.Show();
                     BedSideView2.bed2singleton.Location = this.Location;
@@ -573,10 +564,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin3);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax3);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin3);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax3);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin3);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax3);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin3);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax3);
 
                     BedSideView3.bed3singleton.Show();
                     BedSideView3.bed3singleton.Location = this.Location;
@@ -631,10 +622,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin4);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax4);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin4);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax4);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin4);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax4);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin4);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax4);
 
                     BedSideView4.bed4singleton.Show();
                     BedSideView4.bed4singleton.Location = this.Location;
@@ -689,10 +680,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin5);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax5);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin5);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax5);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin5);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax5);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin5);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax5);
 
                     BedSideView5.bed5singleton.Show();
                     BedSideView5.bed5singleton.Location = this.Location;
@@ -747,10 +738,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin6);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax6);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin6);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax6);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin6);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax6);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin6);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax6);
 
                     BedSideView6.bed6singleton.Show();
                     BedSideView6.bed6singleton.Location = this.Location;
@@ -805,10 +796,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin7);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax7);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin7);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax7);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin7);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax7);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin7);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax7);
 
                     BedSideView7.bed7singleton.Show();
                     BedSideView7.bed7singleton.Location = this.Location;
@@ -863,10 +854,10 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out diMin8);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out diMax8);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out syMin8);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out syMax8);
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin8);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax8);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin8);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax8);
 
                     BedSideView8.bed8singleton.Show();
                     BedSideView8.bed8singleton.Location = this.Location;
@@ -924,8 +915,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin1);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax1);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin1);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax1);
 
                     BedSideView1.bed1singleton.Show();
                     BedSideView1.bed1singleton.Location = this.Location;
@@ -980,8 +971,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin2);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax2);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin2);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax2);
 
                     BedSideView2.bed2singleton.Show();
                     BedSideView2.bed2singleton.Location = this.Location;
@@ -1036,8 +1027,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin3);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax3);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin3);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax3);
 
                     BedSideView3.bed3singleton.Show();
                     BedSideView3.bed3singleton.Location = this.Location;
@@ -1092,8 +1083,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin4);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax4);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin4);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax4);
 
                     BedSideView4.bed4singleton.Show();
                     BedSideView4.bed4singleton.Location = this.Location;
@@ -1148,8 +1139,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin5);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax5);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin5);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax5);
 
                     BedSideView5.bed5singleton.Show();
                     BedSideView5.bed5singleton.Location = this.Location;
@@ -1204,8 +1195,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin6);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax6);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin6);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax6);
 
                     BedSideView6.bed6singleton.Show();
                     BedSideView6.bed6singleton.Location = this.Location;
@@ -1260,8 +1251,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin7);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax7);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin7);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax7);
 
                     BedSideView7.bed7singleton.Show();
                     BedSideView7.bed7singleton.Location = this.Location;
@@ -1316,8 +1307,8 @@ namespace FinalProject
                     }
 
                     // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out prMin8);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out prMax8);
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin8);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax8);
 
                     BedSideView8.bed8singleton.Show();
                     BedSideView8.bed8singleton.Location = this.Location;
@@ -1375,8 +1366,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin1);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax1);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin1);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax1);
 
                     BedSideView1.bed1singleton.Show();
                     BedSideView1.bed1singleton.Location = this.Location;
@@ -1431,8 +1422,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin2);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax2);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin2);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax2);
 
                     BedSideView2.bed2singleton.Show();
                     BedSideView2.bed2singleton.Location = this.Location;
@@ -1487,8 +1478,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin3);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax3);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin3);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax3);
 
                     BedSideView3.bed3singleton.Show();
                     BedSideView3.bed3singleton.Location = this.Location;
@@ -1543,8 +1534,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin4);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax4);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin4);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax4);
 
                     BedSideView4.bed4singleton.Show();
                     BedSideView4.bed4singleton.Location = this.Location;
@@ -1599,8 +1590,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin5);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax5);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin5);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax5);
 
                     BedSideView5.bed5singleton.Show();
                     BedSideView5.bed5singleton.Location = this.Location;
@@ -1655,8 +1646,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin6);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax6);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin6);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax6);
 
                     BedSideView6.bed6singleton.Show();
                     BedSideView6.bed6singleton.Location = this.Location;
@@ -1711,8 +1702,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin7);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax7);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin7);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax7);
 
                     BedSideView7.bed7singleton.Show();
                     BedSideView7.bed7singleton.Location = this.Location;
@@ -1767,8 +1758,8 @@ namespace FinalProject
                     }
 
                     // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out brMin8);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out brMax8);
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin8);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax8);
 
                     BedSideView8.bed8singleton.Show();
                     BedSideView8.bed8singleton.Location = this.Location;
@@ -1826,8 +1817,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin1);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax1);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin1);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax1);
 
                     BedSideView1.bed1singleton.Show();
                     BedSideView1.bed1singleton.Location = this.Location;
@@ -1882,8 +1873,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin2);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax2);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin2);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax2);
 
                     BedSideView2.bed2singleton.Show();
                     BedSideView2.bed2singleton.Location = this.Location;
@@ -1938,8 +1929,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin3);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax3);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin3);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax3);
 
                     BedSideView3.bed3singleton.Show();
                     BedSideView3.bed3singleton.Location = this.Location;
@@ -1994,8 +1985,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin4);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax4);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin4);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax4);
 
                     BedSideView4.bed4singleton.Show();
                     BedSideView4.bed4singleton.Location = this.Location;
@@ -2050,8 +2041,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin5);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax5);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin5);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax5);
 
                     BedSideView5.bed5singleton.Show();
                     BedSideView5.bed5singleton.Location = this.Location;
@@ -2106,8 +2097,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin6);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax6);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin6);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax6);
 
                     BedSideView6.bed6singleton.Show();
                     BedSideView6.bed6singleton.Location = this.Location;
@@ -2162,8 +2153,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin7);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax7);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin7);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax7);
 
                     BedSideView7.bed7singleton.Show();
                     BedSideView7.bed7singleton.Location = this.Location;
@@ -2218,8 +2209,8 @@ namespace FinalProject
                     }
 
                     // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out tpMin8);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out tpMax8);
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin8);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax8);
 
                     BedSideView8.bed8singleton.Show();
                     BedSideView8.bed8singleton.Location = this.Location;
@@ -2252,421 +2243,422 @@ namespace FinalProject
             }
 
             #region BedSideView1 TextBox.Text Assignment
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin1.ToString();
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin1.ToString();
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin1.ToString();
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin1.ToString();
 
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax1.ToString();
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax1.ToString();
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax1.ToString();
-            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax1.ToString();
 
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin1.ToString();
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin1.ToString();
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin1.ToString();
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin1.ToString();
 
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax1.ToString();
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax1.ToString();
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax1.ToString();
-            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax1.ToString();
 
-            BedSideView1.bed1singleton.BreathingRate_Minimum_Text.Text = brMin1.ToString();
-            BedSideView1.bed1singleton.BreathingRate_Minimum_Text2.Text = brMin1.ToString();
-            BedSideView1.bed1singleton.BreathingRate_Minimum_Text3.Text = brMin1.ToString();
-            BedSideView1.bed1singleton.BreathingRate_Minimum_Text4.Text = brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin1.ToString();
 
-            BedSideView1.bed1singleton.BreathingRate_Maximum_Text.Text = brMax1.ToString();
-            BedSideView1.bed1singleton.BreathingRate_Maximum_Text2.Text = brMax1.ToString();
-            BedSideView1.bed1singleton.BreathingRate_Maximum_Text3.Text = brMax1.ToString();
-            BedSideView1.bed1singleton.BreathingRate_Maximum_Text4.Text = brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax1.ToString();
 
-            BedSideView1.bed1singleton.PulseRate_Minimum_Text.Text = prMin1.ToString();
-            BedSideView1.bed1singleton.PulseRate_Minimum_Text2.Text = prMin1.ToString();
-            BedSideView1.bed1singleton.PulseRate_Minimum_Text3.Text = prMin1.ToString();
-            BedSideView1.bed1singleton.PulseRate_Minimum_Text4.Text = prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin1.ToString();
 
-            BedSideView1.bed1singleton.PulseRate_Maximum_Text.Text = prMax1.ToString();
-            BedSideView1.bed1singleton.PulseRate_Maximum_Text2.Text = prMax1.ToString();
-            BedSideView1.bed1singleton.PulseRate_Maximum_Text3.Text = prMax1.ToString();
-            BedSideView1.bed1singleton.PulseRate_Maximum_Text4.Text = prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax1.ToString();
 
-            BedSideView1.bed1singleton.Temperature_Minimum_Text.Text = tpMin1.ToString();
-            BedSideView1.bed1singleton.Temperature_Minimum_Text2.Text = tpMin1.ToString();
-            BedSideView1.bed1singleton.Temperature_Minimum_Text3.Text = tpMin1.ToString();
-            BedSideView1.bed1singleton.Temperature_Minimum_Text4.Text = tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin1.ToString();
 
-            BedSideView1.bed1singleton.Temperature_Maximum_Text.Text = tpMax1.ToString();
-            BedSideView1.bed1singleton.Temperature_Maximum_Text2.Text = tpMax1.ToString();
-            BedSideView1.bed1singleton.Temperature_Maximum_Text3.Text = tpMax1.ToString();
-            BedSideView1.bed1singleton.Temperature_Maximum_Text4.Text = tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax1.ToString();
             #endregion
 
             #region BedSideView2 TextBox.Text Assignment
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin2.ToString();
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin2.ToString();
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin2.ToString();
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin2.ToString();
 
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax2.ToString();
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax2.ToString();
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax2.ToString();
-            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax2.ToString();
 
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin2.ToString();
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin2.ToString();
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin2.ToString();
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin2.ToString();
 
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax2.ToString();
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax2.ToString();
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax2.ToString();
-            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax2.ToString();
 
-            BedSideView2.bed2singleton.BreathingRate_Minimum_Text.Text = brMin2.ToString();
-            BedSideView2.bed2singleton.BreathingRate_Minimum_Text2.Text = brMin2.ToString();
-            BedSideView2.bed2singleton.BreathingRate_Minimum_Text3.Text = brMin2.ToString();
-            BedSideView2.bed2singleton.BreathingRate_Minimum_Text4.Text = brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin2.ToString();
 
-            BedSideView2.bed2singleton.BreathingRate_Maximum_Text.Text = brMax2.ToString();
-            BedSideView2.bed2singleton.BreathingRate_Maximum_Text2.Text = brMax2.ToString();
-            BedSideView2.bed2singleton.BreathingRate_Maximum_Text3.Text = brMax2.ToString();
-            BedSideView2.bed2singleton.BreathingRate_Maximum_Text4.Text = brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax2.ToString();
 
-            BedSideView2.bed2singleton.PulseRate_Minimum_Text.Text = prMin2.ToString();
-            BedSideView2.bed2singleton.PulseRate_Minimum_Text2.Text = prMin2.ToString();
-            BedSideView2.bed2singleton.PulseRate_Minimum_Text3.Text = prMin2.ToString();
-            BedSideView2.bed2singleton.PulseRate_Minimum_Text4.Text = prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin2.ToString();
 
-            BedSideView2.bed2singleton.PulseRate_Maximum_Text.Text = prMax2.ToString();
-            BedSideView2.bed2singleton.PulseRate_Maximum_Text2.Text = prMax2.ToString();
-            BedSideView2.bed2singleton.PulseRate_Maximum_Text3.Text = prMax2.ToString();
-            BedSideView2.bed2singleton.PulseRate_Maximum_Text4.Text = prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax2.ToString();
 
-            BedSideView2.bed2singleton.Temperature_Minimum_Text.Text = tpMin2.ToString();
-            BedSideView2.bed2singleton.Temperature_Minimum_Text2.Text = tpMin2.ToString();
-            BedSideView2.bed2singleton.Temperature_Minimum_Text3.Text = tpMin2.ToString();
-            BedSideView2.bed2singleton.Temperature_Minimum_Text4.Text = tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin2.ToString();
 
-            BedSideView2.bed2singleton.Temperature_Maximum_Text.Text = tpMax2.ToString();
-            BedSideView2.bed2singleton.Temperature_Maximum_Text2.Text = tpMax2.ToString();
-            BedSideView2.bed2singleton.Temperature_Maximum_Text3.Text = tpMax2.ToString();
-            BedSideView2.bed2singleton.Temperature_Maximum_Text4.Text = tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax2.ToString();
             #endregion
 
             #region BedSideView3 TextBox.Text Assignment
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin3.ToString();
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin3.ToString();
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin3.ToString();
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin3.ToString();
 
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax3.ToString();
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax3.ToString();
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax3.ToString();
-            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax3.ToString();
 
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin3.ToString();
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin3.ToString();
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin3.ToString();
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin3.ToString();
 
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax3.ToString();
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax3.ToString();
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax3.ToString();
-            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax3.ToString();
 
-            BedSideView3.bed3singleton.BreathingRate_Minimum_Text.Text = brMin3.ToString();
-            BedSideView3.bed3singleton.BreathingRate_Minimum_Text2.Text = brMin3.ToString();
-            BedSideView3.bed3singleton.BreathingRate_Minimum_Text3.Text = brMin3.ToString();
-            BedSideView3.bed3singleton.BreathingRate_Minimum_Text4.Text = brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin3.ToString();
 
-            BedSideView3.bed3singleton.BreathingRate_Maximum_Text.Text = brMax3.ToString();
-            BedSideView3.bed3singleton.BreathingRate_Maximum_Text2.Text = brMax3.ToString();
-            BedSideView3.bed3singleton.BreathingRate_Maximum_Text3.Text = brMax3.ToString();
-            BedSideView3.bed3singleton.BreathingRate_Maximum_Text4.Text = brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax3.ToString();
 
-            BedSideView3.bed3singleton.PulseRate_Minimum_Text.Text = prMin3.ToString();
-            BedSideView3.bed3singleton.PulseRate_Minimum_Text2.Text = prMin3.ToString();
-            BedSideView3.bed3singleton.PulseRate_Minimum_Text3.Text = prMin3.ToString();
-            BedSideView3.bed3singleton.PulseRate_Minimum_Text4.Text = prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin3.ToString();
 
-            BedSideView3.bed3singleton.PulseRate_Maximum_Text.Text = prMax3.ToString();
-            BedSideView3.bed3singleton.PulseRate_Maximum_Text2.Text = prMax3.ToString();
-            BedSideView3.bed3singleton.PulseRate_Maximum_Text3.Text = prMax3.ToString();
-            BedSideView3.bed3singleton.PulseRate_Maximum_Text4.Text = prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax3.ToString();
 
-            BedSideView3.bed3singleton.Temperature_Minimum_Text.Text = tpMin3.ToString();
-            BedSideView3.bed3singleton.Temperature_Minimum_Text2.Text = tpMin3.ToString();
-            BedSideView3.bed3singleton.Temperature_Minimum_Text3.Text = tpMin3.ToString();
-            BedSideView3.bed3singleton.Temperature_Minimum_Text4.Text = tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin3.ToString();
 
-            BedSideView3.bed3singleton.Temperature_Maximum_Text.Text = tpMax3.ToString();
-            BedSideView3.bed3singleton.Temperature_Maximum_Text2.Text = tpMax3.ToString();
-            BedSideView3.bed3singleton.Temperature_Maximum_Text3.Text = tpMax3.ToString();
-            BedSideView3.bed3singleton.Temperature_Maximum_Text4.Text = tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax3.ToString();
             #endregion
 
             #region BedSideView4 TextBox.Text Assignment
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin4.ToString();
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin4.ToString();
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin4.ToString();
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin4.ToString();
 
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax4.ToString();
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax4.ToString();
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax4.ToString();
-            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax4.ToString();
 
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin4.ToString();
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin4.ToString();
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin4.ToString();
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin4.ToString();
 
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax4.ToString();
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax4.ToString();
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax4.ToString();
-            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax4.ToString();
 
-            BedSideView4.bed4singleton.BreathingRate_Minimum_Text.Text = brMin4.ToString();
-            BedSideView4.bed4singleton.BreathingRate_Minimum_Text2.Text = brMin4.ToString();
-            BedSideView4.bed4singleton.BreathingRate_Minimum_Text3.Text = brMin4.ToString();
-            BedSideView4.bed4singleton.BreathingRate_Minimum_Text4.Text = brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin4.ToString();
 
-            BedSideView4.bed4singleton.BreathingRate_Maximum_Text.Text = brMax4.ToString();
-            BedSideView4.bed4singleton.BreathingRate_Maximum_Text2.Text = brMax4.ToString();
-            BedSideView4.bed4singleton.BreathingRate_Maximum_Text3.Text = brMax4.ToString();
-            BedSideView4.bed4singleton.BreathingRate_Maximum_Text4.Text = brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax4.ToString();
 
-            BedSideView4.bed4singleton.PulseRate_Minimum_Text.Text = prMin4.ToString();
-            BedSideView4.bed4singleton.PulseRate_Minimum_Text2.Text = prMin4.ToString();
-            BedSideView4.bed4singleton.PulseRate_Minimum_Text3.Text = prMin4.ToString();
-            BedSideView4.bed4singleton.PulseRate_Minimum_Text4.Text = prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin4.ToString();
 
-            BedSideView4.bed4singleton.PulseRate_Maximum_Text.Text = prMax4.ToString();
-            BedSideView4.bed4singleton.PulseRate_Maximum_Text2.Text = prMax4.ToString();
-            BedSideView4.bed4singleton.PulseRate_Maximum_Text3.Text = prMax4.ToString();
-            BedSideView4.bed4singleton.PulseRate_Maximum_Text4.Text = prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax4.ToString();
 
-            BedSideView4.bed4singleton.Temperature_Minimum_Text.Text = tpMin4.ToString();
-            BedSideView4.bed4singleton.Temperature_Minimum_Text2.Text = tpMin4.ToString();
-            BedSideView4.bed4singleton.Temperature_Minimum_Text3.Text = tpMin4.ToString();
-            BedSideView4.bed4singleton.Temperature_Minimum_Text4.Text = tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin4.ToString();
 
-            BedSideView4.bed4singleton.Temperature_Maximum_Text.Text = tpMax4.ToString();
-            BedSideView4.bed4singleton.Temperature_Maximum_Text2.Text = tpMax4.ToString();
-            BedSideView4.bed4singleton.Temperature_Maximum_Text3.Text = tpMax4.ToString();
-            BedSideView4.bed4singleton.Temperature_Maximum_Text4.Text = tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax4.ToString();
             #endregion
 
             #region BedSideView5 TextBox.Text Assignment
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin5.ToString();
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin5.ToString();
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin5.ToString();
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin5.ToString();
 
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax5.ToString();
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax5.ToString();
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax5.ToString();
-            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax5.ToString();
 
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin5.ToString();
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin5.ToString();
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin5.ToString();
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin5.ToString();
 
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax5.ToString();
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax5.ToString();
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax5.ToString();
-            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax5.ToString();
 
-            BedSideView5.bed5singleton.BreathingRate_Minimum_Text.Text = brMin5.ToString();
-            BedSideView5.bed5singleton.BreathingRate_Minimum_Text2.Text = brMin5.ToString();
-            BedSideView5.bed5singleton.BreathingRate_Minimum_Text3.Text = brMin5.ToString();
-            BedSideView5.bed5singleton.BreathingRate_Minimum_Text4.Text = brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin5.ToString();
 
-            BedSideView5.bed5singleton.BreathingRate_Maximum_Text.Text = brMax5.ToString();
-            BedSideView5.bed5singleton.BreathingRate_Maximum_Text2.Text = brMax5.ToString();
-            BedSideView5.bed5singleton.BreathingRate_Maximum_Text3.Text = brMax5.ToString();
-            BedSideView5.bed5singleton.BreathingRate_Maximum_Text4.Text = brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax5.ToString();
 
-            BedSideView5.bed5singleton.PulseRate_Minimum_Text.Text = prMin5.ToString();
-            BedSideView5.bed5singleton.PulseRate_Minimum_Text2.Text = prMin5.ToString();
-            BedSideView5.bed5singleton.PulseRate_Minimum_Text3.Text = prMin5.ToString();
-            BedSideView5.bed5singleton.PulseRate_Minimum_Text4.Text = prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin5.ToString();
 
-            BedSideView5.bed5singleton.PulseRate_Maximum_Text.Text = prMax5.ToString();
-            BedSideView5.bed5singleton.PulseRate_Maximum_Text2.Text = prMax5.ToString();
-            BedSideView5.bed5singleton.PulseRate_Maximum_Text3.Text = prMax5.ToString();
-            BedSideView5.bed5singleton.PulseRate_Maximum_Text4.Text = prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax5.ToString();
 
-            BedSideView5.bed5singleton.Temperature_Minimum_Text.Text = tpMin5.ToString();
-            BedSideView5.bed5singleton.Temperature_Minimum_Text2.Text = tpMin5.ToString();
-            BedSideView5.bed5singleton.Temperature_Minimum_Text3.Text = tpMin5.ToString();
-            BedSideView5.bed5singleton.Temperature_Minimum_Text4.Text = tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin5.ToString();
 
-            BedSideView5.bed5singleton.Temperature_Maximum_Text.Text = tpMax5.ToString();
-            BedSideView5.bed5singleton.Temperature_Maximum_Text2.Text = tpMax5.ToString();
-            BedSideView5.bed5singleton.Temperature_Maximum_Text3.Text = tpMax5.ToString();
-            BedSideView5.bed5singleton.Temperature_Maximum_Text4.Text = tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax5.ToString();
             #endregion
 
             #region BedSideView6 TextBox.Text Assignment
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin6.ToString();
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin6.ToString();
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin6.ToString();
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin6.ToString();
 
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax6.ToString();
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax6.ToString();
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax6.ToString();
-            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax6.ToString();
 
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin6.ToString();
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin6.ToString();
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin6.ToString();
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin6.ToString();
 
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax6.ToString();
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax6.ToString();
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax6.ToString();
-            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax6.ToString();
 
-            BedSideView6.bed6singleton.BreathingRate_Minimum_Text.Text = brMin6.ToString();
-            BedSideView6.bed6singleton.BreathingRate_Minimum_Text2.Text = brMin6.ToString();
-            BedSideView6.bed6singleton.BreathingRate_Minimum_Text3.Text = brMin6.ToString();
-            BedSideView6.bed6singleton.BreathingRate_Minimum_Text4.Text = brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin6.ToString();
 
-            BedSideView6.bed6singleton.BreathingRate_Maximum_Text.Text = brMax6.ToString();
-            BedSideView6.bed6singleton.BreathingRate_Maximum_Text2.Text = brMax6.ToString();
-            BedSideView6.bed6singleton.BreathingRate_Maximum_Text3.Text = brMax6.ToString();
-            BedSideView6.bed6singleton.BreathingRate_Maximum_Text4.Text = brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax6.ToString();
 
-            BedSideView6.bed6singleton.PulseRate_Minimum_Text.Text = prMin6.ToString();
-            BedSideView6.bed6singleton.PulseRate_Minimum_Text2.Text = prMin6.ToString();
-            BedSideView6.bed6singleton.PulseRate_Minimum_Text3.Text = prMin6.ToString();
-            BedSideView6.bed6singleton.PulseRate_Minimum_Text4.Text = prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin6.ToString();
 
-            BedSideView6.bed6singleton.PulseRate_Maximum_Text.Text = prMax6.ToString();
-            BedSideView6.bed6singleton.PulseRate_Maximum_Text2.Text = prMax6.ToString();
-            BedSideView6.bed6singleton.PulseRate_Maximum_Text3.Text = prMax6.ToString();
-            BedSideView6.bed6singleton.PulseRate_Maximum_Text4.Text = prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax6.ToString();
 
-            BedSideView6.bed6singleton.Temperature_Minimum_Text.Text = tpMin6.ToString();
-            BedSideView6.bed6singleton.Temperature_Minimum_Text2.Text = tpMin6.ToString();
-            BedSideView6.bed6singleton.Temperature_Minimum_Text3.Text = tpMin6.ToString();
-            BedSideView6.bed6singleton.Temperature_Minimum_Text4.Text = tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin6.ToString();
 
-            BedSideView6.bed6singleton.Temperature_Maximum_Text.Text = tpMax6.ToString();
-            BedSideView6.bed6singleton.Temperature_Maximum_Text2.Text = tpMax6.ToString();
-            BedSideView6.bed6singleton.Temperature_Maximum_Text3.Text = tpMax6.ToString();
-            BedSideView6.bed6singleton.Temperature_Maximum_Text4.Text = tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax6.ToString();
             #endregion
 
             #region BedSideView7 TextBox.Text Assignment
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin7.ToString();
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin7.ToString();
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin7.ToString();
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin7.ToString();
 
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax7.ToString();
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax7.ToString();
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax7.ToString();
-            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax7.ToString();
 
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin7.ToString();
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin7.ToString();
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin7.ToString();
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin7.ToString();
 
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax7.ToString();
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax7.ToString();
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax7.ToString();
-            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax7.ToString();
 
-            BedSideView7.bed7singleton.BreathingRate_Minimum_Text.Text = brMin7.ToString();
-            BedSideView7.bed7singleton.BreathingRate_Minimum_Text2.Text = brMin7.ToString();
-            BedSideView7.bed7singleton.BreathingRate_Minimum_Text3.Text = brMin7.ToString();
-            BedSideView7.bed7singleton.BreathingRate_Minimum_Text4.Text = brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin7.ToString();
 
-            BedSideView7.bed7singleton.BreathingRate_Maximum_Text.Text = brMax7.ToString();
-            BedSideView7.bed7singleton.BreathingRate_Maximum_Text2.Text = brMax7.ToString();
-            BedSideView7.bed7singleton.BreathingRate_Maximum_Text3.Text = brMax7.ToString();
-            BedSideView7.bed7singleton.BreathingRate_Maximum_Text4.Text = brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax7.ToString();
 
-            BedSideView7.bed7singleton.PulseRate_Minimum_Text.Text = prMin7.ToString();
-            BedSideView7.bed7singleton.PulseRate_Minimum_Text2.Text = prMin7.ToString();
-            BedSideView7.bed7singleton.PulseRate_Minimum_Text3.Text = prMin7.ToString();
-            BedSideView7.bed7singleton.PulseRate_Minimum_Text4.Text = prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin7.ToString();
 
-            BedSideView7.bed7singleton.PulseRate_Maximum_Text.Text = prMax7.ToString();
-            BedSideView7.bed7singleton.PulseRate_Maximum_Text2.Text = prMax7.ToString();
-            BedSideView7.bed7singleton.PulseRate_Maximum_Text3.Text = prMax7.ToString();
-            BedSideView7.bed7singleton.PulseRate_Maximum_Text4.Text = prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax7.ToString();
 
-            BedSideView7.bed7singleton.Temperature_Minimum_Text.Text = tpMin7.ToString();
-            BedSideView7.bed7singleton.Temperature_Minimum_Text2.Text = tpMin7.ToString();
-            BedSideView7.bed7singleton.Temperature_Minimum_Text3.Text = tpMin7.ToString();
-            BedSideView7.bed7singleton.Temperature_Minimum_Text4.Text = tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin7.ToString();
 
-            BedSideView7.bed7singleton.Temperature_Maximum_Text.Text = tpMax7.ToString();
-            BedSideView7.bed7singleton.Temperature_Maximum_Text2.Text = tpMax7.ToString();
-            BedSideView7.bed7singleton.Temperature_Maximum_Text3.Text = tpMax7.ToString();
-            BedSideView7.bed7singleton.Temperature_Maximum_Text4.Text = tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax7.ToString();
             #endregion
 
             #region BedSideView8 TextBox.Text Assignment
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text.Text = syMin8.ToString();
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = syMin8.ToString();
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = syMin8.ToString();
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin8.ToString();
 
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text.Text = syMax8.ToString();
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = syMax8.ToString();
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = syMax8.ToString();
-            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax8.ToString();
 
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text.Text = diMin8.ToString();
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = diMin8.ToString();
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = diMin8.ToString();
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin8.ToString();
 
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text.Text = diMax8.ToString();
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = diMax8.ToString();
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = diMax8.ToString();
-            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax8.ToString();
 
-            BedSideView8.bed8singleton.BreathingRate_Minimum_Text.Text = brMin8.ToString();
-            BedSideView8.bed8singleton.BreathingRate_Minimum_Text2.Text = brMin8.ToString();
-            BedSideView8.bed8singleton.BreathingRate_Minimum_Text3.Text = brMin8.ToString();
-            BedSideView8.bed8singleton.BreathingRate_Minimum_Text4.Text = brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin8.ToString();
 
-            BedSideView8.bed8singleton.BreathingRate_Maximum_Text.Text = brMax8.ToString();
-            BedSideView8.bed8singleton.BreathingRate_Maximum_Text2.Text = brMax8.ToString();
-            BedSideView8.bed8singleton.BreathingRate_Maximum_Text3.Text = brMax8.ToString();
-            BedSideView8.bed8singleton.BreathingRate_Maximum_Text4.Text = brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax8.ToString();
 
-            BedSideView8.bed8singleton.PulseRate_Minimum_Text.Text = prMin8.ToString();
-            BedSideView8.bed8singleton.PulseRate_Minimum_Text2.Text = prMin8.ToString();
-            BedSideView8.bed8singleton.PulseRate_Minimum_Text3.Text = prMin8.ToString();
-            BedSideView8.bed8singleton.PulseRate_Minimum_Text4.Text = prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin8.ToString();
 
-            BedSideView8.bed8singleton.PulseRate_Maximum_Text.Text = prMax8.ToString();
-            BedSideView8.bed8singleton.PulseRate_Maximum_Text2.Text = prMax8.ToString();
-            BedSideView8.bed8singleton.PulseRate_Maximum_Text3.Text = prMax8.ToString();
-            BedSideView8.bed8singleton.PulseRate_Maximum_Text4.Text = prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax8.ToString();
 
-            BedSideView8.bed8singleton.Temperature_Minimum_Text.Text = tpMin8.ToString();
-            BedSideView8.bed8singleton.Temperature_Minimum_Text2.Text = tpMin8.ToString();
-            BedSideView8.bed8singleton.Temperature_Minimum_Text3.Text = tpMin8.ToString();
-            BedSideView8.bed8singleton.Temperature_Minimum_Text4.Text = tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin8.ToString();
 
-            BedSideView8.bed8singleton.Temperature_Maximum_Text.Text = tpMax8.ToString();
-            BedSideView8.bed8singleton.Temperature_Maximum_Text2.Text = tpMax8.ToString();
-            BedSideView8.bed8singleton.Temperature_Maximum_Text3.Text = tpMax8.ToString();
-            BedSideView8.bed8singleton.Temperature_Maximum_Text4.Text = tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax8.ToString();
             #endregion
-        }
 
+
+        }
     }
 }
