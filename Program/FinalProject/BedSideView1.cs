@@ -314,38 +314,6 @@ namespace FinalProject
 
         }
 
-        public static int weight, age, height;
-        public static int firstNameNumber, lastNameNumber;
-        public static string firstName, lastName;
-        public void RandomGenUserValues()
-        {
-            weight = SocketConfiguration.randomizer.Next(60, 85);
-            height = SocketConfiguration.randomizer.Next(150, 210);
-            age = SocketConfiguration.randomizer.Next(25, 45);
-
-            tbweight.Text = weight.ToString() + " Kg";
-            tbheight.Text = height.ToString() + " Centimeters";
-            tbage.Text = age.ToString() + " YOld";
-        }
-
-        public void RandomNameGenerator()
-        {
-            firstNameNumber = SocketConfiguration.randomizer.Next(0, SocketConfiguration.firstNameList.Count);
-            lastNameNumber = SocketConfiguration.randomizer.Next(0, SocketConfiguration.lastNameList.Count);
-
-            firstName = SocketConfiguration.firstNameList[firstNameNumber];
-            lastName = SocketConfiguration.lastNameList[lastNameNumber];
-
-            tbfn.Text = firstName;
-            tbln.Text = lastName;
-
-            if (firstNameNumber <= 11)
-            {
-                tbgender.Text = "Male";
-            }
-            else { tbgender.Text = "Female"; }
-        }
-
         public static int ditext, sytext, prtext, brtext, tptext;
         public void UpdateColor(object sender, EventArgs e)
         {
@@ -490,8 +458,20 @@ namespace FinalProject
         {
             if (tbfn.Text == "")
             {
-                RandomNameGenerator();
-                RandomGenUserValues();
+                SocketConfiguration.RandomGenUserValues();
+                tbweight.Text = SocketConfiguration.weight.ToString() + " Kg";
+                tbheight.Text = SocketConfiguration.height.ToString() + " Centimeters";
+                tbage.Text = SocketConfiguration.age.ToString();
+
+                SocketConfiguration.RandomNameGenerator();
+                tbfn.Text = SocketConfiguration.firstName;
+                tbln.Text = SocketConfiguration.lastName;
+
+                if (SocketConfiguration.firstNameNumber <= 11)
+                {
+                    tbgender.Text = "Male";
+                }
+                else { tbgender.Text = "Female"; }
             }
             else { MessageBox.Show("You already have a person assigned to this Bed"); }
         }

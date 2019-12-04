@@ -38,7 +38,7 @@ namespace FinalProject
             #region TextBox Multiline Disable
             tbfn.Multiline = false;
             tbgender.Multiline = false;
-            tbdob.Multiline = false;
+            tbage.Multiline = false;
             tbln.Multiline = false;
             tbheight.Multiline = false;
             tbweight.Multiline = false;
@@ -108,7 +108,7 @@ namespace FinalProject
             #region AutoSize False
             tbfn.AutoSize = false;
             tbgender.AutoSize = false;
-            tbdob.AutoSize = false;
+            tbage.AutoSize = false;
             tbln.AutoSize = false;
             tbheight.AutoSize = false;
             tbweight.AutoSize = false;
@@ -177,7 +177,7 @@ namespace FinalProject
             #region TextBox Size
             tbfn.Size = new Size(151, 36);
             tbgender.Size = new Size(151, 36);
-            tbdob.Size = new Size(151, 36);
+            tbage.Size = new Size(151, 36);
             tbln.Size = new Size(151, 36);
             tbheight.Size = new Size(151, 36);
             tbweight.Size = new Size(151, 36);
@@ -246,7 +246,7 @@ namespace FinalProject
             #region TextBox ReadOnly
             tbfn.ReadOnly = true;
             tbgender.ReadOnly = true;
-            tbdob.ReadOnly = true;
+            tbage.ReadOnly = true;
             tbln.ReadOnly = true;
             tbheight.ReadOnly = true;
             tbweight.ReadOnly = true;
@@ -546,6 +546,28 @@ namespace FinalProject
             this.Hide();
         }
 
+        private void BedPicture_Click(object sender, EventArgs e)
+        {
+            if (tbfn.Text == "")
+            {
+                SocketConfiguration.RandomGenUserValues();
+                tbweight.Text = SocketConfiguration.weight.ToString() + " Kg";
+                tbheight.Text = SocketConfiguration.height.ToString() + " Centimeters";
+                tbage.Text = SocketConfiguration.age.ToString();
+
+                SocketConfiguration.RandomNameGenerator();
+                tbfn.Text = SocketConfiguration.firstName;
+                tbln.Text = SocketConfiguration.lastName;
+
+                if (SocketConfiguration.firstNameNumber <= 11)
+                {
+                    tbgender.Text = "Male";
+                }
+                else { tbgender.Text = "Female"; }
+            }
+            else { MessageBox.Show("You already have a person assigned to this Bed"); }
+        }
+
         private void Bed8_Click(object sender, EventArgs e)
         {
             BedSideView8.bed8singleton.Show();
@@ -557,58 +579,74 @@ namespace FinalProject
         #region InsertButtons Configuration  -- Dinis & Jorge
         private void InsertButton1_Click(object sender, EventArgs e)
         {
-            if (moduleState1 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked1 = 1;
+                if (moduleState1 == 0)
+                {
+                    insertClicked1 = 1;
 
-                SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
-                SocketSelection.socketsingleton.Show();
-                SocketSelection.socketsingleton.Location = this.Location;
-                this.Hide();
+                    SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
+                    SocketSelection.socketsingleton.Show();
+                    SocketSelection.socketsingleton.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
 
         private void InsertButton2_Click(object sender, EventArgs e)
         {
-            if (moduleState2 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked2 = 1;
+                if (moduleState2 == 0)
+                {
+                    insertClicked2 = 1;
 
-                SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
-                SocketSelection.socketsingleton.Show();
-                SocketSelection.socketsingleton.Location = this.Location;
-                this.Hide();
+                    SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
+                    SocketSelection.socketsingleton.Show();
+                    SocketSelection.socketsingleton.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
 
         private void InsertButton3_Click(object sender, EventArgs e)
         {
-            if (moduleState3 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked3 = 1;
+                if (moduleState3 == 0)
+                {
+                    insertClicked3 = 1;
 
-                SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
-                SocketSelection.socketsingleton.Show();
-                SocketSelection.socketsingleton.Location = this.Location;
-                this.Hide();
+                    SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
+                    SocketSelection.socketsingleton.Show();
+                    SocketSelection.socketsingleton.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
 
         private void InsertButton4_Click(object sender, EventArgs e)
         {
-            if (moduleState4 == 0)
+            if (tbfn.Text != "")
             {
-                insertClicked4 = 1;
+                if (moduleState4 == 0)
+                {
+                    insertClicked4 = 1;
 
-                SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
-                SocketSelection.socketsingleton.Show();
-                SocketSelection.socketsingleton.Location = this.Location;
-                this.Hide();
+                    SocketSelection.socketsingleton.BedLabel.Text = "Bed 2";
+                    SocketSelection.socketsingleton.Show();
+                    SocketSelection.socketsingleton.Location = this.Location;
+                    this.Hide();
+                }
+                else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
             }
-            else { MessageBox.Show("Please Eject the Module first before you Insert another one!"); }
+            else { MessageBox.Show("Please Click on the Bed Picture to Add a Person to this bed"); }
         }
         #endregion
 

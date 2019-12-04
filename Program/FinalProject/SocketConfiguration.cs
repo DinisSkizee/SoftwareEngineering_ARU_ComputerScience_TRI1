@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace FinalProject
 {
@@ -33,16 +32,35 @@ namespace FinalProject
 
         public static int diMinC, diMaxC, syMinC, syMaxC, prMinC, prMaxC, brMinC, brMaxC, tpMinC, tpMaxC;
         #endregion
-        
+
         public SocketConfiguration()
         {
-            
+
             diDiff = diMaxC - diMinC;      // BPDi = 30
             syDiff = syMaxC - syMinC;      // BPSy = 20
             prDiff = prMaxC - prMinC;      // PR = 30
             brDiff = brMaxC - brMinC;      // BR = 5
             tempDiff = tpMaxC - tpMinC;    // TP = 2
 
+        }
+
+        public static int weight, age, height;
+        public static int firstNameNumber, lastNameNumber;
+        public static string firstName, lastName;
+        public static void RandomGenUserValues()
+        {
+            weight = randomizer.Next(60, 85);
+            height = randomizer.Next(150, 210);
+            age = randomizer.Next(25, 45);
+        }
+
+        public static void RandomNameGenerator()
+        {
+            firstNameNumber = randomizer.Next(0, firstNameList.Count);
+            lastNameNumber = randomizer.Next(0, lastNameList.Count);
+
+            firstName = firstNameList[firstNameNumber];
+            lastName = lastNameList[lastNameNumber];
         }
 
         public static void StartRandom(object sender, EventArgs e)

@@ -38,7 +38,7 @@
             this.label69 = new System.Windows.Forms.Label();
             this.tbln = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.tbdob = new System.Windows.Forms.TextBox();
+            this.tbage = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
             this.tbfn = new System.Windows.Forms.TextBox();
             this.Display4 = new System.Windows.Forms.Panel();
@@ -417,7 +417,7 @@
             this.BigInfoPanelBedSideView.Controls.Add(this.label69);
             this.BigInfoPanelBedSideView.Controls.Add(this.tbln);
             this.BigInfoPanelBedSideView.Controls.Add(this.label68);
-            this.BigInfoPanelBedSideView.Controls.Add(this.tbdob);
+            this.BigInfoPanelBedSideView.Controls.Add(this.tbage);
             this.BigInfoPanelBedSideView.Controls.Add(this.label67);
             this.BigInfoPanelBedSideView.Controls.Add(this.tbfn);
             this.BigInfoPanelBedSideView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -518,24 +518,24 @@
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(363, 10);
+            this.label68.Location = new System.Drawing.Point(390, 10);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(90, 13);
+            this.label68.Size = new System.Drawing.Size(27, 13);
             this.label68.TabIndex = 18;
-            this.label68.Text = "Date of Birthday";
+            this.label68.Text = "Age";
             // 
-            // tbdob
+            // tbage
             // 
-            this.tbdob.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tbdob.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbdob.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbdob.ForeColor = System.Drawing.Color.White;
-            this.tbdob.Location = new System.Drawing.Point(328, 26);
-            this.tbdob.Multiline = true;
-            this.tbdob.Name = "tbdob";
-            this.tbdob.Size = new System.Drawing.Size(151, 36);
-            this.tbdob.TabIndex = 17;
-            this.tbdob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbage.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbage.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbage.ForeColor = System.Drawing.Color.White;
+            this.tbage.Location = new System.Drawing.Point(328, 26);
+            this.tbage.Multiline = true;
+            this.tbage.Name = "tbage";
+            this.tbage.Size = new System.Drawing.Size(151, 36);
+            this.tbage.TabIndex = 17;
+            this.tbage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label67
             // 
@@ -3360,6 +3360,7 @@
             this.BedPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BedPicture.TabIndex = 22;
             this.BedPicture.TabStop = false;
+            this.BedPicture.Click += new System.EventHandler(this.BedPicture_Click);
             // 
             // BedSideView2
             // 
@@ -3846,7 +3847,7 @@
         private System.Windows.Forms.Label label69;
         public System.Windows.Forms.TextBox tbln;
         private System.Windows.Forms.Label label68;
-        public System.Windows.Forms.TextBox tbdob;
+        public System.Windows.Forms.TextBox tbage;
         private System.Windows.Forms.Label label67;
         public System.Windows.Forms.TextBox tbfn;
         public System.Windows.Forms.Label InsertASocket1;
