@@ -368,5 +368,14 @@
   <ItemGroup>
     <None Include="Resources\276-2768812_central-station-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="FinalprojectDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FinalprojectDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>FinalprojectDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
