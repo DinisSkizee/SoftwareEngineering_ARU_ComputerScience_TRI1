@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class Medical_staffs
+    partial class MedicalStaffs
     {
         /// <summary>
         /// Required designer variable.
@@ -49,12 +49,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.MainPageButton = new System.Windows.Forms.PictureBox();
             this.BackButtonmanagements = new System.Windows.Forms.PictureBox();
+            this.MainPageButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonmanagements)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -227,17 +227,6 @@
             this.panel1.Size = new System.Drawing.Size(773, 25);
             this.panel1.TabIndex = 12;
             // 
-            // MainPageButton
-            // 
-            this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
-            this.MainPageButton.Location = new System.Drawing.Point(9, -5);
-            this.MainPageButton.Name = "MainPageButton";
-            this.MainPageButton.Size = new System.Drawing.Size(30, 30);
-            this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MainPageButton.TabIndex = 4;
-            this.MainPageButton.TabStop = false;
-            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
-            // 
             // BackButtonmanagements
             // 
             this.BackButtonmanagements.Image = global::FinalProject.Properties.Resources._8B7gpJyx_400x400;
@@ -249,7 +238,18 @@
             this.BackButtonmanagements.TabStop = false;
             this.BackButtonmanagements.Click += new System.EventHandler(this.BackButtonmanagements_Click);
             // 
-            // Medical_staffs
+            // MainPageButton
+            // 
+            this.MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
+            this.MainPageButton.Location = new System.Drawing.Point(9, -5);
+            this.MainPageButton.Name = "MainPageButton";
+            this.MainPageButton.Size = new System.Drawing.Size(30, 30);
+            this.MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MainPageButton.TabIndex = 4;
+            this.MainPageButton.TabStop = false;
+            this.MainPageButton.Click += new System.EventHandler(this.MainPageButton_Click);
+            // 
+            // MedicalStaffs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -270,12 +270,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Medical_staffs";
+            this.Name = "MedicalStaffs";
             this.Text = "Staff list";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonmanagements)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

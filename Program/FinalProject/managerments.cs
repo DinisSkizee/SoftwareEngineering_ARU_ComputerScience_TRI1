@@ -42,18 +42,18 @@ namespace FinalProject
          //leads to register onCall staffs
         private void Regstff_Click(object sender, EventArgs e)
         {
-            Regstff regstff = new Regstff();
-            regstff.Show();
-            regstff.Location = this.Location;
+            MedicalStaffs medicalStaffs = new MedicalStaffs();
+            medicalStaffs.Show();
+            medicalStaffs.Location = this.Location;
             this.Hide();
 
         }
 
-        private void SeniorDoc_Click(object sender, EventArgs e)
+        private void seniorDoc_Click(object sender, EventArgs e)
         {
-            SeniorDoc_Click seniordoc = new SeniorDoc_Click();
-            seniorDoc.Show();
-            seniorDoc.Location = this.Location;
+            SeniorMedicalStaff seniordoc = new SeniorMedicalStaff();
+            seniordoc.Show();
+            seniordoc.Location = this.Location;
             this.Hide();
         }
     }

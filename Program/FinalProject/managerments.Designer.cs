@@ -50,7 +50,7 @@
             this.seniorDoc.TabIndex = 6;
             this.seniorDoc.Text = "Senior Doctors";
             this.seniorDoc.UseVisualStyleBackColor = true;
-            this.seniorDoc.Click += new System.EventHandler(this.SeniorDoc_Click);
+            this.seniorDoc.Click += new System.EventHandler(this.seniorDoc_Click);
             // 
             // Regstff
             // 
@@ -69,9 +69,10 @@
             this.panel1.Controls.Add(this.MainPageButton);
             this.panel1.Controls.Add(this.MinimizeButtonLogs);
             this.panel1.Controls.Add(this.CloseButtonLogs);
-            this.panel1.Location = new System.Drawing.Point(25, 36);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 44);
+            this.panel1.Size = new System.Drawing.Size(800, 44);
             this.panel1.TabIndex = 4;
             // 
             // MainPageButton
@@ -114,7 +115,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 7;
             // 
-            // management
+            // managerments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +124,8 @@
             this.Controls.Add(this.Regstff);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "management";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "managerments";
             this.Text = "management";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainPageButton)).EndInit();

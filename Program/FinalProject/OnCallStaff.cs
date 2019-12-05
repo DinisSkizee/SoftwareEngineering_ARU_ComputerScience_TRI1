@@ -69,6 +69,11 @@ namespace FinalProject
             managerments.Location = this.Location;
             this.Hide();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
         

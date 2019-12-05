@@ -130,6 +130,12 @@
     <Compile Include="CentralStation.Designer.cs">
       <DependentUpon>CentralStation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,17 +155,11 @@
       <DependentUpon>managerments.cs</DependentUpon>
     </Compile>
     <Compile Include="Regstff.cs" />
-    <Compile Include="Senior medical staffs.cs">
+    <Compile Include="MedicalStaffs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Senior medical staffs.Designer.cs">
-      <DependentUpon>Senior medical staffs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Medical staffs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Medical staffs.Designer.cs">
-      <DependentUpon>Medical staffs.cs</DependentUpon>
+    <Compile Include="MedicalStaffs.Designer.cs">
+      <DependentUpon>MedicalStaffs.cs</DependentUpon>
     </Compile>
     <Compile Include="OnCallStaff.cs">
       <SubType>Form</SubType>
@@ -178,7 +178,12 @@
     <Compile Include="RDLogs.Designer.cs">
       <DependentUpon>RDLogs.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeniorDoc_Click.cs" />
+    <Compile Include="SeniorMedicalStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeniorMedicalStaff.Designer.cs">
+      <DependentUpon>SeniorMedicalStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="SocketConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,6 +226,9 @@
     <EmbeddedResource Include="CentralStation.resx">
       <DependentUpon>CentralStation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,11 +238,8 @@
     <EmbeddedResource Include="managerments.resx">
       <DependentUpon>managerments.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Senior medical staffs.resx">
-      <DependentUpon>Senior medical staffs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Medical staffs.resx">
-      <DependentUpon>Medical staffs.cs</DependentUpon>
+    <EmbeddedResource Include="MedicalStaffs.resx">
+      <DependentUpon>MedicalStaffs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OnCallStaff.resx">
       <DependentUpon>OnCallStaff.cs</DependentUpon>
@@ -246,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RDLogs.resx">
       <DependentUpon>RDLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeniorMedicalStaff.resx">
+      <DependentUpon>SeniorMedicalStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SocketConfiguration.resx">
       <DependentUpon>SocketConfiguration.cs</DependentUpon>
@@ -359,6 +367,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\276-2768812_central-station-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FinalprojectDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FinalprojectDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>FinalprojectDB.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
