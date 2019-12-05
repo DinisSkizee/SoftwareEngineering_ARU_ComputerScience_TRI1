@@ -336,6 +336,7 @@
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 8;
             this.label10.Text = "Shift Status";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // textBox6
             // 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class Medical_staffs : Form
+    public partial class MedicalStaffs : Form
     {
-        public Medical_staffs()
+        public MedicalStaffs()
         {
             InitializeComponent();
         }

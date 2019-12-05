@@ -74,10 +74,11 @@ namespace FinalProject
         // Added this button that leads to Management/Logs bit (Priyanka)
         private void ManagementButton_Click(object sender, EventArgs e)
         {
-            Management management = new Management();
-            management.Show();
-            management.Location = this.Location;
+            managerments managerments = new managerments();
+           managerments.Show();
+            managerments.Location = this.Location;
             this.Hide();
+
         }
         // Added this button that leads to Management/Logs bit (Priyanka)
         private void LogsButton_Click(object sender, EventArgs e)
@@ -88,9 +89,7 @@ namespace FinalProject
             this.Hide();
         }
 
-
-
-
+      
     }
 }
 
