@@ -2658,7 +2658,16 @@ namespace FinalProject
             BedSideView8.bed8singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax8.ToString();
             #endregion
 
-
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text = "Insert Minimum";
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text = "Insert Maximum";
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.Text = "Insert Minimum";
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.Text = "Insert Maximum";
+            PulseRate_Minimum_TextBox.Text = "Insert Minimum";
+            PulseRate_Maximum_TextBox.Text = "Insert Maximum";
+            BreathingRate_Minimum_TextBox.Text = "Insert Minimum";
+            BreathingRate_Maximum_TextBox.Text = "Insert Maximum";
+            Temperature_Minimum_TextBox.Text = "Insert Minimum";
+            Temperature_Maximum_TextBox.Text = "Insert Maximum";
         }
     }
 }
