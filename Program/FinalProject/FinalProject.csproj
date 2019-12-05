@@ -130,14 +130,6 @@
     <Compile Include="CentralStation.Designer.cs">
       <DependentUpon>CentralStation.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseDataSet.cs">
-      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DatabaseDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,11 +142,18 @@
     <Compile Include="Logs.Designer.cs">
       <DependentUpon>Logs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Management.cs">
+    <Compile Include="managerments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Management.Designer.cs">
-      <DependentUpon>Management.cs</DependentUpon>
+    <Compile Include="managerments.Designer.cs">
+      <DependentUpon>managerments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regstff.cs" />
+    <Compile Include="Senior medical staffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Senior medical staffs.Designer.cs">
+      <DependentUpon>Senior medical staffs.cs</DependentUpon>
     </Compile>
     <Compile Include="Medical staffs.cs">
       <SubType>Form</SubType>
@@ -179,9 +178,8 @@
     <Compile Include="RDLogs.Designer.cs">
       <DependentUpon>RDLogs.cs</DependentUpon>
     </Compile>
-    <Compile Include="SocketConfiguration.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="SeniorDoc_Click.cs" />
+    <Compile Include="SocketConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketSelection.cs">
@@ -229,8 +227,11 @@
     <EmbeddedResource Include="Logs.resx">
       <DependentUpon>Logs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Management.resx">
-      <DependentUpon>Management.cs</DependentUpon>
+    <EmbeddedResource Include="managerments.resx">
+      <DependentUpon>managerments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Senior medical staffs.resx">
+      <DependentUpon>Senior medical staffs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medical staffs.resx">
       <DependentUpon>Medical staffs.cs</DependentUpon>
@@ -252,17 +253,6 @@
     <EmbeddedResource Include="SocketSelection.resx">
       <DependentUpon>SocketSelection.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DatabaseDataSet.xsc">
-      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DatabaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DatabaseDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DatabaseDataSet.xss">
-      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -366,6 +356,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\276-2768812_central-station-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

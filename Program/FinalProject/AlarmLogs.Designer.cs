@@ -33,24 +33,20 @@
             this.MinimizeButtonAlarmLogs = new System.Windows.Forms.PictureBox();
             this.BackButton = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DateBox = new System.Windows.Forms.DateTimePicker();
+            this.CommentsBox = new System.Windows.Forms.TextBox();
+            this.AlarmLogsView = new System.Windows.Forms.Button();
+            this.LastBox = new System.Windows.Forms.TextBox();
+            this.AlarmLogsSaveButton = new System.Windows.Forms.Button();
+            this.FirstBox = new System.Windows.Forms.TextBox();
+            this.IDBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.AlarmDeleteButton = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonAlarmLogs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonAlarmLogs)).BeginInit();
@@ -109,52 +105,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
             this.dataGridView1.Location = new System.Drawing.Point(285, 59);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(561, 415);
             this.dataGridView1.TabIndex = 5;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID ";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Date";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "First Alarm ";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Alarm Rectified ";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Comments ";
-            this.Column5.Name = "Column5";
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.AlarmDeleteButton);
+            this.groupBox1.Controls.Add(this.DateBox);
+            this.groupBox1.Controls.Add(this.CommentsBox);
+            this.groupBox1.Controls.Add(this.AlarmLogsView);
+            this.groupBox1.Controls.Add(this.LastBox);
+            this.groupBox1.Controls.Add(this.AlarmLogsSaveButton);
+            this.groupBox1.Controls.Add(this.FirstBox);
+            this.groupBox1.Controls.Add(this.IDBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -167,105 +133,118 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details";
             // 
-            // textBox5
+            // DateBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(104, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(163, 20);
-            this.textBox5.TabIndex = 6;
+            this.DateBox.Location = new System.Drawing.Point(129, 82);
+            this.DateBox.Name = "DateBox";
+            this.DateBox.Size = new System.Drawing.Size(138, 20);
+            this.DateBox.TabIndex = 7;
             // 
-            // button3
+            // CommentsBox
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Location = new System.Drawing.Point(192, 249);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "View Logs";
-            this.button3.UseVisualStyleBackColor = false;
+            this.CommentsBox.Location = new System.Drawing.Point(129, 207);
+            this.CommentsBox.Name = "CommentsBox";
+            this.CommentsBox.Size = new System.Drawing.Size(138, 20);
+            this.CommentsBox.TabIndex = 6;
             // 
-            // textBox1
+            // AlarmLogsView
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 168);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.AlarmLogsView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AlarmLogsView.Location = new System.Drawing.Point(129, 249);
+            this.AlarmLogsView.Name = "AlarmLogsView";
+            this.AlarmLogsView.Size = new System.Drawing.Size(75, 23);
+            this.AlarmLogsView.TabIndex = 2;
+            this.AlarmLogsView.Text = "View Logs";
+            this.AlarmLogsView.UseVisualStyleBackColor = false;
+            this.AlarmLogsView.Click += new System.EventHandler(this.AlarmLogsView_Click);
             // 
-            // textBox2
+            // LastBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.LastBox.Location = new System.Drawing.Point(129, 168);
+            this.LastBox.Name = "LastBox";
+            this.LastBox.Size = new System.Drawing.Size(138, 20);
+            this.LastBox.TabIndex = 1;
             // 
-            // button1
+            // AlarmLogsSaveButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(104, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AlarmLogsSaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AlarmLogsSaveButton.Location = new System.Drawing.Point(48, 249);
+            this.AlarmLogsSaveButton.Name = "AlarmLogsSaveButton";
+            this.AlarmLogsSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.AlarmLogsSaveButton.TabIndex = 0;
+            this.AlarmLogsSaveButton.Text = "Save";
+            this.AlarmLogsSaveButton.UseVisualStyleBackColor = false;
+            this.AlarmLogsSaveButton.Click += new System.EventHandler(this.AlarmLogsSaveButton_Click);
             // 
-            // textBox3
+            // FirstBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(104, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.FirstBox.Location = new System.Drawing.Point(129, 128);
+            this.FirstBox.Name = "FirstBox";
+            this.FirstBox.Size = new System.Drawing.Size(138, 20);
+            this.FirstBox.TabIndex = 3;
             // 
-            // textBox4
+            // IDBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(104, 40);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.IDBox.Location = new System.Drawing.Point(129, 40);
+            this.IDBox.Name = "IDBox";
+            this.IDBox.Size = new System.Drawing.Size(138, 20);
+            this.IDBox.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 171);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Alarm Rectified";
+            this.label1.Text = "ALARM RECTIFIED";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(20, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "First Alarm";
+            this.label2.Text = "FIRST ALARM";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(20, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Comments";
+            this.label3.Text = "COMMENTS";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(20, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Date ";
+            this.label4.Text = "DATE";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(20, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Staff ID ";
+            this.label5.Text = "ID";
+            // 
+            // AlarmDeleteButton
+            // 
+            this.AlarmDeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AlarmDeleteButton.Location = new System.Drawing.Point(207, 249);
+            this.AlarmDeleteButton.Name = "AlarmDeleteButton";
+            this.AlarmDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.AlarmDeleteButton.TabIndex = 8;
+            this.AlarmDeleteButton.Text = "Delete";
+            this.AlarmDeleteButton.UseVisualStyleBackColor = false;
+            this.AlarmDeleteButton.Click += new System.EventHandler(this.AlarmDeleteButton_Click);
             // 
             // AlarmLogs
             // 
@@ -293,19 +272,13 @@
 
         private System.Windows.Forms.Panel PanelTop;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox CommentsBox;
+        private System.Windows.Forms.Button AlarmLogsView;
+        private System.Windows.Forms.TextBox LastBox;
+        private System.Windows.Forms.Button AlarmLogsSaveButton;
+        private System.Windows.Forms.TextBox FirstBox;
+        private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -314,5 +287,7 @@
         private System.Windows.Forms.PictureBox BackButton;
         private System.Windows.Forms.PictureBox CloseButtonAlarmLogs;
         private System.Windows.Forms.PictureBox MinimizeButtonAlarmLogs;
+        private System.Windows.Forms.DateTimePicker DateBox;
+        private System.Windows.Forms.Button AlarmDeleteButton;
     }
 }

@@ -63,6 +63,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _276_2768812_central_station_icon {
+            get {
+                object obj = ResourceManager.GetObject("276-2768812_central-station-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _745646_temperature_512x512 {
             get {
                 object obj = ResourceManager.GetObject("745646_temperature_512x512", resourceCulture);

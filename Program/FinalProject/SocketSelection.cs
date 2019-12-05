@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -6,12 +7,10 @@ namespace FinalProject
 {
     public partial class SocketSelection : Form
     {
-        // Variables
-        string bedActive;
-
+        public static SocketSelection socketsingleton = new SocketSelection();
         public SocketSelection()
         {
-
+            socketsingleton = this;
             InitializeComponent();
 
             HideAllSokets();
@@ -19,6 +18,45 @@ namespace FinalProject
             AddNamesToSoketComboBox();
 
             SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
+
+            #region TextBox Multiline Disable
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.Multiline = false;
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.Multiline = false;
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.Multiline = false;
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.Multiline = false;
+            BreathingRate_Minimum_TextBox.Multiline = false;
+            BreathingRate_Maximum_TextBox.Multiline = false;
+            PulseRate_Maximum_TextBox.Multiline = false;
+            PulseRate_Minimum_TextBox.Multiline = false;
+            Temperature_Maximum_TextBox.Multiline = false;
+            Temperature_Minimum_TextBox.Multiline = false;
+            #endregion
+
+            #region Disable AutoSize
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.AutoSize = false;
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.AutoSize = false;
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.AutoSize = false;
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.AutoSize = false;
+            BreathingRate_Minimum_TextBox.AutoSize = false;
+            BreathingRate_Maximum_TextBox.AutoSize = false;
+            PulseRate_Maximum_TextBox.AutoSize = false;
+            PulseRate_Minimum_TextBox.AutoSize = false;
+            Temperature_Maximum_TextBox.AutoSize = false;
+            Temperature_Minimum_TextBox.AutoSize = false;
+            #endregion
+
+            #region Set the Size of the TextBox
+            BloodPressureTextBox_DiastolicMinimum_ParameterValue.Size = new Size(119, 35);
+            BloodPressureTextBox_DiastolicMaximum_ParameterValue.Size = new Size(119, 35);
+            BloodPressureTextBox_SystolicMinimum_ParameterValue.Size = new Size(119, 35);
+            BloodPressureTextBox_SystolicMaximum_ParameterValue.Size = new Size(119, 35);
+            BreathingRate_Minimum_TextBox.Size = new Size(249, 32);
+            BreathingRate_Maximum_TextBox.Size = new Size(249, 32);
+            PulseRate_Maximum_TextBox.Size = new Size(249, 32);
+            PulseRate_Minimum_TextBox.Size = new Size(249, 32);
+            Temperature_Maximum_TextBox.Size = new Size(249, 32);
+            Temperature_Minimum_TextBox.Size = new Size(249, 32);
+            #endregion
 
         }
 
@@ -54,7 +92,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region InsertReturnEffect -- Dinis & Jorge
+        #region InsertReturnEffect  -- Dinis & Jorge
 
         #region TextBox Change effects BLOODPRESSURE  -- Dinis & Jorge
 
@@ -234,19 +272,18 @@ namespace FinalProject
 
         #endregion
 
-        #region Main Button Return Dinis & Jorge
+        #region Main Button Return  -- Dinis & Jorge
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
         private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
         {
-            BedSideView1 bedSideView1 = new BedSideView1();
-            bedSideView1.Show();
-            bedSideView1.Location = this.Location;
+            BedSideView1.bed1singleton.Show();
+            BedSideView1.bed1singleton.Location = this.Location;
             this.Hide();
         }
         #endregion
 
-        #region ChangeMainPanel
+        #region Change Main Panel  -- Dinis & Jorge
 
         /* When we choose another option on the SocketComboBox
         * the panels would be picked and turned visible and the Label invisible
@@ -322,7 +359,6 @@ namespace FinalProject
 
         #endregion
 
-
         private void HideAllSokets()
         {
             BreathingRatePanel.Visible = false;
@@ -342,7 +378,6 @@ namespace FinalProject
         // Install Button Configuration
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
-            bedActive = BedLabel.Text;
 
             // Blood Pressure Secondary Variables Integer
             int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMinC);
@@ -359,1346 +394,1836 @@ namespace FinalProject
             int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMinC);
             int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMaxC);
 
-            if (bedActive == "Bed 1")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView1.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView1.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView1.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView1.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView1.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView1.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView1.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView1.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView1.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView1.tpMax);
-                }
-            }
-            if (bedActive == "Bed 2")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView2.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView2.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView2.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView2.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView2.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView2.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView2.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView2.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView2.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView2.tpMax);
-                }
-            }
-            if (bedActive == "Bed 3")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView3.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView3.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView3.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView3.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView3.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView3.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView3.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView3.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView3.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView3.tpMax);
-                }
-            }
-            if (bedActive == "Bed 4")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView4.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView4.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView4.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView4.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView4.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView4.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView4.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView4.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView4.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView4.tpMax);
-                }
-            }
-            if (bedActive == "Bed 5")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView5.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView5.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView5.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView5.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView5.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView5.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView5.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView5.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView5.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView5.tpMax);
-                }
-            }
-            if (bedActive == "Bed 6")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView6.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView6.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView6.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView6.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView6.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView6.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView6.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView6.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView6.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView6.tpMax);
-                }
-            }
-            if (bedActive == "Bed 7")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView7.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView7.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView7.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView7.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView7.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView7.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView7.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView7.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView7.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView7.tpMax);
-                }
-            }
-            if (bedActive == "Bed 8")
-            {
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 0)
-                {
-                    // Blood Pressure Secondary Variables Integer
-                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out BedSideView8.diMin);
-                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out BedSideView8.diMax);
-                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out BedSideView8.syMin);
-                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out BedSideView8.syMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 1)
-                {
-                    // Pulse Rate Secondary Variables Integer
-                    int.TryParse(PulseRate_Minimum_TextBox.Text, out BedSideView8.prMin);
-                    int.TryParse(PulseRate_Maximum_TextBox.Text, out BedSideView8.prMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 2)
-                {
-                    // Breathing Rate Secondary Variables Integer
-                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out BedSideView8.brMin);
-                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out BedSideView8.brMax);
-                }
-
-                if (DefaultPanel_SocketComboBox.SelectedIndex == 3)
-                {
-                    // Temperature Secondary Variables Integer
-                    int.TryParse(Temperature_Minimum_TextBox.Text, out BedSideView8.tpMin);
-                    int.TryParse(Temperature_Maximum_TextBox.Text, out BedSideView8.tpMax);
-                }
-            }
-
             SocketConfiguration socket = new SocketConfiguration();
 
-            #region Button Configuration
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.bpParameters == 1 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
 
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
                         BedSideView1.moduleState1 = 1;
-                        BedSideView1.bloodInsert1 = 1;
+
+                        BedSideView1.bed1singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket1.Visible = false;
+
                         BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
                         BedSideView1.moduleState2 = 1;
-                        BedSideView1.bloodInsert2 = 1;
+
+                        BedSideView1.bed1singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket2.Visible = false;
+
                         BedSideView1.insertClicked2 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
                         BedSideView1.moduleState3 = 1;
-                        BedSideView1.bloodInsert3 = 1;
+
+                        BedSideView1.bed1singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket3.Visible = false;
+
                         BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
                         BedSideView1.moduleState4 = 1;
-                        BedSideView1.bloodInsert4 = 1;
+
+                        BedSideView1.bed1singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket4.Visible = false;
+
                         BedSideView1.insertClicked4 = 0;
                     }
-                    BedSideView1 bed1 = new BedSideView1();
-                    bed1.Show();
-                    bed1.Location = this.Location;
+
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin1);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax1);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin1);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax1);
+
+                    BedSideView1.bed1singleton.Show();
+                    BedSideView1.bed1singleton.Location = this.Location;
                     this.Hide();
                 }
-
-                else if (bedActive == "Bed 2")
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == true)
                 {
-                    if (BedSideView2.insertClicked1 == 1)
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
+
+                if (BedLabel.Text == "Bed 2" && BedSideView2.bloodActive == false)
+                {
+                    if (BedSideView2.insertClicked1 == 1 && BedSideView2.bloodActive == false)
                     {
-                        BedSideView2.bloodInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+
+                        BedSideView2.bed2singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket1.Visible = false;
+
                         BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
-                        BedSideView2.bloodInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+
+                        BedSideView2.bed2singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket2.Visible = false;
+
                         BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
-                        BedSideView2.bloodInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+
+                        BedSideView2.bed2singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket3.Visible = false;
+
                         BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView2.bloodInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+
+                        BedSideView2.bed2singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket4.Visible = false;
+
                         BedSideView2.insertClicked4 = 0;
                     }
 
-                    BedSideView2 bed2 = new BedSideView2();
-                    bed2.Show();
-                    bed2.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin2);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax2);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin2);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax2);
+
+                    BedSideView2.bed2singleton.Show();
+                    BedSideView2.bed2singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.bloodActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
-                        BedSideView3.bloodInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+
+                        BedSideView3.bed3singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket1.Visible = false;
+
                         BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
-                        BedSideView3.bloodInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+
+                        BedSideView3.bed3singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket2.Visible = false;
+
                         BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
-                        BedSideView3.bloodInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+
+                        BedSideView3.bed3singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket3.Visible = false;
+
                         BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView3.bloodInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+
+                        BedSideView3.bed3singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket4.Visible = false;
+
                         BedSideView3.insertClicked4 = 0;
                     }
 
-                    BedSideView3 bed3 = new BedSideView3();
-                    bed3.Show();
-                    bed3.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin3);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax3);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin3);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax3);
+
+                    BedSideView3.bed3singleton.Show();
+                    BedSideView3.bed3singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.bloodActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
-                        BedSideView4.bloodInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+
+                        BedSideView4.bed4singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket1.Visible = false;
+
                         BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
-                        BedSideView4.bloodInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+
+                        BedSideView4.bed4singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket2.Visible = false;
+
                         BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
-                        BedSideView4.bloodInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+
+                        BedSideView4.bed4singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket3.Visible = false;
+
                         BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
-                        BedSideView4.bloodInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+
+                        BedSideView4.bed4singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket4.Visible = false;
+
                         BedSideView4.insertClicked4 = 0;
                     }
 
-                    BedSideView4 bed4 = new BedSideView4();
-                    bed4.Show();
-                    bed4.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin4);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax4);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin4);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax4);
+
+                    BedSideView4.bed4singleton.Show();
+                    BedSideView4.bed4singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.bloodActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
-                        BedSideView5.bloodInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+
+                        BedSideView5.bed5singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket1.Visible = false;
+
                         BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
-                        BedSideView5.bloodInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+
+                        BedSideView5.bed5singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket2.Visible = false;
+
                         BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
-                        BedSideView5.bloodInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+
+                        BedSideView5.bed5singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket3.Visible = false;
+
                         BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
-                        BedSideView5.bloodInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+
+                        BedSideView5.bed5singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket4.Visible = false;
+
                         BedSideView5.insertClicked4 = 0;
                     }
 
-                    BedSideView5 bed5 = new BedSideView5();
-                    bed5.Show();
-                    bed5.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin5);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax5);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin5);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax5);
+
+                    BedSideView5.bed5singleton.Show();
+                    BedSideView5.bed5singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.bloodActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
-                        BedSideView6.bloodInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+
+                        BedSideView6.bed6singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket1.Visible = false;
+
                         BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
-                        BedSideView6.bloodInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+
+                        BedSideView6.bed6singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket2.Visible = false;
+
                         BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
-                        BedSideView6.bloodInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+
+                        BedSideView6.bed6singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket3.Visible = false;
+
                         BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
-                        BedSideView6.bloodInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+
+                        BedSideView6.bed6singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket4.Visible = false;
+
                         BedSideView6.insertClicked4 = 0;
                     }
 
-                    BedSideView6 bed6 = new BedSideView6();
-                    bed6.Show();
-                    bed6.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin6);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax6);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin6);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax6);
+
+                    BedSideView6.bed6singleton.Show();
+                    BedSideView6.bed6singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.bloodActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
-                        BedSideView7.bloodInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+
+                        BedSideView7.bed7singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket1.Visible = false;
+
                         BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
-                        BedSideView7.bloodInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+
+                        BedSideView7.bed7singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket2.Visible = false;
+
                         BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
-                        BedSideView7.bloodInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+
+                        BedSideView7.bed7singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket3.Visible = false;
+
                         BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView7.bloodInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+
+                        BedSideView7.bed7singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket4.Visible = false;
+
                         BedSideView7.insertClicked4 = 0;
                     }
 
-                    BedSideView7 bed7 = new BedSideView7();
-                    bed7.Show();
-                    bed7.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin7);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax7);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin7);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax7);
+
+                    BedSideView7.bed7singleton.Show();
+                    BedSideView7.bed7singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView7.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.bloodActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
-                        BedSideView8.bloodInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+
+                        BedSideView8.bed8singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BloodPressurePanelBed1.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket1.Visible = false;
+
                         BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
-                        BedSideView8.bloodInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+
+                        BedSideView8.bed8singleton.BloodPressurePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BloodPressurePanelBed2.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket2.Visible = false;
+
                         BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
-                        BedSideView8.bloodInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+
+                        BedSideView8.bed8singleton.BloodPressurePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BloodPressurePanelBed3.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket3.Visible = false;
+
                         BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
-                        BedSideView8.bloodInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+
+                        BedSideView8.bed8singleton.BloodPressurePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BloodPressurePanelBed4.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket4.Visible = false;
+
                         BedSideView8.insertClicked4 = 0;
                     }
 
-                    BedSideView8 bed8 = new BedSideView8();
-                    bed8.Show();
-                    bed8.Location = this.Location;
+                    // Blood Pressure Secondary Variables Integer
+                    int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin8);
+                    int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax8);
+                    int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin8);
+                    int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMax8);
+
+                    BedSideView8.bed8singleton.Show();
+                    BedSideView8.bed8singleton.Location = this.Location;
                     this.Hide();
                 }
-
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.bloodActive == true)
+                {
+                    MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
+                }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prParameters == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
             {
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.pulseActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
-                        BedSideView1.pulseInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+
+                        BedSideView1.bed1singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket1.Visible = false;
+
                         BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
-                        BedSideView1.pulseInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+
+                        BedSideView1.bed1singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket2.Visible = false;
+
                         BedSideView1.insertClicked2 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
-                        BedSideView1.pulseInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+
+                        BedSideView1.bed1singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket3.Visible = false;
+
                         BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
-                        BedSideView1.pulseInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+
+                        BedSideView1.bed1singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket4.Visible = false;
+
                         BedSideView1.insertClicked4 = 0;
                     }
 
-                    BedSideView1 bed1 = new BedSideView1();
-                    bed1.Show();
-                    bed1.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin1);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax1);
+
+                    BedSideView1.bed1singleton.Show();
+                    BedSideView1.bed1singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 2")
+                if (BedLabel.Text == "Bed 2" && BedSideView2.pulseActive == false)
                 {
                     if (BedSideView2.insertClicked1 == 1)
                     {
-                        BedSideView2.pulseInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+
+                        BedSideView2.bed2singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket1.Visible = false;
+
                         BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
-                        BedSideView2.pulseInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+
+                        BedSideView2.bed2singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket2.Visible = false;
+
                         BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
-                        BedSideView2.pulseInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+
+                        BedSideView2.bed2singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket3.Visible = false;
+
                         BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView2.pulseInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+
+                        BedSideView2.bed2singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket4.Visible = false;
+
                         BedSideView2.insertClicked4 = 0;
                     }
 
-                    BedSideView2 bed2 = new BedSideView2();
-                    bed2.Show();
-                    bed2.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin2);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax2);
+
+                    BedSideView2.bed2singleton.Show();
+                    BedSideView2.bed2singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.pulseActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
-                        BedSideView3.pulseInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+
+                        BedSideView3.bed3singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket1.Visible = false;
+
                         BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
-                        BedSideView3.pulseInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+
+                        BedSideView3.bed3singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket2.Visible = false;
+
                         BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
-                        BedSideView3.pulseInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+
+                        BedSideView3.bed3singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket3.Visible = false;
+
                         BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView3.pulseInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+
+                        BedSideView3.bed3singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket4.Visible = false;
+
                         BedSideView3.insertClicked4 = 0;
                     }
 
-                    BedSideView3 bed3 = new BedSideView3();
-                    bed3.Show();
-                    bed3.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin3);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax3);
+
+                    BedSideView3.bed3singleton.Show();
+                    BedSideView3.bed3singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.pulseActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
-                        BedSideView4.pulseInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+
+                        BedSideView4.bed4singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket1.Visible = false;
+
                         BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
-                        BedSideView4.pulseInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+
+                        BedSideView4.bed4singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket2.Visible = false;
+
                         BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
-                        BedSideView4.pulseInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+
+                        BedSideView4.bed4singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket3.Visible = false;
+
                         BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
-                        BedSideView4.pulseInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+
+                        BedSideView4.bed4singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket4.Visible = false;
+
                         BedSideView4.insertClicked4 = 0;
                     }
 
-                    BedSideView4 bed4 = new BedSideView4();
-                    bed4.Show();
-                    bed4.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin4);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax4);
+
+                    BedSideView4.bed4singleton.Show();
+                    BedSideView4.bed4singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.pulseActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
-                        BedSideView5.pulseInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+
+                        BedSideView5.bed5singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket1.Visible = false;
+
                         BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
-                        BedSideView5.pulseInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+
+                        BedSideView5.bed5singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket2.Visible = false;
+
                         BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
-                        BedSideView5.pulseInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+
+                        BedSideView5.bed5singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket3.Visible = false;
+
                         BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
-                        BedSideView5.pulseInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+
+                        BedSideView5.bed5singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket4.Visible = false;
+
                         BedSideView5.insertClicked4 = 0;
                     }
 
-                    BedSideView5 bed5 = new BedSideView5();
-                    bed5.Show();
-                    bed5.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin5);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax5);
+
+                    BedSideView5.bed5singleton.Show();
+                    BedSideView5.bed5singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.pulseActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
-                        BedSideView6.pulseInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+
+                        BedSideView6.bed6singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket1.Visible = false;
+
                         BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
-                        BedSideView6.pulseInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+
+                        BedSideView6.bed6singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket2.Visible = false;
+
                         BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
-                        BedSideView6.pulseInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+
+                        BedSideView6.bed6singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket3.Visible = false;
+
                         BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
-                        BedSideView6.pulseInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+
+                        BedSideView6.bed6singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket4.Visible = false;
+
                         BedSideView6.insertClicked4 = 0;
                     }
 
-                    BedSideView6 bed6 = new BedSideView6();
-                    bed6.Show();
-                    bed6.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin6);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax6);
+
+                    BedSideView6.bed6singleton.Show();
+                    BedSideView6.bed6singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.pulseActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
-                        BedSideView7.pulseInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+
+                        BedSideView7.bed7singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket1.Visible = false;
+
                         BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
-                        BedSideView7.pulseInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+
+                        BedSideView7.bed7singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket2.Visible = false;
+
                         BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
-                        BedSideView7.pulseInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+
+                        BedSideView7.bed7singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket3.Visible = false;
+
                         BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView7.pulseInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+
+                        BedSideView7.bed7singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket4.Visible = false;
+
                         BedSideView7.insertClicked4 = 0;
                     }
 
-                    BedSideView7 bed7 = new BedSideView7();
-                    bed7.Show();
-                    bed7.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin7);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax7);
+
+                    BedSideView7.bed7singleton.Show();
+                    BedSideView7.bed7singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView8.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.pulseActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
-                        BedSideView8.pulseInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+
+                        BedSideView8.bed8singleton.PulseRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.PulseRatePanelBed1.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket1.Visible = false;
+
                         BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
-                        BedSideView8.pulseInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+
+                        BedSideView8.bed8singleton.PulseRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.PulseRatePanelBed2.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket2.Visible = false;
+
                         BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
-                        BedSideView8.pulseInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+
+                        BedSideView8.bed8singleton.PulseRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.PulseRatePanelBed3.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket3.Visible = false;
+
                         BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
-                        BedSideView8.pulseInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+
+                        BedSideView8.bed8singleton.PulseRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.PulseRatePanelBed4.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket4.Visible = false;
+
                         BedSideView8.insertClicked4 = 0;
                     }
 
-                    BedSideView8 bed8 = new BedSideView8();
-                    bed8.Show();
-                    bed8.Location = this.Location;
+                    // Pulse Rate Secondary Variables Integer
+                    int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMin8);
+                    int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMax8);
+
+                    BedSideView8.bed8singleton.Show();
+                    BedSideView8.bed8singleton.Location = this.Location;
                     this.Hide();
+                }
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.pulseActive == true)
+                {
+                    MessageBox.Show("You already have a Pulse Rate Module Active, Eject it first!");
                 }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brParameters == 1 && SocketConfiguration.brDiff >= 5)  // Breathing Rate
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brDiff >= 5)  // Breathing Rate
             {
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.breathingActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
-                        BedSideView1.breathingInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+
+                        BedSideView1.bed1singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket1.Visible = false;
+
                         BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
-                        BedSideView1.breathingInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+
+                        BedSideView1.bed1singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket2.Visible = false;
+
                         BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
-                        BedSideView1.breathingInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+
+                        BedSideView1.bed1singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket3.Visible = false;
+
                         BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
-                        BedSideView1.breathingInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+
+                        BedSideView1.bed1singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket4.Visible = false;
+
                         BedSideView1.insertClicked4 = 0;
                     }
 
-                    BedSideView1 bed1 = new BedSideView1();
-                    bed1.Show();
-                    bed1.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin1);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax1);
+
+                    BedSideView1.bed1singleton.Show();
+                    BedSideView1.bed1singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 2")
+                if (BedLabel.Text == "Bed 2" && BedSideView2.breathingActive == false)
                 {
                     if (BedSideView2.insertClicked1 == 1)
                     {
-                        BedSideView2.breathingInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+
+                        BedSideView2.bed2singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket1.Visible = false;
+
                         BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
-                        BedSideView2.breathingInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+
+                        BedSideView2.bed2singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket2.Visible = false;
+
                         BedSideView2.insertClicked2 = 0;
                     }
                     else if (BedSideView2.insertClicked3 == 1)
                     {
-                        BedSideView2.breathingInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+
+                        BedSideView2.bed2singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket3.Visible = false;
+
                         BedSideView2.insertClicked3 = 0;
                     }
                     else if (BedSideView2.insertClicked4 == 1)
                     {
-                        BedSideView2.breathingInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+
+                        BedSideView2.bed2singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket4.Visible = false;
+
                         BedSideView2.insertClicked4 = 0;
                     }
 
-                    BedSideView2 bed2 = new BedSideView2();
-                    bed2.Show();
-                    bed2.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin2);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax2);
+
+                    BedSideView2.bed2singleton.Show();
+                    BedSideView2.bed2singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.breathingActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
-                        BedSideView3.breathingInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+
+                        BedSideView3.bed3singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket1.Visible = false;
+
                         BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
-                        BedSideView3.breathingInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+
+                        BedSideView3.bed3singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket2.Visible = false;
+
                         BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
-                        BedSideView3.breathingInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+
+                        BedSideView3.bed3singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket3.Visible = false;
+
                         BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView3.breathingInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+
+                        BedSideView3.bed3singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket4.Visible = false;
+
                         BedSideView3.insertClicked4 = 0;
                     }
 
-                    BedSideView3 bed3 = new BedSideView3();
-                    bed3.Show();
-                    bed3.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin3);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax3);
+
+                    BedSideView3.bed3singleton.Show();
+                    BedSideView3.bed3singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.breathingActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
-                        BedSideView4.breathingInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+
+                        BedSideView4.bed4singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket1.Visible = false;
+
                         BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
-                        BedSideView4.breathingInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+
+                        BedSideView4.bed4singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket2.Visible = false;
+
                         BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
-                        BedSideView4.breathingInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+
+                        BedSideView4.bed4singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket3.Visible = false;
+
                         BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
-                        BedSideView4.breathingInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+
+                        BedSideView4.bed4singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket4.Visible = false;
+
                         BedSideView4.insertClicked4 = 0;
                     }
 
-                    BedSideView4 bed4 = new BedSideView4();
-                    bed4.Show();
-                    bed4.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin4);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax4);
+
+                    BedSideView4.bed4singleton.Show();
+                    BedSideView4.bed4singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.breathingActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
-                        BedSideView5.breathingInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+
+                        BedSideView5.bed5singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket1.Visible = false;
+
                         BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
-                        BedSideView5.breathingInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+
+                        BedSideView5.bed5singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket2.Visible = false;
+
                         BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
-                        BedSideView5.breathingInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+
+                        BedSideView5.bed5singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket3.Visible = false;
+
                         BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
-                        BedSideView5.breathingInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+
+                        BedSideView5.bed5singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket4.Visible = false;
+
                         BedSideView5.insertClicked4 = 0;
                     }
 
-                    BedSideView5 bed5 = new BedSideView5();
-                    bed5.Show();
-                    bed5.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin5);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax5);
+
+                    BedSideView5.bed5singleton.Show();
+                    BedSideView5.bed5singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.breathingActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
-                        BedSideView6.breathingInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+
+                        BedSideView6.bed6singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket1.Visible = false;
+
                         BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
-                        BedSideView6.breathingInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+
+                        BedSideView6.bed6singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket2.Visible = false;
+
                         BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
-                        BedSideView6.breathingInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+
+                        BedSideView6.bed6singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket3.Visible = false;
+
                         BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
-                        BedSideView6.breathingInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+
+                        BedSideView6.bed6singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket4.Visible = false;
+
                         BedSideView6.insertClicked4 = 0;
                     }
 
-                    BedSideView6 bed6 = new BedSideView6();
-                    bed6.Show();
-                    bed6.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin6);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax6);
+
+                    BedSideView6.bed6singleton.Show();
+                    BedSideView6.bed6singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.breathingActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
-                        BedSideView7.breathingInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+
+                        BedSideView7.bed7singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket1.Visible = false;
+
                         BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
-                        BedSideView7.breathingInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+
+                        BedSideView7.bed7singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket2.Visible = false;
+
                         BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
-                        BedSideView7.breathingInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+
+                        BedSideView7.bed7singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket3.Visible = false;
+
                         BedSideView7.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView7.breathingInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+
+                        BedSideView7.bed7singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket4.Visible = false;
+
                         BedSideView7.insertClicked4 = 0;
                     }
 
-                    BedSideView7 bed7 = new BedSideView7();
-                    bed7.Show();
-                    bed7.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin7);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax7);
+
+                    BedSideView7.bed7singleton.Show();
+                    BedSideView7.bed7singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView7.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.breathingActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
-                        BedSideView8.breathingInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+
+                        BedSideView8.bed8singleton.BreathingRatePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BreathingRatePanelBed1.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket1.Visible = false;
+
                         BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
-                        BedSideView8.breathingInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+
+                        BedSideView8.bed8singleton.BreathingRatePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BreathingRatePanelBed2.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket2.Visible = false;
+
                         BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
-                        BedSideView8.breathingInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+
+                        BedSideView8.bed8singleton.BreathingRatePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BreathingRatePanelBed3.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket3.Visible = false;
+
                         BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
-                        BedSideView8.breathingInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+
+                        BedSideView8.bed8singleton.BreathingRatePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.BreathingRatePanelBed4.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket4.Visible = false;
+
                         BedSideView8.insertClicked4 = 0;
                     }
 
-                    BedSideView8 bed8 = new BedSideView8();
-                    bed8.Show();
-                    bed8.Location = this.Location;
+                    // Breathing Rate Secondary Variables Integer
+                    int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMin8);
+                    int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMax8);
+
+                    BedSideView8.bed8singleton.Show();
+                    BedSideView8.bed8singleton.Location = this.Location;
                     this.Hide();
+                }
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.breathingActive == true)
+                {
+                    MessageBox.Show("You already have a Breathing Rate Module Active, Eject it first!");
                 }
             }
 
-            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tpParameters == 1 && SocketConfiguration.tempDiff >= 1)  // Temperature
+            else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tempDiff >= 1)  // Temperature
             {
-                if (bedActive == "Bed 1")
+                if (BedLabel.Text == "Bed 1" && BedSideView1.tempActive == false)
                 {
                     if (BedSideView1.insertClicked1 == 1)
                     {
-                        BedSideView1.tempInsert1 = 1;
                         BedSideView1.moduleState1 = 1;
+
+                        BedSideView1.bed1singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket1.Visible = false;
+
                         BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
                     {
-                        BedSideView1.tempInsert2 = 1;
                         BedSideView1.moduleState2 = 1;
+
+                        BedSideView1.bed1singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket2.Visible = false;
+
                         BedSideView1.insertClicked2 = 0;
                     }
                     else if (BedSideView1.insertClicked3 == 1)
                     {
-                        BedSideView1.tempInsert3 = 1;
                         BedSideView1.moduleState3 = 1;
+
+                        BedSideView1.bed1singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket3.Visible = false;
+
                         BedSideView1.insertClicked3 = 0;
                     }
                     else if (BedSideView1.insertClicked4 == 1)
                     {
-                        BedSideView1.tempInsert4 = 1;
                         BedSideView1.moduleState4 = 1;
+
+                        BedSideView1.bed1singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView1.bed1singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView1.bed1singleton.InsertASocket4.Visible = false;
+
                         BedSideView1.insertClicked4 = 0;
                     }
 
-                    BedSideView1 bed1 = new BedSideView1();
-                    bed1.Show();
-                    bed1.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin1);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax1);
+
+                    BedSideView1.bed1singleton.Show();
+                    BedSideView1.bed1singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 1" && BedSideView1.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 2")
+                if (BedLabel.Text == "Bed 2" && BedSideView2.tempActive == false)
                 {
                     if (BedSideView2.insertClicked1 == 1)
                     {
-                        BedSideView2.tempInsert1 = 1;
                         BedSideView2.moduleState1 = 1;
+
+                        BedSideView2.bed2singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket1.Visible = false;
+
                         BedSideView2.insertClicked1 = 0;
                     }
                     else if (BedSideView2.insertClicked2 == 1)
                     {
-                        BedSideView2.tempInsert2 = 1;
                         BedSideView2.moduleState2 = 1;
+
+                        BedSideView2.bed2singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket2.Visible = false;
+
                         BedSideView2.insertClicked2 = 0;
                     }
-                    else if (BedSideView3.insertClicked3 == 1)
+                    else if (BedSideView2.insertClicked3 == 1)
                     {
-                        BedSideView2.tempInsert3 = 1;
                         BedSideView2.moduleState3 = 1;
+
+                        BedSideView2.bed2singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket3.Visible = false;
+
                         BedSideView2.insertClicked3 = 0;
                     }
-                    else if (BedSideView3.insertClicked4 == 1)
+                    else if (BedSideView2.insertClicked4 == 1)
                     {
-                        BedSideView2.tempInsert4 = 1;
                         BedSideView2.moduleState4 = 1;
+
+                        BedSideView2.bed2singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView2.bed2singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView2.bed2singleton.InsertASocket4.Visible = false;
+
                         BedSideView2.insertClicked4 = 0;
                     }
 
-                    BedSideView2 bed2 = new BedSideView2();
-                    bed2.Show();
-                    bed2.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin2);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax2);
+
+                    BedSideView2.bed2singleton.Show();
+                    BedSideView2.bed2singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 2" && BedSideView2.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 3")
+                if (BedLabel.Text == "Bed 3" && BedSideView3.tempActive == false)
                 {
                     if (BedSideView3.insertClicked1 == 1)
                     {
-                        BedSideView3.tempInsert1 = 1;
                         BedSideView3.moduleState1 = 1;
+
+                        BedSideView3.bed3singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket1.Visible = false;
+
                         BedSideView3.insertClicked1 = 0;
                     }
                     else if (BedSideView3.insertClicked2 == 1)
                     {
-                        BedSideView3.tempInsert2 = 1;
                         BedSideView3.moduleState2 = 1;
+
+                        BedSideView3.bed3singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket2.Visible = false;
+
                         BedSideView3.insertClicked2 = 0;
                     }
                     else if (BedSideView3.insertClicked3 == 1)
                     {
-                        BedSideView3.tempInsert3 = 1;
                         BedSideView3.moduleState3 = 1;
+
+                        BedSideView3.bed3singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket3.Visible = false;
+
                         BedSideView3.insertClicked3 = 0;
                     }
                     else if (BedSideView3.insertClicked4 == 1)
                     {
-                        BedSideView3.tempInsert4 = 1;
                         BedSideView3.moduleState4 = 1;
+
+                        BedSideView3.bed3singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView3.bed3singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView3.bed3singleton.InsertASocket4.Visible = false;
+
                         BedSideView3.insertClicked4 = 0;
                     }
 
-                    BedSideView3 bed3 = new BedSideView3();
-                    bed3.Show();
-                    bed3.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin3);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax3);
+
+                    BedSideView3.bed3singleton.Show();
+                    BedSideView3.bed3singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 3" && BedSideView3.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 4")
+                if (BedLabel.Text == "Bed 4" && BedSideView4.tempActive == false)
                 {
                     if (BedSideView4.insertClicked1 == 1)
                     {
-                        BedSideView4.tempInsert1 = 1;
                         BedSideView4.moduleState1 = 1;
+
+                        BedSideView4.bed4singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket1.Visible = false;
+
                         BedSideView4.insertClicked1 = 0;
                     }
                     else if (BedSideView4.insertClicked2 == 1)
                     {
-                        BedSideView4.tempInsert2 = 1;
                         BedSideView4.moduleState2 = 1;
+
+                        BedSideView4.bed4singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket2.Visible = false;
+
                         BedSideView4.insertClicked2 = 0;
                     }
                     else if (BedSideView4.insertClicked3 == 1)
                     {
-                        BedSideView4.tempInsert3 = 1;
                         BedSideView4.moduleState3 = 1;
+
+                        BedSideView4.bed4singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket3.Visible = false;
+
                         BedSideView4.insertClicked3 = 0;
                     }
                     else if (BedSideView4.insertClicked4 == 1)
                     {
-                        BedSideView4.tempInsert4 = 1;
                         BedSideView4.moduleState4 = 1;
+
+                        BedSideView4.bed4singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView4.bed4singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView4.bed4singleton.InsertASocket4.Visible = false;
+
                         BedSideView4.insertClicked4 = 0;
                     }
 
-                    BedSideView4 bed4 = new BedSideView4();
-                    bed4.Show();
-                    bed4.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin4);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax4);
+
+                    BedSideView4.bed4singleton.Show();
+                    BedSideView4.bed4singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 4" && BedSideView4.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 5")
+                if (BedLabel.Text == "Bed 5" && BedSideView5.tempActive == false)
                 {
                     if (BedSideView5.insertClicked1 == 1)
                     {
-                        BedSideView5.tempInsert1 = 1;
                         BedSideView5.moduleState1 = 1;
+
+                        BedSideView5.bed5singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket1.Visible = false;
+
                         BedSideView5.insertClicked1 = 0;
                     }
                     else if (BedSideView5.insertClicked2 == 1)
                     {
-                        BedSideView5.tempInsert2 = 1;
                         BedSideView5.moduleState2 = 1;
+
+                        BedSideView5.bed5singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket2.Visible = false;
+
                         BedSideView5.insertClicked2 = 0;
                     }
                     else if (BedSideView5.insertClicked3 == 1)
                     {
-                        BedSideView5.tempInsert3 = 1;
                         BedSideView5.moduleState3 = 1;
+
+                        BedSideView5.bed5singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket3.Visible = false;
+
                         BedSideView5.insertClicked3 = 0;
                     }
                     else if (BedSideView5.insertClicked4 == 1)
                     {
-                        BedSideView5.tempInsert4 = 1;
                         BedSideView5.moduleState4 = 1;
+
+                        BedSideView5.bed5singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView5.bed5singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView5.bed5singleton.InsertASocket4.Visible = false;
+
                         BedSideView5.insertClicked4 = 0;
                     }
 
-                    BedSideView5 bed5 = new BedSideView5();
-                    bed5.Show();
-                    bed5.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin5);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax5);
+
+                    BedSideView5.bed5singleton.Show();
+                    BedSideView5.bed5singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 5" && BedSideView5.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 6")
+                if (BedLabel.Text == "Bed 6" && BedSideView6.tempActive == false)
                 {
                     if (BedSideView6.insertClicked1 == 1)
                     {
-                        BedSideView6.tempInsert1 = 1;
                         BedSideView6.moduleState1 = 1;
+
+                        BedSideView6.bed6singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket1.Visible = false;
+
                         BedSideView6.insertClicked1 = 0;
                     }
                     else if (BedSideView6.insertClicked2 == 1)
                     {
-                        BedSideView6.tempInsert2 = 1;
                         BedSideView6.moduleState2 = 1;
+
+                        BedSideView6.bed6singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket2.Visible = false;
+
                         BedSideView6.insertClicked2 = 0;
                     }
                     else if (BedSideView6.insertClicked3 == 1)
                     {
-                        BedSideView6.tempInsert3 = 1;
                         BedSideView6.moduleState3 = 1;
+
+                        BedSideView6.bed6singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket3.Visible = false;
+
                         BedSideView6.insertClicked3 = 0;
                     }
                     else if (BedSideView6.insertClicked4 == 1)
                     {
-                        BedSideView6.tempInsert4 = 1;
                         BedSideView6.moduleState4 = 1;
+
+                        BedSideView6.bed6singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView6.bed6singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView6.bed6singleton.InsertASocket4.Visible = false;
+
                         BedSideView6.insertClicked4 = 0;
                     }
 
-                    BedSideView6 bed6 = new BedSideView6();
-                    bed6.Show();
-                    bed6.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin6);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax6);
+
+                    BedSideView6.bed6singleton.Show();
+                    BedSideView6.bed6singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 6" && BedSideView6.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 7")
+                if (BedLabel.Text == "Bed 7" && BedSideView7.tempActive == false)
                 {
                     if (BedSideView7.insertClicked1 == 1)
                     {
-                        BedSideView7.tempInsert1 = 1;
                         BedSideView7.moduleState1 = 1;
+
+                        BedSideView7.bed7singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket1.Visible = false;
+
                         BedSideView7.insertClicked1 = 0;
                     }
                     else if (BedSideView7.insertClicked2 == 1)
                     {
-                        BedSideView7.tempInsert2 = 1;
                         BedSideView7.moduleState2 = 1;
+
+                        BedSideView7.bed7singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket2.Visible = false;
+
                         BedSideView7.insertClicked2 = 0;
                     }
                     else if (BedSideView7.insertClicked3 == 1)
                     {
-                        BedSideView7.tempInsert3 = 1;
                         BedSideView7.moduleState3 = 1;
+
+                        BedSideView7.bed7singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket3.Visible = false;
+
                         BedSideView7.insertClicked3 = 0;
                     }
-                    else if (BedSideView3.insertClicked4 == 1)
+                    else if (BedSideView7.insertClicked4 == 1)
                     {
-                        BedSideView7.tempInsert4 = 1;
                         BedSideView7.moduleState4 = 1;
+
+                        BedSideView7.bed7singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView7.bed7singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView7.bed7singleton.InsertASocket4.Visible = false;
+
                         BedSideView7.insertClicked4 = 0;
                     }
 
-                    BedSideView7 bed7 = new BedSideView7();
-                    bed7.Show();
-                    bed7.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin7);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax7);
+
+                    BedSideView7.bed7singleton.Show();
+                    BedSideView7.bed7singleton.Location = this.Location;
                     this.Hide();
                 }
+                else if (BedLabel.Text == "Bed 7" && BedSideView7.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
+                }
 
-                else if (bedActive == "Bed 8")
+                if (BedLabel.Text == "Bed 8" && BedSideView8.tempActive == false)
                 {
                     if (BedSideView8.insertClicked1 == 1)
                     {
-                        BedSideView8.tempInsert1 = 1;
                         BedSideView8.moduleState1 = 1;
+
+                        BedSideView8.bed8singleton.TemperaturePanelBed1.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.TemperaturePanelBed1.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket1.Visible = false;
+
                         BedSideView8.insertClicked1 = 0;
                     }
                     else if (BedSideView8.insertClicked2 == 1)
                     {
-                        BedSideView8.tempInsert2 = 1;
                         BedSideView8.moduleState2 = 1;
+
+                        BedSideView8.bed8singleton.TemperaturePanelBed2.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.TemperaturePanelBed2.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket2.Visible = false;
+
                         BedSideView8.insertClicked2 = 0;
                     }
                     else if (BedSideView8.insertClicked3 == 1)
                     {
-                        BedSideView8.tempInsert3 = 1;
                         BedSideView8.moduleState3 = 1;
+
+                        BedSideView8.bed8singleton.TemperaturePanelBed3.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.TemperaturePanelBed3.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket3.Visible = false;
+
                         BedSideView8.insertClicked3 = 0;
                     }
                     else if (BedSideView8.insertClicked4 == 1)
                     {
-                        BedSideView8.tempInsert4 = 1;
                         BedSideView8.moduleState4 = 1;
+
+                        BedSideView8.bed8singleton.TemperaturePanelBed4.Dock = DockStyle.Fill;
+                        BedSideView8.bed8singleton.TemperaturePanelBed4.Visible = true;
+                        BedSideView8.bed8singleton.InsertASocket4.Visible = false;
+
                         BedSideView8.insertClicked4 = 0;
                     }
 
-                    BedSideView8 bed8 = new BedSideView8();
-                    bed8.Show();
-                    bed8.Location = this.Location;
+                    // Temperature Secondary Variables Integer
+                    int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMin8);
+                    int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMax8);
+
+                    BedSideView8.bed8singleton.Show();
+                    BedSideView8.bed8singleton.Location = this.Location;
                     this.Hide();
+                }
+                else if (BedLabel.Text == "Bed 8" && BedSideView8.tempActive == true)
+                {
+                    MessageBox.Show("You already have a Temperature Module Active, Eject it first!");
                 }
             }
 
             else
             {
-                if (SocketConfiguration.bpParameters == 0)
-                {
-                    MessageBox.Show("Make sure the input is numeric ONLY");
-                }
                 if ((SocketConfiguration.diDiff < 30 && DefaultPanel_SocketComboBox.SelectedIndex == 0) || (SocketConfiguration.syDiff < 20 && DefaultPanel_SocketComboBox.SelectedIndex == 0))
                 {
                     MessageBox.Show("The Diastolic difference must be 30 or greater and the Systolic difference must be 20 or greater");
@@ -1717,7 +2242,423 @@ namespace FinalProject
                 }
             }
 
+            #region BedSideView1 TextBox.Text Assignment
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin1.ToString();
+
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax1.ToString();
+            BedSideView1.bed1singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax1.ToString();
+
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin1.ToString();
+
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax1.ToString();
+            BedSideView1.bed1singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax1.ToString();
+
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin1.ToString();
+
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax1.ToString();
+            BedSideView1.bed1singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax1.ToString();
+
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin1.ToString();
+
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax1.ToString();
+            BedSideView1.bed1singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax1.ToString();
+
+            BedSideView1.bed1singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin1.ToString();
+            BedSideView1.bed1singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin1.ToString();
+
+            BedSideView1.bed1singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax1.ToString();
+            BedSideView1.bed1singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax1.ToString();
             #endregion
+
+            #region BedSideView2 TextBox.Text Assignment
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin2.ToString();
+
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax2.ToString();
+            BedSideView2.bed2singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax2.ToString();
+
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin2.ToString();
+
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax2.ToString();
+            BedSideView2.bed2singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax2.ToString();
+
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin2.ToString();
+
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax2.ToString();
+            BedSideView2.bed2singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax2.ToString();
+
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin2.ToString();
+
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax2.ToString();
+            BedSideView2.bed2singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax2.ToString();
+
+            BedSideView2.bed2singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin2.ToString();
+            BedSideView2.bed2singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin2.ToString();
+
+            BedSideView2.bed2singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax2.ToString();
+            BedSideView2.bed2singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax2.ToString();
+            #endregion
+
+            #region BedSideView3 TextBox.Text Assignment
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin3.ToString();
+
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax3.ToString();
+            BedSideView3.bed3singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax3.ToString();
+
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin3.ToString();
+
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax3.ToString();
+            BedSideView3.bed3singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax3.ToString();
+
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin3.ToString();
+
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax3.ToString();
+            BedSideView3.bed3singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax3.ToString();
+
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin3.ToString();
+
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax3.ToString();
+            BedSideView3.bed3singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax3.ToString();
+
+            BedSideView3.bed3singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin3.ToString();
+            BedSideView3.bed3singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin3.ToString();
+
+            BedSideView3.bed3singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax3.ToString();
+            BedSideView3.bed3singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax3.ToString();
+            #endregion
+
+            #region BedSideView4 TextBox.Text Assignment
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin4.ToString();
+
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax4.ToString();
+            BedSideView4.bed4singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax4.ToString();
+
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin4.ToString();
+
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax4.ToString();
+            BedSideView4.bed4singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax4.ToString();
+
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin4.ToString();
+
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax4.ToString();
+            BedSideView4.bed4singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax4.ToString();
+
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin4.ToString();
+
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax4.ToString();
+            BedSideView4.bed4singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax4.ToString();
+
+            BedSideView4.bed4singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin4.ToString();
+            BedSideView4.bed4singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin4.ToString();
+
+            BedSideView4.bed4singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax4.ToString();
+            BedSideView4.bed4singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax4.ToString();
+            #endregion
+
+            #region BedSideView5 TextBox.Text Assignment
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin5.ToString();
+
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax5.ToString();
+            BedSideView5.bed5singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax5.ToString();
+
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin5.ToString();
+
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax5.ToString();
+            BedSideView5.bed5singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax5.ToString();
+
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin5.ToString();
+
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax5.ToString();
+            BedSideView5.bed5singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax5.ToString();
+
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin5.ToString();
+
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax5.ToString();
+            BedSideView5.bed5singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax5.ToString();
+
+            BedSideView5.bed5singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin5.ToString();
+            BedSideView5.bed5singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin5.ToString();
+
+            BedSideView5.bed5singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax5.ToString();
+            BedSideView5.bed5singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax5.ToString();
+            #endregion
+
+            #region BedSideView6 TextBox.Text Assignment
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin6.ToString();
+
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax6.ToString();
+            BedSideView6.bed6singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax6.ToString();
+
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin6.ToString();
+
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax6.ToString();
+            BedSideView6.bed6singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax6.ToString();
+
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin6.ToString();
+
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax6.ToString();
+            BedSideView6.bed6singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax6.ToString();
+
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin6.ToString();
+
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax6.ToString();
+            BedSideView6.bed6singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax6.ToString();
+
+            BedSideView6.bed6singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin6.ToString();
+            BedSideView6.bed6singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin6.ToString();
+
+            BedSideView6.bed6singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax6.ToString();
+            BedSideView6.bed6singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax6.ToString();
+            #endregion
+
+            #region BedSideView7 TextBox.Text Assignment
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin7.ToString();
+
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax7.ToString();
+            BedSideView7.bed7singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax7.ToString();
+
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin7.ToString();
+
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax7.ToString();
+            BedSideView7.bed7singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax7.ToString();
+
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin7.ToString();
+
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax7.ToString();
+            BedSideView7.bed7singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax7.ToString();
+
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin7.ToString();
+
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax7.ToString();
+            BedSideView7.bed7singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax7.ToString();
+
+            BedSideView7.bed7singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin7.ToString();
+            BedSideView7.bed7singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin7.ToString();
+
+            BedSideView7.bed7singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax7.ToString();
+            BedSideView7.bed7singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax7.ToString();
+            #endregion
+
+            #region BedSideView8 TextBox.Text Assignment
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.syMin8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.syMin8.ToString();
+
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.syMax8.ToString();
+            BedSideView8.bed8singleton.SyBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.syMax8.ToString();
+
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text3.Text = SocketConfiguration.diMin8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Minimum_Text4.Text = SocketConfiguration.diMin8.ToString();
+
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text.Text = SocketConfiguration.diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text2.Text = SocketConfiguration.diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text3.Text = SocketConfiguration.diMax8.ToString();
+            BedSideView8.bed8singleton.DiBloodPressurePanelBed_Maximum_Text4.Text = SocketConfiguration.diMax8.ToString();
+
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text.Text = SocketConfiguration.brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text2.Text = SocketConfiguration.brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text3.Text = SocketConfiguration.brMin8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Minimum_Text4.Text = SocketConfiguration.brMin8.ToString();
+
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text.Text = SocketConfiguration.brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text2.Text = SocketConfiguration.brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text3.Text = SocketConfiguration.brMax8.ToString();
+            BedSideView8.bed8singleton.BreathingRate_Maximum_Text4.Text = SocketConfiguration.brMax8.ToString();
+
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text.Text = SocketConfiguration.prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text2.Text = SocketConfiguration.prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text3.Text = SocketConfiguration.prMin8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Minimum_Text4.Text = SocketConfiguration.prMin8.ToString();
+
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text.Text = SocketConfiguration.prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text2.Text = SocketConfiguration.prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text3.Text = SocketConfiguration.prMax8.ToString();
+            BedSideView8.bed8singleton.PulseRate_Maximum_Text4.Text = SocketConfiguration.prMax8.ToString();
+
+            BedSideView8.bed8singleton.Temperature_Minimum_Text.Text = SocketConfiguration.tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text2.Text = SocketConfiguration.tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text3.Text = SocketConfiguration.tpMin8.ToString();
+            BedSideView8.bed8singleton.Temperature_Minimum_Text4.Text = SocketConfiguration.tpMin8.ToString();
+
+            BedSideView8.bed8singleton.Temperature_Maximum_Text.Text = SocketConfiguration.tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text2.Text = SocketConfiguration.tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text3.Text = SocketConfiguration.tpMax8.ToString();
+            BedSideView8.bed8singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax8.ToString();
+            #endregion
+
+
         }
     }
 }

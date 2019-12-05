@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace FinalProject
 {
@@ -14,13 +13,10 @@ namespace FinalProject
         public static Random randomizer = new Random();
 
         // User Variables
-        public static int weight, age, height;
-        public static int firstNameNumber, lastNameNumber;
-        public static string firstName, lastName;
         public static List<string> firstNameList = new List<string>()
         {
-            "Dinis", "Jorge", "Haris", "Kelly", "Brett", "Kevin", "Aaron", "Elias", "Erica", "Jacob", "Kye",
-            "Herbert", "Lucie", "Nancy", "Rebekah", "Maria", "Jamie", "Rhonda", "Haleema", "Poppy", "Melanie"
+            "Dinis", "Jorge", "Haris", "John", "Herbert", "Kevin", "Aaron", "Elias", "Jamie", "Jacob", "Kye",
+            "Brett", "Lucie", "Nancy", "Rebekah", "Maria", "Erica", "Rhonda", "Haleema", "Poppy", "Melanie"
         };
         public static List<string> lastNameList = new List<string>()
         {
@@ -29,93 +25,43 @@ namespace FinalProject
         };
 
         // Verifiers Variables
-        public static int bpParameters, prParameters, brParameters, tpParameters;
         public static int dockActive;
 
         // Values Variables
         public static int diDiff, syDiff, prDiff, brDiff, tempDiff;
 
-        public static bool dMi, dMa, sMi, sMa, pMi, pMa, bMi, bMa, tMi, tMa;
         public static int diMinC, diMaxC, syMinC, syMaxC, prMinC, prMaxC, brMinC, brMaxC, tpMinC, tpMaxC;
         #endregion
-        
+
         public SocketConfiguration()
         {
-            
+
             diDiff = diMaxC - diMinC;      // BPDi = 30
             syDiff = syMaxC - syMinC;      // BPSy = 20
             prDiff = prMaxC - prMinC;      // PR = 30
             brDiff = brMaxC - brMinC;      // BR = 5
             tempDiff = tpMaxC - tpMinC;    // TP = 2
 
-            /* A randomizer is implemented generating a value from 0 to 100
-             * so then we can randomize the values with percentage deciding
-             * then in each if how much would it be for the same statement */
-
-            RandomNameGenerator();
-            RandomGenUserValues();
-
-            /*#region Verifier
-
-            // Parameters Verification
-            dMi = IsNumeric(Convert.ToString(diMin));
-            dMa = IsNumeric(Convert.ToString(diMax));
-            sMi = IsNumeric(Convert.ToString(syMin));
-            sMa = IsNumeric(Convert.ToString(syMax));
-
-            pMi = IsNumeric(Convert.ToString(prMin));
-            pMa = IsNumeric(Convert.ToString(prMax));
-
-            bMi = IsNumeric(Convert.ToString(brMin));
-            bMa = IsNumeric(Convert.ToString(brMax));
-            tMi = IsNumeric(Convert.ToString(tpMin));
-            tMa = IsNumeric(Convert.ToString(tpMax));
-
-            #endregion*/
-
-            #region String Verifier - Must be only numeric  -- Dinis & Jorge
-            // Check if every textbox has input - Blood Pressure
-            if (dMi == true && dMa == true && sMi == true && sMa == true)
-            {
-                bpParameters = 1;
-            }
-            else { bpParameters = 0; }
-
-            // Pulse Rate
-            if (pMi == true && pMa == true)
-            {
-                prParameters = 1;
-            }
-            else { prParameters = 0; }
-
-            // Breathing Rate
-            if (bMi == true && bMa == true)
-            {
-                brParameters = 1;
-            }
-            else { brParameters = 0; }
-
-            // Temperature
-            if (tMi == true && tMa == true)
-            {
-                tpParameters = 1;
-            }
-            else { tpParameters = 0; }
-            #endregion
-
         }
 
-        public static bool IsNumeric(string var)
-        {
-            int Result;
-            return int.TryParse(var, out Result);
-        }
+        // Variables for the Randoms To connect with the BedSideViews
+        public static int diMin1, diMax1, syMin1, syMax1, prMin1, prMax1, brMin1, brMax1, tpMin1, tpMax1;
+        public static int diMin2, diMax2, syMin2, syMax2, prMin2, prMax2, brMin2, brMax2, tpMin2, tpMax2;
+        public static int diMin3, diMax3, syMin3, syMax3, prMin3, prMax3, brMin3, brMax3, tpMin3, tpMax3;
+        public static int diMin4, diMax4, syMin4, syMax4, prMin4, prMax4, brMin4, brMax4, tpMin4, tpMax4;
+        public static int diMin5, diMax5, syMin5, syMax5, prMin5, prMax5, brMin5, brMax5, tpMin5, tpMax5;
+        public static int diMin6, diMax6, syMin6, syMax6, prMin6, prMax6, brMin6, brMax6, tpMin6, tpMax6;
+        public static int diMin7, diMax7, syMin7, syMax7, prMin7, prMax7, brMin7, brMax7, tpMin7, tpMax7;
+        public static int diMin8, diMax8, syMin8, syMax8, prMin8, prMax8, brMin8, brMax8, tpMin8, tpMax8;
 
+        public static int weight, age, height;
+        public static int firstNameNumber, lastNameNumber;
+        public static string firstName, lastName;
         public static void RandomGenUserValues()
         {
             weight = randomizer.Next(60, 85);
-            age = randomizer.Next(25, 45);
             height = randomizer.Next(150, 210);
+            age = randomizer.Next(25, 45);
         }
 
         public static void RandomNameGenerator()
@@ -127,159 +73,122 @@ namespace FinalProject
             lastName = lastNameList[lastNameNumber];
         }
 
+        // Variables for the Randomizers below
+        public static int syValue, diValue, prValue, brValue;
+        public static double tempValue;
+        public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
 
-        //// Variables for the Randomizers below
-        //public static int randomizerSy, randomizerDi, randomizerPR, randomizerBR, randomizerTemp;
+        public static int SystolicValueRandom() // Returns syValue
+        {
+            randomizerSy = randomizer.Next(0, 100);
 
-        //public static string SystolicValueRandom() // Returns syValue
-        //{
-        //    randomizerSy = randomizer.Next(0, 100);
+            if (randomizerSy <= 5)
+            {
+                syValue = randomizer.Next(syMin1 - 20, syMin1 - 1);
+            }
+            else if ((randomizerSy > 5) && (randomizerSy < 95))
+            {
+                syValue = randomizer.Next(syMin1, syMax1);
+            }
+            else if (randomizerSy >= 95)
+            {
+                syValue = randomizer.Next(syMax1 + 1, syMax1 + 20);
+            }
 
-        //    if (randomizerSy <= 5)
-        //    {
-        //        syValue = randomizer.Next(syMin - 20, syMin - 1);
-        //    }
-        //    else if ((randomizerSy > 5) && (randomizerSy < 95))
-        //    {
-        //        syValue = randomizer.Next(syMin, syMax);
-        //    }
-        //    else if (randomizerSy >= 95)
-        //    {
-        //        syValue = randomizer.Next(syMax + 1, syMax + 20);
-        //    }
+            return syValue;
+        }
 
-        //    return syValue.ToString();
-        //}
+        public static int DiastolicValueRandom() // Returns diValue
+        {
+            randomizerDi = randomizer.Next(0, 100);
 
-        //public static string DiastolicValueRandom() // Returns diValue
-        //{
-        //    randomizerDi = randomizer.Next(0, 100);
+            if (randomizerDi <= 5)
+            {
+                diValue = randomizer.Next(diMin1 - 20, diMin1 - 1);
+            }
+            else if ((randomizerDi > 5) && (randomizerDi < 95))
+            {
+                diValue = randomizer.Next(diMin1, diMax1);
+            }
+            else if (randomizerDi >= 95)
+            {
+                diValue = randomizer.Next(diMin1 + 1, diMax1 + 20);
+            }
 
-        //    if (randomizerDi <= 5)
-        //    {
-        //        diValue = randomizer.Next(diMin - 20, diMin - 1);
-        //    }
-        //    else if ((randomizerDi > 5) && (randomizerDi < 95))
-        //    {
-        //        diValue = randomizer.Next(diMin, diMax);
-        //    }
-        //    else if (randomizerDi >= 95)
-        //    {
-        //        diValue = randomizer.Next(diMin + 1, diMax + 20);
-        //    }
+            return diValue;
+        }
 
-        //    return diValue.ToString();
-        //}
+        public static int PulseValueRandom()
+        {
+            randomizerPR = randomizer.Next(0, 100);
 
-        //public static string PulseValueRandom()
-        //{
-        //    randomizerPR = randomizer.Next(0, 100);
+            if (randomizerPR <= 5)
+            {
+                prValue = randomizer.Next(prMin1 - 20, prMin1 - 1);
+            }
+            else if ((randomizerPR > 5) && (randomizerPR < 95))
+            {
+                prValue = randomizer.Next(prMin1, prMax1);
+            }
+            else if (randomizerPR >= 95)
+            {
+                prValue = randomizer.Next(prMax1 + 1, prMax1 + 20);
+            }
 
-        //    if (randomizerPR <= 5)
-        //    {
-        //        prValue = randomizer.Next(prMin - 20, prMin - 1);
-        //    }
-        //    else if ((randomizerPR > 5) && (randomizerPR < 95))
-        //    {
-        //        prValue = randomizer.Next(prMin, prMax);
-        //    }
-        //    else if (randomizerPR >= 95)
-        //    {
-        //        prValue = randomizer.Next(prMax + 1, prMax + 20);
-        //    }
+            return prValue;
+        } // Returns prValue
 
-        //    return prValue.ToString();
-        //} // Returns prValue
+        public static int BreathingValueRandom()
+        {
+            randomizerBR = randomizer.Next(0, 100);
 
-        //public static string BreathingValueRandom()
-        //{
-        //    randomizerBR = randomizer.Next(0, 100);
+            if (randomizerBR <= 5)
+            {
+                brValue = randomizer.Next(brMin1 - 5, brMin1 - 1);
+            }
+            else if ((randomizerBR > 5) && (randomizerBR < 95))
+            {
+                brValue = randomizer.Next(brMin1, brMax1);
+            }
+            else if (randomizerBR >= 95)
+            {
+                brValue = randomizer.Next(brMax1 + 1, brMax1 + 50);
+            }
 
-        //    if (randomizerBR <= 5)
-        //    {
-        //        brValue = randomizer.Next(brMin - 5, brMin - 1);
-        //    }
-        //    else if ((randomizerBR > 5) && (randomizerBR < 95))
-        //    {
-        //        brValue = randomizer.Next(brMin, brMax);
-        //    }
-        //    else if (randomizerBR >= 95)
-        //    {
-        //        brValue = randomizer.Next(brMax + 1, brMax + 50);
-        //    }
+            return brValue;
+        } // Returns brValue
 
-        //    return brValue.ToString();
-        //} // Returns brValue
+        public static double TemperatureValueRandom()
+        {
+            randomizerTemp = randomizer.Next(0, 100);
 
-        //public static string TemperatureValueRandom()
-        //{
-        //    randomizerTemp = randomizer.Next(0, 100);
+            if (randomizerTemp <= 25)
+            {
+                tempValue = randomizer.Next(tpMin1 - 25, tpMin1 - 1);
+            }
+            else if ((randomizerTemp > 25) && (randomizerTemp < 75))
+            {
+                tempValue = randomizer.Next(tpMin1, tpMax1);
+            }
+            else if (randomizerTemp >= 75)
+            {
+                tempValue = randomizer.Next(tpMax1 + 1, tpMax1 + 45);
+            }
 
-        //    if (randomizerTemp <= 25)
-        //    {
-        //        tempValue = randomizer.Next(tpMin - 25, tpMin - 1);
-        //        tempValue /= 10;
-        //    }
-        //    else if ((randomizerTemp > 25) && (randomizerTemp < 75))
-        //    {
-        //        tempValue = randomizer.Next(tpMin, tpMax);
-        //        tempValue /= 10;
-        //    }
-        //    else if (randomizerTemp >= 75)
-        //    {
-        //        tempValue = randomizer.Next(tpMax + 1, tpMax + 45);
-        //        tempValue /= 10;
-        //    }
-
-        //    return tempValue.ToString();
-        //} // Returns tempValue
+            return tempValue;
+        } // Returns tempValue
 
         public static void StartRandom(object sender, EventArgs e)
         {
-            BedSideView1.SystolicValueRandom();
-            BedSideView2.SystolicValueRandom();
-            BedSideView3.SystolicValueRandom();
-            BedSideView4.SystolicValueRandom();
-            BedSideView5.SystolicValueRandom();
-            BedSideView6.SystolicValueRandom();
-            BedSideView7.SystolicValueRandom();
-            BedSideView8.SystolicValueRandom();
+            SystolicValueRandom();
+            
+            DiastolicValueRandom();
+            
+            PulseValueRandom();
 
-            BedSideView1.DiastolicValueRandom();
-            BedSideView2.DiastolicValueRandom();
-            BedSideView3.DiastolicValueRandom();
-            BedSideView4.DiastolicValueRandom();
-            BedSideView5.DiastolicValueRandom();
-            BedSideView6.DiastolicValueRandom();
-            BedSideView7.DiastolicValueRandom();
-            BedSideView8.DiastolicValueRandom();
+            BreathingValueRandom();
 
-            BedSideView1.PulseValueRandom();
-            BedSideView2.PulseValueRandom();
-            BedSideView3.PulseValueRandom();
-            BedSideView4.PulseValueRandom();
-            BedSideView5.PulseValueRandom();
-            BedSideView6.PulseValueRandom();
-            BedSideView7.PulseValueRandom();
-            BedSideView8.PulseValueRandom();
-
-            BedSideView1.BreathingValueRandom();
-            BedSideView2.BreathingValueRandom();
-            BedSideView3.BreathingValueRandom();
-            BedSideView4.BreathingValueRandom();
-            BedSideView5.BreathingValueRandom();
-            BedSideView6.BreathingValueRandom();
-            BedSideView7.BreathingValueRandom();
-            BedSideView8.BreathingValueRandom();
-
-            BedSideView1.TemperatureValueRandom();
-            BedSideView2.TemperatureValueRandom();
-            BedSideView3.TemperatureValueRandom();
-            BedSideView4.TemperatureValueRandom();
-            BedSideView5.TemperatureValueRandom();
-            BedSideView6.TemperatureValueRandom();
-            BedSideView7.TemperatureValueRandom();
-            BedSideView8.TemperatureValueRandom();
+            TemperatureValueRandom();
         }
     }
 }

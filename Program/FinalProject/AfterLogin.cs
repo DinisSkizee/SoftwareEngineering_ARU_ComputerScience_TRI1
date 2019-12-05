@@ -6,9 +6,11 @@ namespace FinalProject
 {
     public partial class AfterLogin : Form
     {
+        public static AfterLogin aftersingleton = new AfterLogin();
 
         public AfterLogin()
         {
+            aftersingleton = this;
             InitializeComponent();
         }
 
@@ -49,29 +51,27 @@ namespace FinalProject
         #region 2 Buttons  -- Dinis & Jorge
         private void BedsButton_Click(object sender, EventArgs e)
         {
-            BedSideView1 bedsideview = new BedSideView1();
-            bedsideview.Show();
-            bedsideview.Location = this.Location;
+            BedSideView1.bed1singleton.Show();
+            BedSideView1.bed1singleton.Location = this.Location;
             this.Hide();
         }
 
         private void CentralStationButton_Click(object sender, EventArgs e)
         {
-            CentralStation centralstation = new CentralStation();
-            centralstation.Show();
-            centralstation.Location = this.Location;
+            CentralStation.centralsingleton.Show();
+            CentralStation.centralsingleton.Location = this.Location;
             this.Hide();
         }
         #endregion
 
         private void LogoutButton_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            loginForm.Location = this.Location;
+            LoginForm.loginsingleton.Show();
+            LoginForm.loginsingleton.Location = this.Location;
             this.Hide();
         }
 
+        // Added this button that leads to Management/Logs bit (Priyanka)
         private void ManagementButton_Click(object sender, EventArgs e)
         {
             Management management = new Management();
@@ -79,7 +79,7 @@ namespace FinalProject
             management.Location = this.Location;
             this.Hide();
         }
- // Added this button that leads to Management/Logs bit (Priyanka)
+        // Added this button that leads to Management/Logs bit (Priyanka)
         private void LogsButton_Click(object sender, EventArgs e)
         {
             Logs logs = new Logs();
@@ -87,10 +87,10 @@ namespace FinalProject
             logs.Location = this.Location;
             this.Hide();
         }
-       
+
 
 
 
     }
-    }
+}
 

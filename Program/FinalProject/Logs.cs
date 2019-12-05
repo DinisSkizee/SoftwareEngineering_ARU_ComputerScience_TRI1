@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// LOGS PAGE BY PRIYANKA 
+
 namespace FinalProject
 {
     public partial class Logs : Form
@@ -25,9 +27,6 @@ namespace FinalProject
             alarmlogs.Location = this.Location;
             this.Hide();
         }
-
-
-       
 
         private void RDLogs_Click(object sender, EventArgs e)
         {
@@ -55,6 +54,16 @@ namespace FinalProject
             afterlogin.Show();
             afterlogin.Location = this.Location;
             this.Hide();
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
     
