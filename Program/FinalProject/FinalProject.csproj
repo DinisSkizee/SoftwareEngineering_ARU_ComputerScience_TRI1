@@ -361,12 +361,12 @@
     <None Include="Resources\276-2768812_central-station-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database2.mdf">
+    <Content Include="FinalprojectDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database2_log.ldf">
+    <Content Include="FinalprojectDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database2.mdf</DependentUpon>
+      <DependentUpon>FinalprojectDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
