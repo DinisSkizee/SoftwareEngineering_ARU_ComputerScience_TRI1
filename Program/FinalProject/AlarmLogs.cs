@@ -50,7 +50,9 @@ namespace FinalProject
         private void AlarmLogsSaveButton_Click(object sender, EventArgs e)
         {
             CON.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("INSERT INTO ALARMLOGS (ID,DATE,FIRSTALARM,ALARMRECTIFIED,COMMENTS) VALUES ('" + IDBox.Text + "','" + DateBox.Text + "', '" + FirstBox.Text + "', '" + LastBox.Text + "','" + CommentsBox.Text + "')", CON);
+            SqlDataAdapter SDA = new SqlDataAdapter("INSERT INTO ALARMLOGS (ID,DATE,FIRSTALARM,ALARMRECTIFIED,COMMENTS) VALUES ('" + IDBox.Text + "','" + DateBox.Text + "', '" + time1
+                .Text + "', '" + time2
+                .Text + "','" + CommentsBox.Text + "')", CON);
             SDA.SelectCommand.ExecuteNonQuery();
             CON.Close();
             MessageBox.Show("Saved");

@@ -34,19 +34,19 @@
             this.BackButton = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AlarmDeleteButton = new System.Windows.Forms.Button();
             this.DateBox = new System.Windows.Forms.DateTimePicker();
             this.CommentsBox = new System.Windows.Forms.TextBox();
             this.AlarmLogsView = new System.Windows.Forms.Button();
-            this.LastBox = new System.Windows.Forms.TextBox();
             this.AlarmLogsSaveButton = new System.Windows.Forms.Button();
-            this.FirstBox = new System.Windows.Forms.TextBox();
             this.IDBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.AlarmDeleteButton = new System.Windows.Forms.Button();
+            this.time1 = new System.Windows.Forms.DateTimePicker();
+            this.time2 = new System.Windows.Forms.DateTimePicker();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButtonAlarmLogs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeButtonAlarmLogs)).BeginInit();
@@ -113,13 +113,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.time2);
+            this.groupBox1.Controls.Add(this.time1);
             this.groupBox1.Controls.Add(this.AlarmDeleteButton);
             this.groupBox1.Controls.Add(this.DateBox);
             this.groupBox1.Controls.Add(this.CommentsBox);
             this.groupBox1.Controls.Add(this.AlarmLogsView);
-            this.groupBox1.Controls.Add(this.LastBox);
             this.groupBox1.Controls.Add(this.AlarmLogsSaveButton);
-            this.groupBox1.Controls.Add(this.FirstBox);
             this.groupBox1.Controls.Add(this.IDBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -132,6 +132,18 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details";
+            // 
+            // AlarmDeleteButton
+            // 
+            this.AlarmDeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AlarmDeleteButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AlarmDeleteButton.Location = new System.Drawing.Point(207, 249);
+            this.AlarmDeleteButton.Name = "AlarmDeleteButton";
+            this.AlarmDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.AlarmDeleteButton.TabIndex = 8;
+            this.AlarmDeleteButton.Text = "Delete";
+            this.AlarmDeleteButton.UseVisualStyleBackColor = false;
+            this.AlarmDeleteButton.Click += new System.EventHandler(this.AlarmDeleteButton_Click);
             // 
             // DateBox
             // 
@@ -150,6 +162,7 @@
             // AlarmLogsView
             // 
             this.AlarmLogsView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AlarmLogsView.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.AlarmLogsView.Location = new System.Drawing.Point(129, 249);
             this.AlarmLogsView.Name = "AlarmLogsView";
             this.AlarmLogsView.Size = new System.Drawing.Size(75, 23);
@@ -158,16 +171,10 @@
             this.AlarmLogsView.UseVisualStyleBackColor = false;
             this.AlarmLogsView.Click += new System.EventHandler(this.AlarmLogsView_Click);
             // 
-            // LastBox
-            // 
-            this.LastBox.Location = new System.Drawing.Point(129, 168);
-            this.LastBox.Name = "LastBox";
-            this.LastBox.Size = new System.Drawing.Size(138, 20);
-            this.LastBox.TabIndex = 1;
-            // 
             // AlarmLogsSaveButton
             // 
             this.AlarmLogsSaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AlarmLogsSaveButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.AlarmLogsSaveButton.Location = new System.Drawing.Point(48, 249);
             this.AlarmLogsSaveButton.Name = "AlarmLogsSaveButton";
             this.AlarmLogsSaveButton.Size = new System.Drawing.Size(75, 23);
@@ -175,13 +182,6 @@
             this.AlarmLogsSaveButton.Text = "Save";
             this.AlarmLogsSaveButton.UseVisualStyleBackColor = false;
             this.AlarmLogsSaveButton.Click += new System.EventHandler(this.AlarmLogsSaveButton_Click);
-            // 
-            // FirstBox
-            // 
-            this.FirstBox.Location = new System.Drawing.Point(129, 128);
-            this.FirstBox.Name = "FirstBox";
-            this.FirstBox.Size = new System.Drawing.Size(138, 20);
-            this.FirstBox.TabIndex = 3;
             // 
             // IDBox
             // 
@@ -235,16 +235,21 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "ID";
             // 
-            // AlarmDeleteButton
+            // time1
             // 
-            this.AlarmDeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.AlarmDeleteButton.Location = new System.Drawing.Point(207, 249);
-            this.AlarmDeleteButton.Name = "AlarmDeleteButton";
-            this.AlarmDeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.AlarmDeleteButton.TabIndex = 8;
-            this.AlarmDeleteButton.Text = "Delete";
-            this.AlarmDeleteButton.UseVisualStyleBackColor = false;
-            this.AlarmDeleteButton.Click += new System.EventHandler(this.AlarmDeleteButton_Click);
+            this.time1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.time1.Location = new System.Drawing.Point(129, 128);
+            this.time1.Name = "time1";
+            this.time1.Size = new System.Drawing.Size(138, 20);
+            this.time1.TabIndex = 9;
+            // 
+            // time2
+            // 
+            this.time2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.time2.Location = new System.Drawing.Point(129, 171);
+            this.time2.Name = "time2";
+            this.time2.Size = new System.Drawing.Size(138, 20);
+            this.time2.TabIndex = 10;
             // 
             // AlarmLogs
             // 
@@ -275,9 +280,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox CommentsBox;
         private System.Windows.Forms.Button AlarmLogsView;
-        private System.Windows.Forms.TextBox LastBox;
         private System.Windows.Forms.Button AlarmLogsSaveButton;
-        private System.Windows.Forms.TextBox FirstBox;
         private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -289,5 +292,7 @@
         private System.Windows.Forms.PictureBox MinimizeButtonAlarmLogs;
         private System.Windows.Forms.DateTimePicker DateBox;
         private System.Windows.Forms.Button AlarmDeleteButton;
+        private System.Windows.Forms.DateTimePicker time2;
+        private System.Windows.Forms.DateTimePicker time1;
     }
 }

@@ -128,6 +128,7 @@
             // DELETEBUTTON
             // 
             this.DELETEBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DELETEBUTTON.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.DELETEBUTTON.Location = new System.Drawing.Point(243, 167);
             this.DELETEBUTTON.Name = "DELETEBUTTON";
             this.DELETEBUTTON.Size = new System.Drawing.Size(75, 23);
@@ -166,6 +167,7 @@
             // VIEWBUTTON
             // 
             this.VIEWBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VIEWBUTTON.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.VIEWBUTTON.Location = new System.Drawing.Point(162, 167);
             this.VIEWBUTTON.Name = "VIEWBUTTON";
             this.VIEWBUTTON.Size = new System.Drawing.Size(75, 23);
@@ -177,6 +179,7 @@
             // SAVEBUTTON
             // 
             this.SAVEBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SAVEBUTTON.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.SAVEBUTTON.Location = new System.Drawing.Point(81, 167);
             this.SAVEBUTTON.Name = "SAVEBUTTON";
             this.SAVEBUTTON.Size = new System.Drawing.Size(75, 23);
