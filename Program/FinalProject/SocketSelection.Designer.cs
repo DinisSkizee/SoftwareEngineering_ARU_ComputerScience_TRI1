@@ -154,7 +154,7 @@
             // 
             this.PanelTop_MainPageButton.Image = global::FinalProject.Properties.Resources.heart;
             this.PanelTop_MainPageButton.Location = new System.Drawing.Point(9, 9);
-            this.PanelTop_MainPageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelTop_MainPageButton.Margin = new System.Windows.Forms.Padding(4);
             this.PanelTop_MainPageButton.Name = "PanelTop_MainPageButton";
             this.PanelTop_MainPageButton.Size = new System.Drawing.Size(40, 37);
             this.PanelTop_MainPageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1121,7 +1121,7 @@
             this.PanelMain.Controls.Add(this.BreathingRatePanel);
             this.PanelMain.Controls.Add(this.PulseRatePanel);
             this.PanelMain.Location = new System.Drawing.Point(0, 123);
-            this.PanelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelMain.Margin = new System.Windows.Forms.Padding(4);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Size = new System.Drawing.Size(1000, 427);
             this.PanelMain.TabIndex = 13;
@@ -1133,7 +1133,7 @@
             this.BedPanel.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.BedPanel.ForeColor = System.Drawing.Color.White;
             this.BedPanel.Location = new System.Drawing.Point(397, 70);
-            this.BedPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BedPanel.Margin = new System.Windows.Forms.Padding(4);
             this.BedPanel.Name = "BedPanel";
             this.BedPanel.Size = new System.Drawing.Size(200, 38);
             this.BedPanel.TabIndex = 10;
