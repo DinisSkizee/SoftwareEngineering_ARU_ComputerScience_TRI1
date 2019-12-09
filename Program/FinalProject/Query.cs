@@ -9,7 +9,7 @@ namespace FinalProject
     class Query
     {
         public static String Insert = "INSERT INTO PatientDetails (FirstName, Age, Gender, LastName, Height, Weight, DiMin, " +
-            "SyMin, PrMin, BrMin, TpMin, DiMax, SyMax, PrMax, BrMax, TpMax) VALUES (@FirstName, @Age, @Gender, @LastName, " +
-            "@Height, @Weight, @DiMin, @SyMin, @PrMin, @BrMin, @TpMin, @DiMax, @SyMax, @PrMax, @BrMax, @TpMax)";
+            "SyMin, PrMin, BrMin, TpMin, DiMax, SyMax, PrMax, BrMax, TpMax, BedNumber) VALUES (@FirstName, @Age, @Gender, @LastName, " +
+            "@Height, @Weight, @DiMin, @SyMin, @PrMin, @BrMin, @TpMin, @DiMax, @SyMax, @PrMax, @BrMax, @TpMax, @BedNumber)";
     }
 }
