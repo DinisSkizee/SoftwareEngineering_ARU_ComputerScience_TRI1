@@ -48,7 +48,7 @@ namespace FinalProject
         private void SAVEBUTTON_Click(object sender, EventArgs e)
         {
             CON.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("INSERT INTO RDLOGS (ID,DATE,ACTION) VALUES ('" + IDTextBox.Text + "','" + ActionComboBox.Text + "', '" + dateTimePicker1.Text + "')", CON);
+            SqlDataAdapter SDA = new SqlDataAdapter("INSERT INTO RDLOGS (ID,DATE,ACTION) VALUES ('" + IDTextBox.Text + "','" + dateTimePicker1.Text + "', '" + ActionComboBox.Text + "')", CON);
             SDA.SelectCommand.ExecuteNonQuery();
             CON.Close();
             MessageBox.Show("Saved");
