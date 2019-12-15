@@ -25,9 +25,9 @@ namespace FinalProject
         //              Username & Password check
         //                Clear to remove bugs
         // MessageBox to let the user know something wrong happened
-        
-        // username: admin
-        // password: admin
+
+        //                  username: admin
+        //                  password: admin
 
         private void loginButton_Click(object sender, EventArgs e)
         {

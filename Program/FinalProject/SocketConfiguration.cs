@@ -5,7 +5,6 @@ namespace FinalProject
 {
     class SocketConfiguration
     {
-        #region Variable 
 
         public static Random randomizer = new Random();
 
@@ -31,7 +30,6 @@ namespace FinalProject
 
         // Secondary variables just to get the difference value for later check the difference and allow the user to install the module or not
         public static int diMinC, diMaxC, syMinC, syMaxC, prMinC, prMaxC, brMinC, brMaxC, tpMinC, tpMaxC;
-        #endregion
 
         public SocketConfiguration()
         {

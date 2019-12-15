@@ -27,9 +27,8 @@ namespace FinalProject.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Cambridge\\Software Engine" +
-            "ering\\GitHubVS\\SoftwareEngineering_ARU_ComputerScience_TRI1\\SoftwareEngineering_" +
-            "ARU_ComputerScience_TRI1\\Program\\FinalProject\\FinalprojectDB.mdf\";Integrated Sec" +
-            "urity=True")]
+            "ering\\GitHubVS\\SE_ARU_CS_TRI1\\SE_ARU_CS_TRI1\\Program\\FinalProject\\FinalprojectDB" +
+            ".mdf\";Integrated Security=True")]
         public string DatabaseConnectionString {
             get {
                 return ((string)(this["DatabaseConnectionString"]));
