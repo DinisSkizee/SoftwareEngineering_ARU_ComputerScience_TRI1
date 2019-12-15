@@ -33,7 +33,7 @@ namespace FinalProject
         * declaring the varriable name
         */
 
-        SqlConnection CON = new SqlConnection("Data Source=.;Initial Catalog=Datainfo;Integrated Security=True;Pooling=False");
+        SqlConnection CON = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;D:\Cambridge\Software Engineering\GitHubVS\SoftwareEngineering_ARU_ComputerScience_TRI1\SoftwareEngineering_ARU_ComputerScience_TRI1\Program\FinalProject\FinalprojectDB.mdf&quot;;Integrated Security=True");
         // backbutton leads the page back to Logs page
 
 

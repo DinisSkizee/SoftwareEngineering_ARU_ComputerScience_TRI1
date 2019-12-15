@@ -42,7 +42,7 @@ namespace FinalProject
          * declaring the varriable name
          */
 
-        SqlConnection CON = new SqlConnection("Data Source=.;Initial Catalog=Datainfo;Integrated Security=True;Pooling=False");
+        SqlConnection CON = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;D:\Cambridge\Software Engineering\GitHubVS\SoftwareEngineering_ARU_ComputerScience_TRI1\SoftwareEngineering_ARU_ComputerScience_TRI1\Program\FinalProject\FinalprojectDB.mdf&quot;;Integrated Security=True");
         
         // inorder for the save button to save the data entered 
         private void SAVEBUTTON_Click(object sender, EventArgs e)
