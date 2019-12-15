@@ -462,14 +462,10 @@ namespace FinalProject
             else { CentralStation.centralsingleton.tbtp3l.Text = ""; }
         }
 
-        // Variables
-        // How the module is, if it's active or not
         public static int moduleState1, moduleState2, moduleState3, moduleState4;
 
-        // What Insert was Clicked
         public static int insertClicked1, insertClicked2, insertClicked3, insertClicked4;
 
-        // If the panel is visible
         public static bool bloodActive, pulseActive, breathingActive, tempActive;
 
         private void CentralStationPic_Click(object sender, EventArgs e)
@@ -479,7 +475,7 @@ namespace FinalProject
             this.Hide();
         }
 
-        #region Draggable Top Panel  -- Dinis & Jorge
+        #region Draggable Top Panel
         // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -499,7 +495,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons  -- Dinis & Jorge
+        #region Close/Minimize Buttons
         // Close Button
         private void CloseButtonBedSideView_Click(object sender, EventArgs e)
         {
@@ -513,15 +509,14 @@ namespace FinalProject
         }
         #endregion
 
-        // Small Icon on the Left Top corner to go back to the AfterLogin form
-        private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
+        private void MainPageButton_Click(object sender, EventArgs e)
         {
             AfterLogin.aftersingleton.Show();
             AfterLogin.aftersingleton.Location = this.Location;
             this.Hide();
         }
 
-        #region Bed Buttons Click  -- Dinis & Jorge
+        #region
         private void Bed1_Click(object sender, EventArgs e)
         {
             BedSideView1.bed1singleton.Show();
@@ -594,7 +589,7 @@ namespace FinalProject
             else { MessageBox.Show("You already have a person assigned to this Bed"); }
         }
 
-        #region InsertButtons Configuration  -- Dinis & Jorge
+        #region InsertButtons Configuration
         private void InsertButton1_Click(object sender, EventArgs e)
         {
             if (tbfn.Text != "")
@@ -668,7 +663,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region EjectButton Configuration  -- Dinis & Jorge
+        #region EjectButton Configuration
         private void EjectButton1_Click(object sender, EventArgs e)
         {
             moduleState1 = 0;

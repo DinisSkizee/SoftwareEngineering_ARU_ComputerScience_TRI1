@@ -9,20 +9,29 @@ namespace FinalProject
 {
     public partial class BedSideView1 : Form
     {
+        /*
+         * EVERY BEDSIDEVIEW WILL HAVE THE SAME CODE JUST DIFFERENT VALUES SO COMMENTS
+         * FROM THIS CLASS WILL BE THE SAME FOR EVERY BEDSIDEVIEW CLASS
+         */
+        // Creating a singleton object to make every BedSideView with only 1 object
         public static BedSideView1 bed1singleton = new BedSideView1();
 
         public BedSideView1()
         {
+            // Declaring the singleton to this object
             bed1singleton = this;
             InitializeComponent();
+            // Opening the BedSideViewConfiguration class
             new BedSideViewConfiguration();
 
+            // Add Methods to be run in the timer
             BedSideViewConfiguration.timer.Tick += ActiveCheck;
             BedSideViewConfiguration.timer.Tick += UpdateRandoms;
             BedSideViewConfiguration.timer.Tick += UpdateTextBox;
             BedSideViewConfiguration.timer.Tick += UpdateCentralStation;
             BedSideViewConfiguration.timer.Tick += UpdateColor;
 
+            // Check if the a module is inserted in the bed if it is moduleState will be = 1
             #region moduleState[i] Variable Assign
             if ((BreathingRatePanelBed1.Dock == DockStyle.Fill) || (BloodPressurePanelBed1.Dock == DockStyle.Fill) ||
                 (TemperaturePanelBed1.Dock == DockStyle.Fill) || (PulseRatePanelBed1.Dock == DockStyle.Fill)) { moduleState1 = 1; }
@@ -37,6 +46,8 @@ namespace FinalProject
                 (TemperaturePanelBed4.Dock == DockStyle.Fill) || (PulseRatePanelBed4.Dock == DockStyle.Fill)) { moduleState4 = 1; }
             #endregion
 
+            // TextBox Properties for users to be unable to create a new line with BACKSPACE
+            // #1
             #region TextBox Multiline Disable
             tbfn.Multiline = false;
             tbgender.Multiline = false;
@@ -106,7 +117,7 @@ namespace FinalProject
             Temperature_Minimum_Text4.Multiline = false;
 
             #endregion
-
+            // #2
             #region AutoSize False
             tbfn.AutoSize = false;
             tbgender.AutoSize = false;
@@ -175,7 +186,7 @@ namespace FinalProject
             Temperature_Minimum_Text3.AutoSize = false;
             Temperature_Minimum_Text4.AutoSize = false;
             #endregion
-
+            // #3
             #region TextBox Size
             tbfn.Size = new Size(151, 36);
             tbgender.Size = new Size(151, 36);
@@ -244,7 +255,7 @@ namespace FinalProject
             Temperature_Minimum_Text3.Size = new Size(65, 20);
             Temperature_Minimum_Text4.Size = new Size(65, 20);
             #endregion
-
+            // #4
             #region TextBox ReadOnly
             tbfn.ReadOnly = true;
             tbgender.ReadOnly = true;
@@ -316,9 +327,14 @@ namespace FinalProject
 
         }
 
+        // Variable declaration
+        // Random Value variable
         public static int dirandom, syrandom, prrandom, brrandom;
         public static double tprandom;
+        // Module textbox variable
         public static int ditext, sytext, prtext, brtext, tptext;
+        
+        // Update Central Station color when values are under the minimum or above the maximum
         public void UpdateColor(object sender, EventArgs e)
         {
             // Passing textbox.text to variable
@@ -391,6 +407,7 @@ namespace FinalProject
             #endregion
         }
 
+        // Method to update the Random, this method is added to the timer above
         public void UpdateRandoms(object sender, EventArgs e)
         {
             dirandom = SocketConfiguration.DiastolicValueRandom();
@@ -400,6 +417,7 @@ namespace FinalProject
             tprandom = SocketConfiguration.TemperatureValueRandom();
         }
 
+        // Update Textbox with the random values, this method is added to the timer above
         public void UpdateTextBox(object sender, EventArgs e)
         {
             DiBloodPressurePanelBed_Actual_Text.Text = dirandom.ToString();
@@ -428,6 +446,7 @@ namespace FinalProject
             Temperature_Actual_Text4.Text = tprandom.ToString();
         }
 
+        // This method will update the text from the Central Station textboxes 
         public void UpdateCentralStation(object sender, EventArgs e)
         {
             if (bloodActive)
@@ -461,7 +480,7 @@ namespace FinalProject
 
         }
 
-        // Variables
+        // Variable declaration
         // How the module is, if it's active or not
         public static int moduleState1, moduleState2, moduleState3, moduleState4;
 
@@ -471,6 +490,7 @@ namespace FinalProject
         // If the panel is visible
         public static bool bloodActive, pulseActive, breathingActive, tempActive;
 
+        // Click on the CentralStation Picture will get us back to the Central Station
         private void CentralStationPic_Click(object sender, EventArgs e)
         {
             CentralStation.centralsingleton.Show();
@@ -478,8 +498,9 @@ namespace FinalProject
             this.Hide();
         }
 
-        #region Draggable Top Panel  -- Dinis & Jorge
-        // Draggable Top Panel
+        // Top Panel Drag properties
+        #region Draggable Top Panel
+        // Draggable Panel  https://stackoverflow.com/questions/11379209/how-do-i-make-mousedrag-inside-panel-move-form-window
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -498,7 +519,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons  -- Dinis & Jorge
+        // Close and Minimize buttons configuration for them to actually close and minimize
+        #region Close/Minimize Buttons
         // Close Button
         private void CloseButtonBedSideView_Click(object sender, EventArgs e)
         {
@@ -513,14 +535,15 @@ namespace FinalProject
         #endregion
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
-        private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
+        private void MainPageButton_Click(object sender, EventArgs e)
         {
             AfterLogin.aftersingleton.Show();
             AfterLogin.aftersingleton.Location = this.Location;
             this.Hide();
         }
 
-        #region Bed Buttons Click  -- Dinis & Jorge
+        // Each Bed button will open the class singleton, show it, and hide the current one
+        #region Bed Buttons Click
         private void Bed2_Click(object sender, EventArgs e)
         {
             BedSideView2.bed2singleton.Show();
@@ -571,8 +594,7 @@ namespace FinalProject
         }
         #endregion
 
-        private SqlConnection sqlConn;
-
+        // Bed Picture will automatically assign values to the Person Details Textboxes shown on the top right corner (6 textboxes)
         private void BedPicture_Click(object sender, EventArgs e)
         {
             if (tbfn.Text == "")
@@ -593,13 +615,10 @@ namespace FinalProject
                 else { tbgender.Text = "Female"; }
             }
             else { MessageBox.Show("You already have a person assigned to this Bed"); }
-
-            //SqlCommand command = new SqlCommand();
-            //DBConnection.dbConnectionSingleton.recordValue(tbfn.Text, tbln.Text, tbage.Text, tbgender.Text, tbheight.Text, tbweight.Text);
-
         }
 
-        #region InsertButtons Configuration  -- Dinis & Jorge
+        // Insert Button Configurations
+        #region InsertButtons Configuration
         private void InsertButton1_Click(object sender, EventArgs e)
         {
             if (tbfn.Text != "")
@@ -673,7 +692,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region EjectButton Configuration  -- Dinis & Jorge
+        // Eject Button Configurations
+        #region EjectButton Configuration
         private void EjectButton1_Click(object sender, EventArgs e)
         {
             moduleState1 = 0;
@@ -739,6 +759,7 @@ namespace FinalProject
         }
         #endregion
 
+        // This method will check which module is active or not on the Bed and return (blood/pulse/breathing/temp)Active = true or false
         public void ActiveCheck(object sender, EventArgs e)
         {
             if (BloodPressurePanelBed1.Dock == DockStyle.Fill || BloodPressurePanelBed2.Dock == DockStyle.Fill ||

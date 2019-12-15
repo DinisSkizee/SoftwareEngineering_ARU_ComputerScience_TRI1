@@ -7,21 +7,27 @@ namespace FinalProject
 {
     public partial class LoginForm : Form
     {
+        // Create the singleton object for the LoginForm
         public static LoginForm loginsingleton = new LoginForm();
 
         public LoginForm()
         {
+            // Assigning the singleton to the actual object
             loginsingleton = this;
+            // Starting position of the program will be in the center of the screen
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
 
+            // Open the BedSideViewConfiguration Class
             new BedSideViewConfiguration();
         }
 
-
-        #region Login Button -- Dinis & Jorge
-        /* Username & Password check; Clear to remove bugs and MessageBox to
-        let the user know something wrong happened. - Dinis & Jorge */
+        //              Username & Password check
+        //                Clear to remove bugs
+        // MessageBox to let the user know something wrong happened
+        
+        // username: admin
+        // password: admin
 
         private void loginButton_Click(object sender, EventArgs e)
         {
@@ -41,9 +47,9 @@ namespace FinalProject
             usernameBox.Clear();
             passwordBox.Clear();
         }
-        #endregion
 
-        #region Draggable Grey Background Panel  -- Dinis & Jorge
+        // Top Panel Drag properties
+        #region Draggable Grey Background Panel
         // Draggable Panel  https://stackoverflow.com/questions/11379209/how-do-i-make-mousedrag-inside-panel-move-form-window
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -63,7 +69,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region Enter to Click on the Login Button shortcut  -- Dinis & Jorge
+        // Allow the user to click enter instead of clicking the button for a shortcut and better user experience
+        #region Enter to Click on the Login Button shortcut
         // KeyDown feature for a better user experience on the login form
         // Enter to click the Login Button automatically
         private void usernameBox_KeyDown(object sender, KeyEventArgs e)
@@ -83,7 +90,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons  -- Dinis & Jorge
+        // Close and minimize buttons configuration
+        #region Close/Minimize Buttons
         // Close Button
         private void CloseButtonLoginForm_Click(object sender, EventArgs e)
         {

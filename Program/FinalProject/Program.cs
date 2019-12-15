@@ -13,6 +13,7 @@ namespace FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Start the application on the LoginForm Form
             Application.Run(new LoginForm());
         }
     }

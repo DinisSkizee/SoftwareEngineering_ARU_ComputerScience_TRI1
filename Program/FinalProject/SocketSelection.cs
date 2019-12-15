@@ -7,19 +7,24 @@ namespace FinalProject
 {
     public partial class SocketSelection : Form
     {
+        // Creating the singleton object
         public static SocketSelection socketsingleton = new SocketSelection();
 
         public SocketSelection()
         {
+            // Assigning the singleton to this object
             socketsingleton = this;
             InitializeComponent();
 
-            HideAllSokets();
+            // Initializing some methods when the SocketSelection form starts
+            HideAllSockets();
+            AddNamesToSocketComboBox();
 
-            AddNamesToSoketComboBox();
-
+            // Assigning the dockActive variable to the "DefaultPanel_SocketComboBox.SelectedIndex" Value
             SocketConfiguration.dockActive = DefaultPanel_SocketComboBox.SelectedIndex;
 
+            // TextBox properties to remove bugs such as backspace to create a new line
+            // preventing the user of creating bad inputs
             #region TextBox Multiline Disable
             BloodPressureTextBox_DiastolicMinimum_ParameterValue.Multiline = false;
             BloodPressureTextBox_DiastolicMaximum_ParameterValue.Multiline = false;
@@ -46,7 +51,7 @@ namespace FinalProject
             Temperature_Minimum_TextBox.AutoSize = false;
             #endregion
 
-            #region Set the Size of the TextBox
+            #region Size of the TextBox
             BloodPressureTextBox_DiastolicMinimum_ParameterValue.Size = new Size(119, 35);
             BloodPressureTextBox_DiastolicMaximum_ParameterValue.Size = new Size(119, 35);
             BloodPressureTextBox_SystolicMinimum_ParameterValue.Size = new Size(119, 35);
@@ -60,8 +65,9 @@ namespace FinalProject
             #endregion
 
         }
-
-        #region Draggable Top Panel  -- Dinis & Jorge
+        
+        // Draggable Top Panel Properties
+        #region Draggable Top Panel
         // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -81,7 +87,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons  -- Dinis & Jorge
+        // Configuration for the close and minimize buttons for them to work
+        #region Close/Minimize Buttons
         private void CloseButtonSocketSelection_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -93,9 +100,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region InsertReturnEffect  -- Dinis & Jorge
-
-        #region TextBox Change effects BLOODPRESSURE  -- Dinis & Jorge
+        // TextBox Change effects for BloodPressure, PulseRate, BreathingRate and Temperature
+        #region TextBox Change effects BLOODPRESSURE
 
         /* On Mouse Down and the text is "Insert Minimum" it will clear the textbox
         / When is not being Selected/Focused and there's no input it would return to the normal "Insert Minimum"
@@ -166,7 +172,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region TextBox Change effects PULSERATE  -- Dinis & Jorge
+        #region TextBox Change effects PULSERATE
 
         // Pulse Rate Minimum TextBox \\
         private void PulseRate_Minimum_TextBox_MouseDown(object sender, MouseEventArgs e)
@@ -201,7 +207,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region TextBox Change effects BREATHINGRATE  -- Dinis & Jorge
+        #region TextBox Change effects BREATHINGRATE
 
         // Breathing Rate Minimum TextBox \\
         private void BreathingRate_Minimum_TextBox_MouseDown(object sender, MouseEventArgs e)
@@ -236,7 +242,7 @@ namespace FinalProject
         }
         #endregion
 
-        #region TextBox Change effects TEMPERATURE  -- Dinis & Jorge
+        #region TextBox Change effects TEMPERATURE
 
         // Temperature Minimum TextBox \\
         private void Temperature_Minimum_TextBox_MouseDown(object sender, MouseEventArgs e)
@@ -271,12 +277,11 @@ namespace FinalProject
         }
         #endregion
 
-        #endregion
-
-        #region Main Button Return  -- Dinis & Jorge
+        // Picture to go back to the BedSideView1
+        #region Main Button Return
 
         // Small Icon on the Left Top corner to go back to the AfterLogin form
-        private void MainPageButton_Click(object sender, EventArgs e)   // -- Dinis & Jorge
+        private void MainPageButton_Click(object sender, EventArgs e)
         {
             BedSideView1.bed1singleton.Show();
             BedSideView1.bed1singleton.Location = this.Location;
@@ -284,13 +289,12 @@ namespace FinalProject
         }
         #endregion
 
-        #region Change Main Panel  -- Dinis & Jorge
 
         /* When we choose another option on the SocketComboBox
         * the panels would be picked and turned visible and the Label invisible
         * If none is picked everything would be invisible
         * and the Label would be visible aswell */
-        private void Default_SocketComboBox_TextChanged(object sender, EventArgs e)  // -- Dinis & Jorge
+        private void Default_SocketComboBox_TextChanged(object sender, EventArgs e)
         {
 
             if (DefaultPanel_SocketComboBox.SelectedIndex < 0)
@@ -358,9 +362,8 @@ namespace FinalProject
 
         }
 
-        #endregion
-
-        private void HideAllSokets()
+        // Method to Hide all 4 Panels on start
+        private void HideAllSockets()
         {
             BreathingRatePanel.Visible = false;
             PulseRatePanel.Visible = false;
@@ -368,7 +371,8 @@ namespace FinalProject
             TemperaturePanel.Visible = false;
         }
 
-        public void AddNamesToSoketComboBox()
+        // Add items to the Socket ComboBox
+        public void AddNamesToSocketComboBox()
         {
             DefaultPanel_SocketComboBox.Items.Add("Blood Pressure");
             DefaultPanel_SocketComboBox.Items.Add("Pulse Rate");
@@ -380,41 +384,52 @@ namespace FinalProject
         public void DefaultPanel_InstallButton_Click(object sender, EventArgs e)
         {
 
-            // Blood Pressure Secondary Variables Integer
+            // Blood Pressure Secondary Variables 
             int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMinC);
             int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMaxC);
             int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMinC);
             int.TryParse(BloodPressureTextBox_SystolicMaximum_ParameterValue.Text, out SocketConfiguration.syMaxC);
-            // Pulse Rate Secondary Variables Integer
+            // Pulse Rate Secondary Variables 
             int.TryParse(PulseRate_Minimum_TextBox.Text, out SocketConfiguration.prMinC);
             int.TryParse(PulseRate_Maximum_TextBox.Text, out SocketConfiguration.prMaxC);
-            // Breathing Rate Secondary Variables Integer
+            // Breathing Rate Secondary Variables 
             int.TryParse(BreathingRate_Minimum_TextBox.Text, out SocketConfiguration.brMinC);
             int.TryParse(BreathingRate_Maximum_TextBox.Text, out SocketConfiguration.brMaxC);
-            // Temperature Secondary Variables Integer
+            // Temperature Secondary Variables 
             int.TryParse(Temperature_Minimum_TextBox.Text, out SocketConfiguration.tpMinC);
             int.TryParse(Temperature_Maximum_TextBox.Text, out SocketConfiguration.tpMaxC);
 
+            // Creating a SocketConfiguration Object 
             SocketConfiguration socket = new SocketConfiguration();
 
+            // If none module is selected
             if (DefaultPanel_SocketComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please, select a Module to proceed.");
             }
 
+            // If the Blood Pressure module is selected and the diastolic difference is equal or more than 30 and the systolic difference is equal or more than 20
+            // Comments are only done once as it explains the rest of the options
+            // The difference is refered to the Minimum and Maximum difference that the user inputs
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 0 && SocketConfiguration.diDiff >= 30 && SocketConfiguration.syDiff >= 20)  // Blood Pressure
             {
-
+                // If the bed selected is the Bed 1 and the blood pressure module isn't active
                 if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == false)
                 {
+                    // Check where to add the module based on which insert button was clicked
                     if (BedSideView1.insertClicked1 == 1)
                     {
+                        // Change moduleState value to 1 for the program to know that the space is being used
                         BedSideView1.moduleState1 = 1;
 
+                        // Dock Fill to the BloodPressurePanel1
+                        // Make it visible
+                        // Make the "Insert a Socket" text invisible
                         BedSideView1.bed1singleton.BloodPressurePanelBed1.Dock = DockStyle.Fill;
                         BedSideView1.bed1singleton.BloodPressurePanelBed1.Visible = true;
                         BedSideView1.bed1singleton.InsertASocket1.Visible = false;
 
+                        // Change insertClicked value to 0 for the program to know that it can't be used
                         BedSideView1.insertClicked1 = 0;
                     }
                     else if (BedSideView1.insertClicked2 == 1)
@@ -449,6 +464,7 @@ namespace FinalProject
                     }
 
                     // Blood Pressure Secondary Variables Integer
+                    // Get the values from the textbox to a variable using TryParse (to pass string to int)
                     int.TryParse(BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text, out SocketConfiguration.diMin1);
                     int.TryParse(BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text, out SocketConfiguration.diMax1);
                     int.TryParse(BloodPressureTextBox_SystolicMinimum_ParameterValue.Text, out SocketConfiguration.syMin1);
@@ -458,6 +474,8 @@ namespace FinalProject
                     BedSideView1.bed1singleton.Location = this.Location;
                     this.Hide();
                 }
+
+                // If the bed selected is bed 1 but there's already a Blood Pressure module active it will give the user a messageBox
                 else if (BedLabel.Text == "Bed 1" && BedSideView1.bloodActive == true)
                 {
                     MessageBox.Show("You already have a Blood Pressure Module Active, Eject it first!");
@@ -870,6 +888,7 @@ namespace FinalProject
                 }
             }
 
+            // If the Pulse Rate module is selected and the pulse difference is equal or more than 30
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 1 && SocketConfiguration.prDiff >= 30)  // Pulse Rate
             {
                 if (BedLabel.Text == "Bed 1" && BedSideView1.pulseActive == false)
@@ -1321,6 +1340,7 @@ namespace FinalProject
                 }
             }
 
+            // If the Breathing Rate module is selected and the breathing difference is equal or more than 5
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 2 && SocketConfiguration.brDiff >= 5)  // Breathing Rate
             {
                 if (BedLabel.Text == "Bed 1" && BedSideView1.breathingActive == false)
@@ -1772,6 +1792,7 @@ namespace FinalProject
                 }
             }
 
+            // If the Temperature module is selected and the temperature difference is equal or more than 1
             else if (DefaultPanel_SocketComboBox.SelectedIndex == 3 && SocketConfiguration.tempDiff >= 1)  // Temperature
             {
                 if (BedLabel.Text == "Bed 1" && BedSideView1.tempActive == false)
@@ -2223,26 +2244,33 @@ namespace FinalProject
                 }
             }
 
+            // If any of the condition fails the else is used
             else
             {
+                // If the diastolic difference is less than 30 or the systolic difference less than 20
                 if ((SocketConfiguration.diDiff < 30 && DefaultPanel_SocketComboBox.SelectedIndex == 0) || (SocketConfiguration.syDiff < 20 && DefaultPanel_SocketComboBox.SelectedIndex == 0))
                 {
                     MessageBox.Show("The Diastolic difference must be 30 or greater and the Systolic difference must be 20 or greater");
                 }
+                // If the pulse rate differente is less than 30
                 if (SocketConfiguration.prDiff < 30 && DefaultPanel_SocketComboBox.SelectedIndex == 1)
                 {
                     MessageBox.Show("The Pulse Rate Difference must be 30 or greater");
                 }
+                // If the breathing rate difference is less than 5
                 if (SocketConfiguration.brDiff < 5 && DefaultPanel_SocketComboBox.SelectedIndex == 2)
                 {
                     MessageBox.Show("The Breathing Rate difference must be 5 or greater");
                 }
+                // If the temperature difference is less than 1
                 if (SocketConfiguration.tempDiff < 1 && DefaultPanel_SocketComboBox.SelectedIndex == 3)
                 {
                     MessageBox.Show("The temperature difference must be 1 or greater");
                 }
             }
 
+            // Assign values to the textbox of each bed
+            // This code can be optimized if instead of using the singleton pattern multiple objects per form are created
             #region BedSideView1 TextBox.Text Assignment
             BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text.Text = SocketConfiguration.syMin1.ToString();
             BedSideView1.bed1singleton.SyBloodPressurePanelBed_Minimum_Text2.Text = SocketConfiguration.syMin1.ToString();
@@ -2659,8 +2687,8 @@ namespace FinalProject
             BedSideView8.bed8singleton.Temperature_Maximum_Text4.Text = SocketConfiguration.tpMax8.ToString();
             #endregion
 
-
-            #region Database Stuff
+            // When the button Install is clicked it will add values to the database depending on what bed is being selected
+            #region Database Values addition
             if (BedLabel.Text == "Bed 1")
             {
                 DBConnection.Instance.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
@@ -2727,6 +2755,7 @@ namespace FinalProject
             }
             #endregion
 
+            // After everything is done because we are using singleton pattern we need to change the textbox text the the original text
             BloodPressureTextBox_DiastolicMinimum_ParameterValue.Text = "Insert Minimum";
             BloodPressureTextBox_DiastolicMaximum_ParameterValue.Text = "Insert Maximum";
             BloodPressureTextBox_SystolicMinimum_ParameterValue.Text = "Insert Minimum";

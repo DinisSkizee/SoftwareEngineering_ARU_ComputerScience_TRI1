@@ -7,13 +7,17 @@ namespace FinalProject
 {
     public partial class CentralStation : Form
     {
+        // Singleton object creation for the current Form
         public static CentralStation centralsingleton = new CentralStation();
 
         public CentralStation()
         {
+            // Assigning the singleton to the current object
             centralsingleton = this;
             InitializeComponent();
 
+
+            // TextBoxes Configuration to prevent bugs
             #region Disable Multiline
             tbdi1.Multiline = false;
             tbdi2.Multiline = false;
@@ -188,7 +192,8 @@ namespace FinalProject
 
         }
 
-        #region Draggable Top Panel  -- Dinis & Jorge
+        // Draggable Panel configuration
+        #region Draggable Top Panel
         // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -208,7 +213,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons  -- Dinis & Jorge
+        // Close and Minimize buttons configuration
+        #region Close/Minimize Buttons
         private void CloseButtonCentralStation_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -228,6 +234,7 @@ namespace FinalProject
             this.Hide();
         }
 
+        // Bed Buttons to be redirected to the Bed Form
         private void BedButton1_Click(object sender, EventArgs e)
         {
             BedSideView1.bed1singleton.Show();

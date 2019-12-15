@@ -6,15 +6,18 @@ namespace FinalProject
 {
     public partial class AfterLogin : Form
     {
+        // Creating singleton object for the Form
         public static AfterLogin aftersingleton = new AfterLogin();
 
         public AfterLogin()
         {
+            // Assigning the singleton to this object
             aftersingleton = this;
             InitializeComponent();
         }
 
-        #region Draggable Top Panel  -- Dinis & Jorge
+        // Draggable Panel Configuration
+        #region Draggable Top Panel
         // Draggable Top Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -34,7 +37,8 @@ namespace FinalProject
         }
         #endregion
 
-        #region Close/Minimize Buttons  -- Dinis & Jorge
+        // Close and Minimize buttons configuration
+        #region Close/Minimize Buttons
         // Close Button
         private void CloseButtonAfterLogin_Click(object sender, EventArgs e)
         {
@@ -48,7 +52,22 @@ namespace FinalProject
         }
         #endregion
 
-        #region 2 Buttons  -- Dinis & Jorge
+        // Logout button to return to the LoginForm
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            LoginForm.loginsingleton.Show();
+            LoginForm.loginsingleton.Location = this.Location;
+            this.Hide();
+        }
+
+        /* 4 Button Configuration, Open, Show and this.Hide()
+         * Beds
+         * Central Station
+         * Management
+         * Logs
+         */
+
+        #region 4 Buttons Click Properties
         private void BedsButton_Click(object sender, EventArgs e)
         {
             BedSideView1.bed1singleton.Show();
@@ -62,20 +81,12 @@ namespace FinalProject
             CentralStation.centralsingleton.Location = this.Location;
             this.Hide();
         }
-        #endregion
-
-        private void LogoutButton_Click(object sender, EventArgs e)
-        {
-            LoginForm.loginsingleton.Show();
-            LoginForm.loginsingleton.Location = this.Location;
-            this.Hide();
-        }
 
         // Added this button that leads to Management/Logs bit (Priyanka)
         private void ManagementButton_Click(object sender, EventArgs e)
         {
             managerments managerments = new managerments();
-           managerments.Show();
+            managerments.Show();
             managerments.Location = this.Location;
             this.Hide();
 
@@ -88,8 +99,8 @@ namespace FinalProject
             logs.Location = this.Location;
             this.Hide();
         }
+        #endregion
 
-      
     }
 }
 
