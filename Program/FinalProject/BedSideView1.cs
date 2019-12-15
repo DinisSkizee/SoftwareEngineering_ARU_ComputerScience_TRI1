@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace FinalProject
 {
@@ -569,6 +571,8 @@ namespace FinalProject
         }
         #endregion
 
+        private SqlConnection sqlConn;
+
         private void BedPicture_Click(object sender, EventArgs e)
         {
             if (tbfn.Text == "")
@@ -589,6 +593,10 @@ namespace FinalProject
                 else { tbgender.Text = "Female"; }
             }
             else { MessageBox.Show("You already have a person assigned to this Bed"); }
+
+            //SqlCommand command = new SqlCommand();
+            //DBConnection.dbConnectionSingleton.recordValue(tbfn.Text, tbln.Text, tbage.Text, tbgender.Text, tbheight.Text, tbweight.Text);
+
         }
 
         #region InsertButtons Configuration  -- Dinis & Jorge

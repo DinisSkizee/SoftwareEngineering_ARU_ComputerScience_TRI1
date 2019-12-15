@@ -2723,7 +2723,7 @@ namespace FinalProject
                     BedSideView8.bed8singleton.tbage.Text, BedSideView8.bed8singleton.tbgender.Text, BedSideView8.bed8singleton.tbheight.Text,
                     BedSideView8.bed8singleton.tbweight.Text, SocketConfiguration.diMin8, SocketConfiguration.diMax8,
                     SocketConfiguration.syMin8, SocketConfiguration.syMax8, SocketConfiguration.prMin8, SocketConfiguration.prMax8,
-                    SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 1);
+                    SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 8);
             }
             #endregion
 
