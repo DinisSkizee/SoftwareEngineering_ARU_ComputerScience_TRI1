@@ -475,11 +475,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
-                        BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
-                        BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
-                        SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
-                        SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
+                            BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
+                            BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
+                            SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
+                            SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
 
                 // If the bed selected is bed 1 but there's already a Blood Pressure module active it will give the user a messageBox
@@ -542,13 +549,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 2")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
                             BedSideView2.bed2singleton.tbage.Text, BedSideView2.bed2singleton.tbgender.Text, BedSideView2.bed2singleton.tbheight.Text,
                             BedSideView2.bed2singleton.tbweight.Text, SocketConfiguration.diMin2, SocketConfiguration.diMax2,
                             SocketConfiguration.syMin2, SocketConfiguration.syMax2, SocketConfiguration.prMin2, SocketConfiguration.prMax2,
                             SocketConfiguration.brMin2, SocketConfiguration.brMax2, SocketConfiguration.tpMin2, SocketConfiguration.tpMax2, 2);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 2" && BedSideView2.bloodActive == true)
@@ -610,13 +621,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 3")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
                             BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
                             BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
                             SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
                             SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 3" && BedSideView3.bloodActive == true)
@@ -678,13 +693,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 4")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
                             BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
                             BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
                             SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
                             SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 4" && BedSideView4.bloodActive == true)
@@ -746,13 +765,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 5")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
                             BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
                             BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
                             SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
                             SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 5" && BedSideView5.bloodActive == true)
@@ -814,13 +837,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 6")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
                             BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
                             BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
                             SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
                             SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 6" && BedSideView6.bloodActive == true)
@@ -882,13 +909,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 7")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
                             BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
                             BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
                             SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
                             SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 7" && BedSideView7.bloodActive == true)
@@ -950,13 +981,17 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    if (BedLabel.Text == "Bed 8")
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView8.bed8singleton.tbfn.Text, BedSideView8.bed8singleton.tbln.Text,
                             BedSideView8.bed8singleton.tbage.Text, BedSideView8.bed8singleton.tbgender.Text, BedSideView8.bed8singleton.tbheight.Text,
                             BedSideView8.bed8singleton.tbweight.Text, SocketConfiguration.diMin8, SocketConfiguration.diMax8,
                             SocketConfiguration.syMin8, SocketConfiguration.syMax8, SocketConfiguration.prMin8, SocketConfiguration.prMax8,
                             SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 8);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 8" && BedSideView8.bloodActive == true)
@@ -1019,14 +1054,18 @@ namespace FinalProject
                     BedSideView1.bed1singleton.Location = this.Location;
                     this.Hide();
 
-                    // When the button Install is clicked it will add values to the database depending on what bed is being selected
-                    if (BedLabel.Text == "Bed 1")
+                    // When the button Install is clicked it will add values to the database
+                    try
                     {
                         DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
                             BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
                             BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
                             SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
                             SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
                     }
                 }
                 else if (BedLabel.Text == "Bed 1" && BedSideView1.pulseActive == true)
@@ -1085,12 +1124,19 @@ namespace FinalProject
                     BedSideView2.bed2singleton.Location = this.Location;
                     this.Hide();
 
-                    // When the button Install is clicked it will add values to the database depending on what bed is being selected
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
+                    // When the button Install is clicked it will add values to the database
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
                         BedSideView2.bed2singleton.tbage.Text, BedSideView2.bed2singleton.tbgender.Text, BedSideView2.bed2singleton.tbheight.Text,
                         BedSideView2.bed2singleton.tbweight.Text, SocketConfiguration.diMin2, SocketConfiguration.diMax2,
                         SocketConfiguration.syMin2, SocketConfiguration.syMax2, SocketConfiguration.prMin2, SocketConfiguration.prMax2,
                         SocketConfiguration.brMin2, SocketConfiguration.brMax2, SocketConfiguration.tpMin2, SocketConfiguration.tpMax2, 2);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 2" && BedSideView2.pulseActive == true)
                 {
@@ -1149,12 +1195,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
-                        BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
-                        BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
-                        SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
-                        SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
+                    BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
+                    BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
+                    SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
+                    SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 3" && BedSideView3.pulseActive == true)
                 {
@@ -1213,11 +1265,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
-                        BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
-                        BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
-                        SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
-                        SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
+                BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
+                BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
+                SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
+                SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 4" && BedSideView4.pulseActive == true)
                 {
@@ -1276,11 +1335,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
-                        BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
-                        BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
-                        SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
-                        SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
+            BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
+            BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
+            SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
+            SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 5" && BedSideView5.pulseActive == true)
                 {
@@ -1339,11 +1405,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
-                        BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
-                        BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
-                        SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
-                        SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
+        BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
+        BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
+        SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
+        SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 6" && BedSideView6.pulseActive == true)
                 {
@@ -1402,11 +1475,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
-                        BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
-                        BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
-                        SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
-                        SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
+    BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
+    BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
+    SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
+    SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 7" && BedSideView8.pulseActive == true)
                 {
@@ -1465,11 +1545,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView8.bed8singleton.tbfn.Text, BedSideView8.bed8singleton.tbln.Text,
-                        BedSideView8.bed8singleton.tbage.Text, BedSideView8.bed8singleton.tbgender.Text, BedSideView8.bed8singleton.tbheight.Text,
-                        BedSideView8.bed8singleton.tbweight.Text, SocketConfiguration.diMin8, SocketConfiguration.diMax8,
-                        SocketConfiguration.syMin8, SocketConfiguration.syMax8, SocketConfiguration.prMin8, SocketConfiguration.prMax8,
-                        SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 8);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView8.bed8singleton.tbfn.Text, BedSideView8.bed8singleton.tbln.Text,
+BedSideView8.bed8singleton.tbage.Text, BedSideView8.bed8singleton.tbgender.Text, BedSideView8.bed8singleton.tbheight.Text,
+BedSideView8.bed8singleton.tbweight.Text, SocketConfiguration.diMin8, SocketConfiguration.diMax8,
+SocketConfiguration.syMin8, SocketConfiguration.syMax8, SocketConfiguration.prMin8, SocketConfiguration.prMax8,
+SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 8);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 8" && BedSideView8.pulseActive == true)
                 {
@@ -1532,11 +1619,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
-                        BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
-                        BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
-                        SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
-                        SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
+BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
+BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
+SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
+SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 1" && BedSideView1.breathingActive == true)
                 {
@@ -1594,12 +1688,19 @@ namespace FinalProject
                     BedSideView2.bed2singleton.Location = this.Location;
                     this.Hide();
 
-                    // When the button Install is clicked it will add values to the database depending on what bed is being selected
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
-                        BedSideView2.bed2singleton.tbage.Text, BedSideView2.bed2singleton.tbgender.Text, BedSideView2.bed2singleton.tbheight.Text,
-                        BedSideView2.bed2singleton.tbweight.Text, SocketConfiguration.diMin2, SocketConfiguration.diMax2,
-                        SocketConfiguration.syMin2, SocketConfiguration.syMax2, SocketConfiguration.prMin2, SocketConfiguration.prMax2,
-                        SocketConfiguration.brMin2, SocketConfiguration.brMax2, SocketConfiguration.tpMin2, SocketConfiguration.tpMax2, 2);
+                    // When the button Install is clicked it will add values to the database
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
+BedSideView2.bed2singleton.tbage.Text, BedSideView2.bed2singleton.tbgender.Text, BedSideView2.bed2singleton.tbheight.Text,
+BedSideView2.bed2singleton.tbweight.Text, SocketConfiguration.diMin2, SocketConfiguration.diMax2,
+SocketConfiguration.syMin2, SocketConfiguration.syMax2, SocketConfiguration.prMin2, SocketConfiguration.prMax2,
+SocketConfiguration.brMin2, SocketConfiguration.brMax2, SocketConfiguration.tpMin2, SocketConfiguration.tpMax2, 2);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 2" && BedSideView2.breathingActive == true)
                 {
@@ -1658,11 +1759,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
-                        BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
-                        BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
-                        SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
-                        SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
+BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
+BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
+SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
+SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 3" && BedSideView3.breathingActive == true)
                 {
@@ -1721,11 +1829,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
-                        BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
-                        BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
-                        SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
-                        SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
+BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
+BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
+SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
+SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 4" && BedSideView4.breathingActive == true)
                 {
@@ -1784,11 +1899,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
-                        BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
-                        BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
-                        SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
-                        SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
+BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
+BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
+SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
+SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 5" && BedSideView5.breathingActive == true)
                 {
@@ -1847,11 +1969,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
-                        BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
-                        BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
-                        SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
-                        SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
+BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
+BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
+SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
+SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 6" && BedSideView6.breathingActive == true)
                 {
@@ -1910,11 +2039,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
-                        BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
-                        BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
-                        SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
-                        SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
+BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
+BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
+SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
+SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 7" && BedSideView7.breathingActive == true)
                 {
@@ -1973,11 +2109,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView8.bed8singleton.tbfn.Text, BedSideView8.bed8singleton.tbln.Text,
-                        BedSideView8.bed8singleton.tbage.Text, BedSideView8.bed8singleton.tbgender.Text, BedSideView8.bed8singleton.tbheight.Text,
-                        BedSideView8.bed8singleton.tbweight.Text, SocketConfiguration.diMin8, SocketConfiguration.diMax8,
-                        SocketConfiguration.syMin8, SocketConfiguration.syMax8, SocketConfiguration.prMin8, SocketConfiguration.prMax8,
-                        SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 8);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView8.bed8singleton.tbfn.Text, BedSideView8.bed8singleton.tbln.Text,
+BedSideView8.bed8singleton.tbage.Text, BedSideView8.bed8singleton.tbgender.Text, BedSideView8.bed8singleton.tbheight.Text,
+BedSideView8.bed8singleton.tbweight.Text, SocketConfiguration.diMin8, SocketConfiguration.diMax8,
+SocketConfiguration.syMin8, SocketConfiguration.syMax8, SocketConfiguration.prMin8, SocketConfiguration.prMax8,
+SocketConfiguration.brMin8, SocketConfiguration.brMax8, SocketConfiguration.tpMin8, SocketConfiguration.tpMax8, 8);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 8" && BedSideView8.breathingActive == true)
                 {
@@ -2040,11 +2183,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
-                        BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
-                        BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
-                        SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
-                        SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView1.bed1singleton.tbfn.Text, BedSideView1.bed1singleton.tbln.Text,
+BedSideView1.bed1singleton.tbage.Text, BedSideView1.bed1singleton.tbgender.Text, BedSideView1.bed1singleton.tbheight.Text,
+BedSideView1.bed1singleton.tbweight.Text, SocketConfiguration.diMin1, SocketConfiguration.diMax1,
+SocketConfiguration.syMin1, SocketConfiguration.syMax1, SocketConfiguration.prMin1, SocketConfiguration.prMax1,
+SocketConfiguration.brMin1, SocketConfiguration.brMax1, SocketConfiguration.tpMin1, SocketConfiguration.tpMax1, 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 1" && BedSideView1.tempActive == true)
                 {
@@ -2103,11 +2253,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
-                        BedSideView2.bed2singleton.tbage.Text, BedSideView2.bed2singleton.tbgender.Text, BedSideView2.bed2singleton.tbheight.Text,
-                        BedSideView2.bed2singleton.tbweight.Text, SocketConfiguration.diMin2, SocketConfiguration.diMax2,
-                        SocketConfiguration.syMin2, SocketConfiguration.syMax2, SocketConfiguration.prMin2, SocketConfiguration.prMax2,
-                        SocketConfiguration.brMin2, SocketConfiguration.brMax2, SocketConfiguration.tpMin2, SocketConfiguration.tpMax2, 2);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView2.bed2singleton.tbfn.Text, BedSideView2.bed2singleton.tbln.Text,
+BedSideView2.bed2singleton.tbage.Text, BedSideView2.bed2singleton.tbgender.Text, BedSideView2.bed2singleton.tbheight.Text,
+BedSideView2.bed2singleton.tbweight.Text, SocketConfiguration.diMin2, SocketConfiguration.diMax2,
+SocketConfiguration.syMin2, SocketConfiguration.syMax2, SocketConfiguration.prMin2, SocketConfiguration.prMax2,
+SocketConfiguration.brMin2, SocketConfiguration.brMax2, SocketConfiguration.tpMin2, SocketConfiguration.tpMax2, 2);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 2" && BedSideView2.tempActive == true)
                 {
@@ -2166,11 +2323,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
-                        BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
-                        BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
-                        SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
-                        SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView3.bed3singleton.tbfn.Text, BedSideView3.bed3singleton.tbln.Text,
+BedSideView3.bed3singleton.tbage.Text, BedSideView3.bed3singleton.tbgender.Text, BedSideView3.bed3singleton.tbheight.Text,
+BedSideView3.bed3singleton.tbweight.Text, SocketConfiguration.diMin3, SocketConfiguration.diMax3,
+SocketConfiguration.syMin3, SocketConfiguration.syMax3, SocketConfiguration.prMin3, SocketConfiguration.prMax3,
+SocketConfiguration.brMin3, SocketConfiguration.brMax3, SocketConfiguration.tpMin3, SocketConfiguration.tpMax3, 3);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 3" && BedSideView3.tempActive == true)
                 {
@@ -2229,11 +2393,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
-                        BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
-                        BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
-                        SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
-                        SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView4.bed4singleton.tbfn.Text, BedSideView4.bed4singleton.tbln.Text,
+BedSideView4.bed4singleton.tbage.Text, BedSideView4.bed4singleton.tbgender.Text, BedSideView4.bed4singleton.tbheight.Text,
+BedSideView4.bed4singleton.tbweight.Text, SocketConfiguration.diMin4, SocketConfiguration.diMax4,
+SocketConfiguration.syMin4, SocketConfiguration.syMax4, SocketConfiguration.prMin4, SocketConfiguration.prMax4,
+SocketConfiguration.brMin4, SocketConfiguration.brMax4, SocketConfiguration.tpMin4, SocketConfiguration.tpMax4, 4);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 4" && BedSideView4.tempActive == true)
                 {
@@ -2292,11 +2463,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
-                        BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
-                        BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
-                        SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
-                        SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView5.bed5singleton.tbfn.Text, BedSideView5.bed5singleton.tbln.Text,
+BedSideView5.bed5singleton.tbage.Text, BedSideView5.bed5singleton.tbgender.Text, BedSideView5.bed5singleton.tbheight.Text,
+BedSideView5.bed5singleton.tbweight.Text, SocketConfiguration.diMin5, SocketConfiguration.diMax5,
+SocketConfiguration.syMin5, SocketConfiguration.syMax5, SocketConfiguration.prMin5, SocketConfiguration.prMax5,
+SocketConfiguration.brMin5, SocketConfiguration.brMax5, SocketConfiguration.tpMin5, SocketConfiguration.tpMax5, 5);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 5" && BedSideView5.tempActive == true)
                 {
@@ -2355,11 +2533,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
-                        BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
-                        BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
-                        SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
-                        SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView6.bed6singleton.tbfn.Text, BedSideView6.bed6singleton.tbln.Text,
+BedSideView6.bed6singleton.tbage.Text, BedSideView6.bed6singleton.tbgender.Text, BedSideView6.bed6singleton.tbheight.Text,
+BedSideView6.bed6singleton.tbweight.Text, SocketConfiguration.diMin6, SocketConfiguration.diMax6,
+SocketConfiguration.syMin6, SocketConfiguration.syMax6, SocketConfiguration.prMin6, SocketConfiguration.prMax6,
+SocketConfiguration.brMin6, SocketConfiguration.brMax6, SocketConfiguration.tpMin6, SocketConfiguration.tpMax6, 6);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 6" && BedSideView6.tempActive == true)
                 {
@@ -2418,11 +2603,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
-                        BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
-                        BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
-                        SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
-                        SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
+BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
+BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
+SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
+SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 7" && BedSideView7.tempActive == true)
                 {
@@ -2481,11 +2673,18 @@ namespace FinalProject
                     this.Hide();
 
                     // When the button Install is clicked it will add values to the database
-                    DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
-                        BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
-                        BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
-                        SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
-                        SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    try
+                    {
+                        DBConnection.dbConnectionSingleton.recordInDB(BedSideView7.bed7singleton.tbfn.Text, BedSideView7.bed7singleton.tbln.Text,
+BedSideView7.bed7singleton.tbage.Text, BedSideView7.bed7singleton.tbgender.Text, BedSideView7.bed7singleton.tbheight.Text,
+BedSideView7.bed7singleton.tbweight.Text, SocketConfiguration.diMin7, SocketConfiguration.diMax7,
+SocketConfiguration.syMin7, SocketConfiguration.syMax7, SocketConfiguration.prMin7, SocketConfiguration.prMax7,
+SocketConfiguration.brMin7, SocketConfiguration.brMax7, SocketConfiguration.tpMin7, SocketConfiguration.tpMax7, 7);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("ERROR! \nError Message: " + error.Message + "\nPlease try again!", "Error");
+                    }
                 }
                 else if (BedLabel.Text == "Bed 8" && BedSideView8.tempActive == true)
                 {
